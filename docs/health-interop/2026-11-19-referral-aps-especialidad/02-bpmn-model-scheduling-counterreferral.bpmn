@@ -1,0 +1,741 @@
+<?xml version='1.0' encoding='utf-8'?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:ddi="http://www.omg.org/spec/DD/20100524/DI" xmlns:di="http://www.omg.org/spec/BPMN/20100524/DI" id="defs_scheduling-counterreferral" targetNamespace="http://example.org/referral/scheduling-counterreferral" exporter="build_bpmn.py" exporterVersion="1.0">
+  <collaboration id="collab_scheduling-counterreferral">
+    <participant id="P_APS" name="APS (CESFAM Los Aromos)" processRef="proc_P_APS" />
+    <participant id="P_HUB" name="Referral hub" processRef="proc_P_HUB" />
+    <participant id="P_SPEC" name="Specialty (cardiology)" processRef="proc_P_SPEC" />
+    <participant id="P_PAT" name="Patient" processRef="proc_P_PAT" />
+    <messageFlow id="h1" name="PI-2 appointment offer" sourceRef="t_offer" targetRef="t_hub_fwd_offer" />
+    <messageFlow id="h2" name="Offer to patient" sourceRef="t_hub_fwd_offer" targetRef="t_receive_offer" />
+    <messageFlow id="h3" name="Offer notification" sourceRef="t_hub_fwd_offer" targetRef="t_admin_notify_offer" />
+    <messageFlow id="h4" name="Confirmation" sourceRef="t_confirm" targetRef="t_hub_fwd_confirm" />
+    <messageFlow id="h5" name="Decline" sourceRef="t_decline" targetRef="t_hub_fwd_decline" />
+    <messageFlow id="h6" name="Confirmation fwd" sourceRef="t_hub_fwd_confirm" targetRef="g_wait_confirm" />
+    <messageFlow id="h7" name="Decline fwd" sourceRef="t_hub_fwd_decline" targetRef="g_confirm" />
+    <messageFlow id="h8" name="Re-offer" sourceRef="t_reoffer" targetRef="t_hub_fwd_offer" />
+    <messageFlow id="h9" name="Appointment booked" sourceRef="t_book" targetRef="e_start_enc" />
+    <messageFlow id="h10" name="PI-3 counter-referral" sourceRef="t_counterref" targetRef="t_hub_fwd_counter" />
+    <messageFlow id="h11" name="Counter-referral to APS" sourceRef="t_hub_fwd_counter" targetRef="t_admin_counter" />
+    <messageFlow id="h12" name="No-show" sourceRef="t_noshow_notify" targetRef="t_hub_fwd_noshow" />
+    <messageFlow id="h13" name="No-show to APS" sourceRef="t_hub_fwd_noshow" targetRef="t_admin_noshow" />
+    <messageFlow id="h14" name="Return to APS re-triage" sourceRef="t_to_retriage" targetRef="t_hub_fwd_retriage" />
+    <messageFlow id="h15" name="Return to APS doctor" sourceRef="t_hub_fwd_retriage" targetRef="t_doc_retriage" />
+    <messageFlow id="h16" name="Return to patient" sourceRef="t_hub_fwd_retriage" targetRef="t_pat_retriage" />
+    <messageFlow id="h17" name="Offer delay" sourceRef="t_esc_offer" targetRef="t_hub_esc_offer" />
+    <messageFlow id="h18" name="Counter-referral delay" sourceRef="t_esc_counter" targetRef="t_hub_esc_counter" />
+    <messageFlow id="h19" name="Offer-delay escalation to APS" sourceRef="t_hub_esc_offer" targetRef="t_admin_esc" />
+    <messageFlow id="h20" name="Counter-delay escalation to APS" sourceRef="t_hub_esc_counter" targetRef="t_admin_esc" />
+  </collaboration>
+  <process id="proc_P_APS" isExecutable="false">
+    <laneSet id="lanes_P_APS">
+      <lane id="L_ADM" name="APS admin">
+        <flowNodeRef>t_admin_notify_offer</flowNodeRef>
+        <flowNodeRef>t_admin_counter</flowNodeRef>
+        <flowNodeRef>t_admin_noshow</flowNodeRef>
+        <flowNodeRef>t_admin_esc</flowNodeRef>
+      </lane>
+      <lane id="L_DOC" name="APS doctor">
+        <flowNodeRef>t_doc_retriage</flowNodeRef>
+        <flowNodeRef>e_end_retriage</flowNodeRef>
+        <flowNodeRef>t_doc_counter</flowNodeRef>
+        <flowNodeRef>e_end_counter</flowNodeRef>
+        <flowNodeRef>t_doc_noshow</flowNodeRef>
+        <flowNodeRef>e_end_noshow</flowNodeRef>
+      </lane>
+    </laneSet>
+    <task id="t_admin_notify_offer" name="Receive offer notification" />
+    <task id="t_admin_counter" name="Receive counter-referral; notify APS doctor" />
+    <task id="t_admin_noshow" name="Receive no-show notification; notify APS doctor" />
+    <task id="t_admin_esc" name="Receive delay escalation; notify APS doctor" />
+    <task id="t_doc_retriage" name="Receive returned referral; re-triage" />
+    <endEvent id="e_end_retriage" name="Re-triage — Part A outcomes apply" />
+    <task id="t_doc_counter" name="Receive counter-referral (follow-up plan)" />
+    <endEvent id="e_end_counter" name="Counter-referred (terminal)" />
+    <task id="t_doc_noshow" name="Receive no-show; decide follow-up" />
+    <endEvent id="e_end_noshow" name="No-show (terminal)" />
+    <sequenceFlow id="g1" name="" sourceRef="t_admin_counter" targetRef="t_doc_counter" />
+    <sequenceFlow id="g2" name="" sourceRef="t_doc_counter" targetRef="e_end_counter" />
+    <sequenceFlow id="g3" name="" sourceRef="t_admin_noshow" targetRef="t_doc_noshow" />
+    <sequenceFlow id="g4" name="" sourceRef="t_doc_noshow" targetRef="e_end_noshow" />
+    <sequenceFlow id="g5" name="" sourceRef="t_doc_retriage" targetRef="e_end_retriage" />
+  </process>
+  <process id="proc_P_HUB" isExecutable="false">
+    <laneSet id="lanes_P_HUB">
+      <lane id="L_HUB" name="Hub operator">
+        <flowNodeRef>t_hub_fwd_offer</flowNodeRef>
+        <flowNodeRef>t_hub_fwd_confirm</flowNodeRef>
+        <flowNodeRef>t_hub_fwd_decline</flowNodeRef>
+        <flowNodeRef>t_hub_fwd_counter</flowNodeRef>
+        <flowNodeRef>t_hub_fwd_noshow</flowNodeRef>
+        <flowNodeRef>t_hub_esc_offer</flowNodeRef>
+        <flowNodeRef>t_hub_esc_counter</flowNodeRef>
+        <flowNodeRef>t_hub_fwd_retriage</flowNodeRef>
+        <flowNodeRef>e_cancel_start_b</flowNodeRef>
+        <flowNodeRef>t_cancel_b</flowNodeRef>
+        <flowNodeRef>e_end_cancel_b</flowNodeRef>
+      </lane>
+    </laneSet>
+    <task id="t_hub_fwd_offer" name="Forward offer to patient; notify APS admin" />
+    <task id="t_hub_fwd_confirm" name="Forward confirmation to specialty" />
+    <task id="t_hub_fwd_decline" name="Forward decline to specialty" />
+    <task id="t_hub_fwd_counter" name="Forward counter-referral to APS" />
+    <task id="t_hub_fwd_noshow" name="Forward no-show to APS" />
+    <task id="t_hub_esc_offer" name="Escalate offer delay to specialty; notify APS" />
+    <task id="t_hub_esc_counter" name="Escalate counter-referral delay to specialty; notify APS" />
+    <task id="t_hub_fwd_retriage" name="Forward return to APS + patient" />
+    <startEvent id="e_cancel_start_b" name="Cancellation requested (APS / patient / specialty)">
+      <messageEventDefinition id="e_cancel_start_b_msgdef" />
+    </startEvent>
+    <task id="t_cancel_b" name="Record cancellation (incl. patient death); notify all parties" />
+    <endEvent id="e_end_cancel_b" name="Cancelled (terminal)" />
+    <sequenceFlow id="g6" name="" sourceRef="e_cancel_start_b" targetRef="t_cancel_b" />
+    <sequenceFlow id="g7" name="" sourceRef="t_cancel_b" targetRef="e_end_cancel_b" />
+  </process>
+  <process id="proc_P_SPEC" isExecutable="false">
+    <laneSet id="lanes_P_SPEC">
+      <lane id="L_SCHED" name="Specialty scheduler">
+        <flowNodeRef>e_start_b</flowNodeRef>
+        <flowNodeRef>t_offer</flowNodeRef>
+        <flowNodeRef>b_offer</flowNodeRef>
+        <flowNodeRef>g_wait_confirm</flowNodeRef>
+        <flowNodeRef>g_confirm</flowNodeRef>
+        <flowNodeRef>t_book</flowNodeRef>
+        <flowNodeRef>e_end_booked</flowNodeRef>
+        <flowNodeRef>t_chase</flowNodeRef>
+        <flowNodeRef>g_chase</flowNodeRef>
+        <flowNodeRef>t_reoffer</flowNodeRef>
+        <flowNodeRef>g_firstdecline</flowNodeRef>
+        <flowNodeRef>t_to_retriage</flowNodeRef>
+        <flowNodeRef>e_end_retriage_spec</flowNodeRef>
+        <flowNodeRef>t_esc_offer</flowNodeRef>
+      </lane>
+      <lane id="L_TRI" name="Specialist">
+        <flowNodeRef>e_start_enc</flowNodeRef>
+        <flowNodeRef>t_appt_wait</flowNodeRef>
+        <flowNodeRef>t_encounter</flowNodeRef>
+        <flowNodeRef>g_attend</flowNodeRef>
+        <flowNodeRef>t_counterref</flowNodeRef>
+        <flowNodeRef>b_counter</flowNodeRef>
+        <flowNodeRef>e_end_counter_spec</flowNodeRef>
+        <flowNodeRef>t_noshow</flowNodeRef>
+        <flowNodeRef>g_resched</flowNodeRef>
+        <flowNodeRef>t_noshow_notify</flowNodeRef>
+        <flowNodeRef>e_end_noshow_spec</flowNodeRef>
+        <flowNodeRef>t_rebook</flowNodeRef>
+        <flowNodeRef>t_esc_counter</flowNodeRef>
+      </lane>
+    </laneSet>
+    <startEvent id="e_start_b" name="Referral accepted (from Part A)" />
+    <task id="t_offer" name="Offer appointment (date/time options)" />
+    <boundaryEvent id="b_offer" name="10 working days" attachedToRef="t_offer" cancelActivity="false">
+      <timerEventDefinition id="b_offer_timerdef" />
+    </boundaryEvent>
+    <exclusiveGateway id="g_wait_confirm" name="Decision received?" />
+    <exclusiveGateway id="g_confirm" name="Confirmed?" />
+    <task id="t_book" name="Book appointment (Appointment + Slot)" />
+    <endEvent id="e_end_booked" name="Appointment booked" />
+    <task id="t_chase" name="Chase patient (confirmation)" />
+    <exclusiveGateway id="g_chase" name="Chased twice?" />
+    <task id="t_reoffer" name="Re-offer alternative date/time (once)" />
+    <exclusiveGateway id="g_firstdecline" name="First decline?" />
+    <task id="t_to_retriage" name="Return referral to APS re-triage" />
+    <endEvent id="e_end_retriage_spec" name="Returned to APS re-triage — Part A outcomes apply" />
+    <task id="t_esc_offer" name="Notify hub: offer delay" />
+    <startEvent id="e_start_enc" name="Appointment booked">
+      <messageEventDefinition id="e_start_enc_msgdef" />
+    </startEvent>
+    <intermediateCatchEvent id="t_appt_wait" name="Wait until appointment date/time">
+      <timerEventDefinition id="t_appt_wait_timerdef" />
+    </intermediateCatchEvent>
+    <task id="t_encounter" name="Specialty encounter (attend patient)" />
+    <exclusiveGateway id="g_attend" name="Patient attended?" />
+    <task id="t_counterref" name="Write counter-referral (diagnosis, plan, follow-up)" />
+    <boundaryEvent id="b_counter" name="5 working days" attachedToRef="t_counterref" cancelActivity="false">
+      <timerEventDefinition id="b_counter_timerdef" />
+    </boundaryEvent>
+    <endEvent id="e_end_counter_spec" name="Counter-referral sent (PI-3)" />
+    <task id="t_noshow" name="Record no-show" />
+    <exclusiveGateway id="g_resched" name="First re-scheduling?" />
+    <task id="t_noshow_notify" name="Notify APS of no-show" />
+    <endEvent id="e_end_noshow_spec" name="No-show notified" />
+    <task id="t_rebook" name="Re-book appointment" />
+    <task id="t_esc_counter" name="Notify hub: counter-referral delay" />
+    <sequenceFlow id="g8" name="" sourceRef="e_start_b" targetRef="t_offer" />
+    <sequenceFlow id="g9" name="" sourceRef="t_offer" targetRef="g_wait_confirm" />
+    <sequenceFlow id="g10" name="decision received" sourceRef="g_wait_confirm" targetRef="g_confirm" />
+    <sequenceFlow id="g11" name="timeout — 3 working days" sourceRef="g_wait_confirm" targetRef="t_chase" />
+    <sequenceFlow id="g12" name="" sourceRef="t_chase" targetRef="g_chase" />
+    <sequenceFlow id="g13" name="no" sourceRef="g_chase" targetRef="g_wait_confirm" />
+    <sequenceFlow id="g14" name="yes" sourceRef="g_chase" targetRef="t_to_retriage" />
+    <sequenceFlow id="g15" name="confirmed" sourceRef="g_confirm" targetRef="t_book" />
+    <sequenceFlow id="g16" name="declined" sourceRef="g_confirm" targetRef="g_firstdecline" />
+    <sequenceFlow id="g17" name="first" sourceRef="g_firstdecline" targetRef="t_reoffer" />
+    <sequenceFlow id="g18" name="second" sourceRef="g_firstdecline" targetRef="t_to_retriage" />
+    <sequenceFlow id="g19" name="" sourceRef="t_to_retriage" targetRef="e_end_retriage_spec" />
+    <sequenceFlow id="g20" name="" sourceRef="t_book" targetRef="e_end_booked" />
+    <sequenceFlow id="g21" name="delay 10 working days" sourceRef="b_offer" targetRef="t_esc_offer" />
+    <sequenceFlow id="g22" name="" sourceRef="e_start_enc" targetRef="t_appt_wait" />
+    <sequenceFlow id="g23" name="" sourceRef="t_appt_wait" targetRef="t_encounter" />
+    <sequenceFlow id="g24" name="" sourceRef="t_encounter" targetRef="g_attend" />
+    <sequenceFlow id="g25" name="yes" sourceRef="g_attend" targetRef="t_counterref" />
+    <sequenceFlow id="g26" name="no" sourceRef="g_attend" targetRef="t_noshow" />
+    <sequenceFlow id="g27" name="" sourceRef="t_counterref" targetRef="e_end_counter_spec" />
+    <sequenceFlow id="g28" name="" sourceRef="t_noshow" targetRef="g_resched" />
+    <sequenceFlow id="g29" name="yes" sourceRef="g_resched" targetRef="t_rebook" />
+    <sequenceFlow id="g30" name="no" sourceRef="g_resched" targetRef="t_noshow_notify" />
+    <sequenceFlow id="g31" name="" sourceRef="t_noshow_notify" targetRef="e_end_noshow_spec" />
+    <sequenceFlow id="g32" name="re-scheduled offer (same loop)" sourceRef="t_rebook" targetRef="t_offer" />
+    <sequenceFlow id="g33" name="delay (5 working days)" sourceRef="b_counter" targetRef="t_esc_counter" />
+  </process>
+  <process id="proc_P_PAT" isExecutable="false">
+    <laneSet id="lanes_P_PAT">
+      <lane id="L_PAT" name="Patient">
+        <flowNodeRef>t_receive_offer</flowNodeRef>
+        <flowNodeRef>g_pat</flowNodeRef>
+        <flowNodeRef>t_confirm</flowNodeRef>
+        <flowNodeRef>e_end_confirm</flowNodeRef>
+        <flowNodeRef>t_decline</flowNodeRef>
+        <flowNodeRef>t_pat_retriage</flowNodeRef>
+        <flowNodeRef>e_end_pat_retriage</flowNodeRef>
+      </lane>
+    </laneSet>
+    <task id="t_receive_offer" name="Receive appointment offer" />
+    <exclusiveGateway id="g_pat" name="Accept offer?" />
+    <task id="t_confirm" name="Confirm attendance" />
+    <endEvent id="e_end_confirm" name="Confirmed" />
+    <task id="t_decline" name="Decline offer" />
+    <task id="t_pat_retriage" name="Receive return-to-re-triage notice" />
+    <endEvent id="e_end_pat_retriage" name="Returned to APS re-triage" />
+    <sequenceFlow id="g34" name="" sourceRef="t_receive_offer" targetRef="g_pat" />
+    <sequenceFlow id="g35" name="yes" sourceRef="g_pat" targetRef="t_confirm" />
+    <sequenceFlow id="g36" name="no" sourceRef="g_pat" targetRef="t_decline" />
+    <sequenceFlow id="g37" name="" sourceRef="t_confirm" targetRef="e_end_confirm" />
+    <sequenceFlow id="g38" name="re-offer (once)" sourceRef="t_decline" targetRef="t_receive_offer" />
+    <sequenceFlow id="g39" name="" sourceRef="t_pat_retriage" targetRef="e_end_pat_retriage" />
+  </process>
+  <di:BPMNDiagram id="diag_scheduling-counterreferral">
+    <di:BPMNPlane id="plane_scheduling-counterreferral" bpmnElement="collab_scheduling-counterreferral">
+      <di:BPMNShape id="di_P_APS" bpmnElement="P_APS">
+        <dc:Bounds x="0" y="0" width="1600" height="280" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_L_ADM" bpmnElement="L_ADM">
+        <dc:Bounds x="0" y="0" width="1600" height="140" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_L_DOC" bpmnElement="L_DOC">
+        <dc:Bounds x="0" y="140" width="1600" height="140" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_P_HUB" bpmnElement="P_HUB">
+        <dc:Bounds x="0" y="320" width="1600" height="220" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_L_HUB" bpmnElement="L_HUB">
+        <dc:Bounds x="0" y="320" width="1600" height="220" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_P_SPEC" bpmnElement="P_SPEC">
+        <dc:Bounds x="0" y="580" width="1600" height="400" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_L_SCHED" bpmnElement="L_SCHED">
+        <dc:Bounds x="0" y="580" width="1600" height="180" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_L_TRI" bpmnElement="L_TRI">
+        <dc:Bounds x="0" y="760" width="1600" height="220" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_P_PAT" bpmnElement="P_PAT">
+        <dc:Bounds x="0" y="1020" width="1600" height="200" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_L_PAT" bpmnElement="L_PAT">
+        <dc:Bounds x="0" y="1020" width="1600" height="200" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_t_admin_notify_offer" bpmnElement="t_admin_notify_offer">
+        <dc:Bounds x="200" y="40" width="170" height="60" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_t_admin_counter" bpmnElement="t_admin_counter">
+        <dc:Bounds x="600" y="40" width="170" height="60" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_t_admin_noshow" bpmnElement="t_admin_noshow">
+        <dc:Bounds x="1000" y="40" width="170" height="60" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_t_admin_esc" bpmnElement="t_admin_esc">
+        <dc:Bounds x="1400" y="40" width="170" height="60" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_t_doc_retriage" bpmnElement="t_doc_retriage">
+        <dc:Bounds x="200" y="180" width="170" height="60" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_e_end_retriage" bpmnElement="e_end_retriage">
+        <dc:Bounds x="400" y="192" width="36" height="36" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_t_doc_counter" bpmnElement="t_doc_counter">
+        <dc:Bounds x="600" y="180" width="170" height="60" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_e_end_counter" bpmnElement="e_end_counter">
+        <dc:Bounds x="800" y="192" width="36" height="36" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_t_doc_noshow" bpmnElement="t_doc_noshow">
+        <dc:Bounds x="1000" y="180" width="170" height="60" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_e_end_noshow" bpmnElement="e_end_noshow">
+        <dc:Bounds x="1200" y="192" width="36" height="36" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_t_hub_fwd_offer" bpmnElement="t_hub_fwd_offer">
+        <dc:Bounds x="200" y="345" width="170" height="60" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_t_hub_fwd_confirm" bpmnElement="t_hub_fwd_confirm">
+        <dc:Bounds x="600" y="345" width="170" height="60" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_t_hub_fwd_decline" bpmnElement="t_hub_fwd_decline">
+        <dc:Bounds x="900" y="345" width="170" height="60" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_t_hub_fwd_counter" bpmnElement="t_hub_fwd_counter">
+        <dc:Bounds x="1200" y="345" width="170" height="60" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_t_hub_fwd_noshow" bpmnElement="t_hub_fwd_noshow">
+        <dc:Bounds x="1400" y="345" width="170" height="60" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_t_hub_esc_offer" bpmnElement="t_hub_esc_offer">
+        <dc:Bounds x="200" y="435" width="170" height="60" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_t_hub_esc_counter" bpmnElement="t_hub_esc_counter">
+        <dc:Bounds x="600" y="435" width="170" height="60" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_t_hub_fwd_retriage" bpmnElement="t_hub_fwd_retriage">
+        <dc:Bounds x="1000" y="435" width="170" height="60" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_e_cancel_start_b" bpmnElement="e_cancel_start_b">
+        <dc:Bounds x="1200" y="447" width="36" height="36" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_t_cancel_b" bpmnElement="t_cancel_b">
+        <dc:Bounds x="1260" y="435" width="170" height="60" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_e_end_cancel_b" bpmnElement="e_end_cancel_b">
+        <dc:Bounds x="1460" y="447" width="36" height="36" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_e_start_b" bpmnElement="e_start_b">
+        <dc:Bounds x="20" y="617" width="36" height="36" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_t_offer" bpmnElement="t_offer">
+        <dc:Bounds x="90" y="605" width="170" height="60" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_b_offer" bpmnElement="b_offer">
+        <dc:Bounds x="100" y="650" width="30" height="30" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_g_wait_confirm" bpmnElement="g_wait_confirm">
+        <dc:Bounds x="300" y="610" width="50" height="50" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_g_confirm" bpmnElement="g_confirm">
+        <dc:Bounds x="420" y="610" width="50" height="50" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_t_book" bpmnElement="t_book">
+        <dc:Bounds x="520" y="605" width="170" height="60" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_e_end_booked" bpmnElement="e_end_booked">
+        <dc:Bounds x="720" y="617" width="36" height="36" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_t_chase" bpmnElement="t_chase">
+        <dc:Bounds x="90" y="695" width="170" height="60" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_g_chase" bpmnElement="g_chase">
+        <dc:Bounds x="290" y="700" width="50" height="50" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_t_reoffer" bpmnElement="t_reoffer">
+        <dc:Bounds x="520" y="695" width="170" height="60" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_g_firstdecline" bpmnElement="g_firstdecline">
+        <dc:Bounds x="720" y="700" width="50" height="50" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_t_to_retriage" bpmnElement="t_to_retriage">
+        <dc:Bounds x="800" y="695" width="170" height="60" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_e_end_retriage_spec" bpmnElement="e_end_retriage_spec">
+        <dc:Bounds x="1000" y="707" width="36" height="36" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_t_esc_offer" bpmnElement="t_esc_offer">
+        <dc:Bounds x="1100" y="695" width="170" height="60" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_e_start_enc" bpmnElement="e_start_enc">
+        <dc:Bounds x="20" y="797" width="36" height="36" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_t_appt_wait" bpmnElement="t_appt_wait">
+        <dc:Bounds x="90" y="797" width="36" height="36" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_t_encounter" bpmnElement="t_encounter">
+        <dc:Bounds x="160" y="785" width="170" height="60" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_g_attend" bpmnElement="g_attend">
+        <dc:Bounds x="370" y="790" width="50" height="50" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_t_counterref" bpmnElement="t_counterref">
+        <dc:Bounds x="460" y="785" width="170" height="60" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_b_counter" bpmnElement="b_counter">
+        <dc:Bounds x="530" y="830" width="30" height="30" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_e_end_counter_spec" bpmnElement="e_end_counter_spec">
+        <dc:Bounds x="660" y="797" width="36" height="36" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_t_noshow" bpmnElement="t_noshow">
+        <dc:Bounds x="160" y="875" width="170" height="60" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_g_resched" bpmnElement="g_resched">
+        <dc:Bounds x="370" y="880" width="50" height="50" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_t_noshow_notify" bpmnElement="t_noshow_notify">
+        <dc:Bounds x="460" y="875" width="170" height="60" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_e_end_noshow_spec" bpmnElement="e_end_noshow_spec">
+        <dc:Bounds x="660" y="887" width="36" height="36" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_t_rebook" bpmnElement="t_rebook">
+        <dc:Bounds x="800" y="875" width="170" height="60" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_t_esc_counter" bpmnElement="t_esc_counter">
+        <dc:Bounds x="1000" y="875" width="170" height="60" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_t_receive_offer" bpmnElement="t_receive_offer">
+        <dc:Bounds x="200" y="1045" width="170" height="60" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_g_pat" bpmnElement="g_pat">
+        <dc:Bounds x="410" y="1050" width="50" height="50" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_t_confirm" bpmnElement="t_confirm">
+        <dc:Bounds x="500" y="1045" width="170" height="60" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_e_end_confirm" bpmnElement="e_end_confirm">
+        <dc:Bounds x="700" y="1057" width="36" height="36" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_t_decline" bpmnElement="t_decline">
+        <dc:Bounds x="410" y="1135" width="170" height="60" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_t_pat_retriage" bpmnElement="t_pat_retriage">
+        <dc:Bounds x="800" y="1045" width="170" height="60" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_e_end_pat_retriage" bpmnElement="e_end_pat_retriage">
+        <dc:Bounds x="1000" y="1057" width="36" height="36" />
+      </di:BPMNShape>
+      <di:BPMNEdge id="di_g1" bpmnElement="g1">
+        <ddi:waypoint x="685" y="100" />
+        <ddi:waypoint x="685" y="180" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_g2" bpmnElement="g2">
+        <ddi:waypoint x="770" y="210" />
+        <ddi:waypoint x="800" y="210" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_g3" bpmnElement="g3">
+        <ddi:waypoint x="1085" y="100" />
+        <ddi:waypoint x="1085" y="180" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_g4" bpmnElement="g4">
+        <ddi:waypoint x="1170" y="210" />
+        <ddi:waypoint x="1200" y="210" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_g5" bpmnElement="g5">
+        <ddi:waypoint x="370" y="210" />
+        <ddi:waypoint x="400" y="210" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_g6" bpmnElement="g6">
+        <ddi:waypoint x="1236" y="465" />
+        <ddi:waypoint x="1260" y="465" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_g7" bpmnElement="g7">
+        <ddi:waypoint x="1430" y="465" />
+        <ddi:waypoint x="1460" y="465" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_g8" bpmnElement="g8">
+        <ddi:waypoint x="56" y="635" />
+        <ddi:waypoint x="90" y="635" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_g9" bpmnElement="g9">
+        <ddi:waypoint x="260" y="635" />
+        <ddi:waypoint x="300" y="635" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_g10" bpmnElement="g10">
+        <ddi:waypoint x="350" y="635" />
+        <ddi:waypoint x="420" y="635" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_g11" bpmnElement="g11">
+        <ddi:waypoint x="325" y="660" />
+        <ddi:waypoint x="325" y="680" />
+        <ddi:waypoint x="175" y="680" />
+        <ddi:waypoint x="175" y="695" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_g12" bpmnElement="g12">
+        <ddi:waypoint x="260" y="725" />
+        <ddi:waypoint x="290" y="725" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_g13" bpmnElement="g13">
+        <ddi:waypoint x="315" y="700" />
+        <ddi:waypoint x="315" y="690" />
+        <ddi:waypoint x="280" y="690" />
+        <ddi:waypoint x="280" y="635" />
+        <ddi:waypoint x="300" y="635" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_g14" bpmnElement="g14">
+        <ddi:waypoint x="340" y="725" />
+        <ddi:waypoint x="340" y="860" />
+        <ddi:waypoint x="795" y="860" />
+        <ddi:waypoint x="795" y="725" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_g15" bpmnElement="g15">
+        <ddi:waypoint x="470" y="635" />
+        <ddi:waypoint x="520" y="635" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_g16" bpmnElement="g16">
+        <ddi:waypoint x="445" y="660" />
+        <ddi:waypoint x="445" y="680" />
+        <ddi:waypoint x="745" y="680" />
+        <ddi:waypoint x="745" y="700" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_g17" bpmnElement="g17">
+        <ddi:waypoint x="720" y="725" />
+        <ddi:waypoint x="690" y="725" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_g18" bpmnElement="g18">
+        <ddi:waypoint x="770" y="725" />
+        <ddi:waypoint x="800" y="725" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_g19" bpmnElement="g19">
+        <ddi:waypoint x="970" y="725" />
+        <ddi:waypoint x="1000" y="725" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_g20" bpmnElement="g20">
+        <ddi:waypoint x="690" y="635" />
+        <ddi:waypoint x="720" y="635" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_g21" bpmnElement="g21">
+        <ddi:waypoint x="115" y="680" />
+        <ddi:waypoint x="115" y="690" />
+        <ddi:waypoint x="60" y="690" />
+        <ddi:waypoint x="60" y="762" />
+        <ddi:waypoint x="1185" y="762" />
+        <ddi:waypoint x="1185" y="755" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_g22" bpmnElement="g22">
+        <ddi:waypoint x="56" y="815" />
+        <ddi:waypoint x="90" y="815" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_g23" bpmnElement="g23">
+        <ddi:waypoint x="126" y="815" />
+        <ddi:waypoint x="160" y="815" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_g24" bpmnElement="g24">
+        <ddi:waypoint x="330" y="815" />
+        <ddi:waypoint x="370" y="815" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_g25" bpmnElement="g25">
+        <ddi:waypoint x="420" y="815" />
+        <ddi:waypoint x="460" y="815" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_g26" bpmnElement="g26">
+        <ddi:waypoint x="395" y="840" />
+        <ddi:waypoint x="395" y="860" />
+        <ddi:waypoint x="340" y="860" />
+        <ddi:waypoint x="340" y="905" />
+        <ddi:waypoint x="330" y="905" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_g27" bpmnElement="g27">
+        <ddi:waypoint x="630" y="815" />
+        <ddi:waypoint x="660" y="815" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_g28" bpmnElement="g28">
+        <ddi:waypoint x="330" y="905" />
+        <ddi:waypoint x="370" y="905" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_g29" bpmnElement="g29">
+        <ddi:waypoint x="395" y="930" />
+        <ddi:waypoint x="395" y="950" />
+        <ddi:waypoint x="870" y="950" />
+        <ddi:waypoint x="870" y="935" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_g30" bpmnElement="g30">
+        <ddi:waypoint x="420" y="905" />
+        <ddi:waypoint x="460" y="905" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_g31" bpmnElement="g31">
+        <ddi:waypoint x="630" y="905" />
+        <ddi:waypoint x="660" y="905" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_g32" bpmnElement="g32">
+        <ddi:waypoint x="970" y="905" />
+        <ddi:waypoint x="970" y="960" />
+        <ddi:waypoint x="70" y="960" />
+        <ddi:waypoint x="70" y="635" />
+        <ddi:waypoint x="90" y="635" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_g33" bpmnElement="g33">
+        <ddi:waypoint x="545" y="860" />
+        <ddi:waypoint x="545" y="868" />
+        <ddi:waypoint x="1085" y="868" />
+        <ddi:waypoint x="1085" y="875" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_g34" bpmnElement="g34">
+        <ddi:waypoint x="370" y="1075" />
+        <ddi:waypoint x="410" y="1075" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_g35" bpmnElement="g35">
+        <ddi:waypoint x="460" y="1075" />
+        <ddi:waypoint x="500" y="1075" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_g36" bpmnElement="g36">
+        <ddi:waypoint x="435" y="1100" />
+        <ddi:waypoint x="435" y="1165" />
+        <ddi:waypoint x="410" y="1165" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_g37" bpmnElement="g37">
+        <ddi:waypoint x="670" y="1075" />
+        <ddi:waypoint x="700" y="1075" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_g38" bpmnElement="g38">
+        <ddi:waypoint x="410" y="1165" />
+        <ddi:waypoint x="200" y="1165" />
+        <ddi:waypoint x="200" y="1030" />
+        <ddi:waypoint x="230" y="1030" />
+        <ddi:waypoint x="230" y="1045" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_g39" bpmnElement="g39">
+        <ddi:waypoint x="970" y="1075" />
+        <ddi:waypoint x="1000" y="1075" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_h1" bpmnElement="h1">
+        <ddi:waypoint x="230" y="665" />
+        <ddi:waypoint x="230" y="560" />
+        <ddi:waypoint x="380" y="560" />
+        <ddi:waypoint x="380" y="375" />
+        <ddi:waypoint x="370" y="375" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_h2" bpmnElement="h2">
+        <ddi:waypoint x="370" y="375" />
+        <ddi:waypoint x="370" y="330" />
+        <ddi:waypoint x="1590" y="330" />
+        <ddi:waypoint x="1590" y="1035" />
+        <ddi:waypoint x="285" y="1035" />
+        <ddi:waypoint x="285" y="1045" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_h3" bpmnElement="h3">
+        <ddi:waypoint x="285" y="345" />
+        <ddi:waypoint x="285" y="325" />
+        <ddi:waypoint x="400" y="325" />
+        <ddi:waypoint x="400" y="120" />
+        <ddi:waypoint x="200" y="120" />
+        <ddi:waypoint x="200" y="70" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_h4" bpmnElement="h4">
+        <ddi:waypoint x="585" y="1045" />
+        <ddi:waypoint x="585" y="1010" />
+        <ddi:waypoint x="795" y="1010" />
+        <ddi:waypoint x="795" y="420" />
+        <ddi:waypoint x="685" y="420" />
+        <ddi:waypoint x="685" y="405" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_h5" bpmnElement="h5">
+        <ddi:waypoint x="490" y="1135" />
+        <ddi:waypoint x="490" y="1000" />
+        <ddi:waypoint x="980" y="1000" />
+        <ddi:waypoint x="980" y="420" />
+        <ddi:waypoint x="985" y="420" />
+        <ddi:waypoint x="985" y="405" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_h6" bpmnElement="h6">
+        <ddi:waypoint x="685" y="405" />
+        <ddi:waypoint x="685" y="420" />
+        <ddi:waypoint x="800" y="420" />
+        <ddi:waypoint x="800" y="570" />
+        <ddi:waypoint x="325" y="570" />
+        <ddi:waypoint x="325" y="610" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_h7" bpmnElement="h7">
+        <ddi:waypoint x="985" y="405" />
+        <ddi:waypoint x="985" y="560" />
+        <ddi:waypoint x="445" y="560" />
+        <ddi:waypoint x="445" y="610" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_h8" bpmnElement="h8">
+        <ddi:waypoint x="690" y="725" />
+        <ddi:waypoint x="710" y="725" />
+        <ddi:waypoint x="710" y="550" />
+        <ddi:waypoint x="190" y="550" />
+        <ddi:waypoint x="190" y="375" />
+        <ddi:waypoint x="200" y="375" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_h9" bpmnElement="h9">
+        <ddi:waypoint x="690" y="635" />
+        <ddi:waypoint x="710" y="635" />
+        <ddi:waypoint x="710" y="990" />
+        <ddi:waypoint x="38" y="990" />
+        <ddi:waypoint x="38" y="797" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_h10" bpmnElement="h10">
+        <ddi:waypoint x="545" y="785" />
+        <ddi:waypoint x="545" y="780" />
+        <ddi:waypoint x="775" y="780" />
+        <ddi:waypoint x="775" y="420" />
+        <ddi:waypoint x="1285" y="420" />
+        <ddi:waypoint x="1285" y="405" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_h11" bpmnElement="h11">
+        <ddi:waypoint x="1285" y="345" />
+        <ddi:waypoint x="1285" y="120" />
+        <ddi:waypoint x="685" y="120" />
+        <ddi:waypoint x="685" y="100" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_h12" bpmnElement="h12">
+        <ddi:waypoint x="600" y="875" />
+        <ddi:waypoint x="600" y="858" />
+        <ddi:waypoint x="785" y="858" />
+        <ddi:waypoint x="785" y="420" />
+        <ddi:waypoint x="1485" y="420" />
+        <ddi:waypoint x="1485" y="405" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_h13" bpmnElement="h13">
+        <ddi:waypoint x="1485" y="345" />
+        <ddi:waypoint x="1485" y="120" />
+        <ddi:waypoint x="1085" y="120" />
+        <ddi:waypoint x="1085" y="100" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_h14" bpmnElement="h14">
+        <ddi:waypoint x="885" y="695" />
+        <ddi:waypoint x="885" y="500" />
+        <ddi:waypoint x="1085" y="500" />
+        <ddi:waypoint x="1085" y="495" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_h15" bpmnElement="h15">
+        <ddi:waypoint x="1170" y="465" />
+        <ddi:waypoint x="1185" y="465" />
+        <ddi:waypoint x="1185" y="120" />
+        <ddi:waypoint x="285" y="120" />
+        <ddi:waypoint x="285" y="180" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_h16" bpmnElement="h16">
+        <ddi:waypoint x="1170" y="465" />
+        <ddi:waypoint x="1170" y="536" />
+        <ddi:waypoint x="1560" y="536" />
+        <ddi:waypoint x="1560" y="1025" />
+        <ddi:waypoint x="885" y="1025" />
+        <ddi:waypoint x="885" y="1045" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_h17" bpmnElement="h17">
+        <ddi:waypoint x="1185" y="695" />
+        <ddi:waypoint x="1185" y="512" />
+        <ddi:waypoint x="285" y="512" />
+        <ddi:waypoint x="285" y="495" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_h18" bpmnElement="h18">
+        <ddi:waypoint x="1085" y="875" />
+        <ddi:waypoint x="1085" y="524" />
+        <ddi:waypoint x="685" y="524" />
+        <ddi:waypoint x="685" y="495" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_h19" bpmnElement="h19">
+        <ddi:waypoint x="370" y="465" />
+        <ddi:waypoint x="390" y="465" />
+        <ddi:waypoint x="390" y="110" />
+        <ddi:waypoint x="1485" y="110" />
+        <ddi:waypoint x="1485" y="100" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_h20" bpmnElement="h20">
+        <ddi:waypoint x="770" y="465" />
+        <ddi:waypoint x="790" y="465" />
+        <ddi:waypoint x="790" y="160" />
+        <ddi:waypoint x="1520" y="160" />
+        <ddi:waypoint x="1520" y="100" />
+      </di:BPMNEdge>
+    </di:BPMNPlane>
+  </di:BPMNDiagram>
+</definitions>

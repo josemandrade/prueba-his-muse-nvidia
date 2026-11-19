@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='utf-8'?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:ddi="http://www.omg.org/spec/DD/20100524/DI" xmlns:di="http://www.omg.org/spec/BPMN/20100524/DI" id="defs_status-query" targetNamespace="http://example.org/referral/status-query" exporter="build_bpmn.py" exporterVersion="1.0">
+  <collaboration id="collab_status-query">
+    <participant id="P_APS" name="APS (CESFAM Los Aromos)" processRef="proc_P_APS" />
+    <participant id="P_HUB" name="Referral hub" processRef="proc_P_HUB" />
+    <messageFlow id="j1" name="PI-4 status query" sourceRef="t_query" targetRef="t_lookup" />
+    <messageFlow id="j2" name="Current state, last change, next step" sourceRef="t_return_ok" targetRef="t_receive_ok" />
+    <messageFlow id="j3" name="Not-found" sourceRef="t_return_nf" targetRef="t_receive_nf" />
+  </collaboration>
+  <process id="proc_P_APS" isExecutable="false">
+    <laneSet id="lanes_P_APS">
+      <lane id="L_APS" name="APS doctor / admin">
+        <flowNodeRef>e_start_c</flowNodeRef>
+        <flowNodeRef>t_query</flowNodeRef>
+        <flowNodeRef>t_receive_ok</flowNodeRef>
+        <flowNodeRef>e_end_ok</flowNodeRef>
+        <flowNodeRef>t_receive_nf</flowNodeRef>
+        <flowNodeRef>e_end_nf</flowNodeRef>
+      </lane>
+    </laneSet>
+    <startEvent id="e_start_c" name="Need referral status" />
+    <task id="t_query" name="Query referral status (PI-4)" />
+    <task id="t_receive_ok" name="Receive state, last change, next step; record in APS record" />
+    <endEvent id="e_end_ok" name="Status known" />
+    <task id="t_receive_nf" name="Receive 'not found'; verify referral id" />
+    <endEvent id="e_end_nf" name="Verify referral id" />
+    <sequenceFlow id="i1" name="" sourceRef="e_start_c" targetRef="t_query" />
+    <sequenceFlow id="i2" name="" sourceRef="t_receive_ok" targetRef="e_end_ok" />
+    <sequenceFlow id="i3" name="" sourceRef="t_receive_nf" targetRef="e_end_nf" />
+  </process>
+  <process id="proc_P_HUB" isExecutable="false">
+    <laneSet id="lanes_P_HUB">
+      <lane id="L_HUB" name="Hub operator">
+        <flowNodeRef>t_lookup</flowNodeRef>
+        <flowNodeRef>g_found</flowNodeRef>
+        <flowNodeRef>t_return_ok</flowNodeRef>
+        <flowNodeRef>e_end_ret_ok</flowNodeRef>
+        <flowNodeRef>t_return_nf</flowNodeRef>
+        <flowNodeRef>e_end_ret_nf</flowNodeRef>
+      </lane>
+    </laneSet>
+    <task id="t_lookup" name="Look up referral state (workflow record)" />
+    <exclusiveGateway id="g_found" name="Referral found?" />
+    <task id="t_return_ok" name="Return current state, last change, next step" />
+    <endEvent id="e_end_ret_ok" name="State returned" />
+    <task id="t_return_nf" name="Return 'not found'" />
+    <endEvent id="e_end_ret_nf" name="Not-found returned" />
+    <sequenceFlow id="i4" name="" sourceRef="t_lookup" targetRef="g_found" />
+    <sequenceFlow id="i5" name="yes" sourceRef="g_found" targetRef="t_return_ok" />
+    <sequenceFlow id="i6" name="no" sourceRef="g_found" targetRef="t_return_nf" />
+    <sequenceFlow id="i7" name="" sourceRef="t_return_ok" targetRef="e_end_ret_ok" />
+    <sequenceFlow id="i8" name="" sourceRef="t_return_nf" targetRef="e_end_ret_nf" />
+  </process>
+  <di:BPMNDiagram id="diag_status-query">
+    <di:BPMNPlane id="plane_status-query" bpmnElement="collab_status-query">
+      <di:BPMNShape id="di_P_APS" bpmnElement="P_APS">
+        <dc:Bounds x="0" y="0" width="1600" height="200" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_L_APS" bpmnElement="L_APS">
+        <dc:Bounds x="0" y="0" width="1600" height="200" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_P_HUB" bpmnElement="P_HUB">
+        <dc:Bounds x="0" y="240" width="1600" height="200" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_L_HUB" bpmnElement="L_HUB">
+        <dc:Bounds x="0" y="240" width="1600" height="200" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_e_start_c" bpmnElement="e_start_c">
+        <dc:Bounds x="20" y="52" width="36" height="36" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_t_query" bpmnElement="t_query">
+        <dc:Bounds x="90" y="40" width="170" height="60" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_t_receive_ok" bpmnElement="t_receive_ok">
+        <dc:Bounds x="600" y="40" width="170" height="60" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_e_end_ok" bpmnElement="e_end_ok">
+        <dc:Bounds x="800" y="52" width="36" height="36" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_t_receive_nf" bpmnElement="t_receive_nf">
+        <dc:Bounds x="600" y="130" width="170" height="60" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_e_end_nf" bpmnElement="e_end_nf">
+        <dc:Bounds x="800" y="142" width="36" height="36" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_t_lookup" bpmnElement="t_lookup">
+        <dc:Bounds x="200" y="280" width="170" height="60" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_g_found" bpmnElement="g_found">
+        <dc:Bounds x="410" y="285" width="50" height="50" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_t_return_ok" bpmnElement="t_return_ok">
+        <dc:Bounds x="500" y="280" width="170" height="60" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_e_end_ret_ok" bpmnElement="e_end_ret_ok">
+        <dc:Bounds x="700" y="292" width="36" height="36" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_t_return_nf" bpmnElement="t_return_nf">
+        <dc:Bounds x="410" y="370" width="170" height="60" />
+      </di:BPMNShape>
+      <di:BPMNShape id="di_e_end_ret_nf" bpmnElement="e_end_ret_nf">
+        <dc:Bounds x="620" y="382" width="36" height="36" />
+      </di:BPMNShape>
+      <di:BPMNEdge id="di_i1" bpmnElement="i1">
+        <ddi:waypoint x="56" y="70" />
+        <ddi:waypoint x="90" y="70" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_i2" bpmnElement="i2">
+        <ddi:waypoint x="770" y="70" />
+        <ddi:waypoint x="800" y="70" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_i3" bpmnElement="i3">
+        <ddi:waypoint x="770" y="160" />
+        <ddi:waypoint x="800" y="160" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_i4" bpmnElement="i4">
+        <ddi:waypoint x="370" y="310" />
+        <ddi:waypoint x="410" y="310" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_i5" bpmnElement="i5">
+        <ddi:waypoint x="460" y="310" />
+        <ddi:waypoint x="500" y="310" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_i6" bpmnElement="i6">
+        <ddi:waypoint x="435" y="335" />
+        <ddi:waypoint x="435" y="400" />
+        <ddi:waypoint x="410" y="400" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_i7" bpmnElement="i7">
+        <ddi:waypoint x="670" y="310" />
+        <ddi:waypoint x="700" y="310" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_i8" bpmnElement="i8">
+        <ddi:waypoint x="580" y="400" />
+        <ddi:waypoint x="620" y="400" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_j1" bpmnElement="j1">
+        <ddi:waypoint x="285" y="100" />
+        <ddi:waypoint x="285" y="280" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_j2" bpmnElement="j2">
+        <ddi:waypoint x="585" y="280" />
+        <ddi:waypoint x="585" y="120" />
+        <ddi:waypoint x="685" y="120" />
+        <ddi:waypoint x="685" y="100" />
+      </di:BPMNEdge>
+      <di:BPMNEdge id="di_j3" bpmnElement="j3">
+        <ddi:waypoint x="495" y="370" />
+        <ddi:waypoint x="495" y="210" />
+        <ddi:waypoint x="685" y="210" />
+        <ddi:waypoint x="685" y="190" />
+      </di:BPMNEdge>
+    </di:BPMNPlane>
+  </di:BPMNDiagram>
+</definitions>
