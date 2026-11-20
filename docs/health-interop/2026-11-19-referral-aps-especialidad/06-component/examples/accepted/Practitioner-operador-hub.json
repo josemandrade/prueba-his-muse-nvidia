@@ -1,0 +1,20 @@
+{
+  "resourceType": "Practitioner",
+  "id": "operador-hub",
+  "identifier": [
+    {
+      "system": "http://www.registrocivil.cl/run",
+      "value": "44444444-4"
+    }
+  ],
+  "name": [
+    {
+      "use": "official",
+      "family": "Díaz",
+      "given": [
+        "Jorge"
+      ]
+    }
+  ],
+  "gender": "male"
+}

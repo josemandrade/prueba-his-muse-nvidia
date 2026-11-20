@@ -1,0 +1,12 @@
+{
+  "resourceType": "Organization",
+  "id": "org-hub",
+  "identifier": [
+    {
+      "system": "http://hub.example.org/organization",
+      "value": "HUB-DERIVACION"
+    }
+  ],
+  "name": "Hub de Derivación de la Red",
+  "active": true
+}

@@ -1,0 +1,275 @@
+{
+  "resourceType": "Bundle",
+  "type": "document",
+  "timestamp": "2026-12-03T10:00:00-03:00",
+  "entry": [
+    {
+      "fullUrl": "Composition/contrareferencia-ref-2026-0001",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "contrareferencia-ref-2026-0001",
+        "meta": {
+          "profile": [
+            "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-contrareferencia"
+          ]
+        },
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "code": "11488-4",
+              "system": "http://loinc.org",
+              "display": "Consult note"
+            }
+          ]
+        },
+        "title": "Counter-referral",
+        "section": [
+          {
+            "title": "Diagnosis",
+            "code": {
+              "text": "Diagnosis"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Chronic systolic heart failure, LVEF 35% (ICD-10-CM I50.22).</div>"
+            },
+            "entry": [
+              {
+                "reference": "Condition/diagnostico-ref-2026-0001"
+              }
+            ]
+          },
+          {
+            "title": "Plan",
+            "code": {
+              "text": "Plan"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Start heart-failure treatment; control in APS in 2 weeks.</div>"
+            },
+            "entry": [
+              {
+                "reference": "CarePlan/plan-ref-2026-0001"
+              }
+            ]
+          },
+          {
+            "title": "Follow-up indications",
+            "code": {
+              "text": "Follow-up indications"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Blood pressure, weight and symptoms at each APS control; NT-proBNP in 3 months.</div>"
+            }
+          },
+          {
+            "title": "Follow-up plan for APS",
+            "code": {
+              "text": "Follow-up plan for APS"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">APS follow-up as in the CarePlan; new referral to cardiology if dyspnoea worsens.</div>"
+            },
+            "entry": [
+              {
+                "reference": "CarePlan/plan-ref-2026-0001"
+              }
+            ]
+          }
+        ],
+        "extension": [
+          {
+            "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-referral-identifier",
+            "valueIdentifier": {
+              "system": "http://aps.losaromos.example.org/referral",
+              "value": "REF-2026-0001"
+            }
+          }
+        ],
+        "identifier": {
+          "system": "http://especialidad.example.org/counter-referral",
+          "value": "CR-2026-0001"
+        },
+        "subject": {
+          "reference": "Patient/maria-gonzalez"
+        },
+        "encounter": {
+          "reference": "Encounter/encuentro-ref-2026-0001"
+        },
+        "date": "2026-12-03T10:00:00-03:00",
+        "author": [
+          {
+            "reference": "PractitionerRole/rol-especialista"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "DocumentReference/documento-ref-2026-0001",
+      "resource": {
+        "resourceType": "DocumentReference",
+        "id": "documento-ref-2026-0001",
+        "meta": {
+          "profile": [
+            "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-documento"
+          ]
+        },
+        "status": "current",
+        "type": {
+          "coding": [
+            {
+              "code": "11488-4",
+              "system": "http://loinc.org",
+              "display": "Consult note"
+            }
+          ]
+        },
+        "content": [
+          {
+            "attachment": {
+              "contentType": "application/fhir+json",
+              "url": "Composition/contrareferencia-ref-2026-0001"
+            }
+          }
+        ],
+        "masterIdentifier": {
+          "system": "http://especialidad.example.org/counter-referral",
+          "value": "CR-2026-0001"
+        },
+        "subject": {
+          "reference": "Patient/maria-gonzalez"
+        },
+        "author": [
+          {
+            "reference": "PractitionerRole/rol-especialista"
+          }
+        ],
+        "date": "2026-12-03T10:00:00-03:00",
+        "context": {
+          "encounter": [
+            {
+              "reference": "Encounter/encuentro-ref-2026-0001"
+            }
+          ],
+          "related": [
+            {
+              "reference": "ServiceRequest/ref-2026-0001"
+            }
+          ],
+          "period": {
+            "start": "2026-12-02T10:00:00-03:00",
+            "end": "2026-12-02T10:30:00-03:00"
+          }
+        }
+      }
+    },
+    {
+      "fullUrl": "Condition/diagnostico-ref-2026-0001",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "diagnostico-ref-2026-0001",
+        "meta": {
+          "profile": [
+            "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-diagnostico"
+          ]
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "display": "Active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "display": "Confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "I50.22",
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "display": "Chronic systolic (congestive) heart failure"
+            },
+            {
+              "code": "417996009",
+              "system": "http://snomed.info/sct",
+              "display": "Systolic heart failure"
+            }
+          ],
+          "text": "Insuficiencia cardiaca sistólica crónica (FEVI 35%)"
+        },
+        "subject": {
+          "reference": "Patient/maria-gonzalez"
+        },
+        "encounter": {
+          "reference": "Encounter/encuentro-ref-2026-0001"
+        },
+        "note": [
+          {
+            "text": "FEVI 35% por ecocardiograma. Sin isquemia aguda en el ECG."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "CarePlan/plan-ref-2026-0001",
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "plan-ref-2026-0001",
+        "meta": {
+          "profile": [
+            "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-plan-seguimiento"
+          ]
+        },
+        "status": "active",
+        "intent": "plan",
+        "subject": {
+          "reference": "Patient/maria-gonzalez"
+        },
+        "encounter": {
+          "reference": "Encounter/encuentro-ref-2026-0001"
+        },
+        "author": {
+          "reference": "PractitionerRole/rol-especialista"
+        },
+        "addresses": [
+          {
+            "reference": "Condition/diagnostico-ref-2026-0001"
+          }
+        ],
+        "activity": [
+          {
+            "detail": {
+              "description": "Control en APS en 2 semanas: presión arterial, peso, síntomas.",
+              "status": "active"
+            }
+          },
+          {
+            "detail": {
+              "description": "NT-proBNP de control en 3 meses.",
+              "status": "active"
+            }
+          },
+          {
+            "reference": {
+              "reference": "ServiceRequest/ref-2026-0001"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "id": "bundle-pi3-ref-2026-0001"
+}

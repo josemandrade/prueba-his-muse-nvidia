@@ -1,0 +1,49 @@
+{
+  "resourceType": "Patient",
+  "id": "maria-gonzalez",
+  "meta": {
+    "profile": [
+      "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-paciente"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://www.registrocivil.cl/run",
+      "value": "11111111-1"
+    },
+    {
+      "system": "http://mpi.red.example.org",
+      "value": "MPI-2026-0042"
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-preferred-contact-channel",
+      "valueCode": "phone"
+    }
+  ],
+  "name": [
+    {
+      "use": "official",
+      "family": "González",
+      "given": [
+        "María"
+      ]
+    }
+  ],
+  "birthDate": "1968-04-15",
+  "gender": "female",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "+56 9 1111 1111",
+      "use": "mobile"
+    }
+  ],
+  "address": [
+    {
+      "use": "home",
+      "text": "Calle Ejemplo 123, Los Aromos"
+    }
+  ]
+}

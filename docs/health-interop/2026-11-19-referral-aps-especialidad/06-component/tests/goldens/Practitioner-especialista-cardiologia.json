@@ -1,0 +1,20 @@
+{
+  "resourceType": "Practitioner",
+  "id": "especialista-cardiologia",
+  "identifier": [
+    {
+      "system": "http://www.registrocivil.cl/run",
+      "value": "33333333-3"
+    }
+  ],
+  "name": [
+    {
+      "use": "official",
+      "family": "Rojas",
+      "given": [
+        "Carlos"
+      ]
+    }
+  ],
+  "gender": "male"
+}

@@ -1,0 +1,16 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "DerivacionCanal",
+  "id": "derivacion-canal",
+  "title": "Canal de notificación",
+  "description": "Canales de notificación de la derivación.",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-canal",
+  "compose": {
+    "include": [
+      {
+        "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-canal"
+      }
+    ]
+  }
+}

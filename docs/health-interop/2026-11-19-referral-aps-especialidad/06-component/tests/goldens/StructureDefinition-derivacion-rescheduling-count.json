@@ -1,0 +1,60 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "derivacion-rescheduling-count",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rescheduling-count",
+  "name": "DerivacionReschedulingCount",
+  "title": "Conteo de re-agendamientos",
+  "status": "draft",
+  "description": "Número de re-agendamientos de esta derivación (0–1). No se reinicia: un solo re-agendamiento por derivación.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Task"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Conteo de re-agendamientos",
+        "definition": "Número de re-agendamientos de esta derivación (0–1). No se reinicia: un solo re-agendamiento por derivación."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rescheduling-count"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "derivacion-rescheduling-count-range",
+            "severity": "error",
+            "human": "El conteo de re-agendamientos está entre 0 y 1: un solo re-agendamiento por derivación.",
+            "expression": "$this >= 0 and $this <= 1",
+            "source": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rescheduling-count"
+          }
+        ]
+      }
+    ]
+  }
+}

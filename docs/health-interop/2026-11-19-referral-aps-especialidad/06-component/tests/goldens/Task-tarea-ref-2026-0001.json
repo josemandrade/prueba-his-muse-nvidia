@@ -1,0 +1,53 @@
+{
+  "resourceType": "Task",
+  "id": "tarea-ref-2026-0001",
+  "meta": {
+    "profile": [
+      "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-tarea"
+    ]
+  },
+  "intent": "order",
+  "extension": [
+    {
+      "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-acceptance-deadline",
+      "valueDateTime": "2026-11-26T17:00:00-03:00"
+    }
+  ],
+  "identifier": [
+    {
+      "system": "http://aps.losaromos.example.org/referral",
+      "value": "REF-2026-0001"
+    }
+  ],
+  "status": "requested",
+  "businessStatus": {
+    "coding": [
+      {
+        "code": "requested",
+        "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia",
+        "display": "Requested"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "referral-workflow",
+        "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-task-code",
+        "display": "Referral workflow"
+      }
+    ]
+  },
+  "focus": {
+    "reference": "ServiceRequest/ref-2026-0001"
+  },
+  "for": {
+    "reference": "Patient/maria-gonzalez"
+  },
+  "authoredOn": "2026-11-19T09:30:00-03:00",
+  "lastModified": "2026-11-19T09:30:00-03:00",
+  "requester": {
+    "reference": "PractitionerRole/rol-medico-aps"
+  },
+  "description": "acceptance decision"
+}

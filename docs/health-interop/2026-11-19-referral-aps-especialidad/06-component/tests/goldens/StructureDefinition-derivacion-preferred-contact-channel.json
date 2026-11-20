@@ -1,0 +1,55 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "derivacion-preferred-contact-channel",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-preferred-contact-channel",
+  "name": "DerivacionPreferredContactChannel",
+  "title": "Canal de contacto preferido",
+  "status": "draft",
+  "description": "Canal preferido del paciente para las notificaciones: phone | in-person | system-message (ValueSet DerivacionCanal).",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Patient"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Canal de contacto preferido",
+        "definition": "Canal preferido del paciente para las notificaciones: phone | in-person | system-message (ValueSet DerivacionCanal)."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-preferred-contact-channel"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-canal"
+        }
+      }
+    ]
+  }
+}

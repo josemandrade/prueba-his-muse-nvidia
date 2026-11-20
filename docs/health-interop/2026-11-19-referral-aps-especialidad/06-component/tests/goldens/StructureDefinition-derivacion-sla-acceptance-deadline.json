@@ -1,0 +1,51 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "derivacion-sla-acceptance-deadline",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-acceptance-deadline",
+  "name": "DerivacionSlaAcceptanceDeadline",
+  "title": "Plazo de aceptación",
+  "status": "draft",
+  "description": "Fecha límite para la decisión de aceptación/rechazo: creación + 5 días hábiles (2 si es urgente).",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Task"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Plazo de aceptación",
+        "definition": "Fecha límite para la decisión de aceptación/rechazo: creación + 5 días hábiles (2 si es urgente)."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-acceptance-deadline"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      }
+    ]
+  }
+}

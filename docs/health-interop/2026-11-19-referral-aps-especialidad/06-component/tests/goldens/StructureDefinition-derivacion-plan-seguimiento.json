@@ -1,0 +1,100 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "derivacion-plan-seguimiento",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-plan-seguimiento",
+  "name": "DerivacionPlanSeguimiento",
+  "title": "Plan de seguimiento para APS",
+  "status": "draft",
+  "description": "El plan de seguimiento que el especialista deja a APS. Perfil propio de esta guía, sobre el recurso base CarePlan de FHIR R4. Una actualización del plan es una versión nueva, nunca una sobrescritura silenciosa.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "CarePlan",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/CarePlan",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "CarePlan.replaces",
+        "path": "CarePlan.replaces",
+        "short": "La versión anterior de este plan, en una actualización"
+      },
+      {
+        "id": "CarePlan.status",
+        "path": "CarePlan.status",
+        "fixedCode": "active"
+      },
+      {
+        "id": "CarePlan.intent",
+        "path": "CarePlan.intent",
+        "fixedCode": "plan"
+      },
+      {
+        "id": "CarePlan.subject",
+        "path": "CarePlan.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-paciente"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CarePlan.encounter",
+        "path": "CarePlan.encounter",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-encuentro"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CarePlan.author",
+        "path": "CarePlan.author",
+        "short": "El especialista, en su rol",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rol"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CarePlan.addresses",
+        "path": "CarePlan.addresses",
+        "short": "El diagnóstico al que responde este plan",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-diagnostico"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CarePlan.activity.reference",
+        "path": "CarePlan.activity.reference",
+        "short": "La solicitud de seguimiento / la cita de control / la tarea (reference O detail, nunca ambos)",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/ServiceRequest",
+              "http://hl7.org/fhir/StructureDefinition/Appointment",
+              "http://hl7.org/fhir/StructureDefinition/Task"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

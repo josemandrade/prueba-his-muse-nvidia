@@ -1,0 +1,56 @@
+{
+  "resourceType": "DocumentReference",
+  "id": "documento-ref-2026-0001",
+  "meta": {
+    "profile": [
+      "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-documento"
+    ]
+  },
+  "status": "current",
+  "type": {
+    "coding": [
+      {
+        "code": "11488-4",
+        "system": "http://loinc.org",
+        "display": "Consult note"
+      }
+    ]
+  },
+  "content": [
+    {
+      "attachment": {
+        "contentType": "application/fhir+json",
+        "url": "Composition/contrareferencia-ref-2026-0001"
+      }
+    }
+  ],
+  "masterIdentifier": {
+    "system": "http://especialidad.example.org/counter-referral",
+    "value": "CR-2026-0001"
+  },
+  "subject": {
+    "reference": "Patient/maria-gonzalez"
+  },
+  "author": [
+    {
+      "reference": "PractitionerRole/rol-especialista"
+    }
+  ],
+  "date": "2026-12-03T10:00:00-03:00",
+  "context": {
+    "encounter": [
+      {
+        "reference": "Encounter/encuentro-ref-2026-0001"
+      }
+    ],
+    "related": [
+      {
+        "reference": "ServiceRequest/ref-2026-0001"
+      }
+    ],
+    "period": {
+      "start": "2026-12-02T10:00:00-03:00",
+      "end": "2026-12-02T10:30:00-03:00"
+    }
+  }
+}

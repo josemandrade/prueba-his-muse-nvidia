@@ -1,0 +1,76 @@
+{
+  "resourceType": "ServiceRequest",
+  "id": "ref-2026-0001",
+  "meta": {
+    "profile": [
+      "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-solicitud"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://aps.losaromos.example.org/referral",
+      "value": "REF-2026-0001"
+    }
+  ],
+  "status": "revoked",
+  "intent": "order",
+  "code": {
+    "coding": [
+      {
+        "code": "cardiologia",
+        "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad",
+        "display": "Cardiology"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/maria-gonzalez"
+  },
+  "authoredOn": "2026-11-19T09:30:00-03:00",
+  "requester": {
+    "reference": "PractitionerRole/rol-medico-aps"
+  },
+  "performerType": {
+    "coding": [
+      {
+        "code": "cardiologia",
+        "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad",
+        "display": "Cardiology"
+      }
+    ]
+  },
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "code": "84114007",
+          "system": "http://snomed.info/sct",
+          "display": "Heart failure (disorder)"
+        }
+      ],
+      "text": "Suspected heart failure: exertional dyspnoea, ankle oedema"
+    }
+  ],
+  "priority": "routine",
+  "encounter": {
+    "reference": "Encounter/aps-encounter-2026-11-19"
+  },
+  "performer": [
+    {
+      "reference": "HealthcareService/servicio-cardiologia"
+    }
+  ],
+  "supportingInfo": [
+    {
+      "reference": "Observation/ecg-2026-11-19"
+    },
+    {
+      "reference": "Observation/ntprobnp-2026-11-19"
+    }
+  ],
+  "note": [
+    {
+      "text": "Disnea de esfuerzo y edema de tobillos de dos semanas de evolución."
+    }
+  ]
+}

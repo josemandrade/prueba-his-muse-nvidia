@@ -1,0 +1,16 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "DerivacionEstadoReferencia",
+  "id": "derivacion-estado-referencia",
+  "title": "Estado de la derivación",
+  "description": "Estados posibles de una derivación APS → especialidad.",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-estado-referencia",
+  "compose": {
+    "include": [
+      {
+        "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia"
+      }
+    ]
+  }
+}

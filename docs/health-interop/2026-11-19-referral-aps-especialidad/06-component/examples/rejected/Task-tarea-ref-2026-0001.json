@@ -1,0 +1,64 @@
+{
+  "resourceType": "Task",
+  "id": "tarea-ref-2026-0001",
+  "meta": {
+    "profile": [
+      "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-tarea"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://aps.losaromos.example.org/referral",
+      "value": "REF-2026-0001"
+    }
+  ],
+  "status": "rejected",
+  "businessStatus": {
+    "coding": [
+      {
+        "code": "rejected",
+        "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia",
+        "display": "Rejected"
+      }
+    ]
+  },
+  "intent": "order",
+  "code": {
+    "coding": [
+      {
+        "code": "referral-workflow",
+        "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-task-code",
+        "display": "Referral workflow"
+      }
+    ]
+  },
+  "focus": {
+    "reference": "ServiceRequest/ref-2026-0001"
+  },
+  "for": {
+    "reference": "Patient/maria-gonzalez"
+  },
+  "authoredOn": "2026-11-23T09:00:00-03:00",
+  "lastModified": "2026-11-23T09:00:00-03:00",
+  "requester": {
+    "reference": "PractitionerRole/rol-medico-aps"
+  },
+  "description": "retriage decision",
+  "statusReason": {
+    "coding": [
+      {
+        "code": "capacity",
+        "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-motivo-rechazo",
+        "display": "Capacity"
+      }
+    ]
+  },
+  "relevantHistory": [
+    {
+      "reference": "Provenance/provenance-ref-2026-0001-2"
+    },
+    {
+      "reference": "Provenance/provenance-ref-2026-0001-3"
+    }
+  ]
+}

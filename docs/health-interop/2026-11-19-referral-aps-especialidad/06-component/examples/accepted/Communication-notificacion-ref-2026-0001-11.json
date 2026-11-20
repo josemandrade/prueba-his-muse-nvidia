@@ -1,0 +1,71 @@
+{
+  "resourceType": "Communication",
+  "id": "notificacion-ref-2026-0001-11",
+  "meta": {
+    "profile": [
+      "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-notificacion"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://aps.losaromos.example.org/notification",
+      "value": "NOTIF-2026-0001-06"
+    }
+  ],
+  "status": "completed",
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "notification",
+          "system": "http://terminology.hl7.org/CodeSystem/communication-category",
+          "display": "Notification"
+        }
+      ]
+    }
+  ],
+  "subject": {
+    "reference": "Patient/maria-gonzalez"
+  },
+  "basedOn": [
+    {
+      "reference": "Task/tarea-ref-2026-0001"
+    }
+  ],
+  "topic": {
+    "text": "counter-referral-receipt"
+  },
+  "sender": {
+    "reference": "PractitionerRole/rol-admin-aps"
+  },
+  "recipient": [
+    {
+      "reference": "PractitionerRole/rol-operador-hub"
+    }
+  ],
+  "sent": "2026-12-03T11:00:00-03:00",
+  "medium": [
+    {
+      "coding": [
+        {
+          "code": "system-message",
+          "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-canal",
+          "display": "System message"
+        }
+      ]
+    }
+  ],
+  "payload": [
+    {
+      "contentReference": {
+        "reference": "DocumentReference/documento-ref-2026-0001"
+      }
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-delivery-outcome",
+      "valueCode": "delivered"
+    }
+  ]
+}

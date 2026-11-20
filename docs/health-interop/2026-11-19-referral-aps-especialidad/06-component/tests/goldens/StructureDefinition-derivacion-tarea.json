@@ -1,0 +1,259 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "derivacion-tarea",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-tarea",
+  "name": "DerivacionTarea",
+  "title": "Tarea de derivación (registro de estado)",
+  "status": "draft",
+  "description": "El registro de estado del flujo de trabajo de una derivación: lleva el estado del caso, los relojes SLA y los conteos de los ciclos. Es el centro del grafo de recursos y lo primero que lee cada paso posterior. Perfil propio de esta guía, sobre el recurso base Task de FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Task",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Task",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Task.extension",
+        "path": "Task.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Task.extension:slaAcceptanceDeadline",
+        "path": "Task.extension",
+        "sliceName": "slaAcceptanceDeadline",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-acceptance-deadline"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Task.extension:slaOfferDeadline",
+        "path": "Task.extension",
+        "sliceName": "slaOfferDeadline",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-offer-deadline"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Task.extension:slaCounterreferralDeadline",
+        "path": "Task.extension",
+        "sliceName": "slaCounterreferralDeadline",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-counterreferral-deadline"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Task.extension:slaRetriageDeadline",
+        "path": "Task.extension",
+        "sliceName": "slaRetriageDeadline",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-retriage-deadline"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Task.extension:slaConfirmationDeadline",
+        "path": "Task.extension",
+        "sliceName": "slaConfirmationDeadline",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-confirmation-deadline"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Task.extension:offerDeclineCount",
+        "path": "Task.extension",
+        "sliceName": "offerDeclineCount",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-offer-decline-count"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Task.extension:offerChaseCount",
+        "path": "Task.extension",
+        "sliceName": "offerChaseCount",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-offer-chase-count"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Task.extension:reschedulingCount",
+        "path": "Task.extension",
+        "sliceName": "reschedulingCount",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rescheduling-count"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Task.identifier",
+        "path": "Task.identifier",
+        "short": "El mismo valor que ServiceRequest.identifier: la clave de unión entre solicitud y registro",
+        "min": 1
+      },
+      {
+        "id": "Task.status",
+        "path": "Task.status",
+        "short": "El valor grueso de R4; el estado del caso vive en businessStatus"
+      },
+      {
+        "id": "Task.statusReason",
+        "path": "Task.statusReason",
+        "short": "Motivo de rechazo o de cancelación (incl. 'patient deceased')",
+        "binding": {
+          "strength": "example",
+          "valueSet": "https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-motivo-rechazo"
+        }
+      },
+      {
+        "id": "Task.businessStatus",
+        "path": "Task.businessStatus",
+        "short": "El estado del caso, textual (los nueve estados de DerivacionEstadoReferencia)",
+        "min": 1,
+        "binding": {
+          "strength": "example",
+          "valueSet": "https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-estado-referencia"
+        }
+      },
+      {
+        "id": "Task.intent",
+        "path": "Task.intent",
+        "fixedCode": "order"
+      },
+      {
+        "id": "Task.code",
+        "path": "Task.code",
+        "short": "referral-workflow: este Task es siempre un registro de flujo de trabajo de derivación",
+        "binding": {
+          "strength": "example",
+          "valueSet": "https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-task-code"
+        }
+      },
+      {
+        "id": "Task.description",
+        "path": "Task.description",
+        "short": "El próximo paso esperado (p. ej. 'acceptance decision', 'appointment offer')"
+      },
+      {
+        "id": "Task.focus",
+        "path": "Task.focus",
+        "short": "La solicitud sobre la que trabaja este Task",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-solicitud"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Task.for",
+        "path": "Task.for",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-paciente"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Task.requester",
+        "path": "Task.requester",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rol"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Task.owner",
+        "path": "Task.owner",
+        "short": "El servicio que acepta (es el responsable del trabajo); el profesional que acepta se registra como agente de Provenance en la entrada de aceptación del historial",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-servicio"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Task.relevantHistory",
+        "path": "Task.relevantHistory",
+        "short": "Historial de estados (solo añadir; nunca se edita un estado)"
+      }
+    ]
+  }
+}

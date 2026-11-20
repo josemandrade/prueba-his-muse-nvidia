@@ -1,0 +1,12 @@
+{
+  "resourceType": "Organization",
+  "id": "org-cesfam-los-aromos",
+  "identifier": [
+    {
+      "system": "http://aps.losaromos.example.org/organization",
+      "value": "CESFAM-LOS-AROMOS"
+    }
+  ],
+  "name": "CESFAM Los Aromos",
+  "active": true
+}

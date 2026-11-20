@@ -349,3 +349,382 @@
   labels overlapped and hid each other.
 - Consequences: the reader must not quote the diagram label as the SLA;
   the spec is authoritative.
+
+## 2026-11-19 — Step 2 expert-review fixes C1–C14 (review NOT APPROVED)
+
+- Context: the independent expert review of the step 2 draft returned
+  NOT APPROVED — 6 medium (C1–C6) + 8 low (C7–C14). All fixes follow
+  the already-validated spec; no new user decisions.
+- Decisions:
+  - C1: add m12 (rejection notice to the patient, APS admin →
+    patient) and name the doctor notification on the acceptance path
+    ("Receive acceptance; inform patient and APS doctor").
+  - C2: escalation tasks rename to name the APS notification; h19/h20
+    carry the delay escalation to a new APS admin task ("Receive delay
+    escalation; notify APS doctor").
+  - C3: the re-scheduled offer routes back to `Offer appointment`, so
+    it goes through the same confirm/chase loop (counts reset per
+    offer); the patient's agreement to the new date IS the confirmation
+    of the re-scheduled offer in that loop.
+  - C4: scheduling-failure returns land on the Part A re-triage entry
+    (end events renamed "— Part A outcomes apply"); same three
+    outcomes and the same rejected closure once APS decides.
+  - C5: patient death is a cancellation cause handled by the generic
+    cancellation row (reason "patient deceased", hub notifies APS +
+    specialty) — recorded in the model doc.
+  - C6: duration labels on the timeout branches ("5 working days (2 if
+    urgent)", "3 working days"); one acceptance wait covers both
+    durations because the timer is data-driven on the referral
+    priority, which travels in the minimum data set.
+  - C7: "Re-scheduling succeeds?" renamed "First re-scheduling?" (the
+    second no-show → `no-show` terminal is now visible).
+  - C8: h6/h7 landing on the decision gateways is a RECORDED deviation
+    (the gateway's decision is the message receipt; a catch event per
+    decision would duplicate the gateway).
+  - C9: cancellation start events name the requester (APS / patient /
+    specialty); the non-termination caveat is recorded in the model
+    doc (the hub's record is the authority).
+  - C10: SUPERSEDES the "SLA label shorthand" decision above — full
+    "working days" wording everywhere on the diagrams (the shorthand
+    was needed only before the renderer fixes; labels no longer
+    overlap).
+  - C11: Part C return aligned to spec §3.7 (current state, last state
+    change, next expected step) in task, message and return-task
+    labels.
+  - C12: end event renamed "New referral to different specialty; first
+    closed as rejected".
+  - C13: renderer fixes (opaque label backing, own-shape nudge guard,
+    extended nudges, canvas expansion) + geometry nudges (g14 loop
+    rerouted to y=860, g21 label shortened to one line); all three
+    PNGs re-rendered and re-looked.
+  - C14: ITI-118 is "Search Patient Appointments"; MHD gains ITI-106
+    Generate Metadata; 360X "Rev. 1.2" confirmed from the supplement
+    PDF itself (2021-04-14).
+- Consequences: Part A 52 shapes / 43 flows, Part B 65 / 59, Part C
+  16 / 11; mechanical check 0/0 on all three parts after the fixes;
+  awaiting the parent's focused re-check and step 2 validation.
+
+## 2026-11-19 — Step 3 file name is 03-entities-data.md
+
+- Context: the step 3 brief named the artefact `03-entities.md`,
+  but `references/work-structure.md` and the `entities-data` skill
+  both fix the name as `03-entities-data.md`, and the case README
+  status table already listed `03-entities-data.md` as the pending
+  step 3 artefact.
+- Decision: write the step 3 artefact as `03-entities-data.md` (the
+  canonical name); no file named `03-entities.md` exists in the case
+  folder.
+- Alternatives considered: following the brief's name literally —
+  rejected, it would contradict the pack's fixed layout and the
+  case's own README.
+- Consequences: step 4 references `03-entities-data.md`.
+
+## 2026-11-19 — Step 3 expert-review fixes C1–C10 (review NOT APPROVED)
+
+- Context: the independent expert review of the step 3 draft returned
+  NOT APPROVED — 5 medium (C1–C5) + 5 low (C6–C10). All fixes follow
+  the already-validated spec and BPMN; no new user decisions.
+- Decisions:
+  - C1: add the hub operator as a sixth Practitioner role
+    (organisation: referral hub). Hub transitions (routing,
+    escalation, cancellation recording, status-query answering) are
+    recorded in the §3 state history with actor "hub operator" —
+    hub actions are human-operated, not system-automated.
+  - C2: each offer is a NEW Appointment. The `re-offered` state is
+    dropped from the §5 lifecycle; a declined offer's appointment
+    goes to `cancelled` and the re-offer carries a new appointment
+    identifier. "Offer number" stays a per-referral counter.
+  - C3: no Encounter is created when the patient does not attend —
+    the no-show lives on the Appointment only (§5). The §6
+    lifecycle is rewritten as branches (`scheduled` →
+    `in-progress` → `finished`); the Attendance field is dropped
+    (attendance is recorded once, on the Appointment).
+  - C4: the re-triage deadline derives from the re-triage trigger
+    (rejection, or the scheduling-failure return). During a
+    scheduling-failure re-triage the referral is in state
+    `rejected` (moved there at the return, into the shared
+    re-triage entry); the deadline runs 5 working days from the
+    return.
+  - C5: widen the §11 notification definition to "the patient, APS,
+    or the specialty"; add specialist to senders and specialty to
+    recipients (escalations h19/h20 target the specialty; the
+    specialist originates "Notify APS of no-show").
+  - C6: supersession corrects recorded data (e.g. the accepting
+    practitioner); a reversal of the decision itself goes through
+    cancellation (§13).
+  - C7: drop the "identity pending" and "routing pending" hold
+    rules. Identity is resolved via the MPI before creation (BPMN
+    Part A), so no referral arrives unresolvable; the MPI-merge
+    case is already covered by §10. The requested service comes
+    from the local catalogue at creation, so an unlisted service
+    is a creation-time validation failure, not a hub hold.
+  - C8: drop the "Requested date (if any)" field from §2 — it is
+    outside the PI-0 minimum data set (spec §3.7); no spec change
+    recorded.
+  - C9: the §13 dedup key (referral identifier + cancellation
+    identifier) covers duplicate deliveries of the same
+    cancellation request; a post-re-open cancellation is a new
+    entry with a new cancellation identifier.
+  - C10: the §7 lifecycle ends in the named state `received` (APS
+    acknowledged receipt); "terminal" is no longer used as a state
+    name there.
+- Consequences: §8 has six roles; §5 has no `re-offered` state; §6
+  has no encounter on a no-show and no Attendance field; §3 derives
+  the re-triage deadline from the trigger; §11 covers the specialty
+  as sender and recipient; §2 has no requested-date field; §13
+  dedup is per cancellation identifier; §7 ends in `received`. The
+  step 4 handoff notes the reviewer-verified R4 status-value facts
+  (`Encounter.status` has no `scheduled`; `Appointment.status` has
+  no `offered` / `confirmed` / `re-offered` / `attended`).
+
+## Noted spec widening (not applied — spec is validated)
+
+- N3 (2026-11-19, from the step 3 re-check): spec §3.8 names only
+  the rejection trigger ("Re-triage decision after a rejection:
+  5 working days from the rejection") while `03-entities-data.md`
+  §3 derives the second trigger (scheduling-failure return) from
+  the validated BPMN. The spec is NOT edited here (validated).
+  Proposed wording for the next spec touch: "Re-triage decision
+  after a rejection or a scheduling-failure return: **5 working
+  days** from the rejection or the return;".
+
+## Step 4 design decisions (2026-11-19, draft — not validated)
+
+- **Centre resource is `Task` (`DerivacionTarea`)**, not the
+  ServiceRequest: the case's question at every step is "where does
+  the referral stand?", and the answer lives in the workflow
+  record (state, SLA clocks, loop counts). The ServiceRequest is
+  the request the work is about (`Task.focus`).
+- **Referral travels as resources, counter-referral as a document.**
+  The referral is a workflow exchange (`ServiceRequest` + `Task` in
+  a transaction Bundle); the counter-referral is a clinical
+  document (`Composition` first entry of a document Bundle,
+  indexed by a `DocumentReference`) that APS acknowledges receipt
+  of, so MHD can carry it.
+- **No `Consent` resource** (Q7 — care relationship covers
+  sharing); BPPC/PCF set aside. No consent artifact travels.
+- **Counts are state on the Task** (decline/chase/re-scheduling
+  counts as extensions), exposed by the status operation (OP-7)
+  and the offer operations (OP-3/OP-4).
+- **Own profiles `Derivacion*`** on the FHIR R4 base resources
+  (canonical URLs in the proposal table); the user may choose a
+  different base per profile (e.g. `CorePacienteCl` for Patient —
+  offered as an association, not assumed).
+- **Local extension namespace is `http://derivacion.example.org/fhir/StructureDefinition/`**
+  in the step 4 draft; it is a placeholder to be fixed to the real
+  guide canonical in step 5 (the proposal says so).
+- **Graph geometry**: 12 nodes, 4 cols × 3 rows, Task centre;
+  verified mechanically — 0 edges through a node interior,
+  exactly 2 right-angle crossings ((1090,495) and (1090,520)).
+  The first draft had 2 routing defects found by the mechanical
+  check (the `for` edge through HealthcareService, the
+  Composition→Encounter edge through Condition) — both fixed by
+  re-routing, not by hand-waving. The proposal text was corrected
+  to the real crossing count (2, not the 3 first written).
+- **IHE fit summary**: full 3 (PIXm ITI-83, PDQm ITI-78, mCSD
+  ITI-90 — each for a sub-step, if implemented exactly); partial 8
+  (360X PCC-55/56/57/58/60/61 as pattern, XBeR-WD/XDW as pattern,
+  Scheduling ITI-115/116/117/118 for the booking half, MHD ITI-65
+  for the PI-3 document leg, DSUBm ITI-110 for document
+  availability); none 1 (PI-4 status query — explicit "none
+  applies"). No point is carried end-to-end by an IHE profile.
+- **Sequence diagrams belong to step 5, not step 4** (parent brief
+  overrides the fhir-modeling skill default here). Step 4 proposes
+  the 12 operations (OP-1…OP-12) so step 5 can build them.
+- **360X supplement read live** (Rev. 1.2 TI 2021-04-14):
+  PCC-55 Referral Request, PCC-56 Referral Decline, PCC-57
+  Referral Outcome, PCC-58 Referral Cancellation, PCC-59 Interim
+  Consultation Note, PCC-60 Appointment Notification, PCC-61
+  No-show Notification; scope test passes (patient returns to the
+  referring provider for continued care, §X.4.1). 360X is
+  document-based (CDA over XDM/XDR/MHD) and Trial Implementation —
+  pattern only, never the mechanism.
+
+## 2026-11-19 — Step 5 decisions (guide canonical + R4 corrections found by SUSHI)
+
+- **Guide canonical (closes the step 4 open item):** the guide canonical
+  is `https://josemandrade.github.io/prueba-his-muse-nvidia/` (the test
+  repo's GitHub Pages root, where the CI workflow deploys the guide —
+  same pattern as the DAU case). It replaces the step 4 placeholder
+  `http://derivacion.example.org/fhir/` everywhere in the guide. Caveat
+  recorded in `05-implementation-guide/plan.md`: the test repo holds a
+  second case (school vision screening); if that case publishes its own
+  guide, it will need its own deployment path decision — this canonical
+  is the site root, which today this guide occupies. The `example.org`
+  domains that remain are identifier systems in synthetic examples
+  (MPI, RUN, APS referral id), not the guide canonical.
+- **No `controlled-medications.md` page:** the case has no medications,
+  so the controlled-substances page does not apply (recorded in plan.md,
+  Plan task 10.22).
+- **R4 correction 1 — `Communication.topic`:** the mapping table §11
+  maps the triggering state change to `Communication.topic` → Task.
+  In R4 `Communication.topic` is a CodeableConcept 0..1, not a
+  reference (SUSHI error, fixed 2026-11-19). The guide keeps `topic`
+  as the coded transition name (e.g. "accepted"); the Task link is
+  `basedOn` (already the join key) and the human-readable notice is
+  `payload.contentString`. The mapping table §11 is wrong on this row
+  and should be corrected at the next touch of the mapping table.
+- **R4 correction 2 — `Task.owner`:** the mapping table §3/§4 maps
+  both the accepting service and the accepting practitioner to
+  `Task.owner` (0..*). In R4 `Task.owner` is 0..1 (SUSHI error, fixed
+  2026-11-19). The guide sets `owner` 0..1 → the accepting service
+  (`DerivacionServicio`, the party responsible for the work); the
+  accepting practitioner is recorded as the Provenance agent of the
+  accept transition in the §3 history (which already requires who/when/
+  from/to/reason per transition). The mapping table §3/§4 is wrong on
+  this cardinality and should be corrected at the next touch.
+- **ValueSet rename:** the ValueSet `DerivacionRol` collided by name
+  with the profile `DerivacionRol` (SUSHI duplicate-name warning).
+  Renamed to `DerivacionRolVS` (id `derivacion-rol` unchanged); the
+  profile keeps the proposal's name `DerivacionRol`.
+- **R4 correction 3 — `CarePlan.activity.detail`:** SUSHI error in
+  the counter-referral example (Plan task 10.16): in R4
+  `CarePlan.activity.detail` is a BackboneElement and its narrative
+  text is `detail.description`, not `detail.text` (with
+  `detail.status` 1..1 when detail exists). Fixed in examples.fsh.
+- **Sequence diagrams live in the guide, not in a `04-sequence-diagrams.md`:**
+  unlike the DAU case, this case has no `04-sequence-diagrams.md` file —
+  the per-diagram message → operation → IHE → expected-result tables
+  live in the guide page `05-implementation-guide/input/pagecontent/
+  sequences.md`. The SVG sources live in the case folder
+  (`04-sequence-<flow>.svg`); copies go to `input/images/` for the
+  published guide (same as the BPMN SVGs and the resource-graph SVG).
+- **Sequence renderer tab fix (2026-11-19):** the cancellation `opt`
+  tab ("opt [si hay cita reservada]") was half-covered by the hub
+  activation bar — tabs were drawn before activation bars. Fixed in
+  `render_sequence.py`: fragment tabs are drawn AFTER the activation
+  bars; lesson recorded in the generator docstring. Also shortened
+  the result-return label `POST /Bundle (document: Composition +
+  DocumentReference + Condition + CarePlan)` to `POST /Bundle
+  (document)` (too wide, crossed two columns); the detail lives in
+  the `sequences.md` operation table.
+- **Image widths in the guide:** sequence diagrams display at SVG-native
+  width (the PNG is 2×, stays crisp); BPMN parts and the resource graph
+  display at PNG-native width; all inside a horizontal-scroll container.
+- **CI workflow test caveat:** `.github/workflows/ig-build.yml` is
+  written but untested — its test steps (a green push, a broken-FSH
+  push that must fail without deploying) require a push and are for
+  the parent. Java is not available in this environment, so the IG
+  Publisher / FHIR validator do not run locally; full validation runs
+  in CI.
+- **Transient SUSHI warning (not meaning-changing):** "Failed to load
+  automatically-provided hl7.terminology.r4#latest" appeared once in
+  the Plan task 10.16 run (network/cache, varies run to run) and did
+  not appear in the final run. Recorded in the validation report.
+
+## 2026-11-19 — Step 5 expert-review fixes C1–C9 (review NOT APPROVED)
+
+- **C1 — Composition section slicing:** discriminator changed from
+  `code` to `title` — the slices are distinguished by title (each
+  section's title is fixed: "Diagnosis", "Plan", "Follow-up
+  indications", "Follow-up plan for APS") and the example sets each
+  title, so a validator slicing on `title` can assign every section.
+  Pinning a code per section was not chosen: the sections carry
+  `code.text` only, no coding.
+- **C2 — Task.owner on acceptance:** `owner` is the accepting
+  service only (`DerivacionServicio`); the accepting practitioner
+  goes as the Provenance agent of the accept transition. Fixed in
+  `operations.md` (OP-2) and `sequences.md` (diagram 2, row 1).
+- **C3 — ValueSet name:** `DerivacionRol` → `DerivacionRolVS` in
+  `profiles.md` (the rename itself was a SUSHI duplicate-name fix;
+  id `derivacion-rol` unchanged).
+- **C4 — Decline-at-creation reference:** C8, not Q7 (Q7 is the
+  consent decision).
+- **C5 — SUSHI result honesty:** the final run is recorded as it
+  ran (0 errors / 0 warnings this run); the transient package-load
+  warning varies run to run (reviewer's re-run: 0/1) — 0 errors
+  always. The `example.org` sweep now also names the synthetic
+  Endpoint address `https://especialidad.example.org/fhir`.
+- **C6 — Extension value constraints:** two new local ValueSets
+  (`DerivacionResultadoEntrega`: delivered | failed;
+  `DerivacionBaseCruce`: identifier | demographics) bound required
+  to the two code extensions; range invariants on the integer /
+  decimal extensions (decline/chase 0–2, re-scheduling 0–1,
+  match confidence 0–1). Guide now has 8 ValueSets / 8 CodeSystems.
+- **C7 — Contrareferencia status short:** the profile is the sent
+  document; a draft is a Composition without this profile.
+- **C8 — Sequence separator pill:** the `alt` guard pill is now
+  inset 16 from the fragment border (was ~7, sat on the border);
+  the centre is computed with the same width the pill is drawn
+  with (size 12.5). Lesson in the `render_sequence.py` comment.
+- **C9 — G6 mitigation:** the FHIR validator runs in CI
+  (`ig-build.yml`) — not yet executed; no local validator run
+  exists (no Java here).
+
+## Step 6 — component (2026-11-19, draft complete, Plan tasks 11.1–11.13)
+
+Rulings del componente (detalle en `06-component/../state.md` y
+`06-component/README.md`):
+
+- **Retorno por fallo de agendamiento** (`accepted → rejected`):
+  lo exige el paso 3 validado (C4) aunque la tabla del paso 4 no lo
+  liste. Transición guardada, solo por OP-4 (segundo rechazo) o R3
+  (sin confirmar tras la segunda persecución).
+- **Conteo de decline por ciclo de oferta**, no por Appointment: no
+  se reinicia en la re-oferta tras un rechazo (si no, el gateway
+  "First decline?" nunca vería el segundo rechazo); se reinicia solo
+  en un ciclo nuevo tras un no-show (N5). El de chase se reinicia en
+  cada oferta; el de re-agendamiento (0–1) nunca.
+- **Triggers `booked` y `chase`** añadidos a la tabla de emisores
+  nombrados: los diagramas de secuencia registran Communication en
+  la reserva (diagrama 3, fila 10) y en cada persecución (fila 5).
+  El reenvío del rechazo al agendador NO es Communication (la
+  AppointmentResponse es la señal).
+- **R3 no se marca como disparada tras una persecución**: se sigue
+  por el conteo de chase; si no, la segunda persecución y el retorno
+  nunca se evaluarían. Las escalaciones R1/R2/R4/R5 disparan una
+  sola vez por plazo.
+- **Encounter `planned` de una cita perdida** queda como está y se
+  conserva en la historia: la guía no define un `cancelled` de
+  encuentro para el no-show (mapeo §6); I4 lo admite. En el
+  re-agendamiento la reserva crea un Encounter NUEVO.
+- **El conteo de re-agendamiento mide re-agendamientos (0–1)**, no
+  no-shows: el primer no-show deja el Task en `scheduled`; el
+  re-agendamiento lo lleva a 1; el segundo no-show cierra el Task.
+- **La contrareferencia cierra el ciclo con el acuse de recibo**,
+  no con el envío (diagrama 5, fila 4; OP-6). El envío desarma R4 y
+  bloquea la cancelación. Acuse con trigger nuevo
+  `counter-referral-receipt` (aps-admin → hub).
+- **Re-apertura no restaura la cita cancelada**: el agendador debe
+  re-ofertar. La guía no dice qué pasa con la cita al re-abrir.
+- **Conteos en cero no viajan** como extensiones del Task (el
+  ejemplo de la guía no los lleva); el Slot pasa a `busy` en la
+  reserva, no en la oferta (OP-3).
+- El validador FHIR / IG Publisher NO corrió sobre los ejemplos del
+  componente (no hay Java aquí; corre en CI).
+
+## 2026-11-19 — Step 6 expert-review fixes C1–C6 (review NOT APPROVED)
+
+- **C1**: R5 no se evaluaba tras el retorno por fallo de
+  agendamiento; `retriage_return_at` ahora viaja por
+  `_evaluator_state` y `evaluate_escalations` (3 tests nuevos).
+- **C2**: la afirmación «31/31 goldens» era falsa: 20/31 instancias
+  comparadas por valor en 23 aserciones; las 11 no comparadas se
+  listan con su motivo en `validation-report.md` (externos de APS,
+  directorio referenciado por id, divergencia documentada del Slot).
+- **C3 — destinatarios de notificación**: `DerivacionNotificacion`
+  solo admite Patient y DerivacionRol como `recipient`; la
+  «especialidad» como Organization ya no es destinataria. Cada
+  escalada va al responsable de la acción pendiente (R1 → clínico
+  de triaje, R2 → agendador, R4 → especialista, cancelación →
+  agendador; rules.md: «el responsable de cada servicio responde a
+  las escaladas de su servicio»). El operador del hub es ahora un
+  PractitionerRole (`rol-operador-hub`, código `hub-operator` del
+  DerivacionRolCS — la guía define el código, pero sus ejemplos no
+  materializan el rol): el componente lo siembra en el registro
+  (Practitioner `operador-hub`, RUN sintético 44444444-4) y lo usa
+  como emisor del hub, destinatario del acuse de recibo y agente de
+  la re-apertura. `build_communication` rechaza Organization como
+  destinatario; `test_validation.py` verifica los targetProfile del
+  perfil generado por SUSHI. **Decisión para el próximo toque del
+  paso 5 (no aplicada — la guía está validada)**: añadir el
+  PractitionerRole `rol-operador-hub` (y su Practitioner) a los
+  ejemplos de la guía, para que el rol exista también en SUSHI y no
+  solo en el componente.
+- **C4**: la suscripción exportada llevaba claves internas
+  (`_active`, `notifications`); `all_resources` vuelca una copia
+  sin ellas (la contabilidad en memoria sigue igual).
+- **C5**: `decide_retriage` no dejaba Provenance; la decisión de
+  APS queda auditada (actor `aps-doctor`, `rol-medico-aps`).
+- **C6**: README decía «156 tests»; corregido a 168, con los
+  conteos por archivo de la tabla de trazabilidad actualizados.

@@ -1,0 +1,16 @@
+{
+  "referral_id": "REF-2026-0001",
+  "case_state": "rejected",
+  "task_status": "rejected",
+  "service_request_status": "revoked",
+  "counts": {
+    "decline": 0,
+    "chase": 0,
+    "rescheduling": 0
+  },
+  "appointments": [],
+  "encounters": [],
+  "notifications": 2,
+  "history": 3,
+  "invariant_violations": []
+}

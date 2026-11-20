@@ -1,0 +1,44 @@
+{
+  "resourceType": "CarePlan",
+  "id": "plan-ref-2026-0001",
+  "meta": {
+    "profile": [
+      "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-plan-seguimiento"
+    ]
+  },
+  "status": "active",
+  "intent": "plan",
+  "subject": {
+    "reference": "Patient/maria-gonzalez"
+  },
+  "encounter": {
+    "reference": "Encounter/encuentro-ref-2026-0001"
+  },
+  "author": {
+    "reference": "PractitionerRole/rol-especialista"
+  },
+  "addresses": [
+    {
+      "reference": "Condition/diagnostico-ref-2026-0001"
+    }
+  ],
+  "activity": [
+    {
+      "detail": {
+        "description": "Control en APS en 2 semanas: presión arterial, peso, síntomas.",
+        "status": "active"
+      }
+    },
+    {
+      "detail": {
+        "description": "NT-proBNP de control en 3 meses.",
+        "status": "active"
+      }
+    },
+    {
+      "reference": {
+        "reference": "ServiceRequest/ref-2026-0001"
+      }
+    }
+  ]
+}

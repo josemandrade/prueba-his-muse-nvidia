@@ -1,0 +1,27 @@
+{
+  "resourceType": "PractitionerRole",
+  "id": "rol-agendador",
+  "meta": {
+    "profile": [
+      "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rol"
+    ]
+  },
+  "practitioner": {
+    "reference": "Practitioner/especialista-cardiologia"
+  },
+  "organization": {
+    "reference": "Organization/org-cardiologia"
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "code": "specialty-scheduler",
+          "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol",
+          "display": "Specialty scheduler"
+        }
+      ]
+    }
+  ],
+  "active": true
+}

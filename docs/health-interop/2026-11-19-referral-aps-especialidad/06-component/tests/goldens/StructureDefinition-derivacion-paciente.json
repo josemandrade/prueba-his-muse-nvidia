@@ -1,0 +1,119 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "derivacion-paciente",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-paciente",
+  "name": "DerivacionPaciente",
+  "title": "Paciente de la derivación",
+  "status": "draft",
+  "description": "Persona derivada desde APS a una especialidad. Perfil propio de esta guía, sobre el recurso base Patient de FHIR R4. La clave MPI y el RUN son los identificadores que viajan; los datos de contacto son obligatorios (C12) — sin ellos la creación se bloquea.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Patient",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Patient",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Patient.extension",
+        "path": "Patient.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Patient.extension:preferredContactChannel",
+        "path": "Patient.extension",
+        "sliceName": "preferredContactChannel",
+        "short": "Canal preferido del paciente para las notificaciones",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-preferred-contact-channel"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.identifier",
+        "path": "Patient.identifier",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Patient.identifier:mpiKey",
+        "path": "Patient.identifier",
+        "sliceName": "mpiKey",
+        "short": "Clave MPI: la clave entre organizaciones",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Patient.identifier:mpiKey.system",
+        "path": "Patient.identifier.system",
+        "min": 1,
+        "patternUri": "http://mpi.red.example.org"
+      },
+      {
+        "id": "Patient.identifier:mpiKey.value",
+        "path": "Patient.identifier.value",
+        "min": 1
+      },
+      {
+        "id": "Patient.identifier:run",
+        "path": "Patient.identifier",
+        "sliceName": "run",
+        "short": "RUN (sintético en los ejemplos: 11.111.111-1)",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Patient.identifier:run.system",
+        "path": "Patient.identifier.system",
+        "min": 1,
+        "patternUri": "http://www.registrocivil.cl/run"
+      },
+      {
+        "id": "Patient.identifier:run.value",
+        "path": "Patient.identifier.value",
+        "min": 1
+      },
+      {
+        "id": "Patient.name",
+        "path": "Patient.name",
+        "short": "Nombre y apellidos (use = official)",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Patient.telecom",
+        "path": "Patient.telecom",
+        "short": "Datos de contacto (teléfono, correo). Obligatorios (C12).",
+        "min": 1
+      },
+      {
+        "id": "Patient.birthDate",
+        "path": "Patient.birthDate",
+        "min": 1
+      }
+    ]
+  }
+}

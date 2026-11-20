@@ -1,0 +1,60 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "derivacion-offer-chase-count",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-offer-chase-count",
+  "name": "DerivacionOfferChaseCount",
+  "title": "Conteo de persecuciones de esta oferta",
+  "status": "draft",
+  "description": "Número de veces que el agendador ha perseguido una oferta sin confirmar (0–2). Se reinicia por oferta (N5).",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Task"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Conteo de persecuciones de esta oferta",
+        "definition": "Número de veces que el agendador ha perseguido una oferta sin confirmar (0–2). Se reinicia por oferta (N5)."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-offer-chase-count"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "derivacion-chase-count-range",
+            "severity": "error",
+            "human": "El conteo de persecuciones de esta oferta está entre 0 y 2.",
+            "expression": "$this >= 0 and $this <= 2",
+            "source": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-offer-chase-count"
+          }
+        ]
+      }
+    ]
+  }
+}

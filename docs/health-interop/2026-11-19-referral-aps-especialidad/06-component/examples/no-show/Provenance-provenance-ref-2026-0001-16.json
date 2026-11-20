@@ -1,0 +1,31 @@
+{
+  "resourceType": "Provenance",
+  "id": "provenance-ref-2026-0001-16",
+  "target": [
+    {
+      "reference": "Task/tarea-ref-2026-0001"
+    }
+  ],
+  "recorded": "2026-12-09T10:15:00-03:00",
+  "agent": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "specialist",
+            "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol",
+            "display": "Specialist"
+          }
+        ]
+      },
+      "who": {
+        "reference": "PractitionerRole/rol-especialista"
+      }
+    }
+  ],
+  "activity": {
+    "system": "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
+    "code": "UPDATE",
+    "display": "revise"
+  }
+}

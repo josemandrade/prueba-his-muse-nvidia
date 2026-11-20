@@ -1,0 +1,26 @@
+{
+  "referral_id": "REF-2026-0001",
+  "case_state": "counter-referred",
+  "task_status": "completed",
+  "service_request_status": "completed",
+  "counts": {
+    "decline": 0,
+    "chase": 0,
+    "rescheduling": 0
+  },
+  "appointments": [
+    {
+      "id": "cita-ref-2026-0001",
+      "status": "fulfilled"
+    }
+  ],
+  "encounters": [
+    {
+      "id": "encuentro-ref-2026-0001",
+      "status": "finished"
+    }
+  ],
+  "notifications": 7,
+  "history": 5,
+  "invariant_violations": []
+}

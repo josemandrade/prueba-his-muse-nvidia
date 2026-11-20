@@ -1,0 +1,14 @@
+{
+  "resourceType": "Schedule",
+  "id": "schedule-cardiologia",
+  "actor": [
+    {
+      "reference": "HealthcareService/servicio-cardiologia"
+    }
+  ],
+  "planningHorizon": {
+    "start": "2026-12-01T08:00:00-03:00",
+    "end": "2026-12-31T17:00:00-03:00"
+  },
+  "comment": "Agenda de la consulta de cardiología."
+}

@@ -1,0 +1,34 @@
+{
+  "referral_id": "REF-2026-0001",
+  "case_state": "no-show",
+  "task_status": "failed",
+  "service_request_status": "revoked",
+  "counts": {
+    "decline": 0,
+    "chase": 0,
+    "rescheduling": 1
+  },
+  "appointments": [
+    {
+      "id": "cita-ref-2026-0001",
+      "status": "noshow"
+    },
+    {
+      "id": "cita-ref-2026-0001-oferta-2",
+      "status": "noshow"
+    }
+  ],
+  "encounters": [
+    {
+      "id": "encuentro-ref-2026-0001",
+      "status": "planned"
+    },
+    {
+      "id": "encuentro-ref-2026-0001-oferta-2",
+      "status": "planned"
+    }
+  ],
+  "notifications": 10,
+  "history": 4,
+  "invariant_violations": []
+}

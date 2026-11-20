@@ -1,0 +1,20 @@
+{
+  "resourceType": "Practitioner",
+  "id": "medico-aps",
+  "identifier": [
+    {
+      "system": "http://www.registrocivil.cl/run",
+      "value": "22222222-2"
+    }
+  ],
+  "name": [
+    {
+      "use": "official",
+      "family": "Pérez",
+      "given": [
+        "Ana"
+      ]
+    }
+  ],
+  "gender": "female"
+}

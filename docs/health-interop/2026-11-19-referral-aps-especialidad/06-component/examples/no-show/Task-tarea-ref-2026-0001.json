@@ -1,0 +1,70 @@
+{
+  "resourceType": "Task",
+  "id": "tarea-ref-2026-0001",
+  "meta": {
+    "profile": [
+      "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-tarea"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://aps.losaromos.example.org/referral",
+      "value": "REF-2026-0001"
+    }
+  ],
+  "status": "failed",
+  "businessStatus": {
+    "coding": [
+      {
+        "code": "no-show",
+        "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia",
+        "display": "No-show"
+      }
+    ]
+  },
+  "intent": "order",
+  "code": {
+    "coding": [
+      {
+        "code": "referral-workflow",
+        "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-task-code",
+        "display": "Referral workflow"
+      }
+    ]
+  },
+  "focus": {
+    "reference": "ServiceRequest/ref-2026-0001"
+  },
+  "for": {
+    "reference": "Patient/maria-gonzalez"
+  },
+  "authoredOn": "2026-12-09T10:15:00-03:00",
+  "lastModified": "2026-12-09T10:15:00-03:00",
+  "requester": {
+    "reference": "PractitionerRole/rol-medico-aps"
+  },
+  "description": null,
+  "extension": [
+    {
+      "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rescheduling-count",
+      "valueInteger": 1
+    }
+  ],
+  "owner": {
+    "reference": "HealthcareService/servicio-cardiologia"
+  },
+  "relevantHistory": [
+    {
+      "reference": "Provenance/provenance-ref-2026-0001-2"
+    },
+    {
+      "reference": "Provenance/provenance-ref-2026-0001-3"
+    },
+    {
+      "reference": "Provenance/provenance-ref-2026-0001-8"
+    },
+    {
+      "reference": "Provenance/provenance-ref-2026-0001-16"
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "resourceType": "Bundle",
+  "id": "bundle-pi0-ref-2026-0001",
+  "type": "transaction",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:11111111-1111-4111-8111-111111111111",
+      "resource": {
+        "resourceType": "ServiceRequest",
+        "id": "ref-2026-0001",
+        "meta": {
+          "profile": [
+            "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-solicitud"
+          ]
+        },
+        "intent": "order",
+        "identifier": [
+          {
+            "system": "http://aps.losaromos.example.org/referral",
+            "value": "REF-2026-0001"
+          }
+        ],
+        "status": "active",
+        "code": {
+          "coding": [
+            {
+              "code": "cardiologia",
+              "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad",
+              "display": "Cardiology"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/maria-gonzalez"
+        },
+        "encounter": {
+          "reference": "Encounter/aps-encounter-2026-11-19"
+        },
+        "authoredOn": "2026-11-19T09:30:00-03:00",
+        "requester": {
+          "reference": "PractitionerRole/rol-medico-aps"
+        },
+        "performerType": {
+          "coding": [
+            {
+              "code": "cardiologia",
+              "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad",
+              "display": "Cardiology"
+            }
+          ]
+        },
+        "performer": [
+          {
+            "reference": "HealthcareService/servicio-cardiologia"
+          }
+        ],
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "code": "84114007",
+                "system": "http://snomed.info/sct",
+                "display": "Heart failure (disorder)"
+              }
+            ],
+            "text": "Suspected heart failure: exertional dyspnoea, ankle oedema"
+          }
+        ],
+        "priority": "routine",
+        "supportingInfo": [
+          {
+            "reference": "Observation/ecg-2026-11-19"
+          },
+          {
+            "reference": "Observation/ntprobnp-2026-11-19"
+          }
+        ],
+        "note": [
+          {
+            "text": "Disnea de esfuerzo y edema de tobillos de dos semanas de evolución."
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "ServiceRequest"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:22222222-2222-4222-8222-222222222222",
+      "resource": {
+        "resourceType": "Task",
+        "id": "tarea-ref-2026-0001",
+        "meta": {
+          "profile": [
+            "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-tarea"
+          ]
+        },
+        "intent": "order",
+        "extension": [
+          {
+            "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-acceptance-deadline",
+            "valueDateTime": "2026-11-26T17:00:00-03:00"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://aps.losaromos.example.org/referral",
+            "value": "REF-2026-0001"
+          }
+        ],
+        "status": "requested",
+        "businessStatus": {
+          "coding": [
+            {
+              "code": "requested",
+              "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia",
+              "display": "Requested"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "referral-workflow",
+              "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-task-code",
+              "display": "Referral workflow"
+            }
+          ]
+        },
+        "focus": {
+          "reference": "ServiceRequest/ref-2026-0001"
+        },
+        "for": {
+          "reference": "Patient/maria-gonzalez"
+        },
+        "authoredOn": "2026-11-19T09:30:00-03:00",
+        "lastModified": "2026-11-19T09:30:00-03:00",
+        "requester": {
+          "reference": "PractitionerRole/rol-medico-aps"
+        },
+        "description": "acceptance decision"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Task"
+      }
+    }
+  ]
+}

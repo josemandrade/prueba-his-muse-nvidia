@@ -1,0 +1,16 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "DerivacionEspecialidad",
+  "id": "derivacion-especialidad",
+  "title": "Especialidad / servicio (catálogo local)",
+  "description": "Especialidades y servicios a los que se puede derivar.",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-especialidad",
+  "compose": {
+    "include": [
+      {
+        "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad"
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "resourceType": "AppointmentResponse",
+  "id": "respuesta-cita-ref-2026-0001-7",
+  "appointment": {
+    "reference": "Appointment/cita-ref-2026-0001"
+  },
+  "actor": {
+    "reference": "Patient/maria-gonzalez"
+  },
+  "participantStatus": "accepted"
+}

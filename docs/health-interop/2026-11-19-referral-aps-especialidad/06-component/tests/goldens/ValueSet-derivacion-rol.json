@@ -1,0 +1,16 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "DerivacionRolVS",
+  "id": "derivacion-rol",
+  "title": "Rol en la derivación",
+  "description": "Roles que una persona puede tener en una derivación.",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-rol",
+  "compose": {
+    "include": [
+      {
+        "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol"
+      }
+    ]
+  }
+}

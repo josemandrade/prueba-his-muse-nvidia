@@ -1,0 +1,102 @@
+{
+  "resourceType": "Composition",
+  "id": "contrareferencia-ref-2026-0001",
+  "meta": {
+    "profile": [
+      "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-contrareferencia"
+    ]
+  },
+  "status": "final",
+  "type": {
+    "coding": [
+      {
+        "code": "11488-4",
+        "system": "http://loinc.org",
+        "display": "Consult note"
+      }
+    ]
+  },
+  "title": "Counter-referral",
+  "section": [
+    {
+      "title": "Diagnosis",
+      "code": {
+        "text": "Diagnosis"
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Chronic systolic heart failure, LVEF 35% (ICD-10-CM I50.22).</div>"
+      },
+      "entry": [
+        {
+          "reference": "Condition/diagnostico-ref-2026-0001"
+        }
+      ]
+    },
+    {
+      "title": "Plan",
+      "code": {
+        "text": "Plan"
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Start heart-failure treatment; control in APS in 2 weeks.</div>"
+      },
+      "entry": [
+        {
+          "reference": "CarePlan/plan-ref-2026-0001"
+        }
+      ]
+    },
+    {
+      "title": "Follow-up indications",
+      "code": {
+        "text": "Follow-up indications"
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Blood pressure, weight and symptoms at each APS control; NT-proBNP in 3 months.</div>"
+      }
+    },
+    {
+      "title": "Follow-up plan for APS",
+      "code": {
+        "text": "Follow-up plan for APS"
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">APS follow-up as in the CarePlan; new referral to cardiology if dyspnoea worsens.</div>"
+      },
+      "entry": [
+        {
+          "reference": "CarePlan/plan-ref-2026-0001"
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-referral-identifier",
+      "valueIdentifier": {
+        "system": "http://aps.losaromos.example.org/referral",
+        "value": "REF-2026-0001"
+      }
+    }
+  ],
+  "identifier": {
+    "system": "http://especialidad.example.org/counter-referral",
+    "value": "CR-2026-0001"
+  },
+  "subject": {
+    "reference": "Patient/maria-gonzalez"
+  },
+  "encounter": {
+    "reference": "Encounter/encuentro-ref-2026-0001"
+  },
+  "date": "2026-12-03T10:00:00-03:00",
+  "author": [
+    {
+      "reference": "PractitionerRole/rol-especialista"
+    }
+  ]
+}
