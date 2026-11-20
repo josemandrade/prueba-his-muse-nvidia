@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "DerivacionReferralIdentifier"] ;
   fhir:StructureDefinition.title [ fhir:value "Identificador de la derivación"] ;
   fhir:StructureDefinition.status [ fhir:value "draft"] ;
-  fhir:StructureDefinition.date [ fhir:value "2026-11-20T12:39:48+00:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-11-20T12:46:55+00:00"^^xsd:dateTime] ;
   fhir:StructureDefinition.description [ fhir:value "El identificador de la derivación (el mismo de ServiceRequest.identifier) en la Composition de la contrareferencia. Ningún campo base de Composition lleva el id de la derivación; el enlace también viaja en DocumentReference.context.related."] ;
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"] ;
   fhir:StructureDefinition.mapping [

@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "DerivacionCanal"] ;
   fhir:ValueSet.title [ fhir:value "Canal de notificación"] ;
   fhir:ValueSet.status [ fhir:value "draft"] ;
-  fhir:ValueSet.date [ fhir:value "2026-11-20T12:39:48+00:00"^^xsd:dateTime] ;
+  fhir:ValueSet.date [ fhir:value "2026-11-20T12:46:55+00:00"^^xsd:dateTime] ;
   fhir:ValueSet.description [ fhir:value "Canales de notificación de la derivación."] ;
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [

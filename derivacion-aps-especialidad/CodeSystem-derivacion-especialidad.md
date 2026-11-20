@@ -31,7 +31,7 @@ Catálogo local de especialidades y servicios, versionado por la red (hub + serv
   "name" : "DerivacionEspecialidadCS",
   "title" : "Especialidad / servicio (catálogo local)",
   "status" : "draft",
-  "date" : "2026-11-20T12:39:48+00:00",
+  "date" : "2026-11-20T12:46:55+00:00",
   "description" : "Catálogo local de especialidades y servicios, versionado por la red (hub + servicios). El ejemplo trabajado es cardiología; la red amplía el catálogo sin tocar esta guía.",
   "content" : "complete",
   "count" : 1,

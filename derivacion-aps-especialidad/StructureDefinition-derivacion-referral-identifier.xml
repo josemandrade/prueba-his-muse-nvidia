@@ -14,7 +14,7 @@
   <name value="DerivacionReferralIdentifier"/>
   <title value="Identificador de la derivación"/>
   <status value="draft"/>
-  <date value="2026-11-20T12:39:48+00:00"/>
+  <date value="2026-11-20T12:46:55+00:00"/>
   <description value="El identificador de la derivación (el mismo de ServiceRequest.identifier) en la Composition de la contrareferencia. Ningún campo base de Composition lleva el id de la derivación; el enlace también viaja en DocumentReference.context.related."/>
   <fhirVersion value="4.0.1"/>
   <mapping>

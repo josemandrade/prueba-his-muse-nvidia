@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-notificac
   "name" : "DerivacionNotificacion",
   "title" : "Notificación",
   "status" : "draft",
-  "date" : "2026-11-20T12:39:48+00:00",
+  "date" : "2026-11-20T12:46:55+00:00",
   "description" : "El registro de una notificación enviada en un cambio de estado de la derivación. Perfil propio de esta guía, sobre el recurso base Communication de FHIR R4. Una notificación enviada por error se corrige con una notificación nueva, nunca borrando el registro.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{

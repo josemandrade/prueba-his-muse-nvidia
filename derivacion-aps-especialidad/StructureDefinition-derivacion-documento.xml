@@ -33,7 +33,7 @@
   <name value="DerivacionDocumento"/>
   <title value="Documento de contrareferencia"/>
   <status value="draft"/>
-  <date value="2026-11-20T12:39:48+00:00"/>
+  <date value="2026-11-20T12:46:55+00:00"/>
   <description value="La entrada de índice de la contrareferencia. Perfil propio de esta guía, sobre el recurso base DocumentReference de FHIR R4."/>
   <fhirVersion value="4.0.1"/>
   <mapping>

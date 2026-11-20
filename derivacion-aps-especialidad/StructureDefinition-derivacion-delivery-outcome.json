@@ -10,7 +10,7 @@
   "name" : "DerivacionDeliveryOutcome",
   "title" : "Resultado de la entrega",
   "status" : "draft",
-  "date" : "2026-11-20T12:39:48+00:00",
+  "date" : "2026-11-20T12:46:55+00:00",
   "description" : "Resultado de la entrega de una notificación: delivered | failed. Communication.status = completed significa enviada; el resultado de la entrega es esta extensión.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{

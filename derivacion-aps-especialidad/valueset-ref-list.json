@@ -34,10 +34,10 @@
     "systems" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-especialidad"],
     "uses" : {
     },
-    "StructureDefinition-derivacion-cita.html" : "Cita de la derivación",
-    "StructureDefinition-derivacion-servicio.html" : "Servicio de especialidad",
     "StructureDefinition-derivacion-solicitud.html" : "Solicitud de derivación",
-    "StructureDefinition-derivacion-encuentro.html" : "Encuentro de especialidad"
+    "StructureDefinition-derivacion-servicio.html" : "Servicio de especialidad",
+    "StructureDefinition-derivacion-encuentro.html" : "Encuentro de especialidad",
+    "StructureDefinition-derivacion-cita.html" : "Cita de la derivación"
   },
   {
     "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-estado-referencia",

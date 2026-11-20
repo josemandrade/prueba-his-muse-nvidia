@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-reschedul
   "name" : "DerivacionReschedulingCount",
   "title" : "Conteo de re-agendamientos",
   "status" : "draft",
-  "date" : "2026-11-20T12:39:48+00:00",
+  "date" : "2026-11-20T12:46:55+00:00",
   "description" : "Número de re-agendamientos de esta derivación (0–1). No se reinicia: un solo re-agendamiento por derivación.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{

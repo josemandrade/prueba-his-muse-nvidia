@@ -53,7 +53,7 @@ Especialidades y servicios a los que se puede derivar.
   "name" : "DerivacionEspecialidad",
   "title" : "Especialidad / servicio (catálogo local)",
   "status" : "draft",
-  "date" : "2026-11-20T12:39:48+00:00",
+  "date" : "2026-11-20T12:46:55+00:00",
   "description" : "Especialidades y servicios a los que se puede derivar.",
   "compose" : {
     "include" : [{

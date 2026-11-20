@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "DerivacionRol"] ;
   fhir:StructureDefinition.title [ fhir:value "Rol en la derivación"] ;
   fhir:StructureDefinition.status [ fhir:value "draft"] ;
-  fhir:StructureDefinition.date [ fhir:value "2026-11-20T12:39:48+00:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-11-20T12:46:55+00:00"^^xsd:dateTime] ;
   fhir:StructureDefinition.description [ fhir:value "El rol que un profesional tiene en una derivación. Perfil propio de esta guía, sobre el recurso base PractitionerRole de FHIR R4. Una persona puede tener más de un rol en distintas derivaciones, pero dentro de una derivación cada rol es una persona."] ;
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"] ;
   fhir:StructureDefinition.mapping [

@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-encuentro
   "name" : "DerivacionEncuentro",
   "title" : "Encuentro de especialidad",
   "status" : "draft",
-  "date" : "2026-11-20T12:39:48+00:00",
+  "date" : "2026-11-20T12:46:55+00:00",
   "description" : "La visita atendida en la especialidad. Perfil propio de esta guía, sobre el recurso base Encounter de FHIR R4. La cita es la reserva; la visita es el encuentro — nunca ambas a la vez sin regla, y la regla aquí es: reserva = Appointment, visita = Encounter.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{

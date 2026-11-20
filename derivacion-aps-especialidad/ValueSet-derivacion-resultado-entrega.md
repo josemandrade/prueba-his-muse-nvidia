@@ -50,7 +50,7 @@ Resultados posibles de la entrega de una notificación.
   "name" : "DerivacionResultadoEntrega",
   "title" : "Resultado de la entrega de una notificación",
   "status" : "draft",
-  "date" : "2026-11-20T12:39:48+00:00",
+  "date" : "2026-11-20T12:46:55+00:00",
   "description" : "Resultados posibles de la entrega de una notificación.",
   "compose" : {
     "include" : [{

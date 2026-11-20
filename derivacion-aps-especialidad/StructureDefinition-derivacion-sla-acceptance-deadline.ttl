@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "DerivacionSlaAcceptanceDeadline"] ;
   fhir:StructureDefinition.title [ fhir:value "Plazo de aceptación"] ;
   fhir:StructureDefinition.status [ fhir:value "draft"] ;
-  fhir:StructureDefinition.date [ fhir:value "2026-11-20T12:39:48+00:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-11-20T12:46:55+00:00"^^xsd:dateTime] ;
   fhir:StructureDefinition.description [ fhir:value "Fecha límite para la decisión de aceptación/rechazo: creación + 5 días hábiles (2 si es urgente)."] ;
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"] ;
   fhir:StructureDefinition.mapping [

@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-sla-count
   "name" : "DerivacionSlaCounterreferralDeadline",
   "title" : "Plazo de contrareferencia",
   "status" : "draft",
-  "date" : "2026-11-20T12:39:48+00:00",
+  "date" : "2026-11-20T12:46:55+00:00",
   "description" : "Fecha límite para enviar la contrareferencia: encuentro + 5 días hábiles.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{

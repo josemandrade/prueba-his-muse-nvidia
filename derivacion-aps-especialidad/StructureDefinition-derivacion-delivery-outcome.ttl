@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "DerivacionDeliveryOutcome"] ;
   fhir:StructureDefinition.title [ fhir:value "Resultado de la entrega"] ;
   fhir:StructureDefinition.status [ fhir:value "draft"] ;
-  fhir:StructureDefinition.date [ fhir:value "2026-11-20T12:39:48+00:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-11-20T12:46:55+00:00"^^xsd:dateTime] ;
   fhir:StructureDefinition.description [ fhir:value "Resultado de la entrega de una notificación: delivered | failed. Communication.status = completed significa enviada; el resultado de la entrega es esta extensión."] ;
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"] ;
   fhir:StructureDefinition.mapping [

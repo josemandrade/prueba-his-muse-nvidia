@@ -15,7 +15,7 @@
   <name value="DerivacionRol"/>
   <title value="Rol en la derivación"/>
   <status value="draft"/>
-  <date value="2026-11-20T12:39:48+00:00"/>
+  <date value="2026-11-20T12:46:55+00:00"/>
   <description value="El rol que un profesional tiene en una derivación. Perfil propio de esta guía, sobre el recurso base PractitionerRole de FHIR R4. Una persona puede tener más de un rol en distintas derivaciones, pero dentro de una derivación cada rol es una persona."/>
   <fhirVersion value="4.0.1"/>
   <mapping>

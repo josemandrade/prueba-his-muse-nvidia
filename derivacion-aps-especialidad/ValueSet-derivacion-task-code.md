@@ -50,7 +50,7 @@ Códigos de Task de esta guía.
   "name" : "DerivacionTaskCode",
   "title" : "Código de la tarea de derivación",
   "status" : "draft",
-  "date" : "2026-11-20T12:39:48+00:00",
+  "date" : "2026-11-20T12:46:55+00:00",
   "description" : "Códigos de Task de esta guía.",
   "compose" : {
     "include" : [{

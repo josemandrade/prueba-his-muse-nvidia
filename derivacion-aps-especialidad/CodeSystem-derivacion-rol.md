@@ -31,7 +31,7 @@ Los seis roles del caso de uso (spec §2). Dentro de una derivación, cada rol e
   "name" : "DerivacionRolCS",
   "title" : "Rol en la derivación",
   "status" : "draft",
-  "date" : "2026-11-20T12:39:48+00:00",
+  "date" : "2026-11-20T12:46:55+00:00",
   "description" : "Los seis roles del caso de uso (spec §2). Dentro de una derivación, cada rol es una persona (el clínico de triaje no es el agendador — C1).",
   "content" : "complete",
   "count" : 6,

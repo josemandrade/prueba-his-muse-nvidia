@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-referral-
   "name" : "DerivacionReferralIdentifier",
   "title" : "Identificador de la derivación",
   "status" : "draft",
-  "date" : "2026-11-20T12:39:48+00:00",
+  "date" : "2026-11-20T12:46:55+00:00",
   "description" : "El identificador de la derivación (el mismo de ServiceRequest.identifier) en la Composition de la contrareferencia. Ningún campo base de Composition lleva el id de la derivación; el enlace también viaja en DocumentReference.context.related.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{

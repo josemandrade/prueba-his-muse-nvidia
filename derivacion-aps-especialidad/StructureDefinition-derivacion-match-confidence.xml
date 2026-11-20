@@ -14,7 +14,7 @@
   <name value="DerivacionMatchConfidence"/>
   <title value="Confianza del cruce de identidad"/>
   <status value="draft"/>
-  <date value="2026-11-20T12:39:48+00:00"/>
+  <date value="2026-11-20T12:46:55+00:00"/>
   <description value="Confianza del cruce de identidad del MPI, de 0 a 1. Opcional."/>
   <fhirVersion value="4.0.1"/>
   <mapping>

@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-contraref
   "name" : "DerivacionContrareferencia",
   "title" : "Contrareferencia",
   "status" : "draft",
-  "date" : "2026-11-20T12:39:48+00:00",
+  "date" : "2026-11-20T12:46:55+00:00",
   "description" : "El documento clínico de vuelta del especialista a APS: diagnóstico, plan, indicaciones de seguimiento y plan de seguimiento para APS. Perfil propio de esta guía, sobre el recurso base Composition de FHIR R4.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{

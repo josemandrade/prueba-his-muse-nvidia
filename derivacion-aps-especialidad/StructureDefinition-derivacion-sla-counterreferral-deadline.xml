@@ -14,7 +14,7 @@
   <name value="DerivacionSlaCounterreferralDeadline"/>
   <title value="Plazo de contrareferencia"/>
   <status value="draft"/>
-  <date value="2026-11-20T12:39:48+00:00"/>
+  <date value="2026-11-20T12:46:55+00:00"/>
   <description value="Fecha límite para enviar la contrareferencia: encuentro + 5 días hábiles."/>
   <fhirVersion value="4.0.1"/>
   <mapping>

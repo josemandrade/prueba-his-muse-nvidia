@@ -10,7 +10,7 @@
   <name value="DerivacionRolVS"/>
   <title value="Rol en la derivación"/>
   <status value="draft"/>
-  <date value="2026-11-20T12:39:48+00:00"/>
+  <date value="2026-11-20T12:46:55+00:00"/>
   <description value="Roles que una persona puede tener en una derivación."/>
   <compose>
     <include>

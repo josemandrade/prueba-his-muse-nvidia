@@ -10,7 +10,7 @@
   "name" : "DerivacionTarea",
   "title" : "Tarea de derivación (registro de estado)",
   "status" : "draft",
-  "date" : "2026-11-20T12:39:48+00:00",
+  "date" : "2026-11-20T12:46:55+00:00",
   "description" : "El registro de estado del flujo de trabajo de una derivación: lleva el estado del caso, los relojes SLA y los conteos de los ciclos. Es el centro del grafo de recursos y lo primero que lee cada paso posterior. Perfil propio de esta guía, sobre el recurso base Task de FHIR R4.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{

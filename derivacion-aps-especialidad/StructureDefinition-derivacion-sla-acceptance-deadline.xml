@@ -14,7 +14,7 @@
   <name value="DerivacionSlaAcceptanceDeadline"/>
   <title value="Plazo de aceptación"/>
   <status value="draft"/>
-  <date value="2026-11-20T12:39:48+00:00"/>
+  <date value="2026-11-20T12:46:55+00:00"/>
   <description value="Fecha límite para la decisión de aceptación/rechazo: creación + 5 días hábiles (2 si es urgente)."/>
   <fhirVersion value="4.0.1"/>
   <mapping>

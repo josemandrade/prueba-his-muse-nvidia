@@ -10,7 +10,7 @@
   "name" : "DerivacionOfferChaseCount",
   "title" : "Conteo de persecuciones de esta oferta",
   "status" : "draft",
-  "date" : "2026-11-20T12:39:48+00:00",
+  "date" : "2026-11-20T12:46:55+00:00",
   "description" : "Número de veces que el agendador ha perseguido una oferta sin confirmar (0–2). Se reinicia por oferta (N5).",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
