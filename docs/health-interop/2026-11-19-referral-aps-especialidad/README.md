@@ -4,6 +4,11 @@ Built with health-interop-superpowers v0.39.0. Source case: audit 1 vehicle
 (`pack-audit-2026-11-12-referral-case.md`, 2026-11-12; audit 1 implemented as
 v0.19.0 — not re-litigated here).
 
+## Published guide
+
+Implementation Guide (step 5, SUSHI 0/0, 74 resources):
+https://josemandrade.github.io/prueba-his-muse-nvidia/
+
 ## Status
 
 | Step | Artefact | Status | Validated by | Date |
@@ -24,10 +29,12 @@ solo stdlib, 168 tests en verde, 3 escenarios end-to-end con
 63 ejemplos JSON, README con trazabilidad, informe de validación).
 Expert review NOT APPROVED first (0 critical/high, 3 medium + 3 low
 C1–C6); fixes C1–C6 applied; focused re-check APPROVED
-(0 critical/high/medium, 0 new findings). Next: local commit of
-step 6, then notify the user that all 6 steps are finished.
-Pushes of steps 2–6 remain pending — the step 2 retry card expired;
-the user re-approves when ready.
+(0 critical/high/medium, 0 new findings). All 6 steps PUSHED to
+prueba-his-muse-nvidia 2026-11-20 (steps 5–6: bc9d1f41, 9ee58258).
+Next: add the CI workflow (`.github/workflows/ig-build.yml`) via the
+GitHub web UI — the snapshot push cannot write workflow files — and
+confirm the first green run; the FHIR validator still depends on
+that CI run.
 
 ## Blockers
 
