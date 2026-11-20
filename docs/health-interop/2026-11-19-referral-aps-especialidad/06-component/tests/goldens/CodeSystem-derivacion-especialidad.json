@@ -6,7 +6,7 @@
   "id": "derivacion-especialidad",
   "title": "Especialidad / servicio (catálogo local)",
   "description": "Catálogo local de especialidades y servicios, versionado por la red (hub + servicios). El ejemplo trabajado es cardiología; la red amplía el catálogo sin tocar esta guía.",
-  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-especialidad",
   "concept": [
     {
       "code": "cardiologia",

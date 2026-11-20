@@ -7,7 +7,7 @@ v0.19.0 — not re-litigated here).
 ## Published guide
 
 Implementation Guide (step 5, SUSHI 0/0, 74 resources):
-https://josemandrade.github.io/prueba-his-muse-nvidia/
+https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/
 
 ## Status
 
@@ -76,7 +76,7 @@ that CI run.
 - `build_bpmn.py`, `parts_data.py` — BPMN builder + geometry tables
 - `05-implementation-guide/` — Step 5 Implementation Guide (validated
   2026-11-19, SUSHI 0/0, 74 recursos): `sushi-config.yaml`
-  (canonical https://josemandrade.github.io/prueba-his-muse-nvidia/),
+  (canonical https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad),
   `input/fsh/` (12 perfiles, 14 extensiones, 8 CodeSystems +
   8 ValueSets, 31 ejemplos), `input/pagecontent/` (12 páginas),
   `input/images/` (BPMN + grafo + secuencia PNG/SVG),

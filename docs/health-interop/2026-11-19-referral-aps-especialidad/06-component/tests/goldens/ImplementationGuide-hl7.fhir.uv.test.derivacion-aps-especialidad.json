@@ -1,7 +1,7 @@
 {
   "resourceType": "ImplementationGuide",
   "id": "hl7.fhir.uv.test.derivacion-aps-especialidad",
-  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/ImplementationGuide/hl7.fhir.uv.test.derivacion-aps-especialidad",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ImplementationGuide/hl7.fhir.uv.test.derivacion-aps-especialidad",
   "version": "0.1.0",
   "name": "DerivacionAPSEspecialidad",
   "title": "Derivación APS → especialidad con contrareferencia",
@@ -27,7 +27,7 @@
           "reference": "PractitionerRole/rol-admin-aps"
         },
         "name": "Administrativo APS en la derivación REF-2026-0001",
-        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rol"
+        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-rol"
       },
       {
         "reference": {
@@ -41,7 +41,7 @@
           "reference": "PractitionerRole/rol-agendador"
         },
         "name": "Agendador en la derivación REF-2026-0001",
-        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rol"
+        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-rol"
       },
       {
         "reference": {
@@ -128,14 +128,14 @@
         },
         "name": "Cita de la derivación REF-2026-0001 (proposed)",
         "description": "La oferta de cita (PI-2): propuesta, aún sin confirmar por la paciente.",
-        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-cita"
+        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-cita"
       },
       {
         "reference": {
           "reference": "PractitionerRole/rol-triaje"
         },
         "name": "Clínico de triaje en la derivación REF-2026-0001",
-        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rol"
+        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-rol"
       },
       {
         "reference": {
@@ -190,7 +190,7 @@
         },
         "name": "Contrareferencia REF-2026-0001",
         "description": "El documento de vuelta del especialista a APS (PI-3).",
-        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-contrareferencia"
+        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-contrareferencia"
       },
       {
         "reference": {
@@ -221,7 +221,7 @@
           "reference": "Condition/diagnostico-ref-2026-0001"
         },
         "name": "Diagnóstico: insuficiencia cardiaca sistólica crónica",
-        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-diagnostico"
+        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-diagnostico"
       },
       {
         "reference": {
@@ -236,7 +236,7 @@
           "reference": "DocumentReference/documento-ref-2026-0001"
         },
         "name": "Documento de contrareferencia REF-2026-0001",
-        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-documento"
+        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-documento"
       },
       {
         "reference": {
@@ -267,7 +267,7 @@
         },
         "name": "Encuentro de especialidad REF-2026-0001 (planned)",
         "description": "La visita, creada en la reserva (planned); no se crea en la asistencia.",
-        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-encuentro"
+        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-encuentro"
       },
       {
         "reference": {
@@ -304,7 +304,7 @@
           "reference": "PractitionerRole/rol-especialista"
         },
         "name": "Especialista en la derivación REF-2026-0001",
-        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rol"
+        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-rol"
       },
       {
         "reference": {
@@ -343,7 +343,7 @@
         },
         "name": "María González (paciente sintética)",
         "description": "Paciente de la derivación REF-2026-0001.",
-        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-paciente"
+        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-paciente"
       },
       {
         "reference": {
@@ -373,7 +373,7 @@
           "reference": "PractitionerRole/rol-medico-aps"
         },
         "name": "Médico APS en la derivación REF-2026-0001",
-        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rol"
+        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-rol"
       },
       {
         "reference": {
@@ -389,7 +389,7 @@
         },
         "name": "Notificación de aceptación a la paciente",
         "description": "El administrativo de APS informa a la paciente de que la especialidad aceptó la derivación (PI-1, C5/Q3).",
-        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-notificacion"
+        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-notificacion"
       },
       {
         "reference": {
@@ -427,7 +427,7 @@
           "reference": "CarePlan/plan-ref-2026-0001"
         },
         "name": "Plan de seguimiento para APS",
-        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-plan-seguimiento"
+        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-plan-seguimiento"
       },
       {
         "reference": {
@@ -529,7 +529,7 @@
           "reference": "HealthcareService/servicio-cardiologia"
         },
         "name": "Servicio de cardiología",
-        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-servicio"
+        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-servicio"
       },
       {
         "reference": {
@@ -567,7 +567,7 @@
         },
         "name": "Solicitud de derivación REF-2026-0001",
         "description": "Derivación de María González a cardiología por sospecha de insuficiencia cardiaca (PI-0).",
-        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-solicitud"
+        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-solicitud"
       },
       {
         "reference": {
@@ -583,7 +583,7 @@
         },
         "name": "Tarea de derivación REF-2026-0001 (requested)",
         "description": "El registro de estado del flujo de trabajo, en su creación (PI-0).",
-        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-tarea"
+        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-tarea"
       }
     ],
     "page": {

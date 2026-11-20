@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "derivacion-servicio",
-  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-servicio",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-servicio",
   "name": "DerivacionServicio",
   "title": "Servicio de especialidad",
   "status": "draft",
@@ -39,7 +39,7 @@
         "max": "1",
         "binding": {
           "strength": "example",
-          "valueSet": "https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-especialidad"
+          "valueSet": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-especialidad"
         }
       },
       {

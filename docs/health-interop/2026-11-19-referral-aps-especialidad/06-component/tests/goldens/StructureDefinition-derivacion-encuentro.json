@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "derivacion-encuentro",
-  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-encuentro",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-encuentro",
   "name": "DerivacionEncuentro",
   "title": "Encuentro de especialidad",
   "status": "draft",
@@ -41,7 +41,7 @@
         "min": 1,
         "binding": {
           "strength": "example",
-          "valueSet": "https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-especialidad"
+          "valueSet": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-especialidad"
         }
       },
       {
@@ -52,7 +52,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-paciente"
+              "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-paciente"
             ]
           }
         ]
@@ -66,7 +66,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-solicitud"
+              "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-solicitud"
             ]
           }
         ]
@@ -79,7 +79,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rol"
+              "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-rol"
             ]
           }
         ]
@@ -93,7 +93,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-cita"
+              "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-cita"
             ]
           }
         ]

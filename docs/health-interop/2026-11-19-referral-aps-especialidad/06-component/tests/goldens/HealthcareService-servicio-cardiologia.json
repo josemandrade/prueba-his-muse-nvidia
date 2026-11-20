@@ -3,7 +3,7 @@
   "id": "servicio-cardiologia",
   "meta": {
     "profile": [
-      "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-servicio"
+      "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-servicio"
     ]
   },
   "identifier": [
@@ -20,7 +20,7 @@
       "coding": [
         {
           "code": "cardiologia",
-          "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad",
+          "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-especialidad",
           "display": "Cardiology"
         }
       ]

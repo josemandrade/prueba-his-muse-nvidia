@@ -657,3 +657,15 @@
   next step 5 touch (decisions.md — the guide's CodeSystem already
   carries the `hub-operator` code; only the examples lack the
   role).
+- Canonical move (2026-11-20): guide canonical changed from the site
+  root to the `derivacion-aps-especialidad` subpath (user decision:
+  one workflow per guide, with subpaths); SUSHI rebuilt 0/0; pending
+  expert re-review of this re-touch before pushing.
+- Component follow-up of the canonical move (2026-11-20, H1 fix):
+  `06-component/src/derivacion/constants.py` CANONICAL moved to the
+  subpath URL; the 74 goldens re-copied from the rebuilt
+  fsh-generated/ and the 63 example JSON regenerated with the CLI;
+  `06-component/README.md` URL updated; new test
+  `test_component_canonical_matches_guide_canonical` cross-checks the
+  component's canonical against `sushi-config.yaml` on every run,
+  so a future guide move cannot go unnoticed again.

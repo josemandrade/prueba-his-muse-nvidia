@@ -3,7 +3,7 @@
   "id": "ref-2026-0001",
   "meta": {
     "profile": [
-      "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-solicitud"
+      "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-solicitud"
     ]
   },
   "identifier": [
@@ -18,7 +18,7 @@
     "coding": [
       {
         "code": "cardiologia",
-        "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad",
+        "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-especialidad",
         "display": "Cardiology"
       }
     ]
@@ -34,7 +34,7 @@
     "coding": [
       {
         "code": "cardiologia",
-        "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad",
+        "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-especialidad",
         "display": "Cardiology"
       }
     ]

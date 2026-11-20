@@ -261,6 +261,33 @@ class TestValidation(unittest.TestCase):
         self.assertNotIn("@", text)
         self.assertNotRegex(text, r"\b\+?56[29]\s?\d")
 
+    def test_component_canonical_matches_guide_canonical(self):
+        # La canonical del componente (constants.CANONICAL, la que
+        # estampan los ejemplos generados) debe ser la de la guía
+        # (sushi-config.yaml). Si la guía se mueve de URL y el
+        # componente no, los meta.profile generados no resuelven
+        # contra la guía publicada — y los goldens no lo delatan,
+        # porque también se regeneran desde la guía.
+        from derivacion.constants import CANONICAL
+
+        guide_config = (
+            COMPONENT.parent / "05-implementation-guide" / "sushi-config.yaml"
+        )
+        guide_canonical = None
+        for line in guide_config.read_text(encoding="utf-8").splitlines():
+            if line.startswith("canonical:"):
+                guide_canonical = line.split(":", 1)[1].strip()
+        self.assertIsNotNone(
+            guide_canonical, "sushi-config.yaml sin línea canonical:")
+        self.assertEqual(CANONICAL, guide_canonical)
+        for resource in load_jsons(GOLDENS):
+            url = resource.get("url")
+            if url is not None:
+                self.assertTrue(
+                    url.startswith(guide_canonical),
+                    f"{resource.get('id')}: {url} no empieza por la "
+                    f"canonical de la guía")
+
 
 if __name__ == "__main__":
     unittest.main()

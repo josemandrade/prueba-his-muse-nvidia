@@ -728,3 +728,22 @@ Rulings del componente (detalle en `06-component/../state.md` y
   APS queda auditada (actor `aps-doctor`, `rol-medico-aps`).
 - **C6**: README decía «156 tests»; corregido a 168, con los
   conteos por archivo de la tabla de trazabilidad actualizados.
+- **Canonical a subruta (2026-11-20, re-toque del paso 5)**: la guía
+  pasa de la raíz del sitio a la subruta
+  `derivacion-aps-especialidad` (decisión del usuario: un archivo por
+  guía con subrutas). `sushi-config.yaml` canonical =
+  `https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad`;
+  SUSHI reconstruido 0/0 (74 recursos); las 61 generadas y los 4
+  archivos a mano (index.md, terminology.md, plan.md,
+  validation-report.md) llevan la nueva URL; la línea `Published
+  guide` del README también. El workflow es ahora
+  `ig-build-referral.yml` (rama gh-pages, `destination_dir`
+  `derivacion-aps-especialidad`).
+- **Canonical del componente a subruta (2026-11-20, re-toque del
+  paso 6, H1 del revisor)**: el componente estampaba la canonical
+  raíz y los goldens también (copias de la guía anterior), así que
+  los 168 tests pasaban aunque la guía ya estaba en la subruta.
+  `constants.py` CANONICAL pasa a la URL de subruta; goldens
+  re-copiados desde fsh-generated/ reconstruido; ejemplos
+  regenerados con el CLI; nuevo test que compara la canonical del
+  componente con la de `sushi-config.yaml` en cada corrida.

@@ -6,7 +6,7 @@
   "id": "derivacion-task-code",
   "title": "Código de la tarea de derivación",
   "description": "El Task de esta guía es siempre un registro de flujo de trabajo de derivación.",
-  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-task-code",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-task-code",
   "concept": [
     {
       "code": "referral-workflow",

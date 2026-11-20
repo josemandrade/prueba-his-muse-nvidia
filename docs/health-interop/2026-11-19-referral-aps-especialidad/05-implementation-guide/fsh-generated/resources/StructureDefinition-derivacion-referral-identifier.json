@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "derivacion-referral-identifier",
-  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-referral-identifier",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-referral-identifier",
   "name": "DerivacionReferralIdentifier",
   "title": "Identificador de la derivación",
   "status": "draft",
@@ -34,7 +34,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-referral-identifier"
+        "fixedUri": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-referral-identifier"
       },
       {
         "id": "Extension.value[x]",

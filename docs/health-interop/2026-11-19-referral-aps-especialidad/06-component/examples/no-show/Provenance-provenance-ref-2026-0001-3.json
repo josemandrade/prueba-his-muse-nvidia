@@ -13,7 +13,7 @@
         "coding": [
           {
             "code": "triage-clinician",
-            "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol",
+            "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-rol",
             "display": "Triage clinician"
           }
         ]

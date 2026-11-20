@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "derivacion-offer-decline-count",
-  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-offer-decline-count",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-offer-decline-count",
   "name": "DerivacionOfferDeclineCount",
   "title": "Conteo de rechazos de esta oferta",
   "status": "draft",
@@ -34,7 +34,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-offer-decline-count"
+        "fixedUri": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-offer-decline-count"
       },
       {
         "id": "Extension.value[x]",
@@ -51,7 +51,7 @@
             "severity": "error",
             "human": "El conteo de rechazos de esta oferta está entre 0 y 2.",
             "expression": "$this >= 0 and $this <= 2",
-            "source": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-offer-decline-count"
+            "source": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-offer-decline-count"
           }
         ]
       }

@@ -3,7 +3,7 @@
 Implementación en Python de la [guía validada](../05-implementation-guide/)
 (derivación APS → especialidad con contrareferencia, SUSHI 0 errores,
 74 recursos, canónica
-`https://josemandrade.github.io/prueba-his-muse-nvidia/`). Construye
+`https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad`). Construye
 SOLO lo que la guía dice: el flujo de derivación (crear → triaje →
 agendar → atender → contrareferencia → consultar estado → cancelar),
 con el Task como centro (`businessStatus` = los 9 estados del caso),

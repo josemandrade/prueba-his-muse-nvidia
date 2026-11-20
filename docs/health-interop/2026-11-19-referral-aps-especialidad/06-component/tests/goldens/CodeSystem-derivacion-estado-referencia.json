@@ -6,7 +6,7 @@
   "id": "derivacion-estado-referencia",
   "title": "Estado de la derivación",
   "description": "Los nueve estados del caso de la derivación APS → especialidad (spec §3.1). El estado vive en Task.businessStatus, nunca como valor inventado de Task.status.",
-  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia",
   "concept": [
     {
       "code": "requested",

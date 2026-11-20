@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "derivacion-sla-acceptance-deadline",
-  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-acceptance-deadline",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-sla-acceptance-deadline",
   "name": "DerivacionSlaAcceptanceDeadline",
   "title": "Plazo de aceptación",
   "status": "draft",
@@ -34,7 +34,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-acceptance-deadline"
+        "fixedUri": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-sla-acceptance-deadline"
       },
       {
         "id": "Extension.value[x]",

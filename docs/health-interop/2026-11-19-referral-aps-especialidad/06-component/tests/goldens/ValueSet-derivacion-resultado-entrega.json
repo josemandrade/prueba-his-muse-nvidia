@@ -5,11 +5,11 @@
   "id": "derivacion-resultado-entrega",
   "title": "Resultado de la entrega de una notificación",
   "description": "Resultados posibles de la entrega de una notificación.",
-  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-resultado-entrega",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-resultado-entrega",
   "compose": {
     "include": [
       {
-        "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-resultado-entrega"
+        "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-resultado-entrega"
       }
     ]
   }

@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "derivacion-rescheduling-count",
-  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rescheduling-count",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-rescheduling-count",
   "name": "DerivacionReschedulingCount",
   "title": "Conteo de re-agendamientos",
   "status": "draft",
@@ -34,7 +34,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rescheduling-count"
+        "fixedUri": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-rescheduling-count"
       },
       {
         "id": "Extension.value[x]",
@@ -51,7 +51,7 @@
             "severity": "error",
             "human": "El conteo de re-agendamientos está entre 0 y 1: un solo re-agendamiento por derivación.",
             "expression": "$this >= 0 and $this <= 1",
-            "source": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rescheduling-count"
+            "source": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-rescheduling-count"
           }
         ]
       }

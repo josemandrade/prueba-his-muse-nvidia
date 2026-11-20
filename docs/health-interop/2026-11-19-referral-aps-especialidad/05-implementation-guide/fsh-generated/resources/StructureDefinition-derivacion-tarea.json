@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "derivacion-tarea",
-  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-tarea",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-tarea",
   "name": "DerivacionTarea",
   "title": "Tarea de derivación (registro de estado)",
   "status": "draft",
@@ -38,7 +38,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-acceptance-deadline"
+              "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-sla-acceptance-deadline"
             ]
           }
         ]
@@ -53,7 +53,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-offer-deadline"
+              "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-sla-offer-deadline"
             ]
           }
         ]
@@ -68,7 +68,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-counterreferral-deadline"
+              "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-sla-counterreferral-deadline"
             ]
           }
         ]
@@ -83,7 +83,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-retriage-deadline"
+              "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-sla-retriage-deadline"
             ]
           }
         ]
@@ -98,7 +98,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-confirmation-deadline"
+              "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-sla-confirmation-deadline"
             ]
           }
         ]
@@ -113,7 +113,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-offer-decline-count"
+              "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-offer-decline-count"
             ]
           }
         ]
@@ -128,7 +128,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-offer-chase-count"
+              "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-offer-chase-count"
             ]
           }
         ]
@@ -143,7 +143,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rescheduling-count"
+              "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-rescheduling-count"
             ]
           }
         ]
@@ -165,7 +165,7 @@
         "short": "Motivo de rechazo o de cancelación (incl. 'patient deceased')",
         "binding": {
           "strength": "example",
-          "valueSet": "https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-motivo-rechazo"
+          "valueSet": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-motivo-rechazo"
         }
       },
       {
@@ -175,7 +175,7 @@
         "min": 1,
         "binding": {
           "strength": "example",
-          "valueSet": "https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-estado-referencia"
+          "valueSet": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-estado-referencia"
         }
       },
       {
@@ -189,7 +189,7 @@
         "short": "referral-workflow: este Task es siempre un registro de flujo de trabajo de derivación",
         "binding": {
           "strength": "example",
-          "valueSet": "https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-task-code"
+          "valueSet": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-task-code"
         }
       },
       {
@@ -206,7 +206,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-solicitud"
+              "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-solicitud"
             ]
           }
         ]
@@ -219,7 +219,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-paciente"
+              "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-paciente"
             ]
           }
         ]
@@ -231,7 +231,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rol"
+              "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-rol"
             ]
           }
         ]
@@ -244,7 +244,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-servicio"
+              "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-servicio"
             ]
           }
         ]

@@ -5,11 +5,11 @@
   "id": "derivacion-especialidad",
   "title": "Especialidad / servicio (catálogo local)",
   "description": "Especialidades y servicios a los que se puede derivar.",
-  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-especialidad",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-especialidad",
   "compose": {
     "include": [
       {
-        "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad"
+        "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-especialidad"
       }
     ]
   }

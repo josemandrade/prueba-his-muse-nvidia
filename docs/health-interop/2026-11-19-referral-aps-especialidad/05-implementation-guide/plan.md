@@ -10,7 +10,7 @@ Caso: derivación APS → especialidad con contrareferencia. Fuente de verdad:
 
 - La guía es una **guía de prueba** para este caso, no una guía nacional. Su
   `id` es `hl7.fhir.uv.test.derivacion-aps-especialidad`, versión `0.1.0`, y
-  su canonical es `https://josemandrade.github.io/prueba-his-muse-nvidia/`
+  su canonical es `https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/`
   (el sitio de GitHub Pages del repo de prueba, donde el workflow despliega
   la guía; mismo patrón que el caso DAU). El id usa el reino `uv` porque la
   plantilla `hl7.base.template` solo acepta los reinos `us`, `uv` y `eu` en
@@ -22,7 +22,7 @@ Caso: derivación APS → especialidad con contrareferencia. Fuente de verdad:
 - El canonical de la guía **sustituye** al placeholder de la propuesta
   (`http://derivacion.example.org/fhir/`). No queda `example.org` en la
   guía: todos los CodeSystem, ValueSet, perfiles y extensiones usan el
-  canonical `https://josemandrade.github.io/prueba-his-muse-nvidia/` (paso
+  canonical `https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/` (paso
   4, ítem abierto — cerrado aquí). Los sistemas de identificadores
   sintéticos de los ejemplos (MPI, RUN, APS) usan dominios `example.org`
   solo como sistemas de identificador de ejemplo, no como canonical de la
@@ -86,7 +86,7 @@ Caso: derivación APS → especialidad con contrareferencia. Fuente de verdad:
 
 **Interfaces:**
 - Consumes: la propuesta validada (`04-fhir-proposal.md`), el caso de uso (`01-use-case-spec.md`)
-- Produces: la carpeta de la guía con su identidad (id `hl7.fhir.uv.test.derivacion-aps-especialidad`, versión `0.1.0`, FHIR R4 4.0.1, dependencia solo `hl7.fhir.r4.core`, canonical `https://josemandrade.github.io/prueba-his-muse-nvidia/`)
+- Produces: la carpeta de la guía con su identidad (id `hl7.fhir.uv.test.derivacion-aps-especialidad`, versión `0.1.0`, FHIR R4 4.0.1, dependencia solo `hl7.fhir.r4.core`, canonical `https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/`)
 
 - [ ] **Step 1: Write the failing test** — `sushi .` en la carpeta vacía: FAIL, no hay `sushi-config.yaml`
 - [ ] **Step 2: Run the test to verify it fails**

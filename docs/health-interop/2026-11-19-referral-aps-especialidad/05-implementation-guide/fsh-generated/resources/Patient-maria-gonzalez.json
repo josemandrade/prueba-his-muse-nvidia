@@ -3,7 +3,7 @@
   "id": "maria-gonzalez",
   "meta": {
     "profile": [
-      "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-paciente"
+      "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-paciente"
     ]
   },
   "identifier": [
@@ -18,7 +18,7 @@
   ],
   "extension": [
     {
-      "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-preferred-contact-channel",
+      "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-preferred-contact-channel",
       "valueCode": "phone"
     }
   ],

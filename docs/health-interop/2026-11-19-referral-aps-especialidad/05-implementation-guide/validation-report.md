@@ -1,7 +1,7 @@
 # Informe de validación — Paso 5: Guía de Implementación (Derivación APS → especialidad)
 
 Fecha: 2026-11-19. Guía versión 0.1.0, FHIR R4 4.0.1, canonical
-`https://josemandrade.github.io/prueba-his-muse-nvidia/`.
+`https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/`.
 SUSHI v3.21.1 (`npm install -g fsh-sushi`, instalado 2026-11-19).
 
 ## SUSHI final
@@ -18,7 +18,7 @@ SUSHI v3.21.1 (`npm install -g fsh-sushi`, instalado 2026-11-19).
 
 ## Canonical (cierra el ítem abierto del paso 4)
 
-- Canonical de la guía: `https://josemandrade.github.io/prueba-his-muse-nvidia/`
+- Canonical de la guía: `https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/`
   (raíz de GitHub Pages del repo de prueba, donde el workflow CI despliega
   la guía). IG id `hl7.fhir.uv.test.derivacion-aps-especialidad`, versión
   0.1.0, estado draft, única dependencia `hl7.fhir.r4.core 4.0.1`.

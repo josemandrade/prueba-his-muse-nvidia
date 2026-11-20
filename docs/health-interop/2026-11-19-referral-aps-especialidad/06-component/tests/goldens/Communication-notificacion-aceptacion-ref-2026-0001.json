@@ -3,7 +3,7 @@
   "id": "notificacion-aceptacion-ref-2026-0001",
   "meta": {
     "profile": [
-      "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-notificacion"
+      "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-notificacion"
     ]
   },
   "status": "completed",
@@ -20,7 +20,7 @@
   ],
   "extension": [
     {
-      "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-delivery-outcome",
+      "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-delivery-outcome",
       "valueCode": "delivered"
     }
   ],
@@ -55,7 +55,7 @@
       "coding": [
         {
           "code": "phone",
-          "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-canal",
+          "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-canal",
           "display": "Phone"
         }
       ]

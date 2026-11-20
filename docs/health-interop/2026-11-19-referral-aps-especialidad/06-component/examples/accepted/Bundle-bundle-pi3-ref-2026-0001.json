@@ -10,7 +10,7 @@
         "id": "contrareferencia-ref-2026-0001",
         "meta": {
           "profile": [
-            "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-contrareferencia"
+            "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-contrareferencia"
           ]
         },
         "status": "final",
@@ -83,7 +83,7 @@
         ],
         "extension": [
           {
-            "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-referral-identifier",
+            "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-referral-identifier",
             "valueIdentifier": {
               "system": "http://aps.losaromos.example.org/referral",
               "value": "REF-2026-0001"
@@ -115,7 +115,7 @@
         "id": "documento-ref-2026-0001",
         "meta": {
           "profile": [
-            "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-documento"
+            "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-documento"
           ]
         },
         "status": "current",
@@ -174,7 +174,7 @@
         "id": "diagnostico-ref-2026-0001",
         "meta": {
           "profile": [
-            "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-diagnostico"
+            "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-diagnostico"
           ]
         },
         "clinicalStatus": {
@@ -230,7 +230,7 @@
         "id": "plan-ref-2026-0001",
         "meta": {
           "profile": [
-            "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-plan-seguimiento"
+            "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-plan-seguimiento"
           ]
         },
         "status": "active",

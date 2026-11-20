@@ -6,7 +6,7 @@ Fuente: `05-implementation-guide/sushi-config.yaml` (canonical),
 valor viene de la guía validada.
 """
 
-CANONICAL = "https://josemandrade.github.io/prueba-his-muse-nvidia"
+CANONICAL = "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad"
 
 # Perfiles propios de la guía (12), sobre recursos base FHIR R4.
 PROFILES = {

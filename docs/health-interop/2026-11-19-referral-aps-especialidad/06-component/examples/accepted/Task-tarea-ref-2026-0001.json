@@ -3,7 +3,7 @@
   "id": "tarea-ref-2026-0001",
   "meta": {
     "profile": [
-      "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-tarea"
+      "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-tarea"
     ]
   },
   "identifier": [
@@ -17,7 +17,7 @@
     "coding": [
       {
         "code": "counter-referred",
-        "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia",
+        "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia",
         "display": "Counter-referred"
       }
     ]
@@ -27,7 +27,7 @@
     "coding": [
       {
         "code": "referral-workflow",
-        "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-task-code",
+        "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-task-code",
         "display": "Referral workflow"
       }
     ]

@@ -1,23 +1,31 @@
 # State — referral-aps-especialidad
 
-- Last updated: 2026-11-19 14:36 America/Santiago
+- Last updated: 2026-11-20 09:37 America/Santiago
 - Current step: ALL 6 STEPS VALIDATED 2026-11-19 (parent as
-  validating user). Steps 1–5 committed locally (6831859, ed773d5,
-  e856f2a, 018f114, 970530a); step 6 validated, awaiting local commit.
-  Step 2 push PENDING (approval card expired — parent retries it
-  with the user); steps 3–6 pushes not yet attempted.
-- Current task: step 6 VALIDATED 2026-11-19: expert review NOT
-  APPROVED first (0 critical/high, 3 medium + 3 low C1–C6), all 6
-  fixes applied, focused re-check APPROVED (0 critical/high/medium,
-  0 new findings); 168 tests green, 63 example JSON, 20/31 goldens
-  compared by value (23 assertions). Next: local commit of step 6,
-  then notify the user that all 6 steps are finished. Do NOT push
-  in this run (step 2 push pending, parent retries it).
+  validating user) and PUSHED 2026-11-20 (steps 5–6: bc9d1f41,
+  9ee58258; README fix pushed 44d35cc9). Step 5 re-touch: guide
+  canonical moved from the site root to the
+  `derivacion-aps-especialidad` subpath (user decision 2026-11-20:
+  one workflow per guide, with subpaths); SUSHI rebuilt 0/0,
+  committed locally (8e54b49). Expert re-review of the re-touch:
+  NOT APPROVED — 1 high (H1: the step 6 component still stamped
+  the root canonical) + 1 medium (M1: README artefacts bullet).
+- Current task: H1+M1 fixes applied 2026-11-20 (1b53d61, 119 files),
+  focused re-check APPROVED 2026-11-20 ~09:35 (0 critical/high).
+  Guide folder README added with the published URL at the top
+  (user: the URL was missing from the guide's README). Next: push
+  the rebuilt guide + component + guide README.
 - Last completed: step 6 VALIDATED 2026-11-19 by the parent as
   validating user (expert review NOT APPROVED first, 3 medium + 3
   low C1–C6 fixed; focused re-check APPROVED, 0 critical/high/
   medium, 0 new findings) and committed locally (597a318, 170
-  files). ALL 6 STEPS DONE. Previous: step 5 VALIDATED 2026-11-19
+  files). ALL 6 STEPS DONE. README fix (Published guide URL at
+  top, next-step current) committed locally 2026-11-20 (ef1281b)
+  and pushed (44d35cc9). Canonical re-touch committed locally
+  2026-11-20 (8e54b49, 70 files), pending expert re-review + push.
+  H1+M1 fixes committed locally 2026-11-20 (1b53d61, 119 files),
+  pending focused re-check + push.
+  Previous: step 5 VALIDATED 2026-11-19
   by the parent as validating user (expert review NOT APPROVED
   first, 2 medium + 7 low C1–C9 fixed; focused re-check APPROVED,
   0 new findings); committed locally (970530a).

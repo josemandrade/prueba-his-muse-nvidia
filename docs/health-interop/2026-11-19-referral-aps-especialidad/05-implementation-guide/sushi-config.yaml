@@ -1,5 +1,5 @@
 id: hl7.fhir.uv.test.derivacion-aps-especialidad
-canonical: https://josemandrade.github.io/prueba-his-muse-nvidia
+canonical: https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad
 name: DerivacionAPSEspecialidad
 title: Derivación APS → especialidad con contrareferencia
 description: >-

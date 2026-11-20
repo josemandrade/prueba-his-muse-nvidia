@@ -6,7 +6,7 @@
   "id": "derivacion-base-cruce",
   "title": "Base del cruce de identidad",
   "description": "Cómo se estableció el cruce de identidad en el MPI (lista local).",
-  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-base-cruce",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-base-cruce",
   "concept": [
     {
       "code": "identifier",

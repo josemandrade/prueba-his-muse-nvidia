@@ -52,4 +52,4 @@ guía no inventa un catálogo estándar para ninguna de ellas.
 
 Todos los identificadores de los ejemplos son sintéticos. Los dominios
 `example.org` son sistemas de identificador de ejemplo, no el canonical
-de la guía (que es `https://josemandrade.github.io/prueba-his-muse-nvidia/`).
+de la guía (que es `https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/`).

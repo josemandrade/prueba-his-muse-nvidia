@@ -78,5 +78,5 @@ contra sus perfiles.
 ## Estado
 
 Guía de prueba, versión 0.1.0, estado `draft`, FHIR R4 4.0.1. Canonical:
-`https://josemandrade.github.io/prueba-his-muse-nvidia/`. La única
+`https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/`. La única
 dependencia es `hl7.fhir.r4.core 4.0.1`.

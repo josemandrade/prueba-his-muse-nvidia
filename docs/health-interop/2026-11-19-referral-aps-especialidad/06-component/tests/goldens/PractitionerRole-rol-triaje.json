@@ -3,7 +3,7 @@
   "id": "rol-triaje",
   "meta": {
     "profile": [
-      "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rol"
+      "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-rol"
     ]
   },
   "practitioner": {
@@ -17,7 +17,7 @@
       "coding": [
         {
           "code": "triage-clinician",
-          "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol",
+          "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-rol",
           "display": "Triage clinician"
         }
       ]
