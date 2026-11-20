@@ -1,0 +1,53 @@
+{
+  "resourceType": "Condition",
+  "id": "diagnostico-ref-2026-0001",
+  "meta": {
+    "profile": [
+      "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-diagnostico"
+    ]
+  },
+  "clinicalStatus": {
+    "coding": [
+      {
+        "code": "active",
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+        "display": "Active"
+      }
+    ]
+  },
+  "verificationStatus": {
+    "coding": [
+      {
+        "code": "confirmed",
+        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+        "display": "Confirmed"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10-cm",
+        "code": "I50.22",
+        "display": "Chronic systolic (congestive) heart failure"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "417996009",
+        "display": "Systolic heart failure"
+      }
+    ],
+    "text": "Insuficiencia cardiaca sistólica crónica (FEVI 35%)"
+  },
+  "subject": {
+    "reference": "Patient/maria-gonzalez"
+  },
+  "encounter": {
+    "reference": "Encounter/encuentro-ref-2026-0001"
+  },
+  "note": [
+    {
+      "text": "FEVI 35% por ecocardiograma. Sin isquemia aguda en el ECG."
+    }
+  ]
+}

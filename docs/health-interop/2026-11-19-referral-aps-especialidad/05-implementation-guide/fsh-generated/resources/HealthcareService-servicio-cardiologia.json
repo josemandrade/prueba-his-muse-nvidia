@@ -1,0 +1,36 @@
+{
+  "resourceType": "HealthcareService",
+  "id": "servicio-cardiologia",
+  "meta": {
+    "profile": [
+      "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-servicio"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://especialidad.example.org/service",
+      "value": "cardiologia"
+    }
+  ],
+  "providedBy": {
+    "reference": "Organization/org-cardiologia"
+  },
+  "type": [
+    {
+      "coding": [
+        {
+          "code": "cardiologia",
+          "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad",
+          "display": "Cardiology"
+        }
+      ]
+    }
+  ],
+  "name": "Cardiology",
+  "active": true,
+  "endpoint": [
+    {
+      "reference": "Endpoint/endpoint-cardiologia"
+    }
+  ]
+}

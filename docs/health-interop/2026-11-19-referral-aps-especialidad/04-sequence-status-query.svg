@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="566" viewBox="0 0 1040 566">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#374151"/></marker><marker id="arrow-open" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10" fill="none" stroke="#374151" stroke-width="1.6"/></marker><marker id="arrow-ret" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10" fill="none" stroke="#6b7280" stroke-width="1.5"/></marker></defs>
+<rect x="0" y="0" width="1040" height="566" fill="#ffffff"/>
+<text x="40" y="30" font-family="sans-serif" font-size="18" font-weight="bold" fill="#111827">Consulta de estado — preguntar dónde va la derivación (PI-4)</text>
+<text x="40" y="52" font-family="sans-serif" font-size="13" fill="#6b7280">BPMN Parte C: APS necesita el estado &gt; Consultar al hub &gt; Hub devuelve estado actual, último cambio y próximo paso (o no encontrado)</text>
+<rect x="54" y="218" width="932" height="178" fill="#f9fafb" stroke="#6b7280" stroke-width="1.5"/>
+<line x1="54" y1="324" x2="986" y2="324" stroke="#6b7280" stroke-width="1.2" stroke-dasharray="6 4"/>
+<rect x="70" y="305" width="121" height="18" rx="9" fill="#ffffff" stroke="#9ca3af" stroke-width="0.7"/><text x="130" y="318" text-anchor="middle" font-family="sans-serif" font-size="12.5" fill="#111827">[no encontrada]</text>
+<line x1="280" y1="140" x2="280" y2="396" stroke="#9ca3af" stroke-width="1.2" stroke-dasharray="5 4"/>
+<line x1="760" y1="140" x2="760" y2="396" stroke="#9ca3af" stroke-width="1.2" stroke-dasharray="5 4"/>
+<rect x="754" y="178" width="12" height="190" fill="#ffffff" stroke="#374151" stroke-width="1.2"/>
+<rect x="54" y="218" width="204" height="22" fill="#ffffff" stroke="#6b7280" stroke-width="1.5"/><text x="62" y="233" font-family="sans-serif" font-size="12" font-weight="bold" fill="#111827">alt [derivación encontrada]</text>
+<line x1="280" y1="186" x2="754" y2="186" stroke="#374151" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="435" y="144" width="164" height="18" rx="9" fill="#ffffff" stroke="#9ca3af" stroke-width="0.7"/><text x="517" y="157" text-anchor="middle" font-family="sans-serif" font-size="12.5" fill="#111827">OP-7 Consultar estado</text>
+<rect x="312" y="163" width="411" height="18" rx="9" fill="#ffffff" stroke="#9ca3af" stroke-width="0.7"/><text x="517" y="176" text-anchor="middle" font-family="sans-serif" font-size="12.5" fill="#111827">GET /Task?focus:ServiceRequest.identifier=REF-2026-0001</text>
+<line x1="766" y1="288" x2="280" y2="288" stroke="#6b7280" stroke-width="1.5" stroke-dasharray="7 4" marker-end="url(#arrow-ret)"/>
+<rect x="319" y="295" width="409" height="18" rx="9" fill="#f3f4f6" stroke="#d1d5db" stroke-width="0.7"/><text x="523" y="308" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#111827">Task (status, businessStatus, lastModified, próximo paso)</text>
+<line x1="766" y1="360" x2="280" y2="360" stroke="#6b7280" stroke-width="1.5" stroke-dasharray="7 4" marker-end="url(#arrow-ret)"/>
+<rect x="420" y="367" width="207" height="18" rx="9" fill="#f3f4f6" stroke="#d1d5db" stroke-width="0.7"/><text x="523" y="380" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#111827">404 not found — verificar id</text>
+<rect x="55" y="84" width="450" height="56" rx="8" fill="#ffffff" stroke="#374151" stroke-width="1.8"/>
+<text x="280" y="116" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#111827">Médico / administrativo APS</text>
+<rect x="535" y="84" width="450" height="56" rx="8" fill="#ffffff" stroke="#374151" stroke-width="1.8"/>
+<text x="760" y="116" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#111827">Hub de derivación</text>
+<rect x="40" y="412" width="960" height="38" rx="8" fill="#fef9c3" stroke="#d97706" stroke-width="1"/>
+<text x="54" y="434" font-family="sans-serif" font-size="12.5" fill="#451a03">PI-4 es solo lectura: la consulta nunca cambia el estado. Si el id no existe, APS verifica el identificador de la derivación.</text>
+<rect x="40" y="458" width="960" height="56" rx="8" fill="#fef9c3" stroke="#d97706" stroke-width="1"/>
+<text x="54" y="480" font-family="sans-serif" font-size="12.5" fill="#451a03">None applies (explícito): ningún perfil IHE lleva una consulta de estado de flujo de trabajo. QEDm PCC-44 cubre solo datos clínicos;</text>
+<text x="54" y="498" font-family="sans-serif" font-size="12.5" fill="#451a03">DSUBm cubre solo eventos de documento. La OP-7 de la guía es búsqueda FHIR simple sobre el Task.</text>
+<text x="520" y="548" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#6b7280">Cada mensaje nombra la operación que lo lleva; el detalle (entradas, ejemplo, resultado esperado) está en la tabla de operaciones de sequences.md.</text>
+</svg>

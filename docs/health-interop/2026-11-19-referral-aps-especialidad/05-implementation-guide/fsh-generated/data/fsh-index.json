@@ -1,0 +1,586 @@
+[
+  {
+    "outputFile": "Appointment-cita-ref-2026-0001.json",
+    "fshName": "cita-ref-2026-0001",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 243,
+    "endLine": 264
+  },
+  {
+    "outputFile": "AppointmentResponse-respuesta-cita-1.json",
+    "fshName": "respuesta-cita-1",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 266,
+    "endLine": 272
+  },
+  {
+    "outputFile": "Bundle-bundle-pi0-ref-2026-0001.json",
+    "fshName": "bundle-pi0-ref-2026-0001",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 393,
+    "endLine": 406
+  },
+  {
+    "outputFile": "Bundle-bundle-pi3-ref-2026-0001.json",
+    "fshName": "bundle-pi3-ref-2026-0001",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 408,
+    "endLine": 422
+  },
+  {
+    "outputFile": "CarePlan-plan-ref-2026-0001.json",
+    "fshName": "plan-ref-2026-0001",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 304,
+    "endLine": 318
+  },
+  {
+    "outputFile": "CodeSystem-derivacion-base-cruce.json",
+    "fshName": "DerivacionBaseCruceCS",
+    "fshType": "CodeSystem",
+    "fshFile": "valuesets.fsh",
+    "startLine": 107,
+    "endLine": 112
+  },
+  {
+    "outputFile": "CodeSystem-derivacion-canal.json",
+    "fshName": "DerivacionCanalCS",
+    "fshType": "CodeSystem",
+    "fshFile": "valuesets.fsh",
+    "startLine": 56,
+    "endLine": 62
+  },
+  {
+    "outputFile": "CodeSystem-derivacion-especialidad.json",
+    "fshName": "DerivacionEspecialidadCS",
+    "fshType": "CodeSystem",
+    "fshFile": "valuesets.fsh",
+    "startLine": 70,
+    "endLine": 74
+  },
+  {
+    "outputFile": "CodeSystem-derivacion-estado-referencia.json",
+    "fshName": "DerivacionEstadoReferenciaCS",
+    "fshType": "CodeSystem",
+    "fshFile": "valuesets.fsh",
+    "startLine": 5,
+    "endLine": 17
+  },
+  {
+    "outputFile": "CodeSystem-derivacion-motivo-rechazo.json",
+    "fshName": "DerivacionMotivoRechazoCS",
+    "fshType": "CodeSystem",
+    "fshFile": "valuesets.fsh",
+    "startLine": 42,
+    "endLine": 48
+  },
+  {
+    "outputFile": "CodeSystem-derivacion-resultado-entrega.json",
+    "fshName": "DerivacionResultadoEntregaCS",
+    "fshType": "CodeSystem",
+    "fshFile": "valuesets.fsh",
+    "startLine": 94,
+    "endLine": 99
+  },
+  {
+    "outputFile": "CodeSystem-derivacion-rol.json",
+    "fshName": "DerivacionRolCS",
+    "fshType": "CodeSystem",
+    "fshFile": "valuesets.fsh",
+    "startLine": 25,
+    "endLine": 34
+  },
+  {
+    "outputFile": "CodeSystem-derivacion-task-code.json",
+    "fshName": "DerivacionTaskCodeCS",
+    "fshType": "CodeSystem",
+    "fshFile": "valuesets.fsh",
+    "startLine": 82,
+    "endLine": 86
+  },
+  {
+    "outputFile": "Communication-notificacion-aceptacion-ref-2026-0001.json",
+    "fshName": "notificacion-aceptacion-ref-2026-0001",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 374,
+    "endLine": 391
+  },
+  {
+    "outputFile": "Composition-contrareferencia-ref-2026-0001.json",
+    "fshName": "contrareferencia-ref-2026-0001",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 320,
+    "endLine": 354
+  },
+  {
+    "outputFile": "Condition-diagnostico-ref-2026-0001.json",
+    "fshName": "diagnostico-ref-2026-0001",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 291,
+    "endLine": 302
+  },
+  {
+    "outputFile": "DocumentReference-documento-ref-2026-0001.json",
+    "fshName": "documento-ref-2026-0001",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 356,
+    "endLine": 372
+  },
+  {
+    "outputFile": "Encounter-aps-encounter-2026-11-19.json",
+    "fshName": "aps-encounter-2026-11-19",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 175,
+    "endLine": 184
+  },
+  {
+    "outputFile": "Encounter-encuentro-ref-2026-0001.json",
+    "fshName": "encuentro-ref-2026-0001",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 274,
+    "endLine": 289
+  },
+  {
+    "outputFile": "Endpoint-endpoint-cardiologia.json",
+    "fshName": "endpoint-cardiologia",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 133,
+    "endLine": 142
+  },
+  {
+    "outputFile": "HealthcareService-servicio-cardiologia.json",
+    "fshName": "servicio-cardiologia",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 121,
+    "endLine": 131
+  },
+  {
+    "outputFile": "Location-location-cardiologia.json",
+    "fshName": "location-cardiologia",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 144,
+    "endLine": 150
+  },
+  {
+    "outputFile": "Observation-ecg-2026-11-19.json",
+    "fshName": "ecg-2026-11-19",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 186,
+    "endLine": 194
+  },
+  {
+    "outputFile": "Observation-ntprobnp-2026-11-19.json",
+    "fshName": "ntprobnp-2026-11-19",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 196,
+    "endLine": 204
+  },
+  {
+    "outputFile": "Organization-org-cardiologia.json",
+    "fshName": "org-cardiologia",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 58,
+    "endLine": 65
+  },
+  {
+    "outputFile": "Organization-org-cesfam-los-aromos.json",
+    "fshName": "org-cesfam-los-aromos",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 49,
+    "endLine": 56
+  },
+  {
+    "outputFile": "Organization-org-hub.json",
+    "fshName": "org-hub",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 67,
+    "endLine": 74
+  },
+  {
+    "outputFile": "Patient-maria-gonzalez.json",
+    "fshName": "maria-gonzalez",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 6,
+    "endLine": 25
+  },
+  {
+    "outputFile": "Practitioner-especialista-cardiologia.json",
+    "fshName": "especialista-cardiologia",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 38,
+    "endLine": 47
+  },
+  {
+    "outputFile": "Practitioner-medico-aps.json",
+    "fshName": "medico-aps",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 27,
+    "endLine": 36
+  },
+  {
+    "outputFile": "PractitionerRole-rol-admin-aps.json",
+    "fshName": "rol-admin-aps",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 85,
+    "endLine": 92
+  },
+  {
+    "outputFile": "PractitionerRole-rol-agendador.json",
+    "fshName": "rol-agendador",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 112,
+    "endLine": 119
+  },
+  {
+    "outputFile": "PractitionerRole-rol-especialista.json",
+    "fshName": "rol-especialista",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 94,
+    "endLine": 101
+  },
+  {
+    "outputFile": "PractitionerRole-rol-medico-aps.json",
+    "fshName": "rol-medico-aps",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 76,
+    "endLine": 83
+  },
+  {
+    "outputFile": "PractitionerRole-rol-triaje.json",
+    "fshName": "rol-triaje",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 103,
+    "endLine": 110
+  },
+  {
+    "outputFile": "Schedule-schedule-cardiologia.json",
+    "fshName": "schedule-cardiologia",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 225,
+    "endLine": 232
+  },
+  {
+    "outputFile": "ServiceRequest-ref-2026-0001.json",
+    "fshName": "ref-2026-0001",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 152,
+    "endLine": 173
+  },
+  {
+    "outputFile": "Slot-slot-cardiologia-1.json",
+    "fshName": "slot-cardiologia-1",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 234,
+    "endLine": 241
+  },
+  {
+    "outputFile": "StructureDefinition-derivacion-cita.json",
+    "fshName": "DerivacionCita",
+    "fshType": "Profile",
+    "fshFile": "appointment.fsh",
+    "startLine": 7,
+    "endLine": 32
+  },
+  {
+    "outputFile": "StructureDefinition-derivacion-contrareferencia.json",
+    "fshName": "DerivacionContrareferencia",
+    "fshType": "Profile",
+    "fshFile": "composition.fsh",
+    "startLine": 7,
+    "endLine": 51
+  },
+  {
+    "outputFile": "StructureDefinition-derivacion-delivery-outcome.json",
+    "fshName": "DerivacionDeliveryOutcome",
+    "fshType": "Extension",
+    "fshFile": "extensions.fsh",
+    "startLine": 122,
+    "endLine": 130
+  },
+  {
+    "outputFile": "StructureDefinition-derivacion-diagnostico.json",
+    "fshName": "DerivacionDiagnostico",
+    "fshType": "Profile",
+    "fshFile": "condition.fsh",
+    "startLine": 8,
+    "endLine": 32
+  },
+  {
+    "outputFile": "StructureDefinition-derivacion-documento.json",
+    "fshName": "DerivacionDocumento",
+    "fshType": "Profile",
+    "fshFile": "documentreference.fsh",
+    "startLine": 6,
+    "endLine": 38
+  },
+  {
+    "outputFile": "StructureDefinition-derivacion-encuentro.json",
+    "fshName": "DerivacionEncuentro",
+    "fshType": "Profile",
+    "fshFile": "encounter.fsh",
+    "startLine": 7,
+    "endLine": 34
+  },
+  {
+    "outputFile": "StructureDefinition-derivacion-match-basis.json",
+    "fshName": "DerivacionMatchBasis",
+    "fshType": "Extension",
+    "fshFile": "extensions.fsh",
+    "startLine": 132,
+    "endLine": 140
+  },
+  {
+    "outputFile": "StructureDefinition-derivacion-match-confidence.json",
+    "fshName": "DerivacionMatchConfidence",
+    "fshType": "Extension",
+    "fshFile": "extensions.fsh",
+    "startLine": 147,
+    "endLine": 155
+  },
+  {
+    "outputFile": "StructureDefinition-derivacion-notificacion.json",
+    "fshName": "DerivacionNotificacion",
+    "fshType": "Profile",
+    "fshFile": "communication.fsh",
+    "startLine": 6,
+    "endLine": 40
+  },
+  {
+    "outputFile": "StructureDefinition-derivacion-offer-chase-count.json",
+    "fshName": "DerivacionOfferChaseCount",
+    "fshType": "Extension",
+    "fshFile": "extensions.fsh",
+    "startLine": 69,
+    "endLine": 77
+  },
+  {
+    "outputFile": "StructureDefinition-derivacion-offer-decline-count.json",
+    "fshName": "DerivacionOfferDeclineCount",
+    "fshType": "Extension",
+    "fshFile": "extensions.fsh",
+    "startLine": 54,
+    "endLine": 62
+  },
+  {
+    "outputFile": "StructureDefinition-derivacion-offer-number.json",
+    "fshName": "DerivacionOfferNumber",
+    "fshType": "Extension",
+    "fshFile": "extensions.fsh",
+    "startLine": 94,
+    "endLine": 101
+  },
+  {
+    "outputFile": "StructureDefinition-derivacion-paciente.json",
+    "fshName": "DerivacionPaciente",
+    "fshType": "Profile",
+    "fshFile": "patient.fsh",
+    "startLine": 6,
+    "endLine": 30
+  },
+  {
+    "outputFile": "StructureDefinition-derivacion-plan-seguimiento.json",
+    "fshName": "DerivacionPlanSeguimiento",
+    "fshType": "Profile",
+    "fshFile": "careplan.fsh",
+    "startLine": 7,
+    "endLine": 31
+  },
+  {
+    "outputFile": "StructureDefinition-derivacion-preferred-contact-channel.json",
+    "fshName": "DerivacionPreferredContactChannel",
+    "fshType": "Extension",
+    "fshFile": "extensions.fsh",
+    "startLine": 112,
+    "endLine": 120
+  },
+  {
+    "outputFile": "StructureDefinition-derivacion-referral-identifier.json",
+    "fshName": "DerivacionReferralIdentifier",
+    "fshType": "Extension",
+    "fshFile": "extensions.fsh",
+    "startLine": 103,
+    "endLine": 110
+  },
+  {
+    "outputFile": "StructureDefinition-derivacion-rescheduling-count.json",
+    "fshName": "DerivacionReschedulingCount",
+    "fshType": "Extension",
+    "fshFile": "extensions.fsh",
+    "startLine": 84,
+    "endLine": 92
+  },
+  {
+    "outputFile": "StructureDefinition-derivacion-rol.json",
+    "fshName": "DerivacionRol",
+    "fshType": "Profile",
+    "fshFile": "practitionerrole.fsh",
+    "startLine": 6,
+    "endLine": 21
+  },
+  {
+    "outputFile": "StructureDefinition-derivacion-servicio.json",
+    "fshName": "DerivacionServicio",
+    "fshType": "Profile",
+    "fshFile": "healthcareservice.fsh",
+    "startLine": 6,
+    "endLine": 26
+  },
+  {
+    "outputFile": "StructureDefinition-derivacion-sla-acceptance-deadline.json",
+    "fshName": "DerivacionSlaAcceptanceDeadline",
+    "fshType": "Extension",
+    "fshFile": "extensions.fsh",
+    "startLine": 4,
+    "endLine": 11
+  },
+  {
+    "outputFile": "StructureDefinition-derivacion-sla-confirmation-deadline.json",
+    "fshName": "DerivacionSlaConfirmationDeadline",
+    "fshType": "Extension",
+    "fshFile": "extensions.fsh",
+    "startLine": 40,
+    "endLine": 47
+  },
+  {
+    "outputFile": "StructureDefinition-derivacion-sla-counterreferral-deadline.json",
+    "fshName": "DerivacionSlaCounterreferralDeadline",
+    "fshType": "Extension",
+    "fshFile": "extensions.fsh",
+    "startLine": 22,
+    "endLine": 29
+  },
+  {
+    "outputFile": "StructureDefinition-derivacion-sla-offer-deadline.json",
+    "fshName": "DerivacionSlaOfferDeadline",
+    "fshType": "Extension",
+    "fshFile": "extensions.fsh",
+    "startLine": 13,
+    "endLine": 20
+  },
+  {
+    "outputFile": "StructureDefinition-derivacion-sla-retriage-deadline.json",
+    "fshName": "DerivacionSlaRetriageDeadline",
+    "fshType": "Extension",
+    "fshFile": "extensions.fsh",
+    "startLine": 31,
+    "endLine": 38
+  },
+  {
+    "outputFile": "StructureDefinition-derivacion-solicitud.json",
+    "fshName": "DerivacionSolicitud",
+    "fshType": "Profile",
+    "fshFile": "servicerequest.fsh",
+    "startLine": 6,
+    "endLine": 40
+  },
+  {
+    "outputFile": "StructureDefinition-derivacion-tarea.json",
+    "fshName": "DerivacionTarea",
+    "fshType": "Profile",
+    "fshFile": "task.fsh",
+    "startLine": 6,
+    "endLine": 51
+  },
+  {
+    "outputFile": "Task-tarea-ref-2026-0001.json",
+    "fshName": "tarea-ref-2026-0001",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 206,
+    "endLine": 223
+  },
+  {
+    "outputFile": "ValueSet-derivacion-base-cruce.json",
+    "fshName": "DerivacionBaseCruce",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets.fsh",
+    "startLine": 114,
+    "endLine": 118
+  },
+  {
+    "outputFile": "ValueSet-derivacion-canal.json",
+    "fshName": "DerivacionCanal",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets.fsh",
+    "startLine": 64,
+    "endLine": 68
+  },
+  {
+    "outputFile": "ValueSet-derivacion-especialidad.json",
+    "fshName": "DerivacionEspecialidad",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets.fsh",
+    "startLine": 76,
+    "endLine": 80
+  },
+  {
+    "outputFile": "ValueSet-derivacion-estado-referencia.json",
+    "fshName": "DerivacionEstadoReferencia",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets.fsh",
+    "startLine": 19,
+    "endLine": 23
+  },
+  {
+    "outputFile": "ValueSet-derivacion-motivo-rechazo.json",
+    "fshName": "DerivacionMotivoRechazo",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets.fsh",
+    "startLine": 50,
+    "endLine": 54
+  },
+  {
+    "outputFile": "ValueSet-derivacion-resultado-entrega.json",
+    "fshName": "DerivacionResultadoEntrega",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets.fsh",
+    "startLine": 101,
+    "endLine": 105
+  },
+  {
+    "outputFile": "ValueSet-derivacion-rol.json",
+    "fshName": "DerivacionRolVS",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets.fsh",
+    "startLine": 36,
+    "endLine": 40
+  },
+  {
+    "outputFile": "ValueSet-derivacion-task-code.json",
+    "fshName": "DerivacionTaskCode",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets.fsh",
+    "startLine": 88,
+    "endLine": 92
+  }
+]

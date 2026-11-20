@@ -1,0 +1,43 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "DerivacionRolCS",
+  "id": "derivacion-rol",
+  "title": "Rol en la derivación",
+  "description": "Los seis roles del caso de uso (spec §2). Dentro de una derivación, cada rol es una persona (el clínico de triaje no es el agendador — C1).",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol",
+  "concept": [
+    {
+      "code": "aps-doctor",
+      "display": "APS doctor",
+      "definition": "Médico de APS que crea la derivación."
+    },
+    {
+      "code": "aps-admin",
+      "display": "APS admin",
+      "definition": "Administrativo de APS que registra y sigue la derivación e informa al paciente."
+    },
+    {
+      "code": "triage-clinician",
+      "display": "Triage clinician",
+      "definition": "Clínico de la especialidad que acepta o rechaza la derivación."
+    },
+    {
+      "code": "specialty-scheduler",
+      "display": "Specialty scheduler",
+      "definition": "Agendador de la especialidad que reserva y re-agenda la cita."
+    },
+    {
+      "code": "specialist",
+      "display": "Specialist",
+      "definition": "Especialista que atiende y emite la contrareferencia."
+    },
+    {
+      "code": "hub-operator",
+      "display": "Hub operator",
+      "definition": "Operador del hub de derivación (enruta, escala, registra cancelaciones, responde consultas de estado)."
+    }
+  ],
+  "count": 6
+}

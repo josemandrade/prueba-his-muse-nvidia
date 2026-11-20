@@ -1,0 +1,27 @@
+{
+  "resourceType": "PractitionerRole",
+  "id": "rol-medico-aps",
+  "meta": {
+    "profile": [
+      "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rol"
+    ]
+  },
+  "practitioner": {
+    "reference": "Practitioner/medico-aps"
+  },
+  "organization": {
+    "reference": "Organization/org-cesfam-los-aromos"
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "code": "aps-doctor",
+          "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol",
+          "display": "APS doctor"
+        }
+      ]
+    }
+  ],
+  "active": true
+}

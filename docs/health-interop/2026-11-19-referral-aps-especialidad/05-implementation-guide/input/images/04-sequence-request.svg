@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2180" height="1188" viewBox="0 0 2180 1188">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#374151"/></marker><marker id="arrow-open" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10" fill="none" stroke="#374151" stroke-width="1.6"/></marker><marker id="arrow-ret" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10" fill="none" stroke="#6b7280" stroke-width="1.5"/></marker></defs>
+<rect x="0" y="0" width="2180" height="1188" fill="#ffffff"/>
+<text x="40" y="30" font-family="sans-serif" font-size="18" font-weight="bold" fill="#111827">Solicitud — crear la derivación y enrutarla (PI-0)</text>
+<text x="40" y="52" font-family="sans-serif" font-size="13" fill="#6b7280">BPMN Parte A: Médico APS &gt; ¿Paciente acepta la derivación? &gt; Resolver identidad vía MPI &gt; Crear derivación (conjunto mínimo de datos) &gt; Hub recibe y enruta &gt; Especialidad recibe</text>
+<rect x="354" y="794" width="872" height="178" fill="#f9fafb" stroke="#6b7280" stroke-width="1.5"/>
+<line x1="190" y1="140" x2="190" y2="972" stroke="#9ca3af" stroke-width="1.2" stroke-dasharray="5 4"/>
+<line x1="490" y1="140" x2="490" y2="972" stroke="#9ca3af" stroke-width="1.2" stroke-dasharray="5 4"/>
+<line x1="790" y1="140" x2="790" y2="972" stroke="#9ca3af" stroke-width="1.2" stroke-dasharray="5 4"/>
+<line x1="1090" y1="140" x2="1090" y2="972" stroke="#9ca3af" stroke-width="1.2" stroke-dasharray="5 4"/>
+<line x1="1390" y1="140" x2="1390" y2="972" stroke="#9ca3af" stroke-width="1.2" stroke-dasharray="5 4"/>
+<line x1="1690" y1="140" x2="1690" y2="972" stroke="#9ca3af" stroke-width="1.2" stroke-dasharray="5 4"/>
+<line x1="1990" y1="140" x2="1990" y2="972" stroke="#9ca3af" stroke-width="1.2" stroke-dasharray="5 4"/>
+<rect x="784" y="178" width="12" height="88" fill="#ffffff" stroke="#374151" stroke-width="1.2"/>
+<rect x="1084" y="322" width="12" height="448" fill="#ffffff" stroke="#374151" stroke-width="1.2"/>
+<rect x="354" y="794" width="267" height="22" fill="#ffffff" stroke="#6b7280" stroke-width="1.5"/><text x="362" y="809" font-family="sans-serif" font-size="12" font-weight="bold" fill="#111827">opt [si APS quiere seguir el estado]</text>
+<line x1="190" y1="186" x2="784" y2="186" stroke="#374151" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="398" y="144" width="179" height="18" rx="9" fill="#ffffff" stroke="#9ca3af" stroke-width="0.7"/><text x="487" y="157" text-anchor="middle" font-family="sans-serif" font-size="12.5" fill="#111827">OP-9 Resolver identidad</text>
+<rect x="358" y="163" width="258" height="18" rx="9" fill="#ffffff" stroke="#9ca3af" stroke-width="0.7"/><text x="487" y="176" text-anchor="middle" font-family="sans-serif" font-size="12.5" fill="#111827">PIXm ITI-83 $ihe-pix / PDQm ITI-78</text>
+<line x1="796" y1="258" x2="190" y2="258" stroke="#6b7280" stroke-width="1.5" stroke-dasharray="7 4" marker-end="url(#arrow-ret)"/>
+<rect x="407" y="265" width="172" height="18" rx="9" fill="#f3f4f6" stroke="#d1d5db" stroke-width="0.7"/><text x="493" y="278" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#111827">clave MPI / no resuelta</text>
+<line x1="190" y1="330" x2="1084" y2="330" stroke="#374151" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="555" y="288" width="164" height="18" rx="9" fill="#ffffff" stroke="#9ca3af" stroke-width="0.7"/><text x="637" y="301" text-anchor="middle" font-family="sans-serif" font-size="12.5" fill="#111827">OP-1 Crear derivación</text>
+<rect x="500" y="307" width="273" height="18" rx="9" fill="#ffffff" stroke="#9ca3af" stroke-width="0.7"/><text x="637" y="320" text-anchor="middle" font-family="sans-serif" font-size="12.5" fill="#111827">POST /Bundle (ServiceRequest + Task)</text>
+<line x1="1084" y1="402" x2="1390" y2="402" stroke="#374151" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="1144" y="360" width="186" height="18" rx="9" fill="#ffffff" stroke="#9ca3af" stroke-width="0.7"/><text x="1237" y="373" text-anchor="middle" font-family="sans-serif" font-size="12.5" fill="#111827">OP-10 Encontrar servicio</text>
+<rect x="1090" y="379" width="295" height="18" rx="9" fill="#ffffff" stroke="#9ca3af" stroke-width="0.7"/><text x="1237" y="392" text-anchor="middle" font-family="sans-serif" font-size="12.5" fill="#111827">mCSD ITI-90 Find Matching Care Services</text>
+<line x1="1390" y1="474" x2="1096" y2="474" stroke="#6b7280" stroke-width="1.5" stroke-dasharray="7 4" marker-end="url(#arrow-ret)"/>
+<rect x="1140" y="481" width="207" height="18" rx="9" fill="#f3f4f6" stroke="#d1d5db" stroke-width="0.7"/><text x="1243" y="494" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#111827">HealthcareService + Endpoint</text>
+<line x1="1084" y1="546" x2="1690" y2="546" stroke="#374151" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="1294" y="504" width="186" height="18" rx="9" fill="#ffffff" stroke="#9ca3af" stroke-width="0.7"/><text x="1387" y="517" text-anchor="middle" font-family="sans-serif" font-size="12.5" fill="#111827">OP-1 Reenviar derivación</text>
+<rect x="1316" y="523" width="142" height="18" rx="9" fill="#ffffff" stroke="#9ca3af" stroke-width="0.7"/><text x="1387" y="536" text-anchor="middle" font-family="sans-serif" font-size="12.5" fill="#111827">POST /Bundle (m11)</text>
+<line x1="1690" y1="618" x2="1096" y2="618" stroke="#6b7280" stroke-width="1.5" stroke-dasharray="7 4" marker-end="url(#arrow-ret)"/>
+<rect x="1321" y="625" width="144" height="18" rx="9" fill="#f3f4f6" stroke="#d1d5db" stroke-width="0.7"/><text x="1393" y="638" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#111827">derivación recibida</text>
+<line x1="1096" y1="690" x2="490" y2="690" stroke="#374151" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="678" y="648" width="229" height="18" rx="9" fill="#ffffff" stroke="#9ca3af" stroke-width="0.7"/><text x="793" y="661" text-anchor="middle" font-family="sans-serif" font-size="12.5" fill="#111827">OP-12 Notificar creación a APS</text>
+<rect x="671" y="667" width="244" height="18" rx="9" fill="#ffffff" stroke="#9ca3af" stroke-width="0.7"/><text x="793" y="680" text-anchor="middle" font-family="sans-serif" font-size="12.5" fill="#111827">POST /Communication (hub -&gt; APS)</text>
+<line x1="490" y1="762" x2="1990" y2="762" stroke="#374151" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="1140" y="720" width="200" height="18" rx="9" fill="#ffffff" stroke="#9ca3af" stroke-width="0.7"/><text x="1240" y="733" text-anchor="middle" font-family="sans-serif" font-size="12.5" fill="#111827">OP-12 Avisar a la paciente</text>
+<rect x="1104" y="739" width="273" height="18" rx="9" fill="#ffffff" stroke="#9ca3af" stroke-width="0.7"/><text x="1240" y="752" text-anchor="middle" font-family="sans-serif" font-size="12.5" fill="#111827">aviso no-FHIR: teléfono / presencial</text>
+<line x1="490" y1="864" x2="1090" y2="864" stroke="#374151" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="672" y="822" width="237" height="18" rx="9" fill="#ffffff" stroke="#9ca3af" stroke-width="0.7"/><text x="790" y="835" text-anchor="middle" font-family="sans-serif" font-size="12.5" fill="#111827">OP-11 Suscribirse a los cambios</text>
+<rect x="657" y="841" width="266" height="18" rx="9" fill="#ffffff" stroke="#9ca3af" stroke-width="0.7"/><text x="790" y="854" text-anchor="middle" font-family="sans-serif" font-size="12.5" fill="#111827">POST /Subscription (Task?focus=...)</text>
+<line x1="1090" y1="936" x2="490" y2="936" stroke="#6b7280" stroke-width="1.5" stroke-dasharray="7 4" marker-end="url(#arrow-ret)"/>
+<rect x="746" y="943" width="89" height="18" rx="9" fill="#f3f4f6" stroke="#d1d5db" stroke-width="0.7"/><text x="790" y="956" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#111827">201 Created</text>
+<rect x="55" y="84" width="270" height="56" rx="8" fill="#ffffff" stroke="#374151" stroke-width="1.8"/>
+<text x="190" y="116" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#111827">Médico APS</text>
+<rect x="355" y="84" width="270" height="56" rx="8" fill="#ffffff" stroke="#374151" stroke-width="1.8"/>
+<text x="490" y="116" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#111827">Administrativo APS</text>
+<rect x="655" y="84" width="270" height="56" rx="8" fill="#ffffff" stroke="#374151" stroke-width="1.8"/>
+<text x="790" y="116" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#111827">MPI</text>
+<rect x="955" y="84" width="270" height="56" rx="8" fill="#ffffff" stroke="#374151" stroke-width="1.8"/>
+<text x="1090" y="116" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#111827">Hub de derivación</text>
+<rect x="1255" y="84" width="270" height="56" rx="8" fill="#ffffff" stroke="#374151" stroke-width="1.8"/>
+<text x="1390" y="108" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#111827">Directorio de servicios</text>
+<text x="1390" y="125" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#6b7280">mCSD</text>
+<rect x="1555" y="84" width="270" height="56" rx="8" fill="#ffffff" stroke="#374151" stroke-width="1.8"/>
+<text x="1690" y="108" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#111827">Especialidad</text>
+<text x="1690" y="125" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#6b7280">clínico de triaje</text>
+<rect x="1855" y="84" width="270" height="56" rx="8" fill="#ffffff" stroke="#374151" stroke-width="1.8"/>
+<text x="1990" y="116" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#111827">Paciente</text>
+<rect x="40" y="988" width="2100" height="38" rx="8" fill="#fef9c3" stroke="#d97706" stroke-width="1"/>
+<text x="54" y="1010" font-family="sans-serif" font-size="12.5" fill="#451a03">Sin identidad resuelta no se crea la derivación: el médico APS corrige los datos y reintenta (OP-9). Si el paciente rechaza la derivación en la creación, no se crea nada y APS registra la decisión y el motivo localmente (entidad 12, sin equivalente FHIR).</text>
+<rect x="40" y="1034" width="2100" height="56" rx="8" fill="#fef9c3" stroke="#d97706" stroke-width="1"/>
+<text x="54" y="1056" font-family="sans-serif" font-size="12.5" fill="#451a03">El identificador de la derivación (REF-2026-0001) es la clave de continuación: enlaza este diagrama con los de triaje, agendamiento, atención, contrareferencia, consulta de estado y cancelación. Una respuesta que llega en otra sesión o día es su propio diagrama, nunca un retorno en el diagrama</text>
+<text x="54" y="1074" font-family="sans-serif" font-size="12.5" fill="#451a03">que envía.</text>
+<rect x="40" y="1098" width="2100" height="38" rx="8" fill="#fef9c3" stroke="#d97706" stroke-width="1"/>
+<text x="54" y="1120" font-family="sans-serif" font-size="12.5" fill="#451a03">OP-11 es opcional: APS se suscribe a las transiciones del Task; el hub notifica en cada transición (una Subscription FHIR sobre un evento que no es de documento es propia de la guía — DSUBm suscribe solo eventos de documento).</text>
+<text x="1090" y="1170" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#6b7280">Cada mensaje nombra la operación que lo lleva; el detalle (entradas, ejemplo, resultado esperado) está en la tabla de operaciones de sequences.md.</text>
+</svg>

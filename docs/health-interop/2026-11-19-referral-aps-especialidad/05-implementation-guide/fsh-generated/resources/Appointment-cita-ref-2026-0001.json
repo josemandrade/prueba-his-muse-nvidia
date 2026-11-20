@@ -1,0 +1,67 @@
+{
+  "resourceType": "Appointment",
+  "id": "cita-ref-2026-0001",
+  "meta": {
+    "profile": [
+      "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-cita"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-offer-number",
+      "valueInteger": 1
+    }
+  ],
+  "identifier": [
+    {
+      "system": "http://especialidad.example.org/appointment",
+      "value": "CITA-2026-0001"
+    }
+  ],
+  "status": "proposed",
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/ref-2026-0001"
+    }
+  ],
+  "slot": [
+    {
+      "reference": "Slot/slot-cardiologia-1"
+    }
+  ],
+  "created": "2026-11-24T11:00:00-03:00",
+  "start": "2026-12-02T10:00:00-03:00",
+  "end": "2026-12-02T10:30:00-03:00",
+  "participant": [
+    {
+      "actor": {
+        "reference": "Patient/maria-gonzalez"
+      },
+      "status": "needs-action"
+    },
+    {
+      "actor": {
+        "reference": "PractitionerRole/rol-especialista"
+      },
+      "status": "accepted"
+    },
+    {
+      "actor": {
+        "reference": "Location/location-cardiologia"
+      },
+      "status": "accepted"
+    }
+  ],
+  "serviceType": [
+    {
+      "coding": [
+        {
+          "code": "cardiologia",
+          "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad",
+          "display": "Cardiology"
+        }
+      ]
+    }
+  ],
+  "patientInstruction": "Ayuno no necesario. Traer los exámenes previos."
+}

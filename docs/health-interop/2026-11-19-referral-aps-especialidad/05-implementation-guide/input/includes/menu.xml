@@ -1,0 +1,15 @@
+<ul class="nav navbar-nav">
+  <li><a href="index.html">Derivación APS → especialidad</a></li>
+  <li><a href="process.html">Proceso (BPMN)</a></li>
+  <li><a href="resources.html">Diagrama de recursos</a></li>
+  <li><a href="profiles.html">Perfiles</a></li>
+  <li><a href="terminology.html">Terminología</a></li>
+  <li><a href="operations.html">Operaciones</a></li>
+  <li><a href="sequences.html">Diagramas de secuencia</a></li>
+  <li><a href="mapping.html">Mapeo de datos</a></li>
+  <li><a href="ihe.html">Relación con IHE</a></li>
+  <li><a href="lifecycle.html">Ciclo de vida</a></li>
+  <li><a href="rules.html">Reglas y retención</a></li>
+  <li><a href="public-health.html">Base legal y reporte</a></li>
+  <li><a href="artifacts.html">Artefactos</a></li>
+</ul>

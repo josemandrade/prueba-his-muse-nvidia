@@ -1,0 +1,117 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "derivacion-documento",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-documento",
+  "name": "DerivacionDocumento",
+  "title": "Documento de contrareferencia",
+  "status": "draft",
+  "description": "La entrada de índice de la contrareferencia. Perfil propio de esta guía, sobre el recurso base DocumentReference de FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "DocumentReference",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DocumentReference",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "DocumentReference.masterIdentifier",
+        "path": "DocumentReference.masterIdentifier",
+        "short": "El mismo valor que Composition.identifier"
+      },
+      {
+        "id": "DocumentReference.status",
+        "path": "DocumentReference.status",
+        "short": "current al enviar (superseded en una corrección, nunca sobrescrito)",
+        "fixedCode": "current"
+      },
+      {
+        "id": "DocumentReference.type",
+        "path": "DocumentReference.type",
+        "short": "LOINC 11488-4 'Consult note'",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "11488-4",
+              "system": "http://loinc.org",
+              "display": "Consult note"
+            }
+          ]
+        }
+      },
+      {
+        "id": "DocumentReference.subject",
+        "path": "DocumentReference.subject",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-paciente"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.date",
+        "path": "DocumentReference.date",
+        "short": "Fecha de envío"
+      },
+      {
+        "id": "DocumentReference.author",
+        "path": "DocumentReference.author",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rol"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.relatesTo",
+        "path": "DocumentReference.relatesTo",
+        "short": "Una corrección enlaza (code = replaces) al DocumentReference anterior"
+      },
+      {
+        "id": "DocumentReference.content.attachment.contentType",
+        "path": "DocumentReference.content.attachment.contentType",
+        "min": 1,
+        "fixedCode": "application/fhir+json"
+      },
+      {
+        "id": "DocumentReference.content.attachment.url",
+        "path": "DocumentReference.content.attachment.url",
+        "short": "La Composition: [base]/Composition/{id}",
+        "min": 1
+      },
+      {
+        "id": "DocumentReference.context.encounter",
+        "path": "DocumentReference.context.encounter",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-encuentro"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.context.related",
+        "path": "DocumentReference.context.related",
+        "short": "El enlace del documento a la derivación",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-solicitud"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

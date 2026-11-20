@@ -1,0 +1,60 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "derivacion-match-confidence",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-match-confidence",
+  "name": "DerivacionMatchConfidence",
+  "title": "Confianza del cruce de identidad",
+  "status": "draft",
+  "description": "Confianza del cruce de identidad del MPI, de 0 a 1. Opcional.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Patient"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Confianza del cruce de identidad",
+        "definition": "Confianza del cruce de identidad del MPI, de 0 a 1. Opcional."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-match-confidence"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "derivacion-match-confidence-range",
+            "severity": "error",
+            "human": "La confianza del cruce de identidad está entre 0 y 1.",
+            "expression": "$this >= 0 and $this <= 1",
+            "source": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-match-confidence"
+          }
+        ]
+      }
+    ]
+  }
+}

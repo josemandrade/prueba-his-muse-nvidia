@@ -1,0 +1,115 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "derivacion-solicitud",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-solicitud",
+  "name": "DerivacionSolicitud",
+  "title": "Solicitud de derivación",
+  "status": "draft",
+  "description": "La derivación que APS crea y el hub enruta: una solicitud de un servicio de especialidad. Perfil propio de esta guía, sobre el recurso base ServiceRequest de FHIR R4. El estado de la derivación NO vive aquí (vive en DerivacionTarea); ServiceRequest.status es solo un espejo grueso.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "ServiceRequest",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "ServiceRequest.identifier",
+        "path": "ServiceRequest.identifier",
+        "short": "Identificador de la derivación, creado por APS; persistente hasta que se cierra el ciclo (el identificador persistente de 360X)",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.intent",
+        "path": "ServiceRequest.intent",
+        "fixedCode": "order"
+      },
+      {
+        "id": "ServiceRequest.priority",
+        "path": "ServiceRequest.priority",
+        "short": "routine | urgent (C6/Q6); urgent reduce a la mitad el plazo de aceptación",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.code",
+        "path": "ServiceRequest.code",
+        "short": "El servicio solicitado (catálogo local de especialidades)",
+        "min": 1,
+        "binding": {
+          "strength": "example",
+          "valueSet": "https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-especialidad"
+        }
+      },
+      {
+        "id": "ServiceRequest.subject",
+        "path": "ServiceRequest.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-paciente"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.encounter",
+        "path": "ServiceRequest.encounter",
+        "short": "El encuentro de APS que creó la derivación (existe en el EHR de APS)"
+      },
+      {
+        "id": "ServiceRequest.authoredOn",
+        "path": "ServiceRequest.authoredOn",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.requester",
+        "path": "ServiceRequest.requester",
+        "short": "El médico de APS, en su rol",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rol"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.performerType",
+        "path": "ServiceRequest.performerType",
+        "short": "La especialidad solicitada (catálogo local)",
+        "binding": {
+          "strength": "example",
+          "valueSet": "https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-especialidad"
+        }
+      },
+      {
+        "id": "ServiceRequest.performer",
+        "path": "ServiceRequest.performer",
+        "short": "El servicio, una vez enrutado",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-servicio"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.reasonCode",
+        "path": "ServiceRequest.reasonCode",
+        "short": "Motivo de la derivación: SNOMED CT (p. ej. 84114007 insuficiencia cardiaca) + nota en texto libre",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.supportingInfo",
+        "path": "ServiceRequest.supportingInfo",
+        "short": "Resumen clínico de APS y exámenes relevantes (Observation con LOINC, DocumentReference)"
+      }
+    ]
+  }
+}

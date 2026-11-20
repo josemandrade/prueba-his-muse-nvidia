@@ -1,0 +1,43 @@
+id: hl7.fhir.uv.test.derivacion-aps-especialidad
+canonical: https://josemandrade.github.io/prueba-his-muse-nvidia
+name: DerivacionAPSEspecialidad
+title: Derivación APS → especialidad con contrareferencia
+description: >-
+  Guía de implementación de prueba para la derivación de un paciente desde
+  atención primaria (APS) a una especialidad, con contrareferencia de vuelta
+  a APS. Un caso de uso clínico con su flujo BPMN, sus perfiles FHIR R4
+  propios y sus operaciones en cada punto de interoperabilidad. Datos
+  sintéticos.
+status: draft
+version: 0.1.0
+fhirVersion: 4.0.1
+copyrightYear: 2026+
+releaseLabel: CI Build
+license: CC0-1.0
+dependencies:
+  hl7.fhir.r4.core: 4.0.1
+pages:
+  index.md:
+    title: Derivación APS → especialidad
+  process.md:
+    title: Proceso (BPMN)
+  resources.md:
+    title: Diagrama de recursos
+  profiles.md:
+    title: Perfiles
+  terminology.md:
+    title: Terminología
+  operations.md:
+    title: Operaciones
+  sequences.md:
+    title: Diagramas de secuencia
+  mapping.md:
+    title: Mapeo de datos
+  ihe.md:
+    title: Relación con IHE
+  lifecycle.md:
+    title: Ciclo de vida
+  rules.md:
+    title: Reglas y retención
+  public-health.md:
+    title: Base legal y reporte

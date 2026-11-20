@@ -1,0 +1,12 @@
+{
+  "resourceType": "Organization",
+  "id": "org-cardiologia",
+  "identifier": [
+    {
+      "system": "http://especialidad.example.org/organization",
+      "value": "CARDIOLOGIA"
+    }
+  ],
+  "name": "Servicio de Cardiología",
+  "active": true
+}

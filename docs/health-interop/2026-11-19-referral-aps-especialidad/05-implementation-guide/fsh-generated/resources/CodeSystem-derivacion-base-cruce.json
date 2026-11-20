@@ -1,0 +1,23 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "DerivacionBaseCruceCS",
+  "id": "derivacion-base-cruce",
+  "title": "Base del cruce de identidad",
+  "description": "Cómo se estableció el cruce de identidad en el MPI (lista local).",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-base-cruce",
+  "concept": [
+    {
+      "code": "identifier",
+      "display": "Identifier",
+      "definition": "El cruce se estableció por un identificador compartido."
+    },
+    {
+      "code": "demographics",
+      "display": "Demographics",
+      "definition": "El cruce se estableció por datos demográficos."
+    }
+  ],
+  "count": 2
+}

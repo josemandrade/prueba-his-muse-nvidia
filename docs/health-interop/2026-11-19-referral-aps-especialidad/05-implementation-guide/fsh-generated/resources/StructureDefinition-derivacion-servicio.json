@@ -1,0 +1,57 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "derivacion-servicio",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-servicio",
+  "name": "DerivacionServicio",
+  "title": "Servicio de especialidad",
+  "status": "draft",
+  "description": "El servicio de especialidad al que se deriva (p. ej. cardiología), con su endpoint de enrutado. Perfil propio de esta guía, sobre el recurso base HealthcareService de FHIR R4.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "HealthcareService",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/HealthcareService",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "HealthcareService.identifier",
+        "path": "HealthcareService.identifier",
+        "short": "Identificador del servicio (catálogo local)",
+        "min": 1
+      },
+      {
+        "id": "HealthcareService.active",
+        "path": "HealthcareService.active",
+        "short": "El hub solo enruta a servicios que el directorio lista como aceptantes",
+        "min": 1
+      },
+      {
+        "id": "HealthcareService.providedBy",
+        "path": "HealthcareService.providedBy",
+        "min": 1
+      },
+      {
+        "id": "HealthcareService.type",
+        "path": "HealthcareService.type",
+        "short": "La especialidad (catálogo local)",
+        "min": 1,
+        "max": "1",
+        "binding": {
+          "strength": "example",
+          "valueSet": "https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-especialidad"
+        }
+      },
+      {
+        "id": "HealthcareService.name",
+        "path": "HealthcareService.name",
+        "short": "p. ej. 'Cardiology'"
+      },
+      {
+        "id": "HealthcareService.endpoint",
+        "path": "HealthcareService.endpoint",
+        "short": "Dónde envía el hub la derivación (connectionType = hl7-fhir-rest)"
+      }
+    ]
+  }
+}

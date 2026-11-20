@@ -1,0 +1,23 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "DerivacionResultadoEntregaCS",
+  "id": "derivacion-resultado-entrega",
+  "title": "Resultado de la entrega de una notificación",
+  "description": "Resultados posibles de la entrega de una notificación (lista local).",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-resultado-entrega",
+  "concept": [
+    {
+      "code": "delivered",
+      "display": "Delivered",
+      "definition": "La notificación llegó al destinatario."
+    },
+    {
+      "code": "failed",
+      "display": "Failed",
+      "definition": "La entrega falló; el remitente reintenta (el fallo nunca cambia el estado de la derivación)."
+    }
+  ],
+  "count": 2
+}

@@ -1,0 +1,11 @@
+{
+  "resourceType": "Location",
+  "id": "location-cardiologia",
+  "name": "Consulta de Cardiología",
+  "address": {
+    "text": "Hospital de la Red, piso 3, consulta 12"
+  },
+  "managingOrganization": {
+    "reference": "Organization/org-cardiologia"
+  }
+}
