@@ -70,7 +70,7 @@ Guía de prueba, versión 0.1.0, estado `draft`, FHIR R4 4.0.1. Canonical: `http
   "name" : "DerivacionAPSEspecialidad",
   "title" : "Derivación APS → especialidad con contrareferencia",
   "status" : "draft",
-  "date" : "2026-11-20T12:46:55+00:00",
+  "date" : "2026-11-20T12:49:56+00:00",
   "description" : "Guía de implementación de prueba para la derivación de un paciente desde atención primaria (APS) a una especialidad, con contrareferencia de vuelta a APS. Un caso de uso clínico con su flujo BPMN, sus perfiles FHIR R4 propios y sus operaciones en cada punto de interoperabilidad. Datos sintéticos.",
   "packageId" : "hl7.fhir.uv.test.derivacion-aps-especialidad",
   "license" : "CC0-1.0",

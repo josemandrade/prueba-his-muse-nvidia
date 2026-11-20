@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "DerivacionCita"] ;
   fhir:StructureDefinition.title [ fhir:value "Cita de la derivación"] ;
   fhir:StructureDefinition.status [ fhir:value "draft"] ;
-  fhir:StructureDefinition.date [ fhir:value "2026-11-20T12:46:55+00:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-11-20T12:49:56+00:00"^^xsd:dateTime] ;
   fhir:StructureDefinition.description [ fhir:value "La oferta y la reserva de la cita de especialidad. Perfil propio de esta guía, sobre el recurso base Appointment de FHIR R4. La decisión del paciente vive en el AppointmentResponse, no en la cita; una cita cancelada o no asistida nunca se reutiliza."] ;
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"] ;
   fhir:StructureDefinition.mapping [

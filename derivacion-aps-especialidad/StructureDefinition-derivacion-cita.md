@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-cita.csv)
   "name" : "DerivacionCita",
   "title" : "Cita de la derivación",
   "status" : "draft",
-  "date" : "2026-11-20T12:46:55+00:00",
+  "date" : "2026-11-20T12:49:56+00:00",
   "description" : "La oferta y la reserva de la cita de especialidad. Perfil propio de esta guía, sobre el recurso base Appointment de FHIR R4. La decisión del paciente vive en el AppointmentResponse, no en la cita; una cita cancelada o no asistida nunca se reutiliza.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{

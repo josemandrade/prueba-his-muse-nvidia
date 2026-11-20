@@ -50,7 +50,7 @@ Estados posibles de una derivación APS → especialidad.
   "name" : "DerivacionEstadoReferencia",
   "title" : "Estado de la derivación",
   "status" : "draft",
-  "date" : "2026-11-20T12:46:55+00:00",
+  "date" : "2026-11-20T12:49:56+00:00",
   "description" : "Estados posibles de una derivación APS → especialidad.",
   "compose" : {
     "include" : [{

@@ -50,7 +50,7 @@ Motivos por los que la especialidad puede rechazar una derivación.
   "name" : "DerivacionMotivoRechazo",
   "title" : "Motivo de rechazo",
   "status" : "draft",
-  "date" : "2026-11-20T12:46:55+00:00",
+  "date" : "2026-11-20T12:49:56+00:00",
   "description" : "Motivos por los que la especialidad puede rechazar una derivación.",
   "compose" : {
     "include" : [{

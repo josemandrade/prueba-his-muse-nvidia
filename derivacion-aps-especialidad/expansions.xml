@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="d63d2d7f-747e-4b92-becc-b37729d7ef0e"/>
+  <id value="44dbedd6-79db-46cb-a1f5-5d980b3c7551"/>
   <meta>
-    <lastUpdated value="2026-11-20T12:46:55.837+00:00"/>
+    <lastUpdated value="2026-11-20T12:49:56.996+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -92,10 +92,10 @@
         <name value="DerivacionBaseCruce"/>
         <title value="Base del cruce de identidad"/>
         <status value="draft"/>
-        <date value="2026-11-20T12:46:55+00:00"/>
+        <date value="2026-11-20T12:49:56+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:eebe1722-72fc-4f52-9888-7755141104bf"/>
-          <timestamp value="2026-11-20T12:47:39+00:00"/>
+          <identifier value="urn:uuid:2aac9616-2619-47cc-8a26-78365e403e00"/>
+          <timestamp value="2026-11-20T12:51:03+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -239,10 +239,10 @@
         <name value="DerivacionCanal"/>
         <title value="Canal de notificación"/>
         <status value="draft"/>
-        <date value="2026-11-20T12:46:55+00:00"/>
+        <date value="2026-11-20T12:49:56+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:5b6a01a1-b394-43ba-b34c-379d10fada73"/>
-          <timestamp value="2026-11-20T12:47:39+00:00"/>
+          <identifier value="urn:uuid:6472a2ac-b4a3-411c-b8c5-e1c47b5ec52a"/>
+          <timestamp value="2026-11-20T12:51:03+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -349,10 +349,10 @@
         <name value="DerivacionEspecialidad"/>
         <title value="Especialidad / servicio (catálogo local)"/>
         <status value="draft"/>
-        <date value="2026-11-20T12:46:55+00:00"/>
+        <date value="2026-11-20T12:49:56+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:cf6c678a-a743-41f8-afe1-522ef505c348"/>
-          <timestamp value="2026-11-20T12:47:39+00:00"/>
+          <identifier value="urn:uuid:221512e3-5db9-4025-81e4-03ae990af6f5"/>
+          <timestamp value="2026-11-20T12:51:03+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -617,10 +617,10 @@
         <name value="DerivacionEstadoReferencia"/>
         <title value="Estado de la derivación"/>
         <status value="draft"/>
-        <date value="2026-11-20T12:46:55+00:00"/>
+        <date value="2026-11-20T12:49:56+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:34e572b4-ae37-4f58-8e4c-c21b7df9d302"/>
-          <timestamp value="2026-11-20T12:47:39+00:00"/>
+          <identifier value="urn:uuid:22bde91a-e75e-4ed5-a8e1-55e3bc2e4be5"/>
+          <timestamp value="2026-11-20T12:51:03+00:00"/>
           <total value="9"/>
           <offset value="0"/>
           <parameter>
@@ -799,10 +799,10 @@
         <name value="DerivacionMotivoRechazo"/>
         <title value="Motivo de rechazo"/>
         <status value="draft"/>
-        <date value="2026-11-20T12:46:55+00:00"/>
+        <date value="2026-11-20T12:49:56+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:7b2cc487-0682-4646-a8f7-963370f76e55"/>
-          <timestamp value="2026-11-20T12:47:39+00:00"/>
+          <identifier value="urn:uuid:26df5543-97a5-44db-8cbf-96ae9e6f7108"/>
+          <timestamp value="2026-11-20T12:51:03+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -930,10 +930,10 @@
         <name value="DerivacionResultadoEntrega"/>
         <title value="Resultado de la entrega de una notificación"/>
         <status value="draft"/>
-        <date value="2026-11-20T12:46:55+00:00"/>
+        <date value="2026-11-20T12:49:56+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:8f8dba9e-f86b-494a-8e18-399ab3311ece"/>
-          <timestamp value="2026-11-20T12:47:39+00:00"/>
+          <identifier value="urn:uuid:b5007ae8-cc1c-418d-ae67-07859ef27386"/>
+          <timestamp value="2026-11-20T12:51:03+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -1140,10 +1140,10 @@
         <name value="DerivacionRolVS"/>
         <title value="Rol en la derivación"/>
         <status value="draft"/>
-        <date value="2026-11-20T12:46:55+00:00"/>
+        <date value="2026-11-20T12:49:56+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:665e2e8c-60f5-4717-ab2c-e4fa048bcec6"/>
-          <timestamp value="2026-11-20T12:47:39+00:00"/>
+          <identifier value="urn:uuid:a7f7e027-fb58-4297-8abb-a9e6e3d2d07c"/>
+          <timestamp value="2026-11-20T12:51:03+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -1265,10 +1265,10 @@
         <name value="DerivacionTaskCode"/>
         <title value="Código de la tarea de derivación"/>
         <status value="draft"/>
-        <date value="2026-11-20T12:46:55+00:00"/>
+        <date value="2026-11-20T12:49:56+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:1655d81e-4bc4-4553-abb8-3485f3b0bba6"/>
-          <timestamp value="2026-11-20T12:47:39+00:00"/>
+          <identifier value="urn:uuid:2e5c558a-49e5-4cdf-918e-9a80efa32a03"/>
+          <timestamp value="2026-11-20T12:51:03+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>

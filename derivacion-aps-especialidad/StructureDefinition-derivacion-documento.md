@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-documento
   "name" : "DerivacionDocumento",
   "title" : "Documento de contrareferencia",
   "status" : "draft",
-  "date" : "2026-11-20T12:46:55+00:00",
+  "date" : "2026-11-20T12:49:56+00:00",
   "description" : "La entrada de índice de la contrareferencia. Perfil propio de esta guía, sobre el recurso base DocumentReference de FHIR R4.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{

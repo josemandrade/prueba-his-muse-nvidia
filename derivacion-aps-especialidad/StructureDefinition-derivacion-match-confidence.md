@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-match-con
   "name" : "DerivacionMatchConfidence",
   "title" : "Confianza del cruce de identidad",
   "status" : "draft",
-  "date" : "2026-11-20T12:46:55+00:00",
+  "date" : "2026-11-20T12:49:56+00:00",
   "description" : "Confianza del cruce de identidad del MPI, de 0 a 1. Opcional.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{

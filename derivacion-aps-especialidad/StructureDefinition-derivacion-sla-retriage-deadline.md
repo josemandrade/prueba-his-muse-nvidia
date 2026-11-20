@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-sla-retri
   "name" : "DerivacionSlaRetriageDeadline",
   "title" : "Plazo de re-triaje",
   "status" : "draft",
-  "date" : "2026-11-20T12:46:55+00:00",
+  "date" : "2026-11-20T12:49:56+00:00",
   "description" : "Fecha límite para la decisión de re-triaje de APS: rechazo (o retorno por fallo de agendamiento) + 5 días hábiles.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{

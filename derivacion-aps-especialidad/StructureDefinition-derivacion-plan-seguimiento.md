@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-plan-segu
   "name" : "DerivacionPlanSeguimiento",
   "title" : "Plan de seguimiento para APS",
   "status" : "draft",
-  "date" : "2026-11-20T12:46:55+00:00",
+  "date" : "2026-11-20T12:49:56+00:00",
   "description" : "El plan de seguimiento que el especialista deja a APS. Perfil propio de esta guía, sobre el recurso base CarePlan de FHIR R4. Una actualización del plan es una versión nueva, nunca una sobrescritura silenciosa.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{

@@ -10,7 +10,7 @@
   "name" : "DerivacionSolicitud",
   "title" : "Solicitud de derivación",
   "status" : "draft",
-  "date" : "2026-11-20T12:46:55+00:00",
+  "date" : "2026-11-20T12:49:56+00:00",
   "description" : "La derivación que APS crea y el hub enruta: una solicitud de un servicio de especialidad. Perfil propio de esta guía, sobre el recurso base ServiceRequest de FHIR R4. El estado de la derivación NO vive aquí (vive en DerivacionTarea); ServiceRequest.status es solo un espejo grueso.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{

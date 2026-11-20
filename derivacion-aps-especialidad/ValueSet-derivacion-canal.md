@@ -51,7 +51,7 @@ Canales de notificación de la derivación.
   "name" : "DerivacionCanal",
   "title" : "Canal de notificación",
   "status" : "draft",
-  "date" : "2026-11-20T12:46:55+00:00",
+  "date" : "2026-11-20T12:49:56+00:00",
   "description" : "Canales de notificación de la derivación.",
   "compose" : {
     "include" : [{

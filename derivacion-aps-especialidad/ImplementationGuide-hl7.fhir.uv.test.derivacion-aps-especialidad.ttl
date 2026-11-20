@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "DerivacionAPSEspecialidad"] ;
   fhir:ImplementationGuide.title [ fhir:value "Derivación APS → especialidad con contrareferencia"] ;
   fhir:ImplementationGuide.status [ fhir:value "draft"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-11-20T12:46:55+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-11-20T12:49:56+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.description [ fhir:value "Guía de implementación de prueba para la derivación de un paciente desde atención primaria (APS) a una especialidad, con contrareferencia de vuelta a APS. Un caso de uso clínico con su flujo BPMN, sus perfiles FHIR R4 propios y sus operaciones en cada punto de interoperabilidad. Datos sintéticos."] ;
   fhir:ImplementationGuide.packageId [ fhir:value "hl7.fhir.uv.test.derivacion-aps-especialidad"] ;
   fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"] ;

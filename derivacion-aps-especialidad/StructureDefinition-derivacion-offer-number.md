@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-offer-num
   "name" : "DerivacionOfferNumber",
   "title" : "Número de oferta (de esta derivación)",
   "status" : "draft",
-  "date" : "2026-11-20T12:46:55+00:00",
+  "date" : "2026-11-20T12:49:56+00:00",
   "description" : "Contador por derivación: 1ª oferta, re-oferta (2ª), etc. Cada oferta es un Appointment nuevo.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{

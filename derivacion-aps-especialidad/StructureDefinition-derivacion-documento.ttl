@@ -18,7 +18,7 @@
   fhir:StructureDefinition.name [ fhir:value "DerivacionDocumento"] ;
   fhir:StructureDefinition.title [ fhir:value "Documento de contrareferencia"] ;
   fhir:StructureDefinition.status [ fhir:value "draft"] ;
-  fhir:StructureDefinition.date [ fhir:value "2026-11-20T12:46:55+00:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-11-20T12:49:56+00:00"^^xsd:dateTime] ;
   fhir:StructureDefinition.description [ fhir:value "La entrada de índice de la contrareferencia. Perfil propio de esta guía, sobre el recurso base DocumentReference de FHIR R4."] ;
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"] ;
   fhir:StructureDefinition.mapping [

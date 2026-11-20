@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-sla-confi
   "name" : "DerivacionSlaConfirmationDeadline",
   "title" : "Plazo de confirmación",
   "status" : "draft",
-  "date" : "2026-11-20T12:46:55+00:00",
+  "date" : "2026-11-20T12:49:56+00:00",
   "description" : "Fecha límite para confirmar una oferta: oferta + 3 días hábiles. Presente solo mientras una oferta está abierta.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{

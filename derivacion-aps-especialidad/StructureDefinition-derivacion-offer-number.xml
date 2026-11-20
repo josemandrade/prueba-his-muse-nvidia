@@ -14,7 +14,7 @@
   <name value="DerivacionOfferNumber"/>
   <title value="Número de oferta (de esta derivación)"/>
   <status value="draft"/>
-  <date value="2026-11-20T12:46:55+00:00"/>
+  <date value="2026-11-20T12:49:56+00:00"/>
   <description value="Contador por derivación: 1ª oferta, re-oferta (2ª), etc. Cada oferta es un Appointment nuevo."/>
   <fhirVersion value="4.0.1"/>
   <mapping>

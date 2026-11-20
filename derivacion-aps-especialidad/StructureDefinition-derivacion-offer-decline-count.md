@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-offer-dec
   "name" : "DerivacionOfferDeclineCount",
   "title" : "Conteo de rechazos de esta oferta",
   "status" : "draft",
-  "date" : "2026-11-20T12:46:55+00:00",
+  "date" : "2026-11-20T12:49:56+00:00",
   "description" : "Número de veces que el paciente ha rechazado esta oferta (0–2). Se reinicia por oferta (N5).",
   "fhirVersion" : "4.0.1",
   "mapping" : [{

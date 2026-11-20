@@ -31,7 +31,7 @@ Canales por los que se envía una notificación (lista local; el caso no fija un
   "name" : "DerivacionCanalCS",
   "title" : "Canal de notificación",
   "status" : "draft",
-  "date" : "2026-11-20T12:46:55+00:00",
+  "date" : "2026-11-20T12:49:56+00:00",
   "description" : "Canales por los que se envía una notificación (lista local; el caso no fija un canal por notificación).",
   "content" : "complete",
   "count" : 3,

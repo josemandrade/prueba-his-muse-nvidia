@@ -31,7 +31,7 @@ Resultados posibles de la entrega de una notificación (lista local).
   "name" : "DerivacionResultadoEntregaCS",
   "title" : "Resultado de la entrega de una notificación",
   "status" : "draft",
-  "date" : "2026-11-20T12:46:55+00:00",
+  "date" : "2026-11-20T12:49:56+00:00",
   "description" : "Resultados posibles de la entrega de una notificación (lista local).",
   "content" : "complete",
   "count" : 2,

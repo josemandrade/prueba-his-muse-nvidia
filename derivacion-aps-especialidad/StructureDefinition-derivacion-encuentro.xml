@@ -24,7 +24,7 @@
   <name value="DerivacionEncuentro"/>
   <title value="Encuentro de especialidad"/>
   <status value="draft"/>
-  <date value="2026-11-20T12:46:55+00:00"/>
+  <date value="2026-11-20T12:49:56+00:00"/>
   <description value="La visita atendida en la especialidad. Perfil propio de esta guía, sobre el recurso base Encounter de FHIR R4. La cita es la reserva; la visita es el encuentro — nunca ambas a la vez sin regla, y la regla aquí es: reserva = Appointment, visita = Encounter."/>
   <fhirVersion value="4.0.1"/>
   <mapping>

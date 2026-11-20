@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-paciente.
   "name" : "DerivacionPaciente",
   "title" : "Paciente de la derivación",
   "status" : "draft",
-  "date" : "2026-11-20T12:46:55+00:00",
+  "date" : "2026-11-20T12:49:56+00:00",
   "description" : "Persona derivada desde APS a una especialidad. Perfil propio de esta guía, sobre el recurso base Patient de FHIR R4. La clave MPI y el RUN son los identificadores que viajan; los datos de contacto son obligatorios (C12) — sin ellos la creación se bloquea.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{

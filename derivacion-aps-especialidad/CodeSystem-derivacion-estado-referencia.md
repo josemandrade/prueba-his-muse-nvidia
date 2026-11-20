@@ -31,7 +31,7 @@ Los nueve estados del caso de la derivación APS → especialidad (spec §3.1). 
   "name" : "DerivacionEstadoReferenciaCS",
   "title" : "Estado de la derivación",
   "status" : "draft",
-  "date" : "2026-11-20T12:46:55+00:00",
+  "date" : "2026-11-20T12:49:56+00:00",
   "description" : "Los nueve estados del caso de la derivación APS → especialidad (spec §3.1). El estado vive en Task.businessStatus, nunca como valor inventado de Task.status.",
   "content" : "complete",
   "count" : 9,

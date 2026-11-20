@@ -31,7 +31,7 @@ Cómo se estableció el cruce de identidad en el MPI (lista local).
   "name" : "DerivacionBaseCruceCS",
   "title" : "Base del cruce de identidad",
   "status" : "draft",
-  "date" : "2026-11-20T12:46:55+00:00",
+  "date" : "2026-11-20T12:49:56+00:00",
   "description" : "Cómo se estableció el cruce de identidad en el MPI (lista local).",
   "content" : "complete",
   "count" : 2,

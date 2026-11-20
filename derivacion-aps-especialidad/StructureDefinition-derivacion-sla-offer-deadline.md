@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-sla-offer
   "name" : "DerivacionSlaOfferDeadline",
   "title" : "Plazo de oferta de cita",
   "status" : "draft",
-  "date" : "2026-11-20T12:46:55+00:00",
+  "date" : "2026-11-20T12:49:56+00:00",
   "description" : "Fecha límite para ofrecer la cita: aceptación + 10 días hábiles.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{

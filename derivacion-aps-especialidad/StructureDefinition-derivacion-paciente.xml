@@ -23,7 +23,7 @@
   <name value="DerivacionPaciente"/>
   <title value="Paciente de la derivación"/>
   <status value="draft"/>
-  <date value="2026-11-20T12:46:55+00:00"/>
+  <date value="2026-11-20T12:49:56+00:00"/>
   <description value="Persona derivada desde APS a una especialidad. Perfil propio de esta guía, sobre el recurso base Patient de FHIR R4. La clave MPI y el RUN son los identificadores que viajan; los datos de contacto son obligatorios (C12) — sin ellos la creación se bloquea."/>
   <fhirVersion value="4.0.1"/>
   <mapping>

@@ -14,7 +14,7 @@
   <name value="DerivacionDeliveryOutcome"/>
   <title value="Resultado de la entrega"/>
   <status value="draft"/>
-  <date value="2026-11-20T12:46:55+00:00"/>
+  <date value="2026-11-20T12:49:56+00:00"/>
   <description value="Resultado de la entrega de una notificación: delivered | failed. Communication.status = completed significa enviada; el resultado de la entrega es esta extensión."/>
   <fhirVersion value="4.0.1"/>
   <mapping>

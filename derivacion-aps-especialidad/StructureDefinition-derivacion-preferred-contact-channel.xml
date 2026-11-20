@@ -14,7 +14,7 @@
   <name value="DerivacionPreferredContactChannel"/>
   <title value="Canal de contacto preferido"/>
   <status value="draft"/>
-  <date value="2026-11-20T12:46:55+00:00"/>
+  <date value="2026-11-20T12:49:56+00:00"/>
   <description value="Canal preferido del paciente para las notificaciones: phone | in-person | system-message (ValueSet DerivacionCanal)."/>
   <fhirVersion value="4.0.1"/>
   <mapping>

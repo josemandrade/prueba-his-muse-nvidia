@@ -31,7 +31,7 @@ Motivos de rechazo de la derivación (lista local de la especialidad; el texto l
   "name" : "DerivacionMotivoRechazoCS",
   "title" : "Motivo de rechazo",
   "status" : "draft",
-  "date" : "2026-11-20T12:46:55+00:00",
+  "date" : "2026-11-20T12:49:56+00:00",
   "description" : "Motivos de rechazo de la derivación (lista local de la especialidad; el texto libre acompaña al código).",
   "content" : "complete",
   "count" : 3,

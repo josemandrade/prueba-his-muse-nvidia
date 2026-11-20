@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "DerivacionOfferNumber"] ;
   fhir:StructureDefinition.title [ fhir:value "Número de oferta (de esta derivación)"] ;
   fhir:StructureDefinition.status [ fhir:value "draft"] ;
-  fhir:StructureDefinition.date [ fhir:value "2026-11-20T12:46:55+00:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-11-20T12:49:56+00:00"^^xsd:dateTime] ;
   fhir:StructureDefinition.description [ fhir:value "Contador por derivación: 1ª oferta, re-oferta (2ª), etc. Cada oferta es un Appointment nuevo."] ;
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"] ;
   fhir:StructureDefinition.mapping [

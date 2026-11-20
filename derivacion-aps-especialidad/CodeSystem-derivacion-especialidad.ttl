@@ -17,7 +17,7 @@
   fhir:CodeSystem.name [ fhir:value "DerivacionEspecialidadCS"] ;
   fhir:CodeSystem.title [ fhir:value "Especialidad / servicio (catálogo local)"] ;
   fhir:CodeSystem.status [ fhir:value "draft"] ;
-  fhir:CodeSystem.date [ fhir:value "2026-11-20T12:46:55+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.date [ fhir:value "2026-11-20T12:49:56+00:00"^^xsd:dateTime] ;
   fhir:CodeSystem.description [ fhir:value "Catálogo local de especialidades y servicios, versionado por la red (hub + servicios). El ejemplo trabajado es cardiología; la red amplía el catálogo sin tocar esta guía."] ;
   fhir:CodeSystem.content [ fhir:value "complete"] ;
   fhir:CodeSystem.count [ fhir:value "1"^^xsd:nonNegativeInteger] ;

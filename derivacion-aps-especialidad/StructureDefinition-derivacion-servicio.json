@@ -10,7 +10,7 @@
   "name" : "DerivacionServicio",
   "title" : "Servicio de especialidad",
   "status" : "draft",
-  "date" : "2026-11-20T12:46:55+00:00",
+  "date" : "2026-11-20T12:49:56+00:00",
   "description" : "El servicio de especialidad al que se deriva (p. ej. cardiología), con su endpoint de enrutado. Perfil propio de esta guía, sobre el recurso base HealthcareService de FHIR R4.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{

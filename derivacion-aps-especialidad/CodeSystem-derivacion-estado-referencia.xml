@@ -10,7 +10,7 @@
   <name value="DerivacionEstadoReferenciaCS"/>
   <title value="Estado de la derivación"/>
   <status value="draft"/>
-  <date value="2026-11-20T12:46:55+00:00"/>
+  <date value="2026-11-20T12:49:56+00:00"/>
   <description value="Los nueve estados del caso de la derivación APS → especialidad (spec §3.1). El estado vive en Task.businessStatus, nunca como valor inventado de Task.status."/>
   <content value="complete"/>
   <count value="9"/>

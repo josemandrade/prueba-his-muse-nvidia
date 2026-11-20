@@ -10,7 +10,7 @@
   <name value="DerivacionEspecialidadCS"/>
   <title value="Especialidad / servicio (catálogo local)"/>
   <status value="draft"/>
-  <date value="2026-11-20T12:46:55+00:00"/>
+  <date value="2026-11-20T12:49:56+00:00"/>
   <description value="Catálogo local de especialidades y servicios, versionado por la red (hub + servicios). El ejemplo trabajado es cardiología; la red amplía el catálogo sin tocar esta guía."/>
   <content value="complete"/>
   <count value="1"/>
