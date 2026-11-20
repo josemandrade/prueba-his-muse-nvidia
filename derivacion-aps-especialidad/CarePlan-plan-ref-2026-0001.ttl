@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://josemandrade.github.io/prueba-his-muse-nvidia/CarePlan/plan-ref-2026-0001> a fhir:CarePlan ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "plan-ref-2026-0001"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-plan-seguimiento" ;
+       fhir:index 0 ;
+       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-plan-seguimiento>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CarePlan plan-ref-2026-0001</b></p><a name=\"plan-ref-2026-0001\"> </a><a name=\"hcplan-ref-2026-0001\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-derivacion-plan-seguimiento.html\">Plan de seguimiento para APS</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>subject</b>: <a href=\"Patient-maria-gonzalez.html\">María González (official) Female, DoB: 1968-04-15 ( http://www.registrocivil.cl/run#11111111-1)</a></p><p><b>encounter</b>: <a href=\"Encounter-encuentro-ref-2026-0001.html\">Encounter: identifier = http://especialidad.example.org/encounter#ENC-2026-0001; status = planned; class = Ambulatory (ActCode#AMB); serviceType = Cardiology; period = 2026-12-02 10:00:00-0300 --&gt; 2026-12-02 10:30:00-0300</a></p><p><b>author</b>: <a href=\"PractitionerRole-rol-especialista.html\">Carlos Rojas (official) (http://www.registrocivil.cl/run#33333333-3): Specialist at Servicio de Cardiología (http://especialidad.example.org/organization#CARDIOLOGIA)</a></p><p><b>addresses</b>: <a href=\"Condition-diagnostico-ref-2026-0001.html\">Condition Insuficiencia cardiaca sistólica crónica (FEVI 35%)</a></p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Status</b></td><td><b>Description</b></td></tr><tr><td style=\"display: none\">*</td><td>active</td><td>Control en APS en 2 semanas: presión arterial, peso, síntomas.</td></tr></table></blockquote><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Status</b></td><td><b>Description</b></td></tr><tr><td style=\"display: none\">*</td><td>active</td><td>NT-proBNP de control en 3 meses.</td></tr></table></blockquote><blockquote><p><b>activity</b></p><p><b>reference</b>: <a href=\"ServiceRequest-ref-2026-0001.html\">ServiceRequest Cardiology</a></p></blockquote></div>"
+  ] ;
+  fhir:CarePlan.status [ fhir:value "active"] ;
+  fhir:CarePlan.intent [ fhir:value "plan"] ;
+  fhir:CarePlan.subject [
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Patient/maria-gonzalez> ;
+     fhir:Reference.reference [ fhir:value "Patient/maria-gonzalez" ]
+  ] ;
+  fhir:CarePlan.encounter [
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Encounter/encuentro-ref-2026-0001> ;
+     fhir:Reference.reference [ fhir:value "Encounter/encuentro-ref-2026-0001" ]
+  ] ;
+  fhir:CarePlan.author [
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/PractitionerRole/rol-especialista> ;
+     fhir:Reference.reference [ fhir:value "PractitionerRole/rol-especialista" ]
+  ] ;
+  fhir:CarePlan.addresses [
+     fhir:index 0 ;
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Condition/diagnostico-ref-2026-0001> ;
+     fhir:Reference.reference [ fhir:value "Condition/diagnostico-ref-2026-0001" ]
+  ] ;
+  fhir:CarePlan.activity [
+     fhir:index 0 ;
+     fhir:CarePlan.activity.detail [
+       fhir:CarePlan.activity.detail.status [ fhir:value "active" ] ;
+       fhir:CarePlan.activity.detail.description [ fhir:value "Control en APS en 2 semanas: presión arterial, peso, síntomas." ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:CarePlan.activity.detail [
+       fhir:CarePlan.activity.detail.status [ fhir:value "active" ] ;
+       fhir:CarePlan.activity.detail.description [ fhir:value "NT-proBNP de control en 3 meses." ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:CarePlan.activity.reference [
+       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/ServiceRequest/ref-2026-0001> ;
+       fhir:Reference.reference [ fhir:value "ServiceRequest/ref-2026-0001" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://josemandrade.github.io/prueba-his-muse-nvidia/CarePlan/plan-ref-2026-0001.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

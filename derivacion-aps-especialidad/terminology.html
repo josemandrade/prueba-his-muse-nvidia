@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Terminología - Derivación APS → especialidad con contrareferencia v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"5"}
+    h3,h4,h5,h6{--heading-prefix:"5"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Derivación APS → especialidad con contrareferencia</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - CI Build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul class="nav navbar-nav">
+  <li><a href="index.html">Derivación APS → especialidad</a></li>
+  <li><a href="process.html">Proceso (BPMN)</a></li>
+  <li><a href="resources.html">Diagrama de recursos</a></li>
+  <li><a href="profiles.html">Perfiles</a></li>
+  <li><a href="terminology.html">Terminología</a></li>
+  <li><a href="operations.html">Operaciones</a></li>
+  <li><a href="sequences.html">Diagramas de secuencia</a></li>
+  <li><a href="mapping.html">Mapeo de datos</a></li>
+  <li><a href="ihe.html">Relación con IHE</a></li>
+  <li><a href="lifecycle.html">Ciclo de vida</a></li>
+  <li><a href="rules.html">Reglas y retención</a></li>
+  <li><a href="public-health.html">Base legal y reporte</a></li>
+  <li><a href="artifacts.html">Artefactos</a></li>
+</ul>
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Terminología</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Derivación APS → especialidad con contrareferencia - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://josemandrade.github.io/prueba-his-muse-nvidia/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Terminología</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<h3 id="terminología">Terminología</h3>
+
+<p>Servidor de terminología para expansión y validación:
+<code class="language-plaintext highlighter-rouge">https://tx.hl7chile.cl/r4</code> (el servidor que usan las guías del MINSAL).
+SNOMED CT: edición chilena (<code class="language-plaintext highlighter-rouge">http://snomed.info/sct/21000325107</code>), versión
+según la reporte el servidor al construir la guía. LOINC: versión según la
+reporte el servidor (LOINC 2.73 vista 2026-11-19). UCUM 2.0.1. ICD-10-CM:
+versión según la reporte el servidor al construir la guía.</p>
+
+<h4 id="codesystems-y-valuesets-locales">CodeSystems y ValueSets locales</h4>
+
+<p>Cada lista local es un CodeSystem propio de la guía con su ValueSet; la
+guía no inventa un catálogo estándar para ninguna de ellas.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>CodeSystem</th>
+      <th>ValueSet</th>
+      <th>Códigos</th>
+      <th>Dónde se usa</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="CodeSystem-derivacion-estado-referencia.html"><code class="language-plaintext highlighter-rouge">DerivacionEstadoReferenciaCS</code></a></td>
+      <td><a href="ValueSet-derivacion-estado-referencia.html"><code class="language-plaintext highlighter-rouge">DerivacionEstadoReferencia</code></a></td>
+      <td><code class="language-plaintext highlighter-rouge">requested</code>, <code class="language-plaintext highlighter-rouge">received</code>, <code class="language-plaintext highlighter-rouge">accepted</code>, <code class="language-plaintext highlighter-rouge">rejected</code>, <code class="language-plaintext highlighter-rouge">scheduled</code>, <code class="language-plaintext highlighter-rouge">completed</code>, <code class="language-plaintext highlighter-rouge">counter-referred</code>, <code class="language-plaintext highlighter-rouge">no-show</code>, <code class="language-plaintext highlighter-rouge">cancelled</code></td>
+      <td><a href="StructureDefinition-derivacion-tarea.html"><code class="language-plaintext highlighter-rouge">DerivacionTarea.businessStatus</code></a></td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-derivacion-rol.html"><code class="language-plaintext highlighter-rouge">DerivacionRolCS</code></a></td>
+      <td><a href="ValueSet-derivacion-rol.html"><code class="language-plaintext highlighter-rouge">DerivacionRolVS</code></a></td>
+      <td><code class="language-plaintext highlighter-rouge">aps-doctor</code>, <code class="language-plaintext highlighter-rouge">aps-admin</code>, <code class="language-plaintext highlighter-rouge">triage-clinician</code>, <code class="language-plaintext highlighter-rouge">specialty-scheduler</code>, <code class="language-plaintext highlighter-rouge">specialist</code>, <code class="language-plaintext highlighter-rouge">hub-operator</code></td>
+      <td><a href="StructureDefinition-derivacion-rol.html"><code class="language-plaintext highlighter-rouge">DerivacionRol.code</code></a></td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-derivacion-motivo-rechazo.html"><code class="language-plaintext highlighter-rouge">DerivacionMotivoRechazoCS</code></a></td>
+      <td><a href="ValueSet-derivacion-motivo-rechazo.html"><code class="language-plaintext highlighter-rouge">DerivacionMotivoRechazo</code></a></td>
+      <td><code class="language-plaintext highlighter-rouge">missing-exam</code>, <code class="language-plaintext highlighter-rouge">wrong-specialty</code>, <code class="language-plaintext highlighter-rouge">capacity</code> (+ texto libre)</td>
+      <td><a href="StructureDefinition-derivacion-tarea.html"><code class="language-plaintext highlighter-rouge">DerivacionTarea.statusReason</code></a></td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-derivacion-canal.html"><code class="language-plaintext highlighter-rouge">DerivacionCanalCS</code></a></td>
+      <td><a href="ValueSet-derivacion-canal.html"><code class="language-plaintext highlighter-rouge">DerivacionCanal</code></a></td>
+      <td><code class="language-plaintext highlighter-rouge">phone</code>, <code class="language-plaintext highlighter-rouge">in-person</code>, <code class="language-plaintext highlighter-rouge">system-message</code></td>
+      <td><a href="StructureDefinition-derivacion-notificacion.html"><code class="language-plaintext highlighter-rouge">DerivacionNotificacion.medium</code></a></td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-derivacion-especialidad.html"><code class="language-plaintext highlighter-rouge">DerivacionEspecialidadCS</code></a></td>
+      <td><a href="ValueSet-derivacion-especialidad.html"><code class="language-plaintext highlighter-rouge">DerivacionEspecialidad</code></a></td>
+      <td><code class="language-plaintext highlighter-rouge">cardiologia</code> (el catálogo lo versiona la red; el ejemplo trabajado es cardiología)</td>
+      <td><a href="StructureDefinition-derivacion-solicitud.html"><code class="language-plaintext highlighter-rouge">DerivacionSolicitud.code</code></a>, <a href="StructureDefinition-derivacion-servicio.html"><code class="language-plaintext highlighter-rouge">DerivacionServicio.type</code></a></td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-derivacion-task-code.html"><code class="language-plaintext highlighter-rouge">DerivacionTaskCodeCS</code></a></td>
+      <td><a href="ValueSet-derivacion-task-code.html"><code class="language-plaintext highlighter-rouge">DerivacionTaskCode</code></a></td>
+      <td><code class="language-plaintext highlighter-rouge">referral-workflow</code></td>
+      <td><a href="StructureDefinition-derivacion-tarea.html"><code class="language-plaintext highlighter-rouge">DerivacionTarea.code</code></a></td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-derivacion-resultado-entrega.html"><code class="language-plaintext highlighter-rouge">DerivacionResultadoEntregaCS</code></a></td>
+      <td><a href="ValueSet-derivacion-resultado-entrega.html"><code class="language-plaintext highlighter-rouge">DerivacionResultadoEntrega</code></a></td>
+      <td><code class="language-plaintext highlighter-rouge">delivered</code>, <code class="language-plaintext highlighter-rouge">failed</code></td>
+      <td>Extensión <code class="language-plaintext highlighter-rouge">DerivacionDeliveryOutcome</code> en <a href="StructureDefinition-derivacion-notificacion.html"><code class="language-plaintext highlighter-rouge">DerivacionNotificacion</code></a></td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-derivacion-base-cruce.html"><code class="language-plaintext highlighter-rouge">DerivacionBaseCruceCS</code></a></td>
+      <td><a href="ValueSet-derivacion-base-cruce.html"><code class="language-plaintext highlighter-rouge">DerivacionBaseCruce</code></a></td>
+      <td><code class="language-plaintext highlighter-rouge">identifier</code>, <code class="language-plaintext highlighter-rouge">demographics</code></td>
+      <td>Extensión <code class="language-plaintext highlighter-rouge">DerivacionMatchBasis</code> (contexto Patient; cruce de identidad del MPI)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="terminologías-externas">Terminologías externas</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Dato</th>
+      <th>Terminología</th>
+      <th>Sistema canónico</th>
+      <th>Códigos fijados en la propuesta</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Motivo de derivación</td>
+      <td>SNOMED CT</td>
+      <td><code class="language-plaintext highlighter-rouge">http://snomed.info/sct</code></td>
+      <td>84114007 "Heart failure (disorder)" (ejemplo trabajado: sospecha de insuficiencia cardiaca)</td>
+    </tr>
+    <tr>
+      <td>Diagnóstico (contrareferencia)</td>
+      <td>ICD-10-CM (primario) + SNOMED CT (segunda codificación)</td>
+      <td><code class="language-plaintext highlighter-rouge">http://hl7.org/fhir/sid/icd-10-cm</code>, <code class="language-plaintext highlighter-rouge">http://snomed.info/sct</code></td>
+      <td>I50.22 "Chronic systolic (congestive) heart failure" (facturable, 5 caracteres) + 417996009 "Systolic heart failure". Chile usa la CIE-10 de la OMS, donde no existe un código específico de insuficiencia sistólica (I50 solo tiene I50.0 / I50.1 / I50.9) — la segunda codificación SNOMED CT lleva el significado preciso.</td>
+    </tr>
+    <tr>
+      <td>Exámenes / resultados</td>
+      <td>LOINC</td>
+      <td><code class="language-plaintext highlighter-rouge">http://loinc.org</code></td>
+      <td>ECG: 11524-6 "EKG study" (Active, v2.72). NT-proBNP: 33762-6 (Active, v2.73, pg/mL UCUM; miembro del panel 55405-5).</td>
+    </tr>
+    <tr>
+      <td>Tipo de documento de contrareferencia</td>
+      <td>LOINC</td>
+      <td><code class="language-plaintext highlighter-rouge">http://loinc.org</code></td>
+      <td>11488-4 "Consult note" (Active, v2.73); variante de cardiología: 34099-2 "Cardiology Consult Note".</td>
+    </tr>
+    <tr>
+      <td>Tipo de documento de derivación (solo referencia)</td>
+      <td>LOINC</td>
+      <td><code class="language-plaintext highlighter-rouge">http://loinc.org</code></td>
+      <td>57133-1 "Referral Note" (Active, v2.67): el tipo de documento para una derivación que viaja como documento. En este diseño la derivación viaja como recursos, no como documento.</td>
+    </tr>
+    <tr>
+      <td>Prioridad</td>
+      <td>R4 <code class="language-plaintext highlighter-rouge">RequestPriority</code> (Required)</td>
+      <td><code class="language-plaintext highlighter-rouge">http://hl7.org/fhir/request-priority</code></td>
+      <td><code class="language-plaintext highlighter-rouge">routine</code> / <code class="language-plaintext highlighter-rouge">urgent</code> — los valores R4 cubren el caso; no hay ValueSet local.</td>
+    </tr>
+    <tr>
+      <td>Clase de encuentro</td>
+      <td>v3 <code class="language-plaintext highlighter-rouge">ActEncounterCode</code> (Extensible)</td>
+      <td><code class="language-plaintext highlighter-rouge">http://terminology.hl7.org/CodeSystem/v3-ActCode</code></td>
+      <td><code class="language-plaintext highlighter-rouge">AMB</code> (ambulatorio).</td>
+    </tr>
+    <tr>
+      <td>Categoría de notificación</td>
+      <td>R4 <code class="language-plaintext highlighter-rouge">CommunicationCategory</code> (Example)</td>
+      <td><code class="language-plaintext highlighter-rouge">http://terminology.hl7.org/CodeSystem/communication-category</code></td>
+      <td><code class="language-plaintext highlighter-rouge">notification</code>.</td>
+    </tr>
+    <tr>
+      <td>Unidades</td>
+      <td>UCUM</td>
+      <td><code class="language-plaintext highlighter-rouge">http://unitsofmeasure.org</code></td>
+      <td>UCUM 2.0.1 (p. ej. pg/mL para NT-proBNP).</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="sistemas-de-identificadores-ejemplos-sintéticos">Sistemas de identificadores (ejemplos sintéticos)</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Identificador</th>
+      <th>Sistema</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Clave MPI</td>
+      <td><code class="language-plaintext highlighter-rouge">http://mpi.red.example.org</code></td>
+    </tr>
+    <tr>
+      <td>RUN</td>
+      <td><code class="language-plaintext highlighter-rouge">http://www.registrocivil.cl/run</code></td>
+    </tr>
+    <tr>
+      <td>Identificador de la derivación (APS)</td>
+      <td><code class="language-plaintext highlighter-rouge">http://aps.losaromos.example.org/referral</code></td>
+    </tr>
+    <tr>
+      <td>Identificador del servicio</td>
+      <td><code class="language-plaintext highlighter-rouge">http://especialidad.example.org/service</code></td>
+    </tr>
+    <tr>
+      <td>Identificador de la cita</td>
+      <td><code class="language-plaintext highlighter-rouge">http://especialidad.example.org/appointment</code></td>
+    </tr>
+    <tr>
+      <td>Identificador del encuentro</td>
+      <td><code class="language-plaintext highlighter-rouge">http://especialidad.example.org/encounter</code></td>
+    </tr>
+    <tr>
+      <td>Identificador de la contrareferencia</td>
+      <td><code class="language-plaintext highlighter-rouge">http://especialidad.example.org/counter-referral</code></td>
+    </tr>
+    <tr>
+      <td>Identificador de la notificación</td>
+      <td><code class="language-plaintext highlighter-rouge">http://aps.losaromos.example.org/notification</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Todos los identificadores de los ejemplos son sintéticos. Los dominios
+<code class="language-plaintext highlighter-rouge">example.org</code> son sistemas de identificador de ejemplo, no el canonical
+de la guía (que es <code class="language-plaintext highlighter-rouge">https://josemandrade.github.io/prueba-his-muse-nvidia/</code>).</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href=""></a>.  Package hl7.fhir.uv.test.derivacion-aps-especialidad#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Nov 20, 2026 12:33+0000">2026-11-20</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

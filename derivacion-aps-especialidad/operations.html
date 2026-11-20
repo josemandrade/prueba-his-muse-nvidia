@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Operaciones - Derivación APS → especialidad con contrareferencia v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"6"}
+    h3,h4,h5,h6{--heading-prefix:"6"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Derivación APS → especialidad con contrareferencia</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - CI Build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul class="nav navbar-nav">
+  <li><a href="index.html">Derivación APS → especialidad</a></li>
+  <li><a href="process.html">Proceso (BPMN)</a></li>
+  <li><a href="resources.html">Diagrama de recursos</a></li>
+  <li><a href="profiles.html">Perfiles</a></li>
+  <li><a href="terminology.html">Terminología</a></li>
+  <li><a href="operations.html">Operaciones</a></li>
+  <li><a href="sequences.html">Diagramas de secuencia</a></li>
+  <li><a href="mapping.html">Mapeo de datos</a></li>
+  <li><a href="ihe.html">Relación con IHE</a></li>
+  <li><a href="lifecycle.html">Ciclo de vida</a></li>
+  <li><a href="rules.html">Reglas y retención</a></li>
+  <li><a href="public-health.html">Base legal y reporte</a></li>
+  <li><a href="artifacts.html">Artefactos</a></li>
+</ul>
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Operaciones</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Derivación APS → especialidad con contrareferencia - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://josemandrade.github.io/prueba-his-muse-nvidia/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Operaciones</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<h3 id="operaciones">Operaciones</h3>
+
+<p>Las operaciones en cada punto de interoperabilidad, con su interacción
+FHIR, sus entradas, sus salidas, su ejemplo trabajado y el perfil IHE que
+las apoya (o la declaración de que la guía las posee). Las transacciones
+de esta guía son propias; nunca se presentan como transacciones IHE. La
+relación completa con IHE, punto por punto, está en
+<a href="ihe.html">Relación con IHE</a>. Cada operación aparece en al menos un
+diagrama de secuencia (<a href="sequences.html">Diagramas de secuencia</a>).</p>
+
+<p>Ejemplo trabajado en todas las operaciones: María González, 58 años, RUN
+sintético 11.111.111-1, CESFAM Los Aromos → cardiología, derivación
+REF-2026-0001.</p>
+
+<h4 id="op-1--crear-derivación-pi-0">OP-1 — Crear derivación (PI-0)</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Interacción</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">POST [base]/Bundle</code> (<code class="language-plaintext highlighter-rouge">type = transaction</code>: <a href="StructureDefinition-derivacion-solicitud.html"><code class="language-plaintext highlighter-rouge">ServiceRequest</code></a> + <a href="StructureDefinition-derivacion-tarea.html"><code class="language-plaintext highlighter-rouge">Task</code></a> [<code class="language-plaintext highlighter-rouge">status = requested</code>])</td>
+    </tr>
+    <tr>
+      <td><strong>Entradas</strong></td>
+      <td>El conjunto mínimo de datos de PI-0 (spec §3.7): paciente con clave MPI + datos de contacto, motivo (SNOMED CT 84114007), servicio solicitado (catálogo local), prioridad, profesional solicitante</td>
+    </tr>
+    <tr>
+      <td><strong>Salidas</strong></td>
+      <td>El identificador de la derivación + el Task; el hub valida, enruta (<code class="language-plaintext highlighter-rouge">Task.status = received</code>) y reenvía a la especialidad</td>
+    </tr>
+    <tr>
+      <td><strong>Ejemplo</strong></td>
+      <td><a href="Bundle-bundle-pi0-ref-2026-0001.html">Bundle de transacción PI-0</a> — <a href="ServiceRequest-ref-2026-0001.html">ServiceRequest REF-2026-0001</a>, <a href="Task-tarea-ref-2026-0001.html">Task REF-2026-0001</a></td>
+    </tr>
+    <tr>
+      <td><strong>IHE</strong></td>
+      <td>Sub-paso de identidad: <a href="https://profiles.ihe.net/ITI/PIXm/">PIXm ITI-83</a> (<code class="language-plaintext highlighter-rouge">$ihe-pix</code>, full si se implementa exacto) y <a href="https://profiles.ihe.net/ITI/PDQm/">PDQm ITI-78</a> (full si exacto). Búsqueda de enrutado: <a href="https://profiles.ihe.net/ITI/mCSD/">mCSD ITI-90</a> (full si exacto). El envío en sí: 360X PCC-55 solo como patrón (partial). Ninguna transacción IHE lleva un envío FHIR <code class="language-plaintext highlighter-rouge">ServiceRequest</code> + <code class="language-plaintext highlighter-rouge">Task</code>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="op-2--registrar-la-decisión-de-triaje-pi-1">OP-2 — Registrar la decisión de triaje (PI-1)</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Interacción</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">PATCH [base]/Task/{id}</code> (<code class="language-plaintext highlighter-rouge">status = accepted</code> + <code class="language-plaintext highlighter-rouge">owner</code> = el servicio que acepta; el profesional que acepta va como agente de Provenance en la entrada de aceptación, o <code class="language-plaintext highlighter-rouge">status = rejected</code> + <code class="language-plaintext highlighter-rouge">statusReason</code>) + Provenance</td>
+    </tr>
+    <tr>
+      <td><strong>Entradas</strong></td>
+      <td>La decisión del clínico de triaje (aceptar nombrando servicio y profesional, o rechazar con motivo)</td>
+    </tr>
+    <tr>
+      <td><strong>Salidas</strong></td>
+      <td>El Task en <code class="language-plaintext highlighter-rouge">accepted</code> o <code class="language-plaintext highlighter-rouge">rejected</code>; el hub reenvía la decisión a APS (Communication) y el administrativo de APS informa a la paciente</td>
+    </tr>
+    <tr>
+      <td><strong>Ejemplo</strong></td>
+      <td><a href="Communication-notificacion-aceptacion-ref-2026-0001.html">Notificación de aceptación</a> (la Communication que lleva la decisión a la paciente)</td>
+    </tr>
+    <tr>
+      <td><strong>IHE</strong></td>
+      <td>360X PCC-56 Referral Decline solo como patrón (partial — la rama de rechazo). La rama de aceptación no tiene transacción 360X (la aceptación es implícita en 360X); en esta guía la aceptación es una transición explícita del Task. La transición en sí es propia de la guía.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="op-3--ofrecer--confirmar--reservar-cita-pi-2">OP-3 — Ofrecer / confirmar / reservar cita (PI-2)</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Interacción</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">GET [base]/Slot?schedule=…&amp;status=free</code> / Scheduling <code class="language-plaintext highlighter-rouge">$find</code> (ITI-115) → crear el Appointment (<code class="language-plaintext highlighter-rouge">status = proposed</code>) + <code class="language-plaintext highlighter-rouge">AppointmentResponse</code> (<code class="language-plaintext highlighter-rouge">needs-action</code>) → el hub reenvía la oferta a la paciente y notifica al administrativo de APS → la paciente confirma (<code class="language-plaintext highlighter-rouge">AppointmentResponse.participantStatus = accepted</code>, Appointment → <code class="language-plaintext highlighter-rouge">pending</code>) → el agendador reserva (Scheduling <code class="language-plaintext highlighter-rouge">$book</code>, ITI-117; Appointment → <code class="language-plaintext highlighter-rouge">booked</code>, Slot → <code class="language-plaintext highlighter-rouge">busy</code>) → crear el Encounter (<code class="language-plaintext highlighter-rouge">status = planned</code>, <code class="language-plaintext highlighter-rouge">appointment</code> → el Appointment) en la reserva</td>
+    </tr>
+    <tr>
+      <td><strong>Entradas</strong></td>
+      <td>Disponibilidad del servicio; la oferta (fecha, lugar, instrucciones)</td>
+    </tr>
+    <tr>
+      <td><strong>Salidas</strong></td>
+      <td>Appointment <code class="language-plaintext highlighter-rouge">booked</code> + Encounter <code class="language-plaintext highlighter-rouge">planned</code> + Slot <code class="language-plaintext highlighter-rouge">busy</code>; la oferta, la confirmación y la reserva quedan en el historial del Task</td>
+    </tr>
+    <tr>
+      <td><strong>Ejemplo</strong></td>
+      <td><a href="Appointment-cita-ref-2026-0001.html">Cita REF-2026-0001 (proposed)</a>, <a href="AppointmentResponse-respuesta-cita-1.html">Respuesta de la paciente (accepted)</a>, <a href="Encounter-encuentro-ref-2026-0001.html">Encuentro REF-2026-0001 (planned)</a></td>
+    </tr>
+    <tr>
+      <td><strong>IHE</strong></td>
+      <td><a href="https://profiles.ihe.net/ITI/Scheduling/">Scheduling</a> ITI-115 <code class="language-plaintext highlighter-rouge">$find</code> + ITI-117 <code class="language-plaintext highlighter-rouge">$book</code> (partial — la mitad de reserva; el ciclo oferta/confirmación/persecución es propio de la guía). 360X PCC-60 Appointment Notification solo como patrón (partial — notifica al iniciador; no es una reserva).</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="op-4--re-ofertar--re-agendar-pi-2">OP-4 — Re-ofertar / re-agendar (PI-2)</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Interacción</strong></td>
+      <td>Rechazo → el Appointment de la oferta pasa a <code class="language-plaintext highlighter-rouge">cancelled</code>; la re-oferta es un Appointment NUEVO (OP-3 de nuevo, <code class="language-plaintext highlighter-rouge">offer-number</code> +1). Conflicto antes de la cita → mismo Appointment, nuevo Slot (Scheduling <code class="language-plaintext highlighter-rouge">$book</code> modify, ITI-117). No-show → el Appointment viejo queda <code class="language-plaintext highlighter-rouge">noshow</code>; la oferta re-agendada es un Appointment NUEVO por el mismo ciclo confirmar/perseguir (N5)</td>
+    </tr>
+    <tr>
+      <td><strong>Entradas</strong></td>
+      <td>El rechazo de la paciente, el conflicto de agenda o el no-show; los conteos del Task (<code class="language-plaintext highlighter-rouge">offer-decline-count</code>, <code class="language-plaintext highlighter-rouge">offer-chase-count</code>, <code class="language-plaintext highlighter-rouge">rescheduling-count</code>)</td>
+    </tr>
+    <tr>
+      <td><strong>Salidas</strong></td>
+      <td>Un Appointment nuevo (<code class="language-plaintext highlighter-rouge">proposed</code>) o el mismo Appointment con nuevo Slot; los conteos actualizados en el Task</td>
+    </tr>
+    <tr>
+      <td><strong>Ejemplo</strong></td>
+      <td><a href="Appointment-cita-ref-2026-0001.html">Cita REF-2026-0001</a> (<code class="language-plaintext highlighter-rouge">offer-number</code> = 1; una re-oferta sería un Appointment nuevo con <code class="language-plaintext highlighter-rouge">offer-number</code> = 2)</td>
+    </tr>
+    <tr>
+      <td><strong>IHE</strong></td>
+      <td>Scheduling ITI-117 <code class="language-plaintext highlighter-rouge">$book</code> (partial — modificar una cita reservada). Las reglas de re-oferta y re-agendamiento (conteos, ciclo) son propias de la guía.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="op-5--registrar-asistencia--no-show-pi-2">OP-5 — Registrar asistencia / no-show (PI-2)</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Interacción</strong></td>
+      <td>Asistencia: <code class="language-plaintext highlighter-rouge">PATCH Appointment/{id}</code> (<code class="language-plaintext highlighter-rouge">status = arrived</code>, luego <code class="language-plaintext highlighter-rouge">fulfilled</code> al terminar el encuentro) + <code class="language-plaintext highlighter-rouge">PATCH Encounter/{id}</code> (<code class="language-plaintext highlighter-rouge">planned</code> → <code class="language-plaintext highlighter-rouge">in-progress</code> en la asistencia, → <code class="language-plaintext highlighter-rouge">finished</code> al terminar el encuentro). No-show: <code class="language-plaintext highlighter-rouge">PATCH Appointment/{id}</code> (<code class="language-plaintext highlighter-rouge">status = noshow</code> + <code class="language-plaintext highlighter-rouge">cancelationReason</code>) + Slot → <code class="language-plaintext highlighter-rouge">free</code> + Communication a APS; tras el segundo no-show el Task pasa a <code class="language-plaintext highlighter-rouge">failed</code> / <code class="language-plaintext highlighter-rouge">businessStatus = no-show</code> y la derivación se cierra</td>
+    </tr>
+    <tr>
+      <td><strong>Entradas</strong></td>
+      <td>La asistencia o la ausencia de la paciente en la cita</td>
+    </tr>
+    <tr>
+      <td><strong>Salidas</strong></td>
+      <td>Appointment <code class="language-plaintext highlighter-rouge">fulfilled</code> + Encounter <code class="language-plaintext highlighter-rouge">finished</code> (o <code class="language-plaintext highlighter-rouge">noshow</code> + Slot <code class="language-plaintext highlighter-rouge">free</code>); el Task avanza a <code class="language-plaintext highlighter-rouge">completed</code> (o a <code class="language-plaintext highlighter-rouge">failed</code> en el segundo no-show)</td>
+    </tr>
+    <tr>
+      <td><strong>Ejemplo</strong></td>
+      <td><a href="Encounter-encuentro-ref-2026-0001.html">Encuentro REF-2026-0001</a> (el encuentro que OP-5 lleva de <code class="language-plaintext highlighter-rouge">planned</code> a <code class="language-plaintext highlighter-rouge">finished</code>)</td>
+    </tr>
+    <tr>
+      <td><strong>IHE</strong></td>
+      <td>360X PCC-61 No-show Notification solo como patrón (partial). El registro de asistencia en sí es propio de la guía.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="op-6--enviar-contrareferencia-pi-3">OP-6 — Enviar contrareferencia (PI-3)</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Interacción</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">POST [base]/Bundle</code> (<code class="language-plaintext highlighter-rouge">type = document</code>: Composition primera entrada + DocumentReference + Condition + CarePlan) → el hub la enruta a APS → APS acusa recibo (<code class="language-plaintext highlighter-rouge">POST Communication</code>, <code class="language-plaintext highlighter-rouge">basedOn</code> → Task, <code class="language-plaintext highlighter-rouge">payload.contentReference</code> → DocumentReference) → Task → <code class="language-plaintext highlighter-rouge">completed</code> / <code class="language-plaintext highlighter-rouge">businessStatus = counter-referred</code></td>
+    </tr>
+    <tr>
+      <td><strong>Entradas</strong></td>
+      <td>El diagnóstico (ICD-10-CM I50.22 + SNOMED CT 417996009), el plan y el plan de seguimiento del especialista</td>
+    </tr>
+    <tr>
+      <td><strong>Salidas</strong></td>
+      <td>El documento de contrareferencia en APS; el acuse de recibo; el Task en <code class="language-plaintext highlighter-rouge">counter-referred</code> (ciclo cerrado)</td>
+    </tr>
+    <tr>
+      <td><strong>Ejemplo</strong></td>
+      <td><a href="Bundle-bundle-pi3-ref-2026-0001.html">Bundle de documento PI-3</a> — <a href="Composition-contrareferencia-ref-2026-0001.html">Composition</a>, <a href="DocumentReference-documento-ref-2026-0001.html">DocumentReference</a>, <a href="Condition-diagnostico-ref-2026-0001.html">Condition</a>, <a href="CarePlan-plan-ref-2026-0001.html">CarePlan</a></td>
+    </tr>
+    <tr>
+      <td><strong>IHE</strong></td>
+      <td><a href="https://profiles.ihe.net/ITI/MHD/">MHD</a> ITI-65 Provide Document Bundle (full para la pierna de transporte del documento, si la guía implementa ITI-65 exacto con metadatos XDS); 360X PCC-57 Referral Outcome solo como patrón de contenido (partial). La transición del Task + el acuse son propios de la guía. <a href="https://profiles.ihe.net/ITI/DSUBm/">DSUBm</a> ITI-110 (partial — APS se suscribe a que el documento esté disponible).</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="op-7--consultar-el-estado-de-la-derivación-pi-4">OP-7 — Consultar el estado de la derivación (PI-4)</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Interacción</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">GET [base]/Task?focus:ServiceRequest.identifier={referral-id}</code> (o <code class="language-plaintext highlighter-rouge">GET [base]/Task/{id}</code>) → el Task con <code class="language-plaintext highlighter-rouge">status</code>, <code class="language-plaintext highlighter-rouge">businessStatus</code>, <code class="language-plaintext highlighter-rouge">lastModified</code>, los plazos SLA y los conteos, más el próximo paso esperado (<code class="language-plaintext highlighter-rouge">Task.description</code>). Solo lectura; la consulta nunca cambia el estado</td>
+    </tr>
+    <tr>
+      <td><strong>Entradas</strong></td>
+      <td>El identificador de la derivación</td>
+    </tr>
+    <tr>
+      <td><strong>Salidas</strong></td>
+      <td>El estado actual, el último cambio de estado y el próximo paso esperado (spec §3.7), o <code class="language-plaintext highlighter-rouge">not found</code> (APS verifica el id)</td>
+    </tr>
+    <tr>
+      <td><strong>Ejemplo</strong></td>
+      <td><a href="Task-tarea-ref-2026-0001.html">Task REF-2026-0001</a> (el recurso que OP-7 lee)</td>
+    </tr>
+    <tr>
+      <td><strong>IHE</strong></td>
+      <td><strong>None applies</strong> — ningún perfil IHE lleva una consulta de estado de flujo de trabajo (QEDm PCC-44 cubre solo datos clínicos; DSUBm cubre solo eventos de documento). Búsqueda FHIR simple.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="op-8--cancelar-derivación-cualquier-pi-antes-de-completarse">OP-8 — Cancelar derivación (cualquier PI, antes de completarse)</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Interacción</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">PATCH [base]/Task/{id}</code> (<code class="language-plaintext highlighter-rouge">status = cancelled</code> + <code class="language-plaintext highlighter-rouge">statusReason</code>, incl. "patient deceased") + <code class="language-plaintext highlighter-rouge">PATCH Appointment/{id}</code> (<code class="language-plaintext highlighter-rouge">status = cancelled</code> + <code class="language-plaintext highlighter-rouge">cancelationReason</code>) donde haya cita reservada + Slot → <code class="language-plaintext highlighter-rouge">free</code> + Communication a APS, paciente y especialidad + entrada Provenance</td>
+    </tr>
+    <tr>
+      <td><strong>Entradas</strong></td>
+      <td>La solicitud de cancelación (APS, paciente o especialidad) con su motivo</td>
+    </tr>
+    <tr>
+      <td><strong>Salidas</strong></td>
+      <td>El Task en <code class="language-plaintext highlighter-rouge">cancelled</code> (terminal, salvo el único camino de corrección: re-apertura por el operador del hub); todas las partes notificadas</td>
+    </tr>
+    <tr>
+      <td><strong>Ejemplo</strong></td>
+      <td><a href="Task-tarea-ref-2026-0001.html">Tarea REF-2026-0001</a> (el Task que OP-8 lleva a <code class="language-plaintext highlighter-rouge">cancelled</code>)</td>
+    </tr>
+    <tr>
+      <td><strong>IHE</strong></td>
+      <td>360X PCC-58 Referral Cancellation solo como patrón (partial — y con tope de dirección: PCC-58 viaja solo Initiator → Recipient, mientras este caso permite que la especialidad o la paciente inicien la cancelación); Scheduling ITI-117 <code class="language-plaintext highlighter-rouge">$book</code> (partial — cancela la cita reservada). La transición del Task + el abanico de avisos son propios de la guía.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="op-9--resolver-la-identidad-del-paciente-pi-0-apoyo">OP-9 — Resolver la identidad del paciente (PI-0, apoyo)</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Interacción</strong></td>
+      <td>Antes de la creación: <code class="language-plaintext highlighter-rouge">GET [base]/Patient/$ihe-pix?identifier=…</code> (PIXm ITI-83) devuelve la clave MPI; o <code class="language-plaintext highlighter-rouge">GET [base]/Patient?family=…&amp;given=…</code> (PDQm ITI-78) encuentra a la paciente por demográficos</td>
+    </tr>
+    <tr>
+      <td><strong>Entradas</strong></td>
+      <td>El identificador local o los demográficos de la paciente</td>
+    </tr>
+    <tr>
+      <td><strong>Salidas</strong></td>
+      <td>La clave MPI (o la paciente encontrada); sin identidad resuelta no se crea la derivación</td>
+    </tr>
+    <tr>
+      <td><strong>Ejemplo</strong></td>
+      <td><a href="Patient-maria-gonzalez.html">María González</a> (la paciente con su clave MPI y su RUN)</td>
+    </tr>
+    <tr>
+      <td><strong>IHE</strong></td>
+      <td><a href="https://profiles.ihe.net/ITI/PIXm/">PIXm</a> ITI-83 (full si se implementa exacto); <a href="https://profiles.ihe.net/ITI/PDQm/">PDQm</a> ITI-78 (full si exacto). PMIR ITI-93 es la asociación del lado del MPI (alimentación/fusión), ofrecida, no una transacción de PI-0.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="op-10--encontrar-el-servicio--endpoint-pi-0-apoyo">OP-10 — Encontrar el servicio / endpoint (PI-0, apoyo)</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Interacción</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">GET [base]/HealthcareService?type=…&amp;active=true</code> (+ <code class="language-plaintext highlighter-rouge">Endpoint</code>) — el directorio devuelve el servicio de especialidad solicitado y su endpoint</td>
+    </tr>
+    <tr>
+      <td><strong>Entradas</strong></td>
+      <td>La especialidad solicitada (catálogo local)</td>
+    </tr>
+    <tr>
+      <td><strong>Salidas</strong></td>
+      <td>El servicio y su endpoint de enrutado</td>
+    </tr>
+    <tr>
+      <td><strong>Ejemplo</strong></td>
+      <td><a href="HealthcareService-servicio-cardiologia.html">Servicio de cardiología</a> (con su endpoint)</td>
+    </tr>
+    <tr>
+      <td><strong>IHE</strong></td>
+      <td><a href="https://profiles.ihe.net/ITI/mCSD/">mCSD</a> ITI-90 Find Matching Care Services (full si se implementa exacto).</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="op-11--suscribirse-a-los-cambios-de-estado-todos-los-pi-apoyo">OP-11 — Suscribirse a los cambios de estado (todos los PI, apoyo)</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Interacción</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">POST [base]/Subscription</code> (<code class="language-plaintext highlighter-rouge">criteria = "Task?focus:ServiceRequest.identifier={referral-id}"</code>, <code class="language-plaintext highlighter-rouge">channel.type = rest-hook</code>, <code class="language-plaintext highlighter-rouge">channel.endpoint</code> = URL del suscriptor, <code class="language-plaintext highlighter-rouge">channel.payload = application/fhir+json</code>) → el hub notifica en cada transición del Task</td>
+    </tr>
+    <tr>
+      <td><strong>Entradas</strong></td>
+      <td>El identificador de la derivación y el endpoint del suscriptor</td>
+    </tr>
+    <tr>
+      <td><strong>Salidas</strong></td>
+      <td>La suscripción activa; una notificación por cada transición del Task</td>
+    </tr>
+    <tr>
+      <td><strong>Ejemplo</strong></td>
+      <td><a href="Task-tarea-ref-2026-0001.html">Task REF-2026-0001</a> (el recurso sobre el que se suscribe OP-11)</td>
+    </tr>
+    <tr>
+      <td><strong>IHE</strong></td>
+      <td><strong>None applies</strong> — una <code class="language-plaintext highlighter-rouge">Subscription</code> FHIR sobre un evento que no es de documento es propia de la guía (DSUB/DSUBm suscriben solo eventos de documento).</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="op-12--notificar-un-cambio-de-estado-todos-los-pi-apoyo">OP-12 — Notificar un cambio de estado (todos los PI, apoyo)</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Interacción</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">POST [base]/Communication</code> (<code class="language-plaintext highlighter-rouge">status = completed</code>, <code class="language-plaintext highlighter-rouge">basedOn</code> → Task, <code class="language-plaintext highlighter-rouge">sender</code>, <code class="language-plaintext highlighter-rouge">recipient</code>, <code class="language-plaintext highlighter-rouge">sent</code>, <code class="language-plaintext highlighter-rouge">medium</code>, <code class="language-plaintext highlighter-rouge">payload</code> = el aviso) → el sistema del destinatario. Los emisores nombrados son C5/Q3</td>
+    </tr>
+    <tr>
+      <td><strong>Entradas</strong></td>
+      <td>La transición que disparó el aviso, el emisor y el destinatario nombrados, el canal</td>
+    </tr>
+    <tr>
+      <td><strong>Salidas</strong></td>
+      <td>La Communication registrada (el registro del envío, no el contenido en sí)</td>
+    </tr>
+    <tr>
+      <td><strong>Ejemplo</strong></td>
+      <td><a href="Communication-notificacion-aceptacion-ref-2026-0001.html">Notificación de aceptación</a> (el administrativo de APS informa a la paciente)</td>
+    </tr>
+    <tr>
+      <td><strong>IHE</strong></td>
+      <td><strong>None applies</strong> para la notificación en sí — un envío <code class="language-plaintext highlighter-rouge">Communication</code> es propio de la guía. (DSUBm ITI-110/111/112 cubre solo la notificación de eventos de documento — aplica a que la contrareferencia esté disponible, OP-6, no a los avisos de cambio de estado.)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="resumen-por-punto">Resumen por punto</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>PI</th>
+      <th>Operaciones</th>
+      <th>IHE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PI-0</td>
+      <td>OP-1, OP-9, OP-10 (+ OP-11, OP-12)</td>
+      <td>PIXm ITI-83, PDQm ITI-78, mCSD ITI-90 (full en los sub-pasos); 360X PCC-55 patrón</td>
+    </tr>
+    <tr>
+      <td>PI-1</td>
+      <td>OP-2 (+ OP-8, OP-12)</td>
+      <td>360X PCC-56 patrón (rama de rechazo)</td>
+    </tr>
+    <tr>
+      <td>PI-2</td>
+      <td>OP-3, OP-4, OP-5 (+ OP-8, OP-12)</td>
+      <td>Scheduling ITI-115/117 (mitad de reserva); 360X PCC-60/61 patrón</td>
+    </tr>
+    <tr>
+      <td>PI-3</td>
+      <td>OP-6 (+ OP-12)</td>
+      <td>MHD ITI-65 (pierna de documento); 360X PCC-57 patrón; DSUBm ITI-110 (disponibilidad)</td>
+    </tr>
+    <tr>
+      <td>PI-4</td>
+      <td>OP-7</td>
+      <td>None applies (explícito)</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href=""></a>.  Package hl7.fhir.uv.test.derivacion-aps-especialidad#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Nov 20, 2026 12:33+0000">2026-11-20</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

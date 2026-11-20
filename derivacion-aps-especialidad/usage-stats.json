@@ -1,0 +1,265 @@
+{
+  "package": "hl7.fhir.uv.test.derivacion-aps-especialidad",
+  "version": "0.1.0",
+  "fhirVersion": "4.0.1",
+  "extensions": [
+    {
+      "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-delivery-outcome",
+      "title": "Resultado de la entrega",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-match-basis",
+      "title": "Base del cruce de identidad",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-match-confidence",
+      "title": "Confianza del cruce de identidad",
+      "types": [
+        "decimal"
+      ]
+    },
+    {
+      "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-offer-chase-count",
+      "title": "Conteo de persecuciones de esta oferta",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-offer-decline-count",
+      "title": "Conteo de rechazos de esta oferta",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-offer-number",
+      "title": "Número de oferta (de esta derivación)",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-preferred-contact-channel",
+      "title": "Canal de contacto preferido",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-referral-identifier",
+      "title": "Identificador de la derivación",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rescheduling-count",
+      "title": "Conteo de re-agendamientos",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-acceptance-deadline",
+      "title": "Plazo de aceptación",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-confirmation-deadline",
+      "title": "Plazo de confirmación",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-counterreferral-deadline",
+      "title": "Plazo de contrareferencia",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-offer-deadline",
+      "title": "Plazo de oferta de cita",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-retriage-deadline",
+      "title": "Plazo de re-triaje",
+      "types": [
+        "dateTime"
+      ]
+    }
+  ],
+  "profiles": {
+    "Appointment": [
+      {
+        "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-cita",
+        "title": "Cita de la derivación"
+      }
+    ],
+    "Composition": [
+      {
+        "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-contrareferencia",
+        "title": "Contrareferencia"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-diagnostico",
+        "title": "Diagnóstico de la contrareferencia"
+      }
+    ],
+    "DocumentReference": [
+      {
+        "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-documento",
+        "title": "Documento de contrareferencia"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-encuentro",
+        "title": "Encuentro de especialidad"
+      }
+    ],
+    "Communication": [
+      {
+        "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-notificacion",
+        "title": "Notificación"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-paciente",
+        "title": "Paciente de la derivación"
+      }
+    ],
+    "CarePlan": [
+      {
+        "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-plan-seguimiento",
+        "title": "Plan de seguimiento para APS"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rol",
+        "title": "Rol en la derivación"
+      }
+    ],
+    "HealthcareService": [
+      {
+        "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-servicio",
+        "title": "Servicio de especialidad"
+      }
+    ],
+    "ServiceRequest": [
+      {
+        "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-solicitud",
+        "title": "Solicitud de derivación"
+      }
+    ],
+    "Task": [
+      {
+        "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-tarea",
+        "title": "Tarea de derivación (registro de estado)"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implied-type-slice": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/type-profile-constraints": [
+      "StructureDefinition.snapshot.element.type.profile"
+    ],
+    "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-delivery-outcome": [
+      "Communication"
+    ],
+    "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-offer-chase-count": [
+      "Task"
+    ],
+    "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-offer-decline-count": [
+      "Task"
+    ],
+    "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-offer-number": [
+      "Appointment"
+    ],
+    "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-preferred-contact-channel": [
+      "Patient"
+    ],
+    "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-referral-identifier": [
+      "Bundle.entry.resource",
+      "Composition"
+    ],
+    "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rescheduling-count": [
+      "Task"
+    ],
+    "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-acceptance-deadline": [
+      "Bundle.entry.resource",
+      "Task"
+    ],
+    "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-confirmation-deadline": [
+      "Task"
+    ],
+    "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-counterreferral-deadline": [
+      "Task"
+    ],
+    "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-offer-deadline": [
+      "Task"
+    ],
+    "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-retriage-deadline": [
+      "Task"
+    ]
+  }
+}

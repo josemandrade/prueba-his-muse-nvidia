@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Proceso (BPMN) - Derivación APS → especialidad con contrareferencia v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+  	<link rel="stylesheet" href="assets/css/cqf.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+
+          <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Derivación APS → especialidad con contrareferencia</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - CI Build
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul class="nav navbar-nav">
+  <li><a href="index.html">Derivación APS → especialidad</a></li>
+  <li><a href="process.html">Proceso (BPMN)</a></li>
+  <li><a href="resources.html">Diagrama de recursos</a></li>
+  <li><a href="profiles.html">Perfiles</a></li>
+  <li><a href="terminology.html">Terminología</a></li>
+  <li><a href="operations.html">Operaciones</a></li>
+  <li><a href="sequences.html">Diagramas de secuencia</a></li>
+  <li><a href="mapping.html">Mapeo de datos</a></li>
+  <li><a href="ihe.html">Relación con IHE</a></li>
+  <li><a href="lifecycle.html">Ciclo de vida</a></li>
+  <li><a href="rules.html">Reglas y retención</a></li>
+  <li><a href="public-health.html">Base legal y reporte</a></li>
+  <li><a href="artifacts.html">Artefactos</a></li>
+</ul>
+
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Proceso (BPMN)</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">Derivación APS → especialidad con contrareferencia - Local Development build (v0.1.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://josemandrade.github.io/prueba-his-muse-nvidia/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Proceso (BPMN)</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div>
+  <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
+</div>
+<h3 id="proceso-bpmn">Proceso (BPMN)</h3>
+
+<p>El modelo BPMN validado del paso 2, en tres partes, con sus puntos de
+interoperabilidad. Los diagramas se muestran a tamaño nativo (2×) con
+desplazamiento y zoom; el SVG de cada parte está enlazado bajo su imagen.
+Las desviaciones de modelado conocidas están listadas en
+<code class="language-plaintext highlighter-rouge">02-bpmn-model.md</code>.</p>
+
+<h4 id="parte-a--derivación-y-triaje">Parte A — Derivación y triaje</h4>
+
+<div style="overflow-x: auto; border: 1px solid #ccc; padding: 4px;"><a name="l282">​</a>
+<img src="02-bpmn-model-referral-triage.png" alt="BPMN Parte A — derivación y triaje" style="max-width: none; width: 3834px;"/>
+</div>
+
+<p><a href="02-bpmn-model-referral-triage.svg">SVG de la Parte A</a> · 52 formas / 43
+flujos. Puntos: PI-0 creación y enrutado (m3, m11), PI-1 aceptación /
+rechazo (m4–m7). Carriles: APS doctor, APS admin, MPI, Hub operator,
+Triage clinician / specialist, Patient.</p>
+
+<h4 id="parte-b--agendamiento-y-contrareferencia">Parte B — Agendamiento y contrareferencia</h4>
+
+<div style="overflow-x: auto; border: 1px solid #ccc; padding: 4px;"><a name="l295">​</a>
+<img src="02-bpmn-model-scheduling-counterreferral.png" alt="BPMN Parte B — agendamiento y contrareferencia" style="max-width: none; width: 3780px;"/>
+</div>
+
+<p><a href="02-bpmn-model-scheduling-counterreferral.svg">SVG de la Parte B</a> · 65
+formas / 59 flujos. Puntos: PI-2 agendamiento (h1–h3, h8, h9), PI-3
+contrareferencia (h10, h11). Carriles: APS admin, APS doctor, Hub
+operator, Specialty scheduler, Specialist, Patient.</p>
+
+<h4 id="parte-c--consulta-de-estado">Parte C — Consulta de estado</h4>
+
+<div style="overflow-x: auto; border: 1px solid #ccc; padding: 4px;"><a name="l308">​</a>
+<img src="02-bpmn-model-status-query.png" alt="BPMN Parte C — consulta de estado" style="max-width: none; width: 3780px;"/>
+</div>
+
+<p><a href="02-bpmn-model-status-query.svg">SVG de la Parte C</a> · 16 formas / 11
+flujos. Punto: PI-4 consulta de estado (j1–j3, solo lectura). Carriles:
+APS doctor / admin, Hub operator.</p>
+
+<h4 id="registro-global-de-puntos-de-interoperabilidad">Registro global de puntos de interoperabilidad</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>PI</th>
+      <th>Mensajes</th>
+      <th>Flujo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PI-0 Creación</td>
+      <td>m3 (APS → hub), m11 (hub → especialidad)</td>
+      <td>Creación de la derivación, resolución de identidad (OP-9), enrutado (OP-10)</td>
+    </tr>
+    <tr>
+      <td>PI-1 Aceptar / rechazar</td>
+      <td>m4–m7 (especialidad → hub → APS → paciente)</td>
+      <td>Decisión de triaje (OP-2), notificación (OP-12)</td>
+    </tr>
+    <tr>
+      <td>PI-2 Agendamiento</td>
+      <td>h1–h3, h8, h9</td>
+      <td>Oferta / confirmación / reserva (OP-3), re-oferta / re-agendamiento (OP-4), asistencia / no-show (OP-5)</td>
+    </tr>
+    <tr>
+      <td>PI-3 Contrareferencia</td>
+      <td>h10, h11</td>
+      <td>Envío del documento (OP-6), acuse de recibo</td>
+    </tr>
+    <tr>
+      <td>PI-4 Consulta de estado</td>
+      <td>j1–j3</td>
+      <td>Consulta de solo lectura (OP-7) — "none applies" en IHE</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="desviaciones-de-modelado-conocidas">Desviaciones de modelado conocidas</h4>
+
+<ul>
+  <li>Las esperas de aceptación / confirmación son puertas basadas en eventos
+dibujadas como exclusivas (limitación del renderizador), nombradas
+"Decision received?".</li>
+  <li>Los conteos son puertas basadas en datos que leen el registro de flujo
+de trabajo del hub.</li>
+  <li>La cancelación es una fila de inicio por mensaje en las Partes A y B;
+no termina el flujo principal en curso (el registro del hub es la
+autoridad).</li>
+  <li>Los flujos de mensaje h6/h7 terminan en puertas (desviación registrada).</li>
+  <li>Las tareas de recepción de notificación terminan su rama sin evento de
+fin (convención: la recepción es el fin de la rama).</li>
+</ul>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href=""></a>.  Package hl7.fhir.uv.test.derivacion-aps-especialidad#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Nov 20, 2026 12:33+0000">2026-11-20</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

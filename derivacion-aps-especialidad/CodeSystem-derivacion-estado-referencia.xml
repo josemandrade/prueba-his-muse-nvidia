@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="derivacion-estado-referencia"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem derivacion-estado-referencia</b></p><a name="derivacion-estado-referencia"> </a><a name="hcderivacion-estado-referencia"> </a><p>This  code system <code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">requested<a name="derivacion-estado-referencia-requested"> </a></td><td>Requested</td><td>Derivación creada por APS, aún no recibida por el hub.</td></tr><tr><td style="white-space:nowrap">received<a name="derivacion-estado-referencia-received"> </a></td><td>Received</td><td>Derivación recibida por el hub y enrutada a la especialidad.</td></tr><tr><td style="white-space:nowrap">accepted<a name="derivacion-estado-referencia-accepted"> </a></td><td>Accepted</td><td>La especialidad aceptó la derivación (nombrando servicio y profesional).</td></tr><tr><td style="white-space:nowrap">rejected<a name="derivacion-estado-referencia-rejected"> </a></td><td>Rejected</td><td>La especialidad rechazó la derivación (con motivo); APS re-triajea.</td></tr><tr><td style="white-space:nowrap">scheduled<a name="derivacion-estado-referencia-scheduled"> </a></td><td>Scheduled</td><td>Cita reservada; la visita aún no ha empezado.</td></tr><tr><td style="white-space:nowrap">completed<a name="derivacion-estado-referencia-completed"> </a></td><td>Completed</td><td>Visita atendida; la contrareferencia está pendiente.</td></tr><tr><td style="white-space:nowrap">counter-referred<a name="derivacion-estado-referencia-counter-referred"> </a></td><td>Counter-referred</td><td>Contrareferencia enviada y recibida por APS; el ciclo está cerrado.</td></tr><tr><td style="white-space:nowrap">no-show<a name="derivacion-estado-referencia-no-show"> </a></td><td>No-show</td><td>El paciente no asistió dos veces; la derivación se cerró sin completar.</td></tr><tr><td style="white-space:nowrap">cancelled<a name="derivacion-estado-referencia-cancelled"> </a></td><td>Cancelled</td><td>Derivación cancelada antes de completarse (por APS, el paciente o la especialidad; también por fallecimiento del paciente).</td></tr></table></div>
+  </text>
+  <url value="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia"/>
+  <version value="0.1.0"/>
+  <name value="DerivacionEstadoReferenciaCS"/>
+  <title value="Estado de la derivación"/>
+  <status value="draft"/>
+  <date value="2026-11-20T12:33:32+00:00"/>
+  <description value="Los nueve estados del caso de la derivación APS → especialidad (spec §3.1). El estado vive en Task.businessStatus, nunca como valor inventado de Task.status."/>
+  <content value="complete"/>
+  <count value="9"/>
+  <concept>
+    <code value="requested"/>
+    <display value="Requested"/>
+    <definition value="Derivación creada por APS, aún no recibida por el hub."/>
+  </concept>
+  <concept>
+    <code value="received"/>
+    <display value="Received"/>
+    <definition value="Derivación recibida por el hub y enrutada a la especialidad."/>
+  </concept>
+  <concept>
+    <code value="accepted"/>
+    <display value="Accepted"/>
+    <definition value="La especialidad aceptó la derivación (nombrando servicio y profesional)."/>
+  </concept>
+  <concept>
+    <code value="rejected"/>
+    <display value="Rejected"/>
+    <definition value="La especialidad rechazó la derivación (con motivo); APS re-triajea."/>
+  </concept>
+  <concept>
+    <code value="scheduled"/>
+    <display value="Scheduled"/>
+    <definition value="Cita reservada; la visita aún no ha empezado."/>
+  </concept>
+  <concept>
+    <code value="completed"/>
+    <display value="Completed"/>
+    <definition value="Visita atendida; la contrareferencia está pendiente."/>
+  </concept>
+  <concept>
+    <code value="counter-referred"/>
+    <display value="Counter-referred"/>
+    <definition value="Contrareferencia enviada y recibida por APS; el ciclo está cerrado."/>
+  </concept>
+  <concept>
+    <code value="no-show"/>
+    <display value="No-show"/>
+    <definition value="El paciente no asistió dos veces; la derivación se cerró sin completar."/>
+  </concept>
+  <concept>
+    <code value="cancelled"/>
+    <display value="Cancelled"/>
+    <definition value="Derivación cancelada antes de completarse (por APS, el paciente o la especialidad; también por fallecimiento del paciente)."/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="derivacion-rol"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem derivacion-rol</b></p><a name="derivacion-rol"> </a><a name="hcderivacion-rol"> </a><p>This  code system <code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">aps-doctor<a name="derivacion-rol-aps-doctor"> </a></td><td>APS doctor</td><td>Médico de APS que crea la derivación.</td></tr><tr><td style="white-space:nowrap">aps-admin<a name="derivacion-rol-aps-admin"> </a></td><td>APS admin</td><td>Administrativo de APS que registra y sigue la derivación e informa al paciente.</td></tr><tr><td style="white-space:nowrap">triage-clinician<a name="derivacion-rol-triage-clinician"> </a></td><td>Triage clinician</td><td>Clínico de la especialidad que acepta o rechaza la derivación.</td></tr><tr><td style="white-space:nowrap">specialty-scheduler<a name="derivacion-rol-specialty-scheduler"> </a></td><td>Specialty scheduler</td><td>Agendador de la especialidad que reserva y re-agenda la cita.</td></tr><tr><td style="white-space:nowrap">specialist<a name="derivacion-rol-specialist"> </a></td><td>Specialist</td><td>Especialista que atiende y emite la contrareferencia.</td></tr><tr><td style="white-space:nowrap">hub-operator<a name="derivacion-rol-hub-operator"> </a></td><td>Hub operator</td><td>Operador del hub de derivación (enruta, escala, registra cancelaciones, responde consultas de estado).</td></tr></table></div>
+  </text>
+  <url value="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol"/>
+  <version value="0.1.0"/>
+  <name value="DerivacionRolCS"/>
+  <title value="Rol en la derivación"/>
+  <status value="draft"/>
+  <date value="2026-11-20T12:33:32+00:00"/>
+  <description value="Los seis roles del caso de uso (spec §2). Dentro de una derivación, cada rol es una persona (el clínico de triaje no es el agendador — C1)."/>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="aps-doctor"/>
+    <display value="APS doctor"/>
+    <definition value="Médico de APS que crea la derivación."/>
+  </concept>
+  <concept>
+    <code value="aps-admin"/>
+    <display value="APS admin"/>
+    <definition value="Administrativo de APS que registra y sigue la derivación e informa al paciente."/>
+  </concept>
+  <concept>
+    <code value="triage-clinician"/>
+    <display value="Triage clinician"/>
+    <definition value="Clínico de la especialidad que acepta o rechaza la derivación."/>
+  </concept>
+  <concept>
+    <code value="specialty-scheduler"/>
+    <display value="Specialty scheduler"/>
+    <definition value="Agendador de la especialidad que reserva y re-agenda la cita."/>
+  </concept>
+  <concept>
+    <code value="specialist"/>
+    <display value="Specialist"/>
+    <definition value="Especialista que atiende y emite la contrareferencia."/>
+  </concept>
+  <concept>
+    <code value="hub-operator"/>
+    <display value="Hub operator"/>
+    <definition value="Operador del hub de derivación (enruta, escala, registra cancelaciones, responde consultas de estado)."/>
+  </concept>
+</CodeSystem>

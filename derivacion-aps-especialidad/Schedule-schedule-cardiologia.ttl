@@ -1,0 +1,32 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://josemandrade.github.io/prueba-his-muse-nvidia/Schedule/schedule-cardiologia> a fhir:Schedule ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "schedule-cardiologia"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Schedule schedule-cardiologia</b></p><a name=\"schedule-cardiologia\"> </a><a name=\"hcschedule-cardiologia\"> </a><p><b>actor</b>: <a href=\"HealthcareService-servicio-cardiologia.html\">Cardiology (Cardiology) by Servicio de Cardiología (http://especialidad.example.org/organization#CARDIOLOGIA) (http://especialidad.example.org/service#cardiologia)</a></p><p><b>planningHorizon</b>: 2026-12-01 08:00:00-0300 --&gt; 2026-12-31 17:00:00-0300</p><p><b>comment</b>: Agenda de la consulta de cardiología.</p></div>"
+  ] ;
+  fhir:Schedule.actor [
+     fhir:index 0 ;
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/HealthcareService/servicio-cardiologia> ;
+     fhir:Reference.reference [ fhir:value "HealthcareService/servicio-cardiologia" ]
+  ] ;
+  fhir:Schedule.planningHorizon [
+     fhir:Period.start [ fhir:value "2026-12-01T08:00:00-03:00"^^xsd:dateTime ] ;
+     fhir:Period.end [ fhir:value "2026-12-31T17:00:00-03:00"^^xsd:dateTime ]
+  ] ;
+  fhir:Schedule.comment [ fhir:value "Agenda de la consulta de cardiología."] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://josemandrade.github.io/prueba-his-muse-nvidia/Schedule/schedule-cardiologia.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

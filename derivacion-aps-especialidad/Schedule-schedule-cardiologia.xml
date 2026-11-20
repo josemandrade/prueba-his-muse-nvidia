@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Schedule xmlns="http://hl7.org/fhir">
+  <id value="schedule-cardiologia"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Schedule schedule-cardiologia</b></p><a name="schedule-cardiologia"> </a><a name="hcschedule-cardiologia"> </a><p><b>actor</b>: <a href="HealthcareService-servicio-cardiologia.html">Cardiology (Cardiology) by Servicio de Cardiología (http://especialidad.example.org/organization#CARDIOLOGIA) (http://especialidad.example.org/service#cardiologia)</a></p><p><b>planningHorizon</b>: 2026-12-01 08:00:00-0300 --&gt; 2026-12-31 17:00:00-0300</p><p><b>comment</b>: Agenda de la consulta de cardiología.</p></div>
+  </text>
+  <actor>
+    <reference value="HealthcareService/servicio-cardiologia"/>
+  </actor>
+  <planningHorizon>
+    <start value="2026-12-01T08:00:00-03:00"/>
+    <end value="2026-12-31T17:00:00-03:00"/>
+  </planningHorizon>
+  <comment value="Agenda de la consulta de cardiología."/>
+</Schedule>

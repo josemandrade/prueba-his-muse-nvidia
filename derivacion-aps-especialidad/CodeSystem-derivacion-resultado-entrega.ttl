@@ -1,0 +1,42 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-resultado-entrega> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "derivacion-resultado-entrega"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem derivacion-resultado-entrega</b></p><a name=\"derivacion-resultado-entrega\"> </a><a name=\"hcderivacion-resultado-entrega\"> </a><p>This  code system <code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-resultado-entrega</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">delivered<a name=\"derivacion-resultado-entrega-delivered\"> </a></td><td>Delivered</td><td>La notificación llegó al destinatario.</td></tr><tr><td style=\"white-space:nowrap\">failed<a name=\"derivacion-resultado-entrega-failed\"> </a></td><td>Failed</td><td>La entrega falló; el remitente reintenta (el fallo nunca cambia el estado de la derivación).</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-resultado-entrega"] ;
+  fhir:CodeSystem.version [ fhir:value "0.1.0"] ;
+  fhir:CodeSystem.name [ fhir:value "DerivacionResultadoEntregaCS"] ;
+  fhir:CodeSystem.title [ fhir:value "Resultado de la entrega de una notificación"] ;
+  fhir:CodeSystem.status [ fhir:value "draft"] ;
+  fhir:CodeSystem.date [ fhir:value "2026-11-20T12:33:32+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.description [ fhir:value "Resultados posibles de la entrega de una notificación (lista local)."] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "2"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "delivered" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Delivered" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "La notificación llegó al destinatario." ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "failed" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Failed" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "La entrega falló; el remitente reintenta (el fallo nunca cambia el estado de la derivación)." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-resultado-entrega.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

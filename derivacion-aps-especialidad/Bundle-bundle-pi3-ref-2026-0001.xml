@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="bundle-pi3-ref-2026-0001"/>
+  <type value="document"/>
+  <timestamp value="2026-12-03T10:00:00-03:00"/>
+  <entry>
+    <fullUrl value="Composition/contrareferencia-ref-2026-0001"/>
+    <resource>
+      <Composition>
+        <id value="contrareferencia-ref-2026-0001"/>
+        <meta>
+          <profile value="https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-contrareferencia"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Composition_contrareferencia-ref-2026-0001"> </a><p class="res-header-id"><b>Generated Narrative: Composition contrareferencia-ref-2026-0001</b></p><a name="contrareferencia-ref-2026-0001"> </a><a name="hccontrareferencia-ref-2026-0001"> </a><div style="display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-derivacion-contrareferencia.html">Contrareferencia</a></p></div><p><b>Identificador de la derivación</b>: <code>http://aps.losaromos.example.org/referral</code>/REF-2026-0001</p><p><b>identifier</b>: <code>http://especialidad.example.org/counter-referral</code>/CR-2026-0001</p><p><b>status</b>: Final</p><p><b>type</b>: <span title="Codes:{http://loinc.org 11488-4}">Consult note</span></p><p><b>encounter</b>: <a href="Encounter-encuentro-ref-2026-0001.html">Encounter: identifier = http://especialidad.example.org/encounter#ENC-2026-0001; status = planned; class = Ambulatory (ActCode#AMB); serviceType = Cardiology; period = 2026-12-02 10:00:00-0300 --&gt; 2026-12-02 10:30:00-0300</a></p><p><b>date</b>: 2026-12-03 10:00:00-0300</p><p><b>author</b>: <a href="PractitionerRole-rol-especialista.html">Carlos Rojas (official) (http://www.registrocivil.cl/run#33333333-3): Specialist at Servicio de Cardiología (http://especialidad.example.org/organization#CARDIOLOGIA)</a></p><p><b>title</b>: Counter-referral</p></div>
+        </text>
+        <extension url="https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-referral-identifier">
+          <valueIdentifier>
+            <system value="http://aps.losaromos.example.org/referral"/>
+            <value value="REF-2026-0001"/>
+          </valueIdentifier>
+        </extension>
+        <identifier>
+          <system value="http://especialidad.example.org/counter-referral"/>
+          <value value="CR-2026-0001"/>
+        </identifier>
+        <status value="final"/>
+        <type>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="11488-4"/>
+            <display value="Consult note"/>
+          </coding>
+        </type>
+        <subject>
+          <reference value="Patient/maria-gonzalez"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/encuentro-ref-2026-0001"/>
+        </encounter>
+        <date value="2026-12-03T10:00:00-03:00"/>
+        <author>
+          <reference value="PractitionerRole/rol-especialista"/>
+        </author>
+        <title value="Counter-referral"/>
+        <section>
+          <title value="Diagnosis"/>
+          <code>
+            <text value="Diagnosis"/>
+          </code>
+          <text>
+            <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Chronic systolic heart failure, LVEF 35% (ICD-10-CM I50.22).</div>
+          </text>
+          <entry>
+            <reference value="Condition/diagnostico-ref-2026-0001"/>
+          </entry>
+        </section>
+        <section>
+          <title value="Plan"/>
+          <code>
+            <text value="Plan"/>
+          </code>
+          <text>
+            <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Start heart-failure treatment; control in APS in 2 weeks.</div>
+          </text>
+          <entry>
+            <reference value="CarePlan/plan-ref-2026-0001"/>
+          </entry>
+        </section>
+        <section>
+          <title value="Follow-up indications"/>
+          <code>
+            <text value="Follow-up indications"/>
+          </code>
+          <text>
+            <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Blood pressure, weight and symptoms at each APS control; NT-proBNP in 3 months.</div>
+          </text>
+        </section>
+        <section>
+          <title value="Follow-up plan for APS"/>
+          <code>
+            <text value="Follow-up plan for APS"/>
+          </code>
+          <text>
+            <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">APS follow-up as in the CarePlan; new referral to cardiology if dyspnoea worsens.</div>
+          </text>
+          <entry>
+            <reference value="CarePlan/plan-ref-2026-0001"/>
+          </entry>
+        </section>
+      </Composition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="DocumentReference/documento-ref-2026-0001"/>
+    <resource>
+      <DocumentReference>
+        <id value="documento-ref-2026-0001"/>
+        <meta>
+          <profile value="https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-documento"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="DocumentReference_documento-ref-2026-0001"> </a><p class="res-header-id"><b>Generated Narrative: DocumentReference documento-ref-2026-0001</b></p><a name="documento-ref-2026-0001"> </a><a name="hcdocumento-ref-2026-0001"> </a><div style="display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-derivacion-documento.html">Documento de contrareferencia</a></p></div><p><b>masterIdentifier</b>: <code>http://especialidad.example.org/counter-referral</code>/CR-2026-0001</p><p><b>status</b>: Current</p><p><b>type</b>: <span title="Codes:{http://loinc.org 11488-4}">Consult note</span></p><p><b>subject</b>: <a href="Patient-maria-gonzalez.html">María González (official) Female, DoB: 1968-04-15 ( http://www.registrocivil.cl/run#11111111-1)</a></p><p><b>date</b>: 2026-12-03 10:00:00-0300</p><p><b>author</b>: <a href="PractitionerRole-rol-especialista.html">Carlos Rojas (official) (http://www.registrocivil.cl/run#33333333-3): Specialist at Servicio de Cardiología (http://especialidad.example.org/organization#CARDIOLOGIA)</a></p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class="grid"><tr><td style="display: none">-</td><td><b>ContentType</b></td><td><b>Url</b></td></tr><tr><td style="display: none">*</td><td>application/fhir+json</td><td><a href="Composition-contrareferencia-ref-2026-0001.html">Composition Counter-referral</a></td></tr></table></blockquote><h3>Contexts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Encounter</b></td><td><b>Period</b></td><td><b>Related</b></td></tr><tr><td style="display: none">*</td><td><a href="Encounter-encuentro-ref-2026-0001.html">Encounter: identifier = http://especialidad.example.org/encounter#ENC-2026-0001; status = planned; class = Ambulatory (ActCode#AMB); serviceType = Cardiology; period = 2026-12-02 10:00:00-0300 --&gt; 2026-12-02 10:30:00-0300</a></td><td>2026-12-02 10:00:00-0300 --&gt; 2026-12-02 10:30:00-0300</td><td><a href="ServiceRequest-ref-2026-0001.html">ServiceRequest Cardiology</a></td></tr></table></div>
+        </text>
+        <masterIdentifier>
+          <system value="http://especialidad.example.org/counter-referral"/>
+          <value value="CR-2026-0001"/>
+        </masterIdentifier>
+        <status value="current"/>
+        <type>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="11488-4"/>
+            <display value="Consult note"/>
+          </coding>
+        </type>
+        <subject>
+          <reference value="Patient/maria-gonzalez"/>
+        </subject>
+        <date value="2026-12-03T10:00:00-03:00"/>
+        <author>
+          <reference value="PractitionerRole/rol-especialista"/>
+        </author>
+        <content>
+          <attachment>
+            <contentType value="application/fhir+json"/>
+            <url value="Composition/contrareferencia-ref-2026-0001"/>
+          </attachment>
+        </content>
+        <context>
+          <encounter>
+            <reference value="Encounter/encuentro-ref-2026-0001"/>
+          </encounter>
+          <period>
+            <start value="2026-12-02T10:00:00-03:00"/>
+            <end value="2026-12-02T10:30:00-03:00"/>
+          </period>
+          <related>
+            <reference value="ServiceRequest/ref-2026-0001"/>
+          </related>
+        </context>
+      </DocumentReference>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="Condition/diagnostico-ref-2026-0001"/>
+    <resource>
+      <Condition>
+        <id value="diagnostico-ref-2026-0001"/>
+        <meta>
+          <profile value="https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-diagnostico"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Condition_diagnostico-ref-2026-0001"> </a><p class="res-header-id"><b>Generated Narrative: Condition diagnostico-ref-2026-0001</b></p><a name="diagnostico-ref-2026-0001"> </a><a name="hcdiagnostico-ref-2026-0001"> </a><div style="display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-derivacion-diagnostico.html">Diagnóstico de la contrareferencia</a></p></div><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/sid/icd-10-cm I50.22}, {http://snomed.info/sct 417996009}">Insuficiencia cardiaca sistólica crónica (FEVI 35%)</span></p><p><b>subject</b>: <a href="Patient-maria-gonzalez.html">María González (official) Female, DoB: 1968-04-15 ( http://www.registrocivil.cl/run#11111111-1)</a></p><p><b>encounter</b>: <a href="Encounter-encuentro-ref-2026-0001.html">Encounter: identifier = http://especialidad.example.org/encounter#ENC-2026-0001; status = planned; class = Ambulatory (ActCode#AMB); serviceType = Cardiology; period = 2026-12-02 10:00:00-0300 --&gt; 2026-12-02 10:30:00-0300</a></p><p><b>note</b>: </p><blockquote><div><p>FEVI 35% por ecocardiograma. Sin isquemia aguda en el ECG.</p>
+</div></blockquote></div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+            <display value="Active"/>
+          </coding>
+        </clinicalStatus>
+        <verificationStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+            <code value="confirmed"/>
+            <display value="Confirmed"/>
+          </coding>
+        </verificationStatus>
+        <code>
+          <coding>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <code value="I50.22"/>
+            <display value="Chronic systolic (congestive) heart failure"/>
+          </coding>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="417996009"/>
+            <display value="Systolic heart failure"/>
+          </coding>
+          <text value="Insuficiencia cardiaca sistólica crónica (FEVI 35%)"/>
+        </code>
+        <subject>
+          <reference value="Patient/maria-gonzalez"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/encuentro-ref-2026-0001"/>
+        </encounter>
+        <note>
+          <text value="FEVI 35% por ecocardiograma. Sin isquemia aguda en el ECG."/>
+        </note>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="CarePlan/plan-ref-2026-0001"/>
+    <resource>
+      <CarePlan>
+        <id value="plan-ref-2026-0001"/>
+        <meta>
+          <profile value="https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-plan-seguimiento"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="CarePlan_plan-ref-2026-0001"> </a><p class="res-header-id"><b>Generated Narrative: CarePlan plan-ref-2026-0001</b></p><a name="plan-ref-2026-0001"> </a><a name="hcplan-ref-2026-0001"> </a><div style="display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-derivacion-plan-seguimiento.html">Plan de seguimiento para APS</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>subject</b>: <a href="Patient-maria-gonzalez.html">María González (official) Female, DoB: 1968-04-15 ( http://www.registrocivil.cl/run#11111111-1)</a></p><p><b>encounter</b>: <a href="Encounter-encuentro-ref-2026-0001.html">Encounter: identifier = http://especialidad.example.org/encounter#ENC-2026-0001; status = planned; class = Ambulatory (ActCode#AMB); serviceType = Cardiology; period = 2026-12-02 10:00:00-0300 --&gt; 2026-12-02 10:30:00-0300</a></p><p><b>author</b>: <a href="PractitionerRole-rol-especialista.html">Carlos Rojas (official) (http://www.registrocivil.cl/run#33333333-3): Specialist at Servicio de Cardiología (http://especialidad.example.org/organization#CARDIOLOGIA)</a></p><p><b>addresses</b>: <a href="Condition-diagnostico-ref-2026-0001.html">Condition Insuficiencia cardiaca sistólica crónica (FEVI 35%)</a></p><blockquote><p><b>activity</b></p><h3>Details</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Status</b></td><td><b>Description</b></td></tr><tr><td style="display: none">*</td><td>active</td><td>Control en APS en 2 semanas: presión arterial, peso, síntomas.</td></tr></table></blockquote><blockquote><p><b>activity</b></p><h3>Details</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Status</b></td><td><b>Description</b></td></tr><tr><td style="display: none">*</td><td>active</td><td>NT-proBNP de control en 3 meses.</td></tr></table></blockquote><blockquote><p><b>activity</b></p><p><b>reference</b>: <a href="ServiceRequest-ref-2026-0001.html">ServiceRequest Cardiology</a></p></blockquote></div>
+        </text>
+        <status value="active"/>
+        <intent value="plan"/>
+        <subject>
+          <reference value="Patient/maria-gonzalez"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/encuentro-ref-2026-0001"/>
+        </encounter>
+        <author>
+          <reference value="PractitionerRole/rol-especialista"/>
+        </author>
+        <addresses>
+          <reference value="Condition/diagnostico-ref-2026-0001"/>
+        </addresses>
+        <activity>
+          <detail>
+            <status value="active"/>
+            <description value="Control en APS en 2 semanas: presión arterial, peso, síntomas."/>
+          </detail>
+        </activity>
+        <activity>
+          <detail>
+            <status value="active"/>
+            <description value="NT-proBNP de control en 3 meses."/>
+          </detail>
+        </activity>
+        <activity>
+          <reference>
+            <reference value="ServiceRequest/ref-2026-0001"/>
+          </reference>
+        </activity>
+      </CarePlan>
+    </resource>
+  </entry>
+</Bundle>

@@ -1,0 +1,77 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://josemandrade.github.io/prueba-his-muse-nvidia/DocumentReference/documento-ref-2026-0001> a fhir:DocumentReference ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "documento-ref-2026-0001"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-documento" ;
+       fhir:index 0 ;
+       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-documento>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference documento-ref-2026-0001</b></p><a name=\"documento-ref-2026-0001\"> </a><a name=\"hcdocumento-ref-2026-0001\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-derivacion-documento.html\">Documento de contrareferencia</a></p></div><p><b>masterIdentifier</b>: <code>http://especialidad.example.org/counter-referral</code>/CR-2026-0001</p><p><b>status</b>: Current</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 11488-4}\">Consult note</span></p><p><b>subject</b>: <a href=\"Patient-maria-gonzalez.html\">María González (official) Female, DoB: 1968-04-15 ( http://www.registrocivil.cl/run#11111111-1)</a></p><p><b>date</b>: 2026-12-03 10:00:00-0300</p><p><b>author</b>: <a href=\"PractitionerRole-rol-especialista.html\">Carlos Rojas (official) (http://www.registrocivil.cl/run#33333333-3): Specialist at Servicio de Cardiología (http://especialidad.example.org/organization#CARDIOLOGIA)</a></p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td>application/fhir+json</td><td><a href=\"Composition-contrareferencia-ref-2026-0001.html\">Composition Counter-referral</a></td></tr></table></blockquote><h3>Contexts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Encounter</b></td><td><b>Period</b></td><td><b>Related</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Encounter-encuentro-ref-2026-0001.html\">Encounter: identifier = http://especialidad.example.org/encounter#ENC-2026-0001; status = planned; class = Ambulatory (ActCode#AMB); serviceType = Cardiology; period = 2026-12-02 10:00:00-0300 --&gt; 2026-12-02 10:30:00-0300</a></td><td>2026-12-02 10:00:00-0300 --&gt; 2026-12-02 10:30:00-0300</td><td><a href=\"ServiceRequest-ref-2026-0001.html\">ServiceRequest Cardiology</a></td></tr></table></div>"
+  ] ;
+  fhir:DocumentReference.masterIdentifier [
+     fhir:Identifier.system [ fhir:value "http://especialidad.example.org/counter-referral" ] ;
+     fhir:Identifier.value [ fhir:value "CR-2026-0001" ]
+  ] ;
+  fhir:DocumentReference.status [ fhir:value "current"] ;
+  fhir:DocumentReference.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a loinc:11488-4 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "11488-4" ] ;
+       fhir:Coding.display [ fhir:value "Consult note" ]
+     ]
+  ] ;
+  fhir:DocumentReference.subject [
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Patient/maria-gonzalez> ;
+     fhir:Reference.reference [ fhir:value "Patient/maria-gonzalez" ]
+  ] ;
+  fhir:DocumentReference.date [ fhir:value "2026-12-03T10:00:00-03:00"^^xsd:dateTime] ;
+  fhir:DocumentReference.author [
+     fhir:index 0 ;
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/PractitionerRole/rol-especialista> ;
+     fhir:Reference.reference [ fhir:value "PractitionerRole/rol-especialista" ]
+  ] ;
+  fhir:DocumentReference.content [
+     fhir:index 0 ;
+     fhir:DocumentReference.content.attachment [
+       fhir:Attachment.contentType [ fhir:value "application/fhir+json" ] ;
+       fhir:Attachment.url [ fhir:value "Composition/contrareferencia-ref-2026-0001" ]
+     ]
+  ] ;
+  fhir:DocumentReference.context [
+     fhir:DocumentReference.context.encounter [
+       fhir:index 0 ;
+       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Encounter/encuentro-ref-2026-0001> ;
+       fhir:Reference.reference [ fhir:value "Encounter/encuentro-ref-2026-0001" ]
+     ] ;
+     fhir:DocumentReference.context.period [
+       fhir:Period.start [ fhir:value "2026-12-02T10:00:00-03:00"^^xsd:dateTime ] ;
+       fhir:Period.end [ fhir:value "2026-12-02T10:30:00-03:00"^^xsd:dateTime ]
+     ] ;
+     fhir:DocumentReference.context.related [
+       fhir:index 0 ;
+       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/ServiceRequest/ref-2026-0001> ;
+       fhir:Reference.reference [ fhir:value "ServiceRequest/ref-2026-0001" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://josemandrade.github.io/prueba-his-muse-nvidia/DocumentReference/documento-ref-2026-0001.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,577 @@
+DerivacionAPSEspecialidad : Validation Results
+=========================================
+
+err = 55, warn = 114, info = 66, broken links = 34
+IG Publisher Version: 3.0.5
+Generated Fri Nov 20 12:34:38 UTC 2026. FHIR version 4.0.1 for hl7.fhir.uv.test.derivacion-aps-especialidad#0.1.0 (canonical = https://josemandrade.github.io/prueba-his-muse-nvidia)
+ Build Errors : 36 / 34 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/Appointment-cita-ref-2026-0001 : 0 / 0 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/AppointmentResponse-respuesta-cita-1 : 0 / 0 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/Bundle-bundle-pi0-ref-2026-0001 : 0 / 1 / 9
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/Bundle-bundle-pi3-ref-2026-0001 : 18 / 2 / 24
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/CarePlan-plan-ref-2026-0001 : 4 / 0 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/CodeSystem-derivacion-base-cruce : 0 / 4 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/CodeSystem-derivacion-canal : 0 / 4 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/CodeSystem-derivacion-especialidad : 0 / 4 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/CodeSystem-derivacion-estado-referencia : 0 / 4 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/CodeSystem-derivacion-motivo-rechazo : 0 / 4 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/CodeSystem-derivacion-resultado-entrega : 0 / 4 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/CodeSystem-derivacion-rol : 0 / 4 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/CodeSystem-derivacion-task-code : 0 / 4 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/Communication-notificacion-aceptacion-ref-2026-0001 : 0 / 0 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/Composition-contrareferencia-ref-2026-0001 : 0 / 0 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/Condition-diagnostico-ref-2026-0001 : 2 / 0 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/DocumentReference-documento-ref-2026-0001 : 0 / 1 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/Encounter-aps-encounter-2026-11-19 : 0 / 0 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/Encounter-encuentro-ref-2026-0001 : 1 / 0 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/Endpoint-endpoint-cardiologia : 0 / 0 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/HealthcareService-servicio-cardiologia : 0 / 0 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/ImplementationGuide-hl7.fhir.uv.test.derivacion-aps-especialidad : 2 / 2 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/Location-location-cardiologia : 0 / 0 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/Observation-ecg-2026-11-19 : 0 / 2 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/Observation-ntprobnp-2026-11-19 : 0 / 1 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/Organization-org-cardiologia : 0 / 0 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/Organization-org-cesfam-los-aromos : 0 / 0 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/Organization-org-hub : 0 / 0 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/Patient-maria-gonzalez : 0 / 1 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/Practitioner-especialista-cardiologia : 0 / 1 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/Practitioner-medico-aps : 0 / 1 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/PractitionerRole-rol-admin-aps : 0 / 0 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/PractitionerRole-rol-agendador : 0 / 0 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/PractitionerRole-rol-especialista : 0 / 0 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/PractitionerRole-rol-medico-aps : 0 / 0 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/PractitionerRole-rol-triaje : 0 / 0 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/Schedule-schedule-cardiologia : 0 / 0 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/ServiceRequest-ref-2026-0001 : 0 / 0 / 3
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/Slot-slot-cardiologia-1 : 0 / 0 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/StructureDefinition-derivacion-cita : 1 / 0 / 3
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/StructureDefinition-derivacion-contrareferencia : 1 / 0 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/StructureDefinition-derivacion-delivery-outcome : 1 / 0 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/StructureDefinition-derivacion-diagnostico : 1 / 2 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/StructureDefinition-derivacion-documento : 1 / 0 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/StructureDefinition-derivacion-encuentro : 1 / 1 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/StructureDefinition-derivacion-match-basis : 1 / 1 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/StructureDefinition-derivacion-match-confidence : 1 / 1 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/StructureDefinition-derivacion-notificacion : 1 / 0 / 3
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/StructureDefinition-derivacion-offer-chase-count : 1 / 1 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/StructureDefinition-derivacion-offer-decline-count : 1 / 1 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/StructureDefinition-derivacion-offer-number : 1 / 0 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/StructureDefinition-derivacion-paciente : 1 / 0 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/StructureDefinition-derivacion-plan-seguimiento : 1 / 0 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/StructureDefinition-derivacion-preferred-contact-channel : 1 / 0 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/StructureDefinition-derivacion-referral-identifier : 1 / 0 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/StructureDefinition-derivacion-rescheduling-count : 1 / 1 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/StructureDefinition-derivacion-rol : 1 / 0 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/StructureDefinition-derivacion-servicio : 1 / 0 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/StructureDefinition-derivacion-sla-acceptance-deadline : 1 / 0 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/StructureDefinition-derivacion-sla-confirmation-deadline : 1 / 1 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/StructureDefinition-derivacion-sla-counterreferral-deadline : 1 / 1 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/StructureDefinition-derivacion-sla-offer-deadline : 1 / 1 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/StructureDefinition-derivacion-sla-retriage-deadline : 1 / 1 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/StructureDefinition-derivacion-solicitud : 1 / 0 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/StructureDefinition-derivacion-tarea : 1 / 0 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/Task-tarea-ref-2026-0001 : 0 / 0 / 3
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/ValueSet-derivacion-base-cruce : 0 / 3 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/ValueSet-derivacion-canal : 0 / 3 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/ValueSet-derivacion-especialidad : 0 / 3 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/ValueSet-derivacion-estado-referencia : 0 / 3 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/ValueSet-derivacion-motivo-rechazo : 0 / 3 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/ValueSet-derivacion-resultado-entrega : 0 / 3 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/ValueSet-derivacion-rol : 0 / 3 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/fsh-generated/resources/ValueSet-derivacion-task-code : 0 / 3 / 1
+</table>
+
+== n/a ==
+ERROR: ImplementationGuide.definition.parameter[23].value: Supressed messages file not found
+WARNING: ImplementationGuide.dependency[2].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource PractitionerRole/rol-admin-aps.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Schedule/schedule-cardiologia.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource PractitionerRole/rol-agendador.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/org-cesfam-los-aromos.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource PractitionerRole/rol-triaje.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Location/location-cardiologia.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Condition/diagnostico-ref-2026-0001.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource DocumentReference/documento-ref-2026-0001.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ecg-2026-11-19.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Endpoint/endpoint-cardiologia.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Practitioner/especialista-cardiologia.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource PractitionerRole/rol-especialista.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/org-hub.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Practitioner/medico-aps.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource PractitionerRole/rol-medico-aps.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ntprobnp-2026-11-19.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CarePlan/plan-ref-2026-0001.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource AppointmentResponse/respuesta-cita-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource HealthcareService/servicio-cardiologia.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/org-cardiologia.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Slot/slot-cardiologia-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: package.tgz: Error converting pacakge to R4B: Error processing examples/Bundle-bundle-pi3-ref-2026-0001.json: Unknown CarePlanActivityStatus code 'active'
+ERROR: StructureDefinition-derivacion-cita-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 227, column 494: The link 'http://hl7.org/fhir/workflow' for "Workflow Pattern" cannot be resolved
+ERROR: StructureDefinition-derivacion-cita-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 227, column 929: The link 'http://hl7.org/fhir/fivews' for "FiveWs Pattern Mapping" cannot be resolved
+ERROR: StructureDefinition-derivacion-contrareferencia-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 227, column 506: The link 'http://hl7.org/fhir/workflow' for "Workflow Pattern" cannot be resolved
+ERROR: StructureDefinition-derivacion-contrareferencia-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 227, column 934: The link 'http://hl7.org/fhir/documentreference' for "FHIR DocumentReference" cannot be resolved
+ERROR: StructureDefinition-derivacion-contrareferencia-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 227, column 1117: The link 'http://hl7.org/fhir/fivews' for "FiveWs Pattern Mapping" cannot be resolved
+ERROR: StructureDefinition-derivacion-diagnostico-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 227, column 501: The link 'http://hl7.org/fhir/workflow' for "Workflow Pattern" cannot be resolved
+ERROR: StructureDefinition-derivacion-diagnostico-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 227, column 1110: The link 'http://hl7.org/fhir/fivews' for "FiveWs Pattern Mapping" cannot be resolved
+ERROR: StructureDefinition-derivacion-documento-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 227, column 499: The link 'http://hl7.org/fhir/workflow' for "Workflow Pattern" cannot be resolved
+ERROR: StructureDefinition-derivacion-documento-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 227, column 658: The link 'http://hl7.org/fhir/composition' for "FHIR Composition" cannot be resolved
+ERROR: StructureDefinition-derivacion-documento-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 227, column 1092: The link 'http://hl7.org/fhir/fivews' for "FiveWs Pattern Mapping" cannot be resolved
+ERROR: StructureDefinition-derivacion-encuentro-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 227, column 499: The link 'http://hl7.org/fhir/workflow' for "Workflow Pattern" cannot be resolved
+ERROR: StructureDefinition-derivacion-encuentro-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 227, column 790: The link 'http://hl7.org/fhir/fivews' for "FiveWs Pattern Mapping" cannot be resolved
+ERROR: StructureDefinition-derivacion-notificacion-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 227, column 502: The link 'http://hl7.org/fhir/workflow' for "Workflow Pattern" cannot be resolved
+ERROR: StructureDefinition-derivacion-notificacion-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 227, column 661: The link 'http://hl7.org/fhir/fivews' for "FiveWs Pattern Mapping" cannot be resolved
+ERROR: StructureDefinition-derivacion-paciente-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 227, column 767: The link 'http://hl7.org/fhir/fivews' for "FiveWs Pattern Mapping" cannot be resolved
+ERROR: StructureDefinition-derivacion-plan-seguimiento-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 227, column 506: The link 'http://hl7.org/fhir/workflow' for "Workflow Pattern" cannot be resolved
+ERROR: StructureDefinition-derivacion-plan-seguimiento-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 227, column 797: The link 'http://hl7.org/fhir/fivews' for "FiveWs Pattern Mapping" cannot be resolved
+ERROR: StructureDefinition-derivacion-rol-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 227, column 920: The link 'http://hl7.org/fhir/fivews' for "FiveWs Pattern Mapping" cannot be resolved
+ERROR: StructureDefinition-derivacion-servicio-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 227, column 630: The link 'http://hl7.org/fhir/fivews' for "FiveWs Pattern Mapping" cannot be resolved
+ERROR: StructureDefinition-derivacion-solicitud-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 227, column 499: The link 'http://hl7.org/fhir/workflow' for "Workflow Pattern" cannot be resolved
+ERROR: StructureDefinition-derivacion-solicitud-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 227, column 925: The link 'http://hl7.org/fhir/fivews' for "FiveWs Pattern Mapping" cannot be resolved
+ERROR: StructureDefinition-derivacion-tarea-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 227, column 495: The link 'http://hl7.org/fhir/workflow' for "Workflow Pattern" cannot be resolved
+ERROR: StructureDefinition-derivacion-tarea-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 227, column 786: The link 'http://hl7.org/fhir/fivews' for "FiveWs Pattern Mapping" cannot be resolved
+INFORMATION: mapping.html: No conformance term found in the text: 1–
+INFORMATION: mapping.html: No conformance term found in the text: 3/
+ERROR: process.html#/html/body/div/div/div/div/div/div/img at Line 156, column 2: The image source '02-bpmn-model-referral-triage.png' cannot be resolved
+ERROR: process.html#/html/body/div/div/div/div/div/div/img at Line 167, column 2: The image source '02-bpmn-model-scheduling-counterreferral.png' cannot be resolved
+ERROR: process.html#/html/body/div/div/div/div/div/div/img at Line 178, column 2: The image source '02-bpmn-model-status-query.png' cannot be resolved
+ERROR: resources.html#/html/body/div/div/div/div/div/div/img at Line 152, column 2: The image source '04-fhir-proposal-graph.png' cannot be resolved
+WARNING: /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/output/searchform.html: The html source is not well formed: Found "</a>" expecting "</img>" at line 34 column 177
+WARNING: /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 79 column 10
+WARNING: /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 80 column 9
+WARNING: /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 109 column 8
+WARNING: /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 111 column 12
+WARNING: /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 112 column 20
+WARNING: /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 113 column 16
+WARNING: /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 115 column 12
+ERROR: sequences.html#/html/body/div/div/div/div/div/div/img at Line 164, column 2: The image source '04-sequence-request.png' cannot be resolved
+ERROR: sequences.html#/html/body/div/div/div/div/div/div/img at Line 235, column 2: The image source '04-sequence-triage.png' cannot be resolved
+ERROR: sequences.html#/html/body/div/div/div/div/div/div/img at Line 285, column 2: The image source '04-sequence-schedule.png' cannot be resolved
+ERROR: sequences.html#/html/body/div/div/div/div/div/div/img at Line 400, column 2: The image source '04-sequence-attend.png' cannot be resolved
+ERROR: sequences.html#/html/body/div/div/div/div/div/div/img at Line 464, column 2: The image source '04-sequence-result-return.png' cannot be resolved
+ERROR: sequences.html#/html/body/div/div/div/div/div/div/img at Line 514, column 2: The image source '04-sequence-status-query.png' cannot be resolved
+ERROR: sequences.html#/html/body/div/div/div/div/div/div/img at Line 550, column 2: The image source '04-sequence-cancellation.png' cannot be resolved
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+
+
+== fsh-generated/resources/Appointment-cita-ref-2026-0001.json ==
+INFORMATION: Appointment/cita-ref-2026-0001: Appointment.serviceType[0]: Reference to draft CodeSystem https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad|0.1.0
+
+
+== fsh-generated/resources/AppointmentResponse-respuesta-cita-1.json ==
+
+
+== fsh-generated/resources/Bundle-bundle-pi0-ref-2026-0001.json ==
+INFORMATION: Bundle/bundle-pi0-ref-2026-0001: Bundle.entry[0].resource/*ServiceRequest/ref-2026-0001*/.code: Reference to draft CodeSystem https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad|0.1.0
+INFORMATION: Bundle/bundle-pi0-ref-2026-0001: Bundle.entry[0].resource/*ServiceRequest/ref-2026-0001*/.performerType: Reference to draft CodeSystem https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad|0.1.0
+INFORMATION: Bundle/bundle-pi0-ref-2026-0001: Bundle.entry[1].resource/*Task/tarea-ref-2026-0001*/.businessStatus: Reference to draft CodeSystem https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia|0.1.0
+INFORMATION: Bundle/bundle-pi0-ref-2026-0001: Bundle.entry[1].resource/*Task/tarea-ref-2026-0001*/.code: Reference to draft CodeSystem https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-task-code|0.1.0
+WARNING: Bundle/bundle-pi0-ref-2026-0001: Bundle.entry[1].resource/*Task/tarea-ref-2026-0001*/.focus: Entry 0 matches the reference ServiceRequest/ref-2026-0001 by type and id but its fullUrl urn:uuid:11111111-1111-4111-8111-111111111111 does not match the full target URL urn:uuid:ref-2026-0001 by Bundle resolution rules
+
+
+== fsh-generated/resources/Bundle-bundle-pi3-ref-2026-0001.json ==
+ERROR: Bundle/bundle-pi3-ref-2026-0001: Bundle.entry[0].resource/*Composition/contrareferencia-ref-2026-0001*/.section[0].entry[0]: Unable to find a profile match for Condition/diagnostico-ref-2026-0001 among choices: https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-diagnostico
+INFORMATION: Bundle/bundle-pi3-ref-2026-0001: Bundle.entry[0].resource/*Composition/contrareferencia-ref-2026-0001*/.section[0].entry[0]: Details for Condition/diagnostico-ref-2026-0001 matching against profile https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-diagnostico|0.1.0
+ERROR: Bundle/bundle-pi3-ref-2026-0001: Bundle.entry[0].resource/*Composition/contrareferencia-ref-2026-0001*/.section[1].entry[0]: Unable to find a profile match for CarePlan/plan-ref-2026-0001 among choices: https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-plan-seguimiento
+INFORMATION: Bundle/bundle-pi3-ref-2026-0001: Bundle.entry[0].resource/*Composition/contrareferencia-ref-2026-0001*/.section[1].entry[0]: Details for CarePlan/plan-ref-2026-0001 matching against profile https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-plan-seguimiento|0.1.0
+ERROR: Bundle/bundle-pi3-ref-2026-0001: Bundle.entry[0].resource/*Composition/contrareferencia-ref-2026-0001*/.section[3].entry[0]: Unable to find a profile match for CarePlan/plan-ref-2026-0001 among choices: https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-plan-seguimiento
+INFORMATION: Bundle/bundle-pi3-ref-2026-0001: Bundle.entry[0].resource/*Composition/contrareferencia-ref-2026-0001*/.section[3].entry[0]: Details for CarePlan/plan-ref-2026-0001 matching against profile https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-plan-seguimiento|0.1.0
+WARNING: Bundle/bundle-pi3-ref-2026-0001: Bundle.entry[1].resource/*DocumentReference/documento-ref-2026-0001*/.content[0].attachment.url: No definition could be found for URL value 'Composition/contrareferencia-ref-2026-0001'
+ERROR: Bundle/bundle-pi3-ref-2026-0001: Bundle.entry[2].resource/*Condition/diagnostico-ref-2026-0001*/.clinicalStatus.coding.display: The element display is present in the instance but not allowed in the applicable fixed value specified in profile
+ERROR: Bundle/bundle-pi3-ref-2026-0001: Bundle.entry[2].resource/*Condition/diagnostico-ref-2026-0001*/.verificationStatus.coding.display: The element display is present in the instance but not allowed in the applicable fixed value specified in profile
+INFORMATION: Bundle/bundle-pi3-ref-2026-0001: Bundle.entry[3].resource/*CarePlan/plan-ref-2026-0001*/.addresses[0]: Details for Condition/diagnostico-ref-2026-0001 matching against profile http://hl7.org/fhir/StructureDefinition/Condition|4.0.1
+ERROR: Bundle/bundle-pi3-ref-2026-0001: Bundle.entry[3].resource/*CarePlan/plan-ref-2026-0001*/.activity[0].detail.status: The System URI could not be determined for the code 'active' in the ValueSet 'http://hl7.org/fhir/ValueSet/care-plan-activity-status|4.0.1'
+ERROR: Bundle/bundle-pi3-ref-2026-0001: Bundle.entry[3].resource/*CarePlan/plan-ref-2026-0001*/.activity[0].detail.status: The value provided ('active') was not found in the value set 'CarePlanActivityStatus' (http://hl7.org/fhir/ValueSet/care-plan-activity-status|4.0.1), and a code is required from this value set  (error message = The System URI could not be determined for the code 'active' in the ValueSet 'http://hl7.org/fhir/ValueSet/care-plan-activity-status|4.0.1'; The provided code '#active' was not found in the value set 'http://hl7.org/fhir/ValueSet/care-plan-activity-status|4.0.1')
+ERROR: Bundle/bundle-pi3-ref-2026-0001: Bundle.entry[3].resource/*CarePlan/plan-ref-2026-0001*/.activity[1].detail.status: The System URI could not be determined for the code 'active' in the ValueSet 'http://hl7.org/fhir/ValueSet/care-plan-activity-status|4.0.1'
+ERROR: Bundle/bundle-pi3-ref-2026-0001: Bundle.entry[3].resource/*CarePlan/plan-ref-2026-0001*/.activity[1].detail.status: The value provided ('active') was not found in the value set 'CarePlanActivityStatus' (http://hl7.org/fhir/ValueSet/care-plan-activity-status|4.0.1), and a code is required from this value set  (error message = The System URI could not be determined for the code 'active' in the ValueSet 'http://hl7.org/fhir/ValueSet/care-plan-activity-status|4.0.1'; The provided code '#active' was not found in the value set 'http://hl7.org/fhir/ValueSet/care-plan-activity-status|4.0.1')
+ERROR: Bundle/bundle-pi3-ref-2026-0001: Bundle.entry[3].resource/*CarePlan/plan-ref-2026-0001*/.addresses[0]: Unable to find a profile match for Condition/diagnostico-ref-2026-0001 among choices: https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-diagnostico
+INFORMATION: Bundle/bundle-pi3-ref-2026-0001: Bundle.entry[3].resource/*CarePlan/plan-ref-2026-0001*/.addresses[0]: Details for Condition/diagnostico-ref-2026-0001 matching against profile https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-diagnostico|0.1.0
+ERROR: Bundle/bundle-pi3-ref-2026-0001: Bundle: Constraint failed: bdl-9: 'A document must have an identifier with a system and a value (type = 'document' implies (identifier.system.exists() and identifier.value.exists()))'
+ERROR: Bundle/bundle-pi3-ref-2026-0001: Bundle.entry[1].resource.subject: Can't find 'Patient/maria-gonzalez' in the bundle (Composition.subject)
+ERROR: Bundle/bundle-pi3-ref-2026-0001: Bundle.entry[1].resource.author[1]: Can't find 'PractitionerRole/rol-especialista' in the bundle (Composition.author)
+ERROR: Bundle/bundle-pi3-ref-2026-0001: Bundle.entry[1].resource.encounter: Can't find 'Encounter/encuentro-ref-2026-0001' in the bundle (Composition.encounter)
+INFORMATION: Bundle/bundle-pi3-ref-2026-0001: Bundle: Can't find 'Patient/maria-gonzalez' in the bundle (Bundle.entry[1].resource.subject)
+INFORMATION: Bundle/bundle-pi3-ref-2026-0001: Bundle: Can't find 'PractitionerRole/rol-especialista' in the bundle (Bundle.entry[1].resource.author[0])
+INFORMATION: Bundle/bundle-pi3-ref-2026-0001: Bundle: Can't find 'Encounter/encuentro-ref-2026-0001' in the bundle (Bundle.entry[1].resource.context.encounter[0])
+INFORMATION: Bundle/bundle-pi3-ref-2026-0001: Bundle: Can't find 'ServiceRequest/ref-2026-0001' in the bundle (Bundle.entry[1].resource.context.related[0])
+INFORMATION: Bundle/bundle-pi3-ref-2026-0001: Bundle: Can't find 'Patient/maria-gonzalez' in the bundle (Bundle.entry[2].resource.subject)
+INFORMATION: Bundle/bundle-pi3-ref-2026-0001: Bundle: Can't find 'Encounter/encuentro-ref-2026-0001' in the bundle (Bundle.entry[2].resource.encounter)
+INFORMATION: Bundle/bundle-pi3-ref-2026-0001: Bundle: Can't find 'Patient/maria-gonzalez' in the bundle (Bundle.entry[3].resource.subject)
+INFORMATION: Bundle/bundle-pi3-ref-2026-0001: Bundle: Can't find 'Encounter/encuentro-ref-2026-0001' in the bundle (Bundle.entry[3].resource.encounter)
+INFORMATION: Bundle/bundle-pi3-ref-2026-0001: Bundle: Can't find 'PractitionerRole/rol-especialista' in the bundle (Bundle.entry[3].resource.author)
+INFORMATION: Bundle/bundle-pi3-ref-2026-0001: Bundle: Can't find 'ServiceRequest/ref-2026-0001' in the bundle (Bundle.entry[3].resource.activity[2].reference)
+WARNING: Bundle/bundle-pi3-ref-2026-0001: Bundle.entry[5]: Entry 'DocumentReference/documento-ref-2026-0001' isn't reachable by traversing forwards from the Composition. Only Provenance is approved to be used this way (R4 section 3.3.1)
+ERROR: Bundle/bundle-pi3-ref-2026-0001: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'Composition/contrareferencia-ref-2026-0001')
+ERROR: Bundle/bundle-pi3-ref-2026-0001: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'DocumentReference/documento-ref-2026-0001')
+ERROR: Bundle/bundle-pi3-ref-2026-0001: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'Condition/diagnostico-ref-2026-0001')
+ERROR: Bundle/bundle-pi3-ref-2026-0001: Bundle.entry[0]: The fullUrl must be an absolute URL (not 'CarePlan/plan-ref-2026-0001')
+
+
+== fsh-generated/resources/CarePlan-plan-ref-2026-0001.json ==
+ERROR: CarePlan/plan-ref-2026-0001: CarePlan.activity[0].detail.status: The System URI could not be determined for the code 'active' in the ValueSet 'http://hl7.org/fhir/ValueSet/care-plan-activity-status|4.0.1'
+ERROR: CarePlan/plan-ref-2026-0001: CarePlan.activity[0].detail.status: The value provided ('active') was not found in the value set 'CarePlanActivityStatus' (http://hl7.org/fhir/ValueSet/care-plan-activity-status|4.0.1), and a code is required from this value set  (error message = The System URI could not be determined for the code 'active' in the ValueSet 'http://hl7.org/fhir/ValueSet/care-plan-activity-status|4.0.1'; The provided code '#active' was not found in the value set 'http://hl7.org/fhir/ValueSet/care-plan-activity-status|4.0.1')
+ERROR: CarePlan/plan-ref-2026-0001: CarePlan.activity[1].detail.status: The System URI could not be determined for the code 'active' in the ValueSet 'http://hl7.org/fhir/ValueSet/care-plan-activity-status|4.0.1'
+ERROR: CarePlan/plan-ref-2026-0001: CarePlan.activity[1].detail.status: The value provided ('active') was not found in the value set 'CarePlanActivityStatus' (http://hl7.org/fhir/ValueSet/care-plan-activity-status|4.0.1), and a code is required from this value set  (error message = The System URI could not be determined for the code 'active' in the ValueSet 'http://hl7.org/fhir/ValueSet/care-plan-activity-status|4.0.1'; The provided code '#active' was not found in the value set 'http://hl7.org/fhir/ValueSet/care-plan-activity-status|4.0.1')
+
+
+== fsh-generated/resources/CodeSystem-derivacion-base-cruce.json ==
+INFORMATION: CodeSystem/derivacion-base-cruce: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/derivacion-base-cruce: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/derivacion-base-cruce: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.test.derivacion-aps-especialidad, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 ('World') instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+WARNING: Resource: The resource CodeSystem/derivacion-base-cruce should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/CodeSystem-derivacion-canal.json ==
+INFORMATION: CodeSystem/derivacion-canal: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/derivacion-canal: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/derivacion-canal: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.test.derivacion-aps-especialidad, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 ('World') instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+WARNING: Resource: The resource CodeSystem/derivacion-canal should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/CodeSystem-derivacion-especialidad.json ==
+INFORMATION: CodeSystem/derivacion-especialidad: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/derivacion-especialidad: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/derivacion-especialidad: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.test.derivacion-aps-especialidad, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 ('World') instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+WARNING: Resource: The resource CodeSystem/derivacion-especialidad should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/CodeSystem-derivacion-estado-referencia.json ==
+INFORMATION: CodeSystem/derivacion-estado-referencia: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/derivacion-estado-referencia: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/derivacion-estado-referencia: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.test.derivacion-aps-especialidad, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 ('World') instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+WARNING: Resource: The resource CodeSystem/derivacion-estado-referencia should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/CodeSystem-derivacion-motivo-rechazo.json ==
+INFORMATION: CodeSystem/derivacion-motivo-rechazo: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/derivacion-motivo-rechazo: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/derivacion-motivo-rechazo: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.test.derivacion-aps-especialidad, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 ('World') instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+WARNING: Resource: The resource CodeSystem/derivacion-motivo-rechazo should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/CodeSystem-derivacion-resultado-entrega.json ==
+INFORMATION: CodeSystem/derivacion-resultado-entrega: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/derivacion-resultado-entrega: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/derivacion-resultado-entrega: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.test.derivacion-aps-especialidad, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 ('World') instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+WARNING: Resource: The resource CodeSystem/derivacion-resultado-entrega should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/CodeSystem-derivacion-rol.json ==
+INFORMATION: CodeSystem/derivacion-rol: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/derivacion-rol: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/derivacion-rol: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.test.derivacion-aps-especialidad, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 ('World') instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+WARNING: Resource: The resource CodeSystem/derivacion-rol should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/CodeSystem-derivacion-task-code.json ==
+INFORMATION: CodeSystem/derivacion-task-code: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/derivacion-task-code: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/derivacion-task-code: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.test.derivacion-aps-especialidad, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 ('World') instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+WARNING: Resource: The resource CodeSystem/derivacion-task-code should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/Communication-notificacion-aceptacion-ref-2026-0001.json ==
+INFORMATION: Communication/notificacion-aceptacion-ref-2026-0001: Communication.medium[0]: Reference to draft CodeSystem https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-canal|0.1.0
+
+
+== fsh-generated/resources/Composition-contrareferencia-ref-2026-0001.json ==
+
+
+== fsh-generated/resources/Condition-diagnostico-ref-2026-0001.json ==
+ERROR: Condition/diagnostico-ref-2026-0001: Condition.clinicalStatus.coding.display: The element display is present in the instance but not allowed in the applicable fixed value specified in profile
+ERROR: Condition/diagnostico-ref-2026-0001: Condition.verificationStatus.coding.display: The element display is present in the instance but not allowed in the applicable fixed value specified in profile
+
+
+== fsh-generated/resources/DocumentReference-documento-ref-2026-0001.json ==
+WARNING: DocumentReference/documento-ref-2026-0001: DocumentReference.content[0].attachment.url: No definition could be found for URL value 'Composition/contrareferencia-ref-2026-0001'
+
+
+== fsh-generated/resources/Encounter-aps-encounter-2026-11-19.json ==
+
+
+== fsh-generated/resources/Encounter-encuentro-ref-2026-0001.json ==
+ERROR: Encounter/encuentro-ref-2026-0001: Encounter.class.display: The element display is present in the instance but not allowed in the applicable fixed value specified in profile
+INFORMATION: Encounter/encuentro-ref-2026-0001: Encounter.serviceType: Reference to draft CodeSystem https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad|0.1.0
+
+
+== fsh-generated/resources/Endpoint-endpoint-cardiologia.json ==
+
+
+== fsh-generated/resources/HealthcareService-servicio-cardiologia.json ==
+INFORMATION: HealthcareService/servicio-cardiologia: HealthcareService.type[0]: Reference to draft CodeSystem https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad|0.1.0
+
+
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.uv.test.derivacion-aps-especialidad.json ==
+ERROR: ImplementationGuide/hl7.fhir.uv.test.derivacion-aps-especialidad: ImplementationGuide.dependsOn[2]: The URL should refer directly to the ImplementationGuide resource (e.g. include '/ImplementationGuide/')
+WARNING: ImplementationGuide/hl7.fhir.uv.test.derivacion-aps-especialidad: ImplementationGuide.dependsOn[2]: The canonical URL http://hl7.org/fhir doesn't point to an actual ImplementationGuide resource
+ERROR: ImplementationGuide/hl7.fhir.uv.test.derivacion-aps-especialidad: ImplementationGuide.dependsOn[2]: The canonical URL http://hl7.org/fhir points to the package hl7.fhir.r5.core which is inconsistent with the stated packageId of hl7.fhir.r4.core
+WARNING: ImplementationGuide.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.test.derivacion-aps-especialidad, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 ('World') instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+INFORMATION: Resource: The resource ImplementationGuide/hl7.fhir.uv.test.derivacion-aps-especialidad could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/Location-location-cardiologia.json ==
+
+
+== fsh-generated/resources/Observation-ecg-2026-11-19.json ==
+WARNING: Observation/ecg-2026-11-19: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/ecg-2026-11-19: Observation.value.ofType(string): The LOINC code 11524-6 ('EKG study') is for a document (scale Doc): a document goes in a DocumentReference, not in the value of an Observation
+
+
+== fsh-generated/resources/Observation-ntprobnp-2026-11-19.json ==
+WARNING: Observation/ntprobnp-2026-11-19: Observation: Best Practice Recommendation: In general, all observations should have a performer
+
+
+== fsh-generated/resources/Organization-org-cardiologia.json ==
+
+
+== fsh-generated/resources/Organization-org-cesfam-los-aromos.json ==
+
+
+== fsh-generated/resources/Organization-org-hub.json ==
+
+
+== fsh-generated/resources/Patient-maria-gonzalez.json ==
+WARNING: Patient/maria-gonzalez: Patient.identifier[0].system: No definition could be found for URL value 'http://www.registrocivil.cl/run'
+
+
+== fsh-generated/resources/Practitioner-especialista-cardiologia.json ==
+WARNING: Practitioner/especialista-cardiologia: Practitioner.identifier[0].system: No definition could be found for URL value 'http://www.registrocivil.cl/run'
+
+
+== fsh-generated/resources/Practitioner-medico-aps.json ==
+WARNING: Practitioner/medico-aps: Practitioner.identifier[0].system: No definition could be found for URL value 'http://www.registrocivil.cl/run'
+
+
+== fsh-generated/resources/PractitionerRole-rol-admin-aps.json ==
+
+
+== fsh-generated/resources/PractitionerRole-rol-agendador.json ==
+
+
+== fsh-generated/resources/PractitionerRole-rol-especialista.json ==
+
+
+== fsh-generated/resources/PractitionerRole-rol-medico-aps.json ==
+
+
+== fsh-generated/resources/PractitionerRole-rol-triaje.json ==
+
+
+== fsh-generated/resources/Schedule-schedule-cardiologia.json ==
+
+
+== fsh-generated/resources/ServiceRequest-ref-2026-0001.json ==
+INFORMATION: ServiceRequest/ref-2026-0001: ServiceRequest.code: Reference to draft CodeSystem https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad|0.1.0
+INFORMATION: ServiceRequest/ref-2026-0001: ServiceRequest.performerType: Reference to draft CodeSystem https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad|0.1.0
+
+
+== fsh-generated/resources/Slot-slot-cardiologia-1.json ==
+
+
+== fsh-generated/resources/StructureDefinition-derivacion-cita.json ==
+INFORMATION: StructureDefinition/derivacion-cita: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.4.0 is deprecated with the note: 'Use additionalBinding extension or element instead'
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.test.derivacion-aps-especialidad, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 ('World') instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+INFORMATION: Resource: The resource StructureDefinition/derivacion-cita could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-derivacion-contrareferencia.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.test.derivacion-aps-especialidad, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 ('World') instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+INFORMATION: Resource: The resource StructureDefinition/derivacion-contrareferencia could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-derivacion-delivery-outcome.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.test.derivacion-aps-especialidad, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 ('World') instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+INFORMATION: Resource: The resource StructureDefinition/derivacion-delivery-outcome could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-derivacion-diagnostico.json ==
+WARNING: StructureDefinition/derivacion-diagnostico: StructureDefinition.snapshot.element[10].fixed.ofType(CodeableConcept): For the complex type CodeableConcept, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+WARNING: StructureDefinition/derivacion-diagnostico: StructureDefinition.snapshot.element[11].fixed.ofType(CodeableConcept): For the complex type CodeableConcept, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.test.derivacion-aps-especialidad, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 ('World') instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+INFORMATION: Resource: The resource StructureDefinition/derivacion-diagnostico could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-derivacion-documento.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.test.derivacion-aps-especialidad, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 ('World') instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+INFORMATION: Resource: The resource StructureDefinition/derivacion-documento could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-derivacion-encuentro.json ==
+WARNING: StructureDefinition/derivacion-encuentro: StructureDefinition.snapshot.element[17].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.test.derivacion-aps-especialidad, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 ('World') instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+INFORMATION: Resource: The resource StructureDefinition/derivacion-encuentro could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-derivacion-match-basis.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.test.derivacion-aps-especialidad, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 ('World') instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+INFORMATION: Resource: The resource StructureDefinition/derivacion-match-basis could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+WARNING: StructureDefinition.where(url = 'https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-match-basis'): The Implementation Guide contains no examples for this extension
+
+
+== fsh-generated/resources/StructureDefinition-derivacion-match-confidence.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.test.derivacion-aps-especialidad, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 ('World') instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+INFORMATION: Resource: The resource StructureDefinition/derivacion-match-confidence could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+WARNING: StructureDefinition.where(url = 'https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-match-confidence'): The Implementation Guide contains no examples for this extension
+
+
+== fsh-generated/resources/StructureDefinition-derivacion-notificacion.json ==
+INFORMATION: StructureDefinition/derivacion-notificacion: StructureDefinition.snapshot.element[18].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.test.derivacion-aps-especialidad, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 ('World') instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+INFORMATION: Resource: The resource StructureDefinition/derivacion-notificacion could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-derivacion-offer-chase-count.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.test.derivacion-aps-especialidad, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 ('World') instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+INFORMATION: Resource: The resource StructureDefinition/derivacion-offer-chase-count could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+WARNING: StructureDefinition.where(url = 'https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-offer-chase-count'): The Implementation Guide contains no examples for this extension
+
+
+== fsh-generated/resources/StructureDefinition-derivacion-offer-decline-count.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.test.derivacion-aps-especialidad, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 ('World') instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+INFORMATION: Resource: The resource StructureDefinition/derivacion-offer-decline-count could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+WARNING: StructureDefinition.where(url = 'https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-offer-decline-count'): The Implementation Guide contains no examples for this extension
+
+
+== fsh-generated/resources/StructureDefinition-derivacion-offer-number.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.test.derivacion-aps-especialidad, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 ('World') instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+INFORMATION: Resource: The resource StructureDefinition/derivacion-offer-number could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-derivacion-paciente.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.test.derivacion-aps-especialidad, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 ('World') instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+INFORMATION: Resource: The resource StructureDefinition/derivacion-paciente could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-derivacion-plan-seguimiento.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.test.derivacion-aps-especialidad, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 ('World') instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+INFORMATION: Resource: The resource StructureDefinition/derivacion-plan-seguimiento could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-derivacion-preferred-contact-channel.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.test.derivacion-aps-especialidad, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 ('World') instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+INFORMATION: Resource: The resource StructureDefinition/derivacion-preferred-contact-channel could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-derivacion-referral-identifier.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.test.derivacion-aps-especialidad, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 ('World') instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+INFORMATION: Resource: The resource StructureDefinition/derivacion-referral-identifier could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-derivacion-rescheduling-count.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.test.derivacion-aps-especialidad, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 ('World') instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+INFORMATION: Resource: The resource StructureDefinition/derivacion-rescheduling-count could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+WARNING: StructureDefinition.where(url = 'https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rescheduling-count'): The Implementation Guide contains no examples for this extension
+
+
+== fsh-generated/resources/StructureDefinition-derivacion-rol.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.test.derivacion-aps-especialidad, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 ('World') instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+INFORMATION: Resource: The resource StructureDefinition/derivacion-rol could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-derivacion-servicio.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.test.derivacion-aps-especialidad, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 ('World') instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+INFORMATION: Resource: The resource StructureDefinition/derivacion-servicio could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-derivacion-sla-acceptance-deadline.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.test.derivacion-aps-especialidad, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 ('World') instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+INFORMATION: Resource: The resource StructureDefinition/derivacion-sla-acceptance-deadline could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-derivacion-sla-confirmation-deadline.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.test.derivacion-aps-especialidad, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 ('World') instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+INFORMATION: Resource: The resource StructureDefinition/derivacion-sla-confirmation-deadline could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+WARNING: StructureDefinition.where(url = 'https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-confirmation-deadline'): The Implementation Guide contains no examples for this extension
+
+
+== fsh-generated/resources/StructureDefinition-derivacion-sla-counterreferral-deadline.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.test.derivacion-aps-especialidad, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 ('World') instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+INFORMATION: Resource: The resource StructureDefinition/derivacion-sla-counterreferral-deadline could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+WARNING: StructureDefinition.where(url = 'https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-counterreferral-deadline'): The Implementation Guide contains no examples for this extension
+
+
+== fsh-generated/resources/StructureDefinition-derivacion-sla-offer-deadline.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.test.derivacion-aps-especialidad, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 ('World') instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+INFORMATION: Resource: The resource StructureDefinition/derivacion-sla-offer-deadline could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+WARNING: StructureDefinition.where(url = 'https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-offer-deadline'): The Implementation Guide contains no examples for this extension
+
+
+== fsh-generated/resources/StructureDefinition-derivacion-sla-retriage-deadline.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.test.derivacion-aps-especialidad, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 ('World') instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+INFORMATION: Resource: The resource StructureDefinition/derivacion-sla-retriage-deadline could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+WARNING: StructureDefinition.where(url = 'https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-retriage-deadline'): The Implementation Guide contains no examples for this extension
+
+
+== fsh-generated/resources/StructureDefinition-derivacion-solicitud.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.test.derivacion-aps-especialidad, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 ('World') instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+INFORMATION: Resource: The resource StructureDefinition/derivacion-solicitud could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-derivacion-tarea.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.uv.test.derivacion-aps-especialidad, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 ('World') instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+INFORMATION: Resource: The resource StructureDefinition/derivacion-tarea could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/Task-tarea-ref-2026-0001.json ==
+INFORMATION: Task/tarea-ref-2026-0001: Task.businessStatus: Reference to draft CodeSystem https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia|0.1.0
+INFORMATION: Task/tarea-ref-2026-0001: Task.code: Reference to draft CodeSystem https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-task-code|0.1.0
+
+
+== fsh-generated/resources/ValueSet-derivacion-base-cruce.json ==
+WARNING: ValueSet/derivacion-base-cruce: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.test.derivacion-aps-especialidad, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 ('World') instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+WARNING: Resource: The resource ValueSet/derivacion-base-cruce should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/ValueSet-derivacion-canal.json ==
+WARNING: ValueSet/derivacion-canal: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.test.derivacion-aps-especialidad, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 ('World') instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+WARNING: Resource: The resource ValueSet/derivacion-canal should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/ValueSet-derivacion-especialidad.json ==
+WARNING: ValueSet/derivacion-especialidad: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.test.derivacion-aps-especialidad, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 ('World') instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+WARNING: Resource: The resource ValueSet/derivacion-especialidad should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/ValueSet-derivacion-estado-referencia.json ==
+WARNING: ValueSet/derivacion-estado-referencia: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.test.derivacion-aps-especialidad, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 ('World') instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+WARNING: Resource: The resource ValueSet/derivacion-estado-referencia should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/ValueSet-derivacion-motivo-rechazo.json ==
+WARNING: ValueSet/derivacion-motivo-rechazo: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.test.derivacion-aps-especialidad, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 ('World') instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+WARNING: Resource: The resource ValueSet/derivacion-motivo-rechazo should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/ValueSet-derivacion-resultado-entrega.json ==
+WARNING: ValueSet/derivacion-resultado-entrega: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.test.derivacion-aps-especialidad, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 ('World') instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+WARNING: Resource: The resource ValueSet/derivacion-resultado-entrega should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/ValueSet-derivacion-rol.json ==
+WARNING: ValueSet/derivacion-rol: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.test.derivacion-aps-especialidad, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 ('World') instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+WARNING: Resource: The resource ValueSet/derivacion-rol should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/ValueSet-derivacion-task-code.json ==
+WARNING: ValueSet/derivacion-task-code: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.test.derivacion-aps-especialidad, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 ('World') instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+WARNING: Resource: The resource ValueSet/derivacion-task-code should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+

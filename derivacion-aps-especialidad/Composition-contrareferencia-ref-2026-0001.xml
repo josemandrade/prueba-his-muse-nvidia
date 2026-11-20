@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="contrareferencia-ref-2026-0001"/>
+  <meta>
+    <profile value="https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-contrareferencia"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Composition contrareferencia-ref-2026-0001</b></p><a name="contrareferencia-ref-2026-0001"> </a><a name="hccontrareferencia-ref-2026-0001"> </a><div style="display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-derivacion-contrareferencia.html">Contrareferencia</a></p></div><p><b>Identificador de la derivación</b>: <code>http://aps.losaromos.example.org/referral</code>/REF-2026-0001</p><p><b>identifier</b>: <code>http://especialidad.example.org/counter-referral</code>/CR-2026-0001</p><p><b>status</b>: Final</p><p><b>type</b>: <span title="Codes:{http://loinc.org 11488-4}">Consult note</span></p><p><b>encounter</b>: <a href="Encounter-encuentro-ref-2026-0001.html">Encounter: identifier = http://especialidad.example.org/encounter#ENC-2026-0001; status = planned; class = Ambulatory (ActCode#AMB); serviceType = Cardiology; period = 2026-12-02 10:00:00-0300 --&gt; 2026-12-02 10:30:00-0300</a></p><p><b>date</b>: 2026-12-03 10:00:00-0300</p><p><b>author</b>: <a href="PractitionerRole-rol-especialista.html">Carlos Rojas (official) (http://www.registrocivil.cl/run#33333333-3): Specialist at Servicio de Cardiología (http://especialidad.example.org/organization#CARDIOLOGIA)</a></p><p><b>title</b>: Counter-referral</p></div>
+  </text>
+  <extension url="https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-referral-identifier">
+    <valueIdentifier>
+      <system value="http://aps.losaromos.example.org/referral"/>
+      <value value="REF-2026-0001"/>
+    </valueIdentifier>
+  </extension>
+  <identifier>
+    <system value="http://especialidad.example.org/counter-referral"/>
+    <value value="CR-2026-0001"/>
+  </identifier>
+  <status value="final"/>
+  <type>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="11488-4"/>
+      <display value="Consult note"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/maria-gonzalez"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/encuentro-ref-2026-0001"/>
+  </encounter>
+  <date value="2026-12-03T10:00:00-03:00"/>
+  <author>
+    <reference value="PractitionerRole/rol-especialista"/>
+  </author>
+  <title value="Counter-referral"/>
+  <section>
+    <title value="Diagnosis"/>
+    <code>
+      <text value="Diagnosis"/>
+    </code>
+    <text>
+      <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Chronic systolic heart failure, LVEF 35% (ICD-10-CM I50.22).</div>
+    </text>
+    <entry>
+      <reference value="Condition/diagnostico-ref-2026-0001"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Plan"/>
+    <code>
+      <text value="Plan"/>
+    </code>
+    <text>
+      <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Start heart-failure treatment; control in APS in 2 weeks.</div>
+    </text>
+    <entry>
+      <reference value="CarePlan/plan-ref-2026-0001"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Follow-up indications"/>
+    <code>
+      <text value="Follow-up indications"/>
+    </code>
+    <text>
+      <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Blood pressure, weight and symptoms at each APS control; NT-proBNP in 3 months.</div>
+    </text>
+  </section>
+  <section>
+    <title value="Follow-up plan for APS"/>
+    <code>
+      <text value="Follow-up plan for APS"/>
+    </code>
+    <text>
+      <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">APS follow-up as in the CarePlan; new referral to cardiology if dyspnoea worsens.</div>
+    </text>
+    <entry>
+      <reference value="CarePlan/plan-ref-2026-0001"/>
+    </entry>
+  </section>
+</Composition>

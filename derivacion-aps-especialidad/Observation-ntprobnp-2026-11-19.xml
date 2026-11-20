@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ntprobnp-2026-11-19"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation ntprobnp-2026-11-19</b></p><a name="ntprobnp-2026-11-19"> </a><a name="hcntprobnp-2026-11-19"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://loinc.org 33762-6}">Natriuretic peptide.B prohormone N-Terminal [Mass/volume] in Serum or Plasma</span></p><p><b>subject</b>: <a href="Patient-maria-gonzalez.html">María González (official) Female, DoB: 1968-04-15 ( http://www.registrocivil.cl/run#11111111-1)</a></p><p><b>effective</b>: 2026-11-18 10:00:00-0300</p><p><b>value</b>: 850 pg/mL<span style="background: LightGoldenRodYellow"> (Details: UCUM  codepg/mL = 'pg/mL')</span></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="33762-6"/>
+      <display value="Natriuretic peptide.B prohormone N-Terminal [Mass/volume] in Serum or Plasma"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/maria-gonzalez"/>
+  </subject>
+  <effectiveDateTime value="2026-11-18T10:00:00-03:00"/>
+  <valueQuantity>
+    <value value="850"/>
+    <unit value="pg/mL"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="pg/mL"/>
+  </valueQuantity>
+</Observation>

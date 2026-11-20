@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Reglas y retención - Derivación APS → especialidad con contrareferencia v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"11"}
+    h3,h4,h5,h6{--heading-prefix:"11"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Derivación APS → especialidad con contrareferencia</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - CI Build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul class="nav navbar-nav">
+  <li><a href="index.html">Derivación APS → especialidad</a></li>
+  <li><a href="process.html">Proceso (BPMN)</a></li>
+  <li><a href="resources.html">Diagrama de recursos</a></li>
+  <li><a href="profiles.html">Perfiles</a></li>
+  <li><a href="terminology.html">Terminología</a></li>
+  <li><a href="operations.html">Operaciones</a></li>
+  <li><a href="sequences.html">Diagramas de secuencia</a></li>
+  <li><a href="mapping.html">Mapeo de datos</a></li>
+  <li><a href="ihe.html">Relación con IHE</a></li>
+  <li><a href="lifecycle.html">Ciclo de vida</a></li>
+  <li><a href="rules.html">Reglas y retención</a></li>
+  <li><a href="public-health.html">Base legal y reporte</a></li>
+  <li><a href="artifacts.html">Artefactos</a></li>
+</ul>
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Reglas y retención</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Derivación APS → especialidad con contrareferencia - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://josemandrade.github.io/prueba-his-muse-nvidia/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Reglas y retención</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<h3 id="reglas-y-retención">Reglas y retención</h3>
+
+<h4 id="reglas-de-evaluación-plazos-sla">Reglas de evaluación (plazos SLA)</h4>
+
+<p>Cada plazo es una regla de evaluación con su ventana, su acción y su
+re-arme. Un incumplimiento de plazo dispara una escalada, nunca un cambio
+de estado (ver <a href="lifecycle.html">Ciclo de vida</a>).</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Regla</th>
+      <th>Umbral / ventana</th>
+      <th>Acción</th>
+      <th>Re-arme</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>R1 Plazo de aceptación</td>
+      <td>Creación + 5 días hábiles (2 si es urgente)</td>
+      <td>El hub escala a la especialidad y notifica a APS; sigue esperando (el ciclo vuelve a entrar en la espera)</td>
+      <td>La decisión (aceptar/rechazar) desarma la regla; un nuevo intento no existe — la derivación solo tiene una decisión de triaje</td>
+    </tr>
+    <tr>
+      <td>R2 Plazo de oferta de cita</td>
+      <td>Aceptación + 10 días hábiles</td>
+      <td>El hub escala a la especialidad y notifica a APS (h19)</td>
+      <td>La oferta desarma la regla</td>
+    </tr>
+    <tr>
+      <td>R3 Plazo de confirmación</td>
+      <td>Oferta + 3 días hábiles</td>
+      <td>El agendador persigue a la paciente (hasta 2 veces); tras la segunda persecución sin confirmar, la derivación vuelve al re-triaje de APS</td>
+      <td>La confirmación o el rechazo desarman la regla; cada oferta tiene su propio presupuesto de confirmación/persecución (los conteos se reinician por oferta)</td>
+    </tr>
+    <tr>
+      <td>R4 Plazo de contrareferencia</td>
+      <td>Encuentro + 5 días hábiles</td>
+      <td>El hub escala a la especialidad y notifica a APS (h20)</td>
+      <td>El envío de la contrareferencia desarma la regla; una contrareferencia que llega tarde se acepta igualmente (el plazo dispara escalada, no rechazo)</td>
+    </tr>
+    <tr>
+      <td>R5 Plazo de re-triaje</td>
+      <td>Rechazo (o retorno por fallo de agendamiento) + 5 días hábiles</td>
+      <td>El hub escala a APS</td>
+      <td>La decisión de re-triaje desarma la regla</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Las reglas de conteo (un re-oferta por rechazo, dos persecuciones por
+oferta, un re-agendamiento por derivación) viven como extensiones del Task
+(<code class="language-plaintext highlighter-rouge">offer-decline-count</code>, <code class="language-plaintext highlighter-rouge">offer-chase-count</code>, <code class="language-plaintext highlighter-rouge">rescheduling-count</code>) y las
+leen las puertas basadas en datos del BPMN.</p>
+
+<h4 id="indicadores">Indicadores</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Indicador</th>
+      <th>Definición</th>
+      <th>Uso</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tiempo medio de aceptación</td>
+      <td>Creación → decisión de triaje (días hábiles), por servicio y prioridad</td>
+      <td>Detectar servicios con triaje lento</td>
+    </tr>
+    <tr>
+      <td>Tasa de rechazo</td>
+      <td>Derivaciones rechazadas / derivaciones creadas, por servicio y motivo</td>
+      <td>Detectar derivaciones mal dirigidas o con exámenes faltantes</td>
+    </tr>
+    <tr>
+      <td>Tiempo medio de oferta de cita</td>
+      <td>Aceptación → oferta (días hábiles)</td>
+      <td>Detectar cuellos de botella de agenda</td>
+    </tr>
+    <tr>
+      <td>Tasa de no-show</td>
+      <td>Primer no-show / citas reservadas; segundo no-show / re-agendamientos</td>
+      <td>Detectar pacientes que necesitan otro canal de contacto</td>
+    </tr>
+    <tr>
+      <td>Tiempo medio de contrareferencia</td>
+      <td>Encuentro → contrareferencia recibida (días hábiles)</td>
+      <td>Detectar cierres de ciclo lentos</td>
+    </tr>
+    <tr>
+      <td>Ciclos cerrados</td>
+      <td>Derivaciones <code class="language-plaintext highlighter-rouge">counter-referred</code> / derivaciones creadas (por periodo)</td>
+      <td>La medida de continuidad de la atención del caso</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="plan-de-monitoreo">Plan de monitoreo</h4>
+
+<ul>
+  <li><strong>Frecuencia:</strong> los indicadores se calculan cada mes, por servicio y
+por prioridad (routine / urgent).</li>
+  <li><strong>Quién responde:</strong> el operador del hub revisa las escaladas cada día
+hábil; el responsable de cada servicio responde a las escaladas de su
+servicio en el día hábil siguiente.</li>
+  <li><strong>Fuera de horario:</strong> las escaladas fuera de horario se registran y se
+atienden el siguiente día hábil; ningún plazo se cierra fuera de horario
+(los plazos son días hábiles).</li>
+</ul>
+
+<h4 id="retención">Retención</h4>
+
+<ul>
+  <li><strong>Registros de flujo de trabajo (Task + historial Provenance):</strong> el hub
+los retiene mientras la derivación esté abierta y 5 años tras su cierre
+(la política de registros de la red, spec §5). El hub no retiene el
+detalle clínico que enruta en tránsito.</li>
+  <li><strong>Documentos clínicos (Composition + DocumentReference de la
+contrareferencia):</strong> cada organización retiene su copia bajo su propia
+política de registros (spec §5).</li>
+  <li><strong>Registros de auditoría (AuditEvent):</strong> retención de auditoría de la
+red; los eventos son solo-añadir.</li>
+  <li>La ventana de retención de cada clase de producto se registra una sola
+vez, aquí, por clase de producto.</li>
+</ul>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href=""></a>.  Package hl7.fhir.uv.test.derivacion-aps-especialidad#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Nov 20, 2026 12:33+0000">2026-11-20</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

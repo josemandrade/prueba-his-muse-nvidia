@@ -1,0 +1,21 @@
+{
+  "resourceType" : "Observation",
+  "id" : "ecg-2026-11-19",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ecg-2026-11-19</b></p><a name=\"ecg-2026-11-19\"> </a><a name=\"hcecg-2026-11-19\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 11524-6}\">EKG study</span></p><p><b>subject</b>: <a href=\"Patient-maria-gonzalez.html\">María González (official) Female, DoB: 1968-04-15 ( http://www.registrocivil.cl/run#11111111-1)</a></p><p><b>effective</b>: 2026-11-18 10:00:00-0300</p><p><b>value</b>: Ritmo sinusal, 72 lpm, sin isquemia aguda.</p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "11524-6",
+      "display" : "EKG study"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/maria-gonzalez"
+  },
+  "effectiveDateTime" : "2026-11-18T10:00:00-03:00",
+  "valueString" : "Ritmo sinusal, 72 lpm, sin isquemia aguda."
+}

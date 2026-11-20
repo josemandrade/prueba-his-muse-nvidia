@@ -1,0 +1,27 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "derivacion-resultado-entrega",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem derivacion-resultado-entrega</b></p><a name=\"derivacion-resultado-entrega\"> </a><a name=\"hcderivacion-resultado-entrega\"> </a><p>This  code system <code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-resultado-entrega</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">delivered<a name=\"derivacion-resultado-entrega-delivered\"> </a></td><td>Delivered</td><td>La notificación llegó al destinatario.</td></tr><tr><td style=\"white-space:nowrap\">failed<a name=\"derivacion-resultado-entrega-failed\"> </a></td><td>Failed</td><td>La entrega falló; el remitente reintenta (el fallo nunca cambia el estado de la derivación).</td></tr></table></div>"
+  },
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-resultado-entrega",
+  "version" : "0.1.0",
+  "name" : "DerivacionResultadoEntregaCS",
+  "title" : "Resultado de la entrega de una notificación",
+  "status" : "draft",
+  "date" : "2026-11-20T12:33:32+00:00",
+  "description" : "Resultados posibles de la entrega de una notificación (lista local).",
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "delivered",
+    "display" : "Delivered",
+    "definition" : "La notificación llegó al destinatario."
+  },
+  {
+    "code" : "failed",
+    "display" : "Failed",
+    "definition" : "La entrega falló; el remitente reintenta (el fallo nunca cambia el estado de la derivación)."
+  }]
+}

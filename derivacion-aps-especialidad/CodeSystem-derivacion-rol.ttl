@@ -1,0 +1,62 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "derivacion-rol"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem derivacion-rol</b></p><a name=\"derivacion-rol\"> </a><a name=\"hcderivacion-rol\"> </a><p>This  code system <code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">aps-doctor<a name=\"derivacion-rol-aps-doctor\"> </a></td><td>APS doctor</td><td>Médico de APS que crea la derivación.</td></tr><tr><td style=\"white-space:nowrap\">aps-admin<a name=\"derivacion-rol-aps-admin\"> </a></td><td>APS admin</td><td>Administrativo de APS que registra y sigue la derivación e informa al paciente.</td></tr><tr><td style=\"white-space:nowrap\">triage-clinician<a name=\"derivacion-rol-triage-clinician\"> </a></td><td>Triage clinician</td><td>Clínico de la especialidad que acepta o rechaza la derivación.</td></tr><tr><td style=\"white-space:nowrap\">specialty-scheduler<a name=\"derivacion-rol-specialty-scheduler\"> </a></td><td>Specialty scheduler</td><td>Agendador de la especialidad que reserva y re-agenda la cita.</td></tr><tr><td style=\"white-space:nowrap\">specialist<a name=\"derivacion-rol-specialist\"> </a></td><td>Specialist</td><td>Especialista que atiende y emite la contrareferencia.</td></tr><tr><td style=\"white-space:nowrap\">hub-operator<a name=\"derivacion-rol-hub-operator\"> </a></td><td>Hub operator</td><td>Operador del hub de derivación (enruta, escala, registra cancelaciones, responde consultas de estado).</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol"] ;
+  fhir:CodeSystem.version [ fhir:value "0.1.0"] ;
+  fhir:CodeSystem.name [ fhir:value "DerivacionRolCS"] ;
+  fhir:CodeSystem.title [ fhir:value "Rol en la derivación"] ;
+  fhir:CodeSystem.status [ fhir:value "draft"] ;
+  fhir:CodeSystem.date [ fhir:value "2026-11-20T12:33:32+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.description [ fhir:value "Los seis roles del caso de uso (spec §2). Dentro de una derivación, cada rol es una persona (el clínico de triaje no es el agendador — C1)."] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "6"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "aps-doctor" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "APS doctor" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Médico de APS que crea la derivación." ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "aps-admin" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "APS admin" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Administrativo de APS que registra y sigue la derivación e informa al paciente." ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "triage-clinician" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Triage clinician" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Clínico de la especialidad que acepta o rechaza la derivación." ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "specialty-scheduler" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Specialty scheduler" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Agendador de la especialidad que reserva y re-agenda la cita." ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "specialist" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Specialist" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Especialista que atiende y emite la contrareferencia." ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "hub-operator" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hub operator" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Operador del hub de derivación (enruta, escala, registra cancelaciones, responde consultas de estado)." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

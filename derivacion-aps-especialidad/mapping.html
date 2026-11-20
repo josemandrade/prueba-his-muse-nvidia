@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Mapeo de datos - Derivación APS → especialidad con contrareferencia v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+  	<link rel="stylesheet" href="assets/css/cqf.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"8"}
+    h3,h4,h5,h6{--heading-prefix:"8"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+
+          <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Derivación APS → especialidad con contrareferencia</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - CI Build
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul class="nav navbar-nav">
+  <li><a href="index.html">Derivación APS → especialidad</a></li>
+  <li><a href="process.html">Proceso (BPMN)</a></li>
+  <li><a href="resources.html">Diagrama de recursos</a></li>
+  <li><a href="profiles.html">Perfiles</a></li>
+  <li><a href="terminology.html">Terminología</a></li>
+  <li><a href="operations.html">Operaciones</a></li>
+  <li><a href="sequences.html">Diagramas de secuencia</a></li>
+  <li><a href="mapping.html">Mapeo de datos</a></li>
+  <li><a href="ihe.html">Relación con IHE</a></li>
+  <li><a href="lifecycle.html">Ciclo de vida</a></li>
+  <li><a href="rules.html">Reglas y retención</a></li>
+  <li><a href="public-health.html">Base legal y reporte</a></li>
+  <li><a href="artifacts.html">Artefactos</a></li>
+</ul>
+
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Mapeo de datos</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">Derivación APS → especialidad con contrareferencia - Local Development build (v0.1.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://josemandrade.github.io/prueba-his-muse-nvidia/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Mapeo de datos</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div>
+  <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
+</div>
+<h3 id="mapeo-de-datos">Mapeo de datos</h3>
+
+<p>Las entidades del caso (<code class="language-plaintext highlighter-rouge">03-entities-data.md</code>, <span class="fhir-conformance">1–</span>13) mapeadas a recursos
+FHIR, campo a campo. La tabla completa, con cardinalidades y notas, está en
+<code class="language-plaintext highlighter-rouge">04-mapping-table.md</code> (fuente de verdad del paso 4); esta página es su
+resumen navegable en la guía. Los nombres de entidad son los del paso 3;
+los nombres de campo son los del paso 3.</p>
+
+<h4 id="resumen-por-entidad">Resumen por entidad</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Entidad (&sect;3)</th>
+      <th>Recurso</th>
+      <th>Perfil</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1. Patient</td>
+      <td><code class="language-plaintext highlighter-rouge">Patient</code></td>
+      <td><a href="StructureDefinition-derivacion-paciente.html"><code class="language-plaintext highlighter-rouge">DerivacionPaciente</code></a></td>
+    </tr>
+    <tr>
+      <td>2. Referral request</td>
+      <td><code class="language-plaintext highlighter-rouge">ServiceRequest</code></td>
+      <td><a href="StructureDefinition-derivacion-solicitud.html"><code class="language-plaintext highlighter-rouge">DerivacionSolicitud</code></a></td>
+    </tr>
+    <tr>
+      <td>3. Workflow state record</td>
+      <td><code class="language-plaintext highlighter-rouge">Task</code></td>
+      <td><a href="StructureDefinition-derivacion-tarea.html"><code class="language-plaintext highlighter-rouge">DerivacionTarea</code></a></td>
+    </tr>
+    <tr>
+      <td>4. Triage decision</td>
+      <td>Transición del Task + Provenance (sin recurso propio)</td>
+      <td><a href="StructureDefinition-derivacion-tarea.html"><code class="language-plaintext highlighter-rouge">DerivacionTarea</code></a></td>
+    </tr>
+    <tr>
+      <td>5. Appointment (+ Slot)</td>
+      <td><code class="language-plaintext highlighter-rouge">Appointment</code> + <code class="language-plaintext highlighter-rouge">Slot</code> (+ <code class="language-plaintext highlighter-rouge">Schedule</code>)</td>
+      <td><a href="StructureDefinition-derivacion-cita.html"><code class="language-plaintext highlighter-rouge">DerivacionCita</code></a></td>
+    </tr>
+    <tr>
+      <td>6. Specialty encounter</td>
+      <td><code class="language-plaintext highlighter-rouge">Encounter</code></td>
+      <td><a href="StructureDefinition-derivacion-encuentro.html"><code class="language-plaintext highlighter-rouge">DerivacionEncuentro</code></a></td>
+    </tr>
+    <tr>
+      <td>7. Counter-referral</td>
+      <td><code class="language-plaintext highlighter-rouge">Composition</code> + <code class="language-plaintext highlighter-rouge">DocumentReference</code> + <code class="language-plaintext highlighter-rouge">Condition</code> + <code class="language-plaintext highlighter-rouge">CarePlan</code></td>
+      <td><a href="StructureDefinition-derivacion-contrareferencia.html"><code class="language-plaintext highlighter-rouge">DerivacionContrareferencia</code></a>, <a href="StructureDefinition-derivacion-documento.html"><code class="language-plaintext highlighter-rouge">DerivacionDocumento</code></a>, <a href="StructureDefinition-derivacion-diagnostico.html"><code class="language-plaintext highlighter-rouge">DerivacionDiagnostico</code></a>, <a href="StructureDefinition-derivacion-plan-seguimiento.html"><code class="language-plaintext highlighter-rouge">DerivacionPlanSeguimiento</code></a></td>
+    </tr>
+    <tr>
+      <td>8. Practitioner</td>
+      <td><code class="language-plaintext highlighter-rouge">Practitioner</code> + <code class="language-plaintext highlighter-rouge">PractitionerRole</code></td>
+      <td><a href="StructureDefinition-derivacion-rol.html"><code class="language-plaintext highlighter-rouge">DerivacionRol</code></a></td>
+    </tr>
+    <tr>
+      <td>9. Organisation / care service</td>
+      <td><code class="language-plaintext highlighter-rouge">Organization</code> + <code class="language-plaintext highlighter-rouge">HealthcareService</code> + <code class="language-plaintext highlighter-rouge">Location</code> + <code class="language-plaintext highlighter-rouge">Endpoint</code></td>
+      <td><a href="StructureDefinition-derivacion-servicio.html"><code class="language-plaintext highlighter-rouge">DerivacionServicio</code></a></td>
+    </tr>
+    <tr>
+      <td>10. MPI identity record</td>
+      <td><code class="language-plaintext highlighter-rouge">Patient</code> del MPI + transacciones PIXm/PMIR (no se intercambia como recurso en el flujo)</td>
+      <td><a href="StructureDefinition-derivacion-paciente.html"><code class="language-plaintext highlighter-rouge">DerivacionPaciente</code></a></td>
+    </tr>
+    <tr>
+      <td>11. Notification</td>
+      <td><code class="language-plaintext highlighter-rouge">Communication</code></td>
+      <td><a href="StructureDefinition-derivacion-notificacion.html"><code class="language-plaintext highlighter-rouge">DerivacionNotificacion</code></a></td>
+    </tr>
+    <tr>
+      <td>12. Declined-referral record</td>
+      <td><strong>Sin equivalente FHIR</strong> (registro local de APS)</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>13. Cancellation record</td>
+      <td>Transición del Task + <code class="language-plaintext highlighter-rouge">Appointment</code> + <code class="language-plaintext highlighter-rouge">Communication</code> + Provenance (sin recurso propio)</td>
+      <td><a href="StructureDefinition-derivacion-tarea.html"><code class="language-plaintext highlighter-rouge">DerivacionTarea</code></a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="reglas-de-transformación">Reglas de transformación</h4>
+
+<ul>
+  <li><strong>El estado vive en el Task, no en la solicitud.</strong> <code class="language-plaintext highlighter-rouge">Task.businessStatus</code>
+lleva el estado del caso textual (los nueve estados); <code class="language-plaintext highlighter-rouge">Task.status</code>
+lleva el valor grueso de R4. <code class="language-plaintext highlighter-rouge">ServiceRequest.status</code> es un espejo
+grueso, que el hub mantiene consistente en la misma transacción que
+cada transición del Task.</li>
+  <li><strong>Los estados del caso no son valores FHIR.</strong> <code class="language-plaintext highlighter-rouge">offered</code>, <code class="language-plaintext highlighter-rouge">confirmed</code>,
+<code class="language-plaintext highlighter-rouge">re-scheduled</code>, <code class="language-plaintext highlighter-rouge">attended</code> (cita) y <code class="language-plaintext highlighter-rouge">scheduled</code> (encuentro) son lenguaje
+del caso: se mapean a <code class="language-plaintext highlighter-rouge">proposed</code> / <code class="language-plaintext highlighter-rouge">pending</code> / <code class="language-plaintext highlighter-rouge">booked</code> / <code class="language-plaintext highlighter-rouge">arrived</code> /
+<code class="language-plaintext highlighter-rouge">fulfilled</code> (cita) y a <code class="language-plaintext highlighter-rouge">planned</code> (encuentro). Nunca se inventa un valor
+de ValueSet.</li>
+  <li><strong>Una corrección nunca sobrescribe.</strong> Un dato erróneo se corrige con una
+versión nueva (mismo identificador, versión +1, supersede la anterior)
+o con una entrada compensatoria en el historial del Task. El historial
+es solo-añadir.</li>
+  <li><strong>Un rechazo o una cancelación no van en el estado de la solicitud.</strong>
+La regla del pack: nunca se pone aceptar/rechazar en el estado de la
+solicitud (además <code class="language-plaintext highlighter-rouge">ServiceRequest</code> no tiene <code class="language-plaintext highlighter-rouge">statusReason</code>); el motivo
+viaja en <code class="language-plaintext highlighter-rouge">Task.statusReason</code> y/o en <code class="language-plaintext highlighter-rouge">Appointment.cancelationReason</code>.</li>
+  <li><strong>Lo que falta, bloquea.</strong> Un campo obligatorio que falta bloquea el
+paso que lo necesita (creación, aceptación, oferta): el paso falla la
+validación, no avanza en blanco. La única excepción es el plazo de
+confirmación, que dispara una persecución en vez de un bloqueo.</li>
+  <li><strong>Lo que no viaja, no se inventa.</strong> La entidad 12 (derivación
+rechazada por el paciente en la creación) no tiene recurso: no se crea
+nada y nada viaja; registrarla como <code class="language-plaintext highlighter-rouge">Task</code> o <code class="language-plaintext highlighter-rouge">Communication</code>
+inventaría una derivación que el caso deliberadamente no tiene.</li>
+</ul>
+
+<h4 id="correcciones-r4-encontradas-en-el-paso-5">Correcciones R4 encontradas en el paso 5</h4>
+
+<p>Dos filas de la tabla de mapeo del paso 4 eran incorrectas en R4 y la
+guía las corrige (registrado en <code class="language-plaintext highlighter-rouge">decisions.md</code>):</p>
+
+<ul>
+  <li><strong><code class="language-plaintext highlighter-rouge">Communication.topic</code> (&sect;11):</strong> en R4 es un CodeableConcept 0..1, no
+una referencia al Task. La guía lleva el nombre codificado de la
+transición en <code class="language-plaintext highlighter-rouge">topic</code>; el enlace al Task es <code class="language-plaintext highlighter-rouge">basedOn</code> y el aviso
+legible es <code class="language-plaintext highlighter-rouge">payload.contentString</code>.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">Task.owner</code> (<span class="fhir-conformance">3/</span>4):</strong> en R4 es 0..1, no 0..*. La guía pone en
+<code class="language-plaintext highlighter-rouge">owner</code> el servicio que acepta (el responsable del trabajo); el
+profesional que acepta se registra como agente de Provenance en la
+entrada de aceptación del historial.</li>
+</ul>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href=""></a>.  Package hl7.fhir.uv.test.derivacion-aps-especialidad#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Nov 20, 2026 12:33+0000">2026-11-20</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

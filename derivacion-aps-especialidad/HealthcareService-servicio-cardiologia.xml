@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HealthcareService xmlns="http://hl7.org/fhir">
+  <id value="servicio-cardiologia"/>
+  <meta>
+    <profile value="https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-servicio"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: HealthcareService servicio-cardiologia</b></p><a name="servicio-cardiologia"> </a><a name="hcservicio-cardiologia"> </a><div style="display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-derivacion-servicio.html">Servicio de especialidad</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Cardiology (Cardiology) by Servicio de Cardiología (http://especialidad.example.org/organization#CARDIOLOGIA) (http://especialidad.example.org/service#cardiologia)</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td colspan="3">true</td></tr><tr><td style="background-color: #f3f5da" title="The organization that provides this service">Provided By:</td><td colspan="3"><a href="Organization-org-cardiologia.html">Servicio de Cardiología (http://especialidad.example.org/organization#CARDIOLOGIA)</a></td></tr><tr><td style="background-color: #f3f5da" title="The type of service that may be delivered or performed">Type:</td><td colspan="3"><span title="Codes:{https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad cardiologia}">Cardiology</span></td></tr><tr><td style="background-color: #f3f5da" title="Technical endpoints providing access to services">Endpoint:</td><td colspan="3"><a href="Endpoint-endpoint-cardiologia.html">Cardiology FHIR endpoint (HL7 FHIR (Endpoint Connection Type#hl7-fhir-rest)): https://especialidad.example.org/fhir</a></td></tr></table></div>
+  </text>
+  <identifier>
+    <system value="http://especialidad.example.org/service"/>
+    <value value="cardiologia"/>
+  </identifier>
+  <active value="true"/>
+  <providedBy>
+    <reference value="Organization/org-cardiologia"/>
+  </providedBy>
+  <type>
+    <coding>
+      <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad"/>
+      <code value="cardiologia"/>
+      <display value="Cardiology"/>
+    </coding>
+  </type>
+  <name value="Cardiology"/>
+  <endpoint>
+    <reference value="Endpoint/endpoint-cardiologia"/>
+  </endpoint>
+</HealthcareService>

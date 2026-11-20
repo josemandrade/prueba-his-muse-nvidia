@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="location-cardiologia"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Location location-cardiologia</b></p><a name="location-cardiologia"> </a><a name="hclocation-cardiologia"> </a><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Consulta de Cardiología</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Physical location">Address:</td><td colspan="3">Hospital de la Red, piso 3, consulta 12</td></tr><tr><td style="background-color: #f3f5da" title="The organization responsible for the provisioning and upkeep of the location">Managed By:</td><td colspan="3"><a href="Organization-org-cardiologia.html">Servicio de Cardiología (http://especialidad.example.org/organization#CARDIOLOGIA)</a></td></tr></table></div>
+  </text>
+  <name value="Consulta de Cardiología"/>
+  <address>
+    <text value="Hospital de la Red, piso 3, consulta 12"/>
+  </address>
+  <managingOrganization>
+    <reference value="Organization/org-cardiologia"/>
+  </managingOrganization>
+</Location>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CarePlan xmlns="http://hl7.org/fhir">
+  <id value="plan-ref-2026-0001"/>
+  <meta>
+    <profile value="https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-plan-seguimiento"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CarePlan plan-ref-2026-0001</b></p><a name="plan-ref-2026-0001"> </a><a name="hcplan-ref-2026-0001"> </a><div style="display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-derivacion-plan-seguimiento.html">Plan de seguimiento para APS</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>subject</b>: <a href="Patient-maria-gonzalez.html">María González (official) Female, DoB: 1968-04-15 ( http://www.registrocivil.cl/run#11111111-1)</a></p><p><b>encounter</b>: <a href="Encounter-encuentro-ref-2026-0001.html">Encounter: identifier = http://especialidad.example.org/encounter#ENC-2026-0001; status = planned; class = Ambulatory (ActCode#AMB); serviceType = Cardiology; period = 2026-12-02 10:00:00-0300 --&gt; 2026-12-02 10:30:00-0300</a></p><p><b>author</b>: <a href="PractitionerRole-rol-especialista.html">Carlos Rojas (official) (http://www.registrocivil.cl/run#33333333-3): Specialist at Servicio de Cardiología (http://especialidad.example.org/organization#CARDIOLOGIA)</a></p><p><b>addresses</b>: <a href="Condition-diagnostico-ref-2026-0001.html">Condition Insuficiencia cardiaca sistólica crónica (FEVI 35%)</a></p><blockquote><p><b>activity</b></p><h3>Details</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Status</b></td><td><b>Description</b></td></tr><tr><td style="display: none">*</td><td>active</td><td>Control en APS en 2 semanas: presión arterial, peso, síntomas.</td></tr></table></blockquote><blockquote><p><b>activity</b></p><h3>Details</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Status</b></td><td><b>Description</b></td></tr><tr><td style="display: none">*</td><td>active</td><td>NT-proBNP de control en 3 meses.</td></tr></table></blockquote><blockquote><p><b>activity</b></p><p><b>reference</b>: <a href="ServiceRequest-ref-2026-0001.html">ServiceRequest Cardiology</a></p></blockquote></div>
+  </text>
+  <status value="active"/>
+  <intent value="plan"/>
+  <subject>
+    <reference value="Patient/maria-gonzalez"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/encuentro-ref-2026-0001"/>
+  </encounter>
+  <author>
+    <reference value="PractitionerRole/rol-especialista"/>
+  </author>
+  <addresses>
+    <reference value="Condition/diagnostico-ref-2026-0001"/>
+  </addresses>
+  <activity>
+    <detail>
+      <status value="active"/>
+      <description value="Control en APS en 2 semanas: presión arterial, peso, síntomas."/>
+    </detail>
+  </activity>
+  <activity>
+    <detail>
+      <status value="active"/>
+      <description value="NT-proBNP de control en 3 meses."/>
+    </detail>
+  </activity>
+  <activity>
+    <reference>
+      <reference value="ServiceRequest/ref-2026-0001"/>
+    </reference>
+  </activity>
+</CarePlan>

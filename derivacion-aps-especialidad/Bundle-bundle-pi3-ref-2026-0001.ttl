@@ -1,0 +1,316 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://josemandrade.github.io/prueba-his-muse-nvidia/Bundle/bundle-pi3-ref-2026-0001> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "bundle-pi3-ref-2026-0001"] ;
+  fhir:Bundle.type [ fhir:value "document"] ;
+  fhir:Bundle.timestamp [ fhir:value "2026-12-03T10:00:00-03:00"^^xsd:dateTime] ;
+  fhir:Bundle.entry [
+     fhir:index 0 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "Composition/contrareferencia-ref-2026-0001" ] ;
+     fhir:Bundle.entry.resource <Composition/contrareferencia-ref-2026-0001>
+  ], [
+     fhir:index 1 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "DocumentReference/documento-ref-2026-0001" ] ;
+     fhir:Bundle.entry.resource <DocumentReference/documento-ref-2026-0001>
+  ], [
+     fhir:index 2 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "Condition/diagnostico-ref-2026-0001" ] ;
+     fhir:Bundle.entry.resource <Condition/diagnostico-ref-2026-0001>
+  ], [
+     fhir:index 3 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "CarePlan/plan-ref-2026-0001" ] ;
+     fhir:Bundle.entry.resource <CarePlan/plan-ref-2026-0001>
+  ] .
+
+<Composition/contrareferencia-ref-2026-0001> a fhir:Composition ;
+  fhir:Resource.id [ fhir:value "contrareferencia-ref-2026-0001"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-contrareferencia" ;
+       fhir:index 0 ;
+       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-contrareferencia>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Composition_contrareferencia-ref-2026-0001\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Composition contrareferencia-ref-2026-0001</b></p><a name=\"contrareferencia-ref-2026-0001\"> </a><a name=\"hccontrareferencia-ref-2026-0001\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-derivacion-contrareferencia.html\">Contrareferencia</a></p></div><p><b>Identificador de la derivación</b>: <code>http://aps.losaromos.example.org/referral</code>/REF-2026-0001</p><p><b>identifier</b>: <code>http://especialidad.example.org/counter-referral</code>/CR-2026-0001</p><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 11488-4}\">Consult note</span></p><p><b>encounter</b>: <a href=\"Encounter-encuentro-ref-2026-0001.html\">Encounter: identifier = http://especialidad.example.org/encounter#ENC-2026-0001; status = planned; class = Ambulatory (ActCode#AMB); serviceType = Cardiology; period = 2026-12-02 10:00:00-0300 --&gt; 2026-12-02 10:30:00-0300</a></p><p><b>date</b>: 2026-12-03 10:00:00-0300</p><p><b>author</b>: <a href=\"PractitionerRole-rol-especialista.html\">Carlos Rojas (official) (http://www.registrocivil.cl/run#33333333-3): Specialist at Servicio de Cardiología (http://especialidad.example.org/organization#CARDIOLOGIA)</a></p><p><b>title</b>: Counter-referral</p></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-referral-identifier" ] ;
+     fhir:Extension.valueIdentifier [
+       fhir:Identifier.system [ fhir:value "http://aps.losaromos.example.org/referral" ] ;
+       fhir:Identifier.value [ fhir:value "REF-2026-0001" ]
+     ]
+  ] ;
+  fhir:Composition.identifier [
+     fhir:Identifier.system [ fhir:value "http://especialidad.example.org/counter-referral" ] ;
+     fhir:Identifier.value [ fhir:value "CR-2026-0001" ]
+  ] ;
+  fhir:Composition.status [ fhir:value "final"] ;
+  fhir:Composition.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a loinc:11488-4 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "11488-4" ] ;
+       fhir:Coding.display [ fhir:value "Consult note" ]
+     ]
+  ] ;
+  fhir:Composition.subject [
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Patient/maria-gonzalez> ;
+     fhir:Reference.reference [ fhir:value "Patient/maria-gonzalez" ]
+  ] ;
+  fhir:Composition.encounter [
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Encounter/encuentro-ref-2026-0001> ;
+     fhir:Reference.reference [ fhir:value "Encounter/encuentro-ref-2026-0001" ]
+  ] ;
+  fhir:Composition.date [ fhir:value "2026-12-03T10:00:00-03:00"^^xsd:dateTime] ;
+  fhir:Composition.author [
+     fhir:index 0 ;
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/PractitionerRole/rol-especialista> ;
+     fhir:Reference.reference [ fhir:value "PractitionerRole/rol-especialista" ]
+  ] ;
+  fhir:Composition.title [ fhir:value "Counter-referral"] ;
+  fhir:Composition.section [
+     fhir:index 0 ;
+     fhir:Composition.section.title [ fhir:value "Diagnosis" ] ;
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.text [ fhir:value "Diagnosis" ]
+     ] ;
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "generated" ] ;
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Chronic systolic heart failure, LVEF 35% (ICD-10-CM I50.22).</div>"
+     ] ;
+     fhir:Composition.section.entry [
+       fhir:index 0 ;
+       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Condition/diagnostico-ref-2026-0001> ;
+       fhir:Reference.reference [ fhir:value "Condition/diagnostico-ref-2026-0001" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:Composition.section.title [ fhir:value "Plan" ] ;
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.text [ fhir:value "Plan" ]
+     ] ;
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "generated" ] ;
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Start heart-failure treatment; control in APS in 2 weeks.</div>"
+     ] ;
+     fhir:Composition.section.entry [
+       fhir:index 0 ;
+       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/CarePlan/plan-ref-2026-0001> ;
+       fhir:Reference.reference [ fhir:value "CarePlan/plan-ref-2026-0001" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:Composition.section.title [ fhir:value "Follow-up indications" ] ;
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.text [ fhir:value "Follow-up indications" ]
+     ] ;
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "generated" ] ;
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Blood pressure, weight and symptoms at each APS control; NT-proBNP in 3 months.</div>"
+     ]
+  ], [
+     fhir:index 3 ;
+     fhir:Composition.section.title [ fhir:value "Follow-up plan for APS" ] ;
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.text [ fhir:value "Follow-up plan for APS" ]
+     ] ;
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "generated" ] ;
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">APS follow-up as in the CarePlan; new referral to cardiology if dyspnoea worsens.</div>"
+     ] ;
+     fhir:Composition.section.entry [
+       fhir:index 0 ;
+       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/CarePlan/plan-ref-2026-0001> ;
+       fhir:Reference.reference [ fhir:value "CarePlan/plan-ref-2026-0001" ]
+     ]
+  ] .
+
+<DocumentReference/documento-ref-2026-0001> a fhir:DocumentReference ;
+  fhir:Resource.id [ fhir:value "documento-ref-2026-0001"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-documento" ;
+       fhir:index 0 ;
+       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-documento>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DocumentReference_documento-ref-2026-0001\"> </a><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference documento-ref-2026-0001</b></p><a name=\"documento-ref-2026-0001\"> </a><a name=\"hcdocumento-ref-2026-0001\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-derivacion-documento.html\">Documento de contrareferencia</a></p></div><p><b>masterIdentifier</b>: <code>http://especialidad.example.org/counter-referral</code>/CR-2026-0001</p><p><b>status</b>: Current</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 11488-4}\">Consult note</span></p><p><b>subject</b>: <a href=\"Patient-maria-gonzalez.html\">María González (official) Female, DoB: 1968-04-15 ( http://www.registrocivil.cl/run#11111111-1)</a></p><p><b>date</b>: 2026-12-03 10:00:00-0300</p><p><b>author</b>: <a href=\"PractitionerRole-rol-especialista.html\">Carlos Rojas (official) (http://www.registrocivil.cl/run#33333333-3): Specialist at Servicio de Cardiología (http://especialidad.example.org/organization#CARDIOLOGIA)</a></p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td>application/fhir+json</td><td><a href=\"Composition-contrareferencia-ref-2026-0001.html\">Composition Counter-referral</a></td></tr></table></blockquote><h3>Contexts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Encounter</b></td><td><b>Period</b></td><td><b>Related</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Encounter-encuentro-ref-2026-0001.html\">Encounter: identifier = http://especialidad.example.org/encounter#ENC-2026-0001; status = planned; class = Ambulatory (ActCode#AMB); serviceType = Cardiology; period = 2026-12-02 10:00:00-0300 --&gt; 2026-12-02 10:30:00-0300</a></td><td>2026-12-02 10:00:00-0300 --&gt; 2026-12-02 10:30:00-0300</td><td><a href=\"ServiceRequest-ref-2026-0001.html\">ServiceRequest Cardiology</a></td></tr></table></div>"
+  ] ;
+  fhir:DocumentReference.masterIdentifier [
+     fhir:Identifier.system [ fhir:value "http://especialidad.example.org/counter-referral" ] ;
+     fhir:Identifier.value [ fhir:value "CR-2026-0001" ]
+  ] ;
+  fhir:DocumentReference.status [ fhir:value "current"] ;
+  fhir:DocumentReference.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a loinc:11488-4 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "11488-4" ] ;
+       fhir:Coding.display [ fhir:value "Consult note" ]
+     ]
+  ] ;
+  fhir:DocumentReference.subject [
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Patient/maria-gonzalez> ;
+     fhir:Reference.reference [ fhir:value "Patient/maria-gonzalez" ]
+  ] ;
+  fhir:DocumentReference.date [ fhir:value "2026-12-03T10:00:00-03:00"^^xsd:dateTime] ;
+  fhir:DocumentReference.author [
+     fhir:index 0 ;
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/PractitionerRole/rol-especialista> ;
+     fhir:Reference.reference [ fhir:value "PractitionerRole/rol-especialista" ]
+  ] ;
+  fhir:DocumentReference.content [
+     fhir:index 0 ;
+     fhir:DocumentReference.content.attachment [
+       fhir:Attachment.contentType [ fhir:value "application/fhir+json" ] ;
+       fhir:Attachment.url [ fhir:value "Composition/contrareferencia-ref-2026-0001" ]
+     ]
+  ] ;
+  fhir:DocumentReference.context [
+     fhir:DocumentReference.context.encounter [
+       fhir:index 0 ;
+       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Encounter/encuentro-ref-2026-0001> ;
+       fhir:Reference.reference [ fhir:value "Encounter/encuentro-ref-2026-0001" ]
+     ] ;
+     fhir:DocumentReference.context.period [
+       fhir:Period.start [ fhir:value "2026-12-02T10:00:00-03:00"^^xsd:dateTime ] ;
+       fhir:Period.end [ fhir:value "2026-12-02T10:30:00-03:00"^^xsd:dateTime ]
+     ] ;
+     fhir:DocumentReference.context.related [
+       fhir:index 0 ;
+       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/ServiceRequest/ref-2026-0001> ;
+       fhir:Reference.reference [ fhir:value "ServiceRequest/ref-2026-0001" ]
+     ]
+  ] .
+
+<Condition/diagnostico-ref-2026-0001> a fhir:Condition ;
+  fhir:Resource.id [ fhir:value "diagnostico-ref-2026-0001"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-diagnostico" ;
+       fhir:index 0 ;
+       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-diagnostico>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_diagnostico-ref-2026-0001\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition diagnostico-ref-2026-0001</b></p><a name=\"diagnostico-ref-2026-0001\"> </a><a name=\"hcdiagnostico-ref-2026-0001\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-derivacion-diagnostico.html\">Diagnóstico de la contrareferencia</a></p></div><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/sid/icd-10-cm I50.22}, {http://snomed.info/sct 417996009}\">Insuficiencia cardiaca sistólica crónica (FEVI 35%)</span></p><p><b>subject</b>: <a href=\"Patient-maria-gonzalez.html\">María González (official) Female, DoB: 1968-04-15 ( http://www.registrocivil.cl/run#11111111-1)</a></p><p><b>encounter</b>: <a href=\"Encounter-encuentro-ref-2026-0001.html\">Encounter: identifier = http://especialidad.example.org/encounter#ENC-2026-0001; status = planned; class = Ambulatory (ActCode#AMB); serviceType = Cardiology; period = 2026-12-02 10:00:00-0300 --&gt; 2026-12-02 10:30:00-0300</a></p><p><b>note</b>: </p><blockquote><div><p>FEVI 35% por ecocardiograma. Sin isquemia aguda en el ECG.</p>\n</div></blockquote></div>"
+  ] ;
+  fhir:Condition.clinicalStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-clinical" ] ;
+       fhir:Coding.code [ fhir:value "active" ] ;
+       fhir:Coding.display [ fhir:value "Active" ]
+     ]
+  ] ;
+  fhir:Condition.verificationStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-ver-status" ] ;
+       fhir:Coding.code [ fhir:value "confirmed" ] ;
+       fhir:Coding.display [ fhir:value "Confirmed" ]
+     ]
+  ] ;
+  fhir:Condition.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/sid/icd-10-cm" ] ;
+       fhir:Coding.code [ fhir:value "I50.22" ] ;
+       fhir:Coding.display [ fhir:value "Chronic systolic (congestive) heart failure" ]
+     ], [
+       fhir:index 1 ;
+       a sct:417996009 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "417996009" ] ;
+       fhir:Coding.display [ fhir:value "Systolic heart failure" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Insuficiencia cardiaca sistólica crónica (FEVI 35%)" ]
+  ] ;
+  fhir:Condition.subject [
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Patient/maria-gonzalez> ;
+     fhir:Reference.reference [ fhir:value "Patient/maria-gonzalez" ]
+  ] ;
+  fhir:Condition.encounter [
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Encounter/encuentro-ref-2026-0001> ;
+     fhir:Reference.reference [ fhir:value "Encounter/encuentro-ref-2026-0001" ]
+  ] ;
+  fhir:Condition.note [
+     fhir:index 0 ;
+     fhir:Annotation.text [ fhir:value "FEVI 35% por ecocardiograma. Sin isquemia aguda en el ECG." ]
+  ] .
+
+<CarePlan/plan-ref-2026-0001> a fhir:CarePlan ;
+  fhir:Resource.id [ fhir:value "plan-ref-2026-0001"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-plan-seguimiento" ;
+       fhir:index 0 ;
+       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-plan-seguimiento>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"CarePlan_plan-ref-2026-0001\"> </a><p class=\"res-header-id\"><b>Generated Narrative: CarePlan plan-ref-2026-0001</b></p><a name=\"plan-ref-2026-0001\"> </a><a name=\"hcplan-ref-2026-0001\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-derivacion-plan-seguimiento.html\">Plan de seguimiento para APS</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>subject</b>: <a href=\"Patient-maria-gonzalez.html\">María González (official) Female, DoB: 1968-04-15 ( http://www.registrocivil.cl/run#11111111-1)</a></p><p><b>encounter</b>: <a href=\"Encounter-encuentro-ref-2026-0001.html\">Encounter: identifier = http://especialidad.example.org/encounter#ENC-2026-0001; status = planned; class = Ambulatory (ActCode#AMB); serviceType = Cardiology; period = 2026-12-02 10:00:00-0300 --&gt; 2026-12-02 10:30:00-0300</a></p><p><b>author</b>: <a href=\"PractitionerRole-rol-especialista.html\">Carlos Rojas (official) (http://www.registrocivil.cl/run#33333333-3): Specialist at Servicio de Cardiología (http://especialidad.example.org/organization#CARDIOLOGIA)</a></p><p><b>addresses</b>: <a href=\"Condition-diagnostico-ref-2026-0001.html\">Condition Insuficiencia cardiaca sistólica crónica (FEVI 35%)</a></p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Status</b></td><td><b>Description</b></td></tr><tr><td style=\"display: none\">*</td><td>active</td><td>Control en APS en 2 semanas: presión arterial, peso, síntomas.</td></tr></table></blockquote><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Status</b></td><td><b>Description</b></td></tr><tr><td style=\"display: none\">*</td><td>active</td><td>NT-proBNP de control en 3 meses.</td></tr></table></blockquote><blockquote><p><b>activity</b></p><p><b>reference</b>: <a href=\"ServiceRequest-ref-2026-0001.html\">ServiceRequest Cardiology</a></p></blockquote></div>"
+  ] ;
+  fhir:CarePlan.status [ fhir:value "active"] ;
+  fhir:CarePlan.intent [ fhir:value "plan"] ;
+  fhir:CarePlan.subject [
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Patient/maria-gonzalez> ;
+     fhir:Reference.reference [ fhir:value "Patient/maria-gonzalez" ]
+  ] ;
+  fhir:CarePlan.encounter [
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Encounter/encuentro-ref-2026-0001> ;
+     fhir:Reference.reference [ fhir:value "Encounter/encuentro-ref-2026-0001" ]
+  ] ;
+  fhir:CarePlan.author [
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/PractitionerRole/rol-especialista> ;
+     fhir:Reference.reference [ fhir:value "PractitionerRole/rol-especialista" ]
+  ] ;
+  fhir:CarePlan.addresses [
+     fhir:index 0 ;
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Condition/diagnostico-ref-2026-0001> ;
+     fhir:Reference.reference [ fhir:value "Condition/diagnostico-ref-2026-0001" ]
+  ] ;
+  fhir:CarePlan.activity [
+     fhir:index 0 ;
+     fhir:CarePlan.activity.detail [
+       fhir:CarePlan.activity.detail.status [ fhir:value "active" ] ;
+       fhir:CarePlan.activity.detail.description [ fhir:value "Control en APS en 2 semanas: presión arterial, peso, síntomas." ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:CarePlan.activity.detail [
+       fhir:CarePlan.activity.detail.status [ fhir:value "active" ] ;
+       fhir:CarePlan.activity.detail.description [ fhir:value "NT-proBNP de control en 3 meses." ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:CarePlan.activity.reference [
+       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/ServiceRequest/ref-2026-0001> ;
+       fhir:Reference.reference [ fhir:value "ServiceRequest/ref-2026-0001" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://josemandrade.github.io/prueba-his-muse-nvidia/Bundle/bundle-pi3-ref-2026-0001.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

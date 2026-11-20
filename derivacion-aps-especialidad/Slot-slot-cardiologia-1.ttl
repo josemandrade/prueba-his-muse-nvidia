@@ -1,0 +1,29 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://josemandrade.github.io/prueba-his-muse-nvidia/Slot/slot-cardiologia-1> a fhir:Slot ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "slot-cardiologia-1"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Slot slot-cardiologia-1</b></p><a name=\"slot-cardiologia-1\"> </a><a name=\"hcslot-cardiologia-1\"> </a><p><b>schedule</b>: <a href=\"Schedule-schedule-cardiologia.html\">Schedule: planningHorizon = 2026-12-01 08:00:00-0300 --&gt; 2026-12-31 17:00:00-0300; comment = Agenda de la consulta de cardiología.</a></p><p><b>status</b>: Busy</p><p><b>start</b>: 2026-12-02 10:00:00-0300</p><p><b>end</b>: 2026-12-02 10:30:00-0300</p></div>"
+  ] ;
+  fhir:Slot.schedule [
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Schedule/schedule-cardiologia> ;
+     fhir:Reference.reference [ fhir:value "Schedule/schedule-cardiologia" ]
+  ] ;
+  fhir:Slot.status [ fhir:value "busy"] ;
+  fhir:Slot.start [ fhir:value "2026-12-02T10:00:00-03:00"^^xsd:dateTime] ;
+  fhir:Slot.end [ fhir:value "2026-12-02T10:30:00-03:00"^^xsd:dateTime] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://josemandrade.github.io/prueba-his-muse-nvidia/Slot/slot-cardiologia-1.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

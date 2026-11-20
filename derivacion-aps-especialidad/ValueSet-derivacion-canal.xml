@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="derivacion-canal"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet derivacion-canal</b></p><a name="derivacion-canal"> </a><a name="hcderivacion-canal"> </a><ul><li>Include all codes defined in <a href="CodeSystem-derivacion-canal.html"><code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-canal</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.1.0</span></li></ul></div>
+  </text>
+  <url value="https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-canal"/>
+  <version value="0.1.0"/>
+  <name value="DerivacionCanal"/>
+  <title value="Canal de notificación"/>
+  <status value="draft"/>
+  <date value="2026-11-20T12:33:32+00:00"/>
+  <description value="Canales de notificación de la derivación."/>
+  <compose>
+    <include>
+      <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-canal"/>
+    </include>
+  </compose>
+</ValueSet>

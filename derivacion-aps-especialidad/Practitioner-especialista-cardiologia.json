@@ -1,0 +1,18 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "especialista-cardiologia",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner especialista-cardiologia</b></p><a name=\"especialista-cardiologia\"> </a><a name=\"hcespecialista-cardiologia\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Carlos Rojas (official) (http://www.registrocivil.cl/run#33333333-3)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Administrative gender\">Gender:</td><td colspan=\"3\">Male</td></tr></table></div>"
+  },
+  "identifier" : [{
+    "system" : "http://www.registrocivil.cl/run",
+    "value" : "33333333-3"
+  }],
+  "name" : [{
+    "use" : "official",
+    "family" : "Rojas",
+    "given" : ["Carlos"]
+  }],
+  "gender" : "male"
+}

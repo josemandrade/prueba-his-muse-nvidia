@@ -1,0 +1,27 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "derivacion-base-cruce",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem derivacion-base-cruce</b></p><a name=\"derivacion-base-cruce\"> </a><a name=\"hcderivacion-base-cruce\"> </a><p>This  code system <code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-base-cruce</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">identifier<a name=\"derivacion-base-cruce-identifier\"> </a></td><td>Identifier</td><td>El cruce se estableció por un identificador compartido.</td></tr><tr><td style=\"white-space:nowrap\">demographics<a name=\"derivacion-base-cruce-demographics\"> </a></td><td>Demographics</td><td>El cruce se estableció por datos demográficos.</td></tr></table></div>"
+  },
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-base-cruce",
+  "version" : "0.1.0",
+  "name" : "DerivacionBaseCruceCS",
+  "title" : "Base del cruce de identidad",
+  "status" : "draft",
+  "date" : "2026-11-20T12:33:32+00:00",
+  "description" : "Cómo se estableció el cruce de identidad en el MPI (lista local).",
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "identifier",
+    "display" : "Identifier",
+    "definition" : "El cruce se estableció por un identificador compartido."
+  },
+  {
+    "code" : "demographics",
+    "display" : "Demographics",
+    "definition" : "El cruce se estableció por datos demográficos."
+  }]
+}

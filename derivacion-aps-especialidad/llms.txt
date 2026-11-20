@@ -1,0 +1,111 @@
+# hl7.fhir.uv.test.derivacion-aps-especialidad#0.1.0: Derivación APS → especialidad con contrareferencia
+
+## Pages
+
+* [Derivación APS → especialidad](index.md)
+* [Operaciones](operations.md)
+* [Diagramas de secuencia](sequences.md)
+* [Terminología](terminology.md)
+* [Proceso (BPMN)](process.md)
+* [Reglas y retención](rules.md)
+* [Ciclo de vida](lifecycle.md)
+* [Diagrama de recursos](resources.md)
+* [Relación con IHE](ihe.md)
+* [Mapeo de datos](mapping.md)
+* [Perfiles](profiles.md)
+* [Artifacts Summary](artifacts.md)
+* [Base legal y reporte](public-health.md)
+
+## Resources
+
+### CodeSystems
+
+* [Base del cruce de identidad](CodeSystem-derivacion-base-cruce.md)
+* [Canal de notificación](CodeSystem-derivacion-canal.md)
+* [Especialidad / servicio (catálogo local)](CodeSystem-derivacion-especialidad.md)
+* [Estado de la derivación](CodeSystem-derivacion-estado-referencia.md)
+* [Motivo de rechazo](CodeSystem-derivacion-motivo-rechazo.md)
+* [Resultado de la entrega de una notificación](CodeSystem-derivacion-resultado-entrega.md)
+* [Rol en la derivación](CodeSystem-derivacion-rol.md)
+* [Código de la tarea de derivación](CodeSystem-derivacion-task-code.md)
+
+### ValueSets
+
+* [Base del cruce de identidad](ValueSet-derivacion-base-cruce.md)
+* [Canal de notificación](ValueSet-derivacion-canal.md)
+* [Especialidad / servicio (catálogo local)](ValueSet-derivacion-especialidad.md)
+* [Estado de la derivación](ValueSet-derivacion-estado-referencia.md)
+* [Motivo de rechazo](ValueSet-derivacion-motivo-rechazo.md)
+* [Resultado de la entrega de una notificación](ValueSet-derivacion-resultado-entrega.md)
+* [Rol en la derivación](ValueSet-derivacion-rol.md)
+* [Código de la tarea de derivación](ValueSet-derivacion-task-code.md)
+
+### Resource Profiles
+
+* [Cita de la derivación](StructureDefinition-derivacion-cita.md)
+* [Contrareferencia](StructureDefinition-derivacion-contrareferencia.md)
+* [Diagnóstico de la contrareferencia](StructureDefinition-derivacion-diagnostico.md)
+* [Documento de contrareferencia](StructureDefinition-derivacion-documento.md)
+* [Encuentro de especialidad](StructureDefinition-derivacion-encuentro.md)
+* [Notificación](StructureDefinition-derivacion-notificacion.md)
+* [Paciente de la derivación](StructureDefinition-derivacion-paciente.md)
+* [Plan de seguimiento para APS](StructureDefinition-derivacion-plan-seguimiento.md)
+* [Rol en la derivación](StructureDefinition-derivacion-rol.md)
+* [Servicio de especialidad](StructureDefinition-derivacion-servicio.md)
+* [Solicitud de derivación](StructureDefinition-derivacion-solicitud.md)
+* [Tarea de derivación (registro de estado)](StructureDefinition-derivacion-tarea.md)
+
+### Extensions
+
+* [Resultado de la entrega](StructureDefinition-derivacion-delivery-outcome.md)
+* [Base del cruce de identidad](StructureDefinition-derivacion-match-basis.md)
+* [Confianza del cruce de identidad](StructureDefinition-derivacion-match-confidence.md)
+* [Conteo de persecuciones de esta oferta](StructureDefinition-derivacion-offer-chase-count.md)
+* [Conteo de rechazos de esta oferta](StructureDefinition-derivacion-offer-decline-count.md)
+* [Número de oferta (de esta derivación)](StructureDefinition-derivacion-offer-number.md)
+* [Canal de contacto preferido](StructureDefinition-derivacion-preferred-contact-channel.md)
+* [Identificador de la derivación](StructureDefinition-derivacion-referral-identifier.md)
+* [Conteo de re-agendamientos](StructureDefinition-derivacion-rescheduling-count.md)
+* [Plazo de aceptación](StructureDefinition-derivacion-sla-acceptance-deadline.md)
+* [Plazo de confirmación](StructureDefinition-derivacion-sla-confirmation-deadline.md)
+* [Plazo de contrareferencia](StructureDefinition-derivacion-sla-counterreferral-deadline.md)
+* [Plazo de oferta de cita](StructureDefinition-derivacion-sla-offer-deadline.md)
+* [Plazo de re-triaje](StructureDefinition-derivacion-sla-retriage-deadline.md)
+
+### ImplementationGuides
+
+* [Derivación APS → especialidad con contrareferencia](index.md)
+
+### Examples
+
+* [cita-ref-2026-0001 (Appointment)](Appointment-cita-ref-2026-0001.md)
+* [respuesta-cita-1 (AppointmentResponse)](AppointmentResponse-respuesta-cita-1.md)
+* [bundle-pi0-ref-2026-0001 (Bundle)](Bundle-bundle-pi0-ref-2026-0001.md)
+* [bundle-pi3-ref-2026-0001 (Bundle)](Bundle-bundle-pi3-ref-2026-0001.md)
+* [plan-ref-2026-0001 (CarePlan)](CarePlan-plan-ref-2026-0001.md)
+* [notificacion-aceptacion-ref-2026-0001 (Communication)](Communication-notificacion-aceptacion-ref-2026-0001.md)
+* [Counter-referral (Composition)](Composition-contrareferencia-ref-2026-0001.md)
+* [diagnostico-ref-2026-0001 (Condition)](Condition-diagnostico-ref-2026-0001.md)
+* [documento-ref-2026-0001 (DocumentReference)](DocumentReference-documento-ref-2026-0001.md)
+* [aps-encounter-2026-11-19 (Encounter)](Encounter-aps-encounter-2026-11-19.md)
+* [encuentro-ref-2026-0001 (Encounter)](Encounter-encuentro-ref-2026-0001.md)
+* [Cardiology FHIR endpoint (Endpoint)](Endpoint-endpoint-cardiologia.md)
+* [Cardiology (HealthcareService)](HealthcareService-servicio-cardiologia.md)
+* [Consulta de Cardiología (Location)](Location-location-cardiologia.md)
+* [ecg-2026-11-19 (Observation)](Observation-ecg-2026-11-19.md)
+* [ntprobnp-2026-11-19 (Observation)](Observation-ntprobnp-2026-11-19.md)
+* [Servicio de Cardiología (Organization)](Organization-org-cardiologia.md)
+* [CESFAM Los Aromos (Organization)](Organization-org-cesfam-los-aromos.md)
+* [Hub de Derivación de la Red (Organization)](Organization-org-hub.md)
+* [maria-gonzalez (Patient)](Patient-maria-gonzalez.md)
+* [especialista-cardiologia (Practitioner)](Practitioner-especialista-cardiologia.md)
+* [medico-aps (Practitioner)](Practitioner-medico-aps.md)
+* [rol-admin-aps (PractitionerRole)](PractitionerRole-rol-admin-aps.md)
+* [rol-agendador (PractitionerRole)](PractitionerRole-rol-agendador.md)
+* [rol-especialista (PractitionerRole)](PractitionerRole-rol-especialista.md)
+* [rol-medico-aps (PractitionerRole)](PractitionerRole-rol-medico-aps.md)
+* [rol-triaje (PractitionerRole)](PractitionerRole-rol-triaje.md)
+* [schedule-cardiologia (Schedule)](Schedule-schedule-cardiologia.md)
+* [ref-2026-0001 (ServiceRequest)](ServiceRequest-ref-2026-0001.md)
+* [slot-cardiologia-1 (Slot)](Slot-slot-cardiologia-1.md)
+* [tarea-ref-2026-0001 (Task)](Task-tarea-ref-2026-0001.md)

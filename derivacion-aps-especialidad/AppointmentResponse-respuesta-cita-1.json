@@ -1,0 +1,15 @@
+{
+  "resourceType" : "AppointmentResponse",
+  "id" : "respuesta-cita-1",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: AppointmentResponse respuesta-cita-1</b></p><a name=\"respuesta-cita-1\"> </a><a name=\"hcrespuesta-cita-1\"> </a><p><b>appointment</b>: <a href=\"Appointment-cita-ref-2026-0001.html\">Appointment: extension = 1; identifier = http://especialidad.example.org/appointment#CITA-2026-0001; status = proposed; serviceType = Cardiology; start = 2026-12-02 10:00:00-0300; end = 2026-12-02 10:30:00-0300; created = 2026-11-24 11:00:00-0300; patientInstruction = Ayuno no necesario. Traer los exámenes previos.</a></p><p><b>actor</b>: <a href=\"Patient-maria-gonzalez.html\">María González (official) Female, DoB: 1968-04-15 ( http://www.registrocivil.cl/run#11111111-1)</a></p><p><b>participantStatus</b>: Accepted</p></div>"
+  },
+  "appointment" : {
+    "reference" : "Appointment/cita-ref-2026-0001"
+  },
+  "actor" : {
+    "reference" : "Patient/maria-gonzalez"
+  },
+  "participantStatus" : "accepted"
+}

@@ -1,0 +1,14 @@
+{
+  "resourceType" : "Organization",
+  "id" : "org-cardiologia",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization org-cardiologia</b></p><a name=\"org-cardiologia\"> </a><a name=\"hcorg-cardiologia\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Servicio de Cardiología (http://especialidad.example.org/organization#CARDIOLOGIA)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr></table></div>"
+  },
+  "identifier" : [{
+    "system" : "http://especialidad.example.org/organization",
+    "value" : "CARDIOLOGIA"
+  }],
+  "active" : true,
+  "name" : "Servicio de Cardiología"
+}

@@ -1,0 +1,30 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://josemandrade.github.io/prueba-his-muse-nvidia/Location/location-cardiologia> a fhir:Location ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "location-cardiologia"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location location-cardiologia</b></p><a name=\"location-cardiologia\"> </a><a name=\"hclocation-cardiologia\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Consulta de Cardiología</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Physical location\">Address:</td><td colspan=\"3\">Hospital de la Red, piso 3, consulta 12</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The organization responsible for the provisioning and upkeep of the location\">Managed By:</td><td colspan=\"3\"><a href=\"Organization-org-cardiologia.html\">Servicio de Cardiología (http://especialidad.example.org/organization#CARDIOLOGIA)</a></td></tr></table></div>"
+  ] ;
+  fhir:Location.name [ fhir:value "Consulta de Cardiología"] ;
+  fhir:Location.address [
+     fhir:Address.text [ fhir:value "Hospital de la Red, piso 3, consulta 12" ]
+  ] ;
+  fhir:Location.managingOrganization [
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Organization/org-cardiologia> ;
+     fhir:Reference.reference [ fhir:value "Organization/org-cardiologia" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://josemandrade.github.io/prueba-his-muse-nvidia/Location/location-cardiologia.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

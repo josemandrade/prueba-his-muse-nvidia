@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Perfiles - Derivación APS → especialidad con contrareferencia v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Derivación APS → especialidad con contrareferencia</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - CI Build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul class="nav navbar-nav">
+  <li><a href="index.html">Derivación APS → especialidad</a></li>
+  <li><a href="process.html">Proceso (BPMN)</a></li>
+  <li><a href="resources.html">Diagrama de recursos</a></li>
+  <li><a href="profiles.html">Perfiles</a></li>
+  <li><a href="terminology.html">Terminología</a></li>
+  <li><a href="operations.html">Operaciones</a></li>
+  <li><a href="sequences.html">Diagramas de secuencia</a></li>
+  <li><a href="mapping.html">Mapeo de datos</a></li>
+  <li><a href="ihe.html">Relación con IHE</a></li>
+  <li><a href="lifecycle.html">Ciclo de vida</a></li>
+  <li><a href="rules.html">Reglas y retención</a></li>
+  <li><a href="public-health.html">Base legal y reporte</a></li>
+  <li><a href="artifacts.html">Artefactos</a></li>
+</ul>
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Perfiles</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Derivación APS → especialidad con contrareferencia - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://josemandrade.github.io/prueba-his-muse-nvidia/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Perfiles</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<h3 id="perfiles">Perfiles</h3>
+
+<p>La guía define sus propios perfiles (<code class="language-plaintext highlighter-rouge">Derivacion*</code>) sobre los recursos
+base de FHIR R4. No transcribe los perfiles de ninguna otra guía. La base
+de cada perfil es el recurso base de FHIR R4 (URL canónica en la tabla); el
+usuario puede elegir otra base para cualquier perfil — por ejemplo, para el
+paciente, <code class="language-plaintext highlighter-rouge">CorePacienteCl</code> de la guía chilena
+(<code class="language-plaintext highlighter-rouge">https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePacienteCl</code>,
+paquete <code class="language-plaintext highlighter-rouge">hl7.fhir.cl.clcore</code>, última 1.9.4, verificable en el registro FHIR).
+Si se elige esa base, la guía añade el paquete como dependencia y el
+<code class="language-plaintext highlighter-rouge">Parent:</code> del perfil es esa base; por defecto es el recurso base R4.</p>
+
+<p>El centro es el <a href="StructureDefinition-derivacion-tarea.html"><code class="language-plaintext highlighter-rouge">DerivacionTarea</code></a>:
+lleva el estado del flujo de trabajo, y cada paso posterior lo lee primero.
+El diagrama de recursos, con el Task en el centro y por qué, está en
+<a href="resources.html">Diagrama de recursos</a>.</p>
+
+<h4 id="perfiles-propios">Perfiles propios</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Perfil</th>
+      <th>Recurso base</th>
+      <th>Restricciones clave</th>
+      <th>Ejemplo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="StructureDefinition-derivacion-paciente.html"><code class="language-plaintext highlighter-rouge">DerivacionPaciente</code></a></td>
+      <td><a href="http://hl7.org/fhir/StructureDefinition/Patient">Patient</a></td>
+      <td><code class="language-plaintext highlighter-rouge">identifier</code> 1..* (clave MPI + RUN); <code class="language-plaintext highlighter-rouge">telecom</code> 1..* (contacto obligatorio, C12); <code class="language-plaintext highlighter-rouge">name</code> 1..1; <code class="language-plaintext highlighter-rouge">birthDate</code> 1..1</td>
+      <td><a href="Patient-maria-gonzalez.html">María González</a></td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-derivacion-solicitud.html"><code class="language-plaintext highlighter-rouge">DerivacionSolicitud</code></a></td>
+      <td><a href="http://hl7.org/fhir/StructureDefinition/ServiceRequest">ServiceRequest</a></td>
+      <td><code class="language-plaintext highlighter-rouge">intent = order</code> (fijo); <code class="language-plaintext highlighter-rouge">subject</code> 1..1; <code class="language-plaintext highlighter-rouge">code</code> 1..1 (servicio solicitado, catálogo local); <code class="language-plaintext highlighter-rouge">reasonCode</code> 1..* (SNOMED CT); <code class="language-plaintext highlighter-rouge">priority</code> 1..1 (<code class="language-plaintext highlighter-rouge">routine</code> / <code class="language-plaintext highlighter-rouge">urgent</code>); <code class="language-plaintext highlighter-rouge">requester</code> 1..1; <code class="language-plaintext highlighter-rouge">authoredOn</code> 1..1</td>
+      <td><a href="ServiceRequest-ref-2026-0001.html">REF-2026-0001</a></td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-derivacion-tarea.html"><code class="language-plaintext highlighter-rouge">DerivacionTarea</code></a></td>
+      <td><a href="http://hl7.org/fhir/StructureDefinition/Task">Task</a></td>
+      <td><code class="language-plaintext highlighter-rouge">focus</code> 1..1 → ServiceRequest; <code class="language-plaintext highlighter-rouge">for</code> 1..1 → Patient; <code class="language-plaintext highlighter-rouge">intent = order</code> (fijo); <code class="language-plaintext highlighter-rouge">businessStatus</code> 1..1 (ValueSet local <code class="language-plaintext highlighter-rouge">DerivacionEstadoReferencia</code>); <code class="language-plaintext highlighter-rouge">statusReason</code> 0..1; extensiones SLA + conteos</td>
+      <td><a href="Task-tarea-ref-2026-0001.html">Tarea REF-2026-0001</a></td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-derivacion-cita.html"><code class="language-plaintext highlighter-rouge">DerivacionCita</code></a></td>
+      <td><a href="http://hl7.org/fhir/StructureDefinition/Appointment">Appointment</a></td>
+      <td><code class="language-plaintext highlighter-rouge">basedOn</code> 1..* → ServiceRequest; <code class="language-plaintext highlighter-rouge">slot</code> 0..* → Slot; <code class="language-plaintext highlighter-rouge">participant</code> 1..* (paciente + especialista + lugar); <code class="language-plaintext highlighter-rouge">patientInstruction</code> 0..1</td>
+      <td><a href="Appointment-cita-ref-2026-0001.html">Cita REF-2026-0001</a></td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-derivacion-encuentro.html"><code class="language-plaintext highlighter-rouge">DerivacionEncuentro</code></a></td>
+      <td><a href="http://hl7.org/fhir/StructureDefinition/Encounter">Encounter</a></td>
+      <td><code class="language-plaintext highlighter-rouge">class = AMB</code> (fijo); <code class="language-plaintext highlighter-rouge">subject</code> 1..1; <code class="language-plaintext highlighter-rouge">basedOn</code> 1..* → ServiceRequest; <code class="language-plaintext highlighter-rouge">appointment</code> 0..1; <code class="language-plaintext highlighter-rouge">serviceType</code> 1..1 (catálogo local)</td>
+      <td><a href="Encounter-encuentro-ref-2026-0001.html">Encuentro REF-2026-0001</a></td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-derivacion-contrareferencia.html"><code class="language-plaintext highlighter-rouge">DerivacionContrareferencia</code></a></td>
+      <td><a href="http://hl7.org/fhir/StructureDefinition/Composition">Composition</a></td>
+      <td><code class="language-plaintext highlighter-rouge">status = final</code> (fijo al enviar); <code class="language-plaintext highlighter-rouge">type</code> = LOINC 11488-4 "Consult note"; <code class="language-plaintext highlighter-rouge">subject</code> 1..1; <code class="language-plaintext highlighter-rouge">author</code> 1..1; secciones Diagnosis, Plan, Follow-up indications, Follow-up plan for APS</td>
+      <td><a href="Composition-contrareferencia-ref-2026-0001.html">Contrareferencia REF-2026-0001</a></td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-derivacion-documento.html"><code class="language-plaintext highlighter-rouge">DerivacionDocumento</code></a></td>
+      <td><a href="http://hl7.org/fhir/StructureDefinition/DocumentReference">DocumentReference</a></td>
+      <td><code class="language-plaintext highlighter-rouge">status = current</code> (fijo al enviar); <code class="language-plaintext highlighter-rouge">type</code> = LOINC 11488-4; <code class="language-plaintext highlighter-rouge">subject</code> 1..1; <code class="language-plaintext highlighter-rouge">content.attachment.url</code> → Composition; <code class="language-plaintext highlighter-rouge">context.related</code> → ServiceRequest</td>
+      <td><a href="DocumentReference-documento-ref-2026-0001.html">Documento REF-2026-0001</a></td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-derivacion-diagnostico.html"><code class="language-plaintext highlighter-rouge">DerivacionDiagnostico</code></a></td>
+      <td><a href="http://hl7.org/fhir/StructureDefinition/Condition">Condition</a></td>
+      <td><code class="language-plaintext highlighter-rouge">code</code> 1..1 (ICD-10-CM I50.22 + SNOMED CT 417996009); <code class="language-plaintext highlighter-rouge">subject</code> 1..1; <code class="language-plaintext highlighter-rouge">encounter</code> 1..1; <code class="language-plaintext highlighter-rouge">clinicalStatus = active</code>; <code class="language-plaintext highlighter-rouge">verificationStatus = confirmed</code></td>
+      <td><a href="Condition-diagnostico-ref-2026-0001.html">Diagnóstico REF-2026-0001</a></td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-derivacion-plan-seguimiento.html"><code class="language-plaintext highlighter-rouge">DerivacionPlanSeguimiento</code></a></td>
+      <td><a href="http://hl7.org/fhir/StructureDefinition/CarePlan">CarePlan</a></td>
+      <td><code class="language-plaintext highlighter-rouge">status = active</code>; <code class="language-plaintext highlighter-rouge">intent = plan</code> (fijo); <code class="language-plaintext highlighter-rouge">subject</code> 1..1; <code class="language-plaintext highlighter-rouge">addresses</code> 1..* → Condition; <code class="language-plaintext highlighter-rouge">activity.reference</code> → ServiceRequest / Appointment / Task</td>
+      <td><a href="CarePlan-plan-ref-2026-0001.html">Plan REF-2026-0001</a></td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-derivacion-notificacion.html"><code class="language-plaintext highlighter-rouge">DerivacionNotificacion</code></a></td>
+      <td><a href="http://hl7.org/fhir/StructureDefinition/Communication">Communication</a></td>
+      <td><code class="language-plaintext highlighter-rouge">status = completed</code> (fijo); <code class="language-plaintext highlighter-rouge">basedOn</code> 1..* → Task; <code class="language-plaintext highlighter-rouge">sender</code> 1..1; <code class="language-plaintext highlighter-rouge">recipient</code> 1..<em>; <code class="language-plaintext highlighter-rouge">sent</code> 1..1; <code class="language-plaintext highlighter-rouge">medium</code> 1..</em> (lista local de canales)</td>
+      <td><a href="Communication-notificacion-aceptacion-ref-2026-0001.html">Notificación de aceptación</a></td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-derivacion-rol.html"><code class="language-plaintext highlighter-rouge">DerivacionRol</code></a></td>
+      <td><a href="http://hl7.org/fhir/StructureDefinition/PractitionerRole">PractitionerRole</a></td>
+      <td><code class="language-plaintext highlighter-rouge">practitioner</code> 1..1; <code class="language-plaintext highlighter-rouge">organization</code> 1..1; <code class="language-plaintext highlighter-rouge">code</code> 1..* (ValueSet <code class="language-plaintext highlighter-rouge">DerivacionRolVS</code>, seis roles)</td>
+      <td><a href="PractitionerRole-rol-medico-aps.html">Médico APS</a></td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-derivacion-servicio.html"><code class="language-plaintext highlighter-rouge">DerivacionServicio</code></a></td>
+      <td><a href="http://hl7.org/fhir/StructureDefinition/HealthcareService">HealthcareService</a></td>
+      <td><code class="language-plaintext highlighter-rouge">providedBy</code> 1..1 → Organization; <code class="language-plaintext highlighter-rouge">type</code> 1..1 (catálogo local); <code class="language-plaintext highlighter-rouge">active</code> 1..1; <code class="language-plaintext highlighter-rouge">endpoint</code> 0..* → Endpoint</td>
+      <td><a href="HealthcareService-servicio-cardiologia.html">Servicio de cardiología</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="extensiones">Extensiones</h4>
+
+<p>Las extensiones viven una sola vez en la guía y se reutilizan. Una
+extensión solo se usa donde ningún campo base lleva el significado.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Extensión</th>
+      <th>Contexto</th>
+      <th>Valor</th>
+      <th>Para qué</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="StructureDefinition-derivacion-sla-acceptance-deadline.html"><code class="language-plaintext highlighter-rouge">derivacion-sla-acceptance-deadline</code></a></td>
+      <td>Task</td>
+      <td>dateTime</td>
+      <td>Plazo de aceptación: creación + 5 días hábiles (2 si es urgente)</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-derivacion-sla-offer-deadline.html"><code class="language-plaintext highlighter-rouge">derivacion-sla-offer-deadline</code></a></td>
+      <td>Task</td>
+      <td>dateTime</td>
+      <td>Plazo de oferta de cita: aceptación + 10 días hábiles</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-derivacion-sla-counterreferral-deadline.html"><code class="language-plaintext highlighter-rouge">derivacion-sla-counterreferral-deadline</code></a></td>
+      <td>Task</td>
+      <td>dateTime</td>
+      <td>Plazo de contrareferencia: encuentro + 5 días hábiles</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-derivacion-sla-retriage-deadline.html"><code class="language-plaintext highlighter-rouge">derivacion-sla-retriage-deadline</code></a></td>
+      <td>Task</td>
+      <td>dateTime</td>
+      <td>Plazo de re-triaje: rechazo (o retorno por fallo de agendamiento) + 5 días hábiles</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-derivacion-sla-confirmation-deadline.html"><code class="language-plaintext highlighter-rouge">derivacion-sla-confirmation-deadline</code></a></td>
+      <td>Task</td>
+      <td>dateTime</td>
+      <td>Plazo de confirmación: oferta + 3 días hábiles (solo mientras una oferta está abierta)</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-derivacion-offer-decline-count.html"><code class="language-plaintext highlighter-rouge">derivacion-offer-decline-count</code></a></td>
+      <td>Task</td>
+      <td>integer</td>
+      <td>Rechazos de esta oferta (0–2; se reinicia por oferta)</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-derivacion-offer-chase-count.html"><code class="language-plaintext highlighter-rouge">derivacion-offer-chase-count</code></a></td>
+      <td>Task</td>
+      <td>integer</td>
+      <td>Persecuciones de esta oferta (0–2; se reinicia por oferta)</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-derivacion-rescheduling-count.html"><code class="language-plaintext highlighter-rouge">derivacion-rescheduling-count</code></a></td>
+      <td>Task</td>
+      <td>integer</td>
+      <td>Re-agendamientos de esta derivación (0–1; no se reinicia)</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-derivacion-offer-number.html"><code class="language-plaintext highlighter-rouge">derivacion-offer-number</code></a></td>
+      <td>Appointment</td>
+      <td>integer</td>
+      <td>Número de oferta de esta derivación (1ª oferta, re-oferta…)</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-derivacion-referral-identifier.html"><code class="language-plaintext highlighter-rouge">derivacion-referral-identifier</code></a></td>
+      <td>Composition</td>
+      <td>Identifier</td>
+      <td>El identificador de la derivación en la contrareferencia</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-derivacion-preferred-contact-channel.html"><code class="language-plaintext highlighter-rouge">derivacion-preferred-contact-channel</code></a></td>
+      <td>Patient</td>
+      <td>code</td>
+      <td>Canal preferido del paciente para las notificaciones</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-derivacion-delivery-outcome.html"><code class="language-plaintext highlighter-rouge">derivacion-delivery-outcome</code></a></td>
+      <td>Communication</td>
+      <td>code</td>
+      <td>Resultado de la entrega: delivered / failed</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-derivacion-match-basis.html"><code class="language-plaintext highlighter-rouge">derivacion-match-basis</code></a></td>
+      <td>Patient</td>
+      <td>code</td>
+      <td>Base del cruce de identidad del MPI: identifier / demographics</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-derivacion-match-confidence.html"><code class="language-plaintext highlighter-rouge">derivacion-match-confidence</code></a></td>
+      <td>Patient</td>
+      <td>decimal</td>
+      <td>Confianza del cruce de identidad del MPI (0–1)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="recursos-base-sin-perfil-propio">Recursos base sin perfil propio</h4>
+
+<p>La guía usa los recursos base de FHIR R4 sin restringirlos en un perfil
+propio donde la tabla de mapeo no lo exige: <code class="language-plaintext highlighter-rouge">Provenance</code> (historial de
+estados), <code class="language-plaintext highlighter-rouge">Bundle</code> (sobre de las operaciones de envío), <code class="language-plaintext highlighter-rouge">Subscription</code>
+(avisos de cambio de estado, propio de la guía), <code class="language-plaintext highlighter-rouge">Schedule</code>, <code class="language-plaintext highlighter-rouge">Slot</code>,
+<code class="language-plaintext highlighter-rouge">Location</code>, <code class="language-plaintext highlighter-rouge">Endpoint</code> y <code class="language-plaintext highlighter-rouge">AppointmentResponse</code>.</p>
+
+<h4 id="terminología-de-los-perfiles">Terminología de los perfiles</h4>
+
+<p>Cada campo codificado tiene su terminología en la tabla de la propuesta
+(§ Terminología) y en <a href="terminology.html">Terminología</a>: SNOMED CT para el
+motivo de derivación, ICD-10-CM + SNOMED CT para el diagnóstico, LOINC
+para los exámenes y el tipo de documento, y los ValueSets locales de esta
+guía para el estado, el rol, el motivo de rechazo, el canal y el catálogo
+de especialidades.</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href=""></a>.  Package hl7.fhir.uv.test.derivacion-aps-especialidad#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Nov 20, 2026 12:33+0000">2026-11-20</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

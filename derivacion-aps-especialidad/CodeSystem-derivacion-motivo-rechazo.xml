@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="derivacion-motivo-rechazo"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem derivacion-motivo-rechazo</b></p><a name="derivacion-motivo-rechazo"> </a><a name="hcderivacion-motivo-rechazo"> </a><p>This  code system <code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-motivo-rechazo</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">missing-exam<a name="derivacion-motivo-rechazo-missing-exam"> </a></td><td>Missing exam</td><td>Falta un examen necesario para el triaje (ejemplo trabajado: falta el ecocardiograma).</td></tr><tr><td style="white-space:nowrap">wrong-specialty<a name="derivacion-motivo-rechazo-wrong-specialty"> </a></td><td>Wrong specialty</td><td>La derivación no corresponde a esta especialidad.</td></tr><tr><td style="white-space:nowrap">capacity<a name="derivacion-motivo-rechazo-capacity"> </a></td><td>Capacity</td><td>La especialidad no tiene capacidad para atender la derivación en plazo.</td></tr></table></div>
+  </text>
+  <url value="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-motivo-rechazo"/>
+  <version value="0.1.0"/>
+  <name value="DerivacionMotivoRechazoCS"/>
+  <title value="Motivo de rechazo"/>
+  <status value="draft"/>
+  <date value="2026-11-20T12:33:32+00:00"/>
+  <description value="Motivos de rechazo de la derivación (lista local de la especialidad; el texto libre acompaña al código)."/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="missing-exam"/>
+    <display value="Missing exam"/>
+    <definition value="Falta un examen necesario para el triaje (ejemplo trabajado: falta el ecocardiograma)."/>
+  </concept>
+  <concept>
+    <code value="wrong-specialty"/>
+    <display value="Wrong specialty"/>
+    <definition value="La derivación no corresponde a esta especialidad."/>
+  </concept>
+  <concept>
+    <code value="capacity"/>
+    <display value="Capacity"/>
+    <definition value="La especialidad no tiene capacidad para atender la derivación en plazo."/>
+  </concept>
+</CodeSystem>

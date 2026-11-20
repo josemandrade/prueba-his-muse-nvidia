@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Ciclo de vida - Derivación APS → especialidad con contrareferencia v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"10"}
+    h3,h4,h5,h6{--heading-prefix:"10"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Derivación APS → especialidad con contrareferencia</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - CI Build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul class="nav navbar-nav">
+  <li><a href="index.html">Derivación APS → especialidad</a></li>
+  <li><a href="process.html">Proceso (BPMN)</a></li>
+  <li><a href="resources.html">Diagrama de recursos</a></li>
+  <li><a href="profiles.html">Perfiles</a></li>
+  <li><a href="terminology.html">Terminología</a></li>
+  <li><a href="operations.html">Operaciones</a></li>
+  <li><a href="sequences.html">Diagramas de secuencia</a></li>
+  <li><a href="mapping.html">Mapeo de datos</a></li>
+  <li><a href="ihe.html">Relación con IHE</a></li>
+  <li><a href="lifecycle.html">Ciclo de vida</a></li>
+  <li><a href="rules.html">Reglas y retención</a></li>
+  <li><a href="public-health.html">Base legal y reporte</a></li>
+  <li><a href="artifacts.html">Artefactos</a></li>
+</ul>
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Ciclo de vida</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Derivación APS → especialidad con contrareferencia - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://josemandrade.github.io/prueba-his-muse-nvidia/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Ciclo de vida</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<h3 id="ciclo-de-vida">Ciclo de vida</h3>
+
+<p>Una tabla por (recurso, máquina): la operación que dispara cada
+transición (con su PI), las transiciones prohibidas y las invariantes
+entre máquinas, cada una con su test de transición prohibida. El estado
+del caso vive en el <code class="language-plaintext highlighter-rouge">Task</code>; los demás recursos son espejos o máquinas
+propias que el hub mantiene consistentes.</p>
+
+<h4 id="task-derivaciontarea--la-máquina-de-estados-de-la-derivación">Task (<code class="language-plaintext highlighter-rouge">DerivacionTarea</code>) — la máquina de estados de la derivación</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Estado del caso (<code class="language-plaintext highlighter-rouge">businessStatus</code>)</th>
+      <th><code class="language-plaintext highlighter-rouge">Task.status</code></th>
+      <th>Próximos estados permitidos (operación + PI)</th>
+      <th>Prohibido</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">requested</code></td>
+      <td><code class="language-plaintext highlighter-rouge">requested</code></td>
+      <td><code class="language-plaintext highlighter-rouge">received</code> (OP-1 enrutado, PI-0); <code class="language-plaintext highlighter-rouge">cancelled</code> (OP-8, cualquier PI)</td>
+      <td>Cualquier otro estado — una derivación no puede aceptarse, agendarse o completarse antes de recibirse.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">received</code></td>
+      <td><code class="language-plaintext highlighter-rouge">received</code></td>
+      <td><code class="language-plaintext highlighter-rouge">accepted</code> (OP-2 aceptar, PI-1); <code class="language-plaintext highlighter-rouge">rejected</code> (OP-2 rechazar, PI-1); <code class="language-plaintext highlighter-rouge">cancelled</code> (OP-8)</td>
+      <td><code class="language-plaintext highlighter-rouge">scheduled</code>, <code class="language-plaintext highlighter-rouge">completed</code>, <code class="language-plaintext highlighter-rouge">counter-referred</code>, <code class="language-plaintext highlighter-rouge">no-show</code> — no hay cita antes del triaje.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">accepted</code></td>
+      <td><code class="language-plaintext highlighter-rouge">accepted</code></td>
+      <td><code class="language-plaintext highlighter-rouge">scheduled</code> (OP-3/OP-4 reserva, PI-2); <code class="language-plaintext highlighter-rouge">cancelled</code> (OP-8)</td>
+      <td><code class="language-plaintext highlighter-rouge">completed</code>, <code class="language-plaintext highlighter-rouge">counter-referred</code>, <code class="language-plaintext highlighter-rouge">no-show</code> — no hay visita antes de la reserva.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">rejected</code></td>
+      <td><code class="language-plaintext highlighter-rouge">rejected</code></td>
+      <td>(terminal, tras la decisión de re-triaje de APS — la re-derivación es un Task + ServiceRequest NUEVOS, OP-1, PI-0); <code class="language-plaintext highlighter-rouge">cancelled</code> (OP-8, antes de la decisión de re-triaje)</td>
+      <td><code class="language-plaintext highlighter-rouge">scheduled</code>, <code class="language-plaintext highlighter-rouge">completed</code>, <code class="language-plaintext highlighter-rouge">counter-referred</code> — una derivación rechazada nunca avanza; se cierra como <code class="language-plaintext highlighter-rouge">rejected</code> una vez APS decide el resultado del re-triaje (N1). La derivación se queda en <code class="language-plaintext highlighter-rouge">rejected</code> con el reloj de re-triaje corriendo hasta que APS decide.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">scheduled</code></td>
+      <td><code class="language-plaintext highlighter-rouge">ready</code></td>
+      <td><code class="language-plaintext highlighter-rouge">completed</code> (OP-5 encuentro terminado, PI-2 — el Encounter llegó a <code class="language-plaintext highlighter-rouge">finished</code>); <code class="language-plaintext highlighter-rouge">cancelled</code> (OP-8)</td>
+      <td><code class="language-plaintext highlighter-rouge">counter-referred</code> — no hay contrareferencia antes de la visita. El <code class="language-plaintext highlighter-rouge">no-show</code> NO es una transición del Task desde aquí (el no-show vive en el Appointment; el Task se mueve en el segundo no-show).</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">completed</code></td>
+      <td><code class="language-plaintext highlighter-rouge">in-progress</code></td>
+      <td><code class="language-plaintext highlighter-rouge">counter-referred</code> (OP-6, PI-3); <code class="language-plaintext highlighter-rouge">cancelled</code> (OP-8 — solo antes de enviarse la contrareferencia)</td>
+      <td><code class="language-plaintext highlighter-rouge">scheduled</code>, <code class="language-plaintext highlighter-rouge">accepted</code> — la visita está hecha; el único camino es la contrareferencia.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">counter-referred</code></td>
+      <td><code class="language-plaintext highlighter-rouge">completed</code></td>
+      <td>— (terminal)</td>
+      <td>Todas las transiciones — el ciclo está cerrado. Una corrección es una versión nueva del documento, no un cambio de estado.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">no-show</code></td>
+      <td><code class="language-plaintext highlighter-rouge">failed</code></td>
+      <td>— (terminal)</td>
+      <td>Todas las transiciones — la derivación se cerró tras el segundo no-show. Una derivación nueva necesita un Task nuevo.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cancelled</code></td>
+      <td><code class="language-plaintext highlighter-rouge">cancelled</code></td>
+      <td>— (terminal, salvo el único camino de corrección: re-apertura al estado previo a la cancelación con una entrada explícita de re-apertura, solo el operador del hub)</td>
+      <td>Todas las demás transiciones — una derivación cancelada no puede avanzar; el hub rechaza los cambios de estado de derivaciones terminales.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Condición terminal basada en tiempo: los plazos SLA no son estados — un
+incumplimiento de plazo dispara una escalada (hub → especialidad + APS, o
+hub → APS para el timeout de re-triaje, o la persecución del agendador
+para el timeout de confirmación), nunca un cambio de estado. Una
+derivación nunca se cierra solo por timeout.</p>
+
+<h4 id="servicerequest-derivacionsolicitud--espejo-grueso">ServiceRequest (<code class="language-plaintext highlighter-rouge">DerivacionSolicitud</code>) — espejo grueso</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th><code class="language-plaintext highlighter-rouge">ServiceRequest.status</code></th>
+      <th>Próximos estados permitidos (operación + PI)</th>
+      <th>Prohibido</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">draft</code></td>
+      <td><code class="language-plaintext highlighter-rouge">active</code> (OP-1 crear, PI-0)</td>
+      <td>Cualquier otro estado — un borrador no se ha enviado.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">active</code></td>
+      <td><code class="language-plaintext highlighter-rouge">completed</code> (OP-6, PI-3); <code class="language-plaintext highlighter-rouge">revoked</code> (OP-8 cancelar, <code class="language-plaintext highlighter-rouge">no-show</code> terminal PI-2, o cierre por rechazo en la decisión de re-triaje de APS, PI-1)</td>
+      <td><code class="language-plaintext highlighter-rouge">draft</code>, <code class="language-plaintext highlighter-rouge">on-hold</code> — el caso no tiene paso de espera; una suspensión es una cancelación + re-derivación, nunca una espera.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">completed</code></td>
+      <td>— (terminal)</td>
+      <td>Todas las transiciones.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">revoked</code></td>
+      <td>— (terminal)</td>
+      <td>Todas las transiciones.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="appointment-derivacioncita--la-cadena-ofertareserva">Appointment (<code class="language-plaintext highlighter-rouge">DerivacionCita</code>) — la cadena oferta/reserva</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th><code class="language-plaintext highlighter-rouge">Appointment.status</code></th>
+      <th>Próximos estados permitidos (operación + PI)</th>
+      <th>Prohibido</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">proposed</code></td>
+      <td><code class="language-plaintext highlighter-rouge">pending</code> (OP-3 confirmar, PI-2); <code class="language-plaintext highlighter-rouge">cancelled</code> (OP-3 rechazar → la cita de la oferta se cancela y la re-oferta es un Appointment NUEVO, PI-2)</td>
+      <td><code class="language-plaintext highlighter-rouge">booked</code> — una cita propuesta no se reserva hasta que la paciente confirma.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">pending</code></td>
+      <td><code class="language-plaintext highlighter-rouge">booked</code> (OP-3 reservar, PI-2); <code class="language-plaintext highlighter-rouge">cancelled</code> (OP-8, PI-2)</td>
+      <td><code class="language-plaintext highlighter-rouge">proposed</code>, <code class="language-plaintext highlighter-rouge">noshow</code> — una cita pendiente no vuelve a propuesta ni puede ser un no-show.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">booked</code></td>
+      <td><code class="language-plaintext highlighter-rouge">arrived</code> (OP-5 asistir, PI-2); <code class="language-plaintext highlighter-rouge">noshow</code> (OP-5 no-show, PI-2); <code class="language-plaintext highlighter-rouge">cancelled</code> (OP-8, PI-2); <code class="language-plaintext highlighter-rouge">booked</code> (mismo Appointment, nuevo Slot — re-agendamiento tras un conflicto previo a la asistencia, PI-2)</td>
+      <td><code class="language-plaintext highlighter-rouge">proposed</code>, <code class="language-plaintext highlighter-rouge">pending</code> — una cita reservada no vuelve al ciclo de oferta; una oferta re-agendada tras un no-show es un Appointment NUEVO.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">arrived</code></td>
+      <td><code class="language-plaintext highlighter-rouge">fulfilled</code> (OP-5 encuentro terminado, PI-2)</td>
+      <td>Todos los demás estados — la llegada lleva a la visita.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">fulfilled</code></td>
+      <td>— (terminal para este Appointment)</td>
+      <td>Todas las transiciones.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">noshow</code></td>
+      <td>(terminal para este Appointment — la oferta re-agendada es un Appointment NUEVO, <code class="language-plaintext highlighter-rouge">proposed</code>, OP-4, PI-2)</td>
+      <td><code class="language-plaintext highlighter-rouge">booked</code>, <code class="language-plaintext highlighter-rouge">arrived</code>, <code class="language-plaintext highlighter-rouge">fulfilled</code> — un Appointment no-show nunca se reutiliza.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cancelled</code></td>
+      <td>— (terminal)</td>
+      <td>Todas las transiciones — un Appointment cancelado nunca se reutiliza.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>El Slot vuelve a <code class="language-plaintext highlighter-rouge">free</code> en <code class="language-plaintext highlighter-rouge">noshow</code> y en <code class="language-plaintext highlighter-rouge">cancelled</code> (<code class="language-plaintext highlighter-rouge">Slot.status</code>
+<code class="language-plaintext highlighter-rouge">busy</code> → <code class="language-plaintext highlighter-rouge">free</code>).</p>
+
+<h4 id="encounter-derivacionencuentro">Encounter (<code class="language-plaintext highlighter-rouge">DerivacionEncuentro</code>)</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th><code class="language-plaintext highlighter-rouge">Encounter.status</code></th>
+      <th>Próximos estados permitidos (operación + PI)</th>
+      <th>Prohibido</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">planned</code> (creado por OP-3 en la reserva, PI-2)</td>
+      <td><code class="language-plaintext highlighter-rouge">in-progress</code> (OP-5 asistir, PI-2); <code class="language-plaintext highlighter-rouge">cancelled</code> (OP-8 — solo antes de empezar la visita)</td>
+      <td><code class="language-plaintext highlighter-rouge">finished</code> — una visita no puede terminar antes de empezar.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">in-progress</code></td>
+      <td><code class="language-plaintext highlighter-rouge">finished</code> (OP-5 encuentro terminado, PI-2)</td>
+      <td><code class="language-plaintext highlighter-rouge">planned</code>, <code class="language-plaintext highlighter-rouge">cancelled</code> — una visita en curso no puede des-empezarse ni cancelarse (una cancelación tras empezar la visita se registra en el Task, no cancelando el Encounter).</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">finished</code></td>
+      <td>— (terminal)</td>
+      <td>Todas las transiciones.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="careplan-derivacionplanseguimiento--el-plan-de-seguimiento">CarePlan (<code class="language-plaintext highlighter-rouge">DerivacionPlanSeguimiento</code>) — el plan de seguimiento</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th><code class="language-plaintext highlighter-rouge">CarePlan.status</code></th>
+      <th>Próximos estados permitidos (operación + PI)</th>
+      <th>Prohibido</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">draft</code></td>
+      <td><code class="language-plaintext highlighter-rouge">active</code> (OP-6 enviar, PI-3)</td>
+      <td>Cualquier otro estado.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">active</code></td>
+      <td><code class="language-plaintext highlighter-rouge">completed</code> (APS completa el seguimiento, PI-3); <code class="language-plaintext highlighter-rouge">revoked</code> (el especialista retira el plan — versión nueva, PI-3)</td>
+      <td><code class="language-plaintext highlighter-rouge">draft</code> — un plan activo no vuelve a borrador.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">completed</code> / <code class="language-plaintext highlighter-rouge">revoked</code></td>
+      <td>— (terminal)</td>
+      <td>Todas las transiciones. Una actualización del plan es una versión nueva enlazada por <code class="language-plaintext highlighter-rouge">replaces</code> / <code class="language-plaintext highlighter-rouge">basedOn</code>, nunca una sobrescritura silenciosa.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><code class="language-plaintext highlighter-rouge">Communication</code> no tiene tabla de ciclo de vida: una notificación se envía
+(<code class="language-plaintext highlighter-rouge">status = completed</code>) o no se envía; el resultado de la entrega es la
+extensión <code class="language-plaintext highlighter-rouge">delivery-outcome</code>. <code class="language-plaintext highlighter-rouge">Condition</code> tampoco tiene tabla de flujo de
+trabajo aquí: sus estados clínico/de verificación (<code class="language-plaintext highlighter-rouge">active</code> / <code class="language-plaintext highlighter-rouge">confirmed</code>)
+no cambian en este caso.</p>
+
+<h4 id="invariantes-entre-máquinas">Invariantes entre máquinas</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Invariante</th>
+      <th>Test de transición prohibida</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>I1</td>
+      <td>El Task es la autoridad: ningún paso lee <code class="language-plaintext highlighter-rouge">ServiceRequest.status</code> para decidir el estado; cada transición del Task que cambia el estado grueso actualiza el ServiceRequest en la misma transacción (OP-1, OP-6, OP-8, cierre por no-show, cierre por rechazo).</td>
+      <td>Un Task en <code class="language-plaintext highlighter-rouge">accepted</code> con su ServiceRequest en <code class="language-plaintext highlighter-rouge">revoked</code> es inconsistente: el test lo rechaza.</td>
+    </tr>
+    <tr>
+      <td>I2</td>
+      <td>Una derivación en estado terminal del Task (<code class="language-plaintext highlighter-rouge">counter-referred</code>, <code class="language-plaintext highlighter-rouge">rejected</code>, <code class="language-plaintext highlighter-rouge">no-show</code>, <code class="language-plaintext highlighter-rouge">cancelled</code>) no admite más transiciones en ninguna máquina (salvo la re-apertura explícita de una cancelación errónea, solo por el operador del hub).</td>
+      <td>Un PATCH que mueva un Task <code class="language-plaintext highlighter-rouge">counter-referred</code> a <code class="language-plaintext highlighter-rouge">scheduled</code> se rechaza con 409.</td>
+    </tr>
+    <tr>
+      <td>I3</td>
+      <td>Un Appointment <code class="language-plaintext highlighter-rouge">noshow</code> o <code class="language-plaintext highlighter-rouge">cancelled</code> nunca se reutiliza; la re-oferta y la oferta re-agendada tras un no-show son Appointments nuevos.</td>
+      <td>Un PATCH que mueva un Appointment <code class="language-plaintext highlighter-rouge">noshow</code> a <code class="language-plaintext highlighter-rouge">booked</code> se rechaza con 409.</td>
+    </tr>
+    <tr>
+      <td>I4</td>
+      <td>No hay Encounter en un no-show: el no-show vive solo en el Appointment. Un Encounter <code class="language-plaintext highlighter-rouge">planned</code> existe desde la reserva.</td>
+      <td>Un Encounter creado en la asistencia (sin existir en la reserva) se rechaza.</td>
+    </tr>
+    <tr>
+      <td>I5</td>
+      <td>El plazo de contrareferencia corre desde el Encounter <code class="language-plaintext highlighter-rouge">finished</code>, no desde el Appointment <code class="language-plaintext highlighter-rouge">arrived</code>.</td>
+      <td>Un Task <code class="language-plaintext highlighter-rouge">completed</code> con <code class="language-plaintext highlighter-rouge">sla-counterreferral-deadline</code> calculado desde <code class="language-plaintext highlighter-rouge">arrived</code> es inconsistente: el test lo rechaza.</td>
+    </tr>
+    <tr>
+      <td>I6</td>
+      <td>Un Task <code class="language-plaintext highlighter-rouge">rejected</code> (cierre) tiene su ServiceRequest en <code class="language-plaintext highlighter-rouge">revoked</code> en la misma transacción (el cierre por rechazo revoca la solicitud vieja; la re-derivación es una solicitud NUEVA).</td>
+      <td>Un Task <code class="language-plaintext highlighter-rouge">rejected</code> (cerrado) con su ServiceRequest en <code class="language-plaintext highlighter-rouge">active</code> es inconsistente: el test lo rechaza.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href=""></a>.  Package hl7.fhir.uv.test.derivacion-aps-especialidad#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Nov 20, 2026 12:33+0000">2026-11-20</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

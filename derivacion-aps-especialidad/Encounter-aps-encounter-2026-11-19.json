@@ -1,0 +1,21 @@
+{
+  "resourceType" : "Encounter",
+  "id" : "aps-encounter-2026-11-19",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter aps-encounter-2026-11-19</b></p><a name=\"aps-encounter-2026-11-19\"> </a><a name=\"hcaps-encounter-2026-11-19\"> </a><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/7.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB\">ActCode: AMB</a> (Ambulatory)</p><p><b>subject</b>: <a href=\"Patient-maria-gonzalez.html\">María González (official) Female, DoB: 1968-04-15 ( http://www.registrocivil.cl/run#11111111-1)</a></p><p><b>period</b>: 2026-11-19 09:00:00-0300 --&gt; 2026-11-19 09:30:00-0300</p></div>"
+  },
+  "status" : "finished",
+  "class" : {
+    "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "code" : "AMB",
+    "display" : "Ambulatory"
+  },
+  "subject" : {
+    "reference" : "Patient/maria-gonzalez"
+  },
+  "period" : {
+    "start" : "2026-11-19T09:00:00-03:00",
+    "end" : "2026-11-19T09:30:00-03:00"
+  }
+}

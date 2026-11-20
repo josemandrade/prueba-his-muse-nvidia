@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Relación con IHE - Derivación APS → especialidad con contrareferencia v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"9"}
+    h3,h4,h5,h6{--heading-prefix:"9"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Derivación APS → especialidad con contrareferencia</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - CI Build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul class="nav navbar-nav">
+  <li><a href="index.html">Derivación APS → especialidad</a></li>
+  <li><a href="process.html">Proceso (BPMN)</a></li>
+  <li><a href="resources.html">Diagrama de recursos</a></li>
+  <li><a href="profiles.html">Perfiles</a></li>
+  <li><a href="terminology.html">Terminología</a></li>
+  <li><a href="operations.html">Operaciones</a></li>
+  <li><a href="sequences.html">Diagramas de secuencia</a></li>
+  <li><a href="mapping.html">Mapeo de datos</a></li>
+  <li><a href="ihe.html">Relación con IHE</a></li>
+  <li><a href="lifecycle.html">Ciclo de vida</a></li>
+  <li><a href="rules.html">Reglas y retención</a></li>
+  <li><a href="public-health.html">Base legal y reporte</a></li>
+  <li><a href="artifacts.html">Artefactos</a></li>
+</ul>
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Relación con IHE</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Derivación APS → especialidad con contrareferencia - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://josemandrade.github.io/prueba-his-muse-nvidia/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Relación con IHE</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<h3 id="relación-con-ihe">Relación con IHE</h3>
+
+<p>Revisión por punto de interoperabilidad (verificada en vivo en
+profiles.ihe.net / ihe.net / wiki.ihe.net, 2026-11-19). Criterio de fit:
+<strong>full</strong> = mismos actores, mismo número de transacción, misma semántica de
+mensaje y opciones, mismo formato y alcance; <strong>partial</strong> = el patrón
+coincide pero el mecanismo es propio de la guía; <strong>none</strong> = los actores y
+transacciones del perfil no cubren el punto. Una transacción de esta guía
+nunca es una transacción IHE; la guía no declara conformancia que no haya
+implementado.</p>
+
+<p><strong>Resumen:</strong> full 3 (PIXm ITI-83, PDQm ITI-78, mCSD ITI-90 — cada uno para
+un sub-paso, si se implementa exacto); partial 13 filas en 6 perfiles
+(360X, XBeR-WD, XDW, Scheduling, MHD, DSUBm); none 1 (PI-4, la consulta de
+estado — explícito). Ningún punto lo lleva de punta a punta un perfil IHE:
+el flujo de trabajo de la derivación en sí (máquina de estados, relojes
+SLA, conteos, reglas de persecución y re-oferta) es la mecánica propia del
+<code class="language-plaintext highlighter-rouge">Task</code> de la guía en todos los puntos.</p>
+
+<h4 id="por-punto">Por punto</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>PI</th>
+      <th>Perfil IHE</th>
+      <th>Fit</th>
+      <th>Actores / transacciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PI-0 Creación (APS → hub → especialidad)</td>
+      <td>360X (PCC) Rev. 1.2 Trial Implementation 2021-04-14</td>
+      <td><strong>Partial</strong> (patrón)</td>
+      <td>Referral Initiator / Referral Recipient; PCC-55 Referral Request. Transporte XDM (base) con opciones XDR / MHD; contenido CDA (Referral Note, LOINC 57133-1). El patrón coincide (identificador persistente hasta cerrar el ciclo, solicitud con información clínica relevante, el paciente vuelve al remitente para seguir atendiéndose, §X.4.1). Lo que queda propio: el mecanismo — 360X es documental (CDA sobre XDM/XDR/MHD) y Trial Implementation; esta guía envía recursos FHIR (<code class="language-plaintext highlighter-rouge">ServiceRequest</code> + <code class="language-plaintext highlighter-rouge">Task</code>) por FHIR REST (OP-1).</td>
+    </tr>
+    <tr>
+      <td>PI-0 (sub-paso de identidad)</td>
+      <td><a href="https://profiles.ihe.net/ITI/PIXm/">PIXm</a> (ITI) v3.1.0 Publication, FHIR R4</td>
+      <td><strong>Full</strong> (si se implementa exacto)</td>
+      <td>Patient Identifier Cross-reference Consumer / Manager / Source; ITI-83 Mobile Patient Identifier Cross-reference Query (<code class="language-plaintext highlighter-rouge">GET [base]/Patient/$ihe-pix</code>); ITI-104 Patient Identity Feed. La guía implementa ITI-83 exacto en OP-9. Las reglas de cruce que deciden una fusión son política local del MPI, nunca del perfil.</td>
+    </tr>
+    <tr>
+      <td>PI-0 (sub-paso de identidad)</td>
+      <td><a href="https://profiles.ihe.net/ITI/PDQm/">PDQm</a> (ITI) v3.2.0 Publication, FHIR R4</td>
+      <td><strong>Full</strong> (si se implementa exacto)</td>
+      <td>Patient Demographics Consumer / Supplier; ITI-78 Mobile Patient Demographics Query; ITI-119 Patient Demographics Match (<code class="language-plaintext highlighter-rouge">Patient.$match</code>, opcional). ITI-119 es <code class="language-plaintext highlighter-rouge">$match</code>, no una búsqueda simple.</td>
+    </tr>
+    <tr>
+      <td>PI-0 (sub-paso de enrutado)</td>
+      <td><a href="https://profiles.ihe.net/ITI/mCSD/">mCSD</a> (ITI) v4.0.0 Publication, FHIR R4</td>
+      <td><strong>Full</strong> (si se implementa exacto)</td>
+      <td>Care Services Selective Consumer / Care Services Directory; ITI-90 Find Matching Care Services (requerido para el directorio); ITI-91 / ITI-130 opcionales, no reclamados. mCSD encuentra entradas de directorio — nunca se cita para pertenencia a un CareTeam.</td>
+    </tr>
+    <tr>
+      <td>PI-0 (patrón de flujo)</td>
+      <td>XBeR-WD (PCC) Trial Implementation</td>
+      <td><strong>Partial</strong> (patrón)</td>
+      <td>Referral Requester / Referral Scheduler / Referral Performer; tres tareas: Request Referral, Schedule Referral (opcional), Perform Referral; sobre XDW, en contexto XDS.b. El patrón coincide (tres tareas request → schedule → perform, con un Workflow Document que registra la creación y el historial). Lo que queda propio: XBeR-WD es una definición documental (XDW sobre XDS.b); esta guía sigue el estado en un <code class="language-plaintext highlighter-rouge">Task</code> FHIR.</td>
+    </tr>
+    <tr>
+      <td>PI-0 (patrón de flujo)</td>
+      <td>XDW (ITI) — ITI TF Vol. 1 cap. 30</td>
+      <td><strong>Partial</strong> (patrón)</td>
+      <td>Content Creator / Content Consumer / Content Updater; agrupados con actores XDS / XDM / XDR para el transporte. La plataforma genérica sobre la que se construye XBeR-WD. Mismo tope que XBeR-WD.</td>
+    </tr>
+    <tr>
+      <td>PI-0 (variante documental)</td>
+      <td><a href="https://profiles.ihe.net/ITI/MHD/">MHD</a> (ITI) v4.2.5 Publication, FHIR R4</td>
+      <td><strong>None</strong> (según el diseño)</td>
+      <td>Document Source / Recipient / Consumer / Responder; ITI-65/105/66/67/68/106. Ninguno para PI-0 según el diseño: la derivación viaja como recursos, no como documento. Ofrecida como asociación: si un despliegue envía la derivación como Bundle de documento (Composition con LOINC 57133-1), MHD ITI-65 la lleva (partial — la pierna de documento; el estado sigue siendo propio de la guía). XDS.b es la alternativa clásica (ITI-41/42/18/43, Final Text), mismo tope, SOAP/ebXML en vez de FHIR REST.</td>
+    </tr>
+    <tr>
+      <td>PI-1 Aceptar / rechazar</td>
+      <td>360X (PCC) Rev. 1.2 TI 2021-04-14</td>
+      <td><strong>Partial</strong> (patrón, solo la rama de rechazo)</td>
+      <td>Referral Recipient / Referral Initiator; PCC-56 Referral Decline (con el motivo). La rama de rechazo coincide. Lo que queda propio: el mecanismo (documento CDA vs transición del Task + Communication) y la rama de aceptación — 360X no tiene transacción de "aceptar" (la aceptación es implícita; la notificación de cita PCC-60 la implica). En esta guía la aceptación es una transición explícita del Task.</td>
+    </tr>
+    <tr>
+      <td>PI-1 (patrón de flujo)</td>
+      <td>XBeR-WD / XDW (como PI-0)</td>
+      <td><strong>Partial</strong> (patrón)</td>
+      <td>Como PI-0. La decisión de triaje es la tarea "Request Referral" completándose en la forma XBeR-WD.</td>
+    </tr>
+    <tr>
+      <td>PI-1</td>
+      <td>MHD / XDS.b</td>
+      <td><strong>None</strong></td>
+      <td>La decisión es una transición de flujo de trabajo, no un documento. Ningún documento viaja en PI-1.</td>
+    </tr>
+    <tr>
+      <td>PI-2 Agendamiento</td>
+      <td><a href="https://profiles.ihe.net/ITI/Scheduling/">Scheduling</a> (ITI) v1.0.0 Publication, FHIR R4, Active 2024-12-12</td>
+      <td><strong>Partial</strong></td>
+      <td>Scheduling Client / Scheduling Server; ITI-115 Find Potential Appointments (<code class="language-plaintext highlighter-rouge">$find</code>), ITI-116 Hold Appointment (<code class="language-plaintext highlighter-rouge">$hold</code>, opcional), ITI-117 Book Appointment (<code class="language-plaintext highlighter-rouge">$book</code>), ITI-118 Search Patient Appointments. La mitad de reserva coincide. Lo que queda propio: el ciclo oferta/confirmación/persecución/re-oferta/no-show. Scheduling no tiene transacción de publicar/notificar — ITI-115/116/117/118 son find/hold/book/search iniciados por el cliente; el servidor nunca envía un cambio de agenda.</td>
+    </tr>
+    <tr>
+      <td>PI-2 (notificación)</td>
+      <td>360X PCC-60 Appointment Notification; PCC-61 No-show Notification</td>
+      <td><strong>Partial</strong> (patrón)</td>
+      <td>Referral Recipient → Referral Initiator; PCC-60 (notificación de una cita agendada) y PCC-61 (notificación de que el paciente no asistió). El patrón coincide; el mecanismo y la audiencia (la oferta a la paciente y el aviso al administrativo de APS son Communications propias) quedan propios. Se compone Scheduling ITI-117 (la reserva) con 360X PCC-60 (la notificación al iniciador); nunca se presenta PCC-60 como la reserva en sí.</td>
+    </tr>
+    <tr>
+      <td>PI-2</td>
+      <td>XBeR-WD "Schedule Referral"</td>
+      <td><strong>Partial</strong> (patrón)</td>
+      <td>Como PI-0. La fase de agendamiento es la tarea opcional "Schedule Referral" de la forma XBeR-WD.</td>
+    </tr>
+    <tr>
+      <td>PI-3 Retorno de la contrareferencia</td>
+      <td><a href="https://profiles.ihe.net/ITI/MHD/">MHD</a> (ITI) v4.2.5 Publication, FHIR R4</td>
+      <td><strong>Partial</strong> (pierna de documento full)</td>
+      <td>Document Source / Recipient / Consumer / Responder; ITI-65 Provide Document Bundle, ITI-66/67, ITI-68, ITI-105, ITI-106 Generate Metadata. La pierna de transporte del documento es full si la guía implementa ITI-65 exacto (OP-6 envía un Bundle de documento con metadatos XDS generados vía ITI-106). Lo que queda propio: la mitad de flujo de trabajo — la transición del Task a <code class="language-plaintext highlighter-rouge">counter-referred</code> y el acuse de recibo de APS son propios de la guía. En conjunto PI-3 es partial.</td>
+    </tr>
+    <tr>
+      <td>PI-3 (patrón de contenido)</td>
+      <td>360X PCC-57 Referral Outcome</td>
+      <td><strong>Partial</strong> (patrón)</td>
+      <td>Referral Recipient → Referral Initiator; PCC-57 (contiene el resultado de los servicios según la solicitud). El patrón de contenido coincide (el especialista devuelve el resultado y cierra el ciclo). Lo que queda propio: el mecanismo (documento CDA vs Bundle de documento FHIR) y el acuse (propio de la guía).</td>
+    </tr>
+    <tr>
+      <td>PI-3 (disponibilidad)</td>
+      <td><a href="https://profiles.ihe.net/ITI/DSUBm/">DSUBm</a> (ITI) v1.0.0 Publication, FHIR R4</td>
+      <td><strong>Partial</strong></td>
+      <td>Resource Notification Subscriber / Broker / Publisher / Recipient; ITI-110 Resource Subscription, ITI-111, ITI-112, ITI-113, ITI-114. Partial para la mitad de disponibilidad: APS se suscribe (ITI-110) a que el documento de contrareferencia esté disponible (un evento de documento — DSUBm suscribe solo eventos de documento) y es notificado (ITI-112). La recuperación del documento es MHD ITI-67/68; la transición del Task es propia de la guía. DSUBm nunca lleva cambios de estado de la derivación (Task), que no son eventos de documento.</td>
+    </tr>
+    <tr>
+      <td>PI-3 (patrón de flujo)</td>
+      <td>XBeR-WD "Perform Referral" / XDW</td>
+      <td><strong>Partial</strong> (patrón)</td>
+      <td>Como PI-0. La consulta y su informe son la tarea "Perform Referral".</td>
+    </tr>
+    <tr>
+      <td>Cualquier PI — cancelación</td>
+      <td>360X (PCC) Rev. 1.2 TI 2021-04-14</td>
+      <td><strong>Partial</strong> (patrón)</td>
+      <td>Referral Initiator → Referral Recipient; PCC-58 Referral Cancellation. Tope de dirección: PCC-58 viaja solo Initiator → Recipient, mientras este caso permite que la especialidad o la paciente inicien la cancelación (OP-8) — esas ramas son el abanico de Communications propio de la guía.</td>
+    </tr>
+    <tr>
+      <td>PI-4 Consulta de estado</td>
+      <td>—</td>
+      <td><strong>None applies</strong></td>
+      <td>Ningún perfil IHE lleva una consulta de estado de flujo de trabajo. QEDm PCC-44 cubre solo elementos de datos clínicos (sus 10 opciones: Simple Observations, Allergies and Intolerances, Conditions, Diagnostic Reports, Medications, Immunizations, Procedures, Encounters, Provenance, Occupational Data for Health — 0 menciones de Task, Appointment o ServiceRequest en la página PCC-44, v3.0.0); una búsqueda de Task es búsqueda FHIR simple, nunca QEDm. DSUBm cubre solo eventos de documento, no el estado del Task. XDW/XBeR-WD siguen el estado en un Workflow Document compartido — no definen una transacción de consulta del estado actual. La OP-7 de la guía es búsqueda FHIR simple sobre el Task. Este es un none explícito, no un hueco que forzar.</td>
+    </tr>
+    <tr>
+      <td>Todos los PI (transversal)</td>
+      <td>ATNA (ITI) Final Text, ITI TF Vol. 1 cap. 9</td>
+      <td>Transversal (no es un fit por PI)</td>
+      <td>Authenticate Node [ITI-19], Record Audit Event [ITI-20]; RESTful ATNA Trial Implementation (ITI-81, ITI-82). Auditoría y autenticación de nodo para cada intercambio: cada operación registra un <code class="language-plaintext highlighter-rouge">AuditEvent</code>.</td>
+    </tr>
+    <tr>
+      <td>Todos los PI (transversal)</td>
+      <td>CT (ITI) Final Text, ITI TF Vol. 1 cap. 7</td>
+      <td>Transversal (no es un fit por PI)</td>
+      <td>Consistent Time Client / Server; sincronización NTP, error medio menor a 1 segundo. Tiempo consistente en la red para cada evento con marca temporal (relojes SLA, horas de auditoría, <code class="language-plaintext highlighter-rouge">authoredOn</code>, <code class="language-plaintext highlighter-rouge">lastModified</code>).</td>
+    </tr>
+    <tr>
+      <td>(apartado)</td>
+      <td>BPPC (ITI) Final Text, ITI TF Vol. 1 cap. 19</td>
+      <td><strong>Apartado</strong></td>
+      <td>Ningún artefacto de consentimiento viaja — la derivación está cubierta por la relación asistencial (spec §4, Q7). Su sucesor FHIR, PCF, se aparta por la misma razón.</td>
+    </tr>
+    <tr>
+      <td>(apartado)</td>
+      <td>QEDm PCC-44 para PI-4</td>
+      <td><strong>Apartado para el estado</strong></td>
+      <td>QEDm es la extracción de datos clínicos de los exámenes dentro de la derivación — no es la consulta de estado. Donde un consumidor extrae los elementos clínicos de la derivación (diagnóstico, exámenes), QEDm PCC-44 aplica con sus opciones (Encounters, Diagnostic Reports, Simple Observations) — partial según lo escrito, full solo si PCC-44 + las opciones se implementan exacto.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="huecos-y-riesgos">Huecos y riesgos</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Hueco / riesgo</th>
+      <th>Severidad</th>
+      <th>Mitigación</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>G1</td>
+      <td>Ningún perfil IHE lleva el flujo de trabajo de la derivación de punta a punta (máquina de estados, relojes SLA, conteos). Un despliegue que espere conformancia 360X o XBeR-WD encontrará solo un patrón.</td>
+      <td>Media</td>
+      <td>La revisión declara el fit con honestidad por punto; la guía documenta la relación de patrón 360X/XBeR-WD y ofrece las asociaciones en vez de reclamar conformancia.</td>
+    </tr>
+    <tr>
+      <td>G2</td>
+      <td>Cruce de identidad: la clave MPI viaja con la derivación, pero una paciente con dos claves MPI (doble enrolamiento) solo se resuelve si el MPI las fusiona (PMIR ITI-93). Una derivación creada con la clave retirada debe seguir resolviéndose.</td>
+      <td>Media</td>
+      <td>El MPI mantiene ambos identificadores locales enlazados a la clave superviviente (<code class="language-plaintext highlighter-rouge">Patient.link type = replaced-by</code>); el hub actualiza el registro de flujo de trabajo con la alimentación de identidad (§10). El paso 6 prueba el camino de fusión tras la creación.</td>
+    </tr>
+    <tr>
+      <td>G3</td>
+      <td>Las extensiones del Task (plazos SLA, conteos de rechazo/persecución/re-agendamiento) son locales de la guía. Otra implementación que lea el Task ve el <code class="language-plaintext highlighter-rouge">status</code> R4 pero no el estado del caso salvo que lea <code class="language-plaintext highlighter-rouge">businessStatus</code> y las extensiones.</td>
+      <td>Baja</td>
+      <td><code class="language-plaintext highlighter-rouge">businessStatus</code> lleva el estado del caso en un ValueSet local publicado; las extensiones se definen una vez en la guía con URLs canónicas y se documentan como must-support.</td>
+    </tr>
+    <tr>
+      <td>G4</td>
+      <td><code class="language-plaintext highlighter-rouge">Appointment.status = pending</code> vs <code class="language-plaintext highlighter-rouge">proposed</code>: las definiciones R4 son cercanas ("ninguno" vs "algunos o todos" los participantes han finalizado la aceptación) y los implementadores pueden colapsarlas.</td>
+      <td>Baja</td>
+      <td>La guía fija la regla de transición (oferta = <code class="language-plaintext highlighter-rouge">proposed</code>; paciente confirmó = <code class="language-plaintext highlighter-rouge">pending</code>; slot ocupado = <code class="language-plaintext highlighter-rouge">booked</code>) en la tabla de ciclo de vida, y la decisión de la paciente es autoritativa en el <code class="language-plaintext highlighter-rouge">AppointmentResponse</code>, no en el Appointment.</td>
+    </tr>
+    <tr>
+      <td>G5</td>
+      <td>El documento de contrareferencia (MHD ITI-65) requiere metadatos XDS (ITI-106) para el envío al registro; un despliegue sin registro puede enviar el Bundle de documento directamente pero no puede reclamar ITI-65.</td>
+      <td>Baja</td>
+      <td>OP-6 define el envío directo como caso base y el envío ITI-65 + ITI-106 al registro como la asociación ofrecida.</td>
+    </tr>
+    <tr>
+      <td>G6</td>
+      <td>Auditoría: una divulgación bloqueada es <code class="language-plaintext highlighter-rouge">AuditEvent.outcome = 4</code> + <code class="language-plaintext highlighter-rouge">outcomeDesc</code> — R4 no tiene un valor de resultado <code class="language-plaintext highlighter-rouge">denied</code>. Un implementador que invente <code class="language-plaintext highlighter-rouge">denied</code> rompe la validación.</td>
+      <td>Baja</td>
+      <td>Registrado en la tabla de mapeo (recursos de apoyo) y en la tabla de terminología; el validador FHIR corre sobre los ejemplos en CI (<code class="language-plaintext highlighter-rouge">ig-build.yml</code>) — aún no ejecutado.</td>
+    </tr>
+    <tr>
+      <td>G7</td>
+      <td>El catálogo local de especialidades/servicios y la lista de motivos de rechazo los mantiene la red; un servicio que falte en el catálogo es un fallo de validación en la creación, no una espera en el hub (§9). Si el catálogo se desvía, las derivaciones fallan en la creación.</td>
+      <td>Baja</td>
+      <td>El hub re-lee el directorio en cada decisión de enrutado; el catálogo está versionado y su versión viaja en la guía.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="asociaciones-ofrecidas-no-asumidas">Asociaciones ofrecidas (no asumidas)</h4>
+
+<p>El usuario elige qué asociaciones toma la guía. Un perfil que el usuario
+no eligió se documenta como una relación, no se reclama como conformancia.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Asociación</th>
+      <th>Qué cambiaría</th>
+      <th>Qué cuesta</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Declarar conformancia a PIXm (ITI-83) + PDQm (ITI-78) para OP-9</td>
+      <td>La resolución de identidad pasa a ser una transacción conforme a IHE en vez de la búsqueda propia de la guía; el MPI debe exponer <code class="language-plaintext highlighter-rouge">$ihe-pix</code> y la búsqueda de Patient exacto como los perfiles exigen.</td>
+      <td>El MPI debe implementar ITI-83/ITI-78; la búsqueda de Patient de la guía ya tiene la misma forma, así que el costo es la prueba de conformancia, no el rediseño.</td>
+    </tr>
+    <tr>
+      <td>Declarar conformancia a mCSD (ITI-90) para OP-10</td>
+      <td>La búsqueda en el directorio pasa a ser una transacción conforme a IHE.</td>
+      <td>El directorio debe exponer ITI-90; la búsqueda de la guía ya tiene la misma forma.</td>
+    </tr>
+    <tr>
+      <td>Declarar conformancia a Scheduling (ITI-115/116/117/118) para la mitad de reserva de PI-2</td>
+      <td>La reserva pasa a ser un conjunto de transacciones conforme a IHE; el ciclo oferta/confirmación/persecución sigue siendo propio de la guía y se documenta como tal.</td>
+      <td>El agendador de la especialidad debe implementar <code class="language-plaintext highlighter-rouge">$find</code> / <code class="language-plaintext highlighter-rouge">$hold</code> / <code class="language-plaintext highlighter-rouge">$book</code> exacto (ITI-116 <code class="language-plaintext highlighter-rouge">$hold</code> es opcional — la guía puede saltárselo).</td>
+    </tr>
+    <tr>
+      <td>Declarar conformancia a MHD (ITI-65) para la pierna de documento de PI-3</td>
+      <td>El envío de la contrareferencia pasa a ser un envío de documento conforme a IHE (con metadatos XDS vía ITI-106); la recuperación por APS pasa a ser ITI-67/68.</td>
+      <td>Debe existir un Registro / Destinatario de documentos; el Bundle de documento de la guía ya tiene la forma ITI-65, así que el costo es el registro + los metadatos, no el rediseño.</td>
+    </tr>
+    <tr>
+      <td>Documentar 360X / XBeR-WD como relación de patrón (sin conformancia)</td>
+      <td>El ciclo cerrado de la guía queda trazable al patrón de mensajes 360X (PCC-55–61) y a la forma de tareas XBeR-WD (request / schedule / perform) en la declaración de conformancia de la guía.</td>
+      <td>Solo documentación; ningún actor nuevo. Recomendado — no cuesta nada y hace el diseño revisable contra el patrón de derivación de IHE.</td>
+    </tr>
+    <tr>
+      <td>Basar <code class="language-plaintext highlighter-rouge">DerivacionPaciente</code> en <code class="language-plaintext highlighter-rouge">CorePacienteCl</code> (núcleo chileno)</td>
+      <td>El <code class="language-plaintext highlighter-rouge">Parent:</code> del perfil Paciente pasa a ser <code class="language-plaintext highlighter-rouge">CorePacienteCl</code>; la guía añade el paquete <code class="language-plaintext highlighter-rouge">hl7.fhir.cl.clcore</code> como dependencia.</td>
+      <td>El paquete debe resolverse al construir (lo hace — última 1.9.4, verificado en trabajo previo); el perfil debe satisfacer las restricciones del núcleo chileno (p. ej. el identificador RUN). Ofrecido, no asumido — por defecto sigue el Patient base R4.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href=""></a>.  Package hl7.fhir.uv.test.derivacion-aps-especialidad#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Nov 20, 2026 12:33+0000">2026-11-20</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

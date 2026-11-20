@@ -1,0 +1,22 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "derivacion-task-code",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem derivacion-task-code</b></p><a name=\"derivacion-task-code\"> </a><a name=\"hcderivacion-task-code\"> </a><p>This  code system <code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-task-code</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">referral-workflow<a name=\"derivacion-task-code-referral-workflow\"> </a></td><td>Referral workflow</td><td>Registro de estado del flujo de trabajo de una derivación.</td></tr></table></div>"
+  },
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-task-code",
+  "version" : "0.1.0",
+  "name" : "DerivacionTaskCodeCS",
+  "title" : "Código de la tarea de derivación",
+  "status" : "draft",
+  "date" : "2026-11-20T12:33:32+00:00",
+  "description" : "El Task de esta guía es siempre un registro de flujo de trabajo de derivación.",
+  "content" : "complete",
+  "count" : 1,
+  "concept" : [{
+    "code" : "referral-workflow",
+    "display" : "Referral workflow",
+    "definition" : "Registro de estado del flujo de trabajo de una derivación."
+  }]
+}

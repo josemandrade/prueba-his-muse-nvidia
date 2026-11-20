@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="846" viewBox="0 0 1280 846">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#374151"/></marker><marker id="arrow-open" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10" fill="none" stroke="#374151" stroke-width="1.6"/></marker><marker id="arrow-ret" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10" fill="none" stroke="#6b7280" stroke-width="1.5"/></marker></defs>
+<rect x="0" y="0" width="1280" height="846" fill="#ffffff"/>
+<text x="40" y="30" font-family="sans-serif" font-size="18" font-weight="bold" fill="#111827">Atención — asistir o no asistir a la cita (PI-2)</text>
+<text x="40" y="52" font-family="sans-serif" font-size="13" fill="#6b7280">BPMN Parte B: Cita reservada &gt; Esperar fecha/hora &gt; ¿Paciente asistió? &gt; Atender (Encounter finished) o registrar no-show</text>
+<rect x="54" y="146" width="1172" height="466" fill="#f9fafb" stroke="#6b7280" stroke-width="1.5"/>
+<line x1="54" y1="396" x2="1226" y2="396" stroke="#6b7280" stroke-width="1.2" stroke-dasharray="6 4"/>
+<rect x="61" y="377" width="179" height="18" rx="9" fill="#ffffff" stroke="#9ca3af" stroke-width="0.7"/><text x="150" y="390" text-anchor="middle" font-family="sans-serif" font-size="12.5" fill="#111827">[la paciente no asiste]</text>
+<line x1="190" y1="140" x2="190" y2="612" stroke="#9ca3af" stroke-width="1.2" stroke-dasharray="5 4"/>
+<line x1="490" y1="140" x2="490" y2="612" stroke="#9ca3af" stroke-width="1.2" stroke-dasharray="5 4"/>
+<line x1="790" y1="140" x2="790" y2="612" stroke="#9ca3af" stroke-width="1.2" stroke-dasharray="5 4"/>
+<line x1="1090" y1="140" x2="1090" y2="612" stroke="#9ca3af" stroke-width="1.2" stroke-dasharray="5 4"/>
+<rect x="784" y="280" width="12" height="304" fill="#ffffff" stroke="#374151" stroke-width="1.2"/>
+<rect x="54" y="146" width="183" height="22" fill="#ffffff" stroke="#6b7280" stroke-width="1.5"/><text x="62" y="161" font-family="sans-serif" font-size="12" font-weight="bold" fill="#111827">alt [la paciente asiste]</text>
+<line x1="190" y1="216" x2="490" y2="216" stroke="#374151" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="236" y="174" width="208" height="18" rx="9" fill="#ffffff" stroke="#9ca3af" stroke-width="0.7"/><text x="340" y="187" text-anchor="middle" font-family="sans-serif" font-size="12.5" fill="#111827">OP-5 Llegada de la paciente</text>
+<rect x="232" y="193" width="215" height="18" rx="9" fill="#ffffff" stroke="#9ca3af" stroke-width="0.7"/><text x="340" y="206" text-anchor="middle" font-family="sans-serif" font-size="12.5" fill="#111827">llegada presencial (no-FHIR)</text>
+<line x1="490" y1="288" x2="784" y2="288" stroke="#374151" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="540" y="246" width="193" height="18" rx="9" fill="#ffffff" stroke="#9ca3af" stroke-width="0.7"/><text x="637" y="259" text-anchor="middle" font-family="sans-serif" font-size="12.5" fill="#111827">OP-5 Registrar asistencia</text>
+<rect x="428" y="265" width="418" height="18" rx="9" fill="#ffffff" stroke="#9ca3af" stroke-width="0.7"/><text x="637" y="278" text-anchor="middle" font-family="sans-serif" font-size="12.5" fill="#111827">PATCH /Appointment arrived; PATCH /Encounter in-progress</text>
+<line x1="490" y1="360" x2="784" y2="360" stroke="#374151" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="544" y="318" width="186" height="18" rx="9" fill="#ffffff" stroke="#9ca3af" stroke-width="0.7"/><text x="637" y="331" text-anchor="middle" font-family="sans-serif" font-size="12.5" fill="#111827">OP-5 Encuentro terminado</text>
+<rect x="432" y="337" width="411" height="18" rx="9" fill="#ffffff" stroke="#9ca3af" stroke-width="0.7"/><text x="637" y="350" text-anchor="middle" font-family="sans-serif" font-size="12.5" fill="#111827">PATCH /Encounter finished; PATCH /Appointment fulfilled</text>
+<line x1="490" y1="432" x2="784" y2="432" stroke="#374151" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="551" y="390" width="172" height="18" rx="9" fill="#ffffff" stroke="#9ca3af" stroke-width="0.7"/><text x="637" y="403" text-anchor="middle" font-family="sans-serif" font-size="12.5" fill="#111827">OP-5 Registrar no-show</text>
+<rect x="468" y="409" width="338" height="18" rx="9" fill="#ffffff" stroke="#9ca3af" stroke-width="0.7"/><text x="637" y="422" text-anchor="middle" font-family="sans-serif" font-size="12.5" fill="#111827">PATCH /Appointment noshow + cancelationReason</text>
+<line x1="784" y1="504" x2="1090" y2="504" stroke="#374151" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="826" y="462" width="222" height="18" rx="9" fill="#ffffff" stroke="#9ca3af" stroke-width="0.7"/><text x="937" y="475" text-anchor="middle" font-family="sans-serif" font-size="12.5" fill="#111827">OP-12 Notificar no-show a APS</text>
+<rect x="862" y="481" width="150" height="18" rx="9" fill="#ffffff" stroke="#9ca3af" stroke-width="0.7"/><text x="937" y="494" text-anchor="middle" font-family="sans-serif" font-size="12.5" fill="#111827">POST /Communication</text>
+<line x1="490" y1="576" x2="784" y2="576" stroke="#374151" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="558" y="534" width="157" height="18" rx="9" fill="#ffffff" stroke="#9ca3af" stroke-width="0.7"/><text x="637" y="547" text-anchor="middle" font-family="sans-serif" font-size="12.5" fill="#111827">OP-4 Re-agendar cita</text>
+<rect x="519" y="553" width="237" height="18" rx="9" fill="#ffffff" stroke="#9ca3af" stroke-width="0.7"/><text x="637" y="566" text-anchor="middle" font-family="sans-serif" font-size="12.5" fill="#111827">nuevo Appointment (mismo ciclo)</text>
+<rect x="55" y="84" width="270" height="56" rx="8" fill="#ffffff" stroke="#374151" stroke-width="1.8"/>
+<text x="190" y="116" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#111827">Paciente</text>
+<rect x="355" y="84" width="270" height="56" rx="8" fill="#ffffff" stroke="#374151" stroke-width="1.8"/>
+<text x="490" y="116" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#111827">Especialista</text>
+<rect x="655" y="84" width="270" height="56" rx="8" fill="#ffffff" stroke="#374151" stroke-width="1.8"/>
+<text x="790" y="116" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#111827">Hub de derivación</text>
+<rect x="955" y="84" width="270" height="56" rx="8" fill="#ffffff" stroke="#374151" stroke-width="1.8"/>
+<text x="1090" y="116" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#111827">Administrativo APS</text>
+<rect x="40" y="628" width="1200" height="56" rx="8" fill="#fef9c3" stroke="#d97706" stroke-width="1"/>
+<text x="54" y="650" font-family="sans-serif" font-size="12.5" fill="#451a03">No hay Encounter en un no-show: el no-show vive solo en el Appointment (noshow + cancelationReason) y el Slot vuelve a free. La oferta re-agendada es un Appointment</text>
+<text x="54" y="668" font-family="sans-serif" font-size="12.5" fill="#451a03">NUEVO y sigue el mismo ciclo confirmar/perseguir del diagrama de agendamiento (OP-3/OP-4).</text>
+<rect x="40" y="692" width="1200" height="56" rx="8" fill="#fef9c3" stroke="#d97706" stroke-width="1"/>
+<text x="54" y="714" font-family="sans-serif" font-size="12.5" fill="#451a03">Tras el segundo no-show el Task pasa a failed / businessStatus = no-show y la derivación se cierra (OP-5). El plazo de contrareferencia corre desde el Encounter</text>
+<text x="54" y="732" font-family="sans-serif" font-size="12.5" fill="#451a03">finished, no desde el Appointment arrived.</text>
+<rect x="40" y="756" width="1200" height="38" rx="8" fill="#fef9c3" stroke="#d97706" stroke-width="1"/>
+<text x="54" y="778" font-family="sans-serif" font-size="12.5" fill="#451a03">360X PCC-61 No-show Notification es solo el patrón de la rama de no-show; el registro de asistencia en sí es propio de la guía (OP-5).</text>
+<text x="640" y="828" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#6b7280">Cada mensaje nombra la operación que lo lleva; el detalle (entradas, ejemplo, resultado esperado) está en la tabla de operaciones de sequences.md.</text>
+</svg>

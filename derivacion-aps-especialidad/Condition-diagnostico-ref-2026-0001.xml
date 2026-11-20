@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="diagnostico-ref-2026-0001"/>
+  <meta>
+    <profile value="https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-diagnostico"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Condition diagnostico-ref-2026-0001</b></p><a name="diagnostico-ref-2026-0001"> </a><a name="hcdiagnostico-ref-2026-0001"> </a><div style="display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-derivacion-diagnostico.html">Diagnóstico de la contrareferencia</a></p></div><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/sid/icd-10-cm I50.22}, {http://snomed.info/sct 417996009}">Insuficiencia cardiaca sistólica crónica (FEVI 35%)</span></p><p><b>subject</b>: <a href="Patient-maria-gonzalez.html">María González (official) Female, DoB: 1968-04-15 ( http://www.registrocivil.cl/run#11111111-1)</a></p><p><b>encounter</b>: <a href="Encounter-encuentro-ref-2026-0001.html">Encounter: identifier = http://especialidad.example.org/encounter#ENC-2026-0001; status = planned; class = Ambulatory (ActCode#AMB); serviceType = Cardiology; period = 2026-12-02 10:00:00-0300 --&gt; 2026-12-02 10:30:00-0300</a></p><p><b>note</b>: </p><blockquote><div><p>FEVI 35% por ecocardiograma. Sin isquemia aguda en el ECG.</p>
+</div></blockquote></div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <code value="active"/>
+      <display value="Active"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+      <code value="confirmed"/>
+      <display value="Confirmed"/>
+    </coding>
+  </verificationStatus>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <code value="I50.22"/>
+      <display value="Chronic systolic (congestive) heart failure"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="417996009"/>
+      <display value="Systolic heart failure"/>
+    </coding>
+    <text value="Insuficiencia cardiaca sistólica crónica (FEVI 35%)"/>
+  </code>
+  <subject>
+    <reference value="Patient/maria-gonzalez"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/encuentro-ref-2026-0001"/>
+  </encounter>
+  <note>
+    <text value="FEVI 35% por ecocardiograma. Sin isquemia aguda en el ECG."/>
+  </note>
+</Condition>

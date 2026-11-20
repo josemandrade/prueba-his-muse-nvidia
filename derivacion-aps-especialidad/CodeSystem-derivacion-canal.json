@@ -1,0 +1,32 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "derivacion-canal",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem derivacion-canal</b></p><a name=\"derivacion-canal\"> </a><a name=\"hcderivacion-canal\"> </a><p>This  code system <code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-canal</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">phone<a name=\"derivacion-canal-phone\"> </a></td><td>Phone</td><td>Llamada telefónica.</td></tr><tr><td style=\"white-space:nowrap\">in-person<a name=\"derivacion-canal-in-person\"> </a></td><td>In person</td><td>Aviso presencial.</td></tr><tr><td style=\"white-space:nowrap\">system-message<a name=\"derivacion-canal-system-message\"> </a></td><td>System message</td><td>Mensaje del sistema (portal o mensajería del EHR).</td></tr></table></div>"
+  },
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-canal",
+  "version" : "0.1.0",
+  "name" : "DerivacionCanalCS",
+  "title" : "Canal de notificación",
+  "status" : "draft",
+  "date" : "2026-11-20T12:33:32+00:00",
+  "description" : "Canales por los que se envía una notificación (lista local; el caso no fija un canal por notificación).",
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "phone",
+    "display" : "Phone",
+    "definition" : "Llamada telefónica."
+  },
+  {
+    "code" : "in-person",
+    "display" : "In person",
+    "definition" : "Aviso presencial."
+  },
+  {
+    "code" : "system-message",
+    "display" : "System message",
+    "definition" : "Mensaje del sistema (portal o mensajería del EHR)."
+  }]
+}

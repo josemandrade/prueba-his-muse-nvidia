@@ -1,0 +1,919 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Artifacts Summary - Derivación APS → especialidad con contrareferencia v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"13"}
+    h3,h4,h5,h6{--heading-prefix:"13.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Derivación APS → especialidad con contrareferencia</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - CI Build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul class="nav navbar-nav">
+  <li><a href="index.html">Derivación APS → especialidad</a></li>
+  <li><a href="process.html">Proceso (BPMN)</a></li>
+  <li><a href="resources.html">Diagrama de recursos</a></li>
+  <li><a href="profiles.html">Perfiles</a></li>
+  <li><a href="terminology.html">Terminología</a></li>
+  <li><a href="operations.html">Operaciones</a></li>
+  <li><a href="sequences.html">Diagramas de secuencia</a></li>
+  <li><a href="mapping.html">Mapeo de datos</a></li>
+  <li><a href="ihe.html">Relación con IHE</a></li>
+  <li><a href="lifecycle.html">Ciclo de vida</a></li>
+  <li><a href="rules.html">Reglas y retención</a></li>
+  <li><a href="public-health.html">Base legal y reporte</a></li>
+  <li><a href="artifacts.html">Artefactos</a></li>
+</ul>
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Derivación APS → especialidad con contrareferencia - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://josemandrade.github.io/prueba-his-muse-nvidia/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artifacts Summary</h2>
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated by https://github.com/HL7/ig-template-base/blob/master/scripts/createArtifactSummary.xslt and any changes made will be overwritten--><div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml"
+     class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#2">Structures: Extension Definitions</a>
+      </li>
+      <li>
+         <a href="#3">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#4">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#5">Example: Example Instances</a>
+      </li>
+   </ul>
+</div>
+<div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Structures: Resource Profiles </h3>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-derivacion-cita.html"
+                  title="StructureDefinition/derivacion-cita">Cita de la derivación</a>
+            </td>
+            <td>
+<p>La oferta y la reserva de la cita de especialidad. Perfil propio de esta guía, sobre el recurso base Appointment de FHIR R4. La decisión del paciente vive en el AppointmentResponse, no en la cita; una cita cancelada o no asistida nunca se reutiliza.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-derivacion-contrareferencia.html"
+                  title="StructureDefinition/derivacion-contrareferencia">Contrareferencia</a>
+            </td>
+            <td>
+<p>El documento clínico de vuelta del especialista a APS: diagnóstico, plan, indicaciones de seguimiento y plan de seguimiento para APS. Perfil propio de esta guía, sobre el recurso base Composition de FHIR R4.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-derivacion-diagnostico.html"
+                  title="StructureDefinition/derivacion-diagnostico">Diagnóstico de la contrareferencia</a>
+            </td>
+            <td>
+<p>El diagnóstico que el especialista devuelve a APS. Perfil propio de esta guía, sobre el recurso base Condition de FHIR R4.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-derivacion-documento.html"
+                  title="StructureDefinition/derivacion-documento">Documento de contrareferencia</a>
+            </td>
+            <td>
+<p>La entrada de índice de la contrareferencia. Perfil propio de esta guía, sobre el recurso base DocumentReference de FHIR R4.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-derivacion-encuentro.html"
+                  title="StructureDefinition/derivacion-encuentro">Encuentro de especialidad</a>
+            </td>
+            <td>
+<p>La visita atendida en la especialidad. Perfil propio de esta guía, sobre el recurso base Encounter de FHIR R4. La cita es la reserva; la visita es el encuentro — nunca ambas a la vez sin regla, y la regla aquí es: reserva = Appointment, visita = Encounter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-derivacion-notificacion.html"
+                  title="StructureDefinition/derivacion-notificacion">Notificación</a>
+            </td>
+            <td>
+<p>El registro de una notificación enviada en un cambio de estado de la derivación. Perfil propio de esta guía, sobre el recurso base Communication de FHIR R4. Una notificación enviada por error se corrige con una notificación nueva, nunca borrando el registro.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-derivacion-paciente.html"
+                  title="StructureDefinition/derivacion-paciente">Paciente de la derivación</a>
+            </td>
+            <td>
+<p>Persona derivada desde APS a una especialidad. Perfil propio de esta guía, sobre el recurso base Patient de FHIR R4. La clave MPI y el RUN son los identificadores que viajan; los datos de contacto son obligatorios (C12) — sin ellos la creación se bloquea.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-derivacion-plan-seguimiento.html"
+                  title="StructureDefinition/derivacion-plan-seguimiento">Plan de seguimiento para APS</a>
+            </td>
+            <td>
+<p>El plan de seguimiento que el especialista deja a APS. Perfil propio de esta guía, sobre el recurso base CarePlan de FHIR R4. Una actualización del plan es una versión nueva, nunca una sobrescritura silenciosa.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-derivacion-rol.html"
+                  title="StructureDefinition/derivacion-rol">Rol en la derivación</a>
+            </td>
+            <td>
+<p>El rol que un profesional tiene en una derivación. Perfil propio de esta guía, sobre el recurso base PractitionerRole de FHIR R4. Una persona puede tener más de un rol en distintas derivaciones, pero dentro de una derivación cada rol es una persona.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-derivacion-servicio.html"
+                  title="StructureDefinition/derivacion-servicio">Servicio de especialidad</a>
+            </td>
+            <td>
+<p>El servicio de especialidad al que se deriva (p. ej. cardiología), con su endpoint de enrutado. Perfil propio de esta guía, sobre el recurso base HealthcareService de FHIR R4.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-derivacion-solicitud.html"
+                  title="StructureDefinition/derivacion-solicitud">Solicitud de derivación</a>
+            </td>
+            <td>
+<p>La derivación que APS crea y el hub enruta: una solicitud de un servicio de especialidad. Perfil propio de esta guía, sobre el recurso base ServiceRequest de FHIR R4. El estado de la derivación NO vive aquí (vive en DerivacionTarea); ServiceRequest.status es solo un espejo grueso.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-derivacion-tarea.html"
+                  title="StructureDefinition/derivacion-tarea">Tarea de derivación (registro de estado)</a>
+            </td>
+            <td>
+<p>El registro de estado del flujo de trabajo de una derivación: lleva el estado del caso, los relojes SLA y los conteos de los ciclos. Es el centro del grafo de recursos y lo primero que lee cada paso posterior. Perfil propio de esta guía, sobre el recurso base Task de FHIR R4.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Structures: Extension Definitions </h3>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-derivacion-match-basis.html"
+                  title="StructureDefinition/derivacion-match-basis">Base del cruce de identidad</a>
+            </td>
+            <td>
+<table>
+  <tbody>
+    <tr>
+      <td>Cómo se estableció el cruce de identidad en el MPI: identifier</td>
+      <td>demographics.</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-derivacion-preferred-contact-channel.html"
+                  title="StructureDefinition/derivacion-preferred-contact-channel">Canal de contacto preferido</a>
+            </td>
+            <td>
+<table>
+  <tbody>
+    <tr>
+      <td>Canal preferido del paciente para las notificaciones: phone</td>
+      <td>in-person</td>
+      <td>system-message (ValueSet DerivacionCanal).</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-derivacion-match-confidence.html"
+                  title="StructureDefinition/derivacion-match-confidence">Confianza del cruce de identidad</a>
+            </td>
+            <td>
+<p>Confianza del cruce de identidad del MPI, de 0 a 1. Opcional.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-derivacion-offer-chase-count.html"
+                  title="StructureDefinition/derivacion-offer-chase-count">Conteo de persecuciones de esta oferta</a>
+            </td>
+            <td>
+<p>Número de veces que el agendador ha perseguido una oferta sin confirmar (0–2). Se reinicia por oferta (N5).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-derivacion-rescheduling-count.html"
+                  title="StructureDefinition/derivacion-rescheduling-count">Conteo de re-agendamientos</a>
+            </td>
+            <td>
+<p>Número de re-agendamientos de esta derivación (0–1). No se reinicia: un solo re-agendamiento por derivación.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-derivacion-offer-decline-count.html"
+                  title="StructureDefinition/derivacion-offer-decline-count">Conteo de rechazos de esta oferta</a>
+            </td>
+            <td>
+<p>Número de veces que el paciente ha rechazado esta oferta (0–2). Se reinicia por oferta (N5).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-derivacion-referral-identifier.html"
+                  title="StructureDefinition/derivacion-referral-identifier">Identificador de la derivación</a>
+            </td>
+            <td>
+<p>El identificador de la derivación (el mismo de ServiceRequest.identifier) en la Composition de la contrareferencia. Ningún campo base de Composition lleva el id de la derivación; el enlace también viaja en DocumentReference.context.related.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-derivacion-offer-number.html"
+                  title="StructureDefinition/derivacion-offer-number">Número de oferta (de esta derivación)</a>
+            </td>
+            <td>
+<p>Contador por derivación: 1ª oferta, re-oferta (2ª), etc. Cada oferta es un Appointment nuevo.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-derivacion-sla-acceptance-deadline.html"
+                  title="StructureDefinition/derivacion-sla-acceptance-deadline">Plazo de aceptación</a>
+            </td>
+            <td>
+<p>Fecha límite para la decisión de aceptación/rechazo: creación + 5 días hábiles (2 si es urgente).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-derivacion-sla-confirmation-deadline.html"
+                  title="StructureDefinition/derivacion-sla-confirmation-deadline">Plazo de confirmación</a>
+            </td>
+            <td>
+<p>Fecha límite para confirmar una oferta: oferta + 3 días hábiles. Presente solo mientras una oferta está abierta.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-derivacion-sla-counterreferral-deadline.html"
+                  title="StructureDefinition/derivacion-sla-counterreferral-deadline">Plazo de contrareferencia</a>
+            </td>
+            <td>
+<p>Fecha límite para enviar la contrareferencia: encuentro + 5 días hábiles.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-derivacion-sla-offer-deadline.html"
+                  title="StructureDefinition/derivacion-sla-offer-deadline">Plazo de oferta de cita</a>
+            </td>
+            <td>
+<p>Fecha límite para ofrecer la cita: aceptación + 10 días hábiles.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-derivacion-sla-retriage-deadline.html"
+                  title="StructureDefinition/derivacion-sla-retriage-deadline">Plazo de re-triaje</a>
+            </td>
+            <td>
+<p>Fecha límite para la decisión de re-triaje de APS: rechazo (o retorno por fallo de agendamiento) + 5 días hábiles.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-derivacion-delivery-outcome.html"
+                  title="StructureDefinition/derivacion-delivery-outcome">Resultado de la entrega</a>
+            </td>
+            <td>
+<table>
+  <tbody>
+    <tr>
+      <td>Resultado de la entrega de una notificación: delivered</td>
+      <td>failed. Communication.status = completed significa enviada; el resultado de la entrega es esta extensión.</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
+   <h3>Terminology: Value Sets </h3>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-derivacion-base-cruce.html"
+                  title="ValueSet/derivacion-base-cruce">Base del cruce de identidad</a>
+            </td>
+            <td>
+<p>Bases posibles del cruce de identidad en el MPI.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-derivacion-canal.html" title="ValueSet/derivacion-canal">Canal de notificación</a>
+            </td>
+            <td>
+<p>Canales de notificación de la derivación.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-derivacion-task-code.html"
+                  title="ValueSet/derivacion-task-code">Código de la tarea de derivación</a>
+            </td>
+            <td>
+<p>Códigos de Task de esta guía.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-derivacion-especialidad.html"
+                  title="ValueSet/derivacion-especialidad">Especialidad / servicio (catálogo local)</a>
+            </td>
+            <td>
+<p>Especialidades y servicios a los que se puede derivar.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-derivacion-estado-referencia.html"
+                  title="ValueSet/derivacion-estado-referencia">Estado de la derivación</a>
+            </td>
+            <td>
+<p>Estados posibles de una derivación APS → especialidad.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-derivacion-motivo-rechazo.html"
+                  title="ValueSet/derivacion-motivo-rechazo">Motivo de rechazo</a>
+            </td>
+            <td>
+<p>Motivos por los que la especialidad puede rechazar una derivación.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-derivacion-resultado-entrega.html"
+                  title="ValueSet/derivacion-resultado-entrega">Resultado de la entrega de una notificación</a>
+            </td>
+            <td>
+<p>Resultados posibles de la entrega de una notificación.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-derivacion-rol.html" title="ValueSet/derivacion-rol">Rol en la derivación</a>
+            </td>
+            <td>
+<p>Roles que una persona puede tener en una derivación.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
+   <h3>Terminology: Code Systems </h3>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-derivacion-base-cruce.html"
+                  title="CodeSystem/derivacion-base-cruce">Base del cruce de identidad</a>
+            </td>
+            <td>
+<p>Cómo se estableció el cruce de identidad en el MPI (lista local).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-derivacion-canal.html"
+                  title="CodeSystem/derivacion-canal">Canal de notificación</a>
+            </td>
+            <td>
+<p>Canales por los que se envía una notificación (lista local; el caso no fija un canal por notificación).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-derivacion-task-code.html"
+                  title="CodeSystem/derivacion-task-code">Código de la tarea de derivación</a>
+            </td>
+            <td>
+<p>El Task de esta guía es siempre un registro de flujo de trabajo de derivación.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-derivacion-especialidad.html"
+                  title="CodeSystem/derivacion-especialidad">Especialidad / servicio (catálogo local)</a>
+            </td>
+            <td>
+<p>Catálogo local de especialidades y servicios, versionado por la red (hub + servicios). El ejemplo trabajado es cardiología; la red amplía el catálogo sin tocar esta guía.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-derivacion-estado-referencia.html"
+                  title="CodeSystem/derivacion-estado-referencia">Estado de la derivación</a>
+            </td>
+            <td>
+<p>Los nueve estados del caso de la derivación APS → especialidad (spec §3.1). El estado vive en Task.businessStatus, nunca como valor inventado de Task.status.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-derivacion-motivo-rechazo.html"
+                  title="CodeSystem/derivacion-motivo-rechazo">Motivo de rechazo</a>
+            </td>
+            <td>
+<p>Motivos de rechazo de la derivación (lista local de la especialidad; el texto libre acompaña al código).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-derivacion-resultado-entrega.html"
+                  title="CodeSystem/derivacion-resultado-entrega">Resultado de la entrega de una notificación</a>
+            </td>
+            <td>
+<p>Resultados posibles de la entrega de una notificación (lista local).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-derivacion-rol.html" title="CodeSystem/derivacion-rol">Rol en la derivación</a>
+            </td>
+            <td>
+<p>Los seis roles del caso de uso (spec §2). Dentro de una derivación, cada rol es una persona (el clínico de triaje no es el agendador — C1).</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="5"> </a>
+   <h3>Example: Example Instances </h3>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-rol-admin-aps.html"
+                  title="PractitionerRole/rol-admin-aps">Administrativo APS en la derivación REF-2026-0001</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Schedule-schedule-cardiologia.html"
+                  title="Schedule/schedule-cardiologia">Agenda de cardiología</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-rol-agendador.html"
+                  title="PractitionerRole/rol-agendador">Agendador en la derivación REF-2026-0001</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-bundle-pi3-ref-2026-0001.html"
+                  title="Bundle/bundle-pi3-ref-2026-0001">Bundle de documento PI-3 (contrareferencia)</a>
+            </td>
+            <td>
+<p>La contrareferencia viaja como documento FHIR: la Composition es la primera entrada (OP-6).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-bundle-pi0-ref-2026-0001.html"
+                  title="Bundle/bundle-pi0-ref-2026-0001">Bundle de transacción PI-0 (creación de la derivación)</a>
+            </td>
+            <td>
+<p>La derivación viaja como recursos: ServiceRequest + Task en un Bundle de tipo transaction (OP-1).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-org-cesfam-los-aromos.html"
+                  title="Organization/org-cesfam-los-aromos">CESFAM Los Aromos</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Appointment-cita-ref-2026-0001.html"
+                  title="Appointment/cita-ref-2026-0001">Cita de la derivación REF-2026-0001 (proposed)</a>
+            </td>
+            <td>
+<p>La oferta de cita (PI-2): propuesta, aún sin confirmar por la paciente.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-rol-triaje.html"
+                  title="PractitionerRole/rol-triaje">Clínico de triaje en la derivación REF-2026-0001</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-location-cardiologia.html"
+                  title="Location/location-cardiologia">Consulta de cardiología</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-contrareferencia-ref-2026-0001.html"
+                  title="Composition/contrareferencia-ref-2026-0001">Contrareferencia REF-2026-0001</a>
+            </td>
+            <td>
+<p>El documento de vuelta del especialista a APS (PI-3).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-diagnostico-ref-2026-0001.html"
+                  title="Condition/diagnostico-ref-2026-0001">Diagnóstico: insuficiencia cardiaca sistólica crónica</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DocumentReference-documento-ref-2026-0001.html"
+                  title="DocumentReference/documento-ref-2026-0001">Documento de contrareferencia REF-2026-0001</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ecg-2026-11-19.html"
+                  title="Observation/ecg-2026-11-19">ECG de la derivación REF-2026-0001</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-aps-encounter-2026-11-19.html"
+                  title="Encounter/aps-encounter-2026-11-19">Encuentro APS que creó la derivación</a>
+            </td>
+            <td>
+<p>El encuentro de APS existe en el EHR de APS; la guía lo referencia, no lo remodela.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-encuentro-ref-2026-0001.html"
+                  title="Encounter/encuentro-ref-2026-0001">Encuentro de especialidad REF-2026-0001 (planned)</a>
+            </td>
+            <td>
+<p>La visita, creada en la reserva (planned); no se crea en la asistencia.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Endpoint-endpoint-cardiologia.html"
+                  title="Endpoint/endpoint-cardiologia">Endpoint del servicio de cardiología</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-especialista-cardiologia.html"
+                  title="Practitioner/especialista-cardiologia">Especialista de cardiología (sintético)</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-rol-especialista.html"
+                  title="PractitionerRole/rol-especialista">Especialista en la derivación REF-2026-0001</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-org-hub.html" title="Organization/org-hub">Hub de derivación</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-maria-gonzalez.html" title="Patient/maria-gonzalez">María González (paciente sintética)</a>
+            </td>
+            <td>
+<p>Paciente de la derivación REF-2026-0001.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-medico-aps.html" title="Practitioner/medico-aps">Médico APS (sintético)</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-rol-medico-aps.html"
+                  title="PractitionerRole/rol-medico-aps">Médico APS en la derivación REF-2026-0001</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ntprobnp-2026-11-19.html"
+                  title="Observation/ntprobnp-2026-11-19">NT-proBNP de la derivación REF-2026-0001</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Communication-notificacion-aceptacion-ref-2026-0001.html"
+                  title="Communication/notificacion-aceptacion-ref-2026-0001">Notificación de aceptación a la paciente</a>
+            </td>
+            <td>
+<p>El administrativo de APS informa a la paciente de que la especialidad aceptó la derivación (PI-1, C5/Q3).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CarePlan-plan-ref-2026-0001.html"
+                  title="CarePlan/plan-ref-2026-0001">Plan de seguimiento para APS</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="AppointmentResponse-respuesta-cita-1.html"
+                  title="AppointmentResponse/respuesta-cita-1">Respuesta de la paciente a la oferta (accepted)</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="HealthcareService-servicio-cardiologia.html"
+                  title="HealthcareService/servicio-cardiologia">Servicio de cardiología</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-org-cardiologia.html"
+                  title="Organization/org-cardiologia">Servicio de cardiología (organización)</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Slot-slot-cardiologia-1.html" title="Slot/slot-cardiologia-1">Slot de cardiología (reservado)</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ServiceRequest-ref-2026-0001.html"
+                  title="ServiceRequest/ref-2026-0001">Solicitud de derivación REF-2026-0001</a>
+            </td>
+            <td>
+<p>Derivación de María González a cardiología por sospecha de insuficiencia cardiaca (PI-0).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Task-tarea-ref-2026-0001.html" title="Task/tarea-ref-2026-0001">Tarea de derivación REF-2026-0001 (requested)</a>
+            </td>
+            <td>
+<p>El registro de estado del flujo de trabajo, en su creación (PI-0).</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href=""></a>.  Package hl7.fhir.uv.test.derivacion-aps-especialidad#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Nov 20, 2026 12:33+0000">2026-11-20</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

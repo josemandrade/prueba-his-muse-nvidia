@@ -1,0 +1,20 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "derivacion-motivo-rechazo",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet derivacion-motivo-rechazo</b></p><a name=\"derivacion-motivo-rechazo\"> </a><a name=\"hcderivacion-motivo-rechazo\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-derivacion-motivo-rechazo.html\"><code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-motivo-rechazo</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.0</span></li></ul></div>"
+  },
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-motivo-rechazo",
+  "version" : "0.1.0",
+  "name" : "DerivacionMotivoRechazo",
+  "title" : "Motivo de rechazo",
+  "status" : "draft",
+  "date" : "2026-11-20T12:33:32+00:00",
+  "description" : "Motivos por los que la especialidad puede rechazar una derivación.",
+  "compose" : {
+    "include" : [{
+      "system" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-motivo-rechazo"
+    }]
+  }
+}
