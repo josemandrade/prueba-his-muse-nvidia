@@ -1,0 +1,76 @@
+# .github/workflows/ig-build-referral.yml
+# Build, validate and deploy the FHIR Implementation Guide (referral APS -> specialty).
+# Validates with SUSHI + the FHIR IG Publisher; deploys to the
+# derivacion-aps-especialidad subpath of the repo's GitHub Pages site.
+# This repo holds more than one guide, so each guide has its own workflow
+# file and its own subpath, and all of them deploy to the gh-pages branch
+# (see references/implementation-guide-sushi/ci-cd.md in the pack).
+# Enable GitHub Pages (Settings -> Pages -> Source: Deploy from a branch,
+# branch gh-pages, folder / (root)). The gh-pages branch is created by the
+# first deploy.
+name: IG build (referral)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/**'
+      - '.github/workflows/ig-build-referral.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ig-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install SUSHI
+        run: npm install -g fsh-sushi
+      - name: Run SUSHI
+        run: sushi .
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Download the IG Publisher
+        run: wget https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -O publisher.jar
+      - name: Install Jekyll
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ruby-full
+          sudo gem install bundler jekyll
+      - name: Build and validate the IG
+        run: java -Xms3550m -Xmx3550m -jar publisher.jar -ig .
+      - name: Upload the QA report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: qa
+          path: docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/output/qa.tgz
+          if-no-files-found: warn
+      - name: Deploy to the derivacion-aps-especialidad subpath
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: docs/health-interop/2026-11-19-referral-aps-especialidad/05-implementation-guide/output
+          destination_dir: derivacion-aps-especialidad
+          keep_files: true
+          force_orphan: false
