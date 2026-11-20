@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+                  xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+                  xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+                  xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  id="Definitions_SchoolVisionScreening"
+                  targetNamespace="http://health-interop.org/school-vision-screening"
+                  exporter="opencode"
+                  exporterVersion="1.0">
+  <bpmn:process id="Process_SchoolVisionScreening" isExecutable="false">
+    <!-- Data Objects -->
+    <bpmn:dataObject id="Data_OptOutList" name="Opt-Out List (Children Opted Out)" />
+    <bpmn:dataObject id="Data_AbsentAttemptCount" name="Absent Attempt Count" />
+    <bpmn:dataObject id="Data_IncompleteAttemptCount" name="Incomplete Attempt Count" />
+    <bpmn:dataObject id="Data_ReferralId" name="Active Referral ID" />
+    <bpmn:dataObject id="Data_ReferralStatus" name="Referral Status" />
+
+    <!-- Start Event -->
+    <bpmn:startEvent id="Start_ScreeningYear" name="School Year Starts">
+      <bpmn:outgoing>Flow_OptOutConsent</bpmn:outgoing>
+    </bpmn:startEvent>
+
+    <!-- Opt-out Consent -->
+    <bpmn:task id="Task_OptOutConsent" name="Distribute Opt-Out Consent to Parents">
+      <bpmn:incoming>Flow_OptOutConsent</bpmn:incoming>
+      <bpmn:outgoing>Flow_ConsentDone</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_OptOutConsent" sourceRef="Start_ScreeningYear" targetRef="Task_OptOutConsent" />
+    <bpmn:sequenceFlow id="Flow_ConsentDone" sourceRef="Task_OptOutConsent" targetRef="Task_ScheduleScreening" />
+
+    <!-- Schedule Screening -->
+    <bpmn:task id="Task_ScheduleScreening" name="Schedule Screening Sessions for School Year">
+      <bpmn:incoming>Flow_ConsentDone</bpmn:incoming>
+      <bpmn:outgoing>Flow_ScreeningDay</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_ScreeningDay" sourceRef="Task_ScheduleScreening" targetRef="Task_ScreeningDay" />
+
+    <!-- Screening Day Loop (for each child) -->
+    <bpmn:task id="Task_ScreeningDay" name="Screening Day: Child Presents for Screening">
+      <bpmn:incoming>Flow_ScreeningDay</bpmn:incoming>
+      <bpmn:incoming>Flow_ReScreenAbsent</bpmn:incoming>
+      <bpmn:incoming>Flow_ReScreenIncomplete</bpmn:incoming>
+      <bpmn:outgoing>Flow_CheckOptOut</bpmn:outgoing>
+    </bpmn:task>
+
+    <!-- Check Opt-Out -->
+    <bpmn:exclusiveGateway id="Gateway_CheckOptOut" name="Child Opted Out?" />
+    <bpmn:sequenceFlow id="Flow_CheckOptOut" sourceRef="Task_ScreeningDay" targetRef="Gateway_CheckOptOut" />
+    <bpmn:sequenceFlow id="Flow_OptOutYes" sourceRef="Gateway_CheckOptOut" targetRef="Task_RecordOptOut">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">Yes</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="Flow_OptOutNo" sourceRef="Gateway_CheckOptOut" targetRef="Task_PerformScreening">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">No</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+
+    <!-- Opted Out -->
+    <bpmn:task id="Task_RecordOptOut" name="Record Opt-Out; No Screening Performed">
+      <bpmn:incoming>Flow_OptOutYes</bpmn:incoming>
+      <bpmn:outgoing>Flow_NextChild</bpmn:outgoing>
+    </bpmn:task>
+
+    <!-- Perform Screening -->
+    <bpmn:task id="Task_PerformScreening" name="Perform Visual Acuity Screening (Snellen/E/Lea)">
+      <bpmn:incoming>Flow_OptOutNo</bpmn:incoming>
+      <bpmn:outgoing>Flow_ScreeningResult</bpmn:outgoing>
+    </bpmn:task>
+
+    <!-- Screening Result Gateway -->
+    <bpmn:exclusiveGateway id="Gateway_ScreeningResult" name="Screening Outcome?" />
+    <bpmn:sequenceFlow id="Flow_ScreeningResult" sourceRef="Task_PerformScreening" targetRef="Gateway_ScreeningResult" />
+
+    <!-- Pass Branch -->
+    <bpmn:sequenceFlow id="Flow_Pass" sourceRef="Gateway_ScreeningResult" targetRef="Task_RecordPass">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">Pass (≥6/9 both eyes)</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:task id="Task_RecordPass" name="Record Pass Result; Notify Parent (Pass Letter)">
+      <bpmn:incoming>Flow_Pass</bpmn:incoming>
+      <bpmn:outgoing>Flow_PassToPrimaryCare</bpmn:outgoing>
+    </bpmn:task>
+
+    <!-- Pass to Primary Care (sequential) -->
+    <bpmn:sequenceFlow id="Flow_PassToPrimaryCare" sourceRef="Task_RecordPass" targetRef="Task_PrimaryCareReceiveScreening" />
+    <bpmn:task id="Task_PrimaryCareReceiveScreening" name="Primary Care Receives Screening Result">
+      <bpmn:incoming>Flow_PassToPrimaryCare</bpmn:incoming>
+      <bpmn:incoming>Flow_IP4_Decline</bpmn:incoming>
+      <bpmn:incoming>Flow_IP4_Missed</bpmn:incoming>
+      <bpmn:outgoing>Flow_NextChild</bpmn:outgoing>
+    </bpmn:task>
+
+    <!-- Refer Branch -->
+    <bpmn:sequenceFlow id="Flow_Refer" sourceRef="Gateway_ScreeningResult" targetRef="Task_CreateReferral">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">Refer (≤6/12 either eye or ≥2 line diff)</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:task id="Task_CreateReferral" name="Create Referral Letter with Screening Data">
+      <bpmn:incoming>Flow_Refer</bpmn:incoming>
+      <bpmn:outgoing>Flow_ParentDecision</bpmn:outgoing>
+    </bpmn:task>
+
+    <!-- Parent Decision on Referral -->
+    <bpmn:exclusiveGateway id="Gateway_ParentDecision" name="Parent Accepts Referral?" />
+    <bpmn:sequenceFlow id="Flow_ParentDecision" sourceRef="Task_CreateReferral" targetRef="Gateway_ParentDecision" />
+    <bpmn:sequenceFlow id="Flow_ParentDeclines" sourceRef="Gateway_ParentDecision" targetRef="Task_RecordDecline">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">Decline</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="Flow_ParentAccepts" sourceRef="Gateway_ParentDecision" targetRef="Task_SendReferral">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">Accept</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+
+    <!-- Parent Declines -->
+    <bpmn:task id="Task_RecordDecline" name="Record Decline with Reason; Send Screening Result to Primary Care (No Referral)">
+      <bpmn:incoming>Flow_ParentDeclines</bpmn:incoming>
+      <bpmn:outgoing>Flow_IP4_Decline</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_IP4_Decline" sourceRef="Task_RecordDecline" targetRef="Task_PrimaryCareReceiveScreening" />
+
+    <!-- Send Referral -->
+    <bpmn:task id="Task_SendReferral" name="Send Referral to Ophthalmology (via Parent); Start 4-Week Timer; Store Referral ID">
+      <bpmn:incoming>Flow_ParentAccepts</bpmn:incoming>
+      <bpmn:incoming>Flow_ReReferralSent</bpmn:incoming>
+      <bpmn:incoming>Flow_ResendAfterReject</bpmn:incoming>
+      <bpmn:outgoing>Flow_ReferralSent</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_ReferralSent" sourceRef="Task_SendReferral" targetRef="Task_WaitAssessment" />
+
+    <!-- Wait for Assessment with 4-Week Timer -->
+    <bpmn:task id="Task_WaitAssessment" name="Wait for Ophthalmology Assessment (4-Week Deadline)">
+      <bpmn:incoming>Flow_ReferralSent</bpmn:incoming>
+      <bpmn:incoming>Flow_ReReferralSent</bpmn:incoming>
+      <bpmn:outgoing>Flow_AssessmentReceived</bpmn:outgoing>
+      <bpmn:outgoing>Flow_Timeout4Weeks</bpmn:outgoing>
+    </bpmn:task>
+
+    <!-- Boundary Timer Event on Wait Assessment -->
+    <bpmn:boundaryEvent id="Boundary_Timer_4Weeks" name="4-Week Deadline" attachedToRef="Task_WaitAssessment" cancelActivity="true">
+      <bpmn:timerEventDefinition>
+        <bpmn:timeDuration>P4W</bpmn:timeDuration>
+      </bpmn:timerEventDefinition>
+      <bpmn:outgoing>Flow_Timeout4Weeks</bpmn:outgoing>
+    </bpmn:boundaryEvent>
+    <bpmn:sequenceFlow id="Flow_Timeout4Weeks" sourceRef="Boundary_Timer_4Weeks" targetRef="Task_CancelReferral" />
+
+    <!-- Cancel Original Referral (360X PCC-58 Close) -->
+    <bpmn:task id="Task_CancelReferral" name="Cancel Original Referral at Ophthalmology (360X PCC-58 Close: No Response Within 4 Weeks)">
+      <bpmn:incoming>Flow_Timeout4Weeks</bpmn:incoming>
+      <bpmn:outgoing>Flow_NurseFollowUpParent</bpmn:outgoing>
+    </bpmn:task>
+
+    <!-- Nurse Follow-up on Timeout -->
+    <bpmn:task id="Task_NurseFollowUpParent" name="Nurse Contacts Parent: Check Appointment Status; Re-Issue New Referral if Lost">
+      <bpmn:incoming>Flow_NurseFollowUpParent</bpmn:incoming>
+      <bpmn:outgoing>Flow_ReIssueReferral</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_NurseFollowUpParent" sourceRef="Task_CancelReferral" targetRef="Task_NurseFollowUpParent" />
+    <bpmn:sequenceFlow id="Flow_ReIssueReferral" sourceRef="Task_NurseFollowUpParent" targetRef="Task_SendReferral" />
+
+    <!-- Referral Rejection Path (360X PCC-56 Reject) -->
+    <bpmn:sequenceFlow id="Flow_ReferralRejected" sourceRef="Task_WaitAssessment" targetRef="Gateway_ReferralRejected" />
+    <bpmn:exclusiveGateway id="Gateway_ReferralRejected" name="Referral Rejected by Ophthalmology?" />
+    <bpmn:sequenceFlow id="Flow_RejectYes" sourceRef="Gateway_ReferralRejected" targetRef="Task_HandleReject">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">Yes (PCC-56 Reject)</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="Flow_RejectNo" sourceRef="Gateway_ReferralRejected" targetRef="Gateway_AssessmentOutcome">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">No (Assessment Received)</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+
+    <bpmn:task id="Task_HandleReject" name="Handle Referral Rejection: Nurse Corrects Data and Resends, or Closes Referral">
+      <bpmn:incoming>Flow_RejectYes</bpmn:incoming>
+      <bpmn:outgoing>Flow_ResendAfterReject</bpmn:outgoing>
+      <bpmn:outgoing>Flow_CloseAfterReject</bpmn:outgoing>
+    </bpmn:task>
+
+    <bpmn:exclusiveGateway id="Gateway_RejectAction" name="Correct and Resend or Close?" />
+    <bpmn:sequenceFlow id="Flow_ResendAfterReject" sourceRef="Task_HandleReject" targetRef="Gateway_RejectAction">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">Correct and Resend</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="Flow_CloseAfterReject" sourceRef="Task_HandleReject" targetRef="Task_CloseRejectedReferral">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">Close</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+
+    <bpmn:task id="Task_CloseRejectedReferral" name="Close Rejected Referral; Notify Parent and Primary Care">
+      <bpmn:incoming>Flow_CloseAfterReject</bpmn:incoming>
+      <bpmn:outgoing>Flow_IP4_Rejected</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_IP4_Rejected" sourceRef="Task_CloseRejectedReferral" targetRef="Task_PrimaryCareReceiveScreening" />
+    <bpmn:sequenceFlow id="Flow_ResendAfterReject" sourceRef="Gateway_RejectAction" targetRef="Task_SendReferral" />
+
+    <!-- Assessment Received -->
+    <bpmn:sequenceFlow id="Flow_AssessmentReceived" sourceRef="Gateway_ReferralRejected" targetRef="Gateway_AssessmentOutcome" />
+
+    <!-- Assessment Outcome Gateway -->
+    <bpmn:exclusiveGateway id="Gateway_AssessmentOutcome" name="Assessment Outcome?" />
+    <bpmn:sequenceFlow id="Flow_Seen" sourceRef="Gateway_AssessmentOutcome" targetRef="Task_ProcessAssessment">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">Seen (Diagnosis + Prescription + Plan)</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="Flow_DNA" sourceRef="Gateway_AssessmentOutcome" targetRef="Task_ProcessDNA">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">Did Not Attend (DNA)</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+
+    <!-- Process Assessment (Seen) -->
+    <bpmn:task id="Task_ProcessAssessment" name="Process Assessment: Send Summary to Nurse; Full Report to Primary Care">
+      <bpmn:incoming>Flow_Seen</bpmn:incoming>
+      <bpmn:outgoing>Flow_IP3_Summary</bpmn:outgoing>
+      <bpmn:outgoing>Flow_IP3_Full</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_IP3_Summary" sourceRef="Task_ProcessAssessment" targetRef="Task_NurseReceiveSummary" />
+    <bpmn:sequenceFlow id="Flow_IP3_Full" sourceRef="Task_ProcessAssessment" targetRef="Task_PrimaryCareReceiveAssessment" />
+
+    <!-- Nurse Receives Summary -->
+    <bpmn:task id="Task_NurseReceiveSummary" name="Nurse Receives Diagnosis + Prescription Summary">
+      <bpmn:incoming>Flow_IP3_Summary</bpmn:incoming>
+      <bpmn:outgoing>Flow_GenerateAccommodation</bpmn:outgoing>
+    </bpmn:task>
+
+    <!-- Generate Teacher Accommodation -->
+    <bpmn:task id="Task_GenerateAccommodation" name="Generate Teacher Accommodation Notice (Glasses/Front Seat)">
+      <bpmn:incoming>Flow_GenerateAccommodation</bpmn:incoming>
+      <bpmn:outgoing>Flow_SendAccommodation</bpmn:outgoing>
+    </bpmn:task>
+
+    <!-- Send Accommodation to Teacher -->
+    <bpmn:task id="Task_SendAccommodation" name="Send Accommodation Notice to Teacher">
+      <bpmn:incoming>Flow_SendAccommodation</bpmn:incoming>
+      <bpmn:outgoing>Flow_CloseReferral</bpmn:outgoing>
+    </bpmn:task>
+
+    <!-- Primary Care Receives Assessment -->
+    <bpmn:task id="Task_PrimaryCareReceiveAssessment" name="Primary Care Receives Full Ophthalmology Assessment">
+      <bpmn:incoming>Flow_IP3_Full</bpmn:incoming>
+      <bpmn:outgoing>Flow_CloseReferral</bpmn:outgoing>
+    </bpmn:task>
+
+    <!-- Close Referral -->
+    <bpmn:task id="Task_CloseReferral" name="Close Referral; Archive Records">
+      <bpmn:incoming>Flow_SendAccommodation</bpmn:incoming>
+      <bpmn:incoming>Flow_PrimaryCareReceiveAssessment</bpmn:incoming>
+      <bpmn:incoming>Flow_CloseAfterDNA</bpmn:incoming>
+      <bpmn:outgoing>Flow_NextChild</bpmn:outgoing>
+    </bpmn:task>
+
+    <!-- Process DNA -->
+    <bpmn:task id="Task_ProcessDNA" name="Record DNA; Nurse Contacts Parent; Offer One Re-Referral">
+      <bpmn:incoming>Flow_DNA</bpmn:incoming>
+      <bpmn:outgoing>Flow_ReReferralDecision</bpmn:outgoing>
+    </bpmn:task>
+
+    <!-- Re-Referral Decision -->
+    <bpmn:exclusiveGateway id="Gateway_ReReferralDecision" name="Parent Accepts Re-Referral?" />
+    <bpmn:sequenceFlow id="Flow_ReReferralDecision" sourceRef="Task_ProcessDNA" targetRef="Gateway_ReReferralDecision" />
+    <bpmn:sequenceFlow id="Flow_ReReferralDecline" sourceRef="Gateway_ReReferralDecision" targetRef="Task_CloseAfterDNA">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">Decline</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="Flow_ReReferralAccept" sourceRef="Gateway_ReReferralDecision" targetRef="Task_CreateReReferral">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">Accept</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+
+    <!-- Close After DNA (2nd DNA or Decline Re-Referral) -->
+    <bpmn:task id="Task_CloseAfterDNA" name="Close Referral as DNA (2nd DNA or Decline); Notify Primary Care">
+      <bpmn:incoming>Flow_ReReferralDecline</bpmn:incoming>
+      <bpmn:outgoing>Flow_CloseAfterDNA</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_CloseAfterDNA" sourceRef="Task_CloseAfterDNA" targetRef="Task_PrimaryCareReceiveDNA" />
+
+    <!-- Primary Care Receives DNA Notification -->
+    <bpmn:task id="Task_PrimaryCareReceiveDNA" name="Primary Care Receives DNA Closure Notification">
+      <bpmn:incoming>Flow_CloseAfterDNA</bpmn:incoming>
+      <bpmn:outgoing>Flow_NextChild</bpmn:outgoing>
+    </bpmn:task>
+
+    <!-- Create Re-Referral -->
+    <bpmn:task id="Task_CreateReReferral" name="Create Re-Referral with New Appointment">
+      <bpmn:incoming>Flow_ReReferralAccept</bpmn:incoming>
+      <bpmn:outgoing>Flow_ReReferralSent</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_ReReferralSent" sourceRef="Task_CreateReReferral" targetRef="Task_SendReferral" />
+
+    <!-- Absent Branch -->
+    <bpmn:sequenceFlow id="Flow_Absent" sourceRef="Gateway_ScreeningResult" targetRef="Task_RecordAbsent">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">Absent</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:task id="Task_RecordAbsent" name="Record Absent; Increment Absent Attempt Count; Schedule Re-Screen within 2 Weeks">
+      <bpmn:incoming>Flow_Absent</bpmn:incoming>
+      <bpmn:outgoing>Flow_CheckAbsentCount</bpmn:outgoing>
+    </bpmn:task>
+
+    <bpmn:exclusiveGateway id="Gateway_CheckAbsentCount" name="2nd Absent Attempt?" />
+    <bpmn:sequenceFlow id="Flow_AbsentFirst" sourceRef="Gateway_CheckAbsentCount" targetRef="Task_ReScreenAbsent">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">First Attempt</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="Flow_AbsentSecond" sourceRef="Gateway_CheckAbsentCount" targetRef="Task_RecordMissed">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">Second Attempt</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+
+    <bpmn:task id="Task_ReScreenAbsent" name="Re-Screen Scheduled">
+      <bpmn:incoming>Flow_AbsentFirst</bpmn:incoming>
+      <bpmn:outgoing>Flow_ReScreenAbsent</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_ReScreenAbsent" sourceRef="Task_ReScreenAbsent" targetRef="Task_ScreeningDay" />
+
+    <bpmn:task id="Task_RecordMissed" name="Record as Missed; Notify Parent; Send 'Screening Not Completed' to Primary Care">
+      <bpmn:incoming>Flow_AbsentSecond</bpmn:incoming>
+      <bpmn:outgoing>Flow_IP4_Missed</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_IP4_Missed" sourceRef="Task_RecordMissed" targetRef="Task_PrimaryCareReceiveScreening" />
+
+    <!-- Incomplete Branch -->
+    <bpmn:sequenceFlow id="Flow_Incomplete" sourceRef="Gateway_ScreeningResult" targetRef="Task_RecordIncomplete">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">Incomplete (Uncooperative / One Eye Only)</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:task id="Task_RecordIncomplete" name="Record Incomplete with Reason; Increment Incomplete Attempt Count; Schedule Re-Screen within 2 Weeks">
+      <bpmn:incoming>Flow_Incomplete</bpmn:incoming>
+      <bpmn:outgoing>Flow_CheckIncompleteCount</bpmn:outgoing>
+    </bpmn:task>
+
+    <bpmn:exclusiveGateway id="Gateway_CheckIncompleteCount" name="2nd Incomplete Attempt?" />
+    <bpmn:sequenceFlow id="Flow_IncompleteFirst" sourceRef="Gateway_CheckIncompleteCount" targetRef="Task_ReScreenIncomplete">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">First Attempt</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="Flow_IncompleteSecond" sourceRef="Gateway_CheckIncompleteCount" targetRef="Task_DirectReferralPartial">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">Second Attempt</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+
+    <bpmn:task id="Task_ReScreenIncomplete" name="Re-Screen Scheduled">
+      <bpmn:incoming>Flow_IncompleteFirst</bpmn:incoming>
+      <bpmn:outgoing>Flow_ReScreenIncomplete</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_ReScreenIncomplete" sourceRef="Task_ReScreenIncomplete" targetRef="Task_ScreeningDay" />
+
+    <!-- Direct Referral with Partial Data (No Parent Decision - Covered by Opt-Out Consent) -->
+    <bpmn:task id="Task_DirectReferralPartial" name="Direct Referral to Ophthalmology with Partial Result Noted">
+      <bpmn:incoming>Flow_IncompleteSecond</bpmn:incoming>
+      <bpmn:outgoing>Flow_NotifyParentDirectReferral</bpmn:outgoing>
+    </bpmn:task>
+
+    <bpmn:task id="Task_NotifyParentDirectReferral" name="Notify Parent of Direct Referral (Clinical Decision; Covered by Opt-Out Consent)">
+      <bpmn:incoming>Flow_NotifyParentDirectReferral</bpmn:incoming>
+      <bpmn:outgoing>Flow_DirectToSendReferral</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_DirectToSendReferral" sourceRef="Task_NotifyParentDirectReferral" targetRef="Task_SendReferral" />
+
+    <!-- End-of-Year Boundary Event for Pending Re-Screens -->
+    <bpmn:boundaryEvent id="Boundary_EndOfYear" name="End of School Year" attachedToRef="Task_ScreeningDay" cancelActivity="true">
+      <bpmn:timerEventDefinition>
+        <bpmn:timeCycle>R/P1Y</bpmn:timeCycle>
+      </bpmn:timerEventDefinition>
+      <bpmn:outgoing>Flow_EndOfYearPending</bpmn:outgoing>
+    </bpmn:boundaryEvent>
+
+    <bpmn:sequenceFlow id="Flow_EndOfYearPending" sourceRef="Boundary_EndOfYear" targetRef="Task_HandleEndOfYearPending" />
+
+    <bpmn:task id="Task_HandleEndOfYearPending" name="End of Year: Children with Pending Re-Screen → Record as Missed; Notify Parent; Notify Primary Care">
+      <bpmn:incoming>Flow_EndOfYearPending</bpmn:incoming>
+      <bpmn:outgoing>Flow_IP4_EndOfYearMissed</bpmn:outgoing>
+    </bpmn:task>
+
+    <bpmn:sequenceFlow id="Flow_IP4_EndOfYearMissed" sourceRef="Task_HandleEndOfYearPending" targetRef="Task_PrimaryCareReceiveScreening" />
+
+    <!-- Next Child / End of Loop -->
+    <bpmn:sequenceFlow id="Flow_NextChild" sourceRef="Task_RecordOptOut" targetRef="Gateway_MoreChildren" />
+    <bpmn:sequenceFlow id="Flow_NextChild2" sourceRef="Task_CloseReferral" targetRef="Gateway_MoreChildren" />
+    <bpmn:sequenceFlow id="Flow_NextChild3" sourceRef="Task_PrimaryCareReceiveDNA" targetRef="Gateway_MoreChildren" />
+    <bpmn:sequenceFlow id="Flow_NextChild4" sourceRef="Task_PrimaryCareReceiveScreening" targetRef="Gateway_MoreChildren" />
+    <bpmn:sequenceFlow id="Flow_NextChild5" sourceRef="Task_HandleEndOfYearPending" targetRef="End_ScreeningYear" />
+
+    <bpmn:exclusiveGateway id="Gateway_MoreChildren" name="More Children to Screen?" />
+    <bpmn:sequenceFlow id="Flow_MoreChildrenYes" sourceRef="Gateway_MoreChildren" targetRef="Task_ScreeningDay">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">Yes</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="Flow_MoreChildrenNo" sourceRef="Gateway_MoreChildren" targetRef="End_ScreeningYear">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">No</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+
+    <!-- End Event -->
+    <bpmn:endEvent id="End_ScreeningYear" name="Screening Year Complete; Archive Records">
+      <bpmn:incoming>Flow_MoreChildrenNo</bpmn:incoming>
+      <bpmn:incoming>Flow_NextChild5</bpmn:incoming>
+    </bpmn:endEvent>
+
+  </bpmn:process>
+
+  <!-- Participant Pools for Interoperability Points -->
+  <bpmn:participant id="Participant_School" name="School Health Service" processRef="Process_SchoolVisionScreening" />
+  <bpmn:participant id="Participant_Ophthalmology" name="Ophthalmology Clinic / Hospital" />
+  <bpmn:participant id="Participant_PrimaryCare" name="Primary Care Team" />
+
+  <!-- Message Flows for Interoperability Points -->
+  <!-- IP-2: Referral Dispatch (School -> Ophthalmology) -->
+  <bpmn:messageFlow id="MessageFlow_IP2_Referral" name="IP-2: Referral Letter + Screening Data (360X PCC-55)" sourceRef="Task_SendReferral" targetRef="Participant_Ophthalmology" />
+  
+  <!-- IP-2b: Cancel Referral (360X PCC-58 Close) -->
+  <bpmn:messageFlow id="MessageFlow_IP2_Cancel" name="IP-2: Cancel Referral (360X PCC-58 Close)" sourceRef="Task_CancelReferral" targetRef="Participant_Ophthalmology" />
+  
+  <!-- IP-2c: Referral Rejection Response (360X PCC-56 Reject) -->
+  <bpmn:messageFlow id="MessageFlow_IP2_Reject" name="IP-2: Referral Rejection (360X PCC-56 Reject)" sourceRef="Participant_Ophthalmology" targetRef="Task_WaitAssessment" />
+  
+  <!-- IP-3: Assessment Return - Summary (Ophthalmology -> School Nurse) -->
+  <bpmn:messageFlow id="MessageFlow_IP3_Summary" name="IP-3: Diagnosis + Prescription Summary (360X PCC-61)" sourceRef="Participant_Ophthalmology" targetRef="Task_NurseReceiveSummary" />
+  
+  <!-- IP-3: Assessment Return - Full (Ophthalmology -> Primary Care) -->
+  <bpmn:messageFlow id="MessageFlow_IP3_Full" name="IP-3: Full Ophthalmology Assessment" sourceRef="Participant_Ophthalmology" targetRef="Task_PrimaryCareReceiveAssessment" />
+  
+  <!-- IP-4: Primary Care Receives Screening Result (School -> Primary Care) -->
+  <bpmn:messageFlow id="MessageFlow_IP4_Pass" name="IP-4: Screening Result (Pass)" sourceRef="Task_RecordPass" targetRef="Participant_PrimaryCare" />
+  <bpmn:messageFlow id="MessageFlow_IP4_Decline" name="IP-4: Screening Result + Decline Reason" sourceRef="Task_RecordDecline" targetRef="Participant_PrimaryCare" />
+  <bpmn:messageFlow id="MessageFlow_IP4_DNA" name="IP-4: DNA Closure Notification" sourceRef="Task_CloseAfterDNA" targetRef="Participant_PrimaryCare" />
+  <bpmn:messageFlow id="MessageFlow_IP4_Missed" name="IP-4: Screening Not Completed (Missed)" sourceRef="Task_RecordMissed" targetRef="Participant_PrimaryCare" />
+  <bpmn:messageFlow id="MessageFlow_IP4_Rejected" name="IP-4: Referral Rejected and Closed" sourceRef="Task_CloseRejectedReferral" targetRef="Participant_PrimaryCare" />
+  <bpmn:messageFlow id="MessageFlow_IP4_EndOfYear" name="IP-4: End-of-Year Missed Screening" sourceRef="Task_HandleEndOfYearPending" targetRef="Participant_PrimaryCare" />
+
+  <!-- IP-5: Teacher Accommodation (Internal) -->
+  <bpmn:messageFlow id="MessageFlow_IP5_Accommodation" name="IP-5: Teacher Accommodation Notice" sourceRef="Task_SendAccommodation" targetRef="Participant_School" />
+
+  <!-- Diagram Interchange -->
+  <bpmndi:BPMNDiagram id="BPMNDiagram_SchoolVisionScreening">
+    <bpmndi:BPMNPlane id="BPMNPlane_SchoolVisionScreening" bpmnElement="Process_SchoolVisionScreening">
+      <!-- Bounds will be set by renderer -->
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
