@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://josemandrade.github.io/prueba-his-muse-nvidia/Organization/org-hub> a fhir:Organization ;
+<https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Organization/org-hub> a fhir:Organization ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:Resource.id [ fhir:value "org-hub"] ;
   fhir:DomainResource.text [
@@ -22,7 +22,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://josemandrade.github.io/prueba-his-muse-nvidia/Organization/org-hub.ttl> a owl:Ontology ;
+<https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Organization/org-hub.ttl> a owl:Ontology ;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-contrareferencia | *Version*:0.1.0 |
+| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-contrareferencia | *Version*:0.1.0 |
 | Draft as of 2026-11-20 | *Computable Name*:DerivacionContrareferencia |
 
  
@@ -36,12 +36,12 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-contraref
 {
   "resourceType" : "StructureDefinition",
   "id" : "derivacion-contrareferencia",
-  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-contrareferencia",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-contrareferencia",
   "version" : "0.1.0",
   "name" : "DerivacionContrareferencia",
   "title" : "Contrareferencia",
   "status" : "draft",
-  "date" : "2026-11-20T12:33:32+00:00",
+  "date" : "2026-11-20T12:39:48+00:00",
   "description" : "El documento clínico de vuelta del especialista a APS: diagnóstico, plan, indicaciones de seguimiento y plan de seguimiento para APS. Perfil propio de esta guía, sobre el recurso base Composition de FHIR R4.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
@@ -100,7 +100,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-contraref
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-referral-identifier"]
+        "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-referral-identifier"]
       }]
     },
     {
@@ -132,7 +132,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-contraref
       "min" : 1,
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-paciente"]
+        "targetProfile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-paciente"]
       }]
     },
     {
@@ -140,7 +140,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-contraref
       "path" : "Composition.encounter",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-encuentro"]
+        "targetProfile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-encuentro"]
       }]
     },
     {
@@ -155,7 +155,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-contraref
       "max" : "1",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rol"]
+        "targetProfile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-rol"]
       }]
     },
     {
@@ -198,7 +198,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-contraref
       "path" : "Composition.section.entry",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-diagnostico"]
+        "targetProfile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-diagnostico"]
       }]
     },
     {
@@ -224,7 +224,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-contraref
       "path" : "Composition.section.entry",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-plan-seguimiento"]
+        "targetProfile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-plan-seguimiento"]
       }]
     },
     {
@@ -268,7 +268,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-contraref
       "path" : "Composition.section.entry",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-plan-seguimiento"]
+        "targetProfile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-plan-seguimiento"]
       }]
     }]
   }

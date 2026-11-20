@@ -28,7 +28,7 @@ Carlos Rojas (official) (http://www.registrocivil.cl/run#33333333-3): Specialty 
   "resourceType" : "PractitionerRole",
   "id" : "rol-agendador",
   "meta" : {
-    "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rol"]
+    "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-rol"]
   },
   "active" : true,
   "practitioner" : {
@@ -39,7 +39,7 @@ Carlos Rojas (official) (http://www.registrocivil.cl/run#33333333-3): Specialty 
   },
   "code" : [{
     "coding" : [{
-      "system" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol",
+      "system" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-rol",
       "code" : "specialty-scheduler",
       "display" : "Specialty scheduler"
     }]

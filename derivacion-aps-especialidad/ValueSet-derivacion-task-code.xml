@@ -3,18 +3,18 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="derivacion-task-code"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet derivacion-task-code</b></p><a name="derivacion-task-code"> </a><a name="hcderivacion-task-code"> </a><ul><li>Include all codes defined in <a href="CodeSystem-derivacion-task-code.html"><code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-task-code</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.1.0</span></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet derivacion-task-code</b></p><a name="derivacion-task-code"> </a><a name="hcderivacion-task-code"> </a><ul><li>Include all codes defined in <a href="CodeSystem-derivacion-task-code.html"><code>https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-task-code</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.1.0</span></li></ul></div>
   </text>
-  <url value="https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-task-code"/>
+  <url value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-task-code"/>
   <version value="0.1.0"/>
   <name value="DerivacionTaskCode"/>
   <title value="Código de la tarea de derivación"/>
   <status value="draft"/>
-  <date value="2026-11-20T12:33:32+00:00"/>
+  <date value="2026-11-20T12:39:48+00:00"/>
   <description value="Códigos de Task de esta guía."/>
   <compose>
     <include>
-      <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-task-code"/>
+      <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-task-code"/>
     </include>
   </compose>
 </ValueSet>

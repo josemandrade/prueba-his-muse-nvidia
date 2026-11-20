@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-delivery-outcome | *Version*:0.1.0 |
+| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-delivery-outcome | *Version*:0.1.0 |
 | Draft as of 2026-11-20 | *Computable Name*:DerivacionDeliveryOutcome |
 
 | | |
@@ -46,12 +46,12 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-delivery-
 {
   "resourceType" : "StructureDefinition",
   "id" : "derivacion-delivery-outcome",
-  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-delivery-outcome",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-delivery-outcome",
   "version" : "0.1.0",
   "name" : "DerivacionDeliveryOutcome",
   "title" : "Resultado de la entrega",
   "status" : "draft",
-  "date" : "2026-11-20T12:33:32+00:00",
+  "date" : "2026-11-20T12:39:48+00:00",
   "description" : "Resultado de la entrega de una notificación: delivered | failed. Communication.status = completed significa enviada; el resultado de la entrega es esta extensión.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
@@ -83,7 +83,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-delivery-
     {
       "id" : "Extension.url",
       "path" : "Extension.url",
-      "fixedUri" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-delivery-outcome"
+      "fixedUri" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-delivery-outcome"
     },
     {
       "id" : "Extension.value[x]",
@@ -94,7 +94,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-delivery-
       }],
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-resultado-entrega"
+        "valueSet" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-resultado-entrega"
       }
     }]
   }

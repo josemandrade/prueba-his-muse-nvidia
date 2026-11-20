@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-match-confidence | *Version*:0.1.0 |
+| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-match-confidence | *Version*:0.1.0 |
 | Draft as of 2026-11-20 | *Computable Name*:DerivacionMatchConfidence |
 
 Confianza del cruce de identidad del MPI, de 0 a 1. Opcional.
@@ -41,12 +41,12 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-match-con
 {
   "resourceType" : "StructureDefinition",
   "id" : "derivacion-match-confidence",
-  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-match-confidence",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-match-confidence",
   "version" : "0.1.0",
   "name" : "DerivacionMatchConfidence",
   "title" : "Confianza del cruce de identidad",
   "status" : "draft",
-  "date" : "2026-11-20T12:33:32+00:00",
+  "date" : "2026-11-20T12:39:48+00:00",
   "description" : "Confianza del cruce de identidad del MPI, de 0 a 1. Opcional.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
@@ -78,7 +78,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-match-con
     {
       "id" : "Extension.url",
       "path" : "Extension.url",
-      "fixedUri" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-match-confidence"
+      "fixedUri" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-match-confidence"
     },
     {
       "id" : "Extension.value[x]",
@@ -92,7 +92,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-match-con
         "severity" : "error",
         "human" : "La confianza del cruce de identidad está entre 0 y 1.",
         "expression" : "$this >= 0 and $this <= 1",
-        "source" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-match-confidence"
+        "source" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-match-confidence"
       }]
     }]
   }

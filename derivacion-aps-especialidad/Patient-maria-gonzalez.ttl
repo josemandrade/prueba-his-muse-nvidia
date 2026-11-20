@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://josemandrade.github.io/prueba-his-muse-nvidia/Patient/maria-gonzalez> a fhir:Patient ;
+<https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Patient/maria-gonzalez> a fhir:Patient ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:Resource.id [ fhir:value "maria-gonzalez"] ;
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-paciente" ;
+       fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-paciente" ;
        fhir:index 0 ;
-       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-paciente>
+       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-paciente>
      ]
   ] ;
   fhir:DomainResource.text [
@@ -21,7 +21,7 @@
   ] ;
   fhir:DomainResource.extension [
      fhir:index 0 ;
-     fhir:Extension.url [ fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-preferred-contact-channel" ] ;
+     fhir:Extension.url [ fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-preferred-contact-channel" ] ;
      fhir:Extension.valueCode [ fhir:value "phone" ]
   ] ;
   fhir:Patient.identifier [
@@ -58,7 +58,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://josemandrade.github.io/prueba-his-muse-nvidia/Patient/maria-gonzalez.ttl> a owl:Ontology ;
+<https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Patient/maria-gonzalez.ttl> a owl:Ontology ;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

@@ -3,18 +3,18 @@
   "id" : "derivacion-task-code",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet derivacion-task-code</b></p><a name=\"derivacion-task-code\"> </a><a name=\"hcderivacion-task-code\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-derivacion-task-code.html\"><code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-task-code</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.0</span></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet derivacion-task-code</b></p><a name=\"derivacion-task-code\"> </a><a name=\"hcderivacion-task-code\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-derivacion-task-code.html\"><code>https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-task-code</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.0</span></li></ul></div>"
   },
-  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-task-code",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-task-code",
   "version" : "0.1.0",
   "name" : "DerivacionTaskCode",
   "title" : "Código de la tarea de derivación",
   "status" : "draft",
-  "date" : "2026-11-20T12:33:32+00:00",
+  "date" : "2026-11-20T12:39:48+00:00",
   "description" : "Códigos de Task de esta guía.",
   "compose" : {
     "include" : [{
-      "system" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-task-code"
+      "system" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-task-code"
     }]
   }
 }

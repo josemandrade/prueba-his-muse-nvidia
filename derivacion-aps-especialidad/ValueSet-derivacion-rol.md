@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-rol | *Version*:0.1.0 |
+| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-rol | *Version*:0.1.0 |
 | Draft as of 2026-11-20 | *Computable Name*:DerivacionRolVS |
 
  
@@ -45,16 +45,16 @@ Roles que una persona puede tener en una derivación.
 {
   "resourceType" : "ValueSet",
   "id" : "derivacion-rol",
-  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-rol",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-rol",
   "version" : "0.1.0",
   "name" : "DerivacionRolVS",
   "title" : "Rol en la derivación",
   "status" : "draft",
-  "date" : "2026-11-20T12:33:32+00:00",
+  "date" : "2026-11-20T12:39:48+00:00",
   "description" : "Roles que una persona puede tener en una derivación.",
   "compose" : {
     "include" : [{
-      "system" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol"
+      "system" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-rol"
     }]
   }
 }

@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-offer-number | *Version*:0.1.0 |
+| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-offer-number | *Version*:0.1.0 |
 | Draft as of 2026-11-20 | *Computable Name*:DerivacionOfferNumber |
 
 Contador por derivación: 1ª oferta, re-oferta (2ª), etc. Cada oferta es un Appointment nuevo.
@@ -42,12 +42,12 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-offer-num
 {
   "resourceType" : "StructureDefinition",
   "id" : "derivacion-offer-number",
-  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-offer-number",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-offer-number",
   "version" : "0.1.0",
   "name" : "DerivacionOfferNumber",
   "title" : "Número de oferta (de esta derivación)",
   "status" : "draft",
-  "date" : "2026-11-20T12:33:32+00:00",
+  "date" : "2026-11-20T12:39:48+00:00",
   "description" : "Contador por derivación: 1ª oferta, re-oferta (2ª), etc. Cada oferta es un Appointment nuevo.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
@@ -79,7 +79,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-offer-num
     {
       "id" : "Extension.url",
       "path" : "Extension.url",
-      "fixedUri" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-offer-number"
+      "fixedUri" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-offer-number"
     },
     {
       "id" : "Extension.value[x]",

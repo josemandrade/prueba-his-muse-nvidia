@@ -51,5 +51,5 @@ Cada lista local es un CodeSystem propio de la guía con su ValueSet; la guía n
 | Identificador de la contrareferencia | `http://especialidad.example.org/counter-referral` |
 | Identificador de la notificación | `http://aps.losaromos.example.org/notification` |
 
-Todos los identificadores de los ejemplos son sintéticos. Los dominios `example.org` son sistemas de identificador de ejemplo, no el canonical de la guía (que es `https://josemandrade.github.io/prueba-his-muse-nvidia/`).
+Todos los identificadores de los ejemplos son sintéticos. Los dominios `example.org` son sistemas de identificador de ejemplo, no el canonical de la guía (que es `https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/`).
 

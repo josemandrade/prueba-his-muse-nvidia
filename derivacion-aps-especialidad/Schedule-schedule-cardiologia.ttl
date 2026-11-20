@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://josemandrade.github.io/prueba-his-muse-nvidia/Schedule/schedule-cardiologia> a fhir:Schedule ;
+<https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Schedule/schedule-cardiologia> a fhir:Schedule ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:Resource.id [ fhir:value "schedule-cardiologia"] ;
   fhir:DomainResource.text [
@@ -14,7 +14,7 @@
   ] ;
   fhir:Schedule.actor [
      fhir:index 0 ;
-     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/HealthcareService/servicio-cardiologia> ;
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/HealthcareService/servicio-cardiologia> ;
      fhir:Reference.reference [ fhir:value "HealthcareService/servicio-cardiologia" ]
   ] ;
   fhir:Schedule.planningHorizon [
@@ -25,7 +25,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://josemandrade.github.io/prueba-his-muse-nvidia/Schedule/schedule-cardiologia.ttl> a owl:Ontology ;
+<https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Schedule/schedule-cardiologia.ttl> a owl:Ontology ;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

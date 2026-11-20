@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-resultado-entrega | *Version*:0.1.0 |
+| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-resultado-entrega | *Version*:0.1.0 |
 | Draft as of 2026-11-20 | *Computable Name*:DerivacionResultadoEntregaCS |
 
  
@@ -26,12 +26,12 @@ Resultados posibles de la entrega de una notificación (lista local).
 {
   "resourceType" : "CodeSystem",
   "id" : "derivacion-resultado-entrega",
-  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-resultado-entrega",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-resultado-entrega",
   "version" : "0.1.0",
   "name" : "DerivacionResultadoEntregaCS",
   "title" : "Resultado de la entrega de una notificación",
   "status" : "draft",
-  "date" : "2026-11-20T12:33:32+00:00",
+  "date" : "2026-11-20T12:39:48+00:00",
   "description" : "Resultados posibles de la entrega de una notificación (lista local).",
   "content" : "complete",
   "count" : 2,

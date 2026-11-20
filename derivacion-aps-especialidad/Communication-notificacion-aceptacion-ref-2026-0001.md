@@ -46,10 +46,10 @@ Profile: [Notificación](StructureDefinition-derivacion-notificacion.md)
   "resourceType" : "Communication",
   "id" : "notificacion-aceptacion-ref-2026-0001",
   "meta" : {
-    "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-notificacion"]
+    "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-notificacion"]
   },
   "extension" : [{
-    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-delivery-outcome",
+    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-delivery-outcome",
     "valueCode" : "delivered"
   }],
   "identifier" : [{
@@ -69,7 +69,7 @@ Profile: [Notificación](StructureDefinition-derivacion-notificacion.md)
   }],
   "medium" : [{
     "coding" : [{
-      "system" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-canal",
+      "system" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-canal",
       "code" : "phone",
       "display" : "Phone"
     }]

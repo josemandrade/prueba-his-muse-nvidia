@@ -3,18 +3,18 @@
 ## Pages
 
 * [Derivación APS → especialidad](index.md)
-* [Operaciones](operations.md)
-* [Diagramas de secuencia](sequences.md)
-* [Terminología](terminology.md)
-* [Proceso (BPMN)](process.md)
-* [Reglas y retención](rules.md)
-* [Ciclo de vida](lifecycle.md)
-* [Diagrama de recursos](resources.md)
-* [Relación con IHE](ihe.md)
-* [Mapeo de datos](mapping.md)
 * [Perfiles](profiles.md)
-* [Artifacts Summary](artifacts.md)
+* [Reglas y retención](rules.md)
+* [Relación con IHE](ihe.md)
 * [Base legal y reporte](public-health.md)
+* [Artifacts Summary](artifacts.md)
+* [Diagrama de recursos](resources.md)
+* [Terminología](terminology.md)
+* [Ciclo de vida](lifecycle.md)
+* [Mapeo de datos](mapping.md)
+* [Diagramas de secuencia](sequences.md)
+* [Operaciones](operations.md)
+* [Proceso (BPMN)](process.md)
 
 ## Resources
 

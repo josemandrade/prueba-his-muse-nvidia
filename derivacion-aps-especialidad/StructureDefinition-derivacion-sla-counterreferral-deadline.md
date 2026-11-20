@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-counterreferral-deadline | *Version*:0.1.0 |
+| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-sla-counterreferral-deadline | *Version*:0.1.0 |
 | Draft as of 2026-11-20 | *Computable Name*:DerivacionSlaCounterreferralDeadline |
 
 Fecha límite para enviar la contrareferencia: encuentro + 5 días hábiles.
@@ -41,12 +41,12 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-sla-count
 {
   "resourceType" : "StructureDefinition",
   "id" : "derivacion-sla-counterreferral-deadline",
-  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-counterreferral-deadline",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-sla-counterreferral-deadline",
   "version" : "0.1.0",
   "name" : "DerivacionSlaCounterreferralDeadline",
   "title" : "Plazo de contrareferencia",
   "status" : "draft",
-  "date" : "2026-11-20T12:33:32+00:00",
+  "date" : "2026-11-20T12:39:48+00:00",
   "description" : "Fecha límite para enviar la contrareferencia: encuentro + 5 días hábiles.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
@@ -78,7 +78,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-sla-count
     {
       "id" : "Extension.url",
       "path" : "Extension.url",
-      "fixedUri" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-counterreferral-deadline"
+      "fixedUri" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-sla-counterreferral-deadline"
     },
     {
       "id" : "Extension.value[x]",

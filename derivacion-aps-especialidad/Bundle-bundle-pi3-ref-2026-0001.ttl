@@ -7,7 +7,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://josemandrade.github.io/prueba-his-muse-nvidia/Bundle/bundle-pi3-ref-2026-0001> a fhir:Bundle ;
+<https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Bundle/bundle-pi3-ref-2026-0001> a fhir:Bundle ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:Resource.id [ fhir:value "bundle-pi3-ref-2026-0001"] ;
   fhir:Bundle.type [ fhir:value "document"] ;
@@ -34,9 +34,9 @@
   fhir:Resource.id [ fhir:value "contrareferencia-ref-2026-0001"] ;
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-contrareferencia" ;
+       fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-contrareferencia" ;
        fhir:index 0 ;
-       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-contrareferencia>
+       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-contrareferencia>
      ]
   ] ;
   fhir:DomainResource.text [
@@ -45,7 +45,7 @@
   ] ;
   fhir:DomainResource.extension [
      fhir:index 0 ;
-     fhir:Extension.url [ fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-referral-identifier" ] ;
+     fhir:Extension.url [ fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-referral-identifier" ] ;
      fhir:Extension.valueIdentifier [
        fhir:Identifier.system [ fhir:value "http://aps.losaromos.example.org/referral" ] ;
        fhir:Identifier.value [ fhir:value "REF-2026-0001" ]
@@ -66,17 +66,17 @@
      ]
   ] ;
   fhir:Composition.subject [
-     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Patient/maria-gonzalez> ;
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Patient/maria-gonzalez> ;
      fhir:Reference.reference [ fhir:value "Patient/maria-gonzalez" ]
   ] ;
   fhir:Composition.encounter [
-     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Encounter/encuentro-ref-2026-0001> ;
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Encounter/encuentro-ref-2026-0001> ;
      fhir:Reference.reference [ fhir:value "Encounter/encuentro-ref-2026-0001" ]
   ] ;
   fhir:Composition.date [ fhir:value "2026-12-03T10:00:00-03:00"^^xsd:dateTime] ;
   fhir:Composition.author [
      fhir:index 0 ;
-     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/PractitionerRole/rol-especialista> ;
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/PractitionerRole/rol-especialista> ;
      fhir:Reference.reference [ fhir:value "PractitionerRole/rol-especialista" ]
   ] ;
   fhir:Composition.title [ fhir:value "Counter-referral"] ;
@@ -92,7 +92,7 @@
      ] ;
      fhir:Composition.section.entry [
        fhir:index 0 ;
-       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Condition/diagnostico-ref-2026-0001> ;
+       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Condition/diagnostico-ref-2026-0001> ;
        fhir:Reference.reference [ fhir:value "Condition/diagnostico-ref-2026-0001" ]
      ]
   ], [
@@ -107,7 +107,7 @@
      ] ;
      fhir:Composition.section.entry [
        fhir:index 0 ;
-       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/CarePlan/plan-ref-2026-0001> ;
+       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CarePlan/plan-ref-2026-0001> ;
        fhir:Reference.reference [ fhir:value "CarePlan/plan-ref-2026-0001" ]
      ]
   ], [
@@ -132,7 +132,7 @@
      ] ;
      fhir:Composition.section.entry [
        fhir:index 0 ;
-       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/CarePlan/plan-ref-2026-0001> ;
+       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CarePlan/plan-ref-2026-0001> ;
        fhir:Reference.reference [ fhir:value "CarePlan/plan-ref-2026-0001" ]
      ]
   ] .
@@ -141,9 +141,9 @@
   fhir:Resource.id [ fhir:value "documento-ref-2026-0001"] ;
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-documento" ;
+       fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-documento" ;
        fhir:index 0 ;
-       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-documento>
+       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-documento>
      ]
   ] ;
   fhir:DomainResource.text [
@@ -165,13 +165,13 @@
      ]
   ] ;
   fhir:DocumentReference.subject [
-     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Patient/maria-gonzalez> ;
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Patient/maria-gonzalez> ;
      fhir:Reference.reference [ fhir:value "Patient/maria-gonzalez" ]
   ] ;
   fhir:DocumentReference.date [ fhir:value "2026-12-03T10:00:00-03:00"^^xsd:dateTime] ;
   fhir:DocumentReference.author [
      fhir:index 0 ;
-     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/PractitionerRole/rol-especialista> ;
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/PractitionerRole/rol-especialista> ;
      fhir:Reference.reference [ fhir:value "PractitionerRole/rol-especialista" ]
   ] ;
   fhir:DocumentReference.content [
@@ -184,7 +184,7 @@
   fhir:DocumentReference.context [
      fhir:DocumentReference.context.encounter [
        fhir:index 0 ;
-       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Encounter/encuentro-ref-2026-0001> ;
+       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Encounter/encuentro-ref-2026-0001> ;
        fhir:Reference.reference [ fhir:value "Encounter/encuentro-ref-2026-0001" ]
      ] ;
      fhir:DocumentReference.context.period [
@@ -193,7 +193,7 @@
      ] ;
      fhir:DocumentReference.context.related [
        fhir:index 0 ;
-       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/ServiceRequest/ref-2026-0001> ;
+       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ServiceRequest/ref-2026-0001> ;
        fhir:Reference.reference [ fhir:value "ServiceRequest/ref-2026-0001" ]
      ]
   ] .
@@ -202,9 +202,9 @@
   fhir:Resource.id [ fhir:value "diagnostico-ref-2026-0001"] ;
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-diagnostico" ;
+       fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-diagnostico" ;
        fhir:index 0 ;
-       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-diagnostico>
+       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-diagnostico>
      ]
   ] ;
   fhir:DomainResource.text [
@@ -243,11 +243,11 @@
      fhir:CodeableConcept.text [ fhir:value "Insuficiencia cardiaca sistólica crónica (FEVI 35%)" ]
   ] ;
   fhir:Condition.subject [
-     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Patient/maria-gonzalez> ;
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Patient/maria-gonzalez> ;
      fhir:Reference.reference [ fhir:value "Patient/maria-gonzalez" ]
   ] ;
   fhir:Condition.encounter [
-     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Encounter/encuentro-ref-2026-0001> ;
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Encounter/encuentro-ref-2026-0001> ;
      fhir:Reference.reference [ fhir:value "Encounter/encuentro-ref-2026-0001" ]
   ] ;
   fhir:Condition.note [
@@ -259,9 +259,9 @@
   fhir:Resource.id [ fhir:value "plan-ref-2026-0001"] ;
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-plan-seguimiento" ;
+       fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-plan-seguimiento" ;
        fhir:index 0 ;
-       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-plan-seguimiento>
+       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-plan-seguimiento>
      ]
   ] ;
   fhir:DomainResource.text [
@@ -271,20 +271,20 @@
   fhir:CarePlan.status [ fhir:value "active"] ;
   fhir:CarePlan.intent [ fhir:value "plan"] ;
   fhir:CarePlan.subject [
-     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Patient/maria-gonzalez> ;
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Patient/maria-gonzalez> ;
      fhir:Reference.reference [ fhir:value "Patient/maria-gonzalez" ]
   ] ;
   fhir:CarePlan.encounter [
-     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Encounter/encuentro-ref-2026-0001> ;
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Encounter/encuentro-ref-2026-0001> ;
      fhir:Reference.reference [ fhir:value "Encounter/encuentro-ref-2026-0001" ]
   ] ;
   fhir:CarePlan.author [
-     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/PractitionerRole/rol-especialista> ;
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/PractitionerRole/rol-especialista> ;
      fhir:Reference.reference [ fhir:value "PractitionerRole/rol-especialista" ]
   ] ;
   fhir:CarePlan.addresses [
      fhir:index 0 ;
-     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Condition/diagnostico-ref-2026-0001> ;
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Condition/diagnostico-ref-2026-0001> ;
      fhir:Reference.reference [ fhir:value "Condition/diagnostico-ref-2026-0001" ]
   ] ;
   fhir:CarePlan.activity [
@@ -302,14 +302,14 @@
   ], [
      fhir:index 2 ;
      fhir:CarePlan.activity.reference [
-       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/ServiceRequest/ref-2026-0001> ;
+       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ServiceRequest/ref-2026-0001> ;
        fhir:Reference.reference [ fhir:value "ServiceRequest/ref-2026-0001" ]
      ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<https://josemandrade.github.io/prueba-his-muse-nvidia/Bundle/bundle-pi3-ref-2026-0001.ttl> a owl:Ontology ;
+<https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Bundle/bundle-pi3-ref-2026-0001.ttl> a owl:Ontology ;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

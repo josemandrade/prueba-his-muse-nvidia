@@ -1,100 +1,100 @@
 {
   "codeSystems" : [{
-    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-base-cruce",
+    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-base-cruce",
     "version" : "0.1.0",
     "status" : "draft",
     "name" : "DerivacionBaseCruce",
     "title" : "Base del cruce de identidad",
     "description" : "Bases posibles del cruce de identidad en el MPI.",
-    "systems" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-base-cruce"],
+    "systems" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-base-cruce"],
     "uses" : {
     },
     "StructureDefinition-derivacion-match-basis.html" : "Base del cruce de identidad"
   },
   {
-    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-canal",
+    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-canal",
     "version" : "0.1.0",
     "status" : "draft",
     "name" : "DerivacionCanal",
     "title" : "Canal de notificación",
     "description" : "Canales de notificación de la derivación.",
-    "systems" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-canal"],
+    "systems" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-canal"],
     "uses" : {
     },
     "StructureDefinition-derivacion-preferred-contact-channel.html" : "Canal de contacto preferido",
     "StructureDefinition-derivacion-notificacion.html" : "Notificación"
   },
   {
-    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-especialidad",
+    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-especialidad",
     "version" : "0.1.0",
     "status" : "draft",
     "name" : "DerivacionEspecialidad",
     "title" : "Especialidad / servicio (catálogo local)",
     "description" : "Especialidades y servicios a los que se puede derivar.",
-    "systems" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad"],
+    "systems" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-especialidad"],
     "uses" : {
     },
-    "StructureDefinition-derivacion-servicio.html" : "Servicio de especialidad",
     "StructureDefinition-derivacion-cita.html" : "Cita de la derivación",
+    "StructureDefinition-derivacion-servicio.html" : "Servicio de especialidad",
     "StructureDefinition-derivacion-solicitud.html" : "Solicitud de derivación",
     "StructureDefinition-derivacion-encuentro.html" : "Encuentro de especialidad"
   },
   {
-    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-estado-referencia",
+    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-estado-referencia",
     "version" : "0.1.0",
     "status" : "draft",
     "name" : "DerivacionEstadoReferencia",
     "title" : "Estado de la derivación",
     "description" : "Estados posibles de una derivación APS → especialidad.",
-    "systems" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia"],
+    "systems" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia"],
     "uses" : {
     },
     "StructureDefinition-derivacion-tarea.html" : "Tarea de derivación (registro de estado)"
   },
   {
-    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-motivo-rechazo",
+    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-motivo-rechazo",
     "version" : "0.1.0",
     "status" : "draft",
     "name" : "DerivacionMotivoRechazo",
     "title" : "Motivo de rechazo",
     "description" : "Motivos por los que la especialidad puede rechazar una derivación.",
-    "systems" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-motivo-rechazo"],
+    "systems" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-motivo-rechazo"],
     "uses" : {
     },
     "StructureDefinition-derivacion-tarea.html" : "Tarea de derivación (registro de estado)"
   },
   {
-    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-resultado-entrega",
+    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-resultado-entrega",
     "version" : "0.1.0",
     "status" : "draft",
     "name" : "DerivacionResultadoEntrega",
     "title" : "Resultado de la entrega de una notificación",
     "description" : "Resultados posibles de la entrega de una notificación.",
-    "systems" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-resultado-entrega"],
+    "systems" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-resultado-entrega"],
     "uses" : {
     },
     "StructureDefinition-derivacion-delivery-outcome.html" : "Resultado de la entrega"
   },
   {
-    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-rol",
+    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-rol",
     "version" : "0.1.0",
     "status" : "draft",
     "name" : "DerivacionRolVS",
     "title" : "Rol en la derivación",
     "description" : "Roles que una persona puede tener en una derivación.",
-    "systems" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol"],
+    "systems" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-rol"],
     "uses" : {
     },
     "StructureDefinition-derivacion-rol.html" : "Rol en la derivación"
   },
   {
-    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-task-code",
+    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-task-code",
     "version" : "0.1.0",
     "status" : "draft",
     "name" : "DerivacionTaskCode",
     "title" : "Código de la tarea de derivación",
     "description" : "Códigos de Task de esta guía.",
-    "systems" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-task-code"],
+    "systems" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-task-code"],
     "uses" : {
     },
     "StructureDefinition-derivacion-tarea.html" : "Tarea de derivación (registro de estado)"

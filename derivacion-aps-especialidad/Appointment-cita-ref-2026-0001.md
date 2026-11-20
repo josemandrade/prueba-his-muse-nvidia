@@ -43,10 +43,10 @@ Profile: [Cita de la derivación](StructureDefinition-derivacion-cita.md)
   "resourceType" : "Appointment",
   "id" : "cita-ref-2026-0001",
   "meta" : {
-    "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-cita"]
+    "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-cita"]
   },
   "extension" : [{
-    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-offer-number",
+    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-offer-number",
     "valueInteger" : 1
   }],
   "identifier" : [{
@@ -56,7 +56,7 @@ Profile: [Cita de la derivación](StructureDefinition-derivacion-cita.md)
   "status" : "proposed",
   "serviceType" : [{
     "coding" : [{
-      "system" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad",
+      "system" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-especialidad",
       "code" : "cardiologia",
       "display" : "Cardiology"
     }]

@@ -3,18 +3,18 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="derivacion-estado-referencia"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet derivacion-estado-referencia</b></p><a name="derivacion-estado-referencia"> </a><a name="hcderivacion-estado-referencia"> </a><ul><li>Include all codes defined in <a href="CodeSystem-derivacion-estado-referencia.html"><code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.1.0</span></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet derivacion-estado-referencia</b></p><a name="derivacion-estado-referencia"> </a><a name="hcderivacion-estado-referencia"> </a><ul><li>Include all codes defined in <a href="CodeSystem-derivacion-estado-referencia.html"><code>https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.1.0</span></li></ul></div>
   </text>
-  <url value="https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-estado-referencia"/>
+  <url value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-estado-referencia"/>
   <version value="0.1.0"/>
   <name value="DerivacionEstadoReferencia"/>
   <title value="Estado de la derivación"/>
   <status value="draft"/>
-  <date value="2026-11-20T12:33:32+00:00"/>
+  <date value="2026-11-20T12:39:48+00:00"/>
   <description value="Estados posibles de una derivación APS → especialidad."/>
   <compose>
     <include>
-      <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia"/>
+      <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia"/>
     </include>
   </compose>
 </ValueSet>

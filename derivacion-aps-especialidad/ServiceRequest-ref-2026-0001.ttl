@@ -6,19 +6,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://josemandrade.github.io/prueba-his-muse-nvidia/ServiceRequest/ref-2026-0001> a fhir:ServiceRequest ;
+<https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ServiceRequest/ref-2026-0001> a fhir:ServiceRequest ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:Resource.id [ fhir:value "ref-2026-0001"] ;
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-solicitud" ;
+       fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-solicitud" ;
        fhir:index 0 ;
-       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-solicitud>
+       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-solicitud>
      ]
   ] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ] ;
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest ref-2026-0001</b></p><a name=\"ref-2026-0001\"> </a><a name=\"hcref-2026-0001\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-derivacion-solicitud.html\">Solicitud de derivación</a></p></div><p><b>identifier</b>: <code>http://aps.losaromos.example.org/referral</code>/REF-2026-0001</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>priority</b>: Routine</p><p><b>code</b>: <span title=\"Codes:{https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad cardiologia}\">Cardiology</span></p><p><b>subject</b>: <a href=\"Patient-maria-gonzalez.html\">María González (official) Female, DoB: 1968-04-15 ( http://www.registrocivil.cl/run#11111111-1)</a></p><p><b>encounter</b>: <a href=\"Encounter-aps-encounter-2026-11-19.html\">Encounter: status = finished; class = Ambulatory (ActCode#AMB); period = 2026-11-19 09:00:00-0300 --&gt; 2026-11-19 09:30:00-0300</a></p><p><b>authoredOn</b>: 2026-11-19 09:30:00-0300</p><p><b>requester</b>: <a href=\"PractitionerRole-rol-medico-aps.html\">Ana Pérez (official) (http://www.registrocivil.cl/run#22222222-2): APS doctor at CESFAM Los Aromos (http://aps.losaromos.example.org/organization#CESFAM-LOS-AROMOS)</a></p><p><b>performerType</b>: <span title=\"Codes:{https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad cardiologia}\">Cardiology</span></p><p><b>performer</b>: <a href=\"HealthcareService-servicio-cardiologia.html\">Cardiology (Cardiology) by Servicio de Cardiología (http://especialidad.example.org/organization#CARDIOLOGIA) (http://especialidad.example.org/service#cardiologia)</a></p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 84114007}\">Suspected heart failure: exertional dyspnoea, ankle oedema</span></p><p><b>supportingInfo</b>: </p><ul><li><a href=\"Observation-ecg-2026-11-19.html\">Observation EKG study</a></li><li><a href=\"Observation-ntprobnp-2026-11-19.html\">Observation Natriuretic peptide.B prohormone N-Terminal [Mass/volume] in Serum or Plasma</a></li></ul><p><b>note</b>: </p><blockquote><div><p>Disnea de esfuerzo y edema de tobillos de dos semanas de evolución.</p>\n</div></blockquote></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest ref-2026-0001</b></p><a name=\"ref-2026-0001\"> </a><a name=\"hcref-2026-0001\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-derivacion-solicitud.html\">Solicitud de derivación</a></p></div><p><b>identifier</b>: <code>http://aps.losaromos.example.org/referral</code>/REF-2026-0001</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>priority</b>: Routine</p><p><b>code</b>: <span title=\"Codes:{https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-especialidad cardiologia}\">Cardiology</span></p><p><b>subject</b>: <a href=\"Patient-maria-gonzalez.html\">María González (official) Female, DoB: 1968-04-15 ( http://www.registrocivil.cl/run#11111111-1)</a></p><p><b>encounter</b>: <a href=\"Encounter-aps-encounter-2026-11-19.html\">Encounter: status = finished; class = Ambulatory (ActCode#AMB); period = 2026-11-19 09:00:00-0300 --&gt; 2026-11-19 09:30:00-0300</a></p><p><b>authoredOn</b>: 2026-11-19 09:30:00-0300</p><p><b>requester</b>: <a href=\"PractitionerRole-rol-medico-aps.html\">Ana Pérez (official) (http://www.registrocivil.cl/run#22222222-2): APS doctor at CESFAM Los Aromos (http://aps.losaromos.example.org/organization#CESFAM-LOS-AROMOS)</a></p><p><b>performerType</b>: <span title=\"Codes:{https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-especialidad cardiologia}\">Cardiology</span></p><p><b>performer</b>: <a href=\"HealthcareService-servicio-cardiologia.html\">Cardiology (Cardiology) by Servicio de Cardiología (http://especialidad.example.org/organization#CARDIOLOGIA) (http://especialidad.example.org/service#cardiologia)</a></p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 84114007}\">Suspected heart failure: exertional dyspnoea, ankle oedema</span></p><p><b>supportingInfo</b>: </p><ul><li><a href=\"Observation-ecg-2026-11-19.html\">Observation EKG study</a></li><li><a href=\"Observation-ntprobnp-2026-11-19.html\">Observation Natriuretic peptide.B prohormone N-Terminal [Mass/volume] in Serum or Plasma</a></li></ul><p><b>note</b>: </p><blockquote><div><p>Disnea de esfuerzo y edema de tobillos de dos semanas de evolución.</p>\n</div></blockquote></div>"
   ] ;
   fhir:ServiceRequest.identifier [
      fhir:index 0 ;
@@ -31,35 +31,35 @@
   fhir:ServiceRequest.code [
      fhir:CodeableConcept.coding [
        fhir:index 0 ;
-       fhir:Coding.system [ fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad" ] ;
+       fhir:Coding.system [ fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-especialidad" ] ;
        fhir:Coding.code [ fhir:value "cardiologia" ] ;
        fhir:Coding.display [ fhir:value "Cardiology" ]
      ]
   ] ;
   fhir:ServiceRequest.subject [
-     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Patient/maria-gonzalez> ;
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Patient/maria-gonzalez> ;
      fhir:Reference.reference [ fhir:value "Patient/maria-gonzalez" ]
   ] ;
   fhir:ServiceRequest.encounter [
-     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Encounter/aps-encounter-2026-11-19> ;
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Encounter/aps-encounter-2026-11-19> ;
      fhir:Reference.reference [ fhir:value "Encounter/aps-encounter-2026-11-19" ]
   ] ;
   fhir:ServiceRequest.authoredOn [ fhir:value "2026-11-19T09:30:00-03:00"^^xsd:dateTime] ;
   fhir:ServiceRequest.requester [
-     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/PractitionerRole/rol-medico-aps> ;
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/PractitionerRole/rol-medico-aps> ;
      fhir:Reference.reference [ fhir:value "PractitionerRole/rol-medico-aps" ]
   ] ;
   fhir:ServiceRequest.performerType [
      fhir:CodeableConcept.coding [
        fhir:index 0 ;
-       fhir:Coding.system [ fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad" ] ;
+       fhir:Coding.system [ fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-especialidad" ] ;
        fhir:Coding.code [ fhir:value "cardiologia" ] ;
        fhir:Coding.display [ fhir:value "Cardiology" ]
      ]
   ] ;
   fhir:ServiceRequest.performer [
      fhir:index 0 ;
-     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/HealthcareService/servicio-cardiologia> ;
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/HealthcareService/servicio-cardiologia> ;
      fhir:Reference.reference [ fhir:value "HealthcareService/servicio-cardiologia" ]
   ] ;
   fhir:ServiceRequest.reasonCode [
@@ -75,11 +75,11 @@
   ] ;
   fhir:ServiceRequest.supportingInfo [
      fhir:index 0 ;
-     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Observation/ecg-2026-11-19> ;
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Observation/ecg-2026-11-19> ;
      fhir:Reference.reference [ fhir:value "Observation/ecg-2026-11-19" ]
   ], [
      fhir:index 1 ;
-     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Observation/ntprobnp-2026-11-19> ;
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Observation/ntprobnp-2026-11-19> ;
      fhir:Reference.reference [ fhir:value "Observation/ntprobnp-2026-11-19" ]
   ] ;
   fhir:ServiceRequest.note [
@@ -89,7 +89,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://josemandrade.github.io/prueba-his-muse-nvidia/ServiceRequest/ref-2026-0001.ttl> a owl:Ontology ;
+<https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ServiceRequest/ref-2026-0001.ttl> a owl:Ontology ;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

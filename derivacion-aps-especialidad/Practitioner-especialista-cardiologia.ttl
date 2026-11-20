@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://josemandrade.github.io/prueba-his-muse-nvidia/Practitioner/especialista-cardiologia> a fhir:Practitioner ;
+<https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Practitioner/especialista-cardiologia> a fhir:Practitioner ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:Resource.id [ fhir:value "especialista-cardiologia"] ;
   fhir:DomainResource.text [
@@ -30,7 +30,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://josemandrade.github.io/prueba-his-muse-nvidia/Practitioner/especialista-cardiologia.ttl> a owl:Ontology ;
+<https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Practitioner/especialista-cardiologia.ttl> a owl:Ontology ;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

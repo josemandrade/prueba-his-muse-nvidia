@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-offer-chase-count | *Version*:0.1.0 |
+| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-offer-chase-count | *Version*:0.1.0 |
 | Draft as of 2026-11-20 | *Computable Name*:DerivacionOfferChaseCount |
 
 Número de veces que el agendador ha perseguido una oferta sin confirmar (0–2). Se reinicia por oferta (N5).
@@ -41,12 +41,12 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-offer-cha
 {
   "resourceType" : "StructureDefinition",
   "id" : "derivacion-offer-chase-count",
-  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-offer-chase-count",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-offer-chase-count",
   "version" : "0.1.0",
   "name" : "DerivacionOfferChaseCount",
   "title" : "Conteo de persecuciones de esta oferta",
   "status" : "draft",
-  "date" : "2026-11-20T12:33:32+00:00",
+  "date" : "2026-11-20T12:39:48+00:00",
   "description" : "Número de veces que el agendador ha perseguido una oferta sin confirmar (0–2). Se reinicia por oferta (N5).",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
@@ -78,7 +78,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-offer-cha
     {
       "id" : "Extension.url",
       "path" : "Extension.url",
-      "fixedUri" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-offer-chase-count"
+      "fixedUri" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-offer-chase-count"
     },
     {
       "id" : "Extension.value[x]",
@@ -92,7 +92,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-offer-cha
         "severity" : "error",
         "human" : "El conteo de persecuciones de esta oferta está entre 0 y 2.",
         "expression" : "$this >= 0 and $this <= 2",
-        "source" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-offer-chase-count"
+        "source" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-offer-chase-count"
       }]
     }]
   }

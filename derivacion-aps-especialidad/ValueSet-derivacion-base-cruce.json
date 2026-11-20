@@ -3,18 +3,18 @@
   "id" : "derivacion-base-cruce",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet derivacion-base-cruce</b></p><a name=\"derivacion-base-cruce\"> </a><a name=\"hcderivacion-base-cruce\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-derivacion-base-cruce.html\"><code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-base-cruce</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.0</span></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet derivacion-base-cruce</b></p><a name=\"derivacion-base-cruce\"> </a><a name=\"hcderivacion-base-cruce\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-derivacion-base-cruce.html\"><code>https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-base-cruce</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.0</span></li></ul></div>"
   },
-  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-base-cruce",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-base-cruce",
   "version" : "0.1.0",
   "name" : "DerivacionBaseCruce",
   "title" : "Base del cruce de identidad",
   "status" : "draft",
-  "date" : "2026-11-20T12:33:32+00:00",
+  "date" : "2026-11-20T12:39:48+00:00",
   "description" : "Bases posibles del cruce de identidad en el MPI.",
   "compose" : {
     "include" : [{
-      "system" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-base-cruce"
+      "system" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-base-cruce"
     }]
   }
 }

@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://josemandrade.github.io/prueba-his-muse-nvidia/Encounter/aps-encounter-2026-11-19> a fhir:Encounter ;
+<https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Encounter/aps-encounter-2026-11-19> a fhir:Encounter ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:Resource.id [ fhir:value "aps-encounter-2026-11-19"] ;
   fhir:DomainResource.text [
@@ -19,7 +19,7 @@
      fhir:Coding.display [ fhir:value "Ambulatory" ]
   ] ;
   fhir:Encounter.subject [
-     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Patient/maria-gonzalez> ;
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Patient/maria-gonzalez> ;
      fhir:Reference.reference [ fhir:value "Patient/maria-gonzalez" ]
   ] ;
   fhir:Encounter.period [
@@ -29,7 +29,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://josemandrade.github.io/prueba-his-muse-nvidia/Encounter/aps-encounter-2026-11-19.ttl> a owl:Ontology ;
+<https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Encounter/aps-encounter-2026-11-19.ttl> a owl:Ontology ;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

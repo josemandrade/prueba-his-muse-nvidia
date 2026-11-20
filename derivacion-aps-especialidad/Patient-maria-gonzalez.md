@@ -29,10 +29,10 @@ María González (official) Female, DoB: 1968-04-15 ( http://www.registrocivil.c
   "resourceType" : "Patient",
   "id" : "maria-gonzalez",
   "meta" : {
-    "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-paciente"]
+    "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-paciente"]
   },
   "extension" : [{
-    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-preferred-contact-channel",
+    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-preferred-contact-channel",
     "valueCode" : "phone"
   }],
   "identifier" : [{

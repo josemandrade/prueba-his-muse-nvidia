@@ -3,14 +3,14 @@
   "id" : "derivacion-especialidad",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem derivacion-especialidad</b></p><a name=\"derivacion-especialidad\"> </a><a name=\"hcderivacion-especialidad\"> </a><p>This  code system <code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">cardiologia<a name=\"derivacion-especialidad-cardiologia\"> </a></td><td>Cardiology</td><td>Servicio de cardiología (ejemplo trabajado).</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem derivacion-especialidad</b></p><a name=\"derivacion-especialidad\"> </a><a name=\"hcderivacion-especialidad\"> </a><p>This  code system <code>https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-especialidad</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">cardiologia<a name=\"derivacion-especialidad-cardiologia\"> </a></td><td>Cardiology</td><td>Servicio de cardiología (ejemplo trabajado).</td></tr></table></div>"
   },
-  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-especialidad",
   "version" : "0.1.0",
   "name" : "DerivacionEspecialidadCS",
   "title" : "Especialidad / servicio (catálogo local)",
   "status" : "draft",
-  "date" : "2026-11-20T12:33:32+00:00",
+  "date" : "2026-11-20T12:39:48+00:00",
   "description" : "Catálogo local de especialidades y servicios, versionado por la red (hub + servicios). El ejemplo trabajado es cardiología; la red amplía el catálogo sin tocar esta guía.",
   "content" : "complete",
   "count" : 1,

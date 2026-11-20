@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-referral-identifier | *Version*:0.1.0 |
+| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-referral-identifier | *Version*:0.1.0 |
 | Draft as of 2026-11-20 | *Computable Name*:DerivacionReferralIdentifier |
 
 El identificador de la derivación (el mismo de ServiceRequest.identifier) en la Composition de la contrareferencia. Ningún campo base de Composition lleva el id de la derivación; el enlace también viaja en DocumentReference.context.related.
@@ -42,12 +42,12 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-referral-
 {
   "resourceType" : "StructureDefinition",
   "id" : "derivacion-referral-identifier",
-  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-referral-identifier",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-referral-identifier",
   "version" : "0.1.0",
   "name" : "DerivacionReferralIdentifier",
   "title" : "Identificador de la derivación",
   "status" : "draft",
-  "date" : "2026-11-20T12:33:32+00:00",
+  "date" : "2026-11-20T12:39:48+00:00",
   "description" : "El identificador de la derivación (el mismo de ServiceRequest.identifier) en la Composition de la contrareferencia. Ningún campo base de Composition lleva el id de la derivación; el enlace también viaja en DocumentReference.context.related.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
@@ -79,7 +79,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-referral-
     {
       "id" : "Extension.url",
       "path" : "Extension.url",
-      "fixedUri" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-referral-identifier"
+      "fixedUri" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-referral-identifier"
     },
     {
       "id" : "Extension.value[x]",

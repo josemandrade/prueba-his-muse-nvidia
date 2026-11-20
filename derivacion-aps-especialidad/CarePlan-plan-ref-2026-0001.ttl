@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://josemandrade.github.io/prueba-his-muse-nvidia/CarePlan/plan-ref-2026-0001> a fhir:CarePlan ;
+<https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CarePlan/plan-ref-2026-0001> a fhir:CarePlan ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:Resource.id [ fhir:value "plan-ref-2026-0001"] ;
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-plan-seguimiento" ;
+       fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-plan-seguimiento" ;
        fhir:index 0 ;
-       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-plan-seguimiento>
+       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-plan-seguimiento>
      ]
   ] ;
   fhir:DomainResource.text [
@@ -22,20 +22,20 @@
   fhir:CarePlan.status [ fhir:value "active"] ;
   fhir:CarePlan.intent [ fhir:value "plan"] ;
   fhir:CarePlan.subject [
-     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Patient/maria-gonzalez> ;
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Patient/maria-gonzalez> ;
      fhir:Reference.reference [ fhir:value "Patient/maria-gonzalez" ]
   ] ;
   fhir:CarePlan.encounter [
-     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Encounter/encuentro-ref-2026-0001> ;
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Encounter/encuentro-ref-2026-0001> ;
      fhir:Reference.reference [ fhir:value "Encounter/encuentro-ref-2026-0001" ]
   ] ;
   fhir:CarePlan.author [
-     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/PractitionerRole/rol-especialista> ;
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/PractitionerRole/rol-especialista> ;
      fhir:Reference.reference [ fhir:value "PractitionerRole/rol-especialista" ]
   ] ;
   fhir:CarePlan.addresses [
      fhir:index 0 ;
-     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Condition/diagnostico-ref-2026-0001> ;
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Condition/diagnostico-ref-2026-0001> ;
      fhir:Reference.reference [ fhir:value "Condition/diagnostico-ref-2026-0001" ]
   ] ;
   fhir:CarePlan.activity [
@@ -53,14 +53,14 @@
   ], [
      fhir:index 2 ;
      fhir:CarePlan.activity.reference [
-       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/ServiceRequest/ref-2026-0001> ;
+       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ServiceRequest/ref-2026-0001> ;
        fhir:Reference.reference [ fhir:value "ServiceRequest/ref-2026-0001" ]
      ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<https://josemandrade.github.io/prueba-his-muse-nvidia/CarePlan/plan-ref-2026-0001.ttl> a owl:Ontology ;
+<https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CarePlan/plan-ref-2026-0001.ttl> a owl:Ontology ;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

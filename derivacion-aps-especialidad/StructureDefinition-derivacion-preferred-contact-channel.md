@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-preferred-contact-channel | *Version*:0.1.0 |
+| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-preferred-contact-channel | *Version*:0.1.0 |
 | Draft as of 2026-11-20 | *Computable Name*:DerivacionPreferredContactChannel |
 
 | | | |
@@ -46,12 +46,12 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-preferred
 {
   "resourceType" : "StructureDefinition",
   "id" : "derivacion-preferred-contact-channel",
-  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-preferred-contact-channel",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-preferred-contact-channel",
   "version" : "0.1.0",
   "name" : "DerivacionPreferredContactChannel",
   "title" : "Canal de contacto preferido",
   "status" : "draft",
-  "date" : "2026-11-20T12:33:32+00:00",
+  "date" : "2026-11-20T12:39:48+00:00",
   "description" : "Canal preferido del paciente para las notificaciones: phone | in-person | system-message (ValueSet DerivacionCanal).",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
@@ -83,7 +83,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-preferred
     {
       "id" : "Extension.url",
       "path" : "Extension.url",
-      "fixedUri" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-preferred-contact-channel"
+      "fixedUri" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-preferred-contact-channel"
     },
     {
       "id" : "Extension.value[x]",
@@ -94,7 +94,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-preferred
       }],
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-canal"
+        "valueSet" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-canal"
       }
     }]
   }

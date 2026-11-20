@@ -12,7 +12,7 @@
   <sch:pattern>
     <sch:title>f:Composition</sch:title>
     <sch:rule context="f:Composition">
-      <sch:assert test="count(f:extension[@url = 'https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-referral-identifier']) &lt;= 1">extension with URL = 'https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-referral-identifier': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-referral-identifier']) &lt;= 1">extension with URL = 'https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-referral-identifier': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:subject) &gt;= 1">subject: minimum cardinality of 'subject' is 1</sch:assert>
       <sch:assert test="count(f:author) &lt;= 1">author: maximum cardinality of 'author' is 1</sch:assert>
     </sch:rule>

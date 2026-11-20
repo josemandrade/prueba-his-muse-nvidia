@@ -33,10 +33,10 @@ Profile: [Contrareferencia](StructureDefinition-derivacion-contrareferencia.md)
   "resourceType" : "Composition",
   "id" : "contrareferencia-ref-2026-0001",
   "meta" : {
-    "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-contrareferencia"]
+    "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-contrareferencia"]
   },
   "extension" : [{
-    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-referral-identifier",
+    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-referral-identifier",
     "valueIdentifier" : {
       "system" : "http://aps.losaromos.example.org/referral",
       "value" : "REF-2026-0001"

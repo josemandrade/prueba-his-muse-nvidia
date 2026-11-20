@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://josemandrade.github.io/prueba-his-muse-nvidia/Practitioner/medico-aps> a fhir:Practitioner ;
+<https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Practitioner/medico-aps> a fhir:Practitioner ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:Resource.id [ fhir:value "medico-aps"] ;
   fhir:DomainResource.text [
@@ -30,7 +30,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://josemandrade.github.io/prueba-his-muse-nvidia/Practitioner/medico-aps.ttl> a owl:Ontology ;
+<https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Practitioner/medico-aps.ttl> a owl:Ontology ;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

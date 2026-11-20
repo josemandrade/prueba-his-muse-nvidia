@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-acceptance-deadline | *Version*:0.1.0 |
+| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-sla-acceptance-deadline | *Version*:0.1.0 |
 | Draft as of 2026-11-20 | *Computable Name*:DerivacionSlaAcceptanceDeadline |
 
 Fecha límite para la decisión de aceptación/rechazo: creación + 5 días hábiles (2 si es urgente).
@@ -42,12 +42,12 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-sla-accep
 {
   "resourceType" : "StructureDefinition",
   "id" : "derivacion-sla-acceptance-deadline",
-  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-acceptance-deadline",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-sla-acceptance-deadline",
   "version" : "0.1.0",
   "name" : "DerivacionSlaAcceptanceDeadline",
   "title" : "Plazo de aceptación",
   "status" : "draft",
-  "date" : "2026-11-20T12:33:32+00:00",
+  "date" : "2026-11-20T12:39:48+00:00",
   "description" : "Fecha límite para la decisión de aceptación/rechazo: creación + 5 días hábiles (2 si es urgente).",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
@@ -79,7 +79,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-sla-accep
     {
       "id" : "Extension.url",
       "path" : "Extension.url",
-      "fixedUri" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-acceptance-deadline"
+      "fixedUri" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-sla-acceptance-deadline"
     },
     {
       "id" : "Extension.value[x]",

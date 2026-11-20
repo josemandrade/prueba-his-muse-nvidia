@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-motivo-rechazo | *Version*:0.1.0 |
+| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-motivo-rechazo | *Version*:0.1.0 |
 | Draft as of 2026-11-20 | *Computable Name*:DerivacionMotivoRechazo |
 
  
@@ -45,16 +45,16 @@ Motivos por los que la especialidad puede rechazar una derivación.
 {
   "resourceType" : "ValueSet",
   "id" : "derivacion-motivo-rechazo",
-  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-motivo-rechazo",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-motivo-rechazo",
   "version" : "0.1.0",
   "name" : "DerivacionMotivoRechazo",
   "title" : "Motivo de rechazo",
   "status" : "draft",
-  "date" : "2026-11-20T12:33:32+00:00",
+  "date" : "2026-11-20T12:39:48+00:00",
   "description" : "Motivos por los que la especialidad puede rechazar una derivación.",
   "compose" : {
     "include" : [{
-      "system" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-motivo-rechazo"
+      "system" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-motivo-rechazo"
     }]
   }
 }

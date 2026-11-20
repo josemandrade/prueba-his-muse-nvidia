@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-encuentro | *Version*:0.1.0 |
+| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-encuentro | *Version*:0.1.0 |
 | Draft as of 2026-11-20 | *Computable Name*:DerivacionEncuentro |
 
  
@@ -37,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-encuentro
 {
   "resourceType" : "StructureDefinition",
   "id" : "derivacion-encuentro",
-  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-encuentro",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-encuentro",
   "version" : "0.1.0",
   "name" : "DerivacionEncuentro",
   "title" : "Encuentro de especialidad",
   "status" : "draft",
-  "date" : "2026-11-20T12:33:32+00:00",
+  "date" : "2026-11-20T12:39:48+00:00",
   "description" : "La visita atendida en la especialidad. Perfil propio de esta guía, sobre el recurso base Encounter de FHIR R4. La cita es la reserva; la visita es el encuentro — nunca ambas a la vez sin regla, y la regla aquí es: reserva = Appointment, visita = Encounter.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
@@ -102,7 +102,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-encuentro
       "min" : 1,
       "binding" : {
         "strength" : "example",
-        "valueSet" : "https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-especialidad"
+        "valueSet" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-especialidad"
       }
     },
     {
@@ -111,7 +111,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-encuentro
       "min" : 1,
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-paciente"]
+        "targetProfile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-paciente"]
       }]
     },
     {
@@ -121,7 +121,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-encuentro
       "min" : 1,
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-solicitud"]
+        "targetProfile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-solicitud"]
       }]
     },
     {
@@ -130,7 +130,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-encuentro
       "short" : "El especialista que atendió, en su rol",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rol"]
+        "targetProfile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-rol"]
       }]
     },
     {
@@ -140,7 +140,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-encuentro
       "max" : "1",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-cita"]
+        "targetProfile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-cita"]
       }]
     },
     {

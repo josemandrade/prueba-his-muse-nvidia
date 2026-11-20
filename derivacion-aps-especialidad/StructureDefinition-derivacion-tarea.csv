@@ -24,35 +24,35 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Task.extension:slaAcceptanceDeadline","Task.extension","slaAcceptanceDeadline","","",0,1,"","","","Extension {[CanonicalType[https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-acceptance-deadline]]} {[]}
+"Task.extension:slaAcceptanceDeadline","Task.extension","slaAcceptanceDeadline","","",0,1,"","","","Extension {[CanonicalType[https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-sla-acceptance-deadline]]} {[]}
 ","Plazo de aceptación","Fecha límite para la decisión de aceptación/rechazo: creación + 5 días hábiles (2 si es urgente).","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Task.extension:slaOfferDeadline","Task.extension","slaOfferDeadline","","",0,1,"","","","Extension {[CanonicalType[https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-offer-deadline]]} {[]}
+"Task.extension:slaOfferDeadline","Task.extension","slaOfferDeadline","","",0,1,"","","","Extension {[CanonicalType[https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-sla-offer-deadline]]} {[]}
 ","Plazo de oferta de cita","Fecha límite para ofrecer la cita: aceptación + 10 días hábiles.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Task.extension:slaCounterreferralDeadline","Task.extension","slaCounterreferralDeadline","","",0,1,"","","","Extension {[CanonicalType[https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-counterreferral-deadline]]} {[]}
+"Task.extension:slaCounterreferralDeadline","Task.extension","slaCounterreferralDeadline","","",0,1,"","","","Extension {[CanonicalType[https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-sla-counterreferral-deadline]]} {[]}
 ","Plazo de contrareferencia","Fecha límite para enviar la contrareferencia: encuentro + 5 días hábiles.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Task.extension:slaRetriageDeadline","Task.extension","slaRetriageDeadline","","",0,1,"","","","Extension {[CanonicalType[https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-retriage-deadline]]} {[]}
+"Task.extension:slaRetriageDeadline","Task.extension","slaRetriageDeadline","","",0,1,"","","","Extension {[CanonicalType[https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-sla-retriage-deadline]]} {[]}
 ","Plazo de re-triaje","Fecha límite para la decisión de re-triaje de APS: rechazo (o retorno por fallo de agendamiento) + 5 días hábiles.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Task.extension:slaConfirmationDeadline","Task.extension","slaConfirmationDeadline","","",0,1,"","","","Extension {[CanonicalType[https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-confirmation-deadline]]} {[]}
+"Task.extension:slaConfirmationDeadline","Task.extension","slaConfirmationDeadline","","",0,1,"","","","Extension {[CanonicalType[https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-sla-confirmation-deadline]]} {[]}
 ","Plazo de confirmación","Fecha límite para confirmar una oferta: oferta + 3 días hábiles. Presente solo mientras una oferta está abierta.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Task.extension:offerDeclineCount","Task.extension","offerDeclineCount","","",0,1,"","","","Extension {[CanonicalType[https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-offer-decline-count]]} {[]}
+"Task.extension:offerDeclineCount","Task.extension","offerDeclineCount","","",0,1,"","","","Extension {[CanonicalType[https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-offer-decline-count]]} {[]}
 ","Conteo de rechazos de esta oferta","Número de veces que el paciente ha rechazado esta oferta (0–2). Se reinicia por oferta (N5).","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Task.extension:offerChaseCount","Task.extension","offerChaseCount","","",0,1,"","","","Extension {[CanonicalType[https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-offer-chase-count]]} {[]}
+"Task.extension:offerChaseCount","Task.extension","offerChaseCount","","",0,1,"","","","Extension {[CanonicalType[https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-offer-chase-count]]} {[]}
 ","Conteo de persecuciones de esta oferta","Número de veces que el agendador ha perseguido una oferta sin confirmar (0–2). Se reinicia por oferta (N5).","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Task.extension:reschedulingCount","Task.extension","reschedulingCount","","",0,1,"","","","Extension {[CanonicalType[https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rescheduling-count]]} {[]}
+"Task.extension:reschedulingCount","Task.extension","reschedulingCount","","",0,1,"","","","Extension {[CanonicalType[https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-rescheduling-count]]} {[]}
 ","Conteo de re-agendamientos","Número de re-agendamientos de esta derivación (0–1). No se reinicia: un solo re-agendamiento por derivación.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -84,10 +84,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","El valor grueso de R4; el estado del caso vive en businessStatus","The current status of the task.","","These states enable coordination of task status with off-the-shelf workflow solutions that support automation of tasks.","","","","","","","",,"required","The current status of the task.","http://hl7.org/fhir/ValueSet/task-status|4.0.1","",,,,"Task.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.status, Event.status",".statusCode","FiveWs.status"
 "Task.statusReason","Task.statusReason","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
-","Motivo de rechazo o de cancelación (incl. 'patient deceased')","An explanation as to why this task is held, failed, was refused, etc.","This applies to the current status.  Look at the history of the task to see reasons for past statuses.","","","","","","","","",,"example","","https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-motivo-rechazo","",,,,"Task.statusReason",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Motivo de rechazo o de cancelación (incl. 'patient deceased')","An explanation as to why this task is held, failed, was refused, etc.","This applies to the current status.  Look at the history of the task to see reasons for past statuses.","","","","","","","","",,"example","","https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-motivo-rechazo","",,,,"Task.statusReason",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".inboundRelationship[typeCode=SUBJ].source[classCode=CACT, moodCode=EVN, code=""status change""].reasonCode"
 "Task.businessStatus","Task.businessStatus","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
-","El estado del caso, textual (los nueve estados de DerivacionEstadoReferencia)","Contains business-specific nuances of the business state.","","There's often a need to track substates of a task - this is often variable by specific workflow implementation.","","","","","","","",,"example","","https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-estado-referencia","",,,,"Task.businessStatus",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","El estado del caso, textual (los nueve estados de DerivacionEstadoReferencia)","Contains business-specific nuances of the business state.","","There's often a need to track substates of a task - this is often variable by specific workflow implementation.","","","","","","","",,"example","","https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-estado-referencia","",,,,"Task.businessStatus",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=""business status""]"
 "Task.intent","Task.intent","","","",1,1,"","","Y","code {[]} {[]}
 ","unknown | proposal | plan | order | original-order | reflex-order | filler-order | instance-order | option","Indicates the ""level"" of actionability associated with the Task, i.e. i+R[9]Cs this a proposed task, a planned task, an actionable task, etc.","This element is immutable.  Proposed tasks, planned tasks, etc. must be distinct instances.
@@ -98,16 +98,16 @@ In most cases, Tasks will have an intent of ""order"".","","","","<valueCode xml
 ","routine | urgent | asap | stat","Indicates how quickly the Task should be addressed with respect to other requests.","","Used to identify the service level expected while performing a task.","","If missing, this task should be performed with normal priority","","","","","",,"required","The task's priority.","http://hl7.org/fhir/ValueSet/request-priority|4.0.1","",,,,"Task.priority",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.priority",".priorityCode","FiveWs.grade"
 "Task.code","Task.code","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
-","referral-workflow: este Task es siempre un registro de flujo de trabajo de derivación","A name or code (or both) briefly describing what the task involves.","The title (eg ""My Tasks"", ""Outstanding Tasks for Patient X"") should go into the code.","","","","","","","","",,"example","","https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-task-code","",,,,"Task.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","referral-workflow: este Task es siempre un registro de flujo de trabajo de derivación","A name or code (or both) briefly describing what the task involves.","The title (eg ""My Tasks"", ""Outstanding Tasks for Patient X"") should go into the code.","","","","","","","","",,"example","","https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-task-code","",,,,"Task.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.code, Event.code",".code","FiveWs.what[x]"
 "Task.description","Task.description","","","",0,1,"","","Y","string {[]} {[]}
 ","El próximo paso esperado (p. ej. 'acceptance decision', 'appointment offer')","A free-text description of what is to be performed.","","","","","","","","","",,,,,"",,,,"Task.description",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".text"
-"Task.focus","Task.focus","","","",1,1,"","","Y","Reference {[]} {[CanonicalType[https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-solicitud]]}
+"Task.focus","Task.focus","","","",1,1,"","","Y","Reference {[]} {[CanonicalType[https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-solicitud]]}
 ","La solicitud sobre la que trabaja este Task","The request being actioned or the resource being manipulated by this task.","If multiple resources need to be manipulated, use sub-tasks.  (This ensures that status can be tracked independently for each referenced resource.).","Used to identify the thing to be done.","","","","","","","",,,,,"",,,,"Task.focus",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".outboundRelationship[typeCode=SUBJ].target","FiveWs.what[x]"
 "Task.for","Task.for","","Patient
-","",1,1,"","","Y","Reference {[]} {[CanonicalType[https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-paciente]]}
+","",1,1,"","","Y","Reference {[]} {[CanonicalType[https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-paciente]]}
 ","Beneficiary of the Task","The entity who benefits from the performance of the service specified in the task (e.g., the patient).","","Used to track tasks outstanding for a beneficiary.  Do not use to track the task owner or creator (see owner and creator respectively).  This can also affect access control.","","","","","","","",,,,,"",,,,"Task.for",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.subject, Event.subject",".participation[typeCode=RCT].role","FiveWs.subject[x]","FiveWs.subject"
 "Task.encounter","Task.encounter","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter|4.0.1]]}
@@ -126,14 +126,14 @@ In most cases, Tasks will have an intent of ""order"".","","","","<valueCode xml
 ","Task Last Modified Date","The date and time of last modification to this task.","","Used along with history to track task activity and time in a particular task state.  This enables monitoring and management.","","","","","","","",,,,,"",,,,"Task.lastModified",0,1,"inv-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".inboundRelationship[typeCode=SUBJ, ].source[classCode=CACT, moodCode=EVN].effectiveTime"
-"Task.requester","Task.requester","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rol]]}
+"Task.requester","Task.requester","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-rol]]}
 ","Who is asking for task to be done","The creator of the task.","","Identifies who created this task.  May be used by access control mechanisms (e.g., to ensure that only the creator can cancel a task).","","","","","","","",,,,,"",,,,"Task.requester",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.requester",".participation[typeCode=AUT].role","FiveWs.author"
 "Task.performerType","Task.performerType","","","",0,*,"","","","CodeableConcept {[]} {[]}
 ","Requested performer","The kind of participant that should perform the task.","","Use to distinguish tasks on different activity queues.","","","","","","","",,"preferred","The type(s) of task performers allowed.","http://hl7.org/fhir/ValueSet/performer-role|4.0.1","",,,,"Task.performerType",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.performer.role, Request.performerType",".participation[typeCode=PRF].role.code","FiveWs.actor"
 "Task.owner","Task.owner","","Performer
-Executer","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-servicio]]}
+Executer","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-servicio]]}
 ","El servicio que acepta (es el responsable del trabajo); el profesional que acepta se registra como agente de Provenance en la entrada de aceptación del historial","Individual organization or Device currently responsible for task execution.","Tasks may be created with an owner not yet identified.","Identifies who is expected to perform this task.","","","","","","","",,,,,"",,,,"Task.owner",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.performer.actor, Request.performer",".participation[typeCode=PRF].role","FiveWs.actor"
 "Task.location","Task.location","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Location|4.0.1]]}

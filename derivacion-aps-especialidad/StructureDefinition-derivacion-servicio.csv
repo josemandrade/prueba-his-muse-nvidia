@@ -45,7 +45,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",".code","FiveWs.class"
 "HealthcareService.type","HealthcareService.type","","service type
 ","",1,1,"","","Y","CodeableConcept {[]} {[]}
-","La especialidad (catálogo local)","The specific type of service that may be delivered or performed.","","","","","","","","","",,"example","","https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-especialidad","",,,,"HealthcareService.type",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","La especialidad (catálogo local)","The specific type of service that may be delivered or performed.","","","","","","","","","",,"example","","https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-especialidad","",,,,"HealthcareService.type",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".actrelationship[typeCode=COMP.act[classCode=ACT][moodCode=DEF].code"
 "HealthcareService.specialty","HealthcareService.specialty","","","",0,*,"","","Y","CodeableConcept {[]} {[]}
 ","Specialties handled by the HealthcareService","Collection of specialties handled by the service site. This is more of a medical term.","","","","","","","","","",,"preferred","A specialty that a healthcare service may provide.","http://hl7.org/fhir/ValueSet/c80-practice-codes|4.0.1","",,,,"HealthcareService.specialty",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

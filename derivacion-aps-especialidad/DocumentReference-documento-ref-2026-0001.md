@@ -46,7 +46,7 @@ Profile: [Documento de contrareferencia](StructureDefinition-derivacion-document
   "resourceType" : "DocumentReference",
   "id" : "documento-ref-2026-0001",
   "meta" : {
-    "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-documento"]
+    "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-documento"]
   },
   "masterIdentifier" : {
     "system" : "http://especialidad.example.org/counter-referral",

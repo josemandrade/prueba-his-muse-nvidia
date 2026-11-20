@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad | *Version*:0.1.0 |
+| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-especialidad | *Version*:0.1.0 |
 | Draft as of 2026-11-20 | *Computable Name*:DerivacionEspecialidadCS |
 
  
@@ -26,12 +26,12 @@ Catálogo local de especialidades y servicios, versionado por la red (hub + serv
 {
   "resourceType" : "CodeSystem",
   "id" : "derivacion-especialidad",
-  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-especialidad",
   "version" : "0.1.0",
   "name" : "DerivacionEspecialidadCS",
   "title" : "Especialidad / servicio (catálogo local)",
   "status" : "draft",
-  "date" : "2026-11-20T12:33:32+00:00",
+  "date" : "2026-11-20T12:39:48+00:00",
   "description" : "Catálogo local de especialidades y servicios, versionado por la red (hub + servicios). El ejemplo trabajado es cardiología; la red amplía el catálogo sin tocar esta guía.",
   "content" : "complete",
   "count" : 1,

@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://josemandrade.github.io/prueba-his-muse-nvidia/Encounter/encuentro-ref-2026-0001> a fhir:Encounter ;
+<https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Encounter/encuentro-ref-2026-0001> a fhir:Encounter ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:Resource.id [ fhir:value "encuentro-ref-2026-0001"] ;
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-encuentro" ;
+       fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-encuentro" ;
        fhir:index 0 ;
-       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-encuentro>
+       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-encuentro>
      ]
   ] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ] ;
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter encuentro-ref-2026-0001</b></p><a name=\"encuentro-ref-2026-0001\"> </a><a name=\"hcencuentro-ref-2026-0001\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-derivacion-encuentro.html\">Encuentro de especialidad</a></p></div><p><b>identifier</b>: <code>http://especialidad.example.org/encounter</code>/ENC-2026-0001</p><p><b>status</b>: Planned</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/7.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB\">ActCode: AMB</a> (Ambulatory)</p><p><b>serviceType</b>: <span title=\"Codes:{https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad cardiologia}\">Cardiology</span></p><p><b>subject</b>: <a href=\"Patient-maria-gonzalez.html\">María González (official) Female, DoB: 1968-04-15 ( http://www.registrocivil.cl/run#11111111-1)</a></p><p><b>basedOn</b>: <a href=\"ServiceRequest-ref-2026-0001.html\">ServiceRequest Cardiology</a></p><h3>Participants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Individual</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"PractitionerRole-rol-especialista.html\">Carlos Rojas (official) (http://www.registrocivil.cl/run#33333333-3): Specialist at Servicio de Cardiología (http://especialidad.example.org/organization#CARDIOLOGIA)</a></td></tr></table><p><b>appointment</b>: <a href=\"Appointment-cita-ref-2026-0001.html\">Appointment: extension = 1; identifier = http://especialidad.example.org/appointment#CITA-2026-0001; status = proposed; serviceType = Cardiology; start = 2026-12-02 10:00:00-0300; end = 2026-12-02 10:30:00-0300; created = 2026-11-24 11:00:00-0300; patientInstruction = Ayuno no necesario. Traer los exámenes previos.</a></p><p><b>period</b>: 2026-12-02 10:00:00-0300 --&gt; 2026-12-02 10:30:00-0300</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter encuentro-ref-2026-0001</b></p><a name=\"encuentro-ref-2026-0001\"> </a><a name=\"hcencuentro-ref-2026-0001\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-derivacion-encuentro.html\">Encuentro de especialidad</a></p></div><p><b>identifier</b>: <code>http://especialidad.example.org/encounter</code>/ENC-2026-0001</p><p><b>status</b>: Planned</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/7.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB\">ActCode: AMB</a> (Ambulatory)</p><p><b>serviceType</b>: <span title=\"Codes:{https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-especialidad cardiologia}\">Cardiology</span></p><p><b>subject</b>: <a href=\"Patient-maria-gonzalez.html\">María González (official) Female, DoB: 1968-04-15 ( http://www.registrocivil.cl/run#11111111-1)</a></p><p><b>basedOn</b>: <a href=\"ServiceRequest-ref-2026-0001.html\">ServiceRequest Cardiology</a></p><h3>Participants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Individual</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"PractitionerRole-rol-especialista.html\">Carlos Rojas (official) (http://www.registrocivil.cl/run#33333333-3): Specialist at Servicio de Cardiología (http://especialidad.example.org/organization#CARDIOLOGIA)</a></td></tr></table><p><b>appointment</b>: <a href=\"Appointment-cita-ref-2026-0001.html\">Appointment: extension = 1; identifier = http://especialidad.example.org/appointment#CITA-2026-0001; status = proposed; serviceType = Cardiology; start = 2026-12-02 10:00:00-0300; end = 2026-12-02 10:30:00-0300; created = 2026-11-24 11:00:00-0300; patientInstruction = Ayuno no necesario. Traer los exámenes previos.</a></p><p><b>period</b>: 2026-12-02 10:00:00-0300 --&gt; 2026-12-02 10:30:00-0300</p></div>"
   ] ;
   fhir:Encounter.identifier [
      fhir:index 0 ;
@@ -33,30 +33,30 @@
   fhir:Encounter.serviceType [
      fhir:CodeableConcept.coding [
        fhir:index 0 ;
-       fhir:Coding.system [ fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad" ] ;
+       fhir:Coding.system [ fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-especialidad" ] ;
        fhir:Coding.code [ fhir:value "cardiologia" ] ;
        fhir:Coding.display [ fhir:value "Cardiology" ]
      ]
   ] ;
   fhir:Encounter.subject [
-     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Patient/maria-gonzalez> ;
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Patient/maria-gonzalez> ;
      fhir:Reference.reference [ fhir:value "Patient/maria-gonzalez" ]
   ] ;
   fhir:Encounter.basedOn [
      fhir:index 0 ;
-     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/ServiceRequest/ref-2026-0001> ;
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ServiceRequest/ref-2026-0001> ;
      fhir:Reference.reference [ fhir:value "ServiceRequest/ref-2026-0001" ]
   ] ;
   fhir:Encounter.participant [
      fhir:index 0 ;
      fhir:Encounter.participant.individual [
-       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/PractitionerRole/rol-especialista> ;
+       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/PractitionerRole/rol-especialista> ;
        fhir:Reference.reference [ fhir:value "PractitionerRole/rol-especialista" ]
      ]
   ] ;
   fhir:Encounter.appointment [
      fhir:index 0 ;
-     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Appointment/cita-ref-2026-0001> ;
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Appointment/cita-ref-2026-0001> ;
      fhir:Reference.reference [ fhir:value "Appointment/cita-ref-2026-0001" ]
   ] ;
   fhir:Encounter.period [
@@ -66,7 +66,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://josemandrade.github.io/prueba-his-muse-nvidia/Encounter/encuentro-ref-2026-0001.ttl> a owl:Ontology ;
+<https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Encounter/encuentro-ref-2026-0001.ttl> a owl:Ontology ;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

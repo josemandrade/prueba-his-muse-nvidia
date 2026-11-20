@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-documento | *Version*:0.1.0 |
+| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-documento | *Version*:0.1.0 |
 | Draft as of 2026-11-20 | *Computable Name*:DerivacionDocumento |
 
  
@@ -37,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-documento
 {
   "resourceType" : "StructureDefinition",
   "id" : "derivacion-documento",
-  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-documento",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-documento",
   "version" : "0.1.0",
   "name" : "DerivacionDocumento",
   "title" : "Documento de contrareferencia",
   "status" : "draft",
-  "date" : "2026-11-20T12:33:32+00:00",
+  "date" : "2026-11-20T12:39:48+00:00",
   "description" : "La entrada de índice de la contrareferencia. Perfil propio de esta guía, sobre el recurso base DocumentReference de FHIR R4.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
@@ -120,7 +120,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-documento
       "min" : 1,
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-paciente"]
+        "targetProfile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-paciente"]
       }]
     },
     {
@@ -133,7 +133,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-documento
       "path" : "DocumentReference.author",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rol"]
+        "targetProfile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-rol"]
       }]
     },
     {
@@ -158,7 +158,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-documento
       "path" : "DocumentReference.context.encounter",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-encuentro"]
+        "targetProfile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-encuentro"]
       }]
     },
     {
@@ -167,7 +167,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-documento
       "short" : "El enlace del documento a la derivación",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-solicitud"]
+        "targetProfile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-solicitud"]
       }]
     }]
   }

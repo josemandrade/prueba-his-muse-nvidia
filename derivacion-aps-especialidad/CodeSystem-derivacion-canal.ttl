@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-canal> a fhir:CodeSystem ;
+<https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-canal> a fhir:CodeSystem ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:Resource.id [ fhir:value "derivacion-canal"] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ] ;
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem derivacion-canal</b></p><a name=\"derivacion-canal\"> </a><a name=\"hcderivacion-canal\"> </a><p>This  code system <code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-canal</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">phone<a name=\"derivacion-canal-phone\"> </a></td><td>Phone</td><td>Llamada telefónica.</td></tr><tr><td style=\"white-space:nowrap\">in-person<a name=\"derivacion-canal-in-person\"> </a></td><td>In person</td><td>Aviso presencial.</td></tr><tr><td style=\"white-space:nowrap\">system-message<a name=\"derivacion-canal-system-message\"> </a></td><td>System message</td><td>Mensaje del sistema (portal o mensajería del EHR).</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem derivacion-canal</b></p><a name=\"derivacion-canal\"> </a><a name=\"hcderivacion-canal\"> </a><p>This  code system <code>https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-canal</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">phone<a name=\"derivacion-canal-phone\"> </a></td><td>Phone</td><td>Llamada telefónica.</td></tr><tr><td style=\"white-space:nowrap\">in-person<a name=\"derivacion-canal-in-person\"> </a></td><td>In person</td><td>Aviso presencial.</td></tr><tr><td style=\"white-space:nowrap\">system-message<a name=\"derivacion-canal-system-message\"> </a></td><td>System message</td><td>Mensaje del sistema (portal o mensajería del EHR).</td></tr></table></div>"
   ] ;
-  fhir:CodeSystem.url [ fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-canal"] ;
+  fhir:CodeSystem.url [ fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-canal"] ;
   fhir:CodeSystem.version [ fhir:value "0.1.0"] ;
   fhir:CodeSystem.name [ fhir:value "DerivacionCanalCS"] ;
   fhir:CodeSystem.title [ fhir:value "Canal de notificación"] ;
   fhir:CodeSystem.status [ fhir:value "draft"] ;
-  fhir:CodeSystem.date [ fhir:value "2026-11-20T12:33:32+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.date [ fhir:value "2026-11-20T12:39:48+00:00"^^xsd:dateTime] ;
   fhir:CodeSystem.description [ fhir:value "Canales por los que se envía una notificación (lista local; el caso no fija un canal por notificación)."] ;
   fhir:CodeSystem.content [ fhir:value "complete"] ;
   fhir:CodeSystem.count [ fhir:value "3"^^xsd:nonNegativeInteger] ;
@@ -40,7 +40,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-canal.ttl> a owl:Ontology ;
+<https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-canal.ttl> a owl:Ontology ;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

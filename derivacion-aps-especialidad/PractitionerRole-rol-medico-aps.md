@@ -28,7 +28,7 @@ Ana Pérez (official) (http://www.registrocivil.cl/run#22222222-2): APS doctor a
   "resourceType" : "PractitionerRole",
   "id" : "rol-medico-aps",
   "meta" : {
-    "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rol"]
+    "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-rol"]
   },
   "active" : true,
   "practitioner" : {
@@ -39,7 +39,7 @@ Ana Pérez (official) (http://www.registrocivil.cl/run#22222222-2): APS doctor a
   },
   "code" : [{
     "coding" : [{
-      "system" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol",
+      "system" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-rol",
       "code" : "aps-doctor",
       "display" : "APS doctor"
     }]

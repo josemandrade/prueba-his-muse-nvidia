@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-estado-referencia | *Version*:0.1.0 |
+| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-estado-referencia | *Version*:0.1.0 |
 | Draft as of 2026-11-20 | *Computable Name*:DerivacionEstadoReferencia |
 
  
@@ -45,16 +45,16 @@ Estados posibles de una derivación APS → especialidad.
 {
   "resourceType" : "ValueSet",
   "id" : "derivacion-estado-referencia",
-  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-estado-referencia",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-estado-referencia",
   "version" : "0.1.0",
   "name" : "DerivacionEstadoReferencia",
   "title" : "Estado de la derivación",
   "status" : "draft",
-  "date" : "2026-11-20T12:33:32+00:00",
+  "date" : "2026-11-20T12:39:48+00:00",
   "description" : "Estados posibles de una derivación APS → especialidad.",
   "compose" : {
     "include" : [{
-      "system" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia"
+      "system" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia"
     }]
   }
 }

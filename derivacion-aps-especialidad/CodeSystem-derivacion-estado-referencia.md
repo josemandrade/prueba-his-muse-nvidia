@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia | *Version*:0.1.0 |
+| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia | *Version*:0.1.0 |
 | Draft as of 2026-11-20 | *Computable Name*:DerivacionEstadoReferenciaCS |
 
  
@@ -26,12 +26,12 @@ Los nueve estados del caso de la derivación APS → especialidad (spec §3.1). 
 {
   "resourceType" : "CodeSystem",
   "id" : "derivacion-estado-referencia",
-  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia",
   "version" : "0.1.0",
   "name" : "DerivacionEstadoReferenciaCS",
   "title" : "Estado de la derivación",
   "status" : "draft",
-  "date" : "2026-11-20T12:33:32+00:00",
+  "date" : "2026-11-20T12:39:48+00:00",
   "description" : "Los nueve estados del caso de la derivación APS → especialidad (spec §3.1). El estado vive en Task.businessStatus, nunca como valor inventado de Task.status.",
   "content" : "complete",
   "count" : 9,

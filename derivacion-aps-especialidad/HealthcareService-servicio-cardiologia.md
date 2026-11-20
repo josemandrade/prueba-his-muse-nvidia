@@ -28,7 +28,7 @@ Cardiology (Cardiology) by Servicio de Cardiología (http://especialidad.example
   "resourceType" : "HealthcareService",
   "id" : "servicio-cardiologia",
   "meta" : {
-    "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-servicio"]
+    "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-servicio"]
   },
   "identifier" : [{
     "system" : "http://especialidad.example.org/service",
@@ -40,7 +40,7 @@ Cardiology (Cardiology) by Servicio de Cardiología (http://especialidad.example
   },
   "type" : [{
     "coding" : [{
-      "system" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad",
+      "system" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-especialidad",
       "code" : "cardiologia",
       "display" : "Cardiology"
     }]

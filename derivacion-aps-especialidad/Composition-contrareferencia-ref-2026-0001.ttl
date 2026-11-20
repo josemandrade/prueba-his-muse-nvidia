@@ -6,14 +6,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://josemandrade.github.io/prueba-his-muse-nvidia/Composition/contrareferencia-ref-2026-0001> a fhir:Composition ;
+<https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Composition/contrareferencia-ref-2026-0001> a fhir:Composition ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:Resource.id [ fhir:value "contrareferencia-ref-2026-0001"] ;
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-contrareferencia" ;
+       fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-contrareferencia" ;
        fhir:index 0 ;
-       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-contrareferencia>
+       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-contrareferencia>
      ]
   ] ;
   fhir:DomainResource.text [
@@ -22,7 +22,7 @@
   ] ;
   fhir:DomainResource.extension [
      fhir:index 0 ;
-     fhir:Extension.url [ fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-referral-identifier" ] ;
+     fhir:Extension.url [ fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-referral-identifier" ] ;
      fhir:Extension.valueIdentifier [
        fhir:Identifier.system [ fhir:value "http://aps.losaromos.example.org/referral" ] ;
        fhir:Identifier.value [ fhir:value "REF-2026-0001" ]
@@ -43,17 +43,17 @@
      ]
   ] ;
   fhir:Composition.subject [
-     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Patient/maria-gonzalez> ;
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Patient/maria-gonzalez> ;
      fhir:Reference.reference [ fhir:value "Patient/maria-gonzalez" ]
   ] ;
   fhir:Composition.encounter [
-     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Encounter/encuentro-ref-2026-0001> ;
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Encounter/encuentro-ref-2026-0001> ;
      fhir:Reference.reference [ fhir:value "Encounter/encuentro-ref-2026-0001" ]
   ] ;
   fhir:Composition.date [ fhir:value "2026-12-03T10:00:00-03:00"^^xsd:dateTime] ;
   fhir:Composition.author [
      fhir:index 0 ;
-     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/PractitionerRole/rol-especialista> ;
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/PractitionerRole/rol-especialista> ;
      fhir:Reference.reference [ fhir:value "PractitionerRole/rol-especialista" ]
   ] ;
   fhir:Composition.title [ fhir:value "Counter-referral"] ;
@@ -69,7 +69,7 @@
      ] ;
      fhir:Composition.section.entry [
        fhir:index 0 ;
-       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Condition/diagnostico-ref-2026-0001> ;
+       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Condition/diagnostico-ref-2026-0001> ;
        fhir:Reference.reference [ fhir:value "Condition/diagnostico-ref-2026-0001" ]
      ]
   ], [
@@ -84,7 +84,7 @@
      ] ;
      fhir:Composition.section.entry [
        fhir:index 0 ;
-       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/CarePlan/plan-ref-2026-0001> ;
+       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CarePlan/plan-ref-2026-0001> ;
        fhir:Reference.reference [ fhir:value "CarePlan/plan-ref-2026-0001" ]
      ]
   ], [
@@ -109,14 +109,14 @@
      ] ;
      fhir:Composition.section.entry [
        fhir:index 0 ;
-       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/CarePlan/plan-ref-2026-0001> ;
+       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CarePlan/plan-ref-2026-0001> ;
        fhir:Reference.reference [ fhir:value "CarePlan/plan-ref-2026-0001" ]
      ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<https://josemandrade.github.io/prueba-his-muse-nvidia/Composition/contrareferencia-ref-2026-0001.ttl> a owl:Ontology ;
+<https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Composition/contrareferencia-ref-2026-0001.ttl> a owl:Ontology ;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

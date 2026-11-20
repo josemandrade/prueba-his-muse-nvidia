@@ -51,7 +51,7 @@ Profile: [Plan de seguimiento para APS](StructureDefinition-derivacion-plan-segu
   "resourceType" : "CarePlan",
   "id" : "plan-ref-2026-0001",
   "meta" : {
-    "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-plan-seguimiento"]
+    "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-plan-seguimiento"]
   },
   "status" : "active",
   "intent" : "plan",

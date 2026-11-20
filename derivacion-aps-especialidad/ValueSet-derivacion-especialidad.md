@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-especialidad | *Version*:0.1.0 |
+| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-especialidad | *Version*:0.1.0 |
 | Draft as of 2026-11-20 | *Computable Name*:DerivacionEspecialidad |
 
  
@@ -48,16 +48,16 @@ Especialidades y servicios a los que se puede derivar.
 {
   "resourceType" : "ValueSet",
   "id" : "derivacion-especialidad",
-  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-especialidad",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-especialidad",
   "version" : "0.1.0",
   "name" : "DerivacionEspecialidad",
   "title" : "Especialidad / servicio (catálogo local)",
   "status" : "draft",
-  "date" : "2026-11-20T12:33:32+00:00",
+  "date" : "2026-11-20T12:39:48+00:00",
   "description" : "Especialidades y servicios a los que se puede derivar.",
   "compose" : {
     "include" : [{
-      "system" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad"
+      "system" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-especialidad"
     }]
   }
 }

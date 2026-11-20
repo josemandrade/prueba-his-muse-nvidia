@@ -28,7 +28,7 @@ Ana Pérez (official) (http://www.registrocivil.cl/run#22222222-2): APS admin at
   "resourceType" : "PractitionerRole",
   "id" : "rol-admin-aps",
   "meta" : {
-    "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rol"]
+    "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-rol"]
   },
   "active" : true,
   "practitioner" : {
@@ -39,7 +39,7 @@ Ana Pérez (official) (http://www.registrocivil.cl/run#22222222-2): APS admin at
   },
   "code" : [{
     "coding" : [{
-      "system" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol",
+      "system" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-rol",
       "code" : "aps-admin",
       "display" : "APS admin"
     }]

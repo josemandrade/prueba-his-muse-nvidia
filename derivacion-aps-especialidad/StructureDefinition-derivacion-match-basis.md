@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-match-basis | *Version*:0.1.0 |
+| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-match-basis | *Version*:0.1.0 |
 | Draft as of 2026-11-20 | *Computable Name*:DerivacionMatchBasis |
 
 | | |
@@ -45,12 +45,12 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-match-bas
 {
   "resourceType" : "StructureDefinition",
   "id" : "derivacion-match-basis",
-  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-match-basis",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-match-basis",
   "version" : "0.1.0",
   "name" : "DerivacionMatchBasis",
   "title" : "Base del cruce de identidad",
   "status" : "draft",
-  "date" : "2026-11-20T12:33:32+00:00",
+  "date" : "2026-11-20T12:39:48+00:00",
   "description" : "Cómo se estableció el cruce de identidad en el MPI: identifier | demographics.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
@@ -82,7 +82,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-match-bas
     {
       "id" : "Extension.url",
       "path" : "Extension.url",
-      "fixedUri" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-match-basis"
+      "fixedUri" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-match-basis"
     },
     {
       "id" : "Extension.value[x]",
@@ -93,7 +93,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-match-bas
       }],
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-base-cruce"
+        "valueSet" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-base-cruce"
       }
     }]
   }

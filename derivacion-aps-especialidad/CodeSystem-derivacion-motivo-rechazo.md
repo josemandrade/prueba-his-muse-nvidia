@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-motivo-rechazo | *Version*:0.1.0 |
+| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-motivo-rechazo | *Version*:0.1.0 |
 | Draft as of 2026-11-20 | *Computable Name*:DerivacionMotivoRechazoCS |
 
  
@@ -26,12 +26,12 @@ Motivos de rechazo de la derivación (lista local de la especialidad; el texto l
 {
   "resourceType" : "CodeSystem",
   "id" : "derivacion-motivo-rechazo",
-  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-motivo-rechazo",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-motivo-rechazo",
   "version" : "0.1.0",
   "name" : "DerivacionMotivoRechazoCS",
   "title" : "Motivo de rechazo",
   "status" : "draft",
-  "date" : "2026-11-20T12:33:32+00:00",
+  "date" : "2026-11-20T12:39:48+00:00",
   "description" : "Motivos de rechazo de la derivación (lista local de la especialidad; el texto libre acompaña al código).",
   "content" : "complete",
   "count" : 3,

@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-motivo-rechazo> a fhir:CodeSystem ;
+<https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-motivo-rechazo> a fhir:CodeSystem ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:Resource.id [ fhir:value "derivacion-motivo-rechazo"] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ] ;
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem derivacion-motivo-rechazo</b></p><a name=\"derivacion-motivo-rechazo\"> </a><a name=\"hcderivacion-motivo-rechazo\"> </a><p>This  code system <code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-motivo-rechazo</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">missing-exam<a name=\"derivacion-motivo-rechazo-missing-exam\"> </a></td><td>Missing exam</td><td>Falta un examen necesario para el triaje (ejemplo trabajado: falta el ecocardiograma).</td></tr><tr><td style=\"white-space:nowrap\">wrong-specialty<a name=\"derivacion-motivo-rechazo-wrong-specialty\"> </a></td><td>Wrong specialty</td><td>La derivación no corresponde a esta especialidad.</td></tr><tr><td style=\"white-space:nowrap\">capacity<a name=\"derivacion-motivo-rechazo-capacity\"> </a></td><td>Capacity</td><td>La especialidad no tiene capacidad para atender la derivación en plazo.</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem derivacion-motivo-rechazo</b></p><a name=\"derivacion-motivo-rechazo\"> </a><a name=\"hcderivacion-motivo-rechazo\"> </a><p>This  code system <code>https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-motivo-rechazo</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">missing-exam<a name=\"derivacion-motivo-rechazo-missing-exam\"> </a></td><td>Missing exam</td><td>Falta un examen necesario para el triaje (ejemplo trabajado: falta el ecocardiograma).</td></tr><tr><td style=\"white-space:nowrap\">wrong-specialty<a name=\"derivacion-motivo-rechazo-wrong-specialty\"> </a></td><td>Wrong specialty</td><td>La derivación no corresponde a esta especialidad.</td></tr><tr><td style=\"white-space:nowrap\">capacity<a name=\"derivacion-motivo-rechazo-capacity\"> </a></td><td>Capacity</td><td>La especialidad no tiene capacidad para atender la derivación en plazo.</td></tr></table></div>"
   ] ;
-  fhir:CodeSystem.url [ fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-motivo-rechazo"] ;
+  fhir:CodeSystem.url [ fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-motivo-rechazo"] ;
   fhir:CodeSystem.version [ fhir:value "0.1.0"] ;
   fhir:CodeSystem.name [ fhir:value "DerivacionMotivoRechazoCS"] ;
   fhir:CodeSystem.title [ fhir:value "Motivo de rechazo"] ;
   fhir:CodeSystem.status [ fhir:value "draft"] ;
-  fhir:CodeSystem.date [ fhir:value "2026-11-20T12:33:32+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.date [ fhir:value "2026-11-20T12:39:48+00:00"^^xsd:dateTime] ;
   fhir:CodeSystem.description [ fhir:value "Motivos de rechazo de la derivación (lista local de la especialidad; el texto libre acompaña al código)."] ;
   fhir:CodeSystem.content [ fhir:value "complete"] ;
   fhir:CodeSystem.count [ fhir:value "3"^^xsd:nonNegativeInteger] ;
@@ -40,7 +40,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-motivo-rechazo.ttl> a owl:Ontology ;
+<https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-motivo-rechazo.ttl> a owl:Ontology ;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

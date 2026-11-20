@@ -40,7 +40,7 @@ Profile: [Encuentro de especialidad](StructureDefinition-derivacion-encuentro.md
   "resourceType" : "Encounter",
   "id" : "encuentro-ref-2026-0001",
   "meta" : {
-    "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-encuentro"]
+    "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-encuentro"]
   },
   "identifier" : [{
     "system" : "http://especialidad.example.org/encounter",
@@ -54,7 +54,7 @@ Profile: [Encuentro de especialidad](StructureDefinition-derivacion-encuentro.md
   },
   "serviceType" : {
     "coding" : [{
-      "system" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad",
+      "system" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-especialidad",
       "code" : "cardiologia",
       "display" : "Cardiology"
     }]

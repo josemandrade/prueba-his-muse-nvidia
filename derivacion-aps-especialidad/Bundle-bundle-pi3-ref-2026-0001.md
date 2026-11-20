@@ -22,14 +22,14 @@
       "resourceType" : "Composition",
       "id" : "contrareferencia-ref-2026-0001",
       "meta" : {
-        "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-contrareferencia"]
+        "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-contrareferencia"]
       },
       "text" : {
         "status" : "extensions",
         "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Composition_contrareferencia-ref-2026-0001\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Composition contrareferencia-ref-2026-0001</b></p><a name=\"contrareferencia-ref-2026-0001\"> </a><a name=\"hccontrareferencia-ref-2026-0001\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-derivacion-contrareferencia.html\">Contrareferencia</a></p></div><p><b>Identificador de la derivación</b>: <code>http://aps.losaromos.example.org/referral</code>/REF-2026-0001</p><p><b>identifier</b>: <code>http://especialidad.example.org/counter-referral</code>/CR-2026-0001</p><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 11488-4}\">Consult note</span></p><p><b>encounter</b>: <a href=\"Encounter-encuentro-ref-2026-0001.html\">Encounter: identifier = http://especialidad.example.org/encounter#ENC-2026-0001; status = planned; class = Ambulatory (ActCode#AMB); serviceType = Cardiology; period = 2026-12-02 10:00:00-0300 --&gt; 2026-12-02 10:30:00-0300</a></p><p><b>date</b>: 2026-12-03 10:00:00-0300</p><p><b>author</b>: <a href=\"PractitionerRole-rol-especialista.html\">Carlos Rojas (official) (http://www.registrocivil.cl/run#33333333-3): Specialist at Servicio de Cardiología (http://especialidad.example.org/organization#CARDIOLOGIA)</a></p><p><b>title</b>: Counter-referral</p></div>"
       },
       "extension" : [{
-        "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-referral-identifier",
+        "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-referral-identifier",
         "valueIdentifier" : {
           "system" : "http://aps.losaromos.example.org/referral",
           "value" : "REF-2026-0001"
@@ -115,7 +115,7 @@
       "resourceType" : "DocumentReference",
       "id" : "documento-ref-2026-0001",
       "meta" : {
-        "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-documento"]
+        "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-documento"]
       },
       "text" : {
         "status" : "generated",
@@ -166,7 +166,7 @@
       "resourceType" : "Condition",
       "id" : "diagnostico-ref-2026-0001",
       "meta" : {
-        "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-diagnostico"]
+        "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-diagnostico"]
       },
       "text" : {
         "status" : "generated",
@@ -216,7 +216,7 @@
       "resourceType" : "CarePlan",
       "id" : "plan-ref-2026-0001",
       "meta" : {
-        "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-plan-seguimiento"]
+        "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-plan-seguimiento"]
       },
       "text" : {
         "status" : "generated",

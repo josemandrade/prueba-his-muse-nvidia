@@ -53,7 +53,7 @@ Disnea de esfuerzo y edema de tobillos de dos semanas de evolución.
   "resourceType" : "ServiceRequest",
   "id" : "ref-2026-0001",
   "meta" : {
-    "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-solicitud"]
+    "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-solicitud"]
   },
   "identifier" : [{
     "system" : "http://aps.losaromos.example.org/referral",
@@ -64,7 +64,7 @@ Disnea de esfuerzo y edema de tobillos de dos semanas de evolución.
   "priority" : "routine",
   "code" : {
     "coding" : [{
-      "system" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad",
+      "system" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-especialidad",
       "code" : "cardiologia",
       "display" : "Cardiology"
     }]
@@ -81,7 +81,7 @@ Disnea de esfuerzo y edema de tobillos de dos semanas de evolución.
   },
   "performerType" : {
     "coding" : [{
-      "system" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad",
+      "system" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-especialidad",
       "code" : "cardiologia",
       "display" : "Cardiology"
     }]

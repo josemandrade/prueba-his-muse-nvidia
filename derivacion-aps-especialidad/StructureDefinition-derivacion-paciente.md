@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-paciente | *Version*:0.1.0 |
+| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-paciente | *Version*:0.1.0 |
 | Draft as of 2026-11-20 | *Computable Name*:DerivacionPaciente |
 
  
@@ -37,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-paciente.
 {
   "resourceType" : "StructureDefinition",
   "id" : "derivacion-paciente",
-  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-paciente",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-paciente",
   "version" : "0.1.0",
   "name" : "DerivacionPaciente",
   "title" : "Paciente de la derivación",
   "status" : "draft",
-  "date" : "2026-11-20T12:33:32+00:00",
+  "date" : "2026-11-20T12:39:48+00:00",
   "description" : "Persona derivada desde APS a una especialidad. Perfil propio de esta guía, sobre el recurso base Patient de FHIR R4. La clave MPI y el RUN son los identificadores que viajan; los datos de contacto son obligatorios (C12) — sin ellos la creación se bloquea.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
@@ -101,7 +101,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-paciente.
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-preferred-contact-channel"]
+        "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-preferred-contact-channel"]
       }]
     },
     {

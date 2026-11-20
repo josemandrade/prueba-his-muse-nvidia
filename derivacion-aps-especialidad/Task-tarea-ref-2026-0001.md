@@ -41,10 +41,10 @@ Profile: [Tarea de derivación (registro de estado)](StructureDefinition-derivac
   "resourceType" : "Task",
   "id" : "tarea-ref-2026-0001",
   "meta" : {
-    "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-tarea"]
+    "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-tarea"]
   },
   "extension" : [{
-    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-acceptance-deadline",
+    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-sla-acceptance-deadline",
     "valueDateTime" : "2026-11-26T17:00:00-03:00"
   }],
   "identifier" : [{
@@ -54,7 +54,7 @@ Profile: [Tarea de derivación (registro de estado)](StructureDefinition-derivac
   "status" : "requested",
   "businessStatus" : {
     "coding" : [{
-      "system" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia",
+      "system" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia",
       "code" : "requested",
       "display" : "Requested"
     }]
@@ -62,7 +62,7 @@ Profile: [Tarea de derivación (registro de estado)](StructureDefinition-derivac
   "intent" : "order",
   "code" : {
     "coding" : [{
-      "system" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-task-code",
+      "system" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-task-code",
       "code" : "referral-workflow",
       "display" : "Referral workflow"
     }]

@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-confirmation-deadline | *Version*:0.1.0 |
+| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-sla-confirmation-deadline | *Version*:0.1.0 |
 | Draft as of 2026-11-20 | *Computable Name*:DerivacionSlaConfirmationDeadline |
 
 Fecha límite para confirmar una oferta: oferta + 3 días hábiles. Presente solo mientras una oferta está abierta.
@@ -41,12 +41,12 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-sla-confi
 {
   "resourceType" : "StructureDefinition",
   "id" : "derivacion-sla-confirmation-deadline",
-  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-confirmation-deadline",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-sla-confirmation-deadline",
   "version" : "0.1.0",
   "name" : "DerivacionSlaConfirmationDeadline",
   "title" : "Plazo de confirmación",
   "status" : "draft",
-  "date" : "2026-11-20T12:33:32+00:00",
+  "date" : "2026-11-20T12:39:48+00:00",
   "description" : "Fecha límite para confirmar una oferta: oferta + 3 días hábiles. Presente solo mientras una oferta está abierta.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
@@ -78,7 +78,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-sla-confi
     {
       "id" : "Extension.url",
       "path" : "Extension.url",
-      "fixedUri" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-confirmation-deadline"
+      "fixedUri" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-sla-confirmation-deadline"
     },
     {
       "id" : "Extension.value[x]",

@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-resultado-entrega | *Version*:0.1.0 |
+| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-resultado-entrega | *Version*:0.1.0 |
 | Draft as of 2026-11-20 | *Computable Name*:DerivacionResultadoEntrega |
 
  
@@ -45,16 +45,16 @@ Resultados posibles de la entrega de una notificación.
 {
   "resourceType" : "ValueSet",
   "id" : "derivacion-resultado-entrega",
-  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-resultado-entrega",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-resultado-entrega",
   "version" : "0.1.0",
   "name" : "DerivacionResultadoEntrega",
   "title" : "Resultado de la entrega de una notificación",
   "status" : "draft",
-  "date" : "2026-11-20T12:33:32+00:00",
+  "date" : "2026-11-20T12:39:48+00:00",
   "description" : "Resultados posibles de la entrega de una notificación.",
   "compose" : {
     "include" : [{
-      "system" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-resultado-entrega"
+      "system" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-resultado-entrega"
     }]
   }
 }

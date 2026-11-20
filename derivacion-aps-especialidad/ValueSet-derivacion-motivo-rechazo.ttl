@@ -5,30 +5,30 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-motivo-rechazo> a fhir:ValueSet ;
+<https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-motivo-rechazo> a fhir:ValueSet ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:Resource.id [ fhir:value "derivacion-motivo-rechazo"] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ] ;
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet derivacion-motivo-rechazo</b></p><a name=\"derivacion-motivo-rechazo\"> </a><a name=\"hcderivacion-motivo-rechazo\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-derivacion-motivo-rechazo.html\"><code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-motivo-rechazo</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.1.0</span></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet derivacion-motivo-rechazo</b></p><a name=\"derivacion-motivo-rechazo\"> </a><a name=\"hcderivacion-motivo-rechazo\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-derivacion-motivo-rechazo.html\"><code>https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-motivo-rechazo</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.1.0</span></li></ul></div>"
   ] ;
-  fhir:ValueSet.url [ fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-motivo-rechazo"] ;
+  fhir:ValueSet.url [ fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-motivo-rechazo"] ;
   fhir:ValueSet.version [ fhir:value "0.1.0"] ;
   fhir:ValueSet.name [ fhir:value "DerivacionMotivoRechazo"] ;
   fhir:ValueSet.title [ fhir:value "Motivo de rechazo"] ;
   fhir:ValueSet.status [ fhir:value "draft"] ;
-  fhir:ValueSet.date [ fhir:value "2026-11-20T12:33:32+00:00"^^xsd:dateTime] ;
+  fhir:ValueSet.date [ fhir:value "2026-11-20T12:39:48+00:00"^^xsd:dateTime] ;
   fhir:ValueSet.description [ fhir:value "Motivos por los que la especialidad puede rechazar una derivación."] ;
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0 ;
-       fhir:ValueSet.compose.include.system [ fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-motivo-rechazo" ]
+       fhir:ValueSet.compose.include.system [ fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-motivo-rechazo" ]
      ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-motivo-rechazo.ttl> a owl:Ontology ;
+<https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-motivo-rechazo.ttl> a owl:Ontology ;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

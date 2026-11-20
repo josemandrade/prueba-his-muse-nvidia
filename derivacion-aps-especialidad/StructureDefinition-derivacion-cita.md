@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-cita | *Version*:0.1.0 |
+| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-cita | *Version*:0.1.0 |
 | Draft as of 2026-11-20 | *Computable Name*:DerivacionCita |
 
  
@@ -37,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-cita.csv)
 {
   "resourceType" : "StructureDefinition",
   "id" : "derivacion-cita",
-  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-cita",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-cita",
   "version" : "0.1.0",
   "name" : "DerivacionCita",
   "title" : "Cita de la derivación",
   "status" : "draft",
-  "date" : "2026-11-20T12:33:32+00:00",
+  "date" : "2026-11-20T12:39:48+00:00",
   "description" : "La oferta y la reserva de la cita de especialidad. Perfil propio de esta guía, sobre el recurso base Appointment de FHIR R4. La decisión del paciente vive en el AppointmentResponse, no en la cita; una cita cancelada o no asistida nunca se reutiliza.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
@@ -101,7 +101,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-cita.csv)
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-offer-number"]
+        "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-offer-number"]
       }]
     },
     {
@@ -120,7 +120,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-cita.csv)
       "path" : "Appointment.serviceType",
       "binding" : {
         "strength" : "example",
-        "valueSet" : "https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-especialidad"
+        "valueSet" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-especialidad"
       }
     },
     {
@@ -135,7 +135,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-cita.csv)
       "min" : 1,
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-solicitud"]
+        "targetProfile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-solicitud"]
       }]
     },
     {

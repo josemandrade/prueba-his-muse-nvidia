@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol | *Version*:0.1.0 |
+| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-rol | *Version*:0.1.0 |
 | Draft as of 2026-11-20 | *Computable Name*:DerivacionRolCS |
 
  
@@ -26,12 +26,12 @@ Los seis roles del caso de uso (spec §2). Dentro de una derivación, cada rol e
 {
   "resourceType" : "CodeSystem",
   "id" : "derivacion-rol",
-  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-rol",
   "version" : "0.1.0",
   "name" : "DerivacionRolCS",
   "title" : "Rol en la derivación",
   "status" : "draft",
-  "date" : "2026-11-20T12:33:32+00:00",
+  "date" : "2026-11-20T12:39:48+00:00",
   "description" : "Los seis roles del caso de uso (spec §2). Dentro de una derivación, cada rol es una persona (el clínico de triaje no es el agendador — C1).",
   "content" : "complete",
   "count" : 6,

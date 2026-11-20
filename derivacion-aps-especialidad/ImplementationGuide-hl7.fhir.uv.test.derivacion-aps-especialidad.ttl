@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://josemandrade.github.io/prueba-his-muse-nvidia/ImplementationGuide/hl7.fhir.uv.test.derivacion-aps-especialidad> a fhir:ImplementationGuide ;
+<https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ImplementationGuide/hl7.fhir.uv.test.derivacion-aps-especialidad> a fhir:ImplementationGuide ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:Resource.id [ fhir:value "hl7.fhir.uv.test.derivacion-aps-especialidad"] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ] ;
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.uv.test.derivacion-aps-especialidad</b></p><a name=\"hl7.fhir.uv.test.derivacion-aps-especialidad\"> </a><a name=\"hchl7.fhir.uv.test.derivacion-aps-especialidad\"> </a><h2>DerivacionAPSEspecialidad</h2><p>The official URL for this implementation guide is: </p><pre>https://josemandrade.github.io/prueba-his-muse-nvidia/ImplementationGuide/hl7.fhir.uv.test.derivacion-aps-especialidad</pre><div><p>Guía de implementación de prueba para la derivación de un paciente desde atención primaria (APS) a una especialidad, con contrareferencia de vuelta a APS. Un caso de uso clínico con su flujo BPMN, sus perfiles FHIR R4 propios y sus operaciones en cada punto de interoperabilidad. Datos sintéticos.</p>\n</div></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.uv.test.derivacion-aps-especialidad</b></p><a name=\"hl7.fhir.uv.test.derivacion-aps-especialidad\"> </a><a name=\"hchl7.fhir.uv.test.derivacion-aps-especialidad\"> </a><h2>DerivacionAPSEspecialidad</h2><p>The official URL for this implementation guide is: </p><pre>https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ImplementationGuide/hl7.fhir.uv.test.derivacion-aps-especialidad</pre><div><p>Guía de implementación de prueba para la derivación de un paciente desde atención primaria (APS) a una especialidad, con contrareferencia de vuelta a APS. Un caso de uso clínico con su flujo BPMN, sus perfiles FHIR R4 propios y sus operaciones en cada punto de interoperabilidad. Datos sintéticos.</p>\n</div></div>"
   ] ;
-  fhir:ImplementationGuide.url [ fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/ImplementationGuide/hl7.fhir.uv.test.derivacion-aps-especialidad"] ;
+  fhir:ImplementationGuide.url [ fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ImplementationGuide/hl7.fhir.uv.test.derivacion-aps-especialidad"] ;
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"] ;
   fhir:ImplementationGuide.name [ fhir:value "DerivacionAPSEspecialidad"] ;
   fhir:ImplementationGuide.title [ fhir:value "Derivación APS → especialidad con contrareferencia"] ;
   fhir:ImplementationGuide.status [ fhir:value "draft"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-11-20T12:33:32+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-11-20T12:39:48+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.description [ fhir:value "Guía de implementación de prueba para la derivación de un paciente desde atención primaria (APS) a una especialidad, con contrareferencia de vuelta a APS. Un caso de uso clínico con su flujo BPMN, sus perfiles FHIR R4 propios y sus operaciones en cada punto de interoperabilidad. Datos sintéticos."] ;
   fhir:ImplementationGuide.packageId [ fhir:value "hl7.fhir.uv.test.derivacion-aps-especialidad"] ;
   fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"] ;
@@ -185,7 +185,7 @@
        ], [
          fhir:index 1 ;
          fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/history.html" ]
+         fhir:Extension.valueString [ fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/history.html" ]
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -377,13 +377,13 @@
          fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/PractitionerRole/rol-admin-aps> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/PractitionerRole/rol-admin-aps> ;
          fhir:Reference.reference [ fhir:value "PractitionerRole/rol-admin-aps" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Administrativo APS en la derivación REF-2026-0001" ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rol" ;
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rol>
+         fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-rol" ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-rol>
        ]
      ], [
        fhir:index 1 ;
@@ -393,7 +393,7 @@
          fhir:Extension.valueString [ fhir:value "Schedule" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Schedule/schedule-cardiologia> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Schedule/schedule-cardiologia> ;
          fhir:Reference.reference [ fhir:value "Schedule/schedule-cardiologia" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Agenda de cardiología" ] ;
@@ -406,13 +406,13 @@
          fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/PractitionerRole/rol-agendador> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/PractitionerRole/rol-agendador> ;
          fhir:Reference.reference [ fhir:value "PractitionerRole/rol-agendador" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Agendador en la derivación REF-2026-0001" ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rol" ;
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rol>
+         fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-rol" ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-rol>
        ]
      ], [
        fhir:index 3 ;
@@ -422,7 +422,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-match-basis> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-match-basis> ;
          fhir:Reference.reference [ fhir:value "StructureDefinition/derivacion-match-basis" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Base del cruce de identidad" ] ;
@@ -436,7 +436,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-base-cruce> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-base-cruce> ;
          fhir:Reference.reference [ fhir:value "ValueSet/derivacion-base-cruce" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Base del cruce de identidad" ] ;
@@ -450,7 +450,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-base-cruce> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-base-cruce> ;
          fhir:Reference.reference [ fhir:value "CodeSystem/derivacion-base-cruce" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Base del cruce de identidad" ] ;
@@ -464,7 +464,7 @@
          fhir:Extension.valueString [ fhir:value "Bundle" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Bundle/bundle-pi3-ref-2026-0001> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Bundle/bundle-pi3-ref-2026-0001> ;
          fhir:Reference.reference [ fhir:value "Bundle/bundle-pi3-ref-2026-0001" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bundle de documento PI-3 (contrareferencia)" ] ;
@@ -478,7 +478,7 @@
          fhir:Extension.valueString [ fhir:value "Bundle" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Bundle/bundle-pi0-ref-2026-0001> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Bundle/bundle-pi0-ref-2026-0001> ;
          fhir:Reference.reference [ fhir:value "Bundle/bundle-pi0-ref-2026-0001" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bundle de transacción PI-0 (creación de la derivación)" ] ;
@@ -492,7 +492,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-preferred-contact-channel> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-preferred-contact-channel> ;
          fhir:Reference.reference [ fhir:value "StructureDefinition/derivacion-preferred-contact-channel" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Canal de contacto preferido" ] ;
@@ -506,7 +506,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-canal> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-canal> ;
          fhir:Reference.reference [ fhir:value "ValueSet/derivacion-canal" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Canal de notificación" ] ;
@@ -520,7 +520,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-canal> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-canal> ;
          fhir:Reference.reference [ fhir:value "CodeSystem/derivacion-canal" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Canal de notificación" ] ;
@@ -534,7 +534,7 @@
          fhir:Extension.valueString [ fhir:value "Organization" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Organization/org-cesfam-los-aromos> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Organization/org-cesfam-los-aromos> ;
          fhir:Reference.reference [ fhir:value "Organization/org-cesfam-los-aromos" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CESFAM Los Aromos" ] ;
@@ -547,7 +547,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-cita> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-cita> ;
          fhir:Reference.reference [ fhir:value "StructureDefinition/derivacion-cita" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Cita de la derivación" ] ;
@@ -561,14 +561,14 @@
          fhir:Extension.valueString [ fhir:value "Appointment" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Appointment/cita-ref-2026-0001> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Appointment/cita-ref-2026-0001> ;
          fhir:Reference.reference [ fhir:value "Appointment/cita-ref-2026-0001" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Cita de la derivación REF-2026-0001 (proposed)" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "La oferta de cita (PI-2): propuesta, aún sin confirmar por la paciente." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-cita" ;
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-cita>
+         fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-cita" ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-cita>
        ]
      ], [
        fhir:index 14 ;
@@ -578,13 +578,13 @@
          fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/PractitionerRole/rol-triaje> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/PractitionerRole/rol-triaje> ;
          fhir:Reference.reference [ fhir:value "PractitionerRole/rol-triaje" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Clínico de triaje en la derivación REF-2026-0001" ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rol" ;
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rol>
+         fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-rol" ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-rol>
        ]
      ], [
        fhir:index 15 ;
@@ -594,7 +594,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-match-confidence> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-match-confidence> ;
          fhir:Reference.reference [ fhir:value "StructureDefinition/derivacion-match-confidence" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Confianza del cruce de identidad" ] ;
@@ -608,7 +608,7 @@
          fhir:Extension.valueString [ fhir:value "Location" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Location/location-cardiologia> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Location/location-cardiologia> ;
          fhir:Reference.reference [ fhir:value "Location/location-cardiologia" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Consulta de cardiología" ] ;
@@ -621,7 +621,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-offer-chase-count> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-offer-chase-count> ;
          fhir:Reference.reference [ fhir:value "StructureDefinition/derivacion-offer-chase-count" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Conteo de persecuciones de esta oferta" ] ;
@@ -635,7 +635,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rescheduling-count> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-rescheduling-count> ;
          fhir:Reference.reference [ fhir:value "StructureDefinition/derivacion-rescheduling-count" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Conteo de re-agendamientos" ] ;
@@ -649,7 +649,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-offer-decline-count> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-offer-decline-count> ;
          fhir:Reference.reference [ fhir:value "StructureDefinition/derivacion-offer-decline-count" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Conteo de rechazos de esta oferta" ] ;
@@ -663,7 +663,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-contrareferencia> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-contrareferencia> ;
          fhir:Reference.reference [ fhir:value "StructureDefinition/derivacion-contrareferencia" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Contrareferencia" ] ;
@@ -677,14 +677,14 @@
          fhir:Extension.valueString [ fhir:value "Composition" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Composition/contrareferencia-ref-2026-0001> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Composition/contrareferencia-ref-2026-0001> ;
          fhir:Reference.reference [ fhir:value "Composition/contrareferencia-ref-2026-0001" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Contrareferencia REF-2026-0001" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "El documento de vuelta del especialista a APS (PI-3)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-contrareferencia" ;
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-contrareferencia>
+         fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-contrareferencia" ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-contrareferencia>
        ]
      ], [
        fhir:index 22 ;
@@ -694,7 +694,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-task-code> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-task-code> ;
          fhir:Reference.reference [ fhir:value "ValueSet/derivacion-task-code" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Código de la tarea de derivación" ] ;
@@ -708,7 +708,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-task-code> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-task-code> ;
          fhir:Reference.reference [ fhir:value "CodeSystem/derivacion-task-code" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Código de la tarea de derivación" ] ;
@@ -722,7 +722,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-diagnostico> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-diagnostico> ;
          fhir:Reference.reference [ fhir:value "StructureDefinition/derivacion-diagnostico" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Diagnóstico de la contrareferencia" ] ;
@@ -736,13 +736,13 @@
          fhir:Extension.valueString [ fhir:value "Condition" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Condition/diagnostico-ref-2026-0001> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Condition/diagnostico-ref-2026-0001> ;
          fhir:Reference.reference [ fhir:value "Condition/diagnostico-ref-2026-0001" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Diagnóstico: insuficiencia cardiaca sistólica crónica" ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-diagnostico" ;
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-diagnostico>
+         fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-diagnostico" ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-diagnostico>
        ]
      ], [
        fhir:index 26 ;
@@ -752,7 +752,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-documento> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-documento> ;
          fhir:Reference.reference [ fhir:value "StructureDefinition/derivacion-documento" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Documento de contrareferencia" ] ;
@@ -766,13 +766,13 @@
          fhir:Extension.valueString [ fhir:value "DocumentReference" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/DocumentReference/documento-ref-2026-0001> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/DocumentReference/documento-ref-2026-0001> ;
          fhir:Reference.reference [ fhir:value "DocumentReference/documento-ref-2026-0001" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Documento de contrareferencia REF-2026-0001" ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-documento" ;
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-documento>
+         fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-documento" ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-documento>
        ]
      ], [
        fhir:index 28 ;
@@ -782,7 +782,7 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Observation/ecg-2026-11-19> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Observation/ecg-2026-11-19> ;
          fhir:Reference.reference [ fhir:value "Observation/ecg-2026-11-19" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ECG de la derivación REF-2026-0001" ] ;
@@ -795,7 +795,7 @@
          fhir:Extension.valueString [ fhir:value "Encounter" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Encounter/aps-encounter-2026-11-19> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Encounter/aps-encounter-2026-11-19> ;
          fhir:Reference.reference [ fhir:value "Encounter/aps-encounter-2026-11-19" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Encuentro APS que creó la derivación" ] ;
@@ -809,7 +809,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-encuentro> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-encuentro> ;
          fhir:Reference.reference [ fhir:value "StructureDefinition/derivacion-encuentro" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Encuentro de especialidad" ] ;
@@ -823,14 +823,14 @@
          fhir:Extension.valueString [ fhir:value "Encounter" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Encounter/encuentro-ref-2026-0001> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Encounter/encuentro-ref-2026-0001> ;
          fhir:Reference.reference [ fhir:value "Encounter/encuentro-ref-2026-0001" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Encuentro de especialidad REF-2026-0001 (planned)" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "La visita, creada en la reserva (planned); no se crea en la asistencia." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-encuentro" ;
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-encuentro>
+         fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-encuentro" ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-encuentro>
        ]
      ], [
        fhir:index 32 ;
@@ -840,7 +840,7 @@
          fhir:Extension.valueString [ fhir:value "Endpoint" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Endpoint/endpoint-cardiologia> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Endpoint/endpoint-cardiologia> ;
          fhir:Reference.reference [ fhir:value "Endpoint/endpoint-cardiologia" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Endpoint del servicio de cardiología" ] ;
@@ -853,7 +853,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-especialidad> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-especialidad> ;
          fhir:Reference.reference [ fhir:value "ValueSet/derivacion-especialidad" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Especialidad / servicio (catálogo local)" ] ;
@@ -867,7 +867,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-especialidad> ;
          fhir:Reference.reference [ fhir:value "CodeSystem/derivacion-especialidad" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Especialidad / servicio (catálogo local)" ] ;
@@ -881,7 +881,7 @@
          fhir:Extension.valueString [ fhir:value "Practitioner" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Practitioner/especialista-cardiologia> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Practitioner/especialista-cardiologia> ;
          fhir:Reference.reference [ fhir:value "Practitioner/especialista-cardiologia" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Especialista de cardiología (sintético)" ] ;
@@ -894,13 +894,13 @@
          fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/PractitionerRole/rol-especialista> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/PractitionerRole/rol-especialista> ;
          fhir:Reference.reference [ fhir:value "PractitionerRole/rol-especialista" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Especialista en la derivación REF-2026-0001" ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rol" ;
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rol>
+         fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-rol" ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-rol>
        ]
      ], [
        fhir:index 37 ;
@@ -910,7 +910,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-estado-referencia> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-estado-referencia> ;
          fhir:Reference.reference [ fhir:value "ValueSet/derivacion-estado-referencia" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Estado de la derivación" ] ;
@@ -924,7 +924,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia> ;
          fhir:Reference.reference [ fhir:value "CodeSystem/derivacion-estado-referencia" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Estado de la derivación" ] ;
@@ -938,7 +938,7 @@
          fhir:Extension.valueString [ fhir:value "Organization" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Organization/org-hub> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Organization/org-hub> ;
          fhir:Reference.reference [ fhir:value "Organization/org-hub" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Hub de derivación" ] ;
@@ -951,7 +951,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-referral-identifier> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-referral-identifier> ;
          fhir:Reference.reference [ fhir:value "StructureDefinition/derivacion-referral-identifier" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Identificador de la derivación" ] ;
@@ -965,14 +965,14 @@
          fhir:Extension.valueString [ fhir:value "Patient" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Patient/maria-gonzalez> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Patient/maria-gonzalez> ;
          fhir:Reference.reference [ fhir:value "Patient/maria-gonzalez" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "María González (paciente sintética)" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paciente de la derivación REF-2026-0001." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-paciente" ;
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-paciente>
+         fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-paciente" ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-paciente>
        ]
      ], [
        fhir:index 42 ;
@@ -982,7 +982,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-motivo-rechazo> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-motivo-rechazo> ;
          fhir:Reference.reference [ fhir:value "ValueSet/derivacion-motivo-rechazo" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Motivo de rechazo" ] ;
@@ -996,7 +996,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-motivo-rechazo> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-motivo-rechazo> ;
          fhir:Reference.reference [ fhir:value "CodeSystem/derivacion-motivo-rechazo" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Motivo de rechazo" ] ;
@@ -1010,7 +1010,7 @@
          fhir:Extension.valueString [ fhir:value "Practitioner" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Practitioner/medico-aps> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Practitioner/medico-aps> ;
          fhir:Reference.reference [ fhir:value "Practitioner/medico-aps" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Médico APS (sintético)" ] ;
@@ -1023,13 +1023,13 @@
          fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/PractitionerRole/rol-medico-aps> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/PractitionerRole/rol-medico-aps> ;
          fhir:Reference.reference [ fhir:value "PractitionerRole/rol-medico-aps" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Médico APS en la derivación REF-2026-0001" ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rol" ;
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rol>
+         fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-rol" ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-rol>
        ]
      ], [
        fhir:index 46 ;
@@ -1039,7 +1039,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-notificacion> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-notificacion> ;
          fhir:Reference.reference [ fhir:value "StructureDefinition/derivacion-notificacion" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Notificación" ] ;
@@ -1053,14 +1053,14 @@
          fhir:Extension.valueString [ fhir:value "Communication" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Communication/notificacion-aceptacion-ref-2026-0001> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Communication/notificacion-aceptacion-ref-2026-0001> ;
          fhir:Reference.reference [ fhir:value "Communication/notificacion-aceptacion-ref-2026-0001" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Notificación de aceptación a la paciente" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "El administrativo de APS informa a la paciente de que la especialidad aceptó la derivación (PI-1, C5/Q3)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-notificacion" ;
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-notificacion>
+         fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-notificacion" ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-notificacion>
        ]
      ], [
        fhir:index 48 ;
@@ -1070,7 +1070,7 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Observation/ntprobnp-2026-11-19> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Observation/ntprobnp-2026-11-19> ;
          fhir:Reference.reference [ fhir:value "Observation/ntprobnp-2026-11-19" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "NT-proBNP de la derivación REF-2026-0001" ] ;
@@ -1083,7 +1083,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-offer-number> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-offer-number> ;
          fhir:Reference.reference [ fhir:value "StructureDefinition/derivacion-offer-number" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Número de oferta (de esta derivación)" ] ;
@@ -1097,7 +1097,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-paciente> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-paciente> ;
          fhir:Reference.reference [ fhir:value "StructureDefinition/derivacion-paciente" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Paciente de la derivación" ] ;
@@ -1111,7 +1111,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-plan-seguimiento> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-plan-seguimiento> ;
          fhir:Reference.reference [ fhir:value "StructureDefinition/derivacion-plan-seguimiento" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Plan de seguimiento para APS" ] ;
@@ -1125,13 +1125,13 @@
          fhir:Extension.valueString [ fhir:value "CarePlan" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/CarePlan/plan-ref-2026-0001> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CarePlan/plan-ref-2026-0001> ;
          fhir:Reference.reference [ fhir:value "CarePlan/plan-ref-2026-0001" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Plan de seguimiento para APS" ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-plan-seguimiento" ;
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-plan-seguimiento>
+         fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-plan-seguimiento" ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-plan-seguimiento>
        ]
      ], [
        fhir:index 53 ;
@@ -1141,7 +1141,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-acceptance-deadline> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-sla-acceptance-deadline> ;
          fhir:Reference.reference [ fhir:value "StructureDefinition/derivacion-sla-acceptance-deadline" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Plazo de aceptación" ] ;
@@ -1155,7 +1155,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-confirmation-deadline> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-sla-confirmation-deadline> ;
          fhir:Reference.reference [ fhir:value "StructureDefinition/derivacion-sla-confirmation-deadline" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Plazo de confirmación" ] ;
@@ -1169,7 +1169,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-counterreferral-deadline> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-sla-counterreferral-deadline> ;
          fhir:Reference.reference [ fhir:value "StructureDefinition/derivacion-sla-counterreferral-deadline" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Plazo de contrareferencia" ] ;
@@ -1183,7 +1183,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-offer-deadline> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-sla-offer-deadline> ;
          fhir:Reference.reference [ fhir:value "StructureDefinition/derivacion-sla-offer-deadline" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Plazo de oferta de cita" ] ;
@@ -1197,7 +1197,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-retriage-deadline> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-sla-retriage-deadline> ;
          fhir:Reference.reference [ fhir:value "StructureDefinition/derivacion-sla-retriage-deadline" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Plazo de re-triaje" ] ;
@@ -1211,7 +1211,7 @@
          fhir:Extension.valueString [ fhir:value "AppointmentResponse" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/AppointmentResponse/respuesta-cita-1> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/AppointmentResponse/respuesta-cita-1> ;
          fhir:Reference.reference [ fhir:value "AppointmentResponse/respuesta-cita-1" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Respuesta de la paciente a la oferta (accepted)" ] ;
@@ -1224,7 +1224,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-delivery-outcome> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-delivery-outcome> ;
          fhir:Reference.reference [ fhir:value "StructureDefinition/derivacion-delivery-outcome" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Resultado de la entrega" ] ;
@@ -1238,7 +1238,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-resultado-entrega> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-resultado-entrega> ;
          fhir:Reference.reference [ fhir:value "ValueSet/derivacion-resultado-entrega" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Resultado de la entrega de una notificación" ] ;
@@ -1252,7 +1252,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-resultado-entrega> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-resultado-entrega> ;
          fhir:Reference.reference [ fhir:value "CodeSystem/derivacion-resultado-entrega" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Resultado de la entrega de una notificación" ] ;
@@ -1266,7 +1266,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rol> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-rol> ;
          fhir:Reference.reference [ fhir:value "StructureDefinition/derivacion-rol" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Rol en la derivación" ] ;
@@ -1280,7 +1280,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-rol> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-rol> ;
          fhir:Reference.reference [ fhir:value "ValueSet/derivacion-rol" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Rol en la derivación" ] ;
@@ -1294,7 +1294,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-rol> ;
          fhir:Reference.reference [ fhir:value "CodeSystem/derivacion-rol" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Rol en la derivación" ] ;
@@ -1308,13 +1308,13 @@
          fhir:Extension.valueString [ fhir:value "HealthcareService" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/HealthcareService/servicio-cardiologia> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/HealthcareService/servicio-cardiologia> ;
          fhir:Reference.reference [ fhir:value "HealthcareService/servicio-cardiologia" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Servicio de cardiología" ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-servicio" ;
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-servicio>
+         fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-servicio" ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-servicio>
        ]
      ], [
        fhir:index 66 ;
@@ -1324,7 +1324,7 @@
          fhir:Extension.valueString [ fhir:value "Organization" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Organization/org-cardiologia> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Organization/org-cardiologia> ;
          fhir:Reference.reference [ fhir:value "Organization/org-cardiologia" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Servicio de cardiología (organización)" ] ;
@@ -1337,7 +1337,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-servicio> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-servicio> ;
          fhir:Reference.reference [ fhir:value "StructureDefinition/derivacion-servicio" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Servicio de especialidad" ] ;
@@ -1351,7 +1351,7 @@
          fhir:Extension.valueString [ fhir:value "Slot" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Slot/slot-cardiologia-1> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Slot/slot-cardiologia-1> ;
          fhir:Reference.reference [ fhir:value "Slot/slot-cardiologia-1" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Slot de cardiología (reservado)" ] ;
@@ -1364,7 +1364,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-solicitud> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-solicitud> ;
          fhir:Reference.reference [ fhir:value "StructureDefinition/derivacion-solicitud" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Solicitud de derivación" ] ;
@@ -1378,14 +1378,14 @@
          fhir:Extension.valueString [ fhir:value "ServiceRequest" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/ServiceRequest/ref-2026-0001> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ServiceRequest/ref-2026-0001> ;
          fhir:Reference.reference [ fhir:value "ServiceRequest/ref-2026-0001" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Solicitud de derivación REF-2026-0001" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Derivación de María González a cardiología por sospecha de insuficiencia cardiaca (PI-0)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-solicitud" ;
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-solicitud>
+         fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-solicitud" ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-solicitud>
        ]
      ], [
        fhir:index 71 ;
@@ -1395,7 +1395,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-tarea> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-tarea> ;
          fhir:Reference.reference [ fhir:value "StructureDefinition/derivacion-tarea" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tarea de derivación (registro de estado)" ] ;
@@ -1409,14 +1409,14 @@
          fhir:Extension.valueString [ fhir:value "Task" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Task/tarea-ref-2026-0001> ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Task/tarea-ref-2026-0001> ;
          fhir:Reference.reference [ fhir:value "Task/tarea-ref-2026-0001" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tarea de derivación REF-2026-0001 (requested)" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "El registro de estado del flujo de trabajo, en su creación (PI-0)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-tarea" ;
-         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-tarea>
+         fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-tarea" ;
+         fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-tarea>
        ]
      ] ;
      fhir:ImplementationGuide.definition.page [
@@ -1615,7 +1615,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://josemandrade.github.io/prueba-his-muse-nvidia/ImplementationGuide/hl7.fhir.uv.test.derivacion-aps-especialidad.ttl> a owl:Ontology ;
+<https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ImplementationGuide/hl7.fhir.uv.test.derivacion-aps-especialidad.ttl> a owl:Ontology ;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

@@ -1,6 +1,6 @@
 {
   "codeSystems" : [{
-    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-base-cruce",
+    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-base-cruce",
     "version" : "0.1.0",
     "status" : "draft",
     "name" : "DerivacionBaseCruceCS",
@@ -8,7 +8,7 @@
     "description" : "Cómo se estableció el cruce de identidad en el MPI (lista local)."
   },
   {
-    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-canal",
+    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-canal",
     "version" : "0.1.0",
     "status" : "draft",
     "name" : "DerivacionCanalCS",
@@ -16,7 +16,7 @@
     "description" : "Canales por los que se envía una notificación (lista local; el caso no fija un canal por notificación)."
   },
   {
-    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad",
+    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-especialidad",
     "version" : "0.1.0",
     "status" : "draft",
     "name" : "DerivacionEspecialidadCS",
@@ -24,7 +24,7 @@
     "description" : "Catálogo local de especialidades y servicios, versionado por la red (hub + servicios). El ejemplo trabajado es cardiología; la red amplía el catálogo sin tocar esta guía."
   },
   {
-    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia",
+    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia",
     "version" : "0.1.0",
     "status" : "draft",
     "name" : "DerivacionEstadoReferenciaCS",
@@ -32,7 +32,7 @@
     "description" : "Los nueve estados del caso de la derivación APS → especialidad (spec §3.1). El estado vive en Task.businessStatus, nunca como valor inventado de Task.status."
   },
   {
-    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-motivo-rechazo",
+    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-motivo-rechazo",
     "version" : "0.1.0",
     "status" : "draft",
     "name" : "DerivacionMotivoRechazoCS",
@@ -40,7 +40,7 @@
     "description" : "Motivos de rechazo de la derivación (lista local de la especialidad; el texto libre acompaña al código)."
   },
   {
-    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-resultado-entrega",
+    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-resultado-entrega",
     "version" : "0.1.0",
     "status" : "draft",
     "name" : "DerivacionResultadoEntregaCS",
@@ -48,7 +48,7 @@
     "description" : "Resultados posibles de la entrega de una notificación (lista local)."
   },
   {
-    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol",
+    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-rol",
     "version" : "0.1.0",
     "status" : "draft",
     "name" : "DerivacionRolCS",
@@ -56,7 +56,7 @@
     "description" : "Los seis roles del caso de uso (spec §2). Dentro de una derivación, cada rol es una persona (el clínico de triaje no es el agendador — C1)."
   },
   {
-    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-task-code",
+    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-task-code",
     "version" : "0.1.0",
     "status" : "draft",
     "name" : "DerivacionTaskCodeCS",

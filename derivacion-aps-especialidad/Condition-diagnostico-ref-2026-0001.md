@@ -34,7 +34,7 @@ FEVI 35% por ecocardiograma. Sin isquemia aguda en el ECG.
   "resourceType" : "Condition",
   "id" : "diagnostico-ref-2026-0001",
   "meta" : {
-    "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-diagnostico"]
+    "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-diagnostico"]
   },
   "clinicalStatus" : {
     "coding" : [{

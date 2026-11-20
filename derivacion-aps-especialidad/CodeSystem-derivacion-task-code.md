@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-task-code | *Version*:0.1.0 |
+| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-task-code | *Version*:0.1.0 |
 | Draft as of 2026-11-20 | *Computable Name*:DerivacionTaskCodeCS |
 
  
@@ -26,12 +26,12 @@ El Task de esta guía es siempre un registro de flujo de trabajo de derivación.
 {
   "resourceType" : "CodeSystem",
   "id" : "derivacion-task-code",
-  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-task-code",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-task-code",
   "version" : "0.1.0",
   "name" : "DerivacionTaskCodeCS",
   "title" : "Código de la tarea de derivación",
   "status" : "draft",
-  "date" : "2026-11-20T12:33:32+00:00",
+  "date" : "2026-11-20T12:39:48+00:00",
   "description" : "El Task de esta guía es siempre un registro de flujo de trabajo de derivación.",
   "content" : "complete",
   "count" : 1,

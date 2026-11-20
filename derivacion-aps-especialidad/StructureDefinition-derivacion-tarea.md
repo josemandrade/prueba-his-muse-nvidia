@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-tarea | *Version*:0.1.0 |
+| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-tarea | *Version*:0.1.0 |
 | Draft as of 2026-11-20 | *Computable Name*:DerivacionTarea |
 
  
@@ -37,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-tarea.csv
 {
   "resourceType" : "StructureDefinition",
   "id" : "derivacion-tarea",
-  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-tarea",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-tarea",
   "version" : "0.1.0",
   "name" : "DerivacionTarea",
   "title" : "Tarea de derivación (registro de estado)",
   "status" : "draft",
-  "date" : "2026-11-20T12:33:32+00:00",
+  "date" : "2026-11-20T12:39:48+00:00",
   "description" : "El registro de estado del flujo de trabajo de una derivación: lleva el estado del caso, los relojes SLA y los conteos de los ciclos. Es el centro del grafo de recursos y lo primero que lee cada paso posterior. Perfil propio de esta guía, sobre el recurso base Task de FHIR R4.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
@@ -95,7 +95,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-tarea.csv
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-acceptance-deadline"]
+        "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-sla-acceptance-deadline"]
       }]
     },
     {
@@ -106,7 +106,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-tarea.csv
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-offer-deadline"]
+        "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-sla-offer-deadline"]
       }]
     },
     {
@@ -117,7 +117,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-tarea.csv
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-counterreferral-deadline"]
+        "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-sla-counterreferral-deadline"]
       }]
     },
     {
@@ -128,7 +128,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-tarea.csv
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-retriage-deadline"]
+        "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-sla-retriage-deadline"]
       }]
     },
     {
@@ -139,7 +139,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-tarea.csv
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-confirmation-deadline"]
+        "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-sla-confirmation-deadline"]
       }]
     },
     {
@@ -150,7 +150,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-tarea.csv
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-offer-decline-count"]
+        "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-offer-decline-count"]
       }]
     },
     {
@@ -161,7 +161,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-tarea.csv
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-offer-chase-count"]
+        "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-offer-chase-count"]
       }]
     },
     {
@@ -172,7 +172,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-tarea.csv
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rescheduling-count"]
+        "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-rescheduling-count"]
       }]
     },
     {
@@ -192,7 +192,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-tarea.csv
       "short" : "Motivo de rechazo o de cancelación (incl. 'patient deceased')",
       "binding" : {
         "strength" : "example",
-        "valueSet" : "https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-motivo-rechazo"
+        "valueSet" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-motivo-rechazo"
       }
     },
     {
@@ -202,7 +202,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-tarea.csv
       "min" : 1,
       "binding" : {
         "strength" : "example",
-        "valueSet" : "https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-estado-referencia"
+        "valueSet" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-estado-referencia"
       }
     },
     {
@@ -216,7 +216,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-tarea.csv
       "short" : "referral-workflow: este Task es siempre un registro de flujo de trabajo de derivación",
       "binding" : {
         "strength" : "example",
-        "valueSet" : "https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-task-code"
+        "valueSet" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-task-code"
       }
     },
     {
@@ -231,7 +231,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-tarea.csv
       "min" : 1,
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-solicitud"]
+        "targetProfile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-solicitud"]
       }]
     },
     {
@@ -240,7 +240,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-tarea.csv
       "min" : 1,
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-paciente"]
+        "targetProfile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-paciente"]
       }]
     },
     {
@@ -248,7 +248,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-tarea.csv
       "path" : "Task.requester",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rol"]
+        "targetProfile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-rol"]
       }]
     },
     {
@@ -257,7 +257,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-tarea.csv
       "short" : "El servicio que acepta (es el responsable del trabajo); el profesional que acepta se registra como agente de Provenance en la entrada de aceptación del historial",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-servicio"]
+        "targetProfile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-servicio"]
       }]
     },
     {

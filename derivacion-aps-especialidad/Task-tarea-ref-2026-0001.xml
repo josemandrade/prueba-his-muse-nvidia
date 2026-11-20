@@ -3,12 +3,12 @@
 <Task xmlns="http://hl7.org/fhir">
   <id value="tarea-ref-2026-0001"/>
   <meta>
-    <profile value="https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-tarea"/>
+    <profile value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-tarea"/>
   </meta>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Task tarea-ref-2026-0001</b></p><a name="tarea-ref-2026-0001"> </a><a name="hctarea-ref-2026-0001"> </a><div style="display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-derivacion-tarea.html">Tarea de derivación (registro de estado)</a></p></div><p><b>Plazo de aceptación</b>: 2026-11-26 17:00:00-0300</p><p><b>identifier</b>: <code>http://aps.losaromos.example.org/referral</code>/REF-2026-0001</p><p><b>status</b>: Requested</p><p><b>businessStatus</b>: <span title="Codes:{https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia requested}">Requested</span></p><p><b>intent</b>: order</p><p><b>code</b>: <span title="Codes:{https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-task-code referral-workflow}">Referral workflow</span></p><p><b>description</b>: acceptance decision</p><p><b>focus</b>: <a href="ServiceRequest-ref-2026-0001.html">ServiceRequest Cardiology</a></p><p><b>for</b>: <a href="Patient-maria-gonzalez.html">María González (official) Female, DoB: 1968-04-15 ( http://www.registrocivil.cl/run#11111111-1)</a></p><p><b>authoredOn</b>: 2026-11-19 09:30:00-0300</p><p><b>lastModified</b>: 2026-11-19 09:30:00-0300</p><p><b>requester</b>: <a href="PractitionerRole-rol-medico-aps.html">Ana Pérez (official) (http://www.registrocivil.cl/run#22222222-2): APS doctor at CESFAM Los Aromos (http://aps.losaromos.example.org/organization#CESFAM-LOS-AROMOS)</a></p></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Task tarea-ref-2026-0001</b></p><a name="tarea-ref-2026-0001"> </a><a name="hctarea-ref-2026-0001"> </a><div style="display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-derivacion-tarea.html">Tarea de derivación (registro de estado)</a></p></div><p><b>Plazo de aceptación</b>: 2026-11-26 17:00:00-0300</p><p><b>identifier</b>: <code>http://aps.losaromos.example.org/referral</code>/REF-2026-0001</p><p><b>status</b>: Requested</p><p><b>businessStatus</b>: <span title="Codes:{https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia requested}">Requested</span></p><p><b>intent</b>: order</p><p><b>code</b>: <span title="Codes:{https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-task-code referral-workflow}">Referral workflow</span></p><p><b>description</b>: acceptance decision</p><p><b>focus</b>: <a href="ServiceRequest-ref-2026-0001.html">ServiceRequest Cardiology</a></p><p><b>for</b>: <a href="Patient-maria-gonzalez.html">María González (official) Female, DoB: 1968-04-15 ( http://www.registrocivil.cl/run#11111111-1)</a></p><p><b>authoredOn</b>: 2026-11-19 09:30:00-0300</p><p><b>lastModified</b>: 2026-11-19 09:30:00-0300</p><p><b>requester</b>: <a href="PractitionerRole-rol-medico-aps.html">Ana Pérez (official) (http://www.registrocivil.cl/run#22222222-2): APS doctor at CESFAM Los Aromos (http://aps.losaromos.example.org/organization#CESFAM-LOS-AROMOS)</a></p></div>
   </text>
-  <extension url="https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-sla-acceptance-deadline">
+  <extension url="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-sla-acceptance-deadline">
     <valueDateTime value="2026-11-26T17:00:00-03:00"/>
   </extension>
   <identifier>
@@ -18,7 +18,7 @@
   <status value="requested"/>
   <businessStatus>
     <coding>
-      <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia"/>
+      <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia"/>
       <code value="requested"/>
       <display value="Requested"/>
     </coding>
@@ -26,7 +26,7 @@
   <intent value="order"/>
   <code>
     <coding>
-      <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-task-code"/>
+      <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-task-code"/>
       <code value="referral-workflow"/>
       <display value="Referral workflow"/>
     </coding>

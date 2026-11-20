@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="a296221d-49c8-4412-b978-ae44e76051a3"/>
+  <id value="5bc7827b-da3c-4186-96cd-0d7819a3e7cd"/>
   <meta>
-    <lastUpdated value="2026-11-20T12:33:32.075+00:00"/>
+    <lastUpdated value="2026-11-20T12:39:48.906+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
-    <fullUrl value="https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-base-cruce"/>
+    <fullUrl value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-base-cruce"/>
     <resource>
       <ValueSet>
         <text>
@@ -17,7 +17,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-derivacion-base-cruce.html">codesystem Base del cruce de identidad v0.1.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-base-cruce|0.1.0" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
+                <button data-clipboard-text="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-base-cruce|0.1.0" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
               </span>
             </p>
             <p>This value set contains 2 concepts</p>
@@ -44,8 +44,8 @@
               </tr>
               <tr>
                 <td>
-                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-base-cruce-identifier"> </a>
-                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-base-cruce</code>
+                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-base-cruce-identifier"> </a>
+                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-base-cruce</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-derivacion-base-cruce.html#derivacion-base-cruce-identifier">identifier</a>
@@ -54,19 +54,19 @@
                 <td>El cruce se estableció por un identificador compartido.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-base-cruce&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;identifier&quot;, &quot;display&quot;: &quot;Identifier&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-base-cruce&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;identifier&quot;, &quot;display&quot;: &quot;Identifier&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-base-cruce&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;identifier&quot;/&gt;&lt;display value=&quot;Identifier&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-base-cruce&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;identifier&quot;/&gt;&lt;display value=&quot;Identifier&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-base-cruce-demographics"> </a>
-                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-base-cruce</code>
+                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-base-cruce-demographics"> </a>
+                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-base-cruce</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-derivacion-base-cruce.html#derivacion-base-cruce-demographics">demographics</a>
@@ -75,27 +75,27 @@
                 <td>El cruce se estableció por datos demográficos.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-base-cruce&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;demographics&quot;, &quot;display&quot;: &quot;Demographics&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-base-cruce&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;demographics&quot;, &quot;display&quot;: &quot;Demographics&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-base-cruce&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;demographics&quot;/&gt;&lt;display value=&quot;Demographics&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-base-cruce&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;demographics&quot;/&gt;&lt;display value=&quot;Demographics&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-base-cruce"/>
+        <url value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-base-cruce"/>
         <version value="0.1.0"/>
         <name value="DerivacionBaseCruce"/>
         <title value="Base del cruce de identidad"/>
         <status value="draft"/>
-        <date value="2026-11-20T12:33:32+00:00"/>
+        <date value="2026-11-20T12:39:48+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:eeb6319a-f213-4717-a335-840e4c7f2f1a"/>
-          <timestamp value="2026-11-20T12:34:22+00:00"/>
+          <identifier value="urn:uuid:874ae37d-dfd7-427e-9eb8-4c8bc01b2342"/>
+          <timestamp value="2026-11-20T12:40:32+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -116,15 +116,15 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-base-cruce|0.1.0"/>
+            <valueUri value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-base-cruce|0.1.0"/>
           </parameter>
           <contains>
-            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-base-cruce"/>
+            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-base-cruce"/>
             <code value="identifier"/>
             <display value="Identifier"/>
           </contains>
           <contains>
-            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-base-cruce"/>
+            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-base-cruce"/>
             <code value="demographics"/>
             <display value="Demographics"/>
           </contains>
@@ -133,7 +133,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-canal"/>
+    <fullUrl value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-canal"/>
     <resource>
       <ValueSet>
         <text>
@@ -143,7 +143,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-derivacion-canal.html">codesystem Canal de notificación v0.1.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-canal|0.1.0" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
+                <button data-clipboard-text="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-canal|0.1.0" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
               </span>
             </p>
             <p>This value set contains 3 concepts</p>
@@ -170,8 +170,8 @@
               </tr>
               <tr>
                 <td>
-                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-canal-phone"> </a>
-                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-canal</code>
+                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-canal-phone"> </a>
+                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-canal</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-derivacion-canal.html#derivacion-canal-phone">phone</a>
@@ -180,19 +180,19 @@
                 <td>Llamada telefónica.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-canal&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;phone&quot;, &quot;display&quot;: &quot;Phone&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-canal&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;phone&quot;, &quot;display&quot;: &quot;Phone&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-canal&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;phone&quot;/&gt;&lt;display value=&quot;Phone&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-canal&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;phone&quot;/&gt;&lt;display value=&quot;Phone&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-canal-in-person"> </a>
-                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-canal</code>
+                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-canal-in-person"> </a>
+                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-canal</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-derivacion-canal.html#derivacion-canal-in-person">in-person</a>
@@ -201,19 +201,19 @@
                 <td>Aviso presencial.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-canal&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;in-person&quot;, &quot;display&quot;: &quot;In person&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-canal&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;in-person&quot;, &quot;display&quot;: &quot;In person&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-canal&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;in-person&quot;/&gt;&lt;display value=&quot;In person&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-canal&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;in-person&quot;/&gt;&lt;display value=&quot;In person&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-canal-system-message"> </a>
-                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-canal</code>
+                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-canal-system-message"> </a>
+                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-canal</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-derivacion-canal.html#derivacion-canal-system-message">system-message</a>
@@ -222,27 +222,27 @@
                 <td>Mensaje del sistema (portal o mensajería del EHR).</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-canal&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;system-message&quot;, &quot;display&quot;: &quot;System message&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-canal&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;system-message&quot;, &quot;display&quot;: &quot;System message&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-canal&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;system-message&quot;/&gt;&lt;display value=&quot;System message&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-canal&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;system-message&quot;/&gt;&lt;display value=&quot;System message&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-canal"/>
+        <url value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-canal"/>
         <version value="0.1.0"/>
         <name value="DerivacionCanal"/>
         <title value="Canal de notificación"/>
         <status value="draft"/>
-        <date value="2026-11-20T12:33:32+00:00"/>
+        <date value="2026-11-20T12:39:48+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:f20bdb11-c88b-4ce7-8d62-796fb2c198c8"/>
-          <timestamp value="2026-11-20T12:34:22+00:00"/>
+          <identifier value="urn:uuid:4c1e6226-3140-4e48-92e2-2f4c51e86f2b"/>
+          <timestamp value="2026-11-20T12:40:32+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -263,20 +263,20 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-canal|0.1.0"/>
+            <valueUri value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-canal|0.1.0"/>
           </parameter>
           <contains>
-            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-canal"/>
+            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-canal"/>
             <code value="phone"/>
             <display value="Phone"/>
           </contains>
           <contains>
-            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-canal"/>
+            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-canal"/>
             <code value="in-person"/>
             <display value="In person"/>
           </contains>
           <contains>
-            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-canal"/>
+            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-canal"/>
             <code value="system-message"/>
             <display value="System message"/>
           </contains>
@@ -285,7 +285,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-especialidad"/>
+    <fullUrl value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-especialidad"/>
     <resource>
       <ValueSet>
         <text>
@@ -295,7 +295,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-derivacion-especialidad.html">codesystem Especialidad / servicio (catálogo local) v0.1.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad|0.1.0" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
+                <button data-clipboard-text="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-especialidad|0.1.0" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
               </span>
             </p>
             <p>This value set contains 1 concepts</p>
@@ -322,8 +322,8 @@
               </tr>
               <tr>
                 <td>
-                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad-cardiologia"> </a>
-                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad</code>
+                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-especialidad-cardiologia"> </a>
+                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-especialidad</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-derivacion-especialidad.html#derivacion-especialidad-cardiologia">cardiologia</a>
@@ -332,27 +332,27 @@
                 <td>Servicio de cardiología (ejemplo trabajado).</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;cardiologia&quot;, &quot;display&quot;: &quot;Cardiology&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-especialidad&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;cardiologia&quot;, &quot;display&quot;: &quot;Cardiology&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;cardiologia&quot;/&gt;&lt;display value=&quot;Cardiology&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-especialidad&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;cardiologia&quot;/&gt;&lt;display value=&quot;Cardiology&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-especialidad"/>
+        <url value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-especialidad"/>
         <version value="0.1.0"/>
         <name value="DerivacionEspecialidad"/>
         <title value="Especialidad / servicio (catálogo local)"/>
         <status value="draft"/>
-        <date value="2026-11-20T12:33:32+00:00"/>
+        <date value="2026-11-20T12:39:48+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:92b005b7-b94e-4be3-a798-64977346daa6"/>
-          <timestamp value="2026-11-20T12:34:22+00:00"/>
+          <identifier value="urn:uuid:01015c28-ed8a-49b8-9e4b-ca99c2349359"/>
+          <timestamp value="2026-11-20T12:40:32+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -373,10 +373,10 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad|0.1.0"/>
+            <valueUri value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-especialidad|0.1.0"/>
           </parameter>
           <contains>
-            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad"/>
+            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-especialidad"/>
             <code value="cardiologia"/>
             <display value="Cardiology"/>
           </contains>
@@ -385,7 +385,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-estado-referencia"/>
+    <fullUrl value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-estado-referencia"/>
     <resource>
       <ValueSet>
         <text>
@@ -395,7 +395,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-derivacion-estado-referencia.html">codesystem Estado de la derivación v0.1.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia|0.1.0" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
+                <button data-clipboard-text="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia|0.1.0" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
               </span>
             </p>
             <p>This value set contains 9 concepts</p>
@@ -422,8 +422,8 @@
               </tr>
               <tr>
                 <td>
-                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia-requested"> </a>
-                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia</code>
+                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia-requested"> </a>
+                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-derivacion-estado-referencia.html#derivacion-estado-referencia-requested">requested</a>
@@ -432,19 +432,19 @@
                 <td>Derivación creada por APS, aún no recibida por el hub.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;requested&quot;, &quot;display&quot;: &quot;Requested&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;requested&quot;, &quot;display&quot;: &quot;Requested&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;requested&quot;/&gt;&lt;display value=&quot;Requested&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;requested&quot;/&gt;&lt;display value=&quot;Requested&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia-received"> </a>
-                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia</code>
+                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia-received"> </a>
+                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-derivacion-estado-referencia.html#derivacion-estado-referencia-received">received</a>
@@ -453,19 +453,19 @@
                 <td>Derivación recibida por el hub y enrutada a la especialidad.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;received&quot;, &quot;display&quot;: &quot;Received&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;received&quot;, &quot;display&quot;: &quot;Received&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;received&quot;/&gt;&lt;display value=&quot;Received&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;received&quot;/&gt;&lt;display value=&quot;Received&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia-accepted"> </a>
-                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia</code>
+                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia-accepted"> </a>
+                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-derivacion-estado-referencia.html#derivacion-estado-referencia-accepted">accepted</a>
@@ -474,19 +474,19 @@
                 <td>La especialidad aceptó la derivación (nombrando servicio y profesional).</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;accepted&quot;, &quot;display&quot;: &quot;Accepted&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;accepted&quot;, &quot;display&quot;: &quot;Accepted&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;accepted&quot;/&gt;&lt;display value=&quot;Accepted&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;accepted&quot;/&gt;&lt;display value=&quot;Accepted&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia-rejected"> </a>
-                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia</code>
+                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia-rejected"> </a>
+                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-derivacion-estado-referencia.html#derivacion-estado-referencia-rejected">rejected</a>
@@ -495,19 +495,19 @@
                 <td>La especialidad rechazó la derivación (con motivo); APS re-triajea.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;rejected&quot;, &quot;display&quot;: &quot;Rejected&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;rejected&quot;, &quot;display&quot;: &quot;Rejected&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;rejected&quot;/&gt;&lt;display value=&quot;Rejected&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;rejected&quot;/&gt;&lt;display value=&quot;Rejected&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia-scheduled"> </a>
-                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia</code>
+                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia-scheduled"> </a>
+                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-derivacion-estado-referencia.html#derivacion-estado-referencia-scheduled">scheduled</a>
@@ -516,19 +516,19 @@
                 <td>Cita reservada; la visita aún no ha empezado.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;scheduled&quot;, &quot;display&quot;: &quot;Scheduled&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;scheduled&quot;, &quot;display&quot;: &quot;Scheduled&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;scheduled&quot;/&gt;&lt;display value=&quot;Scheduled&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;scheduled&quot;/&gt;&lt;display value=&quot;Scheduled&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia-completed"> </a>
-                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia</code>
+                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia-completed"> </a>
+                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-derivacion-estado-referencia.html#derivacion-estado-referencia-completed">completed</a>
@@ -537,19 +537,19 @@
                 <td>Visita atendida; la contrareferencia está pendiente.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;completed&quot;, &quot;display&quot;: &quot;Completed&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;completed&quot;, &quot;display&quot;: &quot;Completed&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;completed&quot;/&gt;&lt;display value=&quot;Completed&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;completed&quot;/&gt;&lt;display value=&quot;Completed&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia-counter-referred"> </a>
-                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia</code>
+                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia-counter-referred"> </a>
+                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-derivacion-estado-referencia.html#derivacion-estado-referencia-counter-referred">counter-referred</a>
@@ -558,19 +558,19 @@
                 <td>Contrareferencia enviada y recibida por APS; el ciclo está cerrado.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;counter-referred&quot;, &quot;display&quot;: &quot;Counter-referred&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;counter-referred&quot;, &quot;display&quot;: &quot;Counter-referred&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;counter-referred&quot;/&gt;&lt;display value=&quot;Counter-referred&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;counter-referred&quot;/&gt;&lt;display value=&quot;Counter-referred&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia-no-show"> </a>
-                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia</code>
+                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia-no-show"> </a>
+                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-derivacion-estado-referencia.html#derivacion-estado-referencia-no-show">no-show</a>
@@ -579,19 +579,19 @@
                 <td>El paciente no asistió dos veces; la derivación se cerró sin completar.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;no-show&quot;, &quot;display&quot;: &quot;No-show&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;no-show&quot;, &quot;display&quot;: &quot;No-show&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;no-show&quot;/&gt;&lt;display value=&quot;No-show&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;no-show&quot;/&gt;&lt;display value=&quot;No-show&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia-cancelled"> </a>
-                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia</code>
+                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia-cancelled"> </a>
+                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-derivacion-estado-referencia.html#derivacion-estado-referencia-cancelled">cancelled</a>
@@ -600,27 +600,27 @@
                 <td>Derivación cancelada antes de completarse (por APS, el paciente o la especialidad; también por fallecimiento del paciente).</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;cancelled&quot;, &quot;display&quot;: &quot;Cancelled&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;cancelled&quot;, &quot;display&quot;: &quot;Cancelled&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;cancelled&quot;/&gt;&lt;display value=&quot;Cancelled&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;cancelled&quot;/&gt;&lt;display value=&quot;Cancelled&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-estado-referencia"/>
+        <url value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-estado-referencia"/>
         <version value="0.1.0"/>
         <name value="DerivacionEstadoReferencia"/>
         <title value="Estado de la derivación"/>
         <status value="draft"/>
-        <date value="2026-11-20T12:33:32+00:00"/>
+        <date value="2026-11-20T12:39:48+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:6a4e66c4-47fa-4717-ab27-e02da9b5300a"/>
-          <timestamp value="2026-11-20T12:34:22+00:00"/>
+          <identifier value="urn:uuid:ed71f435-6021-483b-9165-3988a68b4110"/>
+          <timestamp value="2026-11-20T12:40:32+00:00"/>
           <total value="9"/>
           <offset value="0"/>
           <parameter>
@@ -641,50 +641,50 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia|0.1.0"/>
+            <valueUri value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia|0.1.0"/>
           </parameter>
           <contains>
-            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia"/>
+            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia"/>
             <code value="requested"/>
             <display value="Requested"/>
           </contains>
           <contains>
-            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia"/>
+            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia"/>
             <code value="received"/>
             <display value="Received"/>
           </contains>
           <contains>
-            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia"/>
+            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia"/>
             <code value="accepted"/>
             <display value="Accepted"/>
           </contains>
           <contains>
-            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia"/>
+            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia"/>
             <code value="rejected"/>
             <display value="Rejected"/>
           </contains>
           <contains>
-            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia"/>
+            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia"/>
             <code value="scheduled"/>
             <display value="Scheduled"/>
           </contains>
           <contains>
-            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia"/>
+            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia"/>
             <code value="completed"/>
             <display value="Completed"/>
           </contains>
           <contains>
-            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia"/>
+            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia"/>
             <code value="counter-referred"/>
             <display value="Counter-referred"/>
           </contains>
           <contains>
-            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia"/>
+            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia"/>
             <code value="no-show"/>
             <display value="No-show"/>
           </contains>
           <contains>
-            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia"/>
+            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia"/>
             <code value="cancelled"/>
             <display value="Cancelled"/>
           </contains>
@@ -693,7 +693,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-motivo-rechazo"/>
+    <fullUrl value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-motivo-rechazo"/>
     <resource>
       <ValueSet>
         <text>
@@ -703,7 +703,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-derivacion-motivo-rechazo.html">codesystem Motivo de rechazo v0.1.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-motivo-rechazo|0.1.0" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
+                <button data-clipboard-text="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-motivo-rechazo|0.1.0" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
               </span>
             </p>
             <p>This value set contains 3 concepts</p>
@@ -730,8 +730,8 @@
               </tr>
               <tr>
                 <td>
-                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-motivo-rechazo-missing-exam"> </a>
-                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-motivo-rechazo</code>
+                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-motivo-rechazo-missing-exam"> </a>
+                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-motivo-rechazo</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-derivacion-motivo-rechazo.html#derivacion-motivo-rechazo-missing-exam">missing-exam</a>
@@ -740,19 +740,19 @@
                 <td>Falta un examen necesario para el triaje (ejemplo trabajado: falta el ecocardiograma).</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-motivo-rechazo&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;missing-exam&quot;, &quot;display&quot;: &quot;Missing exam&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-motivo-rechazo&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;missing-exam&quot;, &quot;display&quot;: &quot;Missing exam&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-motivo-rechazo&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;missing-exam&quot;/&gt;&lt;display value=&quot;Missing exam&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-motivo-rechazo&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;missing-exam&quot;/&gt;&lt;display value=&quot;Missing exam&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-motivo-rechazo-wrong-specialty"> </a>
-                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-motivo-rechazo</code>
+                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-motivo-rechazo-wrong-specialty"> </a>
+                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-motivo-rechazo</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-derivacion-motivo-rechazo.html#derivacion-motivo-rechazo-wrong-specialty">wrong-specialty</a>
@@ -761,19 +761,19 @@
                 <td>La derivación no corresponde a esta especialidad.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-motivo-rechazo&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;wrong-specialty&quot;, &quot;display&quot;: &quot;Wrong specialty&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-motivo-rechazo&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;wrong-specialty&quot;, &quot;display&quot;: &quot;Wrong specialty&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-motivo-rechazo&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;wrong-specialty&quot;/&gt;&lt;display value=&quot;Wrong specialty&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-motivo-rechazo&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;wrong-specialty&quot;/&gt;&lt;display value=&quot;Wrong specialty&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-motivo-rechazo-capacity"> </a>
-                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-motivo-rechazo</code>
+                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-motivo-rechazo-capacity"> </a>
+                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-motivo-rechazo</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-derivacion-motivo-rechazo.html#derivacion-motivo-rechazo-capacity">capacity</a>
@@ -782,27 +782,27 @@
                 <td>La especialidad no tiene capacidad para atender la derivación en plazo.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-motivo-rechazo&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;capacity&quot;, &quot;display&quot;: &quot;Capacity&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-motivo-rechazo&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;capacity&quot;, &quot;display&quot;: &quot;Capacity&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-motivo-rechazo&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;capacity&quot;/&gt;&lt;display value=&quot;Capacity&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-motivo-rechazo&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;capacity&quot;/&gt;&lt;display value=&quot;Capacity&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-motivo-rechazo"/>
+        <url value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-motivo-rechazo"/>
         <version value="0.1.0"/>
         <name value="DerivacionMotivoRechazo"/>
         <title value="Motivo de rechazo"/>
         <status value="draft"/>
-        <date value="2026-11-20T12:33:32+00:00"/>
+        <date value="2026-11-20T12:39:48+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:a6f6b46f-05e6-4100-bdda-a13630da9e71"/>
-          <timestamp value="2026-11-20T12:34:22+00:00"/>
+          <identifier value="urn:uuid:9262493d-1d41-46d6-8f8f-dbc122be7755"/>
+          <timestamp value="2026-11-20T12:40:32+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -823,20 +823,20 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-motivo-rechazo|0.1.0"/>
+            <valueUri value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-motivo-rechazo|0.1.0"/>
           </parameter>
           <contains>
-            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-motivo-rechazo"/>
+            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-motivo-rechazo"/>
             <code value="missing-exam"/>
             <display value="Missing exam"/>
           </contains>
           <contains>
-            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-motivo-rechazo"/>
+            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-motivo-rechazo"/>
             <code value="wrong-specialty"/>
             <display value="Wrong specialty"/>
           </contains>
           <contains>
-            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-motivo-rechazo"/>
+            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-motivo-rechazo"/>
             <code value="capacity"/>
             <display value="Capacity"/>
           </contains>
@@ -845,7 +845,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-resultado-entrega"/>
+    <fullUrl value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-resultado-entrega"/>
     <resource>
       <ValueSet>
         <text>
@@ -855,7 +855,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-derivacion-resultado-entrega.html">codesystem Resultado de la entrega de una notificación v0.1.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-resultado-entrega|0.1.0" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
+                <button data-clipboard-text="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-resultado-entrega|0.1.0" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
               </span>
             </p>
             <p>This value set contains 2 concepts</p>
@@ -882,8 +882,8 @@
               </tr>
               <tr>
                 <td>
-                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-resultado-entrega-delivered"> </a>
-                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-resultado-entrega</code>
+                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-resultado-entrega-delivered"> </a>
+                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-resultado-entrega</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-derivacion-resultado-entrega.html#derivacion-resultado-entrega-delivered">delivered</a>
@@ -892,19 +892,19 @@
                 <td>La notificación llegó al destinatario.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-resultado-entrega&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;delivered&quot;, &quot;display&quot;: &quot;Delivered&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-resultado-entrega&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;delivered&quot;, &quot;display&quot;: &quot;Delivered&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-resultado-entrega&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;delivered&quot;/&gt;&lt;display value=&quot;Delivered&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-resultado-entrega&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;delivered&quot;/&gt;&lt;display value=&quot;Delivered&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-resultado-entrega-failed"> </a>
-                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-resultado-entrega</code>
+                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-resultado-entrega-failed"> </a>
+                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-resultado-entrega</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-derivacion-resultado-entrega.html#derivacion-resultado-entrega-failed">failed</a>
@@ -913,27 +913,27 @@
                 <td>La entrega falló; el remitente reintenta (el fallo nunca cambia el estado de la derivación).</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-resultado-entrega&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;failed&quot;, &quot;display&quot;: &quot;Failed&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-resultado-entrega&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;failed&quot;, &quot;display&quot;: &quot;Failed&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-resultado-entrega&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;failed&quot;/&gt;&lt;display value=&quot;Failed&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-resultado-entrega&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;failed&quot;/&gt;&lt;display value=&quot;Failed&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-resultado-entrega"/>
+        <url value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-resultado-entrega"/>
         <version value="0.1.0"/>
         <name value="DerivacionResultadoEntrega"/>
         <title value="Resultado de la entrega de una notificación"/>
         <status value="draft"/>
-        <date value="2026-11-20T12:33:32+00:00"/>
+        <date value="2026-11-20T12:39:48+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:9cb8f823-8629-43f9-918e-5f802e85f4e6"/>
-          <timestamp value="2026-11-20T12:34:22+00:00"/>
+          <identifier value="urn:uuid:90a23fe9-6831-44cb-9fd5-c65197370cb4"/>
+          <timestamp value="2026-11-20T12:40:32+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -954,15 +954,15 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-resultado-entrega|0.1.0"/>
+            <valueUri value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-resultado-entrega|0.1.0"/>
           </parameter>
           <contains>
-            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-resultado-entrega"/>
+            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-resultado-entrega"/>
             <code value="delivered"/>
             <display value="Delivered"/>
           </contains>
           <contains>
-            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-resultado-entrega"/>
+            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-resultado-entrega"/>
             <code value="failed"/>
             <display value="Failed"/>
           </contains>
@@ -971,7 +971,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-rol"/>
+    <fullUrl value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-rol"/>
     <resource>
       <ValueSet>
         <text>
@@ -981,7 +981,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-derivacion-rol.html">codesystem Rol en la derivación v0.1.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol|0.1.0" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
+                <button data-clipboard-text="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-rol|0.1.0" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
               </span>
             </p>
             <p>This value set contains 6 concepts</p>
@@ -1008,8 +1008,8 @@
               </tr>
               <tr>
                 <td>
-                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol-aps-doctor"> </a>
-                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol</code>
+                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-rol-aps-doctor"> </a>
+                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-rol</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-derivacion-rol.html#derivacion-rol-aps-doctor">aps-doctor</a>
@@ -1018,19 +1018,19 @@
                 <td>Médico de APS que crea la derivación.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;aps-doctor&quot;, &quot;display&quot;: &quot;APS doctor&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-rol&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;aps-doctor&quot;, &quot;display&quot;: &quot;APS doctor&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;aps-doctor&quot;/&gt;&lt;display value=&quot;APS doctor&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-rol&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;aps-doctor&quot;/&gt;&lt;display value=&quot;APS doctor&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol-aps-admin"> </a>
-                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol</code>
+                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-rol-aps-admin"> </a>
+                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-rol</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-derivacion-rol.html#derivacion-rol-aps-admin">aps-admin</a>
@@ -1039,19 +1039,19 @@
                 <td>Administrativo de APS que registra y sigue la derivación e informa al paciente.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;aps-admin&quot;, &quot;display&quot;: &quot;APS admin&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-rol&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;aps-admin&quot;, &quot;display&quot;: &quot;APS admin&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;aps-admin&quot;/&gt;&lt;display value=&quot;APS admin&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-rol&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;aps-admin&quot;/&gt;&lt;display value=&quot;APS admin&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol-triage-clinician"> </a>
-                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol</code>
+                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-rol-triage-clinician"> </a>
+                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-rol</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-derivacion-rol.html#derivacion-rol-triage-clinician">triage-clinician</a>
@@ -1060,19 +1060,19 @@
                 <td>Clínico de la especialidad que acepta o rechaza la derivación.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;triage-clinician&quot;, &quot;display&quot;: &quot;Triage clinician&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-rol&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;triage-clinician&quot;, &quot;display&quot;: &quot;Triage clinician&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;triage-clinician&quot;/&gt;&lt;display value=&quot;Triage clinician&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-rol&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;triage-clinician&quot;/&gt;&lt;display value=&quot;Triage clinician&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol-specialty-scheduler"> </a>
-                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol</code>
+                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-rol-specialty-scheduler"> </a>
+                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-rol</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-derivacion-rol.html#derivacion-rol-specialty-scheduler">specialty-scheduler</a>
@@ -1081,19 +1081,19 @@
                 <td>Agendador de la especialidad que reserva y re-agenda la cita.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;specialty-scheduler&quot;, &quot;display&quot;: &quot;Specialty scheduler&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-rol&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;specialty-scheduler&quot;, &quot;display&quot;: &quot;Specialty scheduler&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;specialty-scheduler&quot;/&gt;&lt;display value=&quot;Specialty scheduler&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-rol&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;specialty-scheduler&quot;/&gt;&lt;display value=&quot;Specialty scheduler&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol-specialist"> </a>
-                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol</code>
+                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-rol-specialist"> </a>
+                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-rol</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-derivacion-rol.html#derivacion-rol-specialist">specialist</a>
@@ -1102,19 +1102,19 @@
                 <td>Especialista que atiende y emite la contrareferencia.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;specialist&quot;, &quot;display&quot;: &quot;Specialist&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-rol&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;specialist&quot;, &quot;display&quot;: &quot;Specialist&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;specialist&quot;/&gt;&lt;display value=&quot;Specialist&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-rol&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;specialist&quot;/&gt;&lt;display value=&quot;Specialist&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol-hub-operator"> </a>
-                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol</code>
+                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-rol-hub-operator"> </a>
+                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-rol</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-derivacion-rol.html#derivacion-rol-hub-operator">hub-operator</a>
@@ -1123,27 +1123,27 @@
                 <td>Operador del hub de derivación (enruta, escala, registra cancelaciones, responde consultas de estado).</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;hub-operator&quot;, &quot;display&quot;: &quot;Hub operator&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-rol&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;hub-operator&quot;, &quot;display&quot;: &quot;Hub operator&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;hub-operator&quot;/&gt;&lt;display value=&quot;Hub operator&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-rol&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;hub-operator&quot;/&gt;&lt;display value=&quot;Hub operator&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-rol"/>
+        <url value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-rol"/>
         <version value="0.1.0"/>
         <name value="DerivacionRolVS"/>
         <title value="Rol en la derivación"/>
         <status value="draft"/>
-        <date value="2026-11-20T12:33:32+00:00"/>
+        <date value="2026-11-20T12:39:48+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:7d47c842-17bc-4172-b230-f44f56128003"/>
-          <timestamp value="2026-11-20T12:34:23+00:00"/>
+          <identifier value="urn:uuid:d870772e-e945-467f-8604-76ad1a2b0a10"/>
+          <timestamp value="2026-11-20T12:40:32+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -1164,35 +1164,35 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol|0.1.0"/>
+            <valueUri value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-rol|0.1.0"/>
           </parameter>
           <contains>
-            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol"/>
+            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-rol"/>
             <code value="aps-doctor"/>
             <display value="APS doctor"/>
           </contains>
           <contains>
-            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol"/>
+            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-rol"/>
             <code value="aps-admin"/>
             <display value="APS admin"/>
           </contains>
           <contains>
-            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol"/>
+            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-rol"/>
             <code value="triage-clinician"/>
             <display value="Triage clinician"/>
           </contains>
           <contains>
-            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol"/>
+            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-rol"/>
             <code value="specialty-scheduler"/>
             <display value="Specialty scheduler"/>
           </contains>
           <contains>
-            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol"/>
+            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-rol"/>
             <code value="specialist"/>
             <display value="Specialist"/>
           </contains>
           <contains>
-            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol"/>
+            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-rol"/>
             <code value="hub-operator"/>
             <display value="Hub operator"/>
           </contains>
@@ -1201,7 +1201,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-task-code"/>
+    <fullUrl value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-task-code"/>
     <resource>
       <ValueSet>
         <text>
@@ -1211,7 +1211,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-derivacion-task-code.html">codesystem Código de la tarea de derivación v0.1.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-task-code|0.1.0" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
+                <button data-clipboard-text="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-task-code|0.1.0" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
               </span>
             </p>
             <p>This value set contains 1 concepts</p>
@@ -1238,8 +1238,8 @@
               </tr>
               <tr>
                 <td>
-                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-task-code-referral-workflow"> </a>
-                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-task-code</code>
+                  <a name="x-https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-task-code-referral-workflow"> </a>
+                  <code>https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-task-code</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-derivacion-task-code.html#derivacion-task-code-referral-workflow">referral-workflow</a>
@@ -1248,27 +1248,27 @@
                 <td>Registro de estado del flujo de trabajo de una derivación.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-task-code&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;referral-workflow&quot;, &quot;display&quot;: &quot;Referral workflow&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-task-code&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;referral-workflow&quot;, &quot;display&quot;: &quot;Referral workflow&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-task-code&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;referral-workflow&quot;/&gt;&lt;display value=&quot;Referral workflow&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-task-code&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;referral-workflow&quot;/&gt;&lt;display value=&quot;Referral workflow&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-task-code"/>
+        <url value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-task-code"/>
         <version value="0.1.0"/>
         <name value="DerivacionTaskCode"/>
         <title value="Código de la tarea de derivación"/>
         <status value="draft"/>
-        <date value="2026-11-20T12:33:32+00:00"/>
+        <date value="2026-11-20T12:39:48+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:76378268-22ca-4217-bddd-ba5fc71ef103"/>
-          <timestamp value="2026-11-20T12:34:23+00:00"/>
+          <identifier value="urn:uuid:bba09ab7-40b4-4c59-8d6c-a3eec0608813"/>
+          <timestamp value="2026-11-20T12:40:32+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -1289,10 +1289,10 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-task-code|0.1.0"/>
+            <valueUri value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-task-code|0.1.0"/>
           </parameter>
           <contains>
-            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-task-code"/>
+            <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-task-code"/>
             <code value="referral-workflow"/>
             <display value="Referral workflow"/>
           </contains>

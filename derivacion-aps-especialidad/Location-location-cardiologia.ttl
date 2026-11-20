@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://josemandrade.github.io/prueba-his-muse-nvidia/Location/location-cardiologia> a fhir:Location ;
+<https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Location/location-cardiologia> a fhir:Location ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:Resource.id [ fhir:value "location-cardiologia"] ;
   fhir:DomainResource.text [
@@ -17,13 +17,13 @@
      fhir:Address.text [ fhir:value "Hospital de la Red, piso 3, consulta 12" ]
   ] ;
   fhir:Location.managingOrganization [
-     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Organization/org-cardiologia> ;
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Organization/org-cardiologia> ;
      fhir:Reference.reference [ fhir:value "Organization/org-cardiologia" ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<https://josemandrade.github.io/prueba-his-muse-nvidia/Location/location-cardiologia.ttl> a owl:Ontology ;
+<https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Location/location-cardiologia.ttl> a owl:Ontology ;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

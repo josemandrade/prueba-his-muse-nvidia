@@ -1,6 +1,6 @@
 {
   "codeSystems" : [{
-    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-base-cruce",
+    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-base-cruce",
     "version" : "0.1.0",
     "status" : "draft",
     "name" : "DerivacionBaseCruceCS",
@@ -11,7 +11,7 @@
     "ValueSet-derivacion-base-cruce.html" : "Base del cruce de identidad"
   },
   {
-    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-canal",
+    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-canal",
     "version" : "0.1.0",
     "status" : "draft",
     "name" : "DerivacionCanalCS",
@@ -22,7 +22,7 @@
     "ValueSet-derivacion-canal.html" : "Canal de notificación"
   },
   {
-    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad",
+    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-especialidad",
     "version" : "0.1.0",
     "status" : "draft",
     "name" : "DerivacionEspecialidadCS",
@@ -33,7 +33,7 @@
     "ValueSet-derivacion-especialidad.html" : "Especialidad / servicio (catálogo local)"
   },
   {
-    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-estado-referencia",
+    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-estado-referencia",
     "version" : "0.1.0",
     "status" : "draft",
     "name" : "DerivacionEstadoReferenciaCS",
@@ -44,7 +44,7 @@
     "ValueSet-derivacion-estado-referencia.html" : "Estado de la derivación"
   },
   {
-    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-motivo-rechazo",
+    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-motivo-rechazo",
     "version" : "0.1.0",
     "status" : "draft",
     "name" : "DerivacionMotivoRechazoCS",
@@ -55,7 +55,7 @@
     "ValueSet-derivacion-motivo-rechazo.html" : "Motivo de rechazo"
   },
   {
-    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-resultado-entrega",
+    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-resultado-entrega",
     "version" : "0.1.0",
     "status" : "draft",
     "name" : "DerivacionResultadoEntregaCS",
@@ -66,7 +66,7 @@
     "ValueSet-derivacion-resultado-entrega.html" : "Resultado de la entrega de una notificación"
   },
   {
-    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-rol",
+    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-rol",
     "version" : "0.1.0",
     "status" : "draft",
     "name" : "DerivacionRolCS",
@@ -77,7 +77,7 @@
     "ValueSet-derivacion-rol.html" : "Rol en la derivación"
   },
   {
-    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-task-code",
+    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-task-code",
     "version" : "0.1.0",
     "status" : "draft",
     "name" : "DerivacionTaskCodeCS",

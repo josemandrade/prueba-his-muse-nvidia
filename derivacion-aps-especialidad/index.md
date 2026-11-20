@@ -7,7 +7,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/ImplementationGuide/hl7.fhir.uv.test.derivacion-aps-especialidad | *Version*:0.1.0 |
+| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ImplementationGuide/hl7.fhir.uv.test.derivacion-aps-especialidad | *Version*:0.1.0 |
 | Draft as of 2026-11-20 | *Computable Name*:DerivacionAPSEspecialidad |
 
 ### Derivación APS → especialidad con contrareferencia
@@ -55,7 +55,7 @@ María González, 58 años, RUN sintético 11.111.111-1, CESFAM Los Aromos → c
 
 #### Estado
 
-Guía de prueba, versión 0.1.0, estado `draft`, FHIR R4 4.0.1. Canonical: `https://josemandrade.github.io/prueba-his-muse-nvidia/`. La única dependencia es `hl7.fhir.r4.core 4.0.1`.
+Guía de prueba, versión 0.1.0, estado `draft`, FHIR R4 4.0.1. Canonical: `https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/`. La única dependencia es `hl7.fhir.r4.core 4.0.1`.
 
 
 
@@ -65,12 +65,12 @@ Guía de prueba, versión 0.1.0, estado `draft`, FHIR R4 4.0.1. Canonical: `http
 {
   "resourceType" : "ImplementationGuide",
   "id" : "hl7.fhir.uv.test.derivacion-aps-especialidad",
-  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/ImplementationGuide/hl7.fhir.uv.test.derivacion-aps-especialidad",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ImplementationGuide/hl7.fhir.uv.test.derivacion-aps-especialidad",
   "version" : "0.1.0",
   "name" : "DerivacionAPSEspecialidad",
   "title" : "Derivación APS → especialidad con contrareferencia",
   "status" : "draft",
-  "date" : "2026-11-20T12:33:32+00:00",
+  "date" : "2026-11-20T12:39:48+00:00",
   "description" : "Guía de implementación de prueba para la derivación de un paciente desde atención primaria (APS) a una especialidad, con contrareferencia de vuelta a APS. Un caso de uso clínico con su flujo BPMN, sus perfiles FHIR R4 propios y sus operaciones en cada punto de interoperabilidad. Datos sintéticos.",
   "packageId" : "hl7.fhir.uv.test.derivacion-aps-especialidad",
   "license" : "CC0-1.0",
@@ -212,7 +212,7 @@ Guía de prueba, versión 0.1.0, estado `draft`, FHIR R4 4.0.1. Canonical: `http
       },
       {
         "url" : "value",
-        "valueString" : "https://josemandrade.github.io/prueba-his-muse-nvidia/history.html"
+        "valueString" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -394,7 +394,7 @@ Guía de prueba, versión 0.1.0, estado `draft`, FHIR R4 4.0.1. Canonical: `http
         "reference" : "PractitionerRole/rol-admin-aps"
       },
       "name" : "Administrativo APS en la derivación REF-2026-0001",
-      "exampleCanonical" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rol"
+      "exampleCanonical" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-rol"
     },
     {
       "extension" : [{
@@ -424,7 +424,7 @@ Guía de prueba, versión 0.1.0, estado `draft`, FHIR R4 4.0.1. Canonical: `http
         "reference" : "PractitionerRole/rol-agendador"
       },
       "name" : "Agendador en la derivación REF-2026-0001",
-      "exampleCanonical" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rol"
+      "exampleCanonical" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-rol"
     },
     {
       "extension" : [{
@@ -599,7 +599,7 @@ Guía de prueba, versión 0.1.0, estado `draft`, FHIR R4 4.0.1. Canonical: `http
       },
       "name" : "Cita de la derivación REF-2026-0001 (proposed)",
       "description" : "La oferta de cita (PI-2): propuesta, aún sin confirmar por la paciente.",
-      "exampleCanonical" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-cita"
+      "exampleCanonical" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-cita"
     },
     {
       "extension" : [{
@@ -614,7 +614,7 @@ Guía de prueba, versión 0.1.0, estado `draft`, FHIR R4 4.0.1. Canonical: `http
         "reference" : "PractitionerRole/rol-triaje"
       },
       "name" : "Clínico de triaje en la derivación REF-2026-0001",
-      "exampleCanonical" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rol"
+      "exampleCanonical" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-rol"
     },
     {
       "extension" : [{
@@ -725,7 +725,7 @@ Guía de prueba, versión 0.1.0, estado `draft`, FHIR R4 4.0.1. Canonical: `http
       },
       "name" : "Contrareferencia REF-2026-0001",
       "description" : "El documento de vuelta del especialista a APS (PI-3).",
-      "exampleCanonical" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-contrareferencia"
+      "exampleCanonical" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-contrareferencia"
     },
     {
       "extension" : [{
@@ -788,7 +788,7 @@ Guía de prueba, versión 0.1.0, estado `draft`, FHIR R4 4.0.1. Canonical: `http
         "reference" : "Condition/diagnostico-ref-2026-0001"
       },
       "name" : "Diagnóstico: insuficiencia cardiaca sistólica crónica",
-      "exampleCanonical" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-diagnostico"
+      "exampleCanonical" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-diagnostico"
     },
     {
       "extension" : [{
@@ -819,7 +819,7 @@ Guía de prueba, versión 0.1.0, estado `draft`, FHIR R4 4.0.1. Canonical: `http
         "reference" : "DocumentReference/documento-ref-2026-0001"
       },
       "name" : "Documento de contrareferencia REF-2026-0001",
-      "exampleCanonical" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-documento"
+      "exampleCanonical" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-documento"
     },
     {
       "extension" : [{
@@ -882,7 +882,7 @@ Guía de prueba, versión 0.1.0, estado `draft`, FHIR R4 4.0.1. Canonical: `http
       },
       "name" : "Encuentro de especialidad REF-2026-0001 (planned)",
       "description" : "La visita, creada en la reserva (planned); no se crea en la asistencia.",
-      "exampleCanonical" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-encuentro"
+      "exampleCanonical" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-encuentro"
     },
     {
       "extension" : [{
@@ -959,7 +959,7 @@ Guía de prueba, versión 0.1.0, estado `draft`, FHIR R4 4.0.1. Canonical: `http
         "reference" : "PractitionerRole/rol-especialista"
       },
       "name" : "Especialista en la derivación REF-2026-0001",
-      "exampleCanonical" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rol"
+      "exampleCanonical" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-rol"
     },
     {
       "extension" : [{
@@ -1038,7 +1038,7 @@ Guía de prueba, versión 0.1.0, estado `draft`, FHIR R4 4.0.1. Canonical: `http
       },
       "name" : "María González (paciente sintética)",
       "description" : "Paciente de la derivación REF-2026-0001.",
-      "exampleCanonical" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-paciente"
+      "exampleCanonical" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-paciente"
     },
     {
       "extension" : [{
@@ -1100,7 +1100,7 @@ Guía de prueba, versión 0.1.0, estado `draft`, FHIR R4 4.0.1. Canonical: `http
         "reference" : "PractitionerRole/rol-medico-aps"
       },
       "name" : "Médico APS en la derivación REF-2026-0001",
-      "exampleCanonical" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rol"
+      "exampleCanonical" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-rol"
     },
     {
       "extension" : [{
@@ -1132,7 +1132,7 @@ Guía de prueba, versión 0.1.0, estado `draft`, FHIR R4 4.0.1. Canonical: `http
       },
       "name" : "Notificación de aceptación a la paciente",
       "description" : "El administrativo de APS informa a la paciente de que la especialidad aceptó la derivación (PI-1, C5/Q3).",
-      "exampleCanonical" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-notificacion"
+      "exampleCanonical" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-notificacion"
     },
     {
       "extension" : [{
@@ -1210,7 +1210,7 @@ Guía de prueba, versión 0.1.0, estado `draft`, FHIR R4 4.0.1. Canonical: `http
         "reference" : "CarePlan/plan-ref-2026-0001"
       },
       "name" : "Plan de seguimiento para APS",
-      "exampleCanonical" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-plan-seguimiento"
+      "exampleCanonical" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-plan-seguimiento"
     },
     {
       "extension" : [{
@@ -1416,7 +1416,7 @@ Guía de prueba, versión 0.1.0, estado `draft`, FHIR R4 4.0.1. Canonical: `http
         "reference" : "HealthcareService/servicio-cardiologia"
       },
       "name" : "Servicio de cardiología",
-      "exampleCanonical" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-servicio"
+      "exampleCanonical" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-servicio"
     },
     {
       "extension" : [{
@@ -1494,7 +1494,7 @@ Guía de prueba, versión 0.1.0, estado `draft`, FHIR R4 4.0.1. Canonical: `http
       },
       "name" : "Solicitud de derivación REF-2026-0001",
       "description" : "Derivación de María González a cardiología por sospecha de insuficiencia cardiaca (PI-0).",
-      "exampleCanonical" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-solicitud"
+      "exampleCanonical" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-solicitud"
     },
     {
       "extension" : [{
@@ -1526,7 +1526,7 @@ Guía de prueba, versión 0.1.0, estado `draft`, FHIR R4 4.0.1. Canonical: `http
       },
       "name" : "Tarea de derivación REF-2026-0001 (requested)",
       "description" : "El registro de estado del flujo de trabajo, en su creación (PI-0).",
-      "exampleCanonical" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-tarea"
+      "exampleCanonical" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-tarea"
     }],
     "page" : {
       "extension" : [{

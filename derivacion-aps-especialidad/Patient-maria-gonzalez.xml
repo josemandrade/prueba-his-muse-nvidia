@@ -3,12 +3,12 @@
 <Patient xmlns="http://hl7.org/fhir">
   <id value="maria-gonzalez"/>
   <meta>
-    <profile value="https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-paciente"/>
+    <profile value="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-paciente"/>
   </meta>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Patient maria-gonzalez</b></p><a name="maria-gonzalez"> </a><a name="hcmaria-gonzalez"> </a><div style="display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-derivacion-paciente.html">Paciente de la derivación</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">María González (official) Female, DoB: 1968-04-15 ( http://www.registrocivil.cl/run#11111111-1)</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Other Id (see the one above)">Other Id:</td><td colspan="3"><code>http://mpi.red.example.org</code>/MPI-2026-0042</td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Detail</td><td colspan="3"><ul><li><a href="tel:+56911111111">+56 9 1111 1111</a></li><li>Calle Ejemplo 123, Los Aromos(home)</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Canal preferido del paciente para las notificaciones: phone | in-person | system-message (ValueSet DerivacionCanal)."><a href="StructureDefinition-derivacion-preferred-contact-channel.html">Canal de contacto preferido</a></td><td colspan="3">phone</td></tr></table></div>
   </text>
-  <extension url="https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-preferred-contact-channel">
+  <extension url="https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-preferred-contact-channel">
     <valueCode value="phone"/>
   </extension>
   <identifier>

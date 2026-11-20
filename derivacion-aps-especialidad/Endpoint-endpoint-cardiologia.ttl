@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://josemandrade.github.io/prueba-his-muse-nvidia/Endpoint/endpoint-cardiologia> a fhir:Endpoint ;
+<https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Endpoint/endpoint-cardiologia> a fhir:Endpoint ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:Resource.id [ fhir:value "endpoint-cardiologia"] ;
   fhir:DomainResource.text [
@@ -20,7 +20,7 @@
   ] ;
   fhir:Endpoint.name [ fhir:value "Cardiology FHIR endpoint"] ;
   fhir:Endpoint.managingOrganization [
-     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Organization/org-cardiologia> ;
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Organization/org-cardiologia> ;
      fhir:Reference.reference [ fhir:value "Organization/org-cardiologia" ]
   ] ;
   fhir:Endpoint.payloadType [
@@ -36,7 +36,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://josemandrade.github.io/prueba-his-muse-nvidia/Endpoint/endpoint-cardiologia.ttl> a owl:Ontology ;
+<https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Endpoint/endpoint-cardiologia.ttl> a owl:Ontology ;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

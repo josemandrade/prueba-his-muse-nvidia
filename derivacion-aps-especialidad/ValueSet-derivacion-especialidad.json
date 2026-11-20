@@ -3,18 +3,18 @@
   "id" : "derivacion-especialidad",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet derivacion-especialidad</b></p><a name=\"derivacion-especialidad\"> </a><a name=\"hcderivacion-especialidad\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-derivacion-especialidad.html\"><code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.0</span></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet derivacion-especialidad</b></p><a name=\"derivacion-especialidad\"> </a><a name=\"hcderivacion-especialidad\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-derivacion-especialidad.html\"><code>https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-especialidad</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.0</span></li></ul></div>"
   },
-  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-especialidad",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-especialidad",
   "version" : "0.1.0",
   "name" : "DerivacionEspecialidad",
   "title" : "Especialidad / servicio (catálogo local)",
   "status" : "draft",
-  "date" : "2026-11-20T12:33:32+00:00",
+  "date" : "2026-11-20T12:39:48+00:00",
   "description" : "Especialidades y servicios a los que se puede derivar.",
   "compose" : {
     "include" : [{
-      "system" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-especialidad"
+      "system" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-especialidad"
     }]
   }
 }

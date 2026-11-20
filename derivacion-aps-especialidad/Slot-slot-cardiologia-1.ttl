@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://josemandrade.github.io/prueba-his-muse-nvidia/Slot/slot-cardiologia-1> a fhir:Slot ;
+<https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Slot/slot-cardiologia-1> a fhir:Slot ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:Resource.id [ fhir:value "slot-cardiologia-1"] ;
   fhir:DomainResource.text [
@@ -13,7 +13,7 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Slot slot-cardiologia-1</b></p><a name=\"slot-cardiologia-1\"> </a><a name=\"hcslot-cardiologia-1\"> </a><p><b>schedule</b>: <a href=\"Schedule-schedule-cardiologia.html\">Schedule: planningHorizon = 2026-12-01 08:00:00-0300 --&gt; 2026-12-31 17:00:00-0300; comment = Agenda de la consulta de cardiología.</a></p><p><b>status</b>: Busy</p><p><b>start</b>: 2026-12-02 10:00:00-0300</p><p><b>end</b>: 2026-12-02 10:30:00-0300</p></div>"
   ] ;
   fhir:Slot.schedule [
-     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Schedule/schedule-cardiologia> ;
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Schedule/schedule-cardiologia> ;
      fhir:Reference.reference [ fhir:value "Schedule/schedule-cardiologia" ]
   ] ;
   fhir:Slot.status [ fhir:value "busy"] ;
@@ -22,7 +22,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://josemandrade.github.io/prueba-his-muse-nvidia/Slot/slot-cardiologia-1.ttl> a owl:Ontology ;
+<https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Slot/slot-cardiologia-1.ttl> a owl:Ontology ;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

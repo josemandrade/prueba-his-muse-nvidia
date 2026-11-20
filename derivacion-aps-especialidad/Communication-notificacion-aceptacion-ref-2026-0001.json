@@ -2,14 +2,14 @@
   "resourceType" : "Communication",
   "id" : "notificacion-aceptacion-ref-2026-0001",
   "meta" : {
-    "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-notificacion"]
+    "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-notificacion"]
   },
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Communication notificacion-aceptacion-ref-2026-0001</b></p><a name=\"notificacion-aceptacion-ref-2026-0001\"> </a><a name=\"hcnotificacion-aceptacion-ref-2026-0001\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-derivacion-notificacion.html\">Notificación</a></p></div><p><b>Resultado de la entrega</b>: delivered</p><p><b>identifier</b>: <code>http://aps.losaromos.example.org/notification</code>/NOTIF-2026-0001</p><p><b>basedOn</b>: <a href=\"Task-tarea-ref-2026-0001.html\">Task Referral workflow</a></p><p><b>status</b>: Completed</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/communication-category notification}\">Notification</span></p><p><b>medium</b>: <span title=\"Codes:{https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-canal phone}\">Phone</span></p><p><b>subject</b>: <a href=\"Patient-maria-gonzalez.html\">María González (official) Female, DoB: 1968-04-15 ( http://www.registrocivil.cl/run#11111111-1)</a></p><p><b>topic</b>: <span title=\"Codes:\">accepted</span></p><p><b>sent</b>: 2026-11-21 09:00:00-0300</p><p><b>recipient</b>: <a href=\"Patient-maria-gonzalez.html\">María González (official) Female, DoB: 1968-04-15 ( http://www.registrocivil.cl/run#11111111-1)</a></p><p><b>sender</b>: <a href=\"PractitionerRole-rol-admin-aps.html\">Ana Pérez (official) (http://www.registrocivil.cl/run#22222222-2): APS admin at CESFAM Los Aromos (http://aps.losaromos.example.org/organization#CESFAM-LOS-AROMOS)</a></p><h3>Payloads</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Content[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>Su derivación a cardiología fue aceptada. Le ofreceremos una cita en los próximos días.</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Communication notificacion-aceptacion-ref-2026-0001</b></p><a name=\"notificacion-aceptacion-ref-2026-0001\"> </a><a name=\"hcnotificacion-aceptacion-ref-2026-0001\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-derivacion-notificacion.html\">Notificación</a></p></div><p><b>Resultado de la entrega</b>: delivered</p><p><b>identifier</b>: <code>http://aps.losaromos.example.org/notification</code>/NOTIF-2026-0001</p><p><b>basedOn</b>: <a href=\"Task-tarea-ref-2026-0001.html\">Task Referral workflow</a></p><p><b>status</b>: Completed</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/communication-category notification}\">Notification</span></p><p><b>medium</b>: <span title=\"Codes:{https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-canal phone}\">Phone</span></p><p><b>subject</b>: <a href=\"Patient-maria-gonzalez.html\">María González (official) Female, DoB: 1968-04-15 ( http://www.registrocivil.cl/run#11111111-1)</a></p><p><b>topic</b>: <span title=\"Codes:\">accepted</span></p><p><b>sent</b>: 2026-11-21 09:00:00-0300</p><p><b>recipient</b>: <a href=\"Patient-maria-gonzalez.html\">María González (official) Female, DoB: 1968-04-15 ( http://www.registrocivil.cl/run#11111111-1)</a></p><p><b>sender</b>: <a href=\"PractitionerRole-rol-admin-aps.html\">Ana Pérez (official) (http://www.registrocivil.cl/run#22222222-2): APS admin at CESFAM Los Aromos (http://aps.losaromos.example.org/organization#CESFAM-LOS-AROMOS)</a></p><h3>Payloads</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Content[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>Su derivación a cardiología fue aceptada. Le ofreceremos una cita en los próximos días.</td></tr></table></div>"
   },
   "extension" : [{
-    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-delivery-outcome",
+    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-delivery-outcome",
     "valueCode" : "delivered"
   }],
   "identifier" : [{
@@ -29,7 +29,7 @@
   }],
   "medium" : [{
     "coding" : [{
-      "system" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-canal",
+      "system" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-canal",
       "code" : "phone",
       "display" : "Phone"
     }]

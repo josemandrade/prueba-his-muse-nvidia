@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rescheduling-count | *Version*:0.1.0 |
+| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-rescheduling-count | *Version*:0.1.0 |
 | Draft as of 2026-11-20 | *Computable Name*:DerivacionReschedulingCount |
 
 Número de re-agendamientos de esta derivación (0–1). No se reinicia: un solo re-agendamiento por derivación.
@@ -41,12 +41,12 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-reschedul
 {
   "resourceType" : "StructureDefinition",
   "id" : "derivacion-rescheduling-count",
-  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rescheduling-count",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-rescheduling-count",
   "version" : "0.1.0",
   "name" : "DerivacionReschedulingCount",
   "title" : "Conteo de re-agendamientos",
   "status" : "draft",
-  "date" : "2026-11-20T12:33:32+00:00",
+  "date" : "2026-11-20T12:39:48+00:00",
   "description" : "Número de re-agendamientos de esta derivación (0–1). No se reinicia: un solo re-agendamiento por derivación.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
@@ -78,7 +78,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-reschedul
     {
       "id" : "Extension.url",
       "path" : "Extension.url",
-      "fixedUri" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rescheduling-count"
+      "fixedUri" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-rescheduling-count"
     },
     {
       "id" : "Extension.value[x]",
@@ -92,7 +92,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-reschedul
         "severity" : "error",
         "human" : "El conteo de re-agendamientos está entre 0 y 1: un solo re-agendamiento por derivación.",
         "expression" : "$this >= 0 and $this <= 1",
-        "source" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rescheduling-count"
+        "source" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-rescheduling-count"
       }]
     }]
   }

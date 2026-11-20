@@ -6,7 +6,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://josemandrade.github.io/prueba-his-muse-nvidia/Observation/ntprobnp-2026-11-19> a fhir:Observation ;
+<https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Observation/ntprobnp-2026-11-19> a fhir:Observation ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:Resource.id [ fhir:value "ntprobnp-2026-11-19"] ;
   fhir:DomainResource.text [
@@ -24,7 +24,7 @@
      ]
   ] ;
   fhir:Observation.subject [
-     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Patient/maria-gonzalez> ;
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Patient/maria-gonzalez> ;
      fhir:Reference.reference [ fhir:value "Patient/maria-gonzalez" ]
   ] ;
   fhir:Observation.effectiveDateTime [ fhir:value "2026-11-18T10:00:00-03:00"^^xsd:dateTime] ;
@@ -37,7 +37,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://josemandrade.github.io/prueba-his-muse-nvidia/Observation/ntprobnp-2026-11-19.ttl> a owl:Ontology ;
+<https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Observation/ntprobnp-2026-11-19.ttl> a owl:Ontology ;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

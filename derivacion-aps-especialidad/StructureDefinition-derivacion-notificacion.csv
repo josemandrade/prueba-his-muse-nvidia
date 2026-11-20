@@ -24,7 +24,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Communication.extension:deliveryOutcome","Communication.extension","deliveryOutcome","","",0,1,"","","","Extension {[CanonicalType[https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-delivery-outcome]]} {[]}
+"Communication.extension:deliveryOutcome","Communication.extension","deliveryOutcome","","",0,1,"","","","Extension {[CanonicalType[https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-delivery-outcome]]} {[]}
 ","delivered | failed. Un envío fallido se reintenta; nunca cambia el estado de la derivación.","Resultado de la entrega de una notificación: delivered | failed. Communication.status = completed significa enviada; el resultado de la entrega es esta extensión.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -44,7 +44,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Instantiates external protocol or definition","The URL pointing to an externally maintained protocol, guideline, orderset or other definition that is adhered to in whole or in part by this Communication.","This might be an HTML page, PDF, etc. or could just be a non-resolvable URI identifier.","","","","","","","","",,,,,"",,,,"Communication.instantiatesUri",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.instantiatesUri",".outboundRelationship[typeCode=DEFN].target"
 "Communication.basedOn","Communication.basedOn","","fulfills
-","",1,*,"","","Y","Reference {[]} {[CanonicalType[https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-tarea]]}
+","",1,*,"","","Y","Reference {[]} {[CanonicalType[https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-tarea]]}
 ","La clave de unión: la derivación sobre la que se notifica","An order, proposal or plan fulfilled in whole or in part by this Communication.","This must point to some sort of a 'Request' resource, such as CarePlan, CommunicationRequest, ServiceRequest, MedicationRequest, etc.","","","","","","","","",,,,,"",,,,"Communication.basedOn",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.basedOn"
 "Communication.partOf","Communication.partOf","","container
@@ -74,10 +74,10 @@ Cancelled Reason","",0,1,"","","Y","CodeableConcept {[]} {[]}
 ","routine | urgent | asap | stat","Characterizes how quickly the planned or in progress communication must be addressed. Includes concepts such as stat, urgent, routine.","Used to prioritize workflow (such as which communication to read first) when the communication is planned or in progress.","","","If missing, this communication should be treated with normal priority","","","","","",,"required","Codes indicating the relative importance of a communication.","http://hl7.org/fhir/ValueSet/request-priority|4.0.1","",,,,"Communication.priority",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","FiveWs.grade"
 "Communication.medium","Communication.medium","","","",1,*,"","","","CodeableConcept {[]} {[]}
-","Canal (lista local: teléfono / presencial / mensaje del sistema)","A channel that was used for this communication (e.g. email, fax).","","","","","","","","","",,"example","","https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-canal","",,,,"Communication.medium",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Canal (lista local: teléfono / presencial / mensaje del sistema)","A channel that was used for this communication (e.g. email, fax).","","","","","","","","","",,"example","","https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-canal","",,,,"Communication.medium",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Communication.subject","Communication.subject","","patient
-","",1,1,"","","Y","Reference {[]} {[CanonicalType[https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-paciente]]}
+","",1,1,"","","Y","Reference {[]} {[CanonicalType[https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-paciente]]}
 ","Focus of message","The patient or group that was the focus of this communication.","","","","","","","","","",,,,,"",,,,"Communication.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.subject","FiveWs.subject[x]","FiveWs.subject"
 "Communication.topic","Communication.topic","","","",0,1,"","","","CodeableConcept {[]} {[]}
@@ -95,10 +95,10 @@ Cancelled Reason","",0,1,"","","Y","CodeableConcept {[]} {[]}
 "Communication.received","Communication.received","","","",0,1,"","","","dateTime {[]} {[]}
 ","When received","The time when this communication arrived at the destination.","","","","","","","","","",,,,,"",,,,"Communication.received",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.occurrence[x] {Invariant: maps to period.end}","FiveWs.done[x]"
-"Communication.recipient","Communication.recipient","","","",1,*,"","","","Reference {[]} {[CanonicalType[https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-paciente], CanonicalType[https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rol]]}
+"Communication.recipient","Communication.recipient","","","",1,*,"","","","Reference {[]} {[CanonicalType[https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-paciente], CanonicalType[https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-rol]]}
 ","Paciente / admin APS / médico APS / especialidad","The entity (e.g. person, organization, clinical information system, care team or device) which was the target of the communication. If receipts need to be tracked by an individual, a separate resource instance will need to be created for each recipient.  Multiple recipient communications are intended where either receipts are not tracked (e.g. a mass mail-out) or a receipt is captured in aggregate (all emails confirmed received by a particular time).","","","","","","","","","",,,,,"",,,,"Communication.recipient",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.performer.actor","FiveWs.actor"
-"Communication.sender","Communication.sender","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rol], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
+"Communication.sender","Communication.sender","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-rol], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
 ","Emisor nombrado (C5/Q3): admin APS / agendador (vía hub) / especialista / hub","The entity (e.g. person, organization, clinical information system, or device) which was the source of the communication.","","","","","","","","","",,,,,"",,,,"Communication.sender",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.performer.actor","FiveWs.actor"
 "Communication.reasonCode","Communication.reasonCode","","","",0,*,"","","Y","CodeableConcept {[]} {[]}
@@ -129,7 +129,7 @@ Attachment {[]} {[]}Reference {[]} {[CanonicalType[http://hl7.org/fhir/Structure
 "Communication.payload.content[x]:contentString","Communication.payload.content[x]","contentString","","",0,1,"","","","string {[]} {[]}
 ","El aviso en texto legible (p. ej. 'state changed to accepted')","A communicated content (or for multi-part communications, one portion of the communication).","","","","","","","","","",,,,,"",,,,"Communication.payload.content[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Communication.payload.content[x]:contentReference","Communication.payload.content[x]","contentReference","","",0,1,"","","","Reference {[]} {[CanonicalType[https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-documento]]}
+"Communication.payload.content[x]:contentReference","Communication.payload.content[x]","contentReference","","",0,1,"","","","Reference {[]} {[CanonicalType[https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-documento]]}
 ","El documento, en el acuse de recibo de la contrareferencia","A communicated content (or for multi-part communications, one portion of the communication).","","","","","","","","","",,,,,"",,,,"Communication.payload.content[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Communication.payload.content[x]:contentAttachment","Communication.payload.content[x]","contentAttachment","","",0,1,"","","","Attachment {[]} {[]}

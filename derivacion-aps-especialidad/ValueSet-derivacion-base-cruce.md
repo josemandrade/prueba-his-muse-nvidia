@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-base-cruce | *Version*:0.1.0 |
+| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-base-cruce | *Version*:0.1.0 |
 | Draft as of 2026-11-20 | *Computable Name*:DerivacionBaseCruce |
 
  
@@ -45,16 +45,16 @@ Bases posibles del cruce de identidad en el MPI.
 {
   "resourceType" : "ValueSet",
   "id" : "derivacion-base-cruce",
-  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-base-cruce",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-base-cruce",
   "version" : "0.1.0",
   "name" : "DerivacionBaseCruce",
   "title" : "Base del cruce de identidad",
   "status" : "draft",
-  "date" : "2026-11-20T12:33:32+00:00",
+  "date" : "2026-11-20T12:39:48+00:00",
   "description" : "Bases posibles del cruce de identidad en el MPI.",
   "compose" : {
     "include" : [{
-      "system" : "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-base-cruce"
+      "system" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-base-cruce"
     }]
   }
 }

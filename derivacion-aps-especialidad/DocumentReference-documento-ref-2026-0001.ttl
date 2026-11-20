@@ -6,14 +6,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://josemandrade.github.io/prueba-his-muse-nvidia/DocumentReference/documento-ref-2026-0001> a fhir:DocumentReference ;
+<https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/DocumentReference/documento-ref-2026-0001> a fhir:DocumentReference ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:Resource.id [ fhir:value "documento-ref-2026-0001"] ;
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-documento" ;
+       fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-documento" ;
        fhir:index 0 ;
-       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-documento>
+       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-documento>
      ]
   ] ;
   fhir:DomainResource.text [
@@ -35,13 +35,13 @@
      ]
   ] ;
   fhir:DocumentReference.subject [
-     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Patient/maria-gonzalez> ;
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Patient/maria-gonzalez> ;
      fhir:Reference.reference [ fhir:value "Patient/maria-gonzalez" ]
   ] ;
   fhir:DocumentReference.date [ fhir:value "2026-12-03T10:00:00-03:00"^^xsd:dateTime] ;
   fhir:DocumentReference.author [
      fhir:index 0 ;
-     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/PractitionerRole/rol-especialista> ;
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/PractitionerRole/rol-especialista> ;
      fhir:Reference.reference [ fhir:value "PractitionerRole/rol-especialista" ]
   ] ;
   fhir:DocumentReference.content [
@@ -54,7 +54,7 @@
   fhir:DocumentReference.context [
      fhir:DocumentReference.context.encounter [
        fhir:index 0 ;
-       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/Encounter/encuentro-ref-2026-0001> ;
+       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Encounter/encuentro-ref-2026-0001> ;
        fhir:Reference.reference [ fhir:value "Encounter/encuentro-ref-2026-0001" ]
      ] ;
      fhir:DocumentReference.context.period [
@@ -63,14 +63,14 @@
      ] ;
      fhir:DocumentReference.context.related [
        fhir:index 0 ;
-       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/ServiceRequest/ref-2026-0001> ;
+       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ServiceRequest/ref-2026-0001> ;
        fhir:Reference.reference [ fhir:value "ServiceRequest/ref-2026-0001" ]
      ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<https://josemandrade.github.io/prueba-his-muse-nvidia/DocumentReference/documento-ref-2026-0001.ttl> a owl:Ontology ;
+<https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/DocumentReference/documento-ref-2026-0001.ttl> a owl:Ontology ;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

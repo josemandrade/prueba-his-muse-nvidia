@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rol | *Version*:0.1.0 |
+| *Official URL*:https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-rol | *Version*:0.1.0 |
 | Draft as of 2026-11-20 | *Computable Name*:DerivacionRol |
 
  
@@ -37,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-rol.csv),
 {
   "resourceType" : "StructureDefinition",
   "id" : "derivacion-rol",
-  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/StructureDefinition/derivacion-rol",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/StructureDefinition/derivacion-rol",
   "version" : "0.1.0",
   "name" : "DerivacionRol",
   "title" : "Rol en la derivación",
   "status" : "draft",
-  "date" : "2026-11-20T12:33:32+00:00",
+  "date" : "2026-11-20T12:39:48+00:00",
   "description" : "El rol que un profesional tiene en una derivación. Perfil propio de esta guía, sobre el recurso base PractitionerRole de FHIR R4. Una persona puede tener más de un rol en distintas derivaciones, pero dentro de una derivación cada rol es una persona.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
@@ -98,7 +98,7 @@ Other representations of profile: [CSV](StructureDefinition-derivacion-rol.csv),
       "min" : 1,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-rol"
+        "valueSet" : "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-rol"
       }
     }]
   }

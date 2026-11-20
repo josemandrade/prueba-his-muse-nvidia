@@ -5,30 +5,30 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-task-code> a fhir:ValueSet ;
+<https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-task-code> a fhir:ValueSet ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:Resource.id [ fhir:value "derivacion-task-code"] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ] ;
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet derivacion-task-code</b></p><a name=\"derivacion-task-code\"> </a><a name=\"hcderivacion-task-code\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-derivacion-task-code.html\"><code>https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-task-code</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.1.0</span></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet derivacion-task-code</b></p><a name=\"derivacion-task-code\"> </a><a name=\"hcderivacion-task-code\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-derivacion-task-code.html\"><code>https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-task-code</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.1.0</span></li></ul></div>"
   ] ;
-  fhir:ValueSet.url [ fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-task-code"] ;
+  fhir:ValueSet.url [ fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-task-code"] ;
   fhir:ValueSet.version [ fhir:value "0.1.0"] ;
   fhir:ValueSet.name [ fhir:value "DerivacionTaskCode"] ;
   fhir:ValueSet.title [ fhir:value "Código de la tarea de derivación"] ;
   fhir:ValueSet.status [ fhir:value "draft"] ;
-  fhir:ValueSet.date [ fhir:value "2026-11-20T12:33:32+00:00"^^xsd:dateTime] ;
+  fhir:ValueSet.date [ fhir:value "2026-11-20T12:39:48+00:00"^^xsd:dateTime] ;
   fhir:ValueSet.description [ fhir:value "Códigos de Task de esta guía."] ;
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0 ;
-       fhir:ValueSet.compose.include.system [ fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/CodeSystem/derivacion-task-code" ]
+       fhir:ValueSet.compose.include.system [ fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/CodeSystem/derivacion-task-code" ]
      ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<https://josemandrade.github.io/prueba-his-muse-nvidia/ValueSet/derivacion-task-code.ttl> a owl:Ontology ;
+<https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/ValueSet/derivacion-task-code.ttl> a owl:Ontology ;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

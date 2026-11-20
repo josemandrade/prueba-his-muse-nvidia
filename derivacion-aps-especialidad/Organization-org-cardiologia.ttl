@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://josemandrade.github.io/prueba-his-muse-nvidia/Organization/org-cardiologia> a fhir:Organization ;
+<https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Organization/org-cardiologia> a fhir:Organization ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:Resource.id [ fhir:value "org-cardiologia"] ;
   fhir:DomainResource.text [
@@ -22,7 +22,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://josemandrade.github.io/prueba-his-muse-nvidia/Organization/org-cardiologia.ttl> a owl:Ontology ;
+<https://josemandrade.github.io/prueba-his-muse-nvidia/derivacion-aps-especialidad/Organization/org-cardiologia.ttl> a owl:Ontology ;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
