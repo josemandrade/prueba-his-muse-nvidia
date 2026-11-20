@@ -1,84 +1,76 @@
-name: Build and Deploy IG
+# .github/workflows/ig-build.yml
+# Build, validate and deploy the FHIR Implementation Guide (school vision screening).
+# Validates with SUSHI + the FHIR IG Publisher; deploys to the
+# school-vision-screening subpath of the repo's GitHub Pages site.
+# This repo holds more than one guide, so each guide has its own workflow
+# file and its own subpath, and all of them deploy to the gh-pages branch
+# (see references/implementation-guide-sushi/ci-cd.md in the pack).
+# Enable GitHub Pages (Settings -> Pages -> Source: Deploy from a branch,
+# branch gh-pages, folder / (root)). The gh-pages branch is created by the
+# first deploy.
+name: IG build (school)
 
 on:
   push:
     branches: [main]
+    paths:
+      - 'docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/**'
+      - '.github/workflows/ig-build.yml'
   pull_request:
     branches: [main]
+    paths:
+      - 'docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/**'
+  workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
+
+concurrency:
+  group: ig-pages
+  cancel-in-progress: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'
-
       - name: Install SUSHI
         run: npm install -g fsh-sushi
-
-      - name: Cache SUSHI
-        uses: actions/cache@v4
+      - name: Run SUSHI
+        run: sushi .
+      - uses: actions/setup-java@v4
         with:
-          path: |
-            ~/.cache/sushi
-            ~/.sushi
-          key: ${{ runner.os }}-sushi-${{ hashFiles('docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/sushi-config.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-sushi-
-
-      - name: Build IG with SUSHI
-        working-directory: docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide
+          distribution: temurin
+          java-version: '17'
+      - name: Download the IG Publisher
+        run: wget https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -O publisher.jar
+      - name: Install Jekyll
         run: |
-          sushi build --strict
-
-      - name: Validate IG with FHIR Validator
-        working-directory: docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide
-        run: |
-          # The FHIR Validator runs as part of SUSHI build
-          # Additional validation can be added here if needed
-          echo "Validation complete"
-
-      - name: Upload IG artifacts
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ruby-full
+          sudo gem install bundler jekyll
+      - name: Build and validate the IG
+        run: java -Xms3550m -Xmx3550m -jar publisher.jar -ig .
+      - name: Upload the QA report
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: ig-output
-          path: docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/output/
-          retention-days: 7
-
-  deploy:
-    needs: build
-    if: github.ref == 'refs/heads/main'
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Download IG artifacts
-        uses: actions/download-artifact@v4
-        with:
-          name: ig-output
-          path: output/
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+          name: qa
+          path: docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/output/qa.tgz
+          if-no-files-found: warn
+      - name: Deploy to the school-vision-screening subpath
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: output/
           publish_branch: gh-pages
-          force_orphan: true
-
-      - name: Verify deployment
-        run: |
-          echo "IG deployed to https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"
-          echo "Check the deployed site for any issues"
+          publish_dir: docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/output
+          destination_dir: school-vision-screening
+          keep_files: true
+          force_orphan: false
