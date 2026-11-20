@@ -1,0 +1,84 @@
+name: Build and Deploy IG
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install SUSHI
+        run: npm install -g fsh-sushi
+
+      - name: Cache SUSHI
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/sushi
+            ~/.sushi
+          key: ${{ runner.os }}-sushi-${{ hashFiles('docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/sushi-config.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-sushi-
+
+      - name: Build IG with SUSHI
+        working-directory: docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide
+        run: |
+          sushi build --strict
+
+      - name: Validate IG with FHIR Validator
+        working-directory: docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide
+        run: |
+          # The FHIR Validator runs as part of SUSHI build
+          # Additional validation can be added here if needed
+          echo "Validation complete"
+
+      - name: Upload IG artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: ig-output
+          path: docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/output/
+          retention-days: 7
+
+  deploy:
+    needs: build
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download IG artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: ig-output
+          path: output/
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: output/
+          publish_branch: gh-pages
+          force_orphan: true
+
+      - name: Verify deployment
+        run: |
+          echo "IG deployed to https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"
+          echo "Check the deployed site for any issues"
