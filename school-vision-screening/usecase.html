@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Clinical Use Case -  v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - CI Build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="usecase.html">Use Case</a>
+  </li>
+  <li>
+    <a href="process.html">Process</a>
+  </li>
+  <li>
+    <a href="resources.html">Resources</a>
+  </li>
+  <li>
+    <a href="sequences.html">Sequences</a>
+  </li>
+  <li>
+    <a href="profiles.html">Profiles</a>
+  </li>
+  <li>
+    <a href="operations.html">Operations</a>
+  </li>
+  <li>
+    <a href="ihe.html">IHE Relationships</a>
+  </li>
+  <li>
+    <a href="lifecycle.html">Lifecycle</a>
+  </li>
+  <li>
+    <a href="terminology.html">Terminology</a>
+  </li>
+  <li>
+    <a href="public-health.html">Public Health</a>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Clinical Use Case</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">SchoolVisionScreening - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Clinical Use Case</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<h3 id="clinical-use-case-school-vision-screening">Clinical Use Case: School Vision Screening</h3>
+
+<hr />
+
+<h4 id="problem-statement">Problem Statement</h4>
+
+<p>Vision problems in schoolchildren go undetected until they affect learning. The school nurse screens visual acuity per eye during the school year. Children with abnormal results must be referred to an ophthalmologist, the result must reach the primary care team for the health record, and parents must be notified. Today this is paper-based and referrals get lost — there is no feedback loop from ophthalmology back to the school or primary care.</p>
+
+<hr />
+
+<h4 id="users-roles-and-departments">Users, Roles, and Departments</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Role</th>
+      <th>Department / Organisation</th>
+      <th>What they do</th>
+      <th>What they see</th>
+      <th>What they decide</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>School Nurse</td>
+      <td>School Health Service</td>
+      <td>Screens visual acuity, records results, generates referral letter, notifies parent, tracks referrals, follows up on overdue/absent/incomplete/DNA</td>
+      <td>Child identity, screening data, referral status, ophthalmology feedback</td>
+      <td>Pass / refer per eye; whether to refer; re-screening; re-referral; closure</td>
+    </tr>
+    <tr>
+      <td>Child (Patient)</td>
+      <td>School</td>
+      <td>Participates in screening</td>
+      <td>Own experience</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Parent / Guardian</td>
+      <td>Family</td>
+      <td>Receives notification, consents (opt-out), takes child to ophthalmologist, responds to nurse follow-up</td>
+      <td>Screening result letter or referral letter</td>
+      <td>Whether to opt out; whether to attend referral; whether to accept re-referral</td>
+    </tr>
+    <tr>
+      <td>Ophthalmologist</td>
+      <td>Eye Clinic / Hospital</td>
+      <td>Performs assessment, provides diagnosis, prescription, follow-up plan</td>
+      <td>Referral letter, child identity, screening results</td>
+      <td>Diagnosis, prescription, follow-up plan, outcome (seen / DNA)</td>
+    </tr>
+    <tr>
+      <td>Primary Care Team</td>
+      <td>General Practice / Community Health</td>
+      <td>Receives screening result and ophthalmology assessment for health record</td>
+      <td>Full screening + assessment data (when received)</td>
+      <td>Clinical record continuity, future care decisions</td>
+    </tr>
+    <tr>
+      <td>Teacher</td>
+      <td>School</td>
+      <td>Receives accommodation notice only</td>
+      <td>Accommodation (glasses needed, front seat) — never acuity values</td>
+      <td>Classroom seating, awareness of needs</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h4 id="data-flow-summary">Data Flow Summary</h4>
+
+<h5 id="screening-nurse--record">Screening (Nurse → Record)</h5>
+<ul>
+  <li><strong>Input:</strong> Child identity (name, DOB, school roll number, grade/class), screening date, screener name, test used (Snellen 6m / Tumbling E / Lea symbols), right eye acuity, left eye acuity</li>
+  <li><strong>Decision logic:</strong> Pass if ≥6/9 each eye; Refer if ≤6/12 either eye OR ≥2 line difference between eyes</li>
+  <li><strong>Outcomes:</strong>
+    <ul>
+      <li><strong>Pass</strong> → parent notification (pass letter), record held by nurse</li>
+      <li><strong>Refer</strong> → referral path</li>
+      <li><strong>Absent</strong> → re-screen within 2 weeks same school year; if still absent → record as missed, notify parent, do not refer to primary care</li>
+      <li><strong>Incomplete</strong> (e.g., uncooperative, one eye only) → record as incomplete with reason, re-screen within 2 weeks; if 2nd attempt still incomplete → direct referral to ophthalmology with partial result noted</li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="referral-nurse--parent--ophthalmologist">Referral (Nurse → Parent → Ophthalmologist)</h5>
+<ul>
+  <li>Referral letter printed, given to parent, copy retained with screening record in school file</li>
+  <li>Carries: child name, DOB, school/grade, screening date, acuity per eye, test used, reason for referral, screener name/contact</li>
+  <li>Parent may <strong>decline referral</strong> → primary care still receives screening result; decline recorded with reason; referral not sent</li>
+  <li>Nurse tracks referral sent date; expected turnaround <strong>4 weeks</strong> from referral to assessment return</li>
+  <li>If no return in 4 weeks → nurse contacts parent to check appointment status, re-issues referral if lost</li>
+</ul>
+
+<h5 id="ophthalmology-assessment-ophthalmologist--parent--school-nurse--primary-care">Ophthalmology Assessment (Ophthalmologist → Parent → School Nurse / Primary Care)</h5>
+<ul>
+  <li><strong>Output:</strong> Diagnosis (myopia, hyperopia, astigmatism, amblyopia, etc.), refractive prescription, follow-up plan (review interval, treatment e.g. patching), outcome (seen / did not attend / DNA)</li>
+  <li><strong>DNA outcome:</strong> nurse contacts parent, offers <strong>one re-referral</strong> with new appointment; if child does not attend twice → close referral as DNA, notify primary care</li>
+  <li><strong>Desired flow back:</strong>
+    <ul>
+      <li>To school nurse: diagnosis + prescription summary (for accommodation: glasses, front seat)</li>
+      <li>To primary care team: full assessment for health record</li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="primary-care-receive">Primary Care Receive</h5>
+<ul>
+  <li>Receives: screening result (pass/refer/absent/incomplete/declined) + ophthalmology assessment when available</li>
+  <li>Entered in child's health record</li>
+</ul>
+
+<h5 id="teacher-accommodation">Teacher Accommodation</h5>
+<ul>
+  <li>Generated by nurse from ophthalmology feedback when received</li>
+  <li>Contains only: accommodation needed (glasses, front seat) — never acuity values or diagnosis detail</li>
+</ul>
+
+<hr />
+
+<h4 id="consent-and-legal-basis">Consent and Legal Basis</h4>
+
+<ul>
+  <li><strong>Consent model:</strong> opt-out at start of school year (parents informed, can decline screening)</li>
+  <li><strong>No signed consent per child</strong></li>
+  <li><strong>Referral consent:</strong> separate from screening opt-out; parent may decline referral after screening</li>
+  <li><strong>No legal mandate for reporting</strong></li>
+  <li><strong>Program runs under school health program</strong></li>
+  <li><strong>Opt-out is revocable mid-year</strong> — parent can change mind at any time; statusHistory tracks all changes</li>
+</ul>
+
+<hr />
+
+<h4 id="data-governance">Data Governance</h4>
+
+<ul>
+  <li>Screening record held by school nurse</li>
+  <li>Referral letter copy retained with screening record for school year, then archived together under school records policy</li>
+  <li>Teachers see only accommodation (glasses needed, front seat) — never acuity values</li>
+  <li>Records kept for school year, then archived under school records policy</li>
+  <li><strong>No real patient data in this design</strong> — synthetic data only for examples and tests</li>
+  <li><strong>Demographic matching</strong> (name, DOB, address) is primary PIXm strategy; national health ID optional supplementary identifier</li>
+</ul>
+
+<hr />
+
+<h4 id="success-criteria-concrete-examples">Success Criteria (Concrete Examples)</h4>
+
+<h5 id="normal-referral-path">Normal Referral Path</h5>
+<p><strong>Scenario:</strong> 8-year-old child, Grade 3, screened 2026-11-15</p>
+<ul>
+  <li>Right eye: 6/12, Left eye: 6/9 → Refer (right eye ≤6/12)</li>
+  <li>Nurse records screening, prints referral letter, sends parent notification</li>
+  <li>Parent takes child to ophthalmologist 2026-11-22</li>
+  <li>Ophthalmologist diagnoses: mild myopia OD, prescribes -1.00 DS OD, follow-up 12 months</li>
+  <li>School nurse receives: "Myopia OD, glasses prescribed" → teacher informed: "needs glasses, front seat"</li>
+  <li>Primary care receives: full assessment letter → entered in child's health record</li>
+  <li>All steps traceable, no paper lost, nurse knows child was seen</li>
+</ul>
+
+<h5 id="absent-child">Absent Child</h5>
+<p>Child absent 2026-11-15 → re-screen scheduled 2026-11-22 → child present, screened normally</p>
+
+<h5 id="incomplete-screening">Incomplete Screening</h5>
+<p>Child uncooperative, only left eye tested (6/9) → recorded incomplete, re-screen 2026-11-22 → still uncooperative → direct referral with "left eye 6/9, right eye untestable" noted</p>
+
+<h5 id="dna-did-not-attend">DNA (Did Not Attend)</h5>
+<p>Referred 2026-11-15, no return by 2026-12-13 → nurse contacts parent → re-referral 2026-12-20 → child DNA again 2027-01-10 → close as DNA, notify primary care</p>
+
+<h5 id="decline-referral">Decline Referral</h5>
+<p>Screened 2026-11-15, refer indicated → parent declines referral → screening result + decline reason sent to primary care; no referral letter sent</p>
+
+<h5 id="end-of-year-missed">End-of-Year Missed</h5>
+<p>Child has pending re-screen at end of school year → recorded as missed, parent notified, primary care notified for follow-up outside school program</p>
+
+<hr />
+
+<h4 id="out-of-scope">Out of Scope</h4>
+
+<ul>
+  <li>Real patient data, production EHR access, clinical decision support</li>
+  <li>Direct integration with specific EHR vendor systems (design for interoperability, not a specific product)</li>
+  <li>Billing, insurance, or financial workflows</li>
+  <li>Population-level analytics or dashboards</li>
+  <li>Screening of children outside school setting</li>
+</ul>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026 <a style="color:var(--footer-hyperlink-text-color)" href=""></a>.  Package school-vision-screening#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Nov 21, 2026 14:59+0000">2026-11-21</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

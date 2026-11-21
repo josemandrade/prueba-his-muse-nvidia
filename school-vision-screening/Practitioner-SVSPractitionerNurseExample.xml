@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="SVSPractitionerNurseExample"/>
+  <meta>
+    <profile value="https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-practitioner"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Practitioner SVSPractitionerNurseExample</b></p><a name="SVSPractitionerNurseExample"> </a><a name="hcSVSPractitionerNurseExample"> </a><div style="display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-svs-practitioner.html">School Vision Screening Practitioner</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Carmen Ruiz (official) (urn:oid:1.2.3.4.5.employee#EMP-2026-015)</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Other Id (see the one above)">Other Id:</td><td colspan="3">Provider number/LIC-ENF-2026-004521</td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Practitioner">Contact Detail</td><td colspan="3"><a href="tel:+34-91-555-0100">+34-91-555-0100</a></td></tr></table></div>
+  </text>
+  <identifier>
+    <system value="urn:oid:1.2.3.4.5.employee"/>
+    <value value="EMP-2026-015"/>
+  </identifier>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="PRN"/>
+        <display value="Provider number"/>
+      </coding>
+    </type>
+    <system value="urn:oid:1.2.3.4.5.license"/>
+    <value value="LIC-ENF-2026-004521"/>
+  </identifier>
+  <name>
+    <use value="official"/>
+    <family value="Ruiz"/>
+    <given value="Carmen"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="+34-91-555-0100"/>
+    <use value="work"/>
+  </telecom>
+</Practitioner>

@@ -1,0 +1,94 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/Patient/SVSPatientExample> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "SVSPatientExample"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-patient" ;
+       fhir:index 0 ;
+       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-patient>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient SVSPatientExample</b></p><a name=\"SVSPatientExample\"> </a><a name=\"hcSVSPatientExample\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-svs-patient.html\">School Vision Screening Patient (Child)</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Maria Isabel Gonzalez (official) Female, DoB: 2018-03-15 ( PIXm Cross-reference: PIXM-987654321)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Other Ids (see the one above)\">Other Ids:</td><td colspan=\"3\"><ul><li><code>urn:oid:1.2.3.4.5.school-roll</code>/SCL-2026-0042</li><li>National unique individual identifier/NHS-1234567890 (use: official)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\"><ul><li><a href=\"tel:+34-91-555-0123\">+34-91-555-0123</a></li><li>Calle Principal 123 Madrid 28001 ES (home)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>Managing Organization: <a href=\"Organization-SVSOrganizationSchoolExample.html\">Colegio Publico San Isidro (Educational facility) (urn:oid:1.2.3.4.5.school-id#SCH-28079-01)</a></li></ul></td></tr></table></div>"
+  ] ;
+  fhir:Patient.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.3.4.5.school-roll" ] ;
+     fhir:Identifier.value [ fhir:value "SCL-2026-0042" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Identifier.use [ fhir:value "official" ] ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ] ;
+         fhir:Coding.code [ fhir:value "NI" ] ;
+         fhir:Coding.display [ fhir:value "National unique individual identifier" ]
+       ]
+     ] ;
+     fhir:Identifier.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ] ;
+     fhir:Identifier.value [ fhir:value "NHS-1234567890" ]
+  ], [
+     fhir:index 2 ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ] ;
+         fhir:Coding.code [ fhir:value "PIXM" ] ;
+         fhir:Coding.display [ fhir:value "PIXm Cross-reference" ]
+       ]
+     ] ;
+     fhir:Identifier.system [ fhir:value "urn:ihe:pixm:cross-ref" ] ;
+     fhir:Identifier.value [ fhir:value "PIXM-987654321" ]
+  ] ;
+  fhir:Patient.name [
+     fhir:index 0 ;
+     fhir:HumanName.use [ fhir:value "official" ] ;
+     fhir:HumanName.family [ fhir:value "Gonzalez" ] ;
+     fhir:HumanName.given [
+       fhir:value "Maria" ;
+       fhir:index 0
+     ], [
+       fhir:value "Isabel" ;
+       fhir:index 1
+     ]
+  ] ;
+  fhir:Patient.telecom [
+     fhir:index 0 ;
+     fhir:ContactPoint.system [ fhir:value "phone" ] ;
+     fhir:ContactPoint.value [ fhir:value "+34-91-555-0123" ] ;
+     fhir:ContactPoint.use [ fhir:value "home" ]
+  ] ;
+  fhir:Patient.gender [ fhir:value "female"] ;
+  fhir:Patient.birthDate [ fhir:value "2018-03-15"^^xsd:date] ;
+  fhir:Patient.address [
+     fhir:index 0 ;
+     fhir:Address.use [ fhir:value "home" ] ;
+     fhir:Address.line [
+       fhir:value "Calle Principal 123" ;
+       fhir:index 0
+     ] ;
+     fhir:Address.city [ fhir:value "Madrid" ] ;
+     fhir:Address.postalCode [ fhir:value "28001" ] ;
+     fhir:Address.country [ fhir:value "ES" ]
+  ] ;
+  fhir:Patient.managingOrganization [
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/Organization/SVSOrganizationSchoolExample> ;
+     fhir:Reference.reference [ fhir:value "Organization/SVSOrganizationSchoolExample" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/Patient/SVSPatientExample.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

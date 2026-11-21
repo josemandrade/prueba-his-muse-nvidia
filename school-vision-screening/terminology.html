@@ -1,0 +1,993 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Terminology -  v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"10"}
+    h3,h4,h5,h6{--heading-prefix:"10"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - CI Build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="usecase.html">Use Case</a>
+  </li>
+  <li>
+    <a href="process.html">Process</a>
+  </li>
+  <li>
+    <a href="resources.html">Resources</a>
+  </li>
+  <li>
+    <a href="sequences.html">Sequences</a>
+  </li>
+  <li>
+    <a href="profiles.html">Profiles</a>
+  </li>
+  <li>
+    <a href="operations.html">Operations</a>
+  </li>
+  <li>
+    <a href="ihe.html">IHE Relationships</a>
+  </li>
+  <li>
+    <a href="lifecycle.html">Lifecycle</a>
+  </li>
+  <li>
+    <a href="terminology.html">Terminology</a>
+  </li>
+  <li>
+    <a href="public-health.html">Public Health</a>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Terminology</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">SchoolVisionScreening - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Terminology</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<h3 id="terminology">Terminology</h3>
+
+<hr />
+
+<h4 id="terminology-versions">Terminology Versions</h4>
+
+<p>All terminology versions are pinned from the terminology server (<code class="language-plaintext highlighter-rouge">https://tx.hl7chile.cl/r4</code> or equivalent) at the time of IG build.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Terminology</th>
+      <th>Version</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>SNOMED CT</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">http://snomed.info/sct/21000325107/version/20260315</code></td>
+      <td>International Edition, 2026-03-15</td>
+    </tr>
+    <tr>
+      <td><strong>LOINC</strong></td>
+      <td>2.76</td>
+      <td>Terminology server</td>
+    </tr>
+    <tr>
+      <td><strong>UCUM</strong></td>
+      <td>2.0.1</td>
+      <td>R4 UCUM expansion</td>
+    </tr>
+    <tr>
+      <td><strong>ICD-10</strong></td>
+      <td>WHO 2024</td>
+      <td>WHO</td>
+    </tr>
+    <tr>
+      <td><strong>HL7 v2-0131</strong> (Relationship)</td>
+      <td>R4</td>
+      <td>HL7</td>
+    </tr>
+    <tr>
+      <td><strong>HL7 v2-0203</strong> (Identifier Type)</td>
+      <td>R4</td>
+      <td>HL7</td>
+    </tr>
+    <tr>
+      <td><strong>HL7 v2-0074</strong> (Diagnostic Service)</td>
+      <td>R4</td>
+      <td>HL7</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h4 id="standard-code-systems-used">Standard Code Systems Used</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code System</th>
+      <th>Canonical URL</th>
+      <th>Purpose in This IG</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SNOMED CT</td>
+      <td><code class="language-plaintext highlighter-rouge">http://snomed.info/sct</code></td>
+      <td>Diagnoses (myopia, hyperopia, etc.), body sites, procedures</td>
+    </tr>
+    <tr>
+      <td>LOINC</td>
+      <td><code class="language-plaintext highlighter-rouge">http://loinc.org</code></td>
+      <td>Observation codes (acuity, refraction), document types, panels</td>
+    </tr>
+    <tr>
+      <td>UCUM</td>
+      <td><code class="language-plaintext highlighter-rouge">http://unitsofmeasure.org</code></td>
+      <td>Units for refraction (diopters), Ratios for Snellen acuity</td>
+    </tr>
+    <tr>
+      <td>HL7 v2-0131</td>
+      <td><code class="language-plaintext highlighter-rouge">http://terminology.hl7.org/CodeSystem/v2-0131</code></td>
+      <td>Relationship codes (MTH, FTH, GRD)</td>
+    </tr>
+    <tr>
+      <td>HL7 v2-0203</td>
+      <td><code class="language-plaintext highlighter-rouge">http://terminology.hl7.org/CodeSystem/v2-0203</code></td>
+      <td>Identifier types (SB, NI, PRN, PIXM)</td>
+    </tr>
+    <tr>
+      <td>HL7 v2-0074</td>
+      <td><code class="language-plaintext highlighter-rouge">http://terminology.hl7.org/CodeSystem/v2-0074</code></td>
+      <td>Diagnostic service category (OP)</td>
+    </tr>
+    <tr>
+      <td>ObsInterp</td>
+      <td><code class="language-plaintext highlighter-rouge">http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation</code></td>
+      <td>A (Abnormal), N (Normal)</td>
+    </tr>
+    <tr>
+      <td>ConsentScope</td>
+      <td><code class="language-plaintext highlighter-rouge">http://terminology.hl7.org/CodeSystem/consentscope</code></td>
+      <td>screening</td>
+    </tr>
+    <tr>
+      <td>ConsentCategory</td>
+      <td><code class="language-plaintext highlighter-rouge">http://terminology.hl7.org/CodeSystem/consentcategorycodes</code></td>
+      <td>DENY</td>
+    </tr>
+    <tr>
+      <td>DocClass</td>
+      <td><code class="language-plaintext highlighter-rouge">http://terminology.hl7.org/CodeSystem/document-class</code></td>
+      <td>screening-report</td>
+    </tr>
+    <tr>
+      <td>FormatCode</td>
+      <td><code class="language-plaintext highlighter-rouge">http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode</code></td>
+      <td>application/fhir+json</td>
+    </tr>
+    <tr>
+      <td>TaskCode</td>
+      <td><code class="language-plaintext highlighter-rouge">http://hl7.org/fhir/CodeSystem/task-code</code></td>
+      <td>referral, referral-detail, assessment-report</td>
+    </tr>
+    <tr>
+      <td>ServiceRequestCategory</td>
+      <td><code class="language-plaintext highlighter-rouge">http://terminology.hl7.org/CodeSystem/service-request-category</code></td>
+      <td>referral</td>
+    </tr>
+    <tr>
+      <td>ObsCategory</td>
+      <td><code class="language-plaintext highlighter-rouge">http://terminology.hl7.org/CodeSystem/observation-category</code></td>
+      <td>vital-signs, diagnosis, exam</td>
+    </tr>
+    <tr>
+      <td>CommCategory</td>
+      <td><code class="language-plaintext highlighter-rouge">http://terminology.hl7.org/CodeSystem/communication-category</code></td>
+      <td>instruction</td>
+    </tr>
+    <tr>
+      <td>CarePlanCategory</td>
+      <td><code class="language-plaintext highlighter-rouge">http://terminology.hl7.org/CodeSystem/careplan-category</code></td>
+      <td>assess-plan</td>
+    </tr>
+    <tr>
+      <td>PractitionerRoleCode</td>
+      <td><code class="language-plaintext highlighter-rouge">http://terminology.hl7.org/CodeSystem/practitioner-role</code></td>
+      <td>(standard roles)</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h4 id="local-codesystems-defined-in-this-ig">Local CodeSystems (Defined in This IG)</h4>
+
+<h5 id="svsscreeningtestmethod">SVSScreeningTestMethod</h5>
+<p><strong>Canonical:</strong> <code class="language-plaintext highlighter-rouge">https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-screening-test-method</code></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Display</th>
+      <th>Definition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">snellen</code></td>
+      <td>Snellen 6m chart</td>
+      <td>Snellen chart at 6 metres</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">tumbling-e</code></td>
+      <td>Tumbling E optotypes</td>
+      <td>Tumbling E optotypes for children who cannot read letters</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">lea-symbols</code></td>
+      <td>Lea symbols</td>
+      <td>Lea symbols for pre-readers</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">other</code></td>
+      <td>Other method</td>
+      <td>Other screening method not listed</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>ValueSet:</strong> <code class="language-plaintext highlighter-rouge">SVSScreeningTestMethodVS</code> (<code class="language-plaintext highlighter-rouge">https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/ValueSet/svs-screening-test-method-vs</code>)</p>
+
+<hr />
+
+<h5 id="svsscreeningoutcome">SVSScreeningOutcome</h5>
+<p><strong>Canonical:</strong> <code class="language-plaintext highlighter-rouge">https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-screening-outcome</code></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Display</th>
+      <th>Definition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">pass</code></td>
+      <td>Pass</td>
+      <td>Visual acuity ≥6/9 in both eyes</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">refer</code></td>
+      <td>Refer</td>
+      <td>Visual acuity ≤6/12 in either eye OR ≥2 line difference between eyes</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">absent</code></td>
+      <td>Absent</td>
+      <td>Child was absent on screening day</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">incomplete</code></td>
+      <td>Incomplete</td>
+      <td>Screening could not be completed (uncooperative, one eye only)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>ValueSet:</strong> <code class="language-plaintext highlighter-rouge">SVSScreeningOutcomeVS</code> (<code class="language-plaintext highlighter-rouge">https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/ValueSet/svs-screening-outcome-vs</code>)</p>
+
+<hr />
+
+<h5 id="svsreferralreason">SVSReferralReason</h5>
+<p><strong>Canonical:</strong> <code class="language-plaintext highlighter-rouge">https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-referral-reason</code></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Display</th>
+      <th>Definition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">acuity-low</code></td>
+      <td>Acuity ≤6/12</td>
+      <td>Visual acuity 6/12 or worse in either eye</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">acuity-diff</code></td>
+      <td>Acuity difference ≥2 lines</td>
+      <td>Difference of two or more lines between eyes</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">incomplete-2nd</code></td>
+      <td>Incomplete after 2 attempts</td>
+      <td>Screening incomplete after two attempts with partial data</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>ValueSet:</strong> <code class="language-plaintext highlighter-rouge">SVSReferralReasonVS</code> (<code class="language-plaintext highlighter-rouge">https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/ValueSet/svs-referral-reason-vs</code>)</p>
+
+<hr />
+
+<h5 id="svsaccommodationtype">SVSAccommodationType</h5>
+<p><strong>Canonical:</strong> <code class="language-plaintext highlighter-rouge">https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-accommodation-type</code></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Display</th>
+      <th>Definition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">glasses</code></td>
+      <td>Glasses needed</td>
+      <td>Child requires prescription glasses</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">front-seat</code></td>
+      <td>Front seat</td>
+      <td>Child needs front row seating</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">both</code></td>
+      <td>Glasses and front seat</td>
+      <td>Child needs both glasses and front seat</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">other</code></td>
+      <td>Other accommodation</td>
+      <td>Other classroom accommodation</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>ValueSet:</strong> <code class="language-plaintext highlighter-rouge">SVSAccommodationTypeVS</code> (<code class="language-plaintext highlighter-rouge">https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/ValueSet/svs-accommodation-type-vs</code>)</p>
+
+<hr />
+
+<h5 id="svspractitionerrole">SVSPractitionerRole</h5>
+<p><strong>Canonical:</strong> <code class="language-plaintext highlighter-rouge">https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-practitioner-role</code></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Display</th>
+      <th>Definition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">school-nurse</code></td>
+      <td>School Nurse</td>
+      <td>Registered nurse conducting vision screening</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">service-lead</code></td>
+      <td>Service Lead</td>
+      <td>School health program lead / coordinator</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>ValueSet:</strong> <code class="language-plaintext highlighter-rouge">SVSPractitionerRoleVS</code> (<code class="language-plaintext highlighter-rouge">https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/ValueSet/svs-practitioner-role-vs</code>)</p>
+
+<hr />
+
+<h5 id="svsdocumenttype">SVSDocumentType</h5>
+<p><strong>Canonical:</strong> <code class="language-plaintext highlighter-rouge">https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-document-type</code></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Display</th>
+      <th>Definition</th>
+      <th>LOINC Code</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">screening-pass</code></td>
+      <td>Screening Pass</td>
+      <td>Vision screening result: pass (≥6/9 both eyes)</td>
+      <td>83700-8</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">screening-decline</code></td>
+      <td>Screening Decline</td>
+      <td>Vision screening result: parent declined referral</td>
+      <td>83700-8</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">screening-missed</code></td>
+      <td>Screening Missed</td>
+      <td>Vision screening not completed (2nd absent)</td>
+      <td>83700-8</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">assessment-full</code></td>
+      <td>Full Assessment</td>
+      <td>Complete ophthalmology assessment report</td>
+      <td>28626-8</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">referral-dna</code></td>
+      <td>Referral DNA</td>
+      <td>Referral closed: did not attend (2nd DNA)</td>
+      <td>11506-3</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">referral-rejected</code></td>
+      <td>Referral Rejected</td>
+      <td>Referral rejected by ophthalmology</td>
+      <td>11506-3</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">end-of-year-missed</code></td>
+      <td>End-of-Year Missed</td>
+      <td>Screening missed at end of school year (pending re-screen)</td>
+      <td>83700-8</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>ValueSet:</strong> <code class="language-plaintext highlighter-rouge">SVSDocumentTypeVS</code> (<code class="language-plaintext highlighter-rouge">https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/ValueSet/svs-document-type-vs</code>)</p>
+
+<hr />
+
+<h4 id="key-snomed-ct-codes-verified-2026-03-15-edition">Key SNOMED CT Codes (Verified 2026-03-15 Edition)</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Concept</th>
+      <th>SNOMED Code</th>
+      <th>Display</th>
+      <th>Used In</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Myopia</td>
+      <td>373124007</td>
+      <td>Myopia</td>
+      <td>Diagnosis</td>
+    </tr>
+    <tr>
+      <td>Hyperopia</td>
+      <td>13962005</td>
+      <td>Hyperopia</td>
+      <td>Diagnosis</td>
+    </tr>
+    <tr>
+      <td>Astigmatism</td>
+      <td>45337004</td>
+      <td>Astigmatism</td>
+      <td>Diagnosis</td>
+    </tr>
+    <tr>
+      <td>Amblyopia</td>
+      <td>26920007</td>
+      <td>Amblyopia</td>
+      <td>Diagnosis</td>
+    </tr>
+    <tr>
+      <td>Decreased visual acuity</td>
+      <td>416070007</td>
+      <td>Decreased visual acuity</td>
+      <td>Referral reasonCode</td>
+    </tr>
+    <tr>
+      <td>Anisometropia</td>
+      <td>267083005</td>
+      <td>Anisometropia</td>
+      <td>Referral reasonCode (acuity diff)</td>
+    </tr>
+    <tr>
+      <td>Referral to ophthalmologist</td>
+      <td>307924000</td>
+      <td>Referral to ophthalmologist</td>
+      <td>ServiceRequest.code</td>
+    </tr>
+    <tr>
+      <td>Right eye</td>
+      <td>363654007</td>
+      <td>Right eye</td>
+      <td>Observation.bodySite</td>
+    </tr>
+    <tr>
+      <td>Left eye</td>
+      <td>363655008</td>
+      <td>Left eye</td>
+      <td>Observation.bodySite</td>
+    </tr>
+    <tr>
+      <td>School nursing</td>
+      <td>408480009</td>
+      <td>School nursing</td>
+      <td>PractitionerRole.specialty</td>
+    </tr>
+    <tr>
+      <td>Ophthalmology</td>
+      <td>309474003</td>
+      <td>Ophthalmology</td>
+      <td>PractitionerRole.specialty</td>
+    </tr>
+    <tr>
+      <td>Patching therapy</td>
+      <td>712743006</td>
+      <td>Patching therapy</td>
+      <td>CarePlan.activity.code</td>
+    </tr>
+    <tr>
+      <td>Myopia follow-up</td>
+      <td>373124007</td>
+      <td>Myopia follow-up</td>
+      <td>CarePlan.activity.code</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h4 id="key-loinc-codes">Key LOINC Codes</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Concept</th>
+      <th>LOINC Code</th>
+      <th>Display</th>
+      <th>Used In</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Visual acuity screening panel</td>
+      <td>83700-8</td>
+      <td>Visual acuity screening panel</td>
+      <td>Observation.code (panel), DocumentReference.type</td>
+    </tr>
+    <tr>
+      <td>Visual acuity right eye</td>
+      <td>29474-1</td>
+      <td>Visual acuity right eye</td>
+      <td>Observation.code (member)</td>
+    </tr>
+    <tr>
+      <td>Visual acuity left eye</td>
+      <td>29473-3</td>
+      <td>Visual acuity left eye</td>
+      <td>Observation.code (member)</td>
+    </tr>
+    <tr>
+      <td>Sphere</td>
+      <td>29468-3</td>
+      <td>Sphere</td>
+      <td>Observation.component.code</td>
+    </tr>
+    <tr>
+      <td>Cylinder</td>
+      <td>29469-1</td>
+      <td>Cylinder</td>
+      <td>Observation.component.code</td>
+    </tr>
+    <tr>
+      <td>Axis</td>
+      <td>29470-9</td>
+      <td>Axis</td>
+      <td>Observation.component.code</td>
+    </tr>
+    <tr>
+      <td>Ophthalmology study</td>
+      <td>28626-8</td>
+      <td>Ophthalmology study</td>
+      <td>DiagnosticReport.code, DocumentReference.type</td>
+    </tr>
+    <tr>
+      <td>Referral note</td>
+      <td>11506-3</td>
+      <td>Referral note</td>
+      <td>DocumentReference.type (DNA, rejected)</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h4 id="ucum-units">UCUM Units</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Concept</th>
+      <th>UCUM Code</th>
+      <th>Display</th>
+      <th>Used In</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Meter</td>
+      <td>m</td>
+      <td>meter</td>
+      <td>Ratio numerator/denominator for Snellen</td>
+    </tr>
+    <tr>
+      <td>Diopter</td>
+      <td>D</td>
+      <td>diopter</td>
+      <td>Refraction sphere/cylinder</td>
+    </tr>
+    <tr>
+      <td>Degree</td>
+      <td>deg</td>
+      <td>degree</td>
+      <td>Refraction axis</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h4 id="binding-strengths">Binding Strengths</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Element</th>
+      <th>Binding Strength</th>
+      <th>ValueSet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Observation.code</code> (panel)</td>
+      <td>Required</td>
+      <td>LOINC 83700-8</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Observation.code</code> (right eye)</td>
+      <td>Required</td>
+      <td>LOINC 29474-1</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Observation.code</code> (left eye)</td>
+      <td>Required</td>
+      <td>LOINC 29473-3</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Observation.code</code> (diagnosis)</td>
+      <td>Required</td>
+      <td>SNOMED CT (Diagnosis hierarchy)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Observation.code</code> (refraction)</td>
+      <td>Required</td>
+      <td>LOINC 29474-1 / 29473-3</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Observation.component.code</code></td>
+      <td>Required</td>
+      <td>LOINC 29468-3, 29469-1, 29470-9</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Observation.valueRatio</code></td>
+      <td>Required</td>
+      <td>Ratio (numerator/denominator in meters)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Observation.valueQuantity</code> (refraction)</td>
+      <td>Required</td>
+      <td>UCUM (D, deg)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Observation.bodySite</code></td>
+      <td>Required</td>
+      <td>SNOMED CT (363654007, 363655008)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Observation.interpretation</code></td>
+      <td>Required</td>
+      <td><code class="language-plaintext highlighter-rouge">SVSAcuityInterpretationVS</code> (A, N)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ServiceRequest.reasonCode</code></td>
+      <td>Extensible</td>
+      <td><code class="language-plaintext highlighter-rouge">SVSReferralReasonVS</code> + SNOMED</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ServiceRequest.category</code></td>
+      <td>Required</td>
+      <td><code class="language-plaintext highlighter-rouge">referral</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Task.code</code></td>
+      <td>Extensible</td>
+      <td><code class="language-plaintext highlighter-rouge">referral</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DiagnosticReport.category</code></td>
+      <td>Extensible</td>
+      <td>HL7 v2-0074 OP</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DiagnosticReport.code</code></td>
+      <td>Required</td>
+      <td>LOINC 28626-8</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Observation.code</code> (refraction components)</td>
+      <td>Required</td>
+      <td>LOINC 29468-3, 29469-1, 29470-9</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Communication.category</code></td>
+      <td>Preferred</td>
+      <td><code class="language-plaintext highlighter-rouge">instruction</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Consent.scope</code></td>
+      <td>Required</td>
+      <td><code class="language-plaintext highlighter-rouge">screening</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Consent.category</code></td>
+      <td>Required</td>
+      <td><code class="language-plaintext highlighter-rouge">DENY</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DocumentReference.type</code></td>
+      <td>Required</td>
+      <td>LOINC (per documentType table)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DocumentReference.format</code></td>
+      <td>Required</td>
+      <td><code class="language-plaintext highlighter-rouge">application/fhir+json</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h4 id="unmapped-codes">Unmapped Codes</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Source</th>
+      <th>Reason Not Mapped</th>
+      <th>Local CodeSystem</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Test used (snellen/tumbling-e/lea)</td>
+      <td>No standard LOINC/SNOMED</td>
+      <td><code class="language-plaintext highlighter-rouge">SVSScreeningTestMethod</code></td>
+    </tr>
+    <tr>
+      <td>Screening outcome (pass/refer/absent/incomplete)</td>
+      <td>No standard ValueSet</td>
+      <td><code class="language-plaintext highlighter-rouge">SVSScreeningOutcome</code></td>
+    </tr>
+    <tr>
+      <td>Accommodation type</td>
+      <td>No standard ValueSet</td>
+      <td><code class="language-plaintext highlighter-rouge">SVSAccommodationType</code></td>
+    </tr>
+    <tr>
+      <td>Referral reason (incomplete-2nd)</td>
+      <td>Partially mapped</td>
+      <td><code class="language-plaintext highlighter-rouge">SVSReferralReason</code> (custom)</td>
+    </tr>
+    <tr>
+      <td>Parent decision (accept/decline)</td>
+      <td>No standard ValueSet</td>
+      <td>Local extension</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h4 id="terminology-server">Terminology Server</h4>
+
+<p><strong>Primary:</strong> <code class="language-plaintext highlighter-rouge">https://tx.hl7chile.cl/r4</code> (or equivalent national terminology server)</p>
+
+<p><strong>Expansion/Validation:</strong> All ValueSets expandable and validatable against the terminology server at build time.</p>
+
+<p><strong>SNOMED CT Edition:</strong> International Edition, <code class="language-plaintext highlighter-rouge">http://snomed.info/sct/21000325107/version/20260315</code></p>
+
+<p><strong>LOINC Version:</strong> 2.76 (as reported by terminology server)</p>
+
+<p><strong>UCUM Version:</strong> 2.0.1 (as in R4 UCUM expansion)</p>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026 <a style="color:var(--footer-hyperlink-text-color)" href=""></a>.  Package school-vision-screening#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Nov 21, 2026 14:59+0000">2026-11-21</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

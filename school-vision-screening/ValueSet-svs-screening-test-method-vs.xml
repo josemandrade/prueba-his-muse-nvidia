@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="svs-screening-test-method-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet svs-screening-test-method-vs</b></p><a name="svs-screening-test-method-vs"> </a><a name="hcsvs-screening-test-method-vs"> </a><ul><li>Include all codes defined in <a href="CodeSystem-svs-screening-test-method.html"><code>https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-screening-test-method</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.1.0</span></li></ul></div>
+  </text>
+  <url value="https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/ValueSet/svs-screening-test-method-vs"/>
+  <version value="0.1.0"/>
+  <name value="SVSScreeningTestMethodVS"/>
+  <title value="School Vision Screening Test Methods ValueSet"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-11-21T14:59:50+00:00"/>
+  <description value="Allowed test methods for school vision screening"/>
+  <compose>
+    <include>
+      <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-screening-test-method"/>
+    </include>
+  </compose>
+</ValueSet>

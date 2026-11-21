@@ -1,0 +1,36 @@
+{
+  "resourceType" : "RelatedPerson",
+  "id" : "SVSRelatedPersonExample",
+  "meta" : {
+    "profile" : ["https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-related-person"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: RelatedPerson SVSRelatedPersonExample</b></p><a name=\"SVSRelatedPersonExample\"> </a><a name=\"hcSVSRelatedPersonExample\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-svs-related-person.html\">School Vision Screening Parent/Guardian</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Ana Maria Gonzalez (official) - Mother (urn:oid:1.2.3.4.5.guardian#GRD-2026-0042)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"The patient this person is related to\">Patient:</td><td colspan=\"3\"><a href=\"Patient-SVSPatientExample.html\">Maria Isabel Gonzalez (official) Female, DoB: 2018-03-15 ( PIXm Cross-reference: PIXM-987654321)</a></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The nature of the relationship between the patient and the related person\">Relationship:</td><td colspan=\"3\"><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0131 MTH}\">Mother</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Related Person\">Contact Detail</td><td colspan=\"3\"><a href=\"tel:+34-91-555-0123\">+34-91-555-0123</a></td></tr></table></div>"
+  },
+  "identifier" : [{
+    "system" : "urn:oid:1.2.3.4.5.guardian",
+    "value" : "GRD-2026-0042"
+  }],
+  "patient" : {
+    "reference" : "Patient/SVSPatientExample"
+  },
+  "relationship" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0131",
+      "code" : "MTH",
+      "display" : "Mother"
+    }]
+  }],
+  "name" : [{
+    "use" : "official",
+    "family" : "Gonzalez",
+    "given" : ["Ana",
+    "Maria"]
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "+34-91-555-0123",
+    "use" : "home"
+  }]
+}

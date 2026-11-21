@@ -1,0 +1,238 @@
+[{
+  "id" : "svs-accommodation-type",
+  "type" : "CodeSystem",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-accommodation-type",
+  "version" : "0.1.0",
+  "name" : "SVSAccommodationType"
+},
+{
+  "id" : "svs-document-type",
+  "type" : "CodeSystem",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-document-type",
+  "version" : "0.1.0",
+  "name" : "SVSDocumentType"
+},
+{
+  "id" : "svs-practitioner-role",
+  "type" : "CodeSystem",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-practitioner-role",
+  "version" : "0.1.0",
+  "name" : "SVSPractitionerRoleCS"
+},
+{
+  "id" : "svs-referral-reason",
+  "type" : "CodeSystem",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-referral-reason",
+  "version" : "0.1.0",
+  "name" : "SVSReferralReason"
+},
+{
+  "id" : "svs-screening-outcome",
+  "type" : "CodeSystem",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-screening-outcome",
+  "version" : "0.1.0",
+  "name" : "SVSScreeningOutcome"
+},
+{
+  "id" : "svs-screening-test-method",
+  "type" : "CodeSystem",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-screening-test-method",
+  "version" : "0.1.0",
+  "name" : "SVSScreeningTestMethod"
+},
+{
+  "id" : "school-vision-screening",
+  "type" : "ImplementationGuide",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/ImplementationGuide/school-vision-screening",
+  "version" : "0.1.0",
+  "name" : "SchoolVisionScreening"
+},
+{
+  "id" : "svs-care-plan-follow-up",
+  "type" : "StructureDefinition",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-care-plan-follow-up",
+  "version" : "0.1.0",
+  "name" : "SVSCarePlanFollowUp"
+},
+{
+  "id" : "svs-communication-accommodation",
+  "type" : "StructureDefinition",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-communication-accommodation",
+  "version" : "0.1.0",
+  "name" : "SVSCommunicationAccommodation"
+},
+{
+  "id" : "svs-consent-opt-out",
+  "type" : "StructureDefinition",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-consent-opt-out",
+  "version" : "0.1.0",
+  "name" : "SVSConsentOptOut"
+},
+{
+  "id" : "svs-diagnostic-report-assessment",
+  "type" : "StructureDefinition",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-diagnostic-report-assessment",
+  "version" : "0.1.0",
+  "name" : "SVSDiagnosticReportAssessment"
+},
+{
+  "id" : "svs-document-reference-ip4",
+  "type" : "StructureDefinition",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-document-reference-ip4",
+  "version" : "0.1.0",
+  "name" : "SVSDocumentReferenceIP4"
+},
+{
+  "id" : "svs-list-primary-care-documents",
+  "type" : "StructureDefinition",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-list-primary-care-documents",
+  "version" : "0.1.0",
+  "name" : "SVSListPrimaryCareDocuments"
+},
+{
+  "id" : "svs-observation-diagnosis",
+  "type" : "StructureDefinition",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-observation-diagnosis",
+  "version" : "0.1.0",
+  "name" : "SVSObservationDiagnosis"
+},
+{
+  "id" : "svs-observation-left-eye-acuity",
+  "type" : "StructureDefinition",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-observation-left-eye-acuity",
+  "version" : "0.1.0",
+  "name" : "SVSObservationLeftEyeAcuity"
+},
+{
+  "id" : "svs-observation-refraction-od",
+  "type" : "StructureDefinition",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-observation-refraction-od",
+  "version" : "0.1.0",
+  "name" : "SVSObservationRefractionOD"
+},
+{
+  "id" : "svs-observation-refraction-os",
+  "type" : "StructureDefinition",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-observation-refraction-os",
+  "version" : "0.1.0",
+  "name" : "SVSObservationRefractionOS"
+},
+{
+  "id" : "svs-observation-right-eye-acuity",
+  "type" : "StructureDefinition",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-observation-right-eye-acuity",
+  "version" : "0.1.0",
+  "name" : "SVSObservationRightEyeAcuity"
+},
+{
+  "id" : "svs-observation-screening-panel",
+  "type" : "StructureDefinition",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-observation-screening-panel",
+  "version" : "0.1.0",
+  "name" : "SVSObservationScreeningPanel"
+},
+{
+  "id" : "svs-organization",
+  "type" : "StructureDefinition",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-organization",
+  "version" : "0.1.0",
+  "name" : "SVSOrganization"
+},
+{
+  "id" : "svs-patient",
+  "type" : "StructureDefinition",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-patient",
+  "version" : "0.1.0",
+  "name" : "SVSPatient"
+},
+{
+  "id" : "svs-practitioner",
+  "type" : "StructureDefinition",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-practitioner",
+  "version" : "0.1.0",
+  "name" : "SVSPractitioner"
+},
+{
+  "id" : "svs-practitioner-role",
+  "type" : "StructureDefinition",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-practitioner-role",
+  "version" : "0.1.0",
+  "name" : "SVSPractitionerRole"
+},
+{
+  "id" : "svs-questionnaire-response-screening",
+  "type" : "StructureDefinition",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-questionnaire-response-screening",
+  "version" : "0.1.0",
+  "name" : "SVSQuestionnaireResponseScreening"
+},
+{
+  "id" : "svs-related-person",
+  "type" : "StructureDefinition",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-related-person",
+  "version" : "0.1.0",
+  "name" : "SVSRelatedPerson"
+},
+{
+  "id" : "svs-service-request-referral",
+  "type" : "StructureDefinition",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-service-request-referral",
+  "version" : "0.1.0",
+  "name" : "SVSServiceRequestReferral"
+},
+{
+  "id" : "svs-task-referral-tracking",
+  "type" : "StructureDefinition",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-task-referral-tracking",
+  "version" : "0.1.0",
+  "name" : "SVSTaskReferralTracking"
+},
+{
+  "id" : "svs-accommodation-type-vs",
+  "type" : "ValueSet",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/ValueSet/svs-accommodation-type-vs",
+  "version" : "0.1.0",
+  "name" : "SVSAccommodationTypeVS"
+},
+{
+  "id" : "svs-acuity-interpretation-vs",
+  "type" : "ValueSet",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/ValueSet/svs-acuity-interpretation-vs",
+  "version" : "0.1.0",
+  "name" : "SVSAcuityInterpretationVS"
+},
+{
+  "id" : "svs-document-type-vs",
+  "type" : "ValueSet",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/ValueSet/svs-document-type-vs",
+  "version" : "0.1.0",
+  "name" : "SVSDocumentTypeVS"
+},
+{
+  "id" : "svs-practitioner-role-vs",
+  "type" : "ValueSet",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/ValueSet/svs-practitioner-role-vs",
+  "version" : "0.1.0",
+  "name" : "SVSPractitionerRoleVS"
+},
+{
+  "id" : "svs-referral-reason-vs",
+  "type" : "ValueSet",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/ValueSet/svs-referral-reason-vs",
+  "version" : "0.1.0",
+  "name" : "SVSReferralReasonVS"
+},
+{
+  "id" : "svs-screening-outcome-vs",
+  "type" : "ValueSet",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/ValueSet/svs-screening-outcome-vs",
+  "version" : "0.1.0",
+  "name" : "SVSScreeningOutcomeVS"
+},
+{
+  "id" : "svs-screening-test-method-vs",
+  "type" : "ValueSet",
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/ValueSet/svs-screening-test-method-vs",
+  "version" : "0.1.0",
+  "name" : "SVSScreeningTestMethodVS"
+}]

@@ -1,0 +1,427 @@
+SchoolVisionScreening : Validation Results
+=========================================
+
+err = 52, warn = 72, info = 35, broken links = 44
+$--
+Generated $--. FHIR version $-- for school-vision-screening#$-- (canonical = https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening)
+ Build Errors : 45 / 21 / 0
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/CarePlan-SVSCarePlanFollowUpExample : 3 / 2 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/CodeSystem-svs-accommodation-type : 0 / 1 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/CodeSystem-svs-document-type : 0 / 1 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/CodeSystem-svs-practitioner-role : 0 / 1 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/CodeSystem-svs-referral-reason : 0 / 1 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/CodeSystem-svs-screening-outcome : 0 / 1 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/CodeSystem-svs-screening-test-method : 0 / 2 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/DiagnosticReport-SVSDiagnosticReportAssessmentExample : 4 / 1 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/DocumentReference-SVSDocumentReferenceScreeningPassExample : 3 / 2 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/Encounter-SVSEncounterScreeningExample : 1 / 2 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/ImplementationGuide-school-vision-screening : 2 / 1 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/List-SVSListPrimaryCareDocumentsExample : 1 / 1 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/Observation-SVSObservationDiagnosisExample : 5 / 2 / 3
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/Observation-SVSObservationLeftEyeAcuityReferExample : 3 / 2 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/Observation-SVSObservationRefractionODExample : 4 / 2 / 3
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/Observation-SVSObservationRefractionOSExample : 4 / 2 / 3
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/Observation-SVSObservationRightEyeAcuityReferExample : 3 / 2 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/Observation-SVSObservationScreeningPanelReferExample : 2 / 1 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/Organization-SVSOrganizationClinicExample : 1 / 1 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/Organization-SVSOrganizationPrimaryCareExample : 1 / 1 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/Organization-SVSOrganizationSchoolExample : 2 / 1 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/Organization-SVSOrganizationSchoolHealthServiceExample : 2 / 1 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/Patient-SVSPatientExample : 2 / 2 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/Practitioner-SVSPractitionerNurseExample : 2 / 2 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/RelatedPerson-SVSRelatedPersonExample : 2 / 1 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/ServiceRequest-SVSServiceRequestReferralExample : 4 / 3 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/StructureDefinition-svs-care-plan-follow-up : 0 / 0 / 3
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/StructureDefinition-svs-communication-accommodation : 0 / 1 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/StructureDefinition-svs-consent-opt-out : 0 / 1 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/StructureDefinition-svs-diagnostic-report-assessment : 0 / 0 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/StructureDefinition-svs-document-reference-ip4 : 0 / 0 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/StructureDefinition-svs-list-primary-care-documents : 0 / 0 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/StructureDefinition-svs-observation-diagnosis : 0 / 0 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/StructureDefinition-svs-observation-left-eye-acuity : 0 / 0 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/StructureDefinition-svs-observation-refraction-od : 0 / 0 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/StructureDefinition-svs-observation-refraction-os : 0 / 0 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/StructureDefinition-svs-observation-right-eye-acuity : 0 / 0 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/StructureDefinition-svs-observation-screening-panel : 0 / 0 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/StructureDefinition-svs-organization : 0 / 0 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/StructureDefinition-svs-patient : 0 / 0 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/StructureDefinition-svs-practitioner : 0 / 0 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/StructureDefinition-svs-practitioner-role : 0 / 1 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/StructureDefinition-svs-questionnaire-response-screening : 0 / 1 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/StructureDefinition-svs-related-person : 0 / 0 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/StructureDefinition-svs-service-request-referral : 0 / 0 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/StructureDefinition-svs-task-referral-tracking : 0 / 1 / 2
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/ValueSet-svs-accommodation-type-vs : 0 / 1 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/ValueSet-svs-acuity-interpretation-vs : 0 / 1 / 3
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/ValueSet-svs-document-type-vs : 0 / 1 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/ValueSet-svs-practitioner-role-vs : 0 / 1 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/ValueSet-svs-referral-reason-vs : 0 / 1 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/ValueSet-svs-screening-outcome-vs : 0 / 1 / 1
+ /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/fsh-generated/resources/ValueSet-svs-screening-test-method-vs : 0 / 1 / 1
+</table>
+
+== n/a ==
+ERROR: ImplementationGuide.definition.parameter[25].value: Supressed messages file not found
+WARNING: ImplementationGuide.dependency[2].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/SVSObservationDiagnosisExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CarePlan/SVSCarePlanFollowUpExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/SVSObservationLeftEyeAcuityReferExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/SVSObservationRefractionOSExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource List/SVSListPrimaryCareDocumentsExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/SVSObservationRightEyeAcuityReferExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/SVSObservationRefractionODExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Encounter/SVSEncounterScreeningExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: StructureDefinition-svs-care-plan-follow-up-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 254, column 502: The link 'http://hl7.org/fhir/workflow' for "Workflow Pattern" cannot be resolved
+ERROR: StructureDefinition-svs-care-plan-follow-up-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 254, column 793: The link 'http://hl7.org/fhir/fivews' for "FiveWs Pattern Mapping" cannot be resolved
+ERROR: StructureDefinition-svs-communication-accommodation-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 244, column 510: The link 'http://hl7.org/fhir/workflow' for "Workflow Pattern" cannot be resolved
+ERROR: StructureDefinition-svs-communication-accommodation-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 244, column 669: The link 'http://hl7.org/fhir/fivews' for "FiveWs Pattern Mapping" cannot be resolved
+ERROR: StructureDefinition-svs-consent-opt-out-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 244, column 498: The link 'http://hl7.org/fhir/workflow' for "Workflow Pattern" cannot be resolved
+ERROR: StructureDefinition-svs-consent-opt-out-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 244, column 924: The link 'http://hl7.org/fhir/fivews' for "FiveWs Pattern Mapping" cannot be resolved
+ERROR: StructureDefinition-svs-diagnostic-report-assessment-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 254, column 511: The link 'http://hl7.org/fhir/workflow' for "Workflow Pattern" cannot be resolved
+ERROR: StructureDefinition-svs-diagnostic-report-assessment-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 254, column 937: The link 'http://hl7.org/fhir/fivews' for "FiveWs Pattern Mapping" cannot be resolved
+ERROR: StructureDefinition-svs-document-reference-ip4-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 254, column 505: The link 'http://hl7.org/fhir/workflow' for "Workflow Pattern" cannot be resolved
+ERROR: StructureDefinition-svs-document-reference-ip4-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 254, column 664: The link 'http://hl7.org/fhir/composition' for "FHIR Composition" cannot be resolved
+ERROR: StructureDefinition-svs-document-reference-ip4-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 254, column 1098: The link 'http://hl7.org/fhir/fivews' for "FiveWs Pattern Mapping" cannot be resolved
+ERROR: StructureDefinition-svs-list-primary-care-documents-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 254, column 642: The link 'http://hl7.org/fhir/fivews' for "FiveWs Pattern Mapping" cannot be resolved
+ERROR: StructureDefinition-svs-observation-diagnosis-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 254, column 504: The link 'http://hl7.org/fhir/workflow' for "Workflow Pattern" cannot be resolved
+ERROR: StructureDefinition-svs-observation-diagnosis-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 254, column 1113: The link 'http://hl7.org/fhir/fivews' for "FiveWs Pattern Mapping" cannot be resolved
+ERROR: StructureDefinition-svs-observation-left-eye-acuity-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 254, column 510: The link 'http://hl7.org/fhir/workflow' for "Workflow Pattern" cannot be resolved
+ERROR: StructureDefinition-svs-observation-left-eye-acuity-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 254, column 1119: The link 'http://hl7.org/fhir/fivews' for "FiveWs Pattern Mapping" cannot be resolved
+ERROR: StructureDefinition-svs-observation-refraction-od-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 254, column 508: The link 'http://hl7.org/fhir/workflow' for "Workflow Pattern" cannot be resolved
+ERROR: StructureDefinition-svs-observation-refraction-od-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 254, column 1117: The link 'http://hl7.org/fhir/fivews' for "FiveWs Pattern Mapping" cannot be resolved
+ERROR: StructureDefinition-svs-observation-refraction-os-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 254, column 508: The link 'http://hl7.org/fhir/workflow' for "Workflow Pattern" cannot be resolved
+ERROR: StructureDefinition-svs-observation-refraction-os-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 254, column 1117: The link 'http://hl7.org/fhir/fivews' for "FiveWs Pattern Mapping" cannot be resolved
+ERROR: StructureDefinition-svs-observation-right-eye-acuity-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 254, column 511: The link 'http://hl7.org/fhir/workflow' for "Workflow Pattern" cannot be resolved
+ERROR: StructureDefinition-svs-observation-right-eye-acuity-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 254, column 1120: The link 'http://hl7.org/fhir/fivews' for "FiveWs Pattern Mapping" cannot be resolved
+ERROR: StructureDefinition-svs-observation-screening-panel-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 254, column 510: The link 'http://hl7.org/fhir/workflow' for "Workflow Pattern" cannot be resolved
+ERROR: StructureDefinition-svs-observation-screening-panel-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 254, column 1119: The link 'http://hl7.org/fhir/fivews' for "FiveWs Pattern Mapping" cannot be resolved
+ERROR: StructureDefinition-svs-organization-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 254, column 922: The link 'http://hl7.org/fhir/fivews' for "FiveWs Pattern Mapping" cannot be resolved
+ERROR: StructureDefinition-svs-patient-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 254, column 759: The link 'http://hl7.org/fhir/fivews' for "FiveWs Pattern Mapping" cannot be resolved
+ERROR: StructureDefinition-svs-practitioner-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 254, column 922: The link 'http://hl7.org/fhir/fivews' for "FiveWs Pattern Mapping" cannot be resolved
+ERROR: StructureDefinition-svs-practitioner-role-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 244, column 927: The link 'http://hl7.org/fhir/fivews' for "FiveWs Pattern Mapping" cannot be resolved
+ERROR: StructureDefinition-svs-questionnaire-response-screening-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 244, column 515: The link 'http://hl7.org/fhir/workflow' for "Workflow Pattern" cannot be resolved
+ERROR: StructureDefinition-svs-questionnaire-response-screening-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 244, column 806: The link 'http://hl7.org/fhir/fivews' for "FiveWs Pattern Mapping" cannot be resolved
+ERROR: StructureDefinition-svs-related-person-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 254, column 629: The link 'http://hl7.org/fhir/fivews' for "FiveWs Pattern Mapping" cannot be resolved
+ERROR: StructureDefinition-svs-service-request-referral-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 254, column 507: The link 'http://hl7.org/fhir/workflow' for "Workflow Pattern" cannot be resolved
+ERROR: StructureDefinition-svs-service-request-referral-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 254, column 933: The link 'http://hl7.org/fhir/fivews' for "FiveWs Pattern Mapping" cannot be resolved
+ERROR: StructureDefinition-svs-task-referral-tracking-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 244, column 505: The link 'http://hl7.org/fhir/workflow' for "Workflow Pattern" cannot be resolved
+ERROR: StructureDefinition-svs-task-referral-tracking-mappings.html#/html/body/div/div/div/div/div/table/tr/th/a at Line 244, column 796: The link 'http://hl7.org/fhir/fivews' for "FiveWs Pattern Mapping" cannot be resolved
+ERROR: process.html#/html/body/div/div/div/div/div/p/img at Line 180, column 5: The image source 'images/02-bpmn-model.png' cannot be resolved
+ERROR: resources.html#/html/body/div/div/div/div/div/p/img at Line 180, column 5: The image source 'images/resource-graph.png' cannot be resolved
+WARNING: /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/output/searchform.html: The html source is not well formed: Found "</a>" expecting "</img>" at line 34 column 177
+WARNING: /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 79 column 10
+WARNING: /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 80 column 9
+WARNING: /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 109 column 8
+WARNING: /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 111 column 12
+WARNING: /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 112 column 20
+WARNING: /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 113 column 16
+WARNING: /home/runner/work/prueba-his-muse-nvidia/prueba-his-muse-nvidia/docs/health-interop/2026-11-19-school-vision-screening/05-implementation-guide/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 115 column 12
+ERROR: sequences.html#/html/body/div/div/div/div/div/p/img at Line 188, column 5: The image source 'images/04-sequence-screening.png' cannot be resolved
+ERROR: sequences.html#/html/body/div/div/div/div/div/p/img at Line 239, column 5: The image source 'images/04-sequence-referral.png' cannot be resolved
+ERROR: sequences.html#/html/body/div/div/div/div/div/p/img at Line 330, column 5: The image source 'images/04-sequence-assessment-return.png' cannot be resolved
+ERROR: sequences.html#/html/body/div/div/div/div/div/p/img at Line 389, column 5: The image source 'images/04-sequence-dna-rereferral.png' cannot be resolved
+ERROR: sequences.html#/html/body/div/div/div/div/div/p/img at Line 464, column 5: The image source 'images/04-sequence-absent-incomplete.png' cannot be resolved
+ERROR: sequences.html#/html/body/div/div/div/div/div/p/img at Line 531, column 5: The image source 'images/04-sequence-end-of-year.png' cannot be resolved
+ERROR: sequences.html#/html/body/div/div/div/div/div/p/img at Line 582, column 5: The image source 'images/04-sequence-optout-change.png' cannot be resolved
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+
+
+== fsh-generated/resources/CarePlan-SVSCarePlanFollowUpExample.json ==
+ERROR: CarePlan/SVSCarePlanFollowUpExample: CarePlan.identifier[0].system: OIDs must be valid (1.2.3.4.5.care-plan)
+WARNING: CarePlan/SVSCarePlanFollowUpExample: CarePlan.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.3.4.5.care-plan'
+WARNING: CarePlan/SVSCarePlanFollowUpExample: CarePlan.category[0].coding[0].system: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/careplan-category' could not be found, so the code cannot be validated
+ERROR: CarePlan/SVSCarePlanFollowUpExample: CarePlan.category[0].coding[0].system: No definition could be found for URL value 'http://terminology.hl7.org/CodeSystem/careplan-category'
+ERROR: CarePlan/SVSCarePlanFollowUpExample: CarePlan.activity[0].detail.code.coding[0].code: Unknown code '373124007' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20260701' (International Edition)
+
+
+== fsh-generated/resources/CodeSystem-svs-accommodation-type.json ==
+WARNING: Resource: The resource CodeSystem/svs-accommodation-type should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/CodeSystem-svs-document-type.json ==
+WARNING: Resource: The resource CodeSystem/svs-document-type should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/CodeSystem-svs-practitioner-role.json ==
+WARNING: Resource: The resource CodeSystem/svs-practitioner-role should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/CodeSystem-svs-referral-reason.json ==
+WARNING: Resource: The resource CodeSystem/svs-referral-reason should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/CodeSystem-svs-screening-outcome.json ==
+WARNING: Resource: The resource CodeSystem/svs-screening-outcome should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/CodeSystem-svs-screening-test-method.json ==
+WARNING: CodeSystem/svs-screening-test-method: CodeSystem.property[0]: This property has only the standard code ('notSelectable') but not the standard URI 'http://hl7.org/fhir/concept-properties#notSelectable', so it has no clearly defined meaning in the terminology ecosystem
+WARNING: Resource: The resource CodeSystem/svs-screening-test-method should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/DiagnosticReport-SVSDiagnosticReportAssessmentExample.json ==
+ERROR: DiagnosticReport/SVSDiagnosticReportAssessmentExample: DiagnosticReport.identifier[0].system: OIDs must be valid (1.2.3.4.5.assessment)
+WARNING: DiagnosticReport/SVSDiagnosticReportAssessmentExample: DiagnosticReport.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.3.4.5.assessment'
+ERROR: DiagnosticReport/SVSDiagnosticReportAssessmentExample: DiagnosticReport.category[0].coding[0].code: Unknown code 'OP' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/v2-0074' version '3.0.0'
+ERROR: DiagnosticReport/SVSDiagnosticReportAssessmentExample: DiagnosticReport.code.coding[0].code: Unknown code '28626-8' in the CodeSystem 'http://loinc.org' version '2.83'
+INFORMATION: DiagnosticReport/SVSDiagnosticReportAssessmentExample: DiagnosticReport.code: None of the codings provided are in the value set 'LOINC Diagnostic Report Codes' (http://hl7.org/fhir/ValueSet/report-codes|4.0.1), and a coding is recommended to come from this value set (codes = http://loinc.org#28626-8)
+ERROR: DiagnosticReport/SVSDiagnosticReportAssessmentExample: DiagnosticReport.conclusionCode[0].coding[0].code: Unknown code '373124007' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20260701' (International Edition)
+
+
+== fsh-generated/resources/DocumentReference-SVSDocumentReferenceScreeningPassExample.json ==
+ERROR: DocumentReference/SVSDocumentReferenceScreeningPassExample: DocumentReference.identifier[0].system: OIDs must be valid (1.2.3.4.5.ip4-doc)
+WARNING: DocumentReference/SVSDocumentReferenceScreeningPassExample: DocumentReference.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.3.4.5.ip4-doc'
+ERROR: DocumentReference/SVSDocumentReferenceScreeningPassExample: DocumentReference.type.coding[0].code: Unknown code '83700-8' in the CodeSystem 'http://loinc.org' version '2.83'
+INFORMATION: DocumentReference/SVSDocumentReferenceScreeningPassExample: DocumentReference.type: None of the codings provided are in the value set 'Document Type Value Set' (http://hl7.org/fhir/ValueSet/c80-doc-typecodes|4.0.1), and a coding is recommended to come from this value set (codes = http://loinc.org#83700-8)
+WARNING: DocumentReference/SVSDocumentReferenceScreeningPassExample: DocumentReference.category[0].coding[0].system: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/document-class' could not be found, so the code cannot be validated
+ERROR: DocumentReference/SVSDocumentReferenceScreeningPassExample: DocumentReference.category[0].coding[0].system: No definition could be found for URL value 'http://terminology.hl7.org/CodeSystem/document-class'
+
+
+== fsh-generated/resources/Encounter-SVSEncounterScreeningExample.json ==
+ERROR: Encounter/SVSEncounterScreeningExample: Encounter.identifier[0].system: OIDs must be valid (1.2.3.4.5.encounter-id)
+WARNING: Encounter/SVSEncounterScreeningExample: Encounter.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.3.4.5.encounter-id'
+WARNING: Encounter/SVSEncounterScreeningExample: Encounter.type[0].coding[0].system: A definition for CodeSystem 'https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/encounter-type' could not be found, so the code cannot be validated
+
+
+== fsh-generated/resources/ImplementationGuide-school-vision-screening.json ==
+ERROR: ImplementationGuide/school-vision-screening: ImplementationGuide.dependsOn[2]: The URL should refer directly to the ImplementationGuide resource (e.g. include '/ImplementationGuide/')
+WARNING: ImplementationGuide/school-vision-screening: ImplementationGuide.dependsOn[2]: The canonical URL http://hl7.org/fhir doesn't point to an actual ImplementationGuide resource
+ERROR: ImplementationGuide/school-vision-screening: ImplementationGuide.dependsOn[2]: The canonical URL http://hl7.org/fhir points to the package hl7.fhir.r5.core which is inconsistent with the stated packageId of hl7.fhir.r4.core
+INFORMATION: Resource: The resource ImplementationGuide/school-vision-screening could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/List-SVSListPrimaryCareDocumentsExample.json ==
+ERROR: List/SVSListPrimaryCareDocumentsExample: List.identifier[0].system: OIDs must be valid (1.2.3.4.5.primary-care-docs)
+WARNING: List/SVSListPrimaryCareDocumentsExample: List.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.3.4.5.primary-care-docs'
+
+
+== fsh-generated/resources/Observation-SVSObservationDiagnosisExample.json ==
+ERROR: Observation/SVSObservationDiagnosisExample: Observation.identifier[0].system: OIDs must be valid (1.2.3.4.5.diagnosis)
+WARNING: Observation/SVSObservationDiagnosisExample: Observation.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.3.4.5.diagnosis'
+ERROR: Observation/SVSObservationDiagnosisExample: Observation.category[0].coding[0].code: Unknown code 'diagnosis' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/observation-category' version '2.0.0'
+INFORMATION: Observation/SVSObservationDiagnosisExample: Observation.category[0]: None of the codings provided are in the value set 'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1), and a coding is recommended to come from this value set (codes = http://terminology.hl7.org/CodeSystem/observation-category#diagnosis)
+ERROR: Observation/SVSObservationDiagnosisExample: Observation.code.coding[0].code: Unknown code '373124007' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20260701' (International Edition)
+ERROR: Observation/SVSObservationDiagnosisExample: Observation.value.ofType(CodeableConcept).coding[0].code: Unknown code '373124007' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20260701' (International Edition)
+ERROR: Observation/SVSObservationDiagnosisExample: Observation.bodySite.coding[0].display: Wrong Display Name 'Right eye' for http://snomed.info/sct#363654007. Valid display is one of 4 choices: 'Structure of orbit proper' (en), 'Orbit' (en), 'Orbit structure' (en) or 'Structure of orbit proper (body structure)' (en) (for the language(s) 'en-US')
+INFORMATION: Observation/SVSObservationDiagnosisExample: Observation: 363654007 ('Right eye') can be on either side, but no side is given - in the code, the body site, or a laterality
+WARNING: Observation/SVSObservationDiagnosisExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
+
+
+== fsh-generated/resources/Observation-SVSObservationLeftEyeAcuityReferExample.json ==
+ERROR: Observation/SVSObservationLeftEyeAcuityReferExample: Observation.identifier[0].system: OIDs must be valid (1.2.3.4.5.acuity)
+WARNING: Observation/SVSObservationLeftEyeAcuityReferExample: Observation.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.3.4.5.acuity'
+ERROR: Observation/SVSObservationLeftEyeAcuityReferExample: Observation.code.coding[0].code: Unknown code '29473-3' in the CodeSystem 'http://loinc.org' version '2.83'
+ERROR: Observation/SVSObservationLeftEyeAcuityReferExample: Observation.bodySite.coding[0].display: Wrong Display Name 'Left eye' for http://snomed.info/sct#363655008. Valid display is one of 3 choices: 'Structure of retrobulbar part of optic nerve' (en), 'Retrobulbar optic nerve' (en) or 'Structure of retrobulbar part of optic nerve (body structure)' (en) (for the language(s) 'en-US')
+INFORMATION: Observation/SVSObservationLeftEyeAcuityReferExample: Observation: 363655008 ('Left eye') can be on either side, but no side is given - in the code, the body site, or a laterality
+WARNING: Observation/SVSObservationLeftEyeAcuityReferExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
+
+
+== fsh-generated/resources/Observation-SVSObservationRefractionODExample.json ==
+ERROR: Observation/SVSObservationRefractionODExample: Observation.identifier[0].system: OIDs must be valid (1.2.3.4.5.refraction)
+WARNING: Observation/SVSObservationRefractionODExample: Observation.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.3.4.5.refraction'
+ERROR: Observation/SVSObservationRefractionODExample: Observation.code.coding[0].code: Unknown code '29474-1' in the CodeSystem 'http://loinc.org' version '2.83'
+ERROR: Observation/SVSObservationRefractionODExample: Observation.value.ofType(Quantity).code: Unknown code 'D' in the CodeSystem 'http://unitsofmeasure.org' version '2.2'
+INFORMATION: Observation/SVSObservationRefractionODExample: Observation.value.ofType(Quantity).code: Error processing unit 'D': The unit 'D' is unknown at character 1
+ERROR: Observation/SVSObservationRefractionODExample: Observation.bodySite.coding[0].display: Wrong Display Name 'Right eye' for http://snomed.info/sct#363654007. Valid display is one of 4 choices: 'Structure of orbit proper' (en), 'Orbit' (en), 'Orbit structure' (en) or 'Structure of orbit proper (body structure)' (en) (for the language(s) 'en-US')
+INFORMATION: Observation/SVSObservationRefractionODExample: Observation: 363654007 ('Right eye') can be on either side, but no side is given - in the code, the body site, or a laterality
+WARNING: Observation/SVSObservationRefractionODExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
+
+
+== fsh-generated/resources/Observation-SVSObservationRefractionOSExample.json ==
+ERROR: Observation/SVSObservationRefractionOSExample: Observation.identifier[0].system: OIDs must be valid (1.2.3.4.5.refraction)
+WARNING: Observation/SVSObservationRefractionOSExample: Observation.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.3.4.5.refraction'
+ERROR: Observation/SVSObservationRefractionOSExample: Observation.code.coding[0].code: Unknown code '29473-3' in the CodeSystem 'http://loinc.org' version '2.83'
+ERROR: Observation/SVSObservationRefractionOSExample: Observation.value.ofType(Quantity).code: Unknown code 'D' in the CodeSystem 'http://unitsofmeasure.org' version '2.2'
+INFORMATION: Observation/SVSObservationRefractionOSExample: Observation.value.ofType(Quantity).code: Error processing unit 'D': The unit 'D' is unknown at character 1
+ERROR: Observation/SVSObservationRefractionOSExample: Observation.bodySite.coding[0].display: Wrong Display Name 'Left eye' for http://snomed.info/sct#363655008. Valid display is one of 3 choices: 'Structure of retrobulbar part of optic nerve' (en), 'Retrobulbar optic nerve' (en) or 'Structure of retrobulbar part of optic nerve (body structure)' (en) (for the language(s) 'en-US')
+INFORMATION: Observation/SVSObservationRefractionOSExample: Observation: 363655008 ('Left eye') can be on either side, but no side is given - in the code, the body site, or a laterality
+WARNING: Observation/SVSObservationRefractionOSExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
+
+
+== fsh-generated/resources/Observation-SVSObservationRightEyeAcuityReferExample.json ==
+ERROR: Observation/SVSObservationRightEyeAcuityReferExample: Observation.identifier[0].system: OIDs must be valid (1.2.3.4.5.acuity)
+WARNING: Observation/SVSObservationRightEyeAcuityReferExample: Observation.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.3.4.5.acuity'
+ERROR: Observation/SVSObservationRightEyeAcuityReferExample: Observation.code.coding[0].code: Unknown code '29474-1' in the CodeSystem 'http://loinc.org' version '2.83'
+ERROR: Observation/SVSObservationRightEyeAcuityReferExample: Observation.bodySite.coding[0].display: Wrong Display Name 'Right eye' for http://snomed.info/sct#363654007. Valid display is one of 4 choices: 'Structure of orbit proper' (en), 'Orbit' (en), 'Orbit structure' (en) or 'Structure of orbit proper (body structure)' (en) (for the language(s) 'en-US')
+INFORMATION: Observation/SVSObservationRightEyeAcuityReferExample: Observation: 363654007 ('Right eye') can be on either side, but no side is given - in the code, the body site, or a laterality
+WARNING: Observation/SVSObservationRightEyeAcuityReferExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
+
+
+== fsh-generated/resources/Observation-SVSObservationScreeningPanelReferExample.json ==
+ERROR: Observation/SVSObservationScreeningPanelReferExample: Observation.identifier[0].system: OIDs must be valid (1.2.3.4.5.screening-event)
+WARNING: Observation/SVSObservationScreeningPanelReferExample: Observation.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.3.4.5.screening-event'
+ERROR: Observation/SVSObservationScreeningPanelReferExample: Observation.code.coding[0].code: Unknown code '83700-8' in the CodeSystem 'http://loinc.org' version '2.83'
+
+
+== fsh-generated/resources/Organization-SVSOrganizationClinicExample.json ==
+ERROR: Organization/SVSOrganizationClinicExample: Organization.identifier[0].system: OIDs must be valid (1.2.3.4.5.clinic-id)
+WARNING: Organization/SVSOrganizationClinicExample: Organization.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.3.4.5.clinic-id'
+
+
+== fsh-generated/resources/Organization-SVSOrganizationPrimaryCareExample.json ==
+ERROR: Organization/SVSOrganizationPrimaryCareExample: Organization.identifier[0].system: OIDs must be valid (1.2.3.4.5.primary-care-id)
+WARNING: Organization/SVSOrganizationPrimaryCareExample: Organization.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.3.4.5.primary-care-id'
+
+
+== fsh-generated/resources/Organization-SVSOrganizationSchoolExample.json ==
+ERROR: Organization/SVSOrganizationSchoolExample: Organization.identifier[0].system: OIDs must be valid (1.2.3.4.5.school-id)
+WARNING: Organization/SVSOrganizationSchoolExample: Organization.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.3.4.5.school-id'
+ERROR: Organization/SVSOrganizationSchoolExample: Organization.type[0].coding[0].display: Wrong Display Name 'Educational facility' for http://terminology.hl7.org/CodeSystem/organization-type#edu. Valid display is 'Educational Institute' (for the language(s) 'en-US')
+
+
+== fsh-generated/resources/Organization-SVSOrganizationSchoolHealthServiceExample.json ==
+ERROR: Organization/SVSOrganizationSchoolHealthServiceExample: Organization.identifier[0].system: OIDs must be valid (1.2.3.4.5.health-service-id)
+WARNING: Organization/SVSOrganizationSchoolHealthServiceExample: Organization.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.3.4.5.health-service-id'
+ERROR: Organization/SVSOrganizationSchoolHealthServiceExample: Organization.type[0].coding[0].display: Wrong Display Name 'Department' for http://terminology.hl7.org/CodeSystem/organization-type#dept. Valid display is 'Hospital Department' (for the language(s) 'en-US')
+
+
+== fsh-generated/resources/Patient-SVSPatientExample.json ==
+ERROR: Patient/SVSPatientExample: Patient.identifier[0].system: OIDs must be valid (1.2.3.4.5.school-roll)
+WARNING: Patient/SVSPatientExample: Patient.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.3.4.5.school-roll'
+ERROR: Patient/SVSPatientExample: Patient.identifier[2].type.coding[0].code: Unknown code 'PIXM' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/v2-0203' version '5.0.0'
+WARNING: Patient/SVSPatientExample: Patient.identifier[2].system: No definition could be found for URL value 'urn:ihe:pixm:cross-ref'
+
+
+== fsh-generated/resources/Practitioner-SVSPractitionerNurseExample.json ==
+ERROR: Practitioner/SVSPractitionerNurseExample: Practitioner.identifier[0].system: OIDs must be valid (1.2.3.4.5.employee)
+WARNING: Practitioner/SVSPractitionerNurseExample: Practitioner.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.3.4.5.employee'
+ERROR: Practitioner/SVSPractitionerNurseExample: Practitioner.identifier[1].system: OIDs must be valid (1.2.3.4.5.license)
+WARNING: Practitioner/SVSPractitionerNurseExample: Practitioner.identifier[1].system: No definition could be found for URL value 'urn:oid:1.2.3.4.5.license'
+
+
+== fsh-generated/resources/RelatedPerson-SVSRelatedPersonExample.json ==
+ERROR: RelatedPerson/SVSRelatedPersonExample: RelatedPerson.identifier[0].system: OIDs must be valid (1.2.3.4.5.guardian)
+WARNING: RelatedPerson/SVSRelatedPersonExample: RelatedPerson.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.3.4.5.guardian'
+ERROR: RelatedPerson/SVSRelatedPersonExample: RelatedPerson.relationship[0].coding[0].code: Unknown code 'MTH' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/v2-0131' version '3.0.0'
+INFORMATION: RelatedPerson/SVSRelatedPersonExample: RelatedPerson.relationship[0]: None of the codings provided are in the value set 'Patient relationship type' (http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype|4.0.1), and a coding is recommended to come from this value set (codes = http://terminology.hl7.org/CodeSystem/v2-0131#MTH)
+
+
+== fsh-generated/resources/ServiceRequest-SVSServiceRequestReferralExample.json ==
+ERROR: ServiceRequest/SVSServiceRequestReferralExample: ServiceRequest.identifier[0].system: OIDs must be valid (1.2.3.4.5.referral)
+WARNING: ServiceRequest/SVSServiceRequestReferralExample: ServiceRequest.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.3.4.5.referral'
+WARNING: ServiceRequest/SVSServiceRequestReferralExample: ServiceRequest.identifier[1].system: No definition could be found for URL value 'urn:ihe:pcc:360x:referral-id'
+WARNING: ServiceRequest/SVSServiceRequestReferralExample: ServiceRequest.category[0].coding[0].system: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/service-request-category' could not be found, so the code cannot be validated
+ERROR: ServiceRequest/SVSServiceRequestReferralExample: ServiceRequest.category[0].coding[0].system: No definition could be found for URL value 'http://terminology.hl7.org/CodeSystem/service-request-category'
+ERROR: ServiceRequest/SVSServiceRequestReferralExample: ServiceRequest.code.coding[0].code: Unknown code '307924000' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20260701' (International Edition)
+ERROR: ServiceRequest/SVSServiceRequestReferralExample: ServiceRequest.reasonCode[0].coding[0].code: Unknown code '416070007' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20260701' (International Edition)
+
+
+== fsh-generated/resources/StructureDefinition-svs-care-plan-follow-up.json ==
+INFORMATION: StructureDefinition/svs-care-plan-follow-up: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.4.0 is deprecated with the note: 'Use additionalBinding extension or element instead'
+INFORMATION: Resource: The resource StructureDefinition/svs-care-plan-follow-up could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-svs-communication-accommodation.json ==
+INFORMATION: Resource: The resource StructureDefinition/svs-communication-accommodation could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+WARNING: StructureDefinition.where(url = 'https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-communication-accommodation'): The Implementation Guide contains no examples for this profile
+
+
+== fsh-generated/resources/StructureDefinition-svs-consent-opt-out.json ==
+INFORMATION: Resource: The resource StructureDefinition/svs-consent-opt-out could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+WARNING: StructureDefinition.where(url = 'https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-consent-opt-out'): The Implementation Guide contains no examples for this profile
+
+
+== fsh-generated/resources/StructureDefinition-svs-diagnostic-report-assessment.json ==
+INFORMATION: Resource: The resource StructureDefinition/svs-diagnostic-report-assessment could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-svs-document-reference-ip4.json ==
+INFORMATION: Resource: The resource StructureDefinition/svs-document-reference-ip4 could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-svs-list-primary-care-documents.json ==
+INFORMATION: Resource: The resource StructureDefinition/svs-list-primary-care-documents could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-svs-observation-diagnosis.json ==
+INFORMATION: Resource: The resource StructureDefinition/svs-observation-diagnosis could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-svs-observation-left-eye-acuity.json ==
+INFORMATION: Resource: The resource StructureDefinition/svs-observation-left-eye-acuity could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-svs-observation-refraction-od.json ==
+INFORMATION: Resource: The resource StructureDefinition/svs-observation-refraction-od could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-svs-observation-refraction-os.json ==
+INFORMATION: Resource: The resource StructureDefinition/svs-observation-refraction-os could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-svs-observation-right-eye-acuity.json ==
+INFORMATION: Resource: The resource StructureDefinition/svs-observation-right-eye-acuity could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-svs-observation-screening-panel.json ==
+INFORMATION: Resource: The resource StructureDefinition/svs-observation-screening-panel could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-svs-organization.json ==
+INFORMATION: Resource: The resource StructureDefinition/svs-organization could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-svs-patient.json ==
+INFORMATION: Resource: The resource StructureDefinition/svs-patient could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-svs-practitioner.json ==
+INFORMATION: Resource: The resource StructureDefinition/svs-practitioner could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-svs-practitioner-role.json ==
+INFORMATION: Resource: The resource StructureDefinition/svs-practitioner-role could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+WARNING: StructureDefinition.where(url = 'https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-practitioner-role'): The Implementation Guide contains no examples for this profile
+
+
+== fsh-generated/resources/StructureDefinition-svs-questionnaire-response-screening.json ==
+INFORMATION: Resource: The resource StructureDefinition/svs-questionnaire-response-screening could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+WARNING: StructureDefinition.where(url = 'https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-questionnaire-response-screening'): The Implementation Guide contains no examples for this profile
+
+
+== fsh-generated/resources/StructureDefinition-svs-related-person.json ==
+INFORMATION: Resource: The resource StructureDefinition/svs-related-person could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-svs-service-request-referral.json ==
+INFORMATION: Resource: The resource StructureDefinition/svs-service-request-referral could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-svs-task-referral-tracking.json ==
+INFORMATION: Resource: The resource StructureDefinition/svs-task-referral-tracking could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+WARNING: StructureDefinition.where(url = 'https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-task-referral-tracking'): The Implementation Guide contains no examples for this profile
+
+
+== fsh-generated/resources/ValueSet-svs-accommodation-type-vs.json ==
+WARNING: Resource: The resource ValueSet/svs-accommodation-type-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/ValueSet-svs-acuity-interpretation-vs.json ==
+INFORMATION: ValueSet/svs-acuity-interpretation-vs: ValueSet.compose.include[0].concept[0]: Wrong Display Name 'Abnormal (≤6/12)' for http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#A. Valid display is 'Abnormal' (en) (for the language(s) 'en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/svs-acuity-interpretation-vs: ValueSet.compose.include[0].concept[1]: Wrong Display Name 'Normal (≥6/9)' for http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#N. Valid display is 'Normal' (en) (for the language(s) 'en-US'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+WARNING: Resource: The resource ValueSet/svs-acuity-interpretation-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/ValueSet-svs-document-type-vs.json ==
+WARNING: Resource: The resource ValueSet/svs-document-type-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/ValueSet-svs-practitioner-role-vs.json ==
+WARNING: Resource: The resource ValueSet/svs-practitioner-role-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/ValueSet-svs-referral-reason-vs.json ==
+WARNING: Resource: The resource ValueSet/svs-referral-reason-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/ValueSet-svs-screening-outcome-vs.json ==
+WARNING: Resource: The resource ValueSet/svs-screening-outcome-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/ValueSet-svs-screening-test-method-vs.json ==
+WARNING: Resource: The resource ValueSet/svs-screening-test-method-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+

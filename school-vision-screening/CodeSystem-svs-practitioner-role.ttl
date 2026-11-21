@@ -1,0 +1,44 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-practitioner-role> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "svs-practitioner-role"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem svs-practitioner-role</b></p><a name=\"svs-practitioner-role\"> </a><a name=\"hcsvs-practitioner-role\"> </a><p>This case-sensitive code system <code>https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-practitioner-role</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">school-nurse<a name=\"svs-practitioner-role-school-nurse\"> </a></td><td>School Nurse</td><td>Registered nurse conducting vision screening</td></tr><tr><td style=\"white-space:nowrap\">service-lead<a name=\"svs-practitioner-role-service-lead\"> </a></td><td>Service Lead</td><td>School health program lead / coordinator</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-practitioner-role"] ;
+  fhir:CodeSystem.version [ fhir:value "0.1.0"] ;
+  fhir:CodeSystem.name [ fhir:value "SVSPractitionerRoleCS"] ;
+  fhir:CodeSystem.title [ fhir:value "School Health Service Practitioner Roles"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-11-21T14:59:50+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.description [ fhir:value "Roles within the school health service for vision screening"] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "2"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "school-nurse" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "School Nurse" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Registered nurse conducting vision screening" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "service-lead" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Service Lead" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "School health program lead / coordinator" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-practitioner-role.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

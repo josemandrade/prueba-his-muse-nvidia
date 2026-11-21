@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="svs-referral-reason"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem svs-referral-reason</b></p><a name="svs-referral-reason"> </a><a name="hcsvs-referral-reason"> </a><p>This case-sensitive code system <code>https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-referral-reason</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">acuity-low<a name="svs-referral-reason-acuity-low"> </a></td><td>Acuity ≤6/12</td><td>Visual acuity 6/12 or worse in either eye</td></tr><tr><td style="white-space:nowrap">acuity-diff<a name="svs-referral-reason-acuity-diff"> </a></td><td>Acuity difference ≥2 lines</td><td>Difference of two or more lines between eyes</td></tr><tr><td style="white-space:nowrap">incomplete-2nd<a name="svs-referral-reason-incomplete-2nd"> </a></td><td>Incomplete after 2 attempts</td><td>Screening incomplete after two attempts with partial data</td></tr></table></div>
+  </text>
+  <url value="https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-referral-reason"/>
+  <version value="0.1.0"/>
+  <name value="SVSReferralReason"/>
+  <title value="School Vision Screening Referral Reasons"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-11-21T14:59:50+00:00"/>
+  <description value="Reasons for referral to ophthalmology"/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="acuity-low"/>
+    <display value="Acuity ≤6/12"/>
+    <definition value="Visual acuity 6/12 or worse in either eye"/>
+  </concept>
+  <concept>
+    <code value="acuity-diff"/>
+    <display value="Acuity difference ≥2 lines"/>
+    <definition value="Difference of two or more lines between eyes"/>
+  </concept>
+  <concept>
+    <code value="incomplete-2nd"/>
+    <display value="Incomplete after 2 attempts"/>
+    <definition value="Screening incomplete after two attempts with partial data"/>
+  </concept>
+</CodeSystem>

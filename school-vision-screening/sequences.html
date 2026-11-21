@@ -1,0 +1,763 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Sequence Diagrams -  v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+  	<link rel="stylesheet" href="assets/css/cqf.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"5"}
+    h3,h4,h5,h6{--heading-prefix:"5"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+
+          <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - CI Build
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="usecase.html">Use Case</a>
+  </li>
+  <li>
+    <a href="process.html">Process</a>
+  </li>
+  <li>
+    <a href="resources.html">Resources</a>
+  </li>
+  <li>
+    <a href="sequences.html">Sequences</a>
+  </li>
+  <li>
+    <a href="profiles.html">Profiles</a>
+  </li>
+  <li>
+    <a href="operations.html">Operations</a>
+  </li>
+  <li>
+    <a href="ihe.html">IHE Relationships</a>
+  </li>
+  <li>
+    <a href="lifecycle.html">Lifecycle</a>
+  </li>
+  <li>
+    <a href="terminology.html">Terminology</a>
+  </li>
+  <li>
+    <a href="public-health.html">Public Health</a>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Sequence Diagrams</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">SchoolVisionScreening - Local Development build (v0.1.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Sequence Diagrams</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div>
+  <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
+</div>
+<h3 id="sequence-diagrams">Sequence Diagrams</h3>
+
+<hr/>
+
+<h4 id="overview">Overview</h4>
+
+<p>This page contains one sequence diagram per flow, taken from the BPMN model. Each diagram shows the messages in time order, with every message naming its operation (OP-1 through OP-7), FHIR interaction, IHE profile, and expected result.</p>
+
+<hr/>
+
+<h4 id="flow-1-screening-flow">Flow 1: Screening Flow</h4>
+
+<p><strong>BPMN Path</strong>: Start → Opt-Out Consent → Schedule Screening → Screening Day → Check Opt-Out → Perform Screening → Outcome (Pass) → Record Pass → Notify Parent → Primary Care Receive Screening → Next Child</p>
+
+<p><strong>Participants</strong>: School Nurse, Child, Parent/Guardian, Primary Care Team</p>
+
+<p><a name="l323">​</a><img src="images/04-sequence-screening.png" alt="Screening Flow"/></p>
+
+<h5 id="operation-table-screening-flow">Operation Table: Screening Flow</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Message</th>
+      <th>Operation</th>
+      <th>FHIR Interaction</th>
+      <th>IHE Profile / Transaction</th>
+      <th>Expected Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Nurse records screening result (Observation panel + 2 members)</td>
+      <td><strong>OP-1: Record Screening</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">POST Observation</code> (panel + hasMember)</td>
+      <td>None applies (local capture)</td>
+      <td><code class="language-plaintext highlighter-rouge">201 Created</code> Observation panel + 2 member Observations</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Nurse sends pass result to Primary Care</td>
+      <td><strong>OP-4a: Send Screening Pass</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">POST DocumentReference</code> (type=screening-pass, LOINC 83700-8)</td>
+      <td><strong>MHD ITI-65</strong> Provide Document Bundle</td>
+      <td><code class="language-plaintext highlighter-rouge">201 Created</code> DocumentReference in Primary Care List</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Parent receives pass letter</td>
+      <td>Non-FHIR</td>
+      <td>Paper letter / email</td>
+      <td>None applies</td>
+      <td>Parent notified</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr/>
+
+<h4 id="flow-2-referral-flow">Flow 2: Referral Flow</h4>
+
+<p><strong>BPMN Path</strong>: Refer outcome → Create Referral → Parent Decision (Accept/Decline) → Send Referral (360X) → Ophthalmology Accept/Reject → 4-week wait → Timeout cancel → Re-issue</p>
+
+<p><strong>Participants</strong>: School Nurse, Parent/Guardian, Ophthalmology Clinic, Primary Care Team</p>
+
+<p><a name="l449">​</a><img src="images/04-sequence-referral.png" alt="Referral Flow"/></p>
+
+<h5 id="operation-table-referral-flow">Operation Table: Referral Flow</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Message</th>
+      <th>Operation</th>
+      <th>FHIR Interaction</th>
+      <th>IHE Profile / Transaction</th>
+      <th>Expected Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Nurse submits referral to Ophthalmology</td>
+      <td><strong>OP-2a: Submit Referral</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">POST ServiceRequest</code> + <code class="language-plaintext highlighter-rouge">POST Task</code> (360X bundle)</td>
+      <td><strong>360X PCC-55</strong> Submit Referral</td>
+      <td><code class="language-plaintext highlighter-rouge">201 Created</code> ServiceRequest + Task; 360X Referral ID returned</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Ophthalmology accepts referral</td>
+      <td><strong>OP-2d: Accept Referral</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">PATCH Task</code> (status=received/accepted)</td>
+      <td><strong>360X PCC-56</strong> Accept Referral</td>
+      <td><code class="language-plaintext highlighter-rouge">200 OK</code></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Ophthalmology rejects referral</td>
+      <td><strong>OP-2c: Reject Referral</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">PATCH Task</code> (status=rejected) + reason</td>
+      <td><strong>360X PCC-56</strong> Reject Referral</td>
+      <td><code class="language-plaintext highlighter-rouge">200 OK</code></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Nurse handles rejection: correct &amp; resend</td>
+      <td><strong>OP-2a: Re-submit</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">POST ServiceRequest</code> (replaces=old) + <code class="language-plaintext highlighter-rouge">POST Task</code></td>
+      <td><strong>360X PCC-55</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">201 Created</code> new referral</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Nurse handles rejection: close</td>
+      <td><strong>OP-4e: Send Rejected Notice</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">POST DocumentReference</code> (referral-rejected)</td>
+      <td><strong>MHD ITI-65</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">201 Created</code> DocumentReference</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>4-week timeout: Nurse cancels original referral</td>
+      <td><strong>OP-2b: Cancel Referral</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">PATCH ServiceRequest</code> (status=cancelled) + <code class="language-plaintext highlighter-rouge">PATCH Task</code> (status=cancelled)</td>
+      <td><strong>360X PCC-58</strong> Close Referral</td>
+      <td><code class="language-plaintext highlighter-rouge">200 OK</code></td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Nurse re-issues new referral</td>
+      <td><strong>OP-2a: Submit Referral</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">POST ServiceRequest</code> (replaces=old) + <code class="language-plaintext highlighter-rouge">POST Task</code></td>
+      <td><strong>360X PCC-55</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">201 Created</code> new referral (fresh lifecycle)</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Nurse sends decline to Primary Care</td>
+      <td><strong>OP-4b: Send Decline</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">POST DocumentReference</code> (screening-decline)</td>
+      <td><strong>MHD ITI-65</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">201 Created</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr/>
+
+<h4 id="flow-3-assessment-return-flow">Flow 3: Assessment Return Flow</h4>
+
+<p><strong>BPMN Path</strong>: Assessment Received → Outcome (Seen) → Process Assessment → Send Summary to Nurse (360X/MHD) + Full to Primary Care (MHD) → Nurse Generates Accommodation → Close Referral</p>
+
+<p><strong>Participants</strong>: Ophthalmology Clinic, School Nurse, Primary Care Team, Teacher</p>
+
+<p><a name="l726">​</a><img src="images/04-sequence-assessment-return.png" alt="Assessment Return Flow"/></p>
+
+<h5 id="operation-table-assessment-return-flow">Operation Table: Assessment Return Flow</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Message</th>
+      <th>Operation</th>
+      <th>FHIR Interaction</th>
+      <th>IHE Profile / Transaction</th>
+      <th>Expected Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Ophthalmology sends summary to Nurse</td>
+      <td><strong>OP-3a: Return Summary</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">GET DiagnosticReport</code> (360X PCC-61) OR <code class="language-plaintext highlighter-rouge">POST DocumentReference</code> (MHD ITI-65)</td>
+      <td><strong>360X PCC-61</strong> Retrieve Report (pull) <strong>or</strong> <strong>MHD ITI-65</strong> Provide Document Bundle (push)</td>
+      <td><code class="language-plaintext highlighter-rouge">200 OK</code> DiagnosticReport + Observations <strong>or</strong> <code class="language-plaintext highlighter-rouge">201 Created</code> DocumentReference</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Ophthalmology sends full assessment to Primary Care</td>
+      <td><strong>OP-3b: Return Full</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">POST DocumentReference</code> (assessment-full, LOINC 28626-8)</td>
+      <td><strong>MHD ITI-65</strong> Provide Document Bundle</td>
+      <td><code class="language-plaintext highlighter-rouge">201 Created</code> DocumentReference in Primary Care List</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Nurse generates accommodation notice</td>
+      <td><strong>OP-5: Send Accommodation</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">POST Communication</code> (category=instruction)</td>
+      <td>None applies (internal)</td>
+      <td><code class="language-plaintext highlighter-rouge">201 Created</code> Communication</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Nurse sends accommodation to Teacher</td>
+      <td>Non-FHIR</td>
+      <td>Internal delivery (paper/email/EHR message)</td>
+      <td>None applies</td>
+      <td>Teacher notified</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr/>
+
+<h4 id="flow-4-dna--re-referral-flow">Flow 4: DNA / Re-referral Flow</h4>
+
+<p><strong>BPMN Path</strong>: Assessment Outcome (DNA) → Record DNA → Nurse Contacts Parent → Re-referral Decision (Accept/Decline) → Create Re-referral → Send Referral → 2nd DNA → Close Referral → Primary Care Notify</p>
+
+<p><strong>Participants</strong>: School Nurse, Parent/Guardian, Ophthalmology Clinic, Primary Care Team</p>
+
+<p><a name="l895">​</a><img src="images/04-sequence-dna-rereferral.png" alt="DNA Re-referral Flow"/></p>
+
+<h5 id="operation-table-dna--re-referral-flow">Operation Table: DNA / Re-referral Flow</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Message</th>
+      <th>Operation</th>
+      <th>FHIR Interaction</th>
+      <th>IHE Profile / Transaction</th>
+      <th>Expected Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Nurse submits re-referral</td>
+      <td><strong>OP-2a: Submit Referral</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">POST ServiceRequest</code> + <code class="language-plaintext highlighter-rouge">POST Task</code> (new, replaces=previous if any)</td>
+      <td><strong>360X PCC-55</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">201 Created</code> new referral</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Ophthalmology accepts re-referral</td>
+      <td><strong>OP-2d: Accept Referral</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">PATCH Task</code> (status=received)</td>
+      <td><strong>360X PCC-56</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">200 OK</code></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2nd DNA: Nurse closes referral</td>
+      <td>Internal</td>
+      <td><code class="language-plaintext highlighter-rouge">PATCH ServiceRequest</code> (status=completed) + <code class="language-plaintext highlighter-rouge">PATCH Task</code> (status=completed)</td>
+      <td>None (internal state)</td>
+      <td>Referral closed</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Nurse sends DNA closure to Primary Care</td>
+      <td><strong>OP-4c: Send DNA Closure</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">POST DocumentReference</code> (referral-dna, LOINC 11506-3)</td>
+      <td><strong>MHD ITI-65</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">201 Created</code> DocumentReference</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Parent declines re-referral</td>
+      <td>Internal</td>
+      <td><code class="language-plaintext highlighter-rouge">PATCH ServiceRequest</code> (status=completed) + <code class="language-plaintext highlighter-rouge">PATCH Task</code> (status=completed)</td>
+      <td>None</td>
+      <td>Referral closed</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Nurse sends DNA closure (decline) to Primary Care</td>
+      <td><strong>OP-4c</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">POST DocumentReference</code></td>
+      <td><strong>MHD ITI-65</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">201 Created</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr/>
+
+<h4 id="flow-5-absent--incomplete-re-screen-flow">Flow 5: Absent / Incomplete Re-screen Flow</h4>
+
+<p><strong>BPMN Path</strong>: Outcome (Absent/Incomplete) → Record + Increment Counter → Schedule Re-screen (2 weeks) → 1st Attempt → Re-screen → 2nd Attempt → Missed (Absent) or Direct Referral (Incomplete) → Primary Care Notify</p>
+
+<p><strong>Participants</strong>: School Nurse, Child, Parent/Guardian, Primary Care Team, Ophthalmology Clinic (for direct referral from incomplete)</p>
+
+<p><a name="l1106">​</a><img src="images/04-sequence-absent-incomplete.png" alt="Absent/Incomplete Flow"/></p>
+
+<h5 id="operation-table-absentincomplete-re-screen-flow">Operation Table: Absent/Incomplete Re-screen Flow</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Message</th>
+      <th>Operation</th>
+      <th>FHIR Interaction</th>
+      <th>IHE Profile / Transaction</th>
+      <th>Expected Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Nurse records re-screen result</td>
+      <td><strong>OP-1: Record Screening</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">POST Observation</code> (new panel, attemptNumber=2)</td>
+      <td>None applies</td>
+      <td><code class="language-plaintext highlighter-rouge">201 Created</code> new ScreeningEvent</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2nd absent: Nurse sends missed to Primary Care</td>
+      <td><strong>OP-4d: Send Missed</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">POST DocumentReference</code> (screening-missed)</td>
+      <td><strong>MHD ITI-65</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">201 Created</code></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2nd incomplete: Nurse submits direct referral</td>
+      <td><strong>OP-2a: Submit Referral</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">POST ServiceRequest</code> + <code class="language-plaintext highlighter-rouge">POST Task</code> (reason=incomplete-2nd-attempt)</td>
+      <td><strong>360X PCC-55</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">201 Created</code></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Nurse notifies parent of direct referral</td>
+      <td>Non-FHIR</td>
+      <td>Internal notification (paper/email)</td>
+      <td>None applies</td>
+      <td>Parent notified</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Parent notified of missed screening</td>
+      <td>Non-FHIR</td>
+      <td>Paper letter / email</td>
+      <td>None applies</td>
+      <td>Parent notified</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr/>
+
+<h4 id="flow-6-end-of-year-flow">Flow 6: End-of-Year Flow</h4>
+
+<p><strong>BPMN Path</strong>: End of School Year (boundary timer on Screening Day) → Handle Pending Re-screens → Record as Missed → Notify Parent → Notify Primary Care → End Screening Year</p>
+
+<p><strong>Participants</strong>: School Nurse, Parent/Guardian, Primary Care Team</p>
+
+<p><a name="l1280">​</a><img src="images/04-sequence-end-of-year.png" alt="End-of-Year Flow"/></p>
+
+<h5 id="operation-table-end-of-year-flow">Operation Table: End-of-Year Flow</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Message</th>
+      <th>Operation</th>
+      <th>FHIR Interaction</th>
+      <th>IHE Profile / Transaction</th>
+      <th>Expected Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Nurse sends end-of-year missed to Primary Care</td>
+      <td><strong>OP-4f: Send End-of-Year Missed</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">POST DocumentReference</code> (end-of-year-missed, LOINC 83700-8)</td>
+      <td><strong>MHD ITI-65</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">201 Created</code> DocumentReference</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Nurse notifies parent</td>
+      <td>Non-FHIR</td>
+      <td>Paper letter / email</td>
+      <td>None applies</td>
+      <td>Parent notified</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Nurse archives records</td>
+      <td>Internal</td>
+      <td>Update ScreeningEvent status=archived</td>
+      <td>None applies</td>
+      <td>Records archived</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr/>
+
+<h4 id="flow-7-opt-out-change-flow">Flow 7: Opt-Out Change Flow</h4>
+
+<p><strong>BPMN Path</strong>: Parent Changes Opt-Out Mid-Year → Consent Updated (statusHistory) → Next Screening Respects New Status</p>
+
+<p><strong>Participants</strong>: Parent/Guardian, School Admin (SIS), School Nurse</p>
+
+<p><a name="l1400">​</a><img src="images/04-sequence-optout-change.png" alt="Opt-Out Change Flow"/></p>
+
+<h5 id="operation-table-opt-out-change-flow">Operation Table: Opt-Out Change Flow</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Message</th>
+      <th>Operation</th>
+      <th>FHIR Interaction</th>
+      <th>IHE Profile / Transaction</th>
+      <th>Expected Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Admin updates consent</td>
+      <td>Internal (Consent update)</td>
+      <td><code class="language-plaintext highlighter-rouge">PATCH Consent</code> (add provision entry for new status period)</td>
+      <td>None applies</td>
+      <td>Consent updated with new statusHistory</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Nurse reads current status at screening</td>
+      <td>Internal (Consent read)</td>
+      <td><code class="language-plaintext highlighter-rouge">GET Consent?patient=[child]&amp;status=active</code></td>
+      <td>None applies</td>
+      <td>Current status returned</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Nurse acts on status</td>
+      <td>Internal</td>
+      <td>Conditional logic in screening workflow</td>
+      <td>None applies</td>
+      <td>Screening performed or skipped</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr/>
+
+<h4 id="mechanical-validation-summary">Mechanical Validation Summary</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Check</th>
+      <th>Count</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Messages referencing an operation ID</td>
+      <td>28</td>
+      <td>✅ All messages map to OP-1 through OP-7</td>
+    </tr>
+    <tr>
+      <td>Non-FHIR messages (declared)</td>
+      <td>7</td>
+      <td>✅ All labelled with channel/payload</td>
+    </tr>
+    <tr>
+      <td>Operations without a diagram</td>
+      <td>0</td>
+      <td>✅ OP-1 through OP-7 all appear in at least one diagram</td>
+    </tr>
+    <tr>
+      <td>Diagrams rendered as SVG/PNG</td>
+      <td>7</td>
+      <td>✅ <code class="language-plaintext highlighter-rouge">04-sequence-&lt;flow&gt;.svg</code> files created</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr/>
+
+<h4 id="diagram-files">Diagram Files</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Flow</th>
+      <th>SVG Source</th>
+      <th>PNG for Guide</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1. Screening</td>
+      <td><code class="language-plaintext highlighter-rouge">04-sequence-screening.svg</code></td>
+      <td><code class="language-plaintext highlighter-rouge">images/04-sequence-screening.png</code></td>
+    </tr>
+    <tr>
+      <td>2. Referral</td>
+      <td><code class="language-plaintext highlighter-rouge">04-sequence-referral.svg</code></td>
+      <td><code class="language-plaintext highlighter-rouge">images/04-sequence-referral.png</code></td>
+    </tr>
+    <tr>
+      <td>3. Assessment Return</td>
+      <td><code class="language-plaintext highlighter-rouge">04-sequence-assessment-return.svg</code></td>
+      <td><code class="language-plaintext highlighter-rouge">images/04-sequence-assessment-return.png</code></td>
+    </tr>
+    <tr>
+      <td>4. DNA / Re-referral</td>
+      <td><code class="language-plaintext highlighter-rouge">04-sequence-dna-rereferral.svg</code></td>
+      <td><code class="language-plaintext highlighter-rouge">images/04-sequence-dna-rereferral.png</code></td>
+    </tr>
+    <tr>
+      <td>5. Absent/Incomplete</td>
+      <td><code class="language-plaintext highlighter-rouge">04-sequence-absent-incomplete.svg</code></td>
+      <td><code class="language-plaintext highlighter-rouge">images/04-sequence-absent-incomplete.png</code></td>
+    </tr>
+    <tr>
+      <td>6. End-of-Year</td>
+      <td><code class="language-plaintext highlighter-rouge">04-sequence-end-of-year.svg</code></td>
+      <td><code class="language-plaintext highlighter-rouge">images/04-sequence-end-of-year.png</code></td>
+    </tr>
+    <tr>
+      <td>7. Opt-Out Change</td>
+      <td><code class="language-plaintext highlighter-rouge">04-sequence-optout-change.svg</code></td>
+      <td><code class="language-plaintext highlighter-rouge">images/04-sequence-optout-change.png</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><em>All diagrams rendered from mermaid source using <code class="language-plaintext highlighter-rouge">render_sequence.py</code>. PNGs are binary — upload via GitHub website into <code class="language-plaintext highlighter-rouge">input/images/</code>.</em></p>
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2026 <a style="color:var(--footer-hyperlink-text-color)" href=""></a>.  Package school-vision-screening#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Nov 21, 2026 14:59+0000">2026-11-21</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

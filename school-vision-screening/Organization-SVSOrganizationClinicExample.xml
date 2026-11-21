@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="SVSOrganizationClinicExample"/>
+  <meta>
+    <profile value="https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-organization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization SVSOrganizationClinicExample</b></p><a name="SVSOrganizationClinicExample"> </a><a name="hcSVSOrganizationClinicExample"> </a><div style="display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-svs-organization.html">School Vision Screening Organization</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Clinica Oftalmologica Central (Healthcare Provider) (urn:oid:1.2.3.4.5.clinic-id#CLI-OPT-2026-001)</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="The kind(s) of organization that this is">Type:</td><td colspan="3"><span title="Codes:{http://terminology.hl7.org/CodeSystem/organization-type prov}">Healthcare Provider</span></td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the organization">Contact Detail</td><td colspan="3"><ul><li><a href="tel:+34-91-444-0200">+34-91-444-0200</a></li><li>Avenida de la Salud 45 Madrid 28002 ES (work)</li></ul></td></tr></table></div>
+  </text>
+  <identifier>
+    <system value="urn:oid:1.2.3.4.5.clinic-id"/>
+    <value value="CLI-OPT-2026-001"/>
+  </identifier>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
+      <code value="prov"/>
+      <display value="Healthcare Provider"/>
+    </coding>
+  </type>
+  <name value="Clinica Oftalmologica Central"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="+34-91-444-0200"/>
+  </telecom>
+  <address>
+    <use value="work"/>
+    <line value="Avenida de la Salud 45"/>
+    <city value="Madrid"/>
+    <postalCode value="28002"/>
+    <country value="ES"/>
+  </address>
+</Organization>

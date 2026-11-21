@@ -1,0 +1,770 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Operations -  v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"7"}
+    h3,h4,h5,h6{--heading-prefix:"7"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - CI Build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="usecase.html">Use Case</a>
+  </li>
+  <li>
+    <a href="process.html">Process</a>
+  </li>
+  <li>
+    <a href="resources.html">Resources</a>
+  </li>
+  <li>
+    <a href="sequences.html">Sequences</a>
+  </li>
+  <li>
+    <a href="profiles.html">Profiles</a>
+  </li>
+  <li>
+    <a href="operations.html">Operations</a>
+  </li>
+  <li>
+    <a href="ihe.html">IHE Relationships</a>
+  </li>
+  <li>
+    <a href="lifecycle.html">Lifecycle</a>
+  </li>
+  <li>
+    <a href="terminology.html">Terminology</a>
+  </li>
+  <li>
+    <a href="public-health.html">Public Health</a>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Operations</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">SchoolVisionScreening - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Operations</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<h3 id="operations">Operations</h3>
+
+<hr />
+
+<h4 id="operation-definitions">Operation Definitions</h4>
+
+<p>This page defines all operations (named interactions) for the School Vision Screening interoperability points. Each operation includes its FHIR interaction, IHE profile support, inputs, outputs, and worked examples.</p>
+
+<hr />
+
+<h4 id="op-1-record-screening">OP-1: Record Screening</h4>
+
+<p><strong>Description:</strong> Nurse records screening result (Observation panel with two member Observations for right/left eye acuity)</p>
+
+<p><strong>Interoperability Point:</strong> IP-1</p>
+
+<p><strong>FHIR Interaction:</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST [base]/Observation
+</code></pre></div></div>
+
+<p><strong>Request Body:</strong> <code class="language-plaintext highlighter-rouge">SVSObservationScreeningPanel</code> with <code class="language-plaintext highlighter-rouge">hasMember</code> → 2 member Observations (<code class="language-plaintext highlighter-rouge">SVSObservationRightEyeAcuity</code>, <code class="language-plaintext highlighter-rouge">SVSObservationLeftEyeAcuity</code>)</p>
+
+<p><strong>Response:</strong> <code class="language-plaintext highlighter-rouge">201 Created</code> with Location header pointing to the created panel Observation</p>
+
+<p><strong>IHE Profile:</strong> None applies (local capture)</p>
+
+<p><strong>Example Request:</strong></p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Observation"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-observation-screening-panel"</span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"final"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"category"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/observation-category"</span><span class="p">,</span><span class="w"> </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"vital-signs"</span><span class="p">}]}],</span><span class="w">
+  </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://loinc.org"</span><span class="p">,</span><span class="w"> </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"83700-8"</span><span class="p">,</span><span class="w"> </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Visual acuity screening panel"</span><span class="p">}]},</span><span class="w">
+  </span><span class="nl">"subject"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient/SCL-2026-0042"</span><span class="p">},</span><span class="w">
+  </span><span class="nl">"effectiveDateTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2026-11-15T09:35:00Z"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"performer"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PractitionerRole/SVSPractitionerRoleNurseExample"</span><span class="p">}],</span><span class="w">
+  </span><span class="nl">"hasMember"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Observation/ACU-OD-2026-11-15-0043"</span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Observation/ACU-OS-2026-11-15-0043"</span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"note"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Test used: Snellen 6m; Outcome: Refer; Attempt: 1; Referral indicated: true"</span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p><strong>Error Handling:</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">400 Bad Request</code> — Missing required fields (subject, code, hasMember)</li>
+  <li><code class="language-plaintext highlighter-rouge">422 Unprocessable Entity</code> — Invalid Ratio format, missing bodySite on members</li>
+</ul>
+
+<hr />
+
+<h4 id="op-2a-submit-referral">OP-2a: Submit Referral</h4>
+
+<p><strong>Description:</strong> Nurse sends referral to Ophthalmology via 360X</p>
+
+<p><strong>Interoperability Point:</strong> IP-2a</p>
+
+<p><strong>FHIR Interactions:</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST [base]/ServiceRequest
+POST [base]/Task
+</code></pre></div></div>
+<p>(Submitted as a Bundle or sequentially with Task.focus referencing ServiceRequest)</p>
+
+<p><strong>Request Body:</strong> <code class="language-plaintext highlighter-rouge">SVSServiceRequestReferral</code> + <code class="language-plaintext highlighter-rouge">SVSTaskReferralTracking</code></p>
+
+<p><strong>Response:</strong> <code class="language-plaintext highlighter-rouge">201 Created</code> for both resources; ServiceRequest gets 360X Referral ID assigned by Recipient</p>
+
+<p><strong>IHE Profile:</strong> <strong>360X PCC-55</strong> Submit Referral</p>
+
+<p><strong>Actors:</strong> Referral Initiator (School) → Referral Recipient (Ophthalmology)</p>
+
+<p><strong>Example ServiceRequest:</strong></p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ServiceRequest"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nl">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-service-request-referral"</span><span class="p">]},</span><span class="w">
+  </span><span class="nl">"identifier"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/referral"</span><span class="p">,</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"REF-2026-11-15-0043"</span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"urn:ihe:pcc:360x:referral-id"</span><span class="p">,</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"360X-REF-2026-11-15-0043"</span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"active"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"intent"</span><span class="p">:</span><span class="w"> </span><span class="s2">"order"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"category"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/service-request-category"</span><span class="p">,</span><span class="w"> </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"referral"</span><span class="p">}]}],</span><span class="w">
+  </span><span class="nl">"priority"</span><span class="p">:</span><span class="w"> </span><span class="s2">"routine"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://snomed.info/sct"</span><span class="p">,</span><span class="w"> </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"307924000"</span><span class="p">,</span><span class="w"> </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Referral to ophthalmologist"</span><span class="p">}]},</span><span class="w">
+  </span><span class="nl">"subject"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient/SCL-2026-0042"</span><span class="p">},</span><span class="w">
+  </span><span class="nl">"occurrenceDateTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2026-11-15T09:45:00Z"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"authoredOn"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2026-11-15T09:45:00Z"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"requester"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PractitionerRole/SVSPractitionerRoleNurseExample"</span><span class="p">},</span><span class="w">
+  </span><span class="nl">"performer"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Organization/SVSOrganizationClinicExample"</span><span class="p">}],</span><span class="w">
+  </span><span class="nl">"reasonCode"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://snomed.info/sct"</span><span class="p">,</span><span class="w"> </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"416070007"</span><span class="p">,</span><span class="w"> </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Decreased visual acuity"</span><span class="p">}]}],</span><span class="w">
+  </span><span class="nl">"reasonReference"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Observation/SCR-2026-11-15-0043"</span><span class="p">}],</span><span class="w">
+  </span><span class="nl">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/expected-deadline"</span><span class="p">,</span><span class="w"> </span><span class="nl">"valueDateTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2026-12-13T09:45:00Z"</span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p><strong>Error Handling:</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">409 Conflict</code> — Duplicate referral for same screening event</li>
+  <li><code class="language-plaintext highlighter-rouge">422 Unprocessable Entity</code> — Missing required fields (subject, reasonCode, reasonReference)</li>
+</ul>
+
+<hr />
+
+<h4 id="op-2b-cancel-referral-timeout">OP-2b: Cancel Referral (Timeout)</h4>
+
+<p><strong>Description:</strong> System cancels referral after 4-week timeout (no response from Ophthalmology)</p>
+
+<p><strong>Interoperability Point:</strong> IP-2b</p>
+
+<p><strong>FHIR Interactions:</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PATCH [base]/ServiceRequest/[id]
+PATCH [base]/Task/[id]
+</code></pre></div></div>
+
+<p><strong>Request Body:</strong></p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="nl">"op"</span><span class="p">:</span><span class="w"> </span><span class="s2">"replace"</span><span class="p">,</span><span class="w"> </span><span class="nl">"path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/status"</span><span class="p">,</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cancelled"</span><span class="p">},</span><span class="w">
+  </span><span class="p">{</span><span class="nl">"op"</span><span class="p">:</span><span class="w"> </span><span class="s2">"add"</span><span class="p">,</span><span class="w"> </span><span class="nl">"path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/extension"</span><span class="p">,</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/cancel-reason"</span><span class="p">,</span><span class="w"> </span><span class="nl">"valueString"</span><span class="p">:</span><span class="w"> </span><span class="s2">"No Response Within 4 Weeks"</span><span class="p">}}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div></div>
+
+<p><strong>Response:</strong> <code class="language-plaintext highlighter-rouge">200 OK</code> for both resources</p>
+
+<p><strong>IHE Profile:</strong> <strong>360X PCC-58</strong> Close Referral</p>
+
+<p><strong>Actors:</strong> Referral Initiator (School) → Referral Recipient (Ophthalmology)</p>
+
+<p><strong>Trigger:</strong> Boundary timer event at 4 weeks (P4W) on "Wait for Assessment" task</p>
+
+<hr />
+
+<h4 id="op-2c-reject-referral">OP-2c: Reject Referral</h4>
+
+<p><strong>Description:</strong> Ophthalmology rejects referral (wrong patient, not their specialty, duplicate)</p>
+
+<p><strong>Interoperability Point:</strong> IP-2c</p>
+
+<p><strong>FHIR Interactions:</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PATCH [base]/ServiceRequest/[id]
+PATCH [base]/Task/[id]
+</code></pre></div></div>
+
+<p><strong>Request Body:</strong></p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="nl">"op"</span><span class="p">:</span><span class="w"> </span><span class="s2">"replace"</span><span class="p">,</span><span class="w"> </span><span class="nl">"path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/status"</span><span class="p">,</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"rejected"</span><span class="p">},</span><span class="w">
+  </span><span class="p">{</span><span class="nl">"op"</span><span class="p">:</span><span class="w"> </span><span class="s2">"add"</span><span class="p">,</span><span class="w"> </span><span class="nl">"path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/statusReason"</span><span class="p">,</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/task-status-reason"</span><span class="p">,</span><span class="w"> </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"duplicate"</span><span class="p">,</span><span class="w"> </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Duplicate referral"</span><span class="p">}]}}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div></div>
+
+<p><strong>Response:</strong> <code class="language-plaintext highlighter-rouge">200 OK</code></p>
+
+<p><strong>IHE Profile:</strong> <strong>360X PCC-56</strong> Reject Referral</p>
+
+<p><strong>Actors:</strong> Referral Recipient (Ophthalmology) → Referral Initiator (School)</p>
+
+<hr />
+
+<h4 id="op-2d-accept-referral">OP-2d: Accept Referral</h4>
+
+<p><strong>Description:</strong> Ophthalmology accepts referral</p>
+
+<p><strong>Interoperability Point:</strong> IP-2a</p>
+
+<p><strong>FHIR Interactions:</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PATCH [base]/ServiceRequest/[id]
+PATCH [base]/Task/[id]
+</code></pre></div></div>
+
+<p><strong>Request Body:</strong></p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="nl">"op"</span><span class="p">:</span><span class="w"> </span><span class="s2">"replace"</span><span class="p">,</span><span class="w"> </span><span class="nl">"path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/status"</span><span class="p">,</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"active"</span><span class="p">},</span><span class="w">
+  </span><span class="p">{</span><span class="nl">"op"</span><span class="p">:</span><span class="w"> </span><span class="s2">"replace"</span><span class="p">,</span><span class="w"> </span><span class="nl">"path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/Task/status"</span><span class="p">,</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"received"</span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div></div>
+
+<p><strong>Response:</strong> <code class="language-plaintext highlighter-rouge">200 OK</code></p>
+
+<p><strong>IHE Profile:</strong> <strong>360X PCC-56</strong> Accept Referral</p>
+
+<hr />
+
+<h4 id="op-3a-return-assessment-summary">OP-3a: Return Assessment Summary</h4>
+
+<p><strong>Description:</strong> Ophthalmology sends assessment summary to School Nurse</p>
+
+<p><strong>Interoperability Point:</strong> IP-3a</p>
+
+<p><strong>FHIR Interactions (Pull):</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/DiagnosticReport/[id]?_include=DiagnosticReport:result
+</code></pre></div></div>
+<p>OR (Push):</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST [base]/DocumentReference
+</code></pre></div></div>
+
+<p><strong>Response:</strong> <code class="language-plaintext highlighter-rouge">200 OK</code> DiagnosticReport + included Observations (pull) OR <code class="language-plaintext highlighter-rouge">201 Created</code> DocumentReference (push)</p>
+
+<p><strong>IHE Profile:</strong> <strong>360X PCC-61</strong> Retrieve Report (pull) <strong>or</strong> <strong>MHD ITI-65</strong> Provide Document Bundle (push)</p>
+
+<p><strong>Actors:</strong> Referral Recipient (Ophthalmology) → Referral Initiator (School)</p>
+
+<hr />
+
+<h4 id="op-3b-return-assessment-full">OP-3b: Return Assessment Full</h4>
+
+<p><strong>Description:</strong> Ophthalmology sends full assessment to Primary Care</p>
+
+<p><strong>Interoperability Point:</strong> IP-3b</p>
+
+<p><strong>FHIR Interaction:</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST [base]/DocumentReference
+</code></pre></div></div>
+
+<p><strong>Request Body:</strong> <code class="language-plaintext highlighter-rouge">SVSDocumentReferenceIP4</code> with <code class="language-plaintext highlighter-rouge">type</code> = LOINC 28626-8, <code class="language-plaintext highlighter-rouge">content.attachment.contentType</code> = application/fhir+json, <code class="language-plaintext highlighter-rouge">url</code> pointing to DiagnosticReport</p>
+
+<p><strong>Response:</strong> <code class="language-plaintext highlighter-rouge">201 Created</code> DocumentReference in Primary Care List</p>
+
+<p><strong>IHE Profile:</strong> <strong>MHD ITI-65</strong> Provide Document Bundle</p>
+
+<p><strong>Actors:</strong> Document Source (Ophthalmology) → Document Recipient (Primary Care)</p>
+
+<hr />
+
+<h4 id="op-4a-f-send-to-primary-care-6-document-types">OP-4a-f: Send to Primary Care (6 Document Types)</h4>
+
+<p><strong>Description:</strong> School/Ophthalmology sends screening/assessment documents to Primary Care via MHD</p>
+
+<p><strong>Interoperability Point:</strong> IP-4</p>
+
+<p><strong>FHIR Interaction:</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST [base]/DocumentReference
+</code></pre></div></div>
+
+<p><strong>Document Types &amp; LOINC Codes:</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Operation</th>
+      <th>Document Type</th>
+      <th>LOINC Code</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>OP-4a</td>
+      <td>screening-pass</td>
+      <td>83700-8</td>
+      <td>School</td>
+    </tr>
+    <tr>
+      <td>OP-4b</td>
+      <td>screening-decline</td>
+      <td>83700-8</td>
+      <td>School</td>
+    </tr>
+    <tr>
+      <td>OP-4c</td>
+      <td>referral-dna</td>
+      <td>11506-3</td>
+      <td>School</td>
+    </tr>
+    <tr>
+      <td>OP-4d</td>
+      <td>screening-missed</td>
+      <td>83700-8</td>
+      <td>School</td>
+    </tr>
+    <tr>
+      <td>OP-4e</td>
+      <td>referral-rejected</td>
+      <td>11506-3</td>
+      <td>School</td>
+    </tr>
+    <tr>
+      <td>OP-4f</td>
+      <td>end-of-year-missed</td>
+      <td>83700-8</td>
+      <td>School</td>
+    </tr>
+    <tr>
+      <td>OP-3b</td>
+      <td>assessment-full</td>
+      <td>28626-8</td>
+      <td>Ophthalmology</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Request Body:</strong> <code class="language-plaintext highlighter-rouge">SVSDocumentReferenceIP4</code> with appropriate <code class="language-plaintext highlighter-rouge">type</code>, <code class="language-plaintext highlighter-rouge">content.attachment.contentType=application/fhir+json</code>, <code class="language-plaintext highlighter-rouge">url</code> to source resource</p>
+
+<p><strong>Response:</strong> <code class="language-plaintext highlighter-rouge">201 Created</code> DocumentReference; Primary Care adds to <code class="language-plaintext highlighter-rouge">SVSListPrimaryCareDocuments</code></p>
+
+<p><strong>IHE Profile:</strong> <strong>MHD ITI-65</strong> Provide Document Bundle</p>
+
+<p><strong>Actors:</strong> Document Source (School/Ophthalmology) → Document Recipient (Primary Care)</p>
+
+<hr />
+
+<h4 id="op-5-send-accommodation-notice">OP-5: Send Accommodation Notice</h4>
+
+<p><strong>Description:</strong> Nurse sends accommodation notice to Teacher</p>
+
+<p><strong>Interoperability Point:</strong> IP-5</p>
+
+<p><strong>FHIR Interaction:</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST [base]/Communication
+</code></pre></div></div>
+
+<p><strong>Request Body:</strong> <code class="language-plaintext highlighter-rouge">SVSCommunicationAccommodation</code></p>
+
+<p><strong>Response:</strong> <code class="language-plaintext highlighter-rouge">201 Created</code> Communication</p>
+
+<p><strong>IHE Profile:</strong> None applies (internal)</p>
+
+<p><strong>Delivery:</strong> Non-FHIR (paper, email, EHR message) — Communication records the event</p>
+
+<hr />
+
+<h4 id="op-6-query-patient-demographics">OP-6: Query Patient Demographics</h4>
+
+<p><strong>Description:</strong> Nurse/Ophthalmologist look up child in MPI for patient matching</p>
+
+<p><strong>Interoperability Points:</strong> All IPs</p>
+
+<p><strong>FHIR Interactions:</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Patient?identifier=[system]|[value]
+GET [base]/Patient?family=[family]&amp;given=[given]&amp;birthdate=[YYYY-MM-DD]
+</code></pre></div></div>
+
+<p><strong>Response:</strong> <code class="language-plaintext highlighter-rouge">200 OK</code> Bundle of Patient resources</p>
+
+<p><strong>IHE Profiles:</strong> <strong>PIXm ITI-83</strong> (cross-reference) / <strong>PDQm ITI-78</strong> (demographics query)</p>
+
+<p><strong>Matching Strategy:</strong> Demographic matching (name, DOB, address) primary; national ID supplementary when available</p>
+
+<hr />
+
+<h4 id="op-7-subscribe-to-assessment-documents">OP-7: Subscribe to Assessment Documents</h4>
+
+<p><strong>Description:</strong> Nurse/Primary Care subscribe for push notifications when assessments are available</p>
+
+<p><strong>Interoperability Point:</strong> IP-3</p>
+
+<p><strong>FHIR Interaction:</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST [base]/Subscription
+</code></pre></div></div>
+
+<p><strong>Request Body:</strong></p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Subscription"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"requested"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"criteria"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DiagnosticReport?patient=Patient/123&amp;category=OP"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"channel"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"rest-hook"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"endpoint"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://school-health.example.org/fhir"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"payload"</span><span class="p">:</span><span class="w"> </span><span class="s2">"application/fhir+json"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p><strong>IHE Profile:</strong> <strong>DSUBm ITI-110</strong> Subscribe / ITI-112 Notify (TI)</p>
+
+<p><strong>Actors:</strong> Document Subscriber (School/Primary Care) → Document Publisher (Ophthalmology)</p>
+
+<hr />
+
+<h4 id="operation-summary-table">Operation Summary Table</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Op ID</th>
+      <th>Name</th>
+      <th>FHIR Interaction</th>
+      <th>IHE Profile</th>
+      <th>IP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>OP-1</td>
+      <td>Record Screening</td>
+      <td><code class="language-plaintext highlighter-rouge">POST Observation</code></td>
+      <td>None</td>
+      <td>IP-1</td>
+    </tr>
+    <tr>
+      <td>OP-2a</td>
+      <td>Submit Referral</td>
+      <td><code class="language-plaintext highlighter-rouge">POST ServiceRequest</code> + <code class="language-plaintext highlighter-rouge">POST Task</code></td>
+      <td><strong>360X PCC-55</strong></td>
+      <td>IP-2a</td>
+    </tr>
+    <tr>
+      <td>OP-2b</td>
+      <td>Cancel Referral</td>
+      <td><code class="language-plaintext highlighter-rouge">PATCH ServiceRequest</code> + <code class="language-plaintext highlighter-rouge">PATCH Task</code></td>
+      <td><strong>360X PCC-58</strong></td>
+      <td>IP-2b</td>
+    </tr>
+    <tr>
+      <td>OP-2c</td>
+      <td>Reject Referral</td>
+      <td><code class="language-plaintext highlighter-rouge">PATCH ServiceRequest</code> + <code class="language-plaintext highlighter-rouge">PATCH Task</code></td>
+      <td><strong>360X PCC-56</strong></td>
+      <td>IP-2c</td>
+    </tr>
+    <tr>
+      <td>OP-2d</td>
+      <td>Accept Referral</td>
+      <td><code class="language-plaintext highlighter-rouge">PATCH ServiceRequest</code> + <code class="language-plaintext highlighter-rouge">PATCH Task</code></td>
+      <td><strong>360X PCC-56</strong></td>
+      <td>IP-2a</td>
+    </tr>
+    <tr>
+      <td>OP-3a</td>
+      <td>Return Summary</td>
+      <td><code class="language-plaintext highlighter-rouge">GET DiagnosticReport</code> / <code class="language-plaintext highlighter-rouge">POST DocumentReference</code></td>
+      <td><strong>360X PCC-61</strong> / <strong>MHD ITI-65</strong></td>
+      <td>IP-3a</td>
+    </tr>
+    <tr>
+      <td>OP-3b</td>
+      <td>Return Full</td>
+      <td><code class="language-plaintext highlighter-rouge">POST DocumentReference</code></td>
+      <td><strong>MHD ITI-65</strong></td>
+      <td>IP-3b</td>
+    </tr>
+    <tr>
+      <td>OP-4a-f</td>
+      <td>Send to Primary Care</td>
+      <td><code class="language-plaintext highlighter-rouge">POST DocumentReference</code></td>
+      <td><strong>MHD ITI-65</strong></td>
+      <td>IP-4</td>
+    </tr>
+    <tr>
+      <td>OP-5</td>
+      <td>Send Accommodation</td>
+      <td><code class="language-plaintext highlighter-rouge">POST Communication</code></td>
+      <td>None</td>
+      <td>IP-5</td>
+    </tr>
+    <tr>
+      <td>OP-6</td>
+      <td>Query Demographics</td>
+      <td><code class="language-plaintext highlighter-rouge">GET Patient</code></td>
+      <td><strong>PIXm ITI-83</strong> / <strong>PDQm ITI-78</strong></td>
+      <td>All</td>
+    </tr>
+    <tr>
+      <td>OP-7</td>
+      <td>Subscribe</td>
+      <td><code class="language-plaintext highlighter-rouge">POST Subscription</code></td>
+      <td><strong>DSUBm ITI-110/112</strong></td>
+      <td>IP-3</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h4 id="error-handling-patterns">Error Handling Patterns</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>HTTP Status</th>
+      <th>Meaning</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">200 OK</code></td>
+      <td>Success (read/update)</td>
+      <td>Continue</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">201 Created</code></td>
+      <td>Resource created</td>
+      <td>Use Location header</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">400 Bad Request</code></td>
+      <td>Invalid request syntax</td>
+      <td>Fix request syntax</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">401 Unauthorized</code></td>
+      <td>Authentication required</td>
+      <td>Authenticate</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">403 Forbidden</code></td>
+      <td>Insufficient permissions</td>
+      <td>Check consent/role</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">404 Not Found</code></td>
+      <td>Resource not found</td>
+      <td>Verify identifier</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">409 Conflict</code></td>
+      <td>Duplicate/conflict</td>
+      <td>Use conditional create or check existing</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">412 Precondition Failed</code></td>
+      <td>Version mismatch</td>
+      <td>Re-read and retry</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">422 Unprocessable Entity</code></td>
+      <td>Semantic validation failed</td>
+      <td>Fix clinical data</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">500 Internal Server Error</code></td>
+      <td>Server error</td>
+      <td>Retry with exponential backoff</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h4 id="conditional-create-pattern-for-idempotency">Conditional Create Pattern (for idempotency)</h4>
+
+<p>For operations that must be idempotent (e.g., Submit Referral):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST [base]/ServiceRequest?identifier=REF-2026-11-15-0043
+If-None-Exist: identifier=REF-2026-11-15-0043
+</code></pre></div></div>
+
+<ul>
+  <li>If resource with that identifier exists → <code class="language-plaintext highlighter-rouge">409 Conflict</code> with existing resource</li>
+  <li>If not → <code class="language-plaintext highlighter-rouge">201 Created</code> with new resource</li>
+</ul>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026 <a style="color:var(--footer-hyperlink-text-color)" href=""></a>.  Package school-vision-screening#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Nov 21, 2026 14:59+0000">2026-11-21</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

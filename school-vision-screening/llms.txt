@@ -1,0 +1,87 @@
+# school-vision-screening#0.1.0: null
+
+## Pages
+
+* [School Vision Screening IG](index.md)
+* [Examples](examples.md)
+* [Operations](operations.md)
+* [Sequence Diagrams](sequences.md)
+* [Terminology](terminology.md)
+* [Process (BPMN)](process.md)
+* [Lifecycle Tables](lifecycle.md)
+* [Resource Diagram](resources.md)
+* [IHE Profile Relationships](ihe.md)
+* [Profiles](profiles.md)
+* [Artifacts Summary](artifacts.md)
+* [Clinical Use Case](usecase.md)
+* [Public Health & Consent](public-health.md)
+
+## Resources
+
+### CodeSystems
+
+* [Classroom Accommodation Types](CodeSystem-svs-accommodation-type.md)
+* [School Vision Screening Document Types](CodeSystem-svs-document-type.md)
+* [School Health Service Practitioner Roles](CodeSystem-svs-practitioner-role.md)
+* [School Vision Screening Referral Reasons](CodeSystem-svs-referral-reason.md)
+* [School Vision Screening Outcomes](CodeSystem-svs-screening-outcome.md)
+* [School Vision Screening Test Methods](CodeSystem-svs-screening-test-method.md)
+
+### ValueSets
+
+* [Classroom Accommodation Types ValueSet](ValueSet-svs-accommodation-type-vs.md)
+* [Visual Acuity Interpretation ValueSet](ValueSet-svs-acuity-interpretation-vs.md)
+* [School Vision Screening Document Types ValueSet](ValueSet-svs-document-type-vs.md)
+* [School Health Service Practitioner Roles ValueSet](ValueSet-svs-practitioner-role-vs.md)
+* [School Vision Screening Referral Reasons ValueSet](ValueSet-svs-referral-reason-vs.md)
+* [School Vision Screening Outcomes ValueSet](ValueSet-svs-screening-outcome-vs.md)
+* [School Vision Screening Test Methods ValueSet](ValueSet-svs-screening-test-method-vs.md)
+
+### Resource Profiles
+
+* [Ophthalmology Follow-up Plan](StructureDefinition-svs-care-plan-follow-up.md)
+* [Teacher Accommodation Notice](StructureDefinition-svs-communication-accommodation.md)
+* [School Vision Screening Opt-Out Consent](StructureDefinition-svs-consent-opt-out.md)
+* [Ophthalmology Vision Assessment Report](StructureDefinition-svs-diagnostic-report-assessment.md)
+* [Primary Care Document Reference (IP-4)](StructureDefinition-svs-document-reference-ip4.md)
+* [Primary Care Vision Screening Document Log](StructureDefinition-svs-list-primary-care-documents.md)
+* [Ophthalmology Diagnosis](StructureDefinition-svs-observation-diagnosis.md)
+* [Left Eye Visual Acuity](StructureDefinition-svs-observation-left-eye-acuity.md)
+* [Right Eye Refraction](StructureDefinition-svs-observation-refraction-od.md)
+* [Left Eye Refraction](StructureDefinition-svs-observation-refraction-os.md)
+* [Right Eye Visual Acuity](StructureDefinition-svs-observation-right-eye-acuity.md)
+* [School Vision Screening Panel](StructureDefinition-svs-observation-screening-panel.md)
+* [School Vision Screening Organization](StructureDefinition-svs-organization.md)
+* [School Vision Screening Patient (Child)](StructureDefinition-svs-patient.md)
+* [School Vision Screening Practitioner Role](StructureDefinition-svs-practitioner-role.md)
+* [School Vision Screening Practitioner](StructureDefinition-svs-practitioner.md)
+* [School Vision Screening Questionnaire Response](StructureDefinition-svs-questionnaire-response-screening.md)
+* [School Vision Screening Parent/Guardian](StructureDefinition-svs-related-person.md)
+* [School Vision Screening Referral](StructureDefinition-svs-service-request-referral.md)
+* [School Vision Screening Referral Tracking](StructureDefinition-svs-task-referral-tracking.md)
+
+### ImplementationGuides
+
+* [SchoolVisionScreening](index.md)
+
+### Examples
+
+* [SVSCarePlanFollowUpExample (CarePlan)](CarePlan-SVSCarePlanFollowUpExample.md)
+* [SVSDiagnosticReportAssessmentExample (DiagnosticReport)](DiagnosticReport-SVSDiagnosticReportAssessmentExample.md)
+* [SVSDocumentReferenceScreeningPassExample (DocumentReference)](DocumentReference-SVSDocumentReferenceScreeningPassExample.md)
+* [SVSEncounterScreeningExample (Encounter)](Encounter-SVSEncounterScreeningExample.md)
+* [School Vision Screening Documents for Maria Gonzalez (List)](List-SVSListPrimaryCareDocumentsExample.md)
+* [SVSObservationDiagnosisExample (Observation)](Observation-SVSObservationDiagnosisExample.md)
+* [SVSObservationLeftEyeAcuityReferExample (Observation)](Observation-SVSObservationLeftEyeAcuityReferExample.md)
+* [SVSObservationRefractionODExample (Observation)](Observation-SVSObservationRefractionODExample.md)
+* [SVSObservationRefractionOSExample (Observation)](Observation-SVSObservationRefractionOSExample.md)
+* [SVSObservationRightEyeAcuityReferExample (Observation)](Observation-SVSObservationRightEyeAcuityReferExample.md)
+* [SVSObservationScreeningPanelReferExample (Observation)](Observation-SVSObservationScreeningPanelReferExample.md)
+* [Clinica Oftalmologica Central (Organization)](Organization-SVSOrganizationClinicExample.md)
+* [Centro de Salud Las Rosas (Organization)](Organization-SVSOrganizationPrimaryCareExample.md)
+* [Colegio Publico San Isidro (Organization)](Organization-SVSOrganizationSchoolExample.md)
+* [Servicio de Salud Escolar de Madrid (Organization)](Organization-SVSOrganizationSchoolHealthServiceExample.md)
+* [SVSPatientExample (Patient)](Patient-SVSPatientExample.md)
+* [SVSPractitionerNurseExample (Practitioner)](Practitioner-SVSPractitionerNurseExample.md)
+* [SVSRelatedPersonExample (RelatedPerson)](RelatedPerson-SVSRelatedPersonExample.md)
+* [SVSServiceRequestReferralExample (ServiceRequest)](ServiceRequest-SVSServiceRequestReferralExample.md)

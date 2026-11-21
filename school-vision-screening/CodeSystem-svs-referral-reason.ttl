@@ -1,0 +1,49 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-referral-reason> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "svs-referral-reason"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem svs-referral-reason</b></p><a name=\"svs-referral-reason\"> </a><a name=\"hcsvs-referral-reason\"> </a><p>This case-sensitive code system <code>https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-referral-reason</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">acuity-low<a name=\"svs-referral-reason-acuity-low\"> </a></td><td>Acuity ≤6/12</td><td>Visual acuity 6/12 or worse in either eye</td></tr><tr><td style=\"white-space:nowrap\">acuity-diff<a name=\"svs-referral-reason-acuity-diff\"> </a></td><td>Acuity difference ≥2 lines</td><td>Difference of two or more lines between eyes</td></tr><tr><td style=\"white-space:nowrap\">incomplete-2nd<a name=\"svs-referral-reason-incomplete-2nd\"> </a></td><td>Incomplete after 2 attempts</td><td>Screening incomplete after two attempts with partial data</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-referral-reason"] ;
+  fhir:CodeSystem.version [ fhir:value "0.1.0"] ;
+  fhir:CodeSystem.name [ fhir:value "SVSReferralReason"] ;
+  fhir:CodeSystem.title [ fhir:value "School Vision Screening Referral Reasons"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-11-21T14:59:50+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.description [ fhir:value "Reasons for referral to ophthalmology"] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "3"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "acuity-low" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Acuity ≤6/12" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Visual acuity 6/12 or worse in either eye" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "acuity-diff" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Acuity difference ≥2 lines" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Difference of two or more lines between eyes" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "incomplete-2nd" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Incomplete after 2 attempts" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Screening incomplete after two attempts with partial data" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-referral-reason.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

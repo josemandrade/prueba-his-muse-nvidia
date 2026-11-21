@@ -1,0 +1,764 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>IHE Profile Relationships -  v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"8"}
+    h3,h4,h5,h6{--heading-prefix:"8"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - CI Build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="usecase.html">Use Case</a>
+  </li>
+  <li>
+    <a href="process.html">Process</a>
+  </li>
+  <li>
+    <a href="resources.html">Resources</a>
+  </li>
+  <li>
+    <a href="sequences.html">Sequences</a>
+  </li>
+  <li>
+    <a href="profiles.html">Profiles</a>
+  </li>
+  <li>
+    <a href="operations.html">Operations</a>
+  </li>
+  <li>
+    <a href="ihe.html">IHE Relationships</a>
+  </li>
+  <li>
+    <a href="lifecycle.html">Lifecycle</a>
+  </li>
+  <li>
+    <a href="terminology.html">Terminology</a>
+  </li>
+  <li>
+    <a href="public-health.html">Public Health</a>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>IHE Profile Relationships</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">SchoolVisionScreening - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>IHE Profile Relationships</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<h3 id="ihe-profile-relationships">IHE Profile Relationships</h3>
+
+<hr />
+
+<h4 id="overview">Overview</h4>
+
+<p>This page documents the relationship between each interoperability point (IP) in this Implementation Guide and the relevant IHE profiles. For each IP, we assess whether an IHE profile applies (full, partial, or none), the actors and transactions involved, and any gaps or custom work required.</p>
+
+<p><strong>Principle:</strong> We offer IHE profile associations to the user; an unchosen association is documented as a relationship, not claimed as conformance.</p>
+
+<hr />
+
+<h4 id="ihe-profile-assessment-per-interoperability-point">IHE Profile Assessment per Interoperability Point</h4>
+
+<h5 id="ip-1-screening-result-capture-nurse--school-record">IP-1: Screening Result Capture (Nurse → School Record)</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Aspect</th>
+      <th>Assessment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Candidate Profiles</strong></td>
+      <td>MHD, FHIR Observation, PIXm/PDQm</td>
+    </tr>
+    <tr>
+      <td><strong>Fit</strong></td>
+      <td><strong>Partial (MHD)</strong> — MHD ITI-65 can store the Observation panel as a document, but MHD is for document sharing, not data entry. No IHE profile for school nurse screening data capture.</td>
+    </tr>
+    <tr>
+      <td><strong>Actors / Transactions</strong></td>
+      <td>Document Source (Nurse) → Document Recipient (School Repository) / ITI-65</td>
+    </tr>
+    <tr>
+      <td><strong>Gaps / Custom Remaining</strong></td>
+      <td>Custom: screening form UI, validation rules, outcome derivation (Pass/Refer/Absent/Incomplete). PIXm/PDQm for patient lookup.</td>
+    </tr>
+    <tr>
+      <td><strong>Offer to User</strong></td>
+      <td><strong>Offer MHD</strong> for document storage if school has repository; otherwise custom FHIR REST.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h5 id="ip-2a-referral-dispatch-school--ophthalmology">IP-2a: Referral Dispatch (School → Ophthalmology)</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Aspect</th>
+      <th>Assessment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Candidate Profiles</strong></td>
+      <td><strong>360X</strong> (primary), XBeR-WD, MHD, Scheduling, PIXm/PDQm</td>
+    </tr>
+    <tr>
+      <td><strong>Fit</strong></td>
+      <td><strong>Full (360X)</strong> — Exactly matches closed-loop referral with tracking, accept/reject, cancel, report retrieval.</td>
+    </tr>
+    <tr>
+      <td><strong>Actors / Transactions</strong></td>
+      <td>Referral Initiator (School) → Referral Recipient (Ophthalmology) / PCC-55 Submit Referral</td>
+    </tr>
+    <tr>
+      <td><strong>Gaps / Custom Remaining</strong></td>
+      <td>360X is Trial Implementation; wire format FHIR REST matches guide. Scheduling for appointment booking (optional). PIXm/PDQm for patient matching.</td>
+    </tr>
+    <tr>
+      <td><strong>Offer to User</strong></td>
+      <td><strong>Offer 360X conformance</strong> — align guide's referral workflow to 360X actors/transactions.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h5 id="ip-2b-cancel-referral-timeout">IP-2b: Cancel Referral (Timeout)</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Aspect</th>
+      <th>Assessment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Candidate Profiles</strong></td>
+      <td>360X PCC-58</td>
+    </tr>
+    <tr>
+      <td><strong>Fit</strong></td>
+      <td><strong>Full (360X)</strong> — PCC-58 Close Referral with reason "No Response Within 4 Weeks".</td>
+    </tr>
+    <tr>
+      <td><strong>Actors / Transactions</strong></td>
+      <td>Referral Initiator (School) → Referral Recipient (Ophthalmology) / PCC-58</td>
+    </tr>
+    <tr>
+      <td><strong>Gaps / Custom Remaining</strong></td>
+      <td>None — covered by 360X.</td>
+    </tr>
+    <tr>
+      <td><strong>Offer to User</strong></td>
+      <td>Included in 360X offer.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h5 id="ip-2c-referral-rejection-response">IP-2c: Referral Rejection Response</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Aspect</th>
+      <th>Assessment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Candidate Profiles</strong></td>
+      <td>360X PCC-56 Reject</td>
+    </tr>
+    <tr>
+      <td><strong>Fit</strong></td>
+      <td><strong>Full (360X)</strong> — PCC-56 Reject with reason.</td>
+    </tr>
+    <tr>
+      <td><strong>Actors / Transactions</strong></td>
+      <td>Referral Recipient (Ophthalmology) → Referral Initiator (School) / PCC-56 Reject</td>
+    </tr>
+    <tr>
+      <td><strong>Gaps / Custom Remaining</strong></td>
+      <td>None — covered by 360X.</td>
+    </tr>
+    <tr>
+      <td><strong>Offer to User</strong></td>
+      <td>Included in 360X offer.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h5 id="ip-3a-assessment-return--summary-ophthalmology--school-nurse">IP-3a: Assessment Return — Summary (Ophthalmology → School Nurse)</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Aspect</th>
+      <th>Assessment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Candidate Profiles</strong></td>
+      <td>360X PCC-61, MHD, DSUBm, EC-Summary</td>
+    </tr>
+    <tr>
+      <td><strong>Fit</strong></td>
+      <td><strong>Partial (360X + MHD)</strong> — 360X PCC-61 Retrieve Report (Initiator pulls). MHD ITI-65 Provide Document Bundle (Recipient pushes). DSUBm ITI-112 Notify (push notification). EC-Summary for content structure (CDA-based; guide uses FHIR).</td>
+    </tr>
+    <tr>
+      <td><strong>Actors / Transactions</strong></td>
+      <td>Referral Initiator → Referral Recipient (PCC-61 pull); Document Source → Document Recipient (MHD ITI-65 push); Publisher → Subscriber (DSUBm ITI-112)</td>
+    </tr>
+    <tr>
+      <td><strong>Gaps / Custom Remaining</strong></td>
+      <td>360X is pull; guide may prefer push (MHD). EC-Summary is CDA — custom FHIR mapping needed. DSUBm is TI.</td>
+    </tr>
+    <tr>
+      <td><strong>Offer to User</strong></td>
+      <td><strong>Offer 360X + MHD</strong> — declare conformance to both patterns (pull via 360X, push via MHD).</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h5 id="ip-3b-assessment-return--full-ophthalmology--primary-care">IP-3b: Assessment Return — Full (Ophthalmology → Primary Care)</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Aspect</th>
+      <th>Assessment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Candidate Profiles</strong></td>
+      <td>MHD, DSUBm, EC-Summary</td>
+    </tr>
+    <tr>
+      <td><strong>Fit</strong></td>
+      <td><strong>Full (MHD)</strong> — MHD ITI-65 Provide Document Bundle for document push. DSUBm ITI-112 for notification.</td>
+    </tr>
+    <tr>
+      <td><strong>Actors / Transactions</strong></td>
+      <td>Document Source (Ophthalmology) → Document Recipient (Primary Care) (MHD ITI-65); Publisher → Subscriber (DSUBm ITI-112)</td>
+    </tr>
+    <tr>
+      <td><strong>Gaps / Custom Remaining</strong></td>
+      <td>EC-Summary content structure CDA-based; custom FHIR mapping.</td>
+    </tr>
+    <tr>
+      <td><strong>Offer to User</strong></td>
+      <td><strong>Offer MHD conformance</strong> for document exchange.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h5 id="ip-4a-f-primary-care-receives-6-document-types">IP-4a-f: Primary Care Receives (6 Document Types)</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Aspect</th>
+      <th>Assessment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Candidate Profiles</strong></td>
+      <td>MHD, PIXm/PDQm/PMIR</td>
+    </tr>
+    <tr>
+      <td><strong>Fit</strong></td>
+      <td><strong>Full (MHD)</strong> — MHD ITI-65 for each document receipt. PIXm/PDQm for patient matching.</td>
+    </tr>
+    <tr>
+      <td><strong>Actors / Transactions</strong></td>
+      <td>Document Source (School/Ophthalmology) → Document Recipient (Primary Care) (MHD ITI-65); Consumer → Supplier (PIXm ITI-83 / PDQm ITI-78)</td>
+    </tr>
+    <tr>
+      <td><strong>Gaps / Custom Remaining</strong></td>
+      <td>6 distinct document types mapped to LOINC; Primary Care must handle all.</td>
+    </tr>
+    <tr>
+      <td><strong>Offer to User</strong></td>
+      <td><strong>Offer MHD + PIXm/PDQm</strong> for document receipt and patient matching.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h5 id="ip-5-teacher-accommodation-internal">IP-5: Teacher Accommodation (Internal)</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Aspect</th>
+      <th>Assessment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Candidate Profiles</strong></td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td><strong>Fit</strong></td>
+      <td><strong>None applies</strong> — Internal school communication; no IHE profile for teacher accommodation notices.</td>
+    </tr>
+    <tr>
+      <td><strong>Gaps / Custom Remaining</strong></td>
+      <td>Custom: Communication resource, internal delivery (paper, email, EHR message).</td>
+    </tr>
+    <tr>
+      <td><strong>Offer to User</strong></td>
+      <td>No IHE profile; custom FHIR.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h4 id="summary-of-ihe-offers-to-user">Summary of IHE Offers to User</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Profile</th>
+      <th>Status</th>
+      <th>Interoperability Points</th>
+      <th>Conformance Offered</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><strong>360X</strong></td>
+      <td>TI (Revised 2021-04-14)</td>
+      <td>IP-2a, IP-2b, IP-2c, IP-3a</td>
+      <td><strong>Yes</strong> — align referral workflow</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><strong>MHD</strong></td>
+      <td>FT (Release 4.2.5, 2026-10-18)</td>
+      <td>IP-1 (storage), IP-3a (push), IP-3b, IP-4a-f</td>
+      <td><strong>Yes</strong> — align document exchange</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><strong>DSUBm</strong></td>
+      <td>TI (Published 2024-02-29)</td>
+      <td>IP-3a, IP-3b</td>
+      <td><strong>Optional</strong> — push notifications</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><strong>PIXm</strong></td>
+      <td>TI (Release 3.1.0, 2025-11-06)</td>
+      <td>All IPs (patient matching)</td>
+      <td><strong>Yes</strong> — patient identity</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td><strong>PDQm</strong></td>
+      <td>TI (Release 3.2.0, 2025-11-06)</td>
+      <td>All IPs (patient lookup)</td>
+      <td><strong>Yes</strong> — patient demographics</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td><strong>EC-Summary</strong></td>
+      <td>TI (Published 2017-09-15)</td>
+      <td>IP-3a, IP-3b (content reference)</td>
+      <td><strong>Reference only</strong> — CDA-based, custom FHIR mapping</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td><strong>XBeR-WD</strong></td>
+      <td>TI (Revised 2013-10-04)</td>
+      <td>IP-2a (workflow definition)</td>
+      <td><strong>Optional</strong> — executable workflow</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h4 id="no-ihe-profile--explicitly-none-applies">No IHE Profile — Explicitly None Applies</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Interoperability Point</th>
+      <th>Reason</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>IP-1: Screening Result Capture</strong></td>
+      <td>No IHE profile for school health screening data entry</td>
+    </tr>
+    <tr>
+      <td><strong>IP-5: Teacher Accommodation</strong></td>
+      <td>Internal school communication; no IHE profile</td>
+    </tr>
+    <tr>
+      <td><strong>Threshold Evaluation</strong></td>
+      <td>Custom clinical logic (Pass/Refer logic)</td>
+    </tr>
+    <tr>
+      <td><strong>Opt-out Consent Management</strong></td>
+      <td>Custom Consent usage (no BPPC/APPC/PCF fit for opt-out program consent)</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h4 id="ihe-profile-version-verification">IHE Profile Version Verification</h4>
+
+<p>All IHE profile versions and statuses verified live at https://profiles.ihe.net/ on <strong>2026-11-19</strong>:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Profile</th>
+      <th>Version</th>
+      <th>Status</th>
+      <th>URL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>360X</td>
+      <td>Revised 2021-04-14</td>
+      <td>Trial Implementation</td>
+      <td>https://profiles.ihe.net/PCC/360X/</td>
+    </tr>
+    <tr>
+      <td>MHD</td>
+      <td>Release 4.2.5</td>
+      <td>Final Text</td>
+      <td>https://profiles.ihe.net/ITI/MHD/</td>
+    </tr>
+    <tr>
+      <td>DSUBm</td>
+      <td>Release 1.0.0</td>
+      <td>Trial Implementation</td>
+      <td>https://profiles.ihe.net/ITI/DSUBm/</td>
+    </tr>
+    <tr>
+      <td>PIXm</td>
+      <td>Release 3.1.0</td>
+      <td>Trial Implementation</td>
+      <td>https://profiles.ihe.net/ITI/PIXm/</td>
+    </tr>
+    <tr>
+      <td>PDQm</td>
+      <td>Release 3.2.0</td>
+      <td>Trial Implementation</td>
+      <td>https://profiles.ihe.net/ITI/PDQm/</td>
+    </tr>
+    <tr>
+      <td>EC-Summary</td>
+      <td>Published 2017-09-15</td>
+      <td>Trial Implementation</td>
+      <td>https://profiles.ihe.net/EYECARE/EC-Summary/</td>
+    </tr>
+    <tr>
+      <td>XBeR-WD</td>
+      <td>Revised 2013-10-04</td>
+      <td>Trial Implementation</td>
+      <td>https://profiles.ihe.net/PCC/XBeR-WD/</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h4 id="fit-assessment-criteria">Fit Assessment Criteria</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Fit Level</th>
+      <th>Definition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Full</strong></td>
+      <td>Same actors, same transaction number, same message semantics and options as the profile. Wire format (FHIR REST) matches.</td>
+    </tr>
+    <tr>
+      <td><strong>Partial</strong></td>
+      <td>Pattern coincides but mechanism is the guide's own (e.g., plain FHIR search where profile defines a transaction; push vs pull). Different wire format = max partial.</td>
+    </tr>
+    <tr>
+      <td><strong>None</strong></td>
+      <td>Profile's actors/transactions do not cover the point; no applicable profile exists.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h4 id="gap-and-risk-analysis">Gap and Risk Analysis</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Gap / Risk</th>
+      <th>Severity</th>
+      <th>Affected IPs</th>
+      <th>Mitigation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>360X is Trial Implementation</td>
+      <td>Medium</td>
+      <td>IP-2, IP-3a</td>
+      <td>Document as TI; monitor for FT; fallback to custom FHIR if needed</td>
+    </tr>
+    <tr>
+      <td>MHD document format for screening results</td>
+      <td>Low</td>
+      <td>IP-1, IP-4</td>
+      <td>Document FHIR-native MHD usage (<code class="language-plaintext highlighter-rouge">application/fhir+json</code>); validate with MHD test tools</td>
+    </tr>
+    <tr>
+      <td>EC-Summary CDA-based</td>
+      <td>Medium</td>
+      <td>IP-3</td>
+      <td>Provide explicit EC-Summary → FHIR mapping table (see <a href="profiles.html">Profiles</a>)</td>
+    </tr>
+    <tr>
+      <td>DSUBm is TI</td>
+      <td>Low</td>
+      <td>IP-3</td>
+      <td>Optional; document as enhancement; not required for core workflow</td>
+    </tr>
+    <tr>
+      <td>No IHE profile for school screening capture</td>
+      <td>Medium</td>
+      <td>IP-1</td>
+      <td>Accept custom FHIR; design for future IHE profile adoption</td>
+    </tr>
+    <tr>
+      <td>Demographic matching without national ID</td>
+      <td>Medium</td>
+      <td>All IPs</td>
+      <td>Document as primary strategy; national ID supplementary when available</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h4 id="conformance-declaration">Conformance Declaration</h4>
+
+<p>If the user accepts the offers above, the guide would declare conformance to:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Conformance:
+  - 360X (TI): Referral workflow (IP-2a/b/c, IP-3a pull)
+  - MHD (FT): Document exchange (IP-1 storage, IP-3 push, IP-4)
+  - PIXm/PDQm (TI): Patient matching (all IPs)
+  - DSUBm (TI): Optional push notifications (IP-3)
+</code></pre></div></div>
+
+<p>Unchosen associations (e.g., EC-Summary, XBeR-WD) are documented as relationships in this IG, not claimed as conformance.</p>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026 <a style="color:var(--footer-hyperlink-text-color)" href=""></a>.  Package school-vision-screening#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Nov 21, 2026 14:59+0000">2026-11-21</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

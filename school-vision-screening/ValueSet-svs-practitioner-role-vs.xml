@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="svs-practitioner-role-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet svs-practitioner-role-vs</b></p><a name="svs-practitioner-role-vs"> </a><a name="hcsvs-practitioner-role-vs"> </a><ul><li>Include all codes defined in <a href="CodeSystem-svs-practitioner-role.html"><code>https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-practitioner-role</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.1.0</span></li></ul></div>
+  </text>
+  <url value="https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/ValueSet/svs-practitioner-role-vs"/>
+  <version value="0.1.0"/>
+  <name value="SVSPractitionerRoleVS"/>
+  <title value="School Health Service Practitioner Roles ValueSet"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-11-21T14:59:50+00:00"/>
+  <description value="Roles within the school health service"/>
+  <compose>
+    <include>
+      <system value="https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-practitioner-role"/>
+    </include>
+  </compose>
+</ValueSet>

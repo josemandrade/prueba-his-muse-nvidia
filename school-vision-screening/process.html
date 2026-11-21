@@ -1,0 +1,488 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Process (BPMN) -  v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+  	<link rel="stylesheet" href="assets/css/cqf.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+
+          <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - CI Build
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="usecase.html">Use Case</a>
+  </li>
+  <li>
+    <a href="process.html">Process</a>
+  </li>
+  <li>
+    <a href="resources.html">Resources</a>
+  </li>
+  <li>
+    <a href="sequences.html">Sequences</a>
+  </li>
+  <li>
+    <a href="profiles.html">Profiles</a>
+  </li>
+  <li>
+    <a href="operations.html">Operations</a>
+  </li>
+  <li>
+    <a href="ihe.html">IHE Relationships</a>
+  </li>
+  <li>
+    <a href="lifecycle.html">Lifecycle</a>
+  </li>
+  <li>
+    <a href="terminology.html">Terminology</a>
+  </li>
+  <li>
+    <a href="public-health.html">Public Health</a>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Process (BPMN)</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">SchoolVisionScreening - Local Development build (v0.1.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Process (BPMN)</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div>
+  <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
+</div>
+<h3 id="process-bpmn">Process (BPMN)</h3>
+
+<hr/>
+
+<h4 id="bpmn-model">BPMN Model</h4>
+
+<p>The following BPMN model represents the school vision screening workflow with three pools (organisations) and interoperability points marked.</p>
+
+<p><a name="l308">​</a><img src="images/02-bpmn-model.png" alt="BPMN Model"/></p>
+
+<p><em>Click to view full-size. Use scroll/zoom controls.</em></p>
+
+<hr/>
+
+<h4 id="model-overview">Model Overview</h4>
+
+<h5 id="pools-organisations">Pools (Organisations)</h5>
+<ol>
+  <li><strong>School Health Service</strong> — owns the screening process (main process)</li>
+  <li><strong>Ophthalmology Clinic / Hospital</strong> — receives referral, returns assessment</li>
+  <li><strong>Primary Care Team</strong> — receives screening results and assessments for health record</li>
+</ol>
+
+<h5 id="lanes-roles-within-school-health-service">Lanes (Roles within School Health Service)</h5>
+<ul>
+  <li><strong>School Nurse</strong> — performs screening, manages referrals, follows up, generates accommodations</li>
+  <li><strong>Child</strong> — participates in screening</li>
+  <li><strong>Parent / Guardian</strong> — receives notifications, consents, takes child to appointments</li>
+  <li><strong>Teacher</strong> — receives accommodation notices only</li>
+</ul>
+
+<h5 id="data-objects-process-variables">Data Objects (Process Variables)</h5>
+<p>| Data Object | Purpose |
+|————-|———|
+| <code class="language-plaintext highlighter-rouge">Opt-Out List</code> | Children opted out at school year start; read at "Check Opt-Out" |
+| <code class="language-plaintext highlighter-rouge">Absent Attempt Count</code> | Tracks re-screen attempts for absent children (max 2) |
+| <code class="language-plaintext highlighter-rouge">Incomplete Attempt Count</code> | Tracks re-screen attempts for incomplete screening (max 2) |
+| <code class="language-plaintext highlighter-rouge">Active Referral ID</code> | Current referral identifier for 360X tracking |
+| <code class="language-plaintext highlighter-rouge">Referral Status</code> | Current referral state (sent, accepted, rejected, closed, DNA) |</p>
+
+<hr/>
+
+<h4 id="process-flow-summary">Process Flow Summary</h4>
+
+<h5 id="main-flow-left-to-right">Main Flow (left to right):</h5>
+<ol>
+  <li><strong>School Year Starts</strong> → Opt-Out Consent distributed to parents</li>
+  <li><strong>Schedule Screening Sessions</strong> for the year</li>
+  <li><strong>For each child (loop):</strong>
+    <ul>
+      <li>Child presents for screening</li>
+      <li><strong>Check Opt-Out</strong> (reads <code class="language-plaintext highlighter-rouge">Opt-Out List</code>) → if yes: record opt-out, next child</li>
+      <li>Perform visual acuity screening (Snellen/E/Lea)</li>
+      <li><strong>Screening Outcome Gateway</strong> (4 branches):
+        <ul>
+          <li><strong>Pass</strong> (≥6/9 both eyes): Record pass, notify parent (pass letter), send to Primary Care (IP-4) → Next Child</li>
+          <li><strong>Refer</strong> (≤6/12 either eye OR ≥2 line diff): Create referral → <strong>Parent Decision</strong>
+            <ul>
+              <li><strong>Parent Declines</strong>: Record decline + reason, send screening result to Primary Care (IP-4, no referral sent) → Next Child</li>
+              <li><strong>Parent Accepts</strong>: Send referral to Ophthalmology (via parent), store Referral ID, start <strong>4-week timer</strong> (IP-2, 360X PCC-55)</li>
+            </ul>
+          </li>
+          <li><strong>Absent</strong>: Record absent, increment <code class="language-plaintext highlighter-rouge">Absent Attempt Count</code>, schedule re-screen within 2 weeks
+            <ul>
+              <li><strong>1st Absent</strong>: Re-screen scheduled → loop back to Screening Day</li>
+              <li><strong>2nd Absent</strong>: Record as Missed, notify parent, send "Screening Not Completed" to Primary Care (IP-4) → Next Child</li>
+            </ul>
+          </li>
+          <li><strong>Incomplete</strong> (uncooperative/one eye): Record incomplete + reason, increment <code class="language-plaintext highlighter-rouge">Incomplete Attempt Count</code>, schedule re-screen within 2 weeks
+            <ul>
+              <li><strong>1st Incomplete</strong>: Re-screen scheduled → loop back to Screening Day</li>
+              <li><strong>2nd Incomplete</strong>: <strong>Direct Referral</strong> to Ophthalmology with partial result noted (clinical decision, covered by opt-out consent) → Notify Parent → Send Referral (IP-2)</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<h5 id="referral-waiting-with-4-week-boundary-timer">Referral Waiting (with 4-week boundary timer):</h5>
+<ul>
+  <li>Wait for assessment</li>
+  <li><strong>Referral Rejection</strong> (360X PCC-56 Reject): Ophthalmology rejects → Nurse handles: Correct &amp; Resend (back to Send Referral) OR Close Rejected Referral (notify Parent &amp; Primary Care, IP-4)</li>
+  <li><strong>4-Week Timer fires</strong> → <strong>Cancel Original Referral</strong> at Ophthalmology (360X PCC-58 Close: No Response Within 4 Weeks) → Nurse contacts parent, checks appointment, re-issues <strong>new referral</strong> (fresh lifecycle, new Referral ID) → back to Send Referral</li>
+</ul>
+
+<h5 id="assessment-received">Assessment Received:</h5>
+<ul>
+  <li><strong>Assessment Outcome Gateway:</strong>
+    <ul>
+      <li><strong>Seen</strong>: Process assessment → send summary to Nurse (IP-3, 360X PCC-61), full report to Primary Care (IP-3)
+        <ul>
+          <li>Nurse generates Teacher Accommodation (IP-5) → sends to Teacher</li>
+          <li>Close referral, archive</li>
+        </ul>
+      </li>
+      <li><strong>DNA (Did Not Attend)</strong>: Nurse contacts parent, offers <strong>one re-referral</strong>
+        <ul>
+          <li><strong>Parent Accepts Re-Referral</strong>: Create new referral with new appointment → back to Send Referral</li>
+          <li><strong>Parent Declines OR 2nd DNA</strong>: Close referral as DNA, notify Primary Care (IP-4)</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="end-of-year-handling">End-of-Year Handling:</h5>
+<ul>
+  <li><strong>End of School Year</strong> boundary event on Screening Day loop (timer cycle R/P1Y)</li>
+  <li>Children with pending re-screen (absent/incomplete) → Record as Missed, notify parent, notify Primary Care (IP-4)</li>
+</ul>
+
+<p><strong>Loop continues</strong> until all children screened → <strong>Screening Year Complete</strong>, archive records.</p>
+
+<hr/>
+
+<h4 id="interoperability-points-marked-in-bpmn-with-message-flows">Interoperability Points (Marked in BPMN with Message Flows)</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>PI ID</th>
+      <th>Name</th>
+      <th>Source Task</th>
+      <th>Target</th>
+      <th>Data Payload</th>
+      <th>IHE Profile</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>IP-1</strong></td>
+      <td>Screening Result Capture</td>
+      <td><code class="language-plaintext highlighter-rouge">Task_PerformScreening</code> → <code class="language-plaintext highlighter-rouge">Task_RecordPass/Refer/Absent/Incomplete</code></td>
+      <td>School Health Record (internal)</td>
+      <td>Child ID, screening date, test used, right/left acuity, outcome, screener</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td><strong>IP-2a</strong></td>
+      <td>Referral Dispatch</td>
+      <td><code class="language-plaintext highlighter-rouge">Task_SendReferral</code></td>
+      <td>Ophthalmology Clinic</td>
+      <td>Referral letter: child ID, DOB, school/grade, screening date, acuity per eye, test used, reason, screener contact</td>
+      <td><strong>360X PCC-55</strong></td>
+    </tr>
+    <tr>
+      <td><strong>IP-2b</strong></td>
+      <td>Cancel Referral (Timeout)</td>
+      <td><code class="language-plaintext highlighter-rouge">Task_CancelReferral</code></td>
+      <td>Ophthalmology Clinic</td>
+      <td>360X PCC-58 Close: reason "No Response Within 4 Weeks"</td>
+      <td><strong>360X PCC-58</strong></td>
+    </tr>
+    <tr>
+      <td><strong>IP-2c</strong></td>
+      <td>Referral Rejection Response</td>
+      <td>Ophthalmology Clinic</td>
+      <td><code class="language-plaintext highlighter-rouge">Task_WaitAssessment</code> (boundary)</td>
+      <td>360X PCC-56 Reject with reason</td>
+      <td><strong>360X PCC-56</strong></td>
+    </tr>
+    <tr>
+      <td><strong>IP-3a</strong></td>
+      <td>Assessment Return — Summary</td>
+      <td>Ophthalmology Clinic</td>
+      <td><code class="language-plaintext highlighter-rouge">Task_NurseReceiveSummary</code></td>
+      <td>Diagnosis, prescription summary, follow-up plan</td>
+      <td><strong>360X PCC-61</strong>, <strong>MHD ITI-65</strong></td>
+    </tr>
+    <tr>
+      <td><strong>IP-3b</strong></td>
+      <td>Assessment Return — Full</td>
+      <td>Ophthalmology Clinic</td>
+      <td><code class="language-plaintext highlighter-rouge">Task_PrimaryCareReceiveAssessment</code></td>
+      <td>Full assessment: diagnosis, prescription, follow-up plan, outcome</td>
+      <td><strong>MHD ITI-65</strong></td>
+    </tr>
+    <tr>
+      <td><strong>IP-4a</strong></td>
+      <td>Primary Care Receives Screening (Pass)</td>
+      <td><code class="language-plaintext highlighter-rouge">Task_RecordPass</code></td>
+      <td>Primary Care Team</td>
+      <td>Screening result: pass, acuity values</td>
+      <td><strong>MHD ITI-65</strong></td>
+    </tr>
+    <tr>
+      <td><strong>IP-4b</strong></td>
+      <td>Primary Care Receives Screening (Decline)</td>
+      <td><code class="language-plaintext highlighter-rouge">Task_RecordDecline</code></td>
+      <td>Primary Care Team</td>
+      <td>Screening result + decline reason</td>
+      <td><strong>MHD ITI-65</strong></td>
+    </tr>
+    <tr>
+      <td><strong>IP-4c</strong></td>
+      <td>Primary Care Receives DNA Closure</td>
+      <td><code class="language-plaintext highlighter-rouge">Task_CloseAfterDNA</code></td>
+      <td>Primary Care Team</td>
+      <td>DNA closure notification</td>
+      <td><strong>MHD ITI-65</strong></td>
+    </tr>
+    <tr>
+      <td><strong>IP-4d</strong></td>
+      <td>Primary Care Receives Missed Screening</td>
+      <td><code class="language-plaintext highlighter-rouge">Task_RecordMissed</code></td>
+      <td>Primary Care Team</td>
+      <td>Screening not completed (2nd absent)</td>
+      <td><strong>MHD ITI-65</strong></td>
+    </tr>
+    <tr>
+      <td><strong>IP-4e</strong></td>
+      <td>Primary Care Receives Rejected Referral</td>
+      <td><code class="language-plaintext highlighter-rouge">Task_CloseRejectedReferral</code></td>
+      <td>Primary Care Team</td>
+      <td>Referral rejected &amp; closed</td>
+      <td><strong>MHD ITI-65</strong></td>
+    </tr>
+    <tr>
+      <td><strong>IP-4f</strong></td>
+      <td>Primary Care Receives End-of-Year Missed</td>
+      <td><code class="language-plaintext highlighter-rouge">Task_HandleEndOfYearPending</code></td>
+      <td>Primary Care Team</td>
+      <td>End-of-year missed screening (pending re-screen)</td>
+      <td><strong>MHD ITI-65</strong></td>
+    </tr>
+    <tr>
+      <td><strong>IP-5</strong></td>
+      <td>Teacher Accommodation</td>
+      <td><code class="language-plaintext highlighter-rouge">Task_SendAccommodation</code></td>
+      <td>Teacher (internal)</td>
+      <td>Accommodation needed: glasses, front seat</td>
+      <td>Internal</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr/>
+
+<h4 id="bpmn-validation">BPMN Validation</h4>
+
+<ul>
+  <li><strong>Mechanical validation:</strong> ✅ 0 diagonal edges, 0 segments crossing figure interior</li>
+  <li><strong>Task count:</strong> 33</li>
+  <li><strong>Gateways:</strong> 10</li>
+  <li><strong>Events:</strong> 4 (1 start, 1 end, 2 boundary timers)</li>
+  <li><strong>Sequence flows:</strong> 54</li>
+  <li><strong>Message flows:</strong> 12</li>
+  <li><strong>Validation date:</strong> 2026-11-19</li>
+  <li><strong>BPMN version:</strong> 2.0</li>
+</ul>
+
+<hr/>
+
+<h4 id="key-bpmn-patterns-used">Key BPMN Patterns Used</h4>
+
+<ol>
+  <li><strong>Boundary Timer Event</strong> on <code class="language-plaintext highlighter-rouge">Task_WaitAssessment</code> (4-week deadline) — models nurse's escalation when ophthalmology doesn't return assessment; cancels activity, triggers cancellation of original referral</li>
+  <li><strong>Boundary Timer Event</strong> on <code class="language-plaintext highlighter-rouge">Task_ScreeningDay</code> (End of School Year, cycle R/P1Y) — handles pending re-screens at year end</li>
+  <li><strong>Exclusive Gateways</strong> for all decision points</li>
+  <li><strong>Loop Back</strong> for re-screening (absent/incomplete) and re-referral (DNA)</li>
+  <li><strong>Data Objects</strong> for attempt counters and opt-out list — gateway conditions evaluate process variables</li>
+  <li><strong>Message Flows</strong> between pools for each interoperability point</li>
+  <li><strong>360X Transaction Mapping</strong>: PCC-55 (Submit), PCC-56 (Accept/Reject), PCC-58 (Close), PCC-61 (Retrieve Report)</li>
+</ol>
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2026 <a style="color:var(--footer-hyperlink-text-color)" href=""></a>.  Package school-vision-screening#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Nov 21, 2026 14:59+0000">2026-11-21</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

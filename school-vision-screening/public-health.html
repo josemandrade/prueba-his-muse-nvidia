@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Public Health &amp; Consent -  v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"11"}
+    h3,h4,h5,h6{--heading-prefix:"11"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - CI Build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="usecase.html">Use Case</a>
+  </li>
+  <li>
+    <a href="process.html">Process</a>
+  </li>
+  <li>
+    <a href="resources.html">Resources</a>
+  </li>
+  <li>
+    <a href="sequences.html">Sequences</a>
+  </li>
+  <li>
+    <a href="profiles.html">Profiles</a>
+  </li>
+  <li>
+    <a href="operations.html">Operations</a>
+  </li>
+  <li>
+    <a href="ihe.html">IHE Relationships</a>
+  </li>
+  <li>
+    <a href="lifecycle.html">Lifecycle</a>
+  </li>
+  <li>
+    <a href="terminology.html">Terminology</a>
+  </li>
+  <li>
+    <a href="public-health.html">Public Health</a>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Public Health &amp; Consent</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">SchoolVisionScreening - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Public Health &amp; Consent</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<h3 id="public-health-consent--data-governance">Public Health, Consent &amp; Data Governance</h3>
+
+<hr />
+
+<h4 id="consent-model">Consent Model</h4>
+
+<h5 id="opt-out-consent-annual-revocable">Opt-Out Consent (Annual, Revocable)</h5>
+
+<p>The school vision screening program operates under an <strong>opt-out consent model</strong>:</p>
+
+<ul>
+  <li><strong>At start of school year:</strong> Parents/guardians are informed about the screening program and can decline participation for their child</li>
+  <li><strong>Default:</strong> Opted in (screening proceeds unless parent explicitly declines)</li>
+  <li><strong>Revocable mid-year:</strong> Parents can change their decision at any time during the school year</li>
+  <li><strong>No signed consent per child:</strong> Consent is recorded in the School Information System (SIS)</li>
+  <li><strong>No legal mandate:</strong> The program runs under the school health program; no statutory reporting requirement</li>
+</ul>
+
+<h5 id="consent-representation-fhir-consent">Consent Representation (FHIR Consent)</h5>
+
+<p>The <code class="language-plaintext highlighter-rouge">SVSConsentOptOut</code> profile models consent using multiple <code class="language-plaintext highlighter-rouge">provision</code> entries to capture status history:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Consent"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"active"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"scope"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/consentscope"</span><span class="p">,</span><span class="w"> </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"screening"</span><span class="p">}]},</span><span class="w">
+  </span><span class="nl">"category"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/consentcategorycodes"</span><span class="p">,</span><span class="w"> </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DENY"</span><span class="p">}]}],</span><span class="w">
+  </span><span class="nl">"patient"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient/SCL-2026-0042"</span><span class="p">},</span><span class="w">
+  </span><span class="nl">"provision"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"deny"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"period"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nl">"start"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2026-09-01T00:00:00Z"</span><span class="p">,</span><span class="w"> </span><span class="nl">"end"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2026-11-10T23:59:59Z"</span><span class="p">},</span><span class="w">
+      </span><span class="nl">"action"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/consent-action"</span><span class="p">,</span><span class="w"> </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"vision-screening"</span><span class="p">}]}]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"permit"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"period"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nl">"start"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2026-11-10T10:00:00Z"</span><span class="p">,</span><span class="w"> </span><span class="nl">"end"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2027-06-30T23:59:59Z"</span><span class="p">},</span><span class="w">
+      </span><span class="nl">"action"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/consent-action"</span><span class="p">,</span><span class="w"> </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"vision-screening"</span><span class="p">}]}]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h5 id="consent-check-at-screening">Consent Check at Screening</h5>
+
+<p>At each screening encounter, the nurse checks the current consent status:</p>
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">GET Consent?patient=[child]&amp;status=active</code></li>
+  <li>Current status = latest <code class="language-plaintext highlighter-rouge">provision</code> by <code class="language-plaintext highlighter-rouge">period.start</code></li>
+  <li>If <code class="language-plaintext highlighter-rouge">type=deny</code> → record opt-out, no screening performed</li>
+  <li>If <code class="language-plaintext highlighter-rouge">type=permit</code> → proceed with screening</li>
+</ol>
+
+<hr />
+
+<h4 id="data-governance">Data Governance</h4>
+
+<h5 id="data-ownership">Data Ownership</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Data</th>
+      <th>Owner</th>
+      <th>Controller</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Child demographics</td>
+      <td>School Information System (SIS)</td>
+      <td>School admin</td>
+    </tr>
+    <tr>
+      <td>Screening results</td>
+      <td>School Health Service</td>
+      <td>School nurse</td>
+    </tr>
+    <tr>
+      <td>Referral letters</td>
+      <td>School Health Service</td>
+      <td>School nurse</td>
+    </tr>
+    <tr>
+      <td>Ophthalmology assessments</td>
+      <td>Ophthalmology Clinic EHR</td>
+      <td>Ophthalmologist</td>
+    </tr>
+    <tr>
+      <td>Primary care records</td>
+      <td>Primary Care EHR</td>
+      <td>Primary care clinician</td>
+    </tr>
+    <tr>
+      <td>Opt-out consent</td>
+      <td>School Information System (SIS)</td>
+      <td>School admin</td>
+    </tr>
+    <tr>
+      <td>Accommodation notices</td>
+      <td>School Health Service</td>
+      <td>School nurse</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="data-retention">Data Retention</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Record Type</th>
+      <th>Retention Period</th>
+      <th>Disposition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ScreeningEvent</td>
+      <td>School year + archive</td>
+      <td>Archived (read-only)</td>
+    </tr>
+    <tr>
+      <td>Referral</td>
+      <td>School year + archive</td>
+      <td>Archived with screening record</td>
+    </tr>
+    <tr>
+      <td>OphthalmologyAssessment</td>
+      <td>Per clinic policy (typically 10+ years)</td>
+      <td>Archived</td>
+    </tr>
+    <tr>
+      <td>PrimaryCareRecord</td>
+      <td>Per primary care policy (typically lifelong)</td>
+      <td>Retained in health record</td>
+    </tr>
+    <tr>
+      <td>OptOutConsent</td>
+      <td>School year + archive</td>
+      <td>Archived</td>
+    </tr>
+    <tr>
+      <td>AccommodationNotice</td>
+      <td>School year (valid until)</td>
+      <td>Expired → superseded/archived</td>
+    </tr>
+    <tr>
+      <td>Teacher notifications</td>
+      <td>School year</td>
+      <td>Discarded after school year</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Single Retention Rule:</strong> All school-held records (screening, referral, consent, accommodation) are retained for the school year, then archived together under school records policy. Clinic and primary care records follow their own institutional policies.</p>
+
+<h5 id="data-access-controls">Data Access Controls</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Role</th>
+      <th>Can Read</th>
+      <th>Can Write</th>
+      <th>Can Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>School Nurse</td>
+      <td>ScreeningEvent, Referral, Consent, Communication</td>
+      <td>ScreeningEvent, Referral, Communication</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>School Admin</td>
+      <td>All school-held data</td>
+      <td>Consent, Demographics</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Ophthalmologist</td>
+      <td>Referral, ScreeningEvent (read), Assessment</td>
+      <td>Assessment</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Primary Care Clinician</td>
+      <td>All received documents</td>
+      <td>PrimaryCareRecord</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Parent/Guardian</td>
+      <td>Own child's data (via portal/paper)</td>
+      <td>Consent (opt-out change)</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Teacher</td>
+      <td>AccommodationNotice only</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="data-minimisation">Data Minimisation</h5>
+
+<ul>
+  <li><strong>Teachers</strong> receive only <code class="language-plaintext highlighter-rouge">Communication</code> with accommodation type (glasses/front seat) — <strong>never</strong> acuity values, diagnosis, or screening details</li>
+  <li><strong>Parents</strong> receive screening outcome letter (pass/refer) or referral letter — no raw data</li>
+  <li><strong>Primary Care</strong> receives structured documents via MHD — only data relevant to health record</li>
+  <li><strong>Ophthalmology</strong> receives referral with screening data — minimum necessary for assessment</li>
+</ul>
+
+<hr />
+
+<h4 id="privacy--security">Privacy &amp; Security</h4>
+
+<h5 id="audit-trail-atna">Audit Trail (ATNA)</h5>
+
+<p>All FHIR interactions SHOULD be audited per <strong>ATNA</strong> (Audit Trail and Node Authentication):</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">POST</code>/<code class="language-plaintext highlighter-rouge">PATCH</code>/<code class="language-plaintext highlighter-rouge">DELETE</code> on any resource → audit event</li>
+  <li><code class="language-plaintext highlighter-rouge">GET</code> on sensitive resources (Consent, Patient) → audit event</li>
+  <li>Audit events sent to central audit repository</li>
+</ul>
+
+<h5 id="consistent-time-ct">Consistent Time (CT)</h5>
+
+<p>All systems SHOULD synchronize time via <strong>CT</strong> (Consistent Time) profile for accurate timestamps across organisations.</p>
+
+<h5 id="encryption">Encryption</h5>
+
+<ul>
+  <li><strong>In transit:</strong> TLS 1.2+ for all FHIR REST interactions</li>
+  <li><strong>At rest:</strong> Encryption per organisational policy</li>
+</ul>
+
+<h5 id="de-identification">De-identification</h5>
+
+<ul>
+  <li><strong>Synthetic data only</strong> in examples, tests, and documentation</li>
+  <li><strong>No real patient data</strong> in this IG or its examples</li>
+  <li>Production implementations MUST apply appropriate de-identification for analytics/research</li>
+</ul>
+
+<hr />
+
+<h4 id="legal-basis">Legal Basis</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Jurisdiction</th>
+      <th>Legal Basis</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>General (no mandate)</td>
+      <td>School health program policy</td>
+      <td>Opt-out consent is the legal basis</td>
+    </tr>
+    <tr>
+      <td>GDPR (EU)</td>
+      <td>Art. 6(1)(e) public task / Art. 9(2)(h) healthcare</td>
+      <td>Opt-out = valid consent mechanism</td>
+    </tr>
+    <tr>
+      <td>HIPAA (US)</td>
+      <td>Treatment, Payment, Operations</td>
+      <td>School health = treatment</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Local education/health law</td>
+      <td>Verify locally</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="cross-border-considerations">Cross-Border Considerations</h5>
+
+<ul>
+  <li>This IG is <strong>jurisdiction-agnostic</strong> — demographic matching (name, DOB, address) is primary PIXm strategy</li>
+  <li>National health ID is <strong>optional</strong> supplementary identifier</li>
+  <li>No assumption of specific legal framework; implementers must map to local law</li>
+</ul>
+
+<hr />
+
+<h4 id="aggregate-reporting-not-in-scope">Aggregate Reporting (Not in Scope)</h4>
+
+<p>This IG does <strong>not</strong> define aggregate/public health reporting (no mADX, no notifiable disease reporting). If needed in future:</p>
+<ul>
+  <li>Would use <strong>mADX</strong> (QRPH-58/59) for aggregate reporting</li>
+  <li>Small cell suppression required (threshold per jurisdiction)</li>
+  <li>Jurisdiction rules for reporting destination</li>
+</ul>
+
+<hr />
+
+<h4 id="safety--risk-mitigation">Safety &amp; Risk Mitigation</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Risk</th>
+      <th>Likelihood</th>
+      <th>Impact</th>
+      <th>Mitigation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Parent opts out but child needs screening</td>
+      <td>Low</td>
+      <td>Medium</td>
+      <td>Annual notification; teacher awareness; primary care follow-up</td>
+    </tr>
+    <tr>
+      <td>Referral lost (paper)</td>
+      <td>Medium</td>
+      <td>High</td>
+      <td>360X electronic tracking; 4-week timeout; re-issue</td>
+    </tr>
+    <tr>
+      <td>Ophthalmology rejects referral</td>
+      <td>Low</td>
+      <td>Medium</td>
+      <td>360X PCC-56 Reject; nurse corrects &amp; resends or closes</td>
+    </tr>
+    <tr>
+      <td>Child DNA twice</td>
+      <td>Low</td>
+      <td>High</td>
+      <td>One re-referral offered; then close + primary care notify</td>
+    </tr>
+    <tr>
+      <td>Consent status stale</td>
+      <td>Low</td>
+      <td>Medium</td>
+      <td>Real-time Consent read at screening; statusHistory tracked</td>
+    </tr>
+    <tr>
+      <td>Teacher sees acuity values</td>
+      <td>Very Low</td>
+      <td>High</td>
+      <td>Communication payload only contains accommodation type; no clinical data</td>
+    </tr>
+    <tr>
+      <td>National ID unavailable</td>
+      <td>Medium</td>
+      <td>Low</td>
+      <td>Demographic matching primary; national ID optional supplement</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h4 id="incident-response">Incident Response</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Incident Type</th>
+      <th>Response</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data breach</td>
+      <td>Notify DPA within 72h (GDPR); follow organisational policy</td>
+    </tr>
+    <tr>
+      <td>Wrong patient in referral</td>
+      <td>Cancel referral (OP-2b); notify all parties; audit</td>
+    </tr>
+    <tr>
+      <td>Incorrect screening result</td>
+      <td>Amend Observation (status=amended); re-send to primary care</td>
+    </tr>
+    <tr>
+      <td>System downtime</td>
+      <td>Paper fallback; queue FHIR transactions for replay</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h4 id="compliance-checklist">Compliance Checklist</h4>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Opt-out consent model documented</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Consent revocable mid-year</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Data retention periods defined</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Data ownership clear</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Access controls per role</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Data minimisation (teacher sees only accommodation)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Audit trail (ATNA) referenced</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Encryption in transit/at rest</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />No legal mandate assumed</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Jurisdiction-agnostic design</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Synthetic data only in examples</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />No real patient data in IG</li>
+</ul>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026 <a style="color:var(--footer-hyperlink-text-color)" href=""></a>.  Package school-vision-screening#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Nov 21, 2026 14:59+0000">2026-11-21</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

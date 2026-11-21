@@ -1,0 +1,21 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "svs-referral-reason-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet svs-referral-reason-vs</b></p><a name=\"svs-referral-reason-vs\"> </a><a name=\"hcsvs-referral-reason-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-svs-referral-reason.html\"><code>https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-referral-reason</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.0</span></li></ul></div>"
+  },
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/ValueSet/svs-referral-reason-vs",
+  "version" : "0.1.0",
+  "name" : "SVSReferralReasonVS",
+  "title" : "School Vision Screening Referral Reasons ValueSet",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-11-21T14:59:50+00:00",
+  "description" : "Reasons for referral to ophthalmology",
+  "compose" : {
+    "include" : [{
+      "system" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-referral-reason"
+    }]
+  }
+}

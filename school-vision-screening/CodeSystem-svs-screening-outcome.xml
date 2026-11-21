@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="svs-screening-outcome"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem svs-screening-outcome</b></p><a name="svs-screening-outcome"> </a><a name="hcsvs-screening-outcome"> </a><p>This case-sensitive code system <code>https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-screening-outcome</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">pass<a name="svs-screening-outcome-pass"> </a></td><td>Pass</td><td>Visual acuity ≥6/9 in both eyes</td></tr><tr><td style="white-space:nowrap">refer<a name="svs-screening-outcome-refer"> </a></td><td>Refer</td><td>Visual acuity ≤6/12 in either eye OR ≥2 line difference between eyes</td></tr><tr><td style="white-space:nowrap">absent<a name="svs-screening-outcome-absent"> </a></td><td>Absent</td><td>Child was absent on screening day</td></tr><tr><td style="white-space:nowrap">incomplete<a name="svs-screening-outcome-incomplete"> </a></td><td>Incomplete</td><td>Screening could not be completed (uncooperative, one eye only)</td></tr></table></div>
+  </text>
+  <url value="https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-screening-outcome"/>
+  <version value="0.1.0"/>
+  <name value="SVSScreeningOutcome"/>
+  <title value="School Vision Screening Outcomes"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-11-21T14:59:50+00:00"/>
+  <description value="Possible outcomes of a vision screening encounter"/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="pass"/>
+    <display value="Pass"/>
+    <definition value="Visual acuity ≥6/9 in both eyes"/>
+  </concept>
+  <concept>
+    <code value="refer"/>
+    <display value="Refer"/>
+    <definition value="Visual acuity ≤6/12 in either eye OR ≥2 line difference between eyes"/>
+  </concept>
+  <concept>
+    <code value="absent"/>
+    <display value="Absent"/>
+    <definition value="Child was absent on screening day"/>
+  </concept>
+  <concept>
+    <code value="incomplete"/>
+    <display value="Incomplete"/>
+    <definition value="Screening could not be completed (uncooperative, one eye only)"/>
+  </concept>
+</CodeSystem>

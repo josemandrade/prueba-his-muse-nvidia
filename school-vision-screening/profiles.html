@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Profiles -  v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"6"}
+    h3,h4,h5,h6{--heading-prefix:"6"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - CI Build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="usecase.html">Use Case</a>
+  </li>
+  <li>
+    <a href="process.html">Process</a>
+  </li>
+  <li>
+    <a href="resources.html">Resources</a>
+  </li>
+  <li>
+    <a href="sequences.html">Sequences</a>
+  </li>
+  <li>
+    <a href="profiles.html">Profiles</a>
+  </li>
+  <li>
+    <a href="operations.html">Operations</a>
+  </li>
+  <li>
+    <a href="ihe.html">IHE Relationships</a>
+  </li>
+  <li>
+    <a href="lifecycle.html">Lifecycle</a>
+  </li>
+  <li>
+    <a href="terminology.html">Terminology</a>
+  </li>
+  <li>
+    <a href="public-health.html">Public Health</a>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Profiles</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">SchoolVisionScreening - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Profiles</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<h3 id="profiles">Profiles</h3>
+
+<hr />
+
+<h4 id="profile-definitions">Profile Definitions</h4>
+
+<p>This page lists all profiles defined in this Implementation Guide. Each profile is derived from a FHIR R4 base resource and includes constraints, bindings, and extensions specific to the School Vision Screening workflow.</p>
+
+<hr />
+
+<h5 id="patient-profile-svspatient">Patient Profile: SVSPatient</h5>
+
+<p><strong>Base:</strong> <code class="language-plaintext highlighter-rouge">Patient</code><br />
+<strong>Canonical:</strong> <code class="language-plaintext highlighter-rouge">https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-patient</code></p>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">identifier</code> 1..* (school roll number required, national ID optional, PIXm cross-ref)</li>
+  <li><code class="language-plaintext highlighter-rouge">name</code> 1..* (official name required)</li>
+  <li><code class="language-plaintext highlighter-rouge">birthDate</code> 1..1</li>
+  <li><code class="language-plaintext highlighter-rouge">gender</code> 1..1</li>
+  <li><code class="language-plaintext highlighter-rouge">managingOrganization</code> 0..1 Reference(<code class="language-plaintext highlighter-rouge">SVSOrganization</code>)</li>
+  <li><strong>Extensions:</strong>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">gradeAtScreening</code> (string) — snapshot of grade at time of screening</li>
+      <li><code class="language-plaintext highlighter-rouge">schoolYear</code> (string) — e.g., "2026-2027"</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Key Identifiers:</strong>
+| System | Type | Description |
+|——–|——|————-|
+| <code class="language-plaintext highlighter-rouge">urn:oid:1.2.3.4.5.school-roll</code> | SB | School roll number (required) |
+| <code class="language-plaintext highlighter-rouge">http://terminology.hl7.org/CodeSystem/v2-0203#NI</code> | NI | National health ID (optional) |
+| <code class="language-plaintext highlighter-rouge">urn:ihe:pixm:cross-ref</code> | PIXM | PIXm cross-reference ID |</p>
+
+<hr />
+
+<h5 id="relatedperson-profile-svsrelatedperson">RelatedPerson Profile: SVSRelatedPerson</h5>
+
+<p><strong>Base:</strong> <code class="language-plaintext highlighter-rouge">RelatedPerson</code><br />
+<strong>Canonical:</strong> <code class="language-plaintext highlighter-rouge">https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-related-person</code></p>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">patient</code> 1..1 Reference(<code class="language-plaintext highlighter-rouge">SVSPatient</code>)</li>
+  <li><code class="language-plaintext highlighter-rouge">relationship</code> 1..1 CodeableConcept from HL7 v2-0131 (required)</li>
+  <li><code class="language-plaintext highlighter-rouge">name</code> 1..*</li>
+  <li><code class="language-plaintext highlighter-rouge">telecom</code> 1..*</li>
+  <li><strong>Extensions:</strong>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">optOutStatus</code> (boolean) — current opt-out status</li>
+      <li><code class="language-plaintext highlighter-rouge">optOutEffectiveFrom</code> (dateTime)</li>
+      <li><code class="language-plaintext highlighter-rouge">optOutEffectiveTo</code> (dateTime)</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h5 id="practitioner--practitionerrole-profiles">Practitioner / PractitionerRole Profiles</h5>
+
+<h6 id="svspractitioner">SVSPractitioner</h6>
+<p><strong>Base:</strong> <code class="language-plaintext highlighter-rouge">Practitioner</code><br />
+<strong>Canonical:</strong> <code class="language-plaintext highlighter-rouge">https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-practitioner</code></p>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">identifier</code> 1..* (employee ID, license number required)</li>
+  <li><code class="language-plaintext highlighter-rouge">name</code> 1..*</li>
+  <li><code class="language-plaintext highlighter-rouge">telecom</code> 0..*</li>
+</ul>
+
+<h6 id="svspractitionerrole">SVSPractitionerRole</h6>
+<p><strong>Base:</strong> <code class="language-plaintext highlighter-rouge">PractitionerRole</code><br />
+<strong>Canonical:</strong> <code class="language-plaintext highlighter-rouge">https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-practitioner-role</code></p>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">practitioner</code> 1..1 Reference(<code class="language-plaintext highlighter-rouge">SVSPractitioner</code>)</li>
+  <li><code class="language-plaintext highlighter-rouge">organization</code> 1..1 Reference(<code class="language-plaintext highlighter-rouge">SVSOrganization</code>)</li>
+  <li><code class="language-plaintext highlighter-rouge">code</code> 1..1 from <code class="language-plaintext highlighter-rouge">SVSPractitionerRole</code> ValueSet (school-nurse, service-lead)</li>
+  <li><code class="language-plaintext highlighter-rouge">specialty</code> 0..* SNOMED 408480009 "School nursing"</li>
+  <li><strong>Extension:</strong> <code class="language-plaintext highlighter-rouge">escalationContact</code> 0..1 Reference(<code class="language-plaintext highlighter-rouge">SVSPractitionerRole</code>) — for ServiceLead escalation</li>
+</ul>
+
+<hr />
+
+<h5 id="observation-profiles-screeningevent">Observation Profiles (ScreeningEvent)</h5>
+
+<h6 id="svsobservationscreeningpanel">SVSObservationScreeningPanel</h6>
+<p><strong>Base:</strong> <code class="language-plaintext highlighter-rouge">Observation</code><br />
+<strong>Canonical:</strong> <code class="language-plaintext highlighter-rouge">https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-observation-screening-panel</code></p>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td><code class="language-plaintext highlighter-rouge">status</code> = final</td>
+          <td>amended</td>
+          <td>corrected</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">category</code> = vital-signs</li>
+  <li><code class="language-plaintext highlighter-rouge">code</code> = LOINC 83700-8 "Visual acuity screening panel"</li>
+  <li><code class="language-plaintext highlighter-rouge">subject</code> 1..1 Reference(<code class="language-plaintext highlighter-rouge">SVSPatient</code>)</li>
+  <li><code class="language-plaintext highlighter-rouge">performer</code> 1..* Reference(<code class="language-plaintext highlighter-rouge">SVSPractitionerRole</code>)</li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td><code class="language-plaintext highlighter-rouge">hasMember</code> 2..2 Reference(<code class="language-plaintext highlighter-rouge">SVSObservationRightEyeAcuity</code></td>
+          <td><code class="language-plaintext highlighter-rouge">SVSObservationLeftEyeAcuity</code>)</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li><strong>Notes (metadata):</strong>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">test-used</code> (string)</li>
+      <li><code class="language-plaintext highlighter-rouge">outcome</code> (CodeableConcept from <code class="language-plaintext highlighter-rouge">SVSScreeningOutcome</code>)</li>
+      <li><code class="language-plaintext highlighter-rouge">attempt-number</code> (integer)</li>
+      <li><code class="language-plaintext highlighter-rouge">is-re-screen</code> (boolean)</li>
+      <li><code class="language-plaintext highlighter-rouge">referral-indicated</code> (boolean)</li>
+      <li><code class="language-plaintext highlighter-rouge">acuity-diff-two-lines</code> (boolean)</li>
+    </ul>
+  </li>
+</ul>
+
+<h6 id="svsobservationrighteyeacuity--svsobservationlefteyeacuity">SVSObservationRightEyeAcuity / SVSObservationLeftEyeAcuity</h6>
+<p><strong>Base:</strong> <code class="language-plaintext highlighter-rouge">Observation</code><br />
+<strong>Canonical:</strong> <code class="language-plaintext highlighter-rouge">https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-observation-right-eye-acuity</code> / <code class="language-plaintext highlighter-rouge">svs-observation-left-eye-acuity</code></p>
+
+<p><strong>Key Constraint:</strong> <code class="language-plaintext highlighter-rouge">value[x]</code> = <strong>Ratio</strong> (not Quantity)</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">valueRatio.numerator</code> Quantity (value in meters, UCUM "m")</li>
+  <li><code class="language-plaintext highlighter-rouge">valueRatio.denominator</code> Quantity (value in meters, UCUM "m")</li>
+  <li><code class="language-plaintext highlighter-rouge">bodySite</code> = SNOMED 363654007 (Right eye) / 363655008 (Left eye)</li>
+  <li><code class="language-plaintext highlighter-rouge">interpretation</code> from <code class="language-plaintext highlighter-rouge">SVSAcuityInterpretation</code> (A=Abnormal ≤6/12, N=Normal ≥6/9)</li>
+</ul>
+
+<hr />
+
+<h5 id="referral-profiles-360x-aligned">Referral Profiles (360X Aligned)</h5>
+
+<h6 id="svsservicerequestreferral">SVSServiceRequestReferral</h6>
+<p><strong>Base:</strong> <code class="language-plaintext highlighter-rouge">ServiceRequest</code><br />
+<strong>Canonical:</strong> <code class="language-plaintext highlighter-rouge">https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-service-request-referral</code></p>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td><code class="language-plaintext highlighter-rouge">status</code> = draft</td>
+          <td>active</td>
+          <td>on-hold</td>
+          <td>revoked</td>
+          <td>completed</td>
+          <td>entered-in-error</td>
+          <td>unknown</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">intent</code> = order</li>
+  <li><code class="language-plaintext highlighter-rouge">category</code> = referral</li>
+  <li><code class="language-plaintext highlighter-rouge">priority</code> = routine</li>
+  <li><code class="language-plaintext highlighter-rouge">code</code> = SNOMED 307924000 "Referral to ophthalmologist"</li>
+  <li><code class="language-plaintext highlighter-rouge">reasonCode</code> from <code class="language-plaintext highlighter-rouge">SVSReferralReason</code></li>
+  <li><code class="language-plaintext highlighter-rouge">reasonReference</code> 1..1 Reference(<code class="language-plaintext highlighter-rouge">SVSObservationScreeningPanel</code>)</li>
+  <li><strong>Extensions:</strong>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">expectedDeadline</code> (dateTime) — referral date + 4 weeks</li>
+      <li><code class="language-plaintext highlighter-rouge">parentDecision</code> (CodeableConcept: accept/decline)</li>
+      <li><code class="language-plaintext highlighter-rouge">declineReason</code> (string)</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">replaces</code> 0..* Reference(<code class="language-plaintext highlighter-rouge">SVSServiceRequestReferral</code>) — for re-issued referrals</li>
+</ul>
+
+<h6 id="svstaskreferraltracking">SVSTaskReferralTracking</h6>
+<p><strong>Base:</strong> <code class="language-plaintext highlighter-rouge">Task</code><br />
+<strong>Canonical:</strong> <code class="language-plaintext highlighter-rouge">https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-task-referral-tracking</code></p>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td><code class="language-plaintext highlighter-rouge">status</code> = draft</td>
+          <td>requested</td>
+          <td>received</td>
+          <td>accepted</td>
+          <td>rejected</td>
+          <td>ready</td>
+          <td>cancelled</td>
+          <td>in-progress</td>
+          <td>on-hold</td>
+          <td>failed</td>
+          <td>completed</td>
+          <td>entered-in-error</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">code</code> = referral</li>
+  <li><code class="language-plaintext highlighter-rouge">focus</code> 1..1 Reference(<code class="language-plaintext highlighter-rouge">SVSServiceRequestReferral</code>)</li>
+  <li><code class="language-plaintext highlighter-rouge">restriction.period.end</code> 0..1 dateTime — 4-week deadline</li>
+  <li><code class="language-plaintext highlighter-rouge">input</code> referral-detail → Reference(<code class="language-plaintext highlighter-rouge">SVSServiceRequestReferral</code>)</li>
+  <li><code class="language-plaintext highlighter-rouge">output</code> assessment-report → Reference(<code class="language-plaintext highlighter-rouge">SVSDiagnosticReportAssessment</code>)</li>
+</ul>
+
+<hr />
+
+<h5 id="assessment-profiles">Assessment Profiles</h5>
+
+<h6 id="svsdiagnosticreportassessment">SVSDiagnosticReportAssessment</h6>
+<p><strong>Base:</strong> <code class="language-plaintext highlighter-rouge">DiagnosticReport</code><br />
+<strong>Canonical:</strong> <code class="language-plaintext highlighter-rouge">https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-diagnostic-report-assessment</code></p>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td><code class="language-plaintext highlighter-rouge">status</code> = registered</td>
+          <td>partial</td>
+          <td>preliminary</td>
+          <td>final</td>
+          <td>amended</td>
+          <td>corrected</td>
+          <td>appended</td>
+          <td>cancelled</td>
+          <td>entered-in-error</td>
+          <td>unknown</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">category</code> = OP (Ophthalmology)</li>
+  <li><code class="language-plaintext highlighter-rouge">code</code> = LOINC 28626-8 "Ophthalmology study"</li>
+  <li><code class="language-plaintext highlighter-rouge">basedOn</code> 1..1 Reference(<code class="language-plaintext highlighter-rouge">SVSServiceRequestReferral</code>)</li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td><code class="language-plaintext highlighter-rouge">result</code> 1..* Reference(<code class="language-plaintext highlighter-rouge">SVSObservationDiagnosis</code></td>
+          <td><code class="language-plaintext highlighter-rouge">SVSObservationRefractionOD</code></td>
+          <td><code class="language-plaintext highlighter-rouge">SVSObservationRefractionOS</code>)</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ul>
+
+<h6 id="svsobservationdiagnosis">SVSObservationDiagnosis</h6>
+<p><strong>Base:</strong> <code class="language-plaintext highlighter-rouge">Observation</code><br />
+<strong>Canonical:</strong> <code class="language-plaintext highlighter-rouge">https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-observation-diagnosis</code></p>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">category</code> = diagnosis</li>
+  <li><code class="language-plaintext highlighter-rouge">code</code> from SNOMED (required binding)</li>
+  <li><code class="language-plaintext highlighter-rouge">value[x]</code> = CodeableConcept from SNOMED (required)</li>
+  <li><code class="language-plaintext highlighter-rouge">bodySite</code> 0..1 SNOMED (363654007 Right eye / 363655008 Left eye)</li>
+</ul>
+
+<h6 id="svsobservationrefractionod--svsobservationrefractionos">SVSObservationRefractionOD / SVSObservationRefractionOS</h6>
+<p><strong>Base:</strong> <code class="language-plaintext highlighter-rouge">Observation</code><br />
+<strong>Canonical:</strong> <code class="language-plaintext highlighter-rouge">https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-observation-refraction-od</code> / <code class="language-plaintext highlighter-rouge">svs-observation-refraction-os</code></p>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">category</code> = exam</li>
+  <li><code class="language-plaintext highlighter-rouge">valueQuantity</code> = Quantity (diopters, UCUM "D")</li>
+  <li><code class="language-plaintext highlighter-rouge">bodySite</code> = Right eye (363654007) / Left eye (363655008)</li>
+  <li><code class="language-plaintext highlighter-rouge">component</code> 3..3:
+    <ul>
+      <li>Sphere (LOINC 29468-3) — Quantity (D)</li>
+      <li>Cylinder (LOINC 29469-1) — Quantity (D)</li>
+      <li>Axis (LOINC 29470-9) — Quantity (deg)</li>
+    </ul>
+  </li>
+</ul>
+
+<h6 id="svscareplanfollowup">SVSCarePlanFollowUp</h6>
+<p><strong>Base:</strong> <code class="language-plaintext highlighter-rouge">CarePlan</code><br />
+<strong>Canonical:</strong> <code class="language-plaintext highlighter-rouge">https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-care-plan-follow-up</code></p>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">intent</code> = plan</li>
+  <li><code class="language-plaintext highlighter-rouge">category</code> = assess-plan</li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td><code class="language-plaintext highlighter-rouge">activity</code> 1..* with <code class="language-plaintext highlighter-rouge">detail.kind</code> = ServiceRequest</td>
+          <td>Task</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">detail.scheduledPeriod</code> for review interval</li>
+</ul>
+
+<hr />
+
+<h5 id="communication-profile-svscommunicationaccommodation">Communication Profile: SVSCommunicationAccommodation</h5>
+
+<p><strong>Base:</strong> <code class="language-plaintext highlighter-rouge">Communication</code><br />
+<strong>Canonical:</strong> <code class="language-plaintext highlighter-rouge">https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-communication-accommodation</code></p>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">category</code> = instruction</li>
+  <li><code class="language-plaintext highlighter-rouge">sender</code> 1..1 Reference(<code class="language-plaintext highlighter-rouge">SVSPractitionerRole</code>) — School Nurse</li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td><code class="language-plaintext highlighter-rouge">recipient</code> 1..* Reference(<code class="language-plaintext highlighter-rouge">PractitionerRole</code></td>
+          <td><code class="language-plaintext highlighter-rouge">RelatedPerson</code>) — Teacher</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">payload.contentString</code> 1..1 string</li>
+  <li><strong>Extensions:</strong>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">accommodationType</code> from <code class="language-plaintext highlighter-rouge">SVSAccommodationType</code></li>
+      <li><code class="language-plaintext highlighter-rouge">validUntil</code> (date)</li>
+      <li><code class="language-plaintext highlighter-rouge">assessmentReference</code> Reference(<code class="language-plaintext highlighter-rouge">SVSDiagnosticReportAssessment</code>)</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">relatesTo</code> code=replaces → previous Communication</li>
+</ul>
+
+<hr />
+
+<h5 id="consent-profile-svsconsentoptout">Consent Profile: SVSConsentOptOut</h5>
+
+<p><strong>Base:</strong> <code class="language-plaintext highlighter-rouge">Consent</code><br />
+<strong>Canonical:</strong> <code class="language-plaintext highlighter-rouge">https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-consent-opt-out</code></p>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">scope</code> = screening</li>
+  <li><code class="language-plaintext highlighter-rouge">category</code> = DENY</li>
+  <li><code class="language-plaintext highlighter-rouge">provision</code> 1..* (multiple for statusHistory)
+    <ul>
+      <li>
+        <table>
+          <tbody>
+            <tr>
+              <td><code class="language-plaintext highlighter-rouge">type</code> = deny</td>
+              <td>permit</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li><code class="language-plaintext highlighter-rouge">period</code> with start/end</li>
+      <li><code class="language-plaintext highlighter-rouge">action</code> = vision-screening</li>
+    </ul>
+  </li>
+  <li>Multiple <code class="language-plaintext highlighter-rouge">provision</code> entries model mid-year status changes (opt-out → opt-in → opt-out)</li>
+</ul>
+
+<hr />
+
+<h5 id="documentreference-profile-svsdocumentreferenceip4">DocumentReference Profile: SVSDocumentReferenceIP4</h5>
+
+<p><strong>Base:</strong> <code class="language-plaintext highlighter-rouge">DocumentReference</code><br />
+<strong>Canonical:</strong> <code class="language-plaintext highlighter-rouge">https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-document-reference-ip4</code></p>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">type</code> from LOINC per documentType:
+    <ul>
+      <li>screening-pass/decline/missed/end-of-year → LOINC 83700-8</li>
+      <li>assessment-full → LOINC 28626-8</li>
+      <li>referral-dna/rejected → LOINC 11506-3 "Referral note"</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">content.attachment.contentType</code> = application/fhir+json</li>
+  <li><code class="language-plaintext highlighter-rouge">content.attachment.url</code> → URL to FHIR resource</li>
+  <li><code class="language-plaintext highlighter-rouge">context.related</code> 0..1 Reference(<code class="language-plaintext highlighter-rouge">SVSServiceRequestReferral</code>) — sourceReferralId</li>
+</ul>
+
+<hr />
+
+<h5 id="list-profile-svslistprimarycaredocuments">List Profile: SVSListPrimaryCareDocuments</h5>
+
+<p><strong>Base:</strong> <code class="language-plaintext highlighter-rouge">List</code><br />
+<strong>Canonical:</strong> <code class="language-plaintext highlighter-rouge">https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-list-primary-care-documents</code></p>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">mode</code> = working</li>
+  <li><code class="language-plaintext highlighter-rouge">entry</code> 0..* Reference(<code class="language-plaintext highlighter-rouge">SVSDocumentReferenceIP4</code>)</li>
+</ul>
+
+<hr />
+
+<h5 id="organization-profile-svsorganization">Organization Profile: SVSOrganization</h5>
+
+<p><strong>Base:</strong> <code class="language-plaintext highlighter-rouge">Organization</code><br />
+<strong>Canonical:</strong> <code class="language-plaintext highlighter-rouge">https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-organization</code></p>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">identifier</code> 1..*</li>
+  <li><code class="language-plaintext highlighter-rouge">name</code> 1..1</li>
+  <li><code class="language-plaintext highlighter-rouge">type</code> 0..1 CodeableConcept</li>
+  <li><code class="language-plaintext highlighter-rouge">telecom</code> 0..*</li>
+  <li><code class="language-plaintext highlighter-rouge">address</code> 0..*</li>
+</ul>
+
+<hr />
+
+<h4 id="profile-inheritance-summary">Profile Inheritance Summary</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SVSPatient → Patient
+SVSRelatedPerson → RelatedPerson
+SVSPractitioner → Practitioner
+SVSPractitionerRole → PractitionerRole
+SVSObservationScreeningPanel → Observation
+  SVSObservationRightEyeAcuity → Observation
+  SVSObservationLeftEyeAcuity → Observation
+SVSServiceRequestReferral → ServiceRequest
+SVSTaskReferralTracking → Task
+SVSDiagnosticReportAssessment → DiagnosticReport
+  SVSObservationDiagnosis → Observation
+  SVSObservationRefractionOD → Observation
+  SVSObservationRefractionOS → Observation
+SVSCarePlanFollowUp → CarePlan
+SVSCommunicationAccommodation → Communication
+SVSConsentOptOut → Consent
+SVSDocumentReferenceIP4 → DocumentReference
+SVSListPrimaryCareDocuments → List
+SVSOrganization → Organization
+SVSPractitioner → Practitioner
+SVSPractitionerRole → PractitionerRole
+</code></pre></div></div>
+
+<hr />
+
+<h4 id="validation">Validation</h4>
+
+<p>All profiles validate against FHIR R4 base resources with:</p>
+<ul>
+  <li>Required bindings respected (SNOMED CT, LOINC, UCUM)</li>
+  <li>Extensions only where no base field carries the meaning</li>
+  <li>Cardinalities constrained per workflow requirements</li>
+  <li>Examples provided for each profile (see <a href="examples.html">Examples</a>)</li>
+</ul>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026 <a style="color:var(--footer-hyperlink-text-color)" href=""></a>.  Package school-vision-screening#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Nov 21, 2026 14:59+0000">2026-11-21</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

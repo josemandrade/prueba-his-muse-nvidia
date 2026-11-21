@@ -1,0 +1,50 @@
+{
+  "codeSystems" : [{
+    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-accommodation-type",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "SVSAccommodationType",
+    "title" : "Classroom Accommodation Types",
+    "description" : "Types of classroom accommodations for vision impairment"
+  },
+  {
+    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-document-type",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "SVSDocumentType",
+    "title" : "School Vision Screening Document Types",
+    "description" : "Types of documents exchanged with Primary Care (IP-4)"
+  },
+  {
+    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-practitioner-role",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "SVSPractitionerRoleCS",
+    "title" : "School Health Service Practitioner Roles",
+    "description" : "Roles within the school health service for vision screening"
+  },
+  {
+    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-referral-reason",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "SVSReferralReason",
+    "title" : "School Vision Screening Referral Reasons",
+    "description" : "Reasons for referral to ophthalmology"
+  },
+  {
+    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-screening-outcome",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "SVSScreeningOutcome",
+    "title" : "School Vision Screening Outcomes",
+    "description" : "Possible outcomes of a vision screening encounter"
+  },
+  {
+    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-screening-test-method",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "SVSScreeningTestMethod",
+    "title" : "School Vision Screening Test Methods",
+    "description" : "Methods used for visual acuity screening in school settings"
+  }]
+}

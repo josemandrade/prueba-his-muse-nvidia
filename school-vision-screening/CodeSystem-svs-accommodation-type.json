@@ -1,0 +1,39 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "svs-accommodation-type",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem svs-accommodation-type</b></p><a name=\"svs-accommodation-type\"> </a><a name=\"hcsvs-accommodation-type\"> </a><p>This case-sensitive code system <code>https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-accommodation-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">glasses<a name=\"svs-accommodation-type-glasses\"> </a></td><td>Glasses needed</td><td>Child requires prescription glasses</td></tr><tr><td style=\"white-space:nowrap\">front-seat<a name=\"svs-accommodation-type-front-seat\"> </a></td><td>Front seat</td><td>Child needs front row seating</td></tr><tr><td style=\"white-space:nowrap\">both<a name=\"svs-accommodation-type-both\"> </a></td><td>Glasses and front seat</td><td>Child needs both glasses and front seat</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"svs-accommodation-type-other\"> </a></td><td>Other accommodation</td><td>Other classroom accommodation</td></tr></table></div>"
+  },
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-accommodation-type",
+  "version" : "0.1.0",
+  "name" : "SVSAccommodationType",
+  "title" : "Classroom Accommodation Types",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-11-21T14:59:50+00:00",
+  "description" : "Types of classroom accommodations for vision impairment",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "glasses",
+    "display" : "Glasses needed",
+    "definition" : "Child requires prescription glasses"
+  },
+  {
+    "code" : "front-seat",
+    "display" : "Front seat",
+    "definition" : "Child needs front row seating"
+  },
+  {
+    "code" : "both",
+    "display" : "Glasses and front seat",
+    "definition" : "Child needs both glasses and front seat"
+  },
+  {
+    "code" : "other",
+    "display" : "Other accommodation",
+    "definition" : "Other classroom accommodation"
+  }]
+}

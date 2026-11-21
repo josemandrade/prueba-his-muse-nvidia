@@ -1,0 +1,7 @@
+URL,Version,Status,OIDs,Name,Title,Description,Used
+https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-accommodation-type,0.1.0,active,,SVSAccommodationType,Classroom Accommodation Types,"Types of classroom accommodations for vision impairment",
+https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-document-type,0.1.0,active,,SVSDocumentType,School Vision Screening Document Types,"Types of documents exchanged with Primary Care (IP-4)",
+https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-practitioner-role,0.1.0,active,,SVSPractitionerRoleCS,School Health Service Practitioner Roles,"Roles within the school health service for vision screening",
+https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-referral-reason,0.1.0,active,,SVSReferralReason,School Vision Screening Referral Reasons,"Reasons for referral to ophthalmology",
+https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-screening-outcome,0.1.0,active,,SVSScreeningOutcome,School Vision Screening Outcomes,"Possible outcomes of a vision screening encounter",
+https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-screening-test-method,0.1.0,active,,SVSScreeningTestMethod,School Vision Screening Test Methods,"Methods used for visual acuity screening in school settings",

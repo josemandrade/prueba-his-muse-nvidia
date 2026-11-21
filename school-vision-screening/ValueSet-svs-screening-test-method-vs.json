@@ -1,0 +1,21 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "svs-screening-test-method-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet svs-screening-test-method-vs</b></p><a name=\"svs-screening-test-method-vs\"> </a><a name=\"hcsvs-screening-test-method-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-svs-screening-test-method.html\"><code>https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-screening-test-method</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.0</span></li></ul></div>"
+  },
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/ValueSet/svs-screening-test-method-vs",
+  "version" : "0.1.0",
+  "name" : "SVSScreeningTestMethodVS",
+  "title" : "School Vision Screening Test Methods ValueSet",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-11-21T14:59:50+00:00",
+  "description" : "Allowed test methods for school vision screening",
+  "compose" : {
+    "include" : [{
+      "system" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-screening-test-method"
+    }]
+  }
+}

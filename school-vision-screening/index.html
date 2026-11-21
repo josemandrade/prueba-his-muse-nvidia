@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>School Vision Screening IG -  v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"1"}
+    h3,h4,h5,h6{--heading-prefix:"1"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - CI Build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="usecase.html">Use Case</a>
+  </li>
+  <li>
+    <a href="process.html">Process</a>
+  </li>
+  <li>
+    <a href="resources.html">Resources</a>
+  </li>
+  <li>
+    <a href="sequences.html">Sequences</a>
+  </li>
+  <li>
+    <a href="profiles.html">Profiles</a>
+  </li>
+  <li>
+    <a href="operations.html">Operations</a>
+  </li>
+  <li>
+    <a href="ihe.html">IHE Relationships</a>
+  </li>
+  <li>
+    <a href="lifecycle.html">Lifecycle</a>
+  </li>
+  <li>
+    <a href="terminology.html">Terminology</a>
+  </li>
+  <li>
+    <a href="public-health.html">Public Health</a>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>School Vision Screening IG</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">SchoolVisionScreening - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>School Vision Screening IG</h2>
+  
+
+
+
+
+
+
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/ImplementationGuide/school-vision-screening<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/ImplementationGuide/school-vision-screening"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/ImplementationGuide/school-vision-screening|0.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2026-11-21
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">SchoolVisionScreening</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<h3 id="school-vision-screening-implementation-guide">School Vision Screening Implementation Guide</h3>
+
+<p><strong>Version:</strong> 0.1.0 (CI Build)<br />
+<strong>FHIR Version:</strong> 4.0.1<br />
+<strong>Status:</strong> Draft<br />
+<strong>Canonical URL:</strong> <code class="language-plaintext highlighter-rouge">https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening</code></p>
+
+<hr />
+
+<h4 id="overview">Overview</h4>
+
+<p>This Implementation Guide defines the FHIR R4 profiles, operations, and examples for the <strong>School Vision Screening</strong> interoperability workflow. It enables the exchange of vision screening results, referrals to ophthalmology, and assessment feedback between:</p>
+
+<ul>
+  <li><strong>School Health Service</strong> (school nurses conducting screening)</li>
+  <li><strong>Ophthalmology Clinic / Hospital</strong> (assessing referred children)</li>
+  <li><strong>Primary Care Team</strong> (receiving results for the child's health record)</li>
+  <li><strong>Parents/Guardians</strong> (receiving notifications, providing consent)</li>
+  <li><strong>Teachers</strong> (receiving classroom accommodation notices)</li>
+</ul>
+
+<hr />
+
+<h4 id="clinical-use-case">Clinical Use Case</h4>
+
+<p>Vision problems in schoolchildren go undetected until they affect learning. The school nurse screens visual acuity per eye during the school year using Snellen chart (6m), Tumbling E optotypes, or Lea symbols.</p>
+
+<p><strong>Thresholds:</strong></p>
+<ul>
+  <li><strong>Pass:</strong> ≥6/9 in each eye</li>
+  <li><strong>Refer:</strong> ≤6/12 in either eye OR ≥2 line difference between eyes</li>
+</ul>
+
+<p>Children with abnormal results are referred to an ophthalmologist. The referral result must reach the primary care team for the health record, and parents must be notified.</p>
+
+<hr />
+
+<h4 id="key-interoperability-points">Key Interoperability Points</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>IP</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>FHIR Resources</th>
+      <th>IHE Profile</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>IP-1</strong></td>
+      <td>Screening Result Capture</td>
+      <td>Nurse records structured screening data (acuity per eye, test used, outcome)</td>
+      <td><code class="language-plaintext highlighter-rouge">Observation</code> panel + 2 member <code class="language-plaintext highlighter-rouge">Observation</code>s</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td><strong>IP-2</strong></td>
+      <td>Referral Dispatch</td>
+      <td>Structured referral with 4-week deadline tracking, parent decline handling</td>
+      <td><code class="language-plaintext highlighter-rouge">ServiceRequest</code> + <code class="language-plaintext highlighter-rouge">Task</code></td>
+      <td><strong>360X</strong> (PCC-55/56/58/61)</td>
+    </tr>
+    <tr>
+      <td><strong>IP-3</strong></td>
+      <td>Assessment Return</td>
+      <td>Ophthalmology feedback to school nurse (summary) and primary care (full)</td>
+      <td><code class="language-plaintext highlighter-rouge">DiagnosticReport</code> + <code class="language-plaintext highlighter-rouge">Observation</code>s + <code class="language-plaintext highlighter-rouge">CarePlan</code></td>
+      <td><strong>360X</strong> (PCC-61), <strong>MHD</strong> (ITI-65)</td>
+    </tr>
+    <tr>
+      <td><strong>IP-4</strong></td>
+      <td>Primary Care Receive</td>
+      <td>Screening results + assessments entered in child's health record (6 document types)</td>
+      <td><code class="language-plaintext highlighter-rouge">DocumentReference</code> + <code class="language-plaintext highlighter-rouge">List</code></td>
+      <td><strong>MHD</strong> (ITI-65)</td>
+    </tr>
+    <tr>
+      <td><strong>IP-5</strong></td>
+      <td>Teacher Accommodation</td>
+      <td>Nurse generates accommodation notice from assessment</td>
+      <td><code class="language-plaintext highlighter-rouge">Communication</code></td>
+      <td>—</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h4 id="profiles-summary">Profiles Summary</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Profile</th>
+      <th>Base Resource</th>
+      <th>Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">SVSPatient</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Patient</code></td>
+      <td>Child demographics with school roll number, grade at screening</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">SVSRelatedPerson</code></td>
+      <td><code class="language-plaintext highlighter-rouge">RelatedPerson</code></td>
+      <td>Parent/guardian with opt-out consent status</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">SVSPractitioner</code> / <code class="language-plaintext highlighter-rouge">SVSPractitionerRole</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Practitioner</code> / <code class="language-plaintext highlighter-rouge">PractitionerRole</code></td>
+      <td>School nurse, service lead, ophthalmologist</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">SVSObservationScreeningPanel</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Observation</code></td>
+      <td>Panel with right/left eye acuity as member <code class="language-plaintext highlighter-rouge">Observation</code>s (Ratio)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">SVSServiceRequestReferral</code></td>
+      <td><code class="language-plaintext highlighter-rouge">ServiceRequest</code></td>
+      <td>360X referral to ophthalmology</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">SVSTaskReferralTracking</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Task</code></td>
+      <td>360X referral workflow tracking</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">SVSDiagnosticReportAssessment</code></td>
+      <td><code class="language-plaintext highlighter-rouge">DiagnosticReport</code></td>
+      <td>Ophthalmology assessment report</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">SVSObservationDiagnosis</code> / <code class="language-plaintext highlighter-rouge">RefractionOD</code> / <code class="language-plaintext highlighter-rouge">RefractionOS</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Observation</code></td>
+      <td>Diagnosis, right/left eye refraction</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">SVSCarePlanFollowUp</code></td>
+      <td><code class="language-plaintext highlighter-rouge">CarePlan</code></td>
+      <td>Follow-up plan (review interval, patching)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">SVSCommunicationAccommodation</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Communication</code></td>
+      <td>Teacher accommodation notice</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">SVSConsentOptOut</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Consent</code></td>
+      <td>Annual opt-out consent (revocable mid-year)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">SVSDocumentReferenceIP4</code></td>
+      <td><code class="language-plaintext highlighter-rouge">DocumentReference</code></td>
+      <td>Primary care document receipts (6 types)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">SVSListPrimaryCareDocuments</code></td>
+      <td><code class="language-plaintext highlighter-rouge">List</code></td>
+      <td>Primary care document log</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h4 id="operations">Operations</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Op ID</th>
+      <th>Name</th>
+      <th>Interaction</th>
+      <th>IHE Profile</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>OP-1</td>
+      <td>Record Screening</td>
+      <td><code class="language-plaintext highlighter-rouge">POST Observation</code> (panel + members)</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>OP-2a</td>
+      <td>Submit Referral</td>
+      <td><code class="language-plaintext highlighter-rouge">POST ServiceRequest</code> + <code class="language-plaintext highlighter-rouge">POST Task</code></td>
+      <td><strong>360X PCC-55</strong></td>
+    </tr>
+    <tr>
+      <td>OP-2b</td>
+      <td>Cancel Referral</td>
+      <td><code class="language-plaintext highlighter-rouge">PATCH ServiceRequest</code> (cancelled)</td>
+      <td><strong>360X PCC-58</strong></td>
+    </tr>
+    <tr>
+      <td>OP-2c</td>
+      <td>Reject Referral</td>
+      <td><code class="language-plaintext highlighter-rouge">PATCH Task</code> (rejected)</td>
+      <td><strong>360X PCC-56</strong></td>
+    </tr>
+    <tr>
+      <td>OP-2d</td>
+      <td>Accept Referral</td>
+      <td><code class="language-plaintext highlighter-rouge">PATCH Task</code> (accepted)</td>
+      <td><strong>360X PCC-56</strong></td>
+    </tr>
+    <tr>
+      <td>OP-3a</td>
+      <td>Return Summary</td>
+      <td><code class="language-plaintext highlighter-rouge">GET DiagnosticReport</code> / <code class="language-plaintext highlighter-rouge">POST DocumentReference</code></td>
+      <td><strong>360X PCC-61</strong>, <strong>MHD ITI-65</strong></td>
+    </tr>
+    <tr>
+      <td>OP-3b</td>
+      <td>Return Full</td>
+      <td><code class="language-plaintext highlighter-rouge">POST DocumentReference</code></td>
+      <td><strong>MHD ITI-65</strong></td>
+    </tr>
+    <tr>
+      <td>OP-4a-f</td>
+      <td>Send to Primary Care</td>
+      <td><code class="language-plaintext highlighter-rouge">POST DocumentReference</code> (6 types)</td>
+      <td><strong>MHD ITI-65</strong></td>
+    </tr>
+    <tr>
+      <td>OP-5</td>
+      <td>Send Accommodation</td>
+      <td><code class="language-plaintext highlighter-rouge">POST Communication</code></td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>OP-6</td>
+      <td>Query Demographics</td>
+      <td><code class="language-plaintext highlighter-rouge">GET Patient?identifier=...</code></td>
+      <td><strong>PIXm ITI-83</strong>, <strong>PDQm ITI-78</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h4 id="navigation">Navigation</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Page</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="usecase.html">Clinical Use Case</a></td>
+      <td>Detailed problem statement, users, data flows, consent, success criteria</td>
+    </tr>
+    <tr>
+      <td><a href="process.html">Process (BPMN)</a></td>
+      <td>BPMN model with swimlanes, interoperability points marked</td>
+    </tr>
+    <tr>
+      <td><a href="resources.html">Resource Diagram</a></td>
+      <td>Resource graph centred on ServiceRequest/Task</td>
+    </tr>
+    <tr>
+      <td><a href="sequences.html">Sequence Diagrams</a></td>
+      <td>7 flows with operation tables</td>
+    </tr>
+    <tr>
+      <td><a href="profiles.html">Profiles</a></td>
+      <td>All profile definitions</td>
+    </tr>
+    <tr>
+      <td><a href="operations.html">Operations</a></td>
+      <td>Operation details with examples</td>
+    </tr>
+    <tr>
+      <td><a href="ihe.html">IHE Relationships</a></td>
+      <td>Profile fit assessment per interoperability point</td>
+    </tr>
+    <tr>
+      <td><a href="lifecycle.html">Lifecycle</a></td>
+      <td>State tables for workflow resources</td>
+    </tr>
+    <tr>
+      <td><a href="terminology.html">Terminology</a></td>
+      <td>CodeSystems, ValueSets, terminology versions</td>
+    </tr>
+    <tr>
+      <td><a href="public-health.html">Public Health &amp; Consent</a></td>
+      <td>Opt-out consent, legal basis, data governance</td>
+    </tr>
+    <tr>
+      <td><a href="examples.html">Examples</a></td>
+      <td>Synthetic examples for all profiles</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h4 id="implementation-notes">Implementation Notes</h4>
+
+<ul>
+  <li><strong>Terminology Versions:</strong> SNOMED CT 2026-03-15, LOINC 2.76, UCUM 2.0.1</li>
+  <li><strong>Snellen Acuity:</strong> Expressed as <code class="language-plaintext highlighter-rouge">Ratio</code> (numerator/denominator in meters), not <code class="language-plaintext highlighter-rouge">Quantity</code></li>
+  <li><strong>Consent:</strong> Opt-out model, revocable mid-year via multiple <code class="language-plaintext highlighter-rouge">Consent.provision</code> entries</li>
+  <li><strong>Referral:</strong> Fresh lifecycle on re-issue; <code class="language-plaintext highlighter-rouge">ServiceRequest.replaces</code> links to cancelled referral</li>
+  <li><strong>Document Exchange:</strong> MHD ITI-65 with <code class="language-plaintext highlighter-rouge">contentType=application/fhir+json</code></li>
+  <li><strong>Examples:</strong> All synthetic — no real patient data</li>
+</ul>
+
+<hr />
+
+<h4 id="dependencies">Dependencies</h4>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">hl7.fhir.r4.core#4.0.1</code></li>
+  <li>Template: <code class="language-plaintext highlighter-rouge">fhir.base.template#1.6.0</code></li>
+</ul>
+
+<hr />
+
+<h4 id="license">License</h4>
+
+<p>This Implementation Guide is licensed under <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0-1.0</a>.</p>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026 <a style="color:var(--footer-hyperlink-text-color)" href=""></a>.  Package school-vision-screening#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Nov 21, 2026 14:59+0000">2026-11-21</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

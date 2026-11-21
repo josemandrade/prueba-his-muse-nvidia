@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="svs-document-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem svs-document-type</b></p><a name="svs-document-type"> </a><a name="hcsvs-document-type"> </a><p>This case-sensitive code system <code>https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-document-type</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">screening-pass<a name="svs-document-type-screening-pass"> </a></td><td>Screening Pass</td><td>Vision screening result: pass (≥6/9 both eyes)</td></tr><tr><td style="white-space:nowrap">screening-decline<a name="svs-document-type-screening-decline"> </a></td><td>Screening Decline</td><td>Vision screening result: parent declined referral</td></tr><tr><td style="white-space:nowrap">screening-missed<a name="svs-document-type-screening-missed"> </a></td><td>Screening Missed</td><td>Vision screening not completed (2nd absent)</td></tr><tr><td style="white-space:nowrap">assessment-full<a name="svs-document-type-assessment-full"> </a></td><td>Full Assessment</td><td>Complete ophthalmology assessment report</td></tr><tr><td style="white-space:nowrap">referral-dna<a name="svs-document-type-referral-dna"> </a></td><td>Referral DNA</td><td>Referral closed: did not attend (2nd DNA)</td></tr><tr><td style="white-space:nowrap">referral-rejected<a name="svs-document-type-referral-rejected"> </a></td><td>Referral Rejected</td><td>Referral rejected by ophthalmology</td></tr><tr><td style="white-space:nowrap">end-of-year-missed<a name="svs-document-type-end-of-year-missed"> </a></td><td>End-of-Year Missed</td><td>Screening missed at end of school year (pending re-screen)</td></tr></table></div>
+  </text>
+  <url value="https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-document-type"/>
+  <version value="0.1.0"/>
+  <name value="SVSDocumentType"/>
+  <title value="School Vision Screening Document Types"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-11-21T14:59:50+00:00"/>
+  <description value="Types of documents exchanged with Primary Care (IP-4)"/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="7"/>
+  <concept>
+    <code value="screening-pass"/>
+    <display value="Screening Pass"/>
+    <definition value="Vision screening result: pass (≥6/9 both eyes)"/>
+  </concept>
+  <concept>
+    <code value="screening-decline"/>
+    <display value="Screening Decline"/>
+    <definition value="Vision screening result: parent declined referral"/>
+  </concept>
+  <concept>
+    <code value="screening-missed"/>
+    <display value="Screening Missed"/>
+    <definition value="Vision screening not completed (2nd absent)"/>
+  </concept>
+  <concept>
+    <code value="assessment-full"/>
+    <display value="Full Assessment"/>
+    <definition value="Complete ophthalmology assessment report"/>
+  </concept>
+  <concept>
+    <code value="referral-dna"/>
+    <display value="Referral DNA"/>
+    <definition value="Referral closed: did not attend (2nd DNA)"/>
+  </concept>
+  <concept>
+    <code value="referral-rejected"/>
+    <display value="Referral Rejected"/>
+    <definition value="Referral rejected by ophthalmology"/>
+  </concept>
+  <concept>
+    <code value="end-of-year-missed"/>
+    <display value="End-of-Year Missed"/>
+    <definition value="Screening missed at end of school year (pending re-screen)"/>
+  </concept>
+</CodeSystem>

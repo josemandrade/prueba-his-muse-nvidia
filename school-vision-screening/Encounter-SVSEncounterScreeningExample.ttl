@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/Encounter/SVSEncounterScreeningExample> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "SVSEncounterScreeningExample"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter SVSEncounterScreeningExample</b></p><a name=\"SVSEncounterScreeningExample\"> </a><a name=\"hcSVSEncounterScreeningExample\"> </a><p><b>identifier</b>: <code>urn:oid:1.2.3.4.5.encounter-id</code>/ENC-2026-11-15-0042</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/7.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB\">ActCode: AMB</a> (Ambulatory)</p><p><b>type</b>: <span title=\"Codes:{https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/encounter-type vision-screening}\">Vision Screening</span></p><p><b>subject</b>: <a href=\"Patient-SVSPatientExample.html\">Maria Isabel Gonzalez (official) Female, DoB: 2018-03-15 ( PIXm Cross-reference: PIXM-987654321)</a></p><h3>Participants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Individual</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ParticipationType PPRF}\">Primary performer</span></td><td><a href=\"Practitioner-SVSPractitionerNurseExample.html\">Carmen Ruiz (official) (urn:oid:1.2.3.4.5.employee#EMP-2026-015)</a></td></tr></table><p><b>period</b>: 2026-11-15 09:30:00+0000 --&gt; 2026-11-15 09:45:00+0000</p><p><b>serviceProvider</b>: <a href=\"Organization-SVSOrganizationSchoolHealthServiceExample.html\">Servicio de Salud Escolar de Madrid (Department) (urn:oid:1.2.3.4.5.health-service-id#HSE-MAD-001)</a></p></div>"
+  ] ;
+  fhir:Encounter.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.3.4.5.encounter-id" ] ;
+     fhir:Identifier.value [ fhir:value "ENC-2026-11-15-0042" ]
+  ] ;
+  fhir:Encounter.status [ fhir:value "finished"] ;
+  fhir:Encounter.class [
+     fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActCode" ] ;
+     fhir:Coding.code [ fhir:value "AMB" ] ;
+     fhir:Coding.display [ fhir:value "Ambulatory" ]
+  ] ;
+  fhir:Encounter.type [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/encounter-type" ] ;
+       fhir:Coding.code [ fhir:value "vision-screening" ] ;
+       fhir:Coding.display [ fhir:value "Vision Screening" ]
+     ]
+  ] ;
+  fhir:Encounter.subject [
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/Patient/SVSPatientExample> ;
+     fhir:Reference.reference [ fhir:value "Patient/SVSPatientExample" ]
+  ] ;
+  fhir:Encounter.participant [
+     fhir:index 0 ;
+     fhir:Encounter.participant.type [
+       fhir:index 0 ;
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ParticipationType" ] ;
+         fhir:Coding.code [ fhir:value "PPRF" ] ;
+         fhir:Coding.display [ fhir:value "Primary performer" ]
+       ]
+     ] ;
+     fhir:Encounter.participant.individual [
+       fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/Practitioner/SVSPractitionerNurseExample> ;
+       fhir:Reference.reference [ fhir:value "Practitioner/SVSPractitionerNurseExample" ]
+     ]
+  ] ;
+  fhir:Encounter.period [
+     fhir:Period.start [ fhir:value "2026-11-15T09:30:00Z"^^xsd:dateTime ] ;
+     fhir:Period.end [ fhir:value "2026-11-15T09:45:00Z"^^xsd:dateTime ]
+  ] ;
+  fhir:Encounter.serviceProvider [
+     fhir:link <https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/Organization/SVSOrganizationSchoolHealthServiceExample> ;
+     fhir:Reference.reference [ fhir:value "Organization/SVSOrganizationSchoolHealthServiceExample" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/Encounter/SVSEncounterScreeningExample.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

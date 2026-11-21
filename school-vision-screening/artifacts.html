@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Artifacts Summary -  v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"13"}
+    h3,h4,h5,h6{--heading-prefix:"13.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - CI Build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="usecase.html">Use Case</a>
+  </li>
+  <li>
+    <a href="process.html">Process</a>
+  </li>
+  <li>
+    <a href="resources.html">Resources</a>
+  </li>
+  <li>
+    <a href="sequences.html">Sequences</a>
+  </li>
+  <li>
+    <a href="profiles.html">Profiles</a>
+  </li>
+  <li>
+    <a href="operations.html">Operations</a>
+  </li>
+  <li>
+    <a href="ihe.html">IHE Relationships</a>
+  </li>
+  <li>
+    <a href="lifecycle.html">Lifecycle</a>
+  </li>
+  <li>
+    <a href="terminology.html">Terminology</a>
+  </li>
+  <li>
+    <a href="public-health.html">Public Health</a>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">SchoolVisionScreening - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artifacts Summary</h2>
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated by https://github.com/HL7/ig-template-base/blob/master/scripts/createArtifactSummary.xslt and any changes made will be overwritten--><div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml"
+     class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#2">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#3">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#4">Example: Example Instances</a>
+      </li>
+   </ul>
+</div>
+<div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Structures: Resource Profiles </h3>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-svs-observation-refraction-os.html"
+                  title="StructureDefinition/svs-observation-refraction-os">Left Eye Refraction</a>
+            </td>
+            <td>
+<p>Left eye refractive prescription</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-svs-observation-left-eye-acuity.html"
+                  title="StructureDefinition/svs-observation-left-eye-acuity">Left Eye Visual Acuity</a>
+            </td>
+            <td>
+<p>Left eye visual acuity measurement as Snellen fraction using Ratio</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-svs-observation-diagnosis.html"
+                  title="StructureDefinition/svs-observation-diagnosis">Ophthalmology Diagnosis</a>
+            </td>
+            <td>
+<p>Diagnosis from ophthalmology assessment</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-svs-care-plan-follow-up.html"
+                  title="StructureDefinition/svs-care-plan-follow-up">Ophthalmology Follow-up Plan</a>
+            </td>
+            <td>
+<p>Follow-up plan from ophthalmology assessment</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-svs-diagnostic-report-assessment.html"
+                  title="StructureDefinition/svs-diagnostic-report-assessment">Ophthalmology Vision Assessment Report</a>
+            </td>
+            <td>
+<p>Complete ophthalmology assessment report for vision screening referral</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-svs-document-reference-ip4.html"
+                  title="StructureDefinition/svs-document-reference-ip4">Primary Care Document Reference (IP-4)</a>
+            </td>
+            <td>
+<p>DocumentReference for each of the 6 IP-4 document types received by Primary Care</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-svs-list-primary-care-documents.html"
+                  title="StructureDefinition/svs-list-primary-care-documents">Primary Care Vision Screening Document Log</a>
+            </td>
+            <td>
+<p>List of all vision screening related documents received by Primary Care for a child</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-svs-observation-refraction-od.html"
+                  title="StructureDefinition/svs-observation-refraction-od">Right Eye Refraction</a>
+            </td>
+            <td>
+<p>Right eye refractive prescription</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-svs-observation-right-eye-acuity.html"
+                  title="StructureDefinition/svs-observation-right-eye-acuity">Right Eye Visual Acuity</a>
+            </td>
+            <td>
+<p>Right eye visual acuity measurement as Snellen fraction using Ratio</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-svs-consent-opt-out.html"
+                  title="StructureDefinition/svs-consent-opt-out">School Vision Screening Opt-Out Consent</a>
+            </td>
+            <td>
+<p>Annual opt-out consent for vision screening program</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-svs-organization.html"
+                  title="StructureDefinition/svs-organization">School Vision Screening Organization</a>
+            </td>
+            <td>
+<p>Organization profile for School Health Service, Ophthalmology Clinic, or Primary Care Practice</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-svs-observation-screening-panel.html"
+                  title="StructureDefinition/svs-observation-screening-panel">School Vision Screening Panel</a>
+            </td>
+            <td>
+<p>Panel observation containing right and left eye visual acuity measurements</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-svs-related-person.html"
+                  title="StructureDefinition/svs-related-person">School Vision Screening Parent/Guardian</a>
+            </td>
+            <td>
+<p>Profile for a parent or guardian of a child in the screening program</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-svs-patient.html"
+                  title="StructureDefinition/svs-patient">School Vision Screening Patient (Child)</a>
+            </td>
+            <td>
+<p>Profile for a child enrolled in school vision screening program</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-svs-practitioner.html"
+                  title="StructureDefinition/svs-practitioner">School Vision Screening Practitioner</a>
+            </td>
+            <td>
+<p>Base profile for practitioners in the school vision screening program</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-svs-practitioner-role.html"
+                  title="StructureDefinition/svs-practitioner-role">School Vision Screening Practitioner Role</a>
+            </td>
+            <td>
+<p>Role profile for school nurses and service leads</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-svs-questionnaire-response-screening.html"
+                  title="StructureDefinition/svs-questionnaire-response-screening">School Vision Screening Questionnaire Response</a>
+            </td>
+            <td>
+<p>Screening form response captured by the nurse</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-svs-service-request-referral.html"
+                  title="StructureDefinition/svs-service-request-referral">School Vision Screening Referral</a>
+            </td>
+            <td>
+<p>Referral from school nurse to ophthalmology for vision assessment</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-svs-task-referral-tracking.html"
+                  title="StructureDefinition/svs-task-referral-tracking">School Vision Screening Referral Tracking</a>
+            </td>
+            <td>
+<p>Task for tracking referral workflow state</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-svs-communication-accommodation.html"
+                  title="StructureDefinition/svs-communication-accommodation">Teacher Accommodation Notice</a>
+            </td>
+            <td>
+<p>Notice from school nurse to teacher about classroom accommodation</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Terminology: Value Sets </h3>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-svs-accommodation-type-vs.html"
+                  title="ValueSet/svs-accommodation-type-vs">Classroom Accommodation Types ValueSet</a>
+            </td>
+            <td>
+<p>Types of classroom accommodations for vision impairment</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-svs-practitioner-role-vs.html"
+                  title="ValueSet/svs-practitioner-role-vs">School Health Service Practitioner Roles ValueSet</a>
+            </td>
+            <td>
+<p>Roles within the school health service</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-svs-document-type-vs.html"
+                  title="ValueSet/svs-document-type-vs">School Vision Screening Document Types ValueSet</a>
+            </td>
+            <td>
+<p>Types of documents exchanged with Primary Care</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-svs-screening-outcome-vs.html"
+                  title="ValueSet/svs-screening-outcome-vs">School Vision Screening Outcomes ValueSet</a>
+            </td>
+            <td>
+<p>Possible outcomes of a vision screening encounter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-svs-referral-reason-vs.html"
+                  title="ValueSet/svs-referral-reason-vs">School Vision Screening Referral Reasons ValueSet</a>
+            </td>
+            <td>
+<p>Reasons for referral to ophthalmology</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-svs-screening-test-method-vs.html"
+                  title="ValueSet/svs-screening-test-method-vs">School Vision Screening Test Methods ValueSet</a>
+            </td>
+            <td>
+<p>Allowed test methods for school vision screening</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-svs-acuity-interpretation-vs.html"
+                  title="ValueSet/svs-acuity-interpretation-vs">Visual Acuity Interpretation ValueSet</a>
+            </td>
+            <td>
+<p>Interpretation codes for visual acuity results</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
+   <h3>Terminology: Code Systems </h3>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-svs-accommodation-type.html"
+                  title="CodeSystem/svs-accommodation-type">Classroom Accommodation Types</a>
+            </td>
+            <td>
+<p>Types of classroom accommodations for vision impairment</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-svs-practitioner-role.html"
+                  title="CodeSystem/svs-practitioner-role">School Health Service Practitioner Roles</a>
+            </td>
+            <td>
+<p>Roles within the school health service for vision screening</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-svs-document-type.html"
+                  title="CodeSystem/svs-document-type">School Vision Screening Document Types</a>
+            </td>
+            <td>
+<p>Types of documents exchanged with Primary Care (IP-4)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-svs-screening-outcome.html"
+                  title="CodeSystem/svs-screening-outcome">School Vision Screening Outcomes</a>
+            </td>
+            <td>
+<p>Possible outcomes of a vision screening encounter</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-svs-referral-reason.html"
+                  title="CodeSystem/svs-referral-reason">School Vision Screening Referral Reasons</a>
+            </td>
+            <td>
+<p>Reasons for referral to ophthalmology</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-svs-screening-test-method.html"
+                  title="CodeSystem/svs-screening-test-method">School Vision Screening Test Methods</a>
+            </td>
+            <td>
+<p>Methods used for visual acuity screening in school settings</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
+   <h3>Example: Example Instances </h3>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-SVSPatientExample.html" title="Patient/SVSPatientExample">Child Example - Maria Gonzalez</a>
+            </td>
+            <td>
+<p>Synthetic example of an 8-year-old child</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-SVSObservationDiagnosisExample.html"
+                  title="Observation/SVSObservationDiagnosisExample">Diagnosis - Mild Myopia OD</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DocumentReference-SVSDocumentReferenceScreeningPassExample.html"
+                  title="DocumentReference/SVSDocumentReferenceScreeningPassExample">DocumentReference - Screening Pass Result (IP-4)</a>
+            </td>
+            <td>
+<p>Primary Care receives screening pass result via MHD</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CarePlan-SVSCarePlanFollowUpExample.html"
+                  title="CarePlan/SVSCarePlanFollowUpExample">Follow-up Plan - 12 Month Review</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-SVSObservationLeftEyeAcuityReferExample.html"
+                  title="Observation/SVSObservationLeftEyeAcuityReferExample">Left Eye Acuity - Pass (6/9)</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-SVSObservationRefractionOSExample.html"
+                  title="Observation/SVSObservationRefractionOSExample">Left Eye Refraction - Normal</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DiagnosticReport-SVSDiagnosticReportAssessmentExample.html"
+                  title="DiagnosticReport/SVSDiagnosticReportAssessmentExample">Ophthalmology Assessment - Maria Gonzalez</a>
+            </td>
+            <td>
+<p>Complete assessment: mild myopia OD, prescription -1.00 DS, follow-up 12 months</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-SVSOrganizationClinicExample.html"
+                  title="Organization/SVSOrganizationClinicExample">Ophthalmology Clinic Example</a>
+            </td>
+            <td>
+<p>Ophthalmology clinic receiving vision screening referrals</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="RelatedPerson-SVSRelatedPersonExample.html"
+                  title="RelatedPerson/SVSRelatedPersonExample">Parent Example - Ana Gonzalez</a>
+            </td>
+            <td>
+<p>Mother of Maria Gonzalez</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="List-SVSListPrimaryCareDocumentsExample.html"
+                  title="List/SVSListPrimaryCareDocumentsExample">Primary Care Document Log - Maria Gonzalez</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-SVSOrganizationPrimaryCareExample.html"
+                  title="Organization/SVSOrganizationPrimaryCareExample">Primary Care Example - Centro de Salud Las Rosas</a>
+            </td>
+            <td>
+<p>Primary care center receiving screening results</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ServiceRequest-SVSServiceRequestReferralExample.html"
+                  title="ServiceRequest/SVSServiceRequestReferralExample">Referral to Ophthalmology - Maria Gonzalez</a>
+            </td>
+            <td>
+<p>Referral from school nurse to ophthalmology for right eye acuity 6/12</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-SVSObservationRightEyeAcuityReferExample.html"
+                  title="Observation/SVSObservationRightEyeAcuityReferExample">Right Eye Acuity - Refer (6/12)</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-SVSObservationRefractionODExample.html"
+                  title="Observation/SVSObservationRefractionODExample">Right Eye Refraction -1.00 DS</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-SVSOrganizationSchoolExample.html"
+                  title="Organization/SVSOrganizationSchoolExample">School Example - Colegio Publico San Isidro</a>
+            </td>
+            <td>
+<p>Public school with vision screening program</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-SVSOrganizationSchoolHealthServiceExample.html"
+                  title="Organization/SVSOrganizationSchoolHealthServiceExample">School Health Service - Servicio de Salud Escolar Madrid</a>
+            </td>
+            <td>
+<p>Regional school health service overseeing vision screening</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-SVSPractitionerNurseExample.html"
+                  title="Practitioner/SVSPractitionerNurseExample">School Nurse Example - Carmen Ruiz</a>
+            </td>
+            <td>
+<p>School nurse conducting vision screening</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-SVSEncounterScreeningExample.html"
+                  title="Encounter/SVSEncounterScreeningExample">Screening Encounter - Maria Gonzalez</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-SVSObservationScreeningPanelReferExample.html"
+                  title="Observation/SVSObservationScreeningPanelReferExample">Screening Panel - Refer Result (Maria Gonzalez)</a>
+            </td>
+            <td>
+<p>Visual acuity screening panel showing refer result: right eye 6/12 (&lt;=6/12)</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026 <a style="color:var(--footer-hyperlink-text-color)" href=""></a>.  Package school-vision-screening#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Nov 21, 2026 14:59+0000">2026-11-21</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

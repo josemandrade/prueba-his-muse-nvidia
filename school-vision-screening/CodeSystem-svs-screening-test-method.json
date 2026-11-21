@@ -1,0 +1,44 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "svs-screening-test-method",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem svs-screening-test-method</b></p><a name=\"svs-screening-test-method\"> </a><a name=\"hcsvs-screening-test-method\"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>notSelectable</td><td>notSelectable</td><td>boolean</td><td>Indicates that the code is not intended for selection</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-screening-test-method</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">snellen<a name=\"svs-screening-test-method-snellen\"> </a></td><td>Snellen 6m chart</td><td>Snellen chart at 6 metres</td></tr><tr><td style=\"white-space:nowrap\">tumbling-e<a name=\"svs-screening-test-method-tumbling-e\"> </a></td><td>Tumbling E optotypes</td><td>Tumbling E optotypes for children who cannot read letters</td></tr><tr><td style=\"white-space:nowrap\">lea-symbols<a name=\"svs-screening-test-method-lea-symbols\"> </a></td><td>Lea symbols</td><td>Lea symbols for pre-readers</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"svs-screening-test-method-other\"> </a></td><td>Other method</td><td>Other screening method not listed</td></tr></table></div>"
+  },
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-screening-test-method",
+  "version" : "0.1.0",
+  "name" : "SVSScreeningTestMethod",
+  "title" : "School Vision Screening Test Methods",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-11-21T14:59:50+00:00",
+  "description" : "Methods used for visual acuity screening in school settings",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 4,
+  "property" : [{
+    "code" : "notSelectable",
+    "description" : "Indicates that the code is not intended for selection",
+    "type" : "boolean"
+  }],
+  "concept" : [{
+    "code" : "snellen",
+    "display" : "Snellen 6m chart",
+    "definition" : "Snellen chart at 6 metres"
+  },
+  {
+    "code" : "tumbling-e",
+    "display" : "Tumbling E optotypes",
+    "definition" : "Tumbling E optotypes for children who cannot read letters"
+  },
+  {
+    "code" : "lea-symbols",
+    "display" : "Lea symbols",
+    "definition" : "Lea symbols for pre-readers"
+  },
+  {
+    "code" : "other",
+    "display" : "Other method",
+    "definition" : "Other screening method not listed"
+  }]
+}

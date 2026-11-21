@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="SVSPatientExample"/>
+  <meta>
+    <profile value="https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-patient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Patient SVSPatientExample</b></p><a name="SVSPatientExample"> </a><a name="hcSVSPatientExample"> </a><div style="display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-svs-patient.html">School Vision Screening Patient (Child)</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Maria Isabel Gonzalez (official) Female, DoB: 2018-03-15 ( PIXm Cross-reference: PIXM-987654321)</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Other Ids (see the one above)">Other Ids:</td><td colspan="3"><ul><li><code>urn:oid:1.2.3.4.5.school-roll</code>/SCL-2026-0042</li><li>National unique individual identifier/NHS-1234567890 (use: official)</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Detail</td><td colspan="3"><ul><li><a href="tel:+34-91-555-0123">+34-91-555-0123</a></li><li>Calle Principal 123 Madrid 28001 ES (home)</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Patient Links">Links:</td><td colspan="3"><ul><li>Managing Organization: <a href="Organization-SVSOrganizationSchoolExample.html">Colegio Publico San Isidro (Educational facility) (urn:oid:1.2.3.4.5.school-id#SCH-28079-01)</a></li></ul></td></tr></table></div>
+  </text>
+  <identifier>
+    <system value="urn:oid:1.2.3.4.5.school-roll"/>
+    <value value="SCL-2026-0042"/>
+  </identifier>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="NI"/>
+        <display value="National unique individual identifier"/>
+      </coding>
+    </type>
+    <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+    <value value="NHS-1234567890"/>
+  </identifier>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="PIXM"/>
+        <display value="PIXm Cross-reference"/>
+      </coding>
+    </type>
+    <system value="urn:ihe:pixm:cross-ref"/>
+    <value value="PIXM-987654321"/>
+  </identifier>
+  <name>
+    <use value="official"/>
+    <family value="Gonzalez"/>
+    <given value="Maria"/>
+    <given value="Isabel"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="+34-91-555-0123"/>
+    <use value="home"/>
+  </telecom>
+  <gender value="female"/>
+  <birthDate value="2018-03-15"/>
+  <address>
+    <use value="home"/>
+    <line value="Calle Principal 123"/>
+    <city value="Madrid"/>
+    <postalCode value="28001"/>
+    <country value="ES"/>
+  </address>
+  <managingOrganization>
+    <reference value="Organization/SVSOrganizationSchoolExample"/>
+  </managingOrganization>
+</Patient>

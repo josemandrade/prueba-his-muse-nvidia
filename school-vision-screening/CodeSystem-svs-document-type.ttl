@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-document-type> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "svs-document-type"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem svs-document-type</b></p><a name=\"svs-document-type\"> </a><a name=\"hcsvs-document-type\"> </a><p>This case-sensitive code system <code>https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-document-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">screening-pass<a name=\"svs-document-type-screening-pass\"> </a></td><td>Screening Pass</td><td>Vision screening result: pass (≥6/9 both eyes)</td></tr><tr><td style=\"white-space:nowrap\">screening-decline<a name=\"svs-document-type-screening-decline\"> </a></td><td>Screening Decline</td><td>Vision screening result: parent declined referral</td></tr><tr><td style=\"white-space:nowrap\">screening-missed<a name=\"svs-document-type-screening-missed\"> </a></td><td>Screening Missed</td><td>Vision screening not completed (2nd absent)</td></tr><tr><td style=\"white-space:nowrap\">assessment-full<a name=\"svs-document-type-assessment-full\"> </a></td><td>Full Assessment</td><td>Complete ophthalmology assessment report</td></tr><tr><td style=\"white-space:nowrap\">referral-dna<a name=\"svs-document-type-referral-dna\"> </a></td><td>Referral DNA</td><td>Referral closed: did not attend (2nd DNA)</td></tr><tr><td style=\"white-space:nowrap\">referral-rejected<a name=\"svs-document-type-referral-rejected\"> </a></td><td>Referral Rejected</td><td>Referral rejected by ophthalmology</td></tr><tr><td style=\"white-space:nowrap\">end-of-year-missed<a name=\"svs-document-type-end-of-year-missed\"> </a></td><td>End-of-Year Missed</td><td>Screening missed at end of school year (pending re-screen)</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-document-type"] ;
+  fhir:CodeSystem.version [ fhir:value "0.1.0"] ;
+  fhir:CodeSystem.name [ fhir:value "SVSDocumentType"] ;
+  fhir:CodeSystem.title [ fhir:value "School Vision Screening Document Types"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-11-21T14:59:50+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.description [ fhir:value "Types of documents exchanged with Primary Care (IP-4)"] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "7"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "screening-pass" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Screening Pass" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Vision screening result: pass (≥6/9 both eyes)" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "screening-decline" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Screening Decline" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Vision screening result: parent declined referral" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "screening-missed" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Screening Missed" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Vision screening not completed (2nd absent)" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "assessment-full" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Full Assessment" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Complete ophthalmology assessment report" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "referral-dna" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Referral DNA" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Referral closed: did not attend (2nd DNA)" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "referral-rejected" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Referral Rejected" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Referral rejected by ophthalmology" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "end-of-year-missed" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "End-of-Year Missed" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Screening missed at end of school year (pending re-screen)" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-document-type.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,21 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "svs-practitioner-role-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet svs-practitioner-role-vs</b></p><a name=\"svs-practitioner-role-vs\"> </a><a name=\"hcsvs-practitioner-role-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-svs-practitioner-role.html\"><code>https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-practitioner-role</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.0</span></li></ul></div>"
+  },
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/ValueSet/svs-practitioner-role-vs",
+  "version" : "0.1.0",
+  "name" : "SVSPractitionerRoleVS",
+  "title" : "School Health Service Practitioner Roles ValueSet",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-11-21T14:59:50+00:00",
+  "description" : "Roles within the school health service",
+  "compose" : {
+    "include" : [{
+      "system" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-practitioner-role"
+    }]
+  }
+}

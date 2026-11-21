@@ -1,0 +1,933 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Lifecycle Tables -  v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"9"}
+    h3,h4,h5,h6{--heading-prefix:"9"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - CI Build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="usecase.html">Use Case</a>
+  </li>
+  <li>
+    <a href="process.html">Process</a>
+  </li>
+  <li>
+    <a href="resources.html">Resources</a>
+  </li>
+  <li>
+    <a href="sequences.html">Sequences</a>
+  </li>
+  <li>
+    <a href="profiles.html">Profiles</a>
+  </li>
+  <li>
+    <a href="operations.html">Operations</a>
+  </li>
+  <li>
+    <a href="ihe.html">IHE Relationships</a>
+  </li>
+  <li>
+    <a href="lifecycle.html">Lifecycle</a>
+  </li>
+  <li>
+    <a href="terminology.html">Terminology</a>
+  </li>
+  <li>
+    <a href="public-health.html">Public Health</a>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Lifecycle Tables</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">SchoolVisionScreening - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Lifecycle Tables</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<h3 id="lifecycle-tables">Lifecycle Tables</h3>
+
+<hr />
+
+<h4 id="overview">Overview</h4>
+
+<p>Each workflow-state resource in this Implementation Guide has a defined lifecycle with states, allowed transitions, triggering operations (with PI), and forbidden transitions. These tables are derived from the validated FHIR proposal and BPMN model.</p>
+
+<hr />
+
+<h4 id="1-referral-servicerequest--task--360x-aligned">1. Referral (ServiceRequest + Task) — 360X-Aligned</h4>
+
+<h5 id="r4-value-sets">R4 Value Sets</h5>
+<ul>
+  <li><strong>ServiceRequest.status</strong> (Required): <code class="language-plaintext highlighter-rouge">draft | active | on-hold | revoked | completed | entered-in-error | unknown</code></li>
+  <li><strong>Task.status</strong> (Required): <code class="language-plaintext highlighter-rouge">draft | requested | received | accepted | rejected | ready | cancelled | in-progress | on-hold | failed | completed | entered-in-error</code></li>
+</ul>
+
+<h5 id="lifecycle-table">Lifecycle Table</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>State (ServiceRequest / Task)</th>
+      <th>Allowed Next States</th>
+      <th>Triggering Operation (PI)</th>
+      <th>Forbidden Transitions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Draft</strong> (draft / draft)</td>
+      <td><strong>Sent</strong> (active / requested)</td>
+      <td>OP-2a: Submit Referral (PCC-55)</td>
+      <td>Direct to Completed, Cancelled, Closed-*</td>
+    </tr>
+    <tr>
+      <td><strong>Sent</strong> (active / requested)</td>
+      <td><strong>Accepted</strong> (active / received)</td>
+      <td>OP-2d: Accept Referral (PCC-56)</td>
+      <td>Direct to Completed (must go through Accepted)</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><strong>Rejected</strong> (rejected / rejected)</td>
+      <td>OP-2c: Reject Referral (PCC-56)</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><strong>Cancelled</strong> (cancelled / cancelled)</td>
+      <td>OP-2b: Timeout Cancel (PCC-58)</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td><strong>Accepted</strong> (active / received)</td>
+      <td><strong>Completed</strong> (completed / completed)</td>
+      <td>OP-3: Assessment Received (PCC-61)</td>
+      <td>Back to Sent, Draft</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><strong>Closed-DNS</strong> (completed / completed)</td>
+      <td>OP-4c: DNA Closure (2nd DNA)</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td><strong>Rejected</strong> (rejected / rejected)</td>
+      <td><strong>Closed-Rejected</strong> (completed / completed)</td>
+      <td>Nurse closes, notifies (OP-4e)</td>
+      <td>Back to Sent, Accepted</td>
+    </tr>
+    <tr>
+      <td><strong>Cancelled</strong> (cancelled / cancelled)</td>
+      <td><strong>Sent</strong> (new referral, fresh lifecycle)</td>
+      <td>OP-2a: Re-issue Referral (new ServiceRequest with <code class="language-plaintext highlighter-rouge">replaces</code>)</td>
+      <td>Re-activate cancelled referral</td>
+    </tr>
+    <tr>
+      <td><strong>Completed</strong> (completed / completed)</td>
+      <td><strong>Closed-DNS</strong> (completed / completed)</td>
+      <td>If 2nd DNA after completion (rare)</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td><strong>Closed-Decline</strong> (completed / completed)</td>
+      <td>(terminal)</td>
+      <td>OP-4b: Parent Decline at outset</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td><strong>Closed-Rejected</strong> (completed / completed)</td>
+      <td>(terminal)</td>
+      <td>After Rejected, nurse closes</td>
+      <td>—</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="cross-machine-invariants">Cross-Machine Invariants</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Invariant</th>
+      <th>Forbidden Transition Test</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A referral cannot be both Accepted and Cancelled</td>
+      <td>If ServiceRequest.status = active, Task.status cannot be cancelled without going through Cancelled state first</td>
+    </tr>
+    <tr>
+      <td>A cancelled referral cannot be re-activated</td>
+      <td>No transition from Cancelled → Active on same ServiceRequest; new referral must be created with <code class="language-plaintext highlighter-rouge">replaces</code></td>
+    </tr>
+    <tr>
+      <td>DNA closure only from Accepted or Completed</td>
+      <td>Closed-DNS only reachable from Accepted or Completed states</td>
+    </tr>
+    <tr>
+      <td>Parent Decline closes without sending referral</td>
+      <td>Closed-Decline reachable directly from Sent (parent decision = decline)</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h4 id="2-screeningevent-observation-panel">2. ScreeningEvent (Observation Panel)</h4>
+
+<h5 id="r4-value-set">R4 Value Set</h5>
+<ul>
+  <li><strong>Observation.status</strong> (Required): <code class="language-plaintext highlighter-rouge">registered | preliminary | final | amended | corrected | cancelled | entered-in-error | unknown</code></li>
+</ul>
+
+<h5 id="lifecycle-table-1">Lifecycle Table</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>State</th>
+      <th>Allowed Next States</th>
+      <th>Triggering Operation</th>
+      <th>Forbidden Transitions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>registered</strong></td>
+      <td><strong>preliminary</strong></td>
+      <td>Nurse starts entry</td>
+      <td>Direct to final/amended</td>
+    </tr>
+    <tr>
+      <td><strong>preliminary</strong></td>
+      <td><strong>final</strong></td>
+      <td>Nurse completes &amp; records</td>
+      <td>Back to registered</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><strong>amended</strong></td>
+      <td>Nurse corrects (after final)</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><strong>corrected</strong></td>
+      <td>System corrects (data error)</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td><strong>final</strong></td>
+      <td><strong>amended</strong></td>
+      <td>Nurse enters correction</td>
+      <td>Back to preliminary</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><strong>corrected</strong></td>
+      <td>System corrects</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td><strong>amended</strong></td>
+      <td><strong>final</strong></td>
+      <td>Re-validated</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td><strong>corrected</strong></td>
+      <td><strong>final</strong></td>
+      <td>Re-validated</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td><strong>cancelled</strong></td>
+      <td>(terminal)</td>
+      <td>Entered in error</td>
+      <td>Any other</td>
+    </tr>
+    <tr>
+      <td><strong>entered-in-error</strong></td>
+      <td>(terminal)</td>
+      <td>Wrong patient/encounter</td>
+      <td>Any other</td>
+    </tr>
+    <tr>
+      <td><strong>unknown</strong></td>
+      <td>(terminal)</td>
+      <td>Status unknown</td>
+      <td>Any other</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="notes">Notes</h5>
+<ul>
+  <li>Typical path: <code class="language-plaintext highlighter-rouge">registered → preliminary → final</code> (nurse enters, completes, records)</li>
+  <li><code class="language-plaintext highlighter-rouge">amended</code>/<code class="language-plaintext highlighter-rouge">corrected</code> only after <code class="language-plaintext highlighter-rouge">final</code></li>
+  <li>Each re-screen creates a <strong>new</strong> Observation panel (attemptNumber increments), not a state change on the same panel</li>
+</ul>
+
+<hr />
+
+<h4 id="3-ophthalmologyassessment-diagnosticreport">3. OphthalmologyAssessment (DiagnosticReport)</h4>
+
+<h5 id="r4-value-set-1">R4 Value Set</h5>
+<ul>
+  <li><strong>DiagnosticReport.status</strong> (Required): <code class="language-plaintext highlighter-rouge">registered | partial | preliminary | final | amended | corrected | appended | cancelled | entered-in-error | unknown</code></li>
+</ul>
+
+<h5 id="states-actually-used-in-this-workflow">States Actually Used in This Workflow</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>State</th>
+      <th>Allowed Next States</th>
+      <th>Triggering Operation</th>
+      <th>Forbidden Transitions</th>
+      <th>Actually Used?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>registered</strong></td>
+      <td><strong>partial</strong> / <strong>preliminary</strong> / <strong>final</strong></td>
+      <td>Partial/preliminary results entered; or direct to final</td>
+      <td>—</td>
+      <td><strong>Yes</strong> (often → final directly)</td>
+    </tr>
+    <tr>
+      <td><strong>partial</strong></td>
+      <td><strong>preliminary</strong> / <strong>final</strong></td>
+      <td>Preliminary results</td>
+      <td>Back to registered</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td><strong>preliminary</strong></td>
+      <td><strong>final</strong></td>
+      <td>Clinician validates</td>
+      <td>Back to partial</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td><strong>final</strong></td>
+      <td><strong>amended</strong> / <strong>corrected</strong> / <strong>appended</strong></td>
+      <td>Addendum / correction / additional results</td>
+      <td>—</td>
+      <td><strong>Yes</strong></td>
+    </tr>
+    <tr>
+      <td><strong>amended</strong></td>
+      <td><strong>final</strong></td>
+      <td>Re-validated</td>
+      <td>—</td>
+      <td><strong>Yes</strong></td>
+    </tr>
+    <tr>
+      <td><strong>corrected</strong></td>
+      <td><strong>final</strong></td>
+      <td>Re-validated</td>
+      <td>—</td>
+      <td><strong>Yes</strong></td>
+    </tr>
+    <tr>
+      <td><strong>appended</strong></td>
+      <td><strong>final</strong></td>
+      <td>Re-validated</td>
+      <td>—</td>
+      <td><strong>Yes</strong></td>
+    </tr>
+    <tr>
+      <td><strong>cancelled</strong></td>
+      <td>(terminal)</td>
+      <td>Report cancelled</td>
+      <td>Any other</td>
+      <td>Error only</td>
+    </tr>
+    <tr>
+      <td><strong>entered-in-error</strong></td>
+      <td>(terminal)</td>
+      <td>Wrong patient/encounter</td>
+      <td>Any other</td>
+      <td>Error only</td>
+    </tr>
+    <tr>
+      <td><strong>unknown</strong></td>
+      <td>(terminal)</td>
+      <td>Status unknown</td>
+      <td>Any other</td>
+      <td>Error only</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="typical-path">Typical Path</h5>
+<p><code class="language-plaintext highlighter-rouge">registered → final</code> (clinician enters and validates in one step) → <code class="language-plaintext highlighter-rouge">amended</code>/<code class="language-plaintext highlighter-rouge">corrected</code>/<code class="language-plaintext highlighter-rouge">appended</code> as needed</p>
+
+<hr />
+
+<h4 id="4-optoutconsent-consent">4. OptOutConsent (Consent)</h4>
+
+<h5 id="r4-value-set-2">R4 Value Set</h5>
+<ul>
+  <li><strong>Consent.status</strong> (Required): <code class="language-plaintext highlighter-rouge">draft | proposed | active | rejected | inactive | entered-in-error</code></li>
+</ul>
+
+<h5 id="lifecycle-table-2">Lifecycle Table</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>State</th>
+      <th>Allowed Next States</th>
+      <th>Triggering Operation</th>
+      <th>Forbidden Transitions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>draft</strong></td>
+      <td><strong>proposed</strong></td>
+      <td>Parent reviews</td>
+      <td>Direct to active</td>
+    </tr>
+    <tr>
+      <td><strong>proposed</strong></td>
+      <td><strong>active</strong></td>
+      <td>Parent submits opt-out</td>
+      <td>Back to draft</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><strong>rejected</strong></td>
+      <td>Parent declines opt-out</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td><strong>active</strong></td>
+      <td><strong>inactive</strong></td>
+      <td>Parent opts back in (mid-year)</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><strong>inactive</strong></td>
+      <td>End of school year (auto)</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td><strong>rejected</strong></td>
+      <td><strong>active</strong></td>
+      <td>Parent changes mind, opts out</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td><strong>inactive</strong></td>
+      <td>(terminal)</td>
+      <td>Archived end of year</td>
+      <td>Any other</td>
+    </tr>
+    <tr>
+      <td><strong>entered-in-error</strong></td>
+      <td>(terminal)</td>
+      <td>Wrong patient/year</td>
+      <td>Any other</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="statushistory-mechanism">StatusHistory Mechanism</h5>
+<p>Multiple <code class="language-plaintext highlighter-rouge">Consent.provision</code> entries model status changes:</p>
+<ul>
+  <li>Each provision has <code class="language-plaintext highlighter-rouge">type</code> (deny/permit) and <code class="language-plaintext highlighter-rouge">period</code> (start/end)</li>
+  <li>Current status = latest provision by period.start</li>
+  <li>Example: deny [Sep 1 – Nov 10] → permit [Nov 10 – Jun 30]</li>
+</ul>
+
+<hr />
+
+<h4 id="5-screeningevent-attempt-lifecycle-cross-resource">5. ScreeningEvent Attempt Lifecycle (Cross-Resource)</h4>
+
+<h5 id="absent-path">Absent Path</h5>
+<p>| Attempt | ScreeningEvent State | Next Action |
+|———|———————|————-|
+| 1st Absent | <code class="language-plaintext highlighter-rouge">final</code> (outcome=Absent) | Schedule re-screen → new ScreeningEvent (attemptNumber=2) |
+| 2nd Absent | <code class="language-plaintext highlighter-rouge">final</code> (outcome=Absent) | Record as Missed → Notify Parent + Primary Care (OP-4d) |</p>
+
+<h5 id="incomplete-path">Incomplete Path</h5>
+<p>| Attempt | ScreeningEvent State | Next Action |
+|———|———————|————-|
+| 1st Incomplete | <code class="language-plaintext highlighter-rouge">final</code> (outcome=Incomplete) | Schedule re-screen → new ScreeningEvent (attemptNumber=2) |
+| 2nd Incomplete | <code class="language-plaintext highlighter-rouge">final</code> (outcome=Incomplete) | Direct Referral (OP-2a) with partial data |</p>
+
+<hr />
+
+<h4 id="6-accommodationnotice-communication">6. AccommodationNotice (Communication)</h4>
+
+<h5 id="r4-value-set-3">R4 Value Set</h5>
+<ul>
+  <li><strong>Communication.status</strong> (Required): <code class="language-plaintext highlighter-rouge">preparation | in-progress | not-done | on-hold | stopped | completed | entered-in-error | unknown</code></li>
+</ul>
+
+<h5 id="lifecycle-table-3">Lifecycle Table</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>State</th>
+      <th>Allowed Next States</th>
+      <th>Triggering Operation</th>
+      <th>Forbidden Transitions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>preparation</strong></td>
+      <td><strong>in-progress</strong></td>
+      <td>Nurse drafting</td>
+      <td>Direct to completed</td>
+    </tr>
+    <tr>
+      <td><strong>in-progress</strong></td>
+      <td><strong>sent</strong> / <strong>not-done</strong></td>
+      <td>Nurse sends / aborts</td>
+      <td>Back to preparation</td>
+    </tr>
+    <tr>
+      <td><strong>sent</strong></td>
+      <td><strong>completed</strong></td>
+      <td>Teacher acknowledges</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td><strong>not-done</strong></td>
+      <td>(terminal)</td>
+      <td>Aborted</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td><strong>completed</strong></td>
+      <td><strong>superseded</strong></td>
+      <td>New notice issued</td>
+      <td>Back to sent</td>
+    </tr>
+    <tr>
+      <td><strong>superseded</strong></td>
+      <td>(terminal)</td>
+      <td>Replaced</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td><strong>entered-in-error</strong></td>
+      <td>(terminal)</td>
+      <td>Wrong child/data</td>
+      <td>Any other</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="supersession-chain">Supersession Chain</h5>
+<p>Each new notice has <code class="language-plaintext highlighter-rouge">relatesTo.code=replaces</code> → previous notice. Previous notice status becomes <code class="language-plaintext highlighter-rouge">superseded</code>.</p>
+
+<hr />
+
+<h4 id="6-primarycarerecord-document-entries-documentreference">6. PrimaryCareRecord Document Entries (DocumentReference)</h4>
+
+<h5 id="r4-value-set-4">R4 Value Set</h5>
+<ul>
+  <li><strong>DocumentReference.status</strong> (Required): <code class="language-plaintext highlighter-rouge">current | superseded | entered-in-error</code></li>
+</ul>
+
+<h5 id="lifecycle-table-4">Lifecycle Table</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>State</th>
+      <th>Allowed Next States</th>
+      <th>Triggering Operation</th>
+      <th>Forbidden Transitions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>current</strong></td>
+      <td><strong>superseded</strong></td>
+      <td>New document received for same type/referral</td>
+      <td>Back to current</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><strong>entered-in-error</strong></td>
+      <td>Wrong document</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td><strong>superseded</strong></td>
+      <td>(terminal)</td>
+      <td>Replaced</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td><strong>entered-in-error</strong></td>
+      <td>(terminal)</td>
+      <td>Error</td>
+      <td>—</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="document-types--replacement-rules">Document Types &amp; Replacement Rules</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Document Type</th>
+      <th>Replacement Trigger</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>screening-pass</td>
+      <td>New screening result for same child</td>
+    </tr>
+    <tr>
+      <td>screening-decline</td>
+      <td>N/A (terminal)</td>
+    </tr>
+    <tr>
+      <td>screening-missed</td>
+      <td>N/A (terminal)</td>
+    </tr>
+    <tr>
+      <td>assessment-full</td>
+      <td>New assessment for same referral</td>
+    </tr>
+    <tr>
+      <td>referral-dna</td>
+      <td>N/A (terminal)</td>
+    </tr>
+    <tr>
+      <td>referral-rejected</td>
+      <td>N/A (terminal)</td>
+    </tr>
+    <tr>
+      <td>end-of-year-missed</td>
+      <td>N/A (terminal)</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h4 id="cross-machine-invariants-global">Cross-Machine Invariants (Global)</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Invariant</th>
+      <th>Resources Involved</th>
+      <th>Test</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Every referral has exactly one ServiceRequest</td>
+      <td>ServiceRequest</td>
+      <td>Count(ServiceRequest where focus=Task) = 1 per Task</td>
+    </tr>
+    <tr>
+      <td>Every Task tracks exactly one ServiceRequest</td>
+      <td>Task, ServiceRequest</td>
+      <td>Task.focus references valid ServiceRequest</td>
+    </tr>
+    <tr>
+      <td>Referral closure reason traversable</td>
+      <td>ServiceRequest, DiagnosticReport</td>
+      <td>Assessment.reference → ServiceRequest → ServiceRequest.state gives closure reason</td>
+    </tr>
+    <tr>
+      <td>ScreeningEvent attemptNumber consistent</td>
+      <td>Observation (Panel)</td>
+      <td>attemptNumber increments by 1 per re-screen; max 2</td>
+    </tr>
+    <tr>
+      <td>Consent statusHistory continuous</td>
+      <td>Consent</td>
+      <td>No gaps in provision.period; each new provision starts when previous ends</td>
+    </tr>
+    <tr>
+      <td>PrimaryCareRecord documents match IP-4 count</td>
+      <td>List, DocumentReference</td>
+      <td>6 document types max per child per year</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h4 id="forbidden-transition-tests-for-implementation">Forbidden Transition Tests (For Implementation)</h4>
+
+<div class="language-gherkin highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Referral cannot be re-activated after cancellation</span>
+<span class="kn">Scenario</span><span class="p">:</span> Cancelled referral cannot go back to Sent
+  <span class="nf">Given </span>a ServiceRequest with status <span class="s">"cancelled"</span>
+  <span class="nf">When </span>attempting to set status to <span class="s">"active"</span>
+  <span class="nf">Then </span>the operation SHALL fail with 409 Conflict
+
+<span class="c"># Referral must go through Accepted before Completed</span>
+<span class="kn">Scenario</span><span class="p">:</span> Sent referral cannot go directly to Completed
+  <span class="nf">Given </span>a ServiceRequest with status <span class="s">"active"</span> and Task with status <span class="s">"requested"</span>
+  <span class="nf">When </span>attempting to set ServiceRequest to <span class="s">"completed"</span>
+  <span class="nf">Then </span>the operation SHALL fail with 422 Unprocessable Entity
+
+<span class="c"># ScreeningEvent cannot be amended before final</span>
+<span class="kn">Scenario</span><span class="p">:</span> Preliminary screening cannot be amended
+  <span class="nf">Given </span>an Observation with status <span class="s">"preliminary"</span>
+  <span class="nf">When </span>attempting to set status to <span class="s">"amended"</span>
+  <span class="nf">Then </span>the operation SHALL fail with 422 Unprocessable Entity
+
+<span class="c"># Consent cannot have overlapping provisions</span>
+<span class="kn">Scenario</span><span class="p">:</span> Consent provisions must not overlap
+  <span class="nf">Given </span>a Consent with two provisions
+  <span class="nf">When </span>period.end of first &gt; period.start of second
+  <span class="nf">Then </span>validation SHALL fail with 422 Unprocessable Entity
+</code></pre></div></div>
+
+<hr />
+
+<h4 id="summary-of-lifecycle-resources">Summary of Lifecycle Resources</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Resource</th>
+      <th>Profile</th>
+      <th>Key State Machine</th>
+      <th>Terminal States</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ServiceRequest</td>
+      <td><code class="language-plaintext highlighter-rouge">SVSServiceRequestReferral</code></td>
+      <td>360X referral workflow</td>
+      <td>Completed, Closed-Decline, Closed-Rejected, Closed-DNS, Cancelled</td>
+    </tr>
+    <tr>
+      <td>Task</td>
+      <td><code class="language-plaintext highlighter-rouge">SVSTaskReferralTracking</code></td>
+      <td>360X task tracking</td>
+      <td>Completed, Cancelled, Failed</td>
+    </tr>
+    <tr>
+      <td>Observation (Panel)</td>
+      <td><code class="language-plaintext highlighter-rouge">SVSObservationScreeningPanel</code></td>
+      <td>Screening capture</td>
+      <td>Final, Amended, Corrected, Cancelled, Entered-in-error</td>
+    </tr>
+    <tr>
+      <td>DiagnosticReport</td>
+      <td><code class="language-plaintext highlighter-rouge">SVSDiagnosticReportAssessment</code></td>
+      <td>Assessment report</td>
+      <td>Final, Amended, Corrected, Appended, Cancelled, Entered-in-error</td>
+    </tr>
+    <tr>
+      <td>Consent</td>
+      <td><code class="language-plaintext highlighter-rouge">SVSConsentOptOut</code></td>
+      <td>Opt-out consent</td>
+      <td>Inactive, Entered-in-error</td>
+    </tr>
+    <tr>
+      <td>Communication</td>
+      <td><code class="language-plaintext highlighter-rouge">SVSCommunicationAccommodation</code></td>
+      <td>Accommodation notice</td>
+      <td>Completed, Superseded, Entered-in-error</td>
+    </tr>
+    <tr>
+      <td>DocumentReference</td>
+      <td><code class="language-plaintext highlighter-rouge">SVSDocumentReferenceIP4</code></td>
+      <td>Primary care documents</td>
+      <td>Superseded, Entered-in-error</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2026 <a style="color:var(--footer-hyperlink-text-color)" href=""></a>.  Package school-vision-screening#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Nov 21, 2026 14:59+0000">2026-11-21</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

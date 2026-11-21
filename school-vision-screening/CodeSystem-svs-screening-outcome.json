@@ -1,0 +1,39 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "svs-screening-outcome",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem svs-screening-outcome</b></p><a name=\"svs-screening-outcome\"> </a><a name=\"hcsvs-screening-outcome\"> </a><p>This case-sensitive code system <code>https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-screening-outcome</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">pass<a name=\"svs-screening-outcome-pass\"> </a></td><td>Pass</td><td>Visual acuity ≥6/9 in both eyes</td></tr><tr><td style=\"white-space:nowrap\">refer<a name=\"svs-screening-outcome-refer\"> </a></td><td>Refer</td><td>Visual acuity ≤6/12 in either eye OR ≥2 line difference between eyes</td></tr><tr><td style=\"white-space:nowrap\">absent<a name=\"svs-screening-outcome-absent\"> </a></td><td>Absent</td><td>Child was absent on screening day</td></tr><tr><td style=\"white-space:nowrap\">incomplete<a name=\"svs-screening-outcome-incomplete\"> </a></td><td>Incomplete</td><td>Screening could not be completed (uncooperative, one eye only)</td></tr></table></div>"
+  },
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-screening-outcome",
+  "version" : "0.1.0",
+  "name" : "SVSScreeningOutcome",
+  "title" : "School Vision Screening Outcomes",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-11-21T14:59:50+00:00",
+  "description" : "Possible outcomes of a vision screening encounter",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "pass",
+    "display" : "Pass",
+    "definition" : "Visual acuity ≥6/9 in both eyes"
+  },
+  {
+    "code" : "refer",
+    "display" : "Refer",
+    "definition" : "Visual acuity ≤6/12 in either eye OR ≥2 line difference between eyes"
+  },
+  {
+    "code" : "absent",
+    "display" : "Absent",
+    "definition" : "Child was absent on screening day"
+  },
+  {
+    "code" : "incomplete",
+    "display" : "Incomplete",
+    "definition" : "Screening could not be completed (uncooperative, one eye only)"
+  }]
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="svs-accommodation-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem svs-accommodation-type</b></p><a name="svs-accommodation-type"> </a><a name="hcsvs-accommodation-type"> </a><p>This case-sensitive code system <code>https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-accommodation-type</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">glasses<a name="svs-accommodation-type-glasses"> </a></td><td>Glasses needed</td><td>Child requires prescription glasses</td></tr><tr><td style="white-space:nowrap">front-seat<a name="svs-accommodation-type-front-seat"> </a></td><td>Front seat</td><td>Child needs front row seating</td></tr><tr><td style="white-space:nowrap">both<a name="svs-accommodation-type-both"> </a></td><td>Glasses and front seat</td><td>Child needs both glasses and front seat</td></tr><tr><td style="white-space:nowrap">other<a name="svs-accommodation-type-other"> </a></td><td>Other accommodation</td><td>Other classroom accommodation</td></tr></table></div>
+  </text>
+  <url value="https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-accommodation-type"/>
+  <version value="0.1.0"/>
+  <name value="SVSAccommodationType"/>
+  <title value="Classroom Accommodation Types"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-11-21T14:59:50+00:00"/>
+  <description value="Types of classroom accommodations for vision impairment"/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="glasses"/>
+    <display value="Glasses needed"/>
+    <definition value="Child requires prescription glasses"/>
+  </concept>
+  <concept>
+    <code value="front-seat"/>
+    <display value="Front seat"/>
+    <definition value="Child needs front row seating"/>
+  </concept>
+  <concept>
+    <code value="both"/>
+    <display value="Glasses and front seat"/>
+    <definition value="Child needs both glasses and front seat"/>
+  </concept>
+  <concept>
+    <code value="other"/>
+    <display value="Other accommodation"/>
+    <definition value="Other classroom accommodation"/>
+  </concept>
+</CodeSystem>

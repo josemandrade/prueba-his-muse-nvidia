@@ -1,0 +1,21 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "svs-accommodation-type-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet svs-accommodation-type-vs</b></p><a name=\"svs-accommodation-type-vs\"> </a><a name=\"hcsvs-accommodation-type-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-svs-accommodation-type.html\"><code>https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-accommodation-type</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.0</span></li></ul></div>"
+  },
+  "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/ValueSet/svs-accommodation-type-vs",
+  "version" : "0.1.0",
+  "name" : "SVSAccommodationTypeVS",
+  "title" : "Classroom Accommodation Types ValueSet",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-11-21T14:59:50+00:00",
+  "description" : "Types of classroom accommodations for vision impairment",
+  "compose" : {
+    "include" : [{
+      "system" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-accommodation-type"
+    }]
+  }
+}

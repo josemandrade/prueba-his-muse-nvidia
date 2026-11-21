@@ -1,0 +1,80 @@
+{
+  "codeSystems" : [{
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+    "version" : "4.0.0",
+    "status" : "active",
+    "name" : "ObservationInterpretation",
+    "title" : "ObservationInterpretation",
+    "description" : "One or more codes providing a rough qualitative interpretation of the observation, such as \"normal\" / \"abnormal\", \"low\" / \"high\", \"better\" / \"worse\", \"resistant\" / \"susceptible\", \"expected\" / \"not expected\". The value set is intended to be for ANY use where coded representation of an interpretation is needed.",
+    "oids" : ["2.16.840.1.113883.5.83"],
+    "uses" : {
+    },
+    "ValueSet-svs-acuity-interpretation-vs.html" : "Visual Acuity Interpretation ValueSet"
+  },
+  {
+    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-accommodation-type",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "SVSAccommodationType",
+    "title" : "Classroom Accommodation Types",
+    "description" : "Types of classroom accommodations for vision impairment",
+    "uses" : {
+    },
+    "ValueSet-svs-accommodation-type-vs.html" : "Classroom Accommodation Types ValueSet"
+  },
+  {
+    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-document-type",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "SVSDocumentType",
+    "title" : "School Vision Screening Document Types",
+    "description" : "Types of documents exchanged with Primary Care (IP-4)",
+    "uses" : {
+    },
+    "ValueSet-svs-document-type-vs.html" : "School Vision Screening Document Types ValueSet"
+  },
+  {
+    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-practitioner-role",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "SVSPractitionerRoleCS",
+    "title" : "School Health Service Practitioner Roles",
+    "description" : "Roles within the school health service for vision screening",
+    "uses" : {
+    },
+    "ValueSet-svs-practitioner-role-vs.html" : "School Health Service Practitioner Roles ValueSet"
+  },
+  {
+    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-referral-reason",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "SVSReferralReason",
+    "title" : "School Vision Screening Referral Reasons",
+    "description" : "Reasons for referral to ophthalmology",
+    "uses" : {
+    },
+    "ValueSet-svs-referral-reason-vs.html" : "School Vision Screening Referral Reasons ValueSet"
+  },
+  {
+    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-screening-outcome",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "SVSScreeningOutcome",
+    "title" : "School Vision Screening Outcomes",
+    "description" : "Possible outcomes of a vision screening encounter",
+    "uses" : {
+    },
+    "ValueSet-svs-screening-outcome-vs.html" : "School Vision Screening Outcomes ValueSet"
+  },
+  {
+    "url" : "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-screening-test-method",
+    "version" : "0.1.0",
+    "status" : "active",
+    "name" : "SVSScreeningTestMethod",
+    "title" : "School Vision Screening Test Methods",
+    "description" : "Methods used for visual acuity screening in school settings",
+    "uses" : {
+    },
+    "ValueSet-svs-screening-test-method-vs.html" : "School Vision Screening Test Methods ValueSet"
+  }]
+}
