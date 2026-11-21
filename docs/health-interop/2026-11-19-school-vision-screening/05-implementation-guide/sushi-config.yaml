@@ -1,0 +1,92 @@
+id: school-vision-screening
+canonical: https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening
+name: SchoolVisionScreening
+status: draft
+version: 0.1.0
+fhirVersion: 4.0.1
+copyrightYear: 2026
+releaseLabel: CI Build
+description: >
+  FHIR Implementation Guide for School Vision Screening interoperability.
+  Defines profiles, operations, and examples for the exchange of vision screening
+  results, referrals to ophthalmology, and assessment feedback between school
+  health services, ophthalmology clinics, and primary care teams.
+  
+  This guide implements the workflow described in the School Vision Screening
+  use case: school nurse screens visual acuity → refers to ophthalmology if
+  abnormal → receives assessment summary → generates teacher accommodation
+  notice → sends results to primary care for health record.
+  
+  Key interoperability points:
+  - IP-1: Screening result capture (Observation panel)
+  - IP-2: Referral dispatch and tracking (360X ServiceRequest + Task)
+  - IP-3: Assessment return (DiagnosticReport + Observations + CarePlan)
+  - IP-4: Primary care receives screening/assessment documents (MHD)
+  - IP-5: Teacher accommodation notice (Communication)
+
+license: CC0-1.0
+
+# Dependencies - FHIR R4 base
+dependencies:
+  hl7.fhir.r4.core: 4.0.1
+
+# Parameters
+parameters:
+  apply-jurisdiction: false
+  show-inherited-invariants: false
+
+# Pages
+pages:
+  index.md:
+    title: School Vision Screening IG
+    generation: markdown
+  usecase.md:
+    title: Clinical Use Case
+    generation: markdown
+  process.md:
+    title: Process (BPMN)
+    generation: markdown
+  resources.md:
+    title: Resource Diagram
+    generation: markdown
+  sequences.md:
+    title: Sequence Diagrams
+    generation: markdown
+  profiles.md:
+    title: Profiles
+    generation: markdown
+  operations.md:
+    title: Operations
+    generation: markdown
+  ihe.md:
+    title: IHE Profile Relationships
+    generation: markdown
+  lifecycle.md:
+    title: Lifecycle Tables
+    generation: markdown
+  terminology.md:
+    title: Terminology
+    generation: markdown
+  public-health.md:
+    title: Public Health & Consent
+    generation: markdown
+  examples.md:
+    title: Examples
+    generation: markdown
+
+menu:
+  Home: index.html
+  Use Case: usecase.html
+  Process: process.html
+  Resources: resources.html
+  Sequences: sequences.html
+  Profiles: profiles.html
+  Operations: operations.html
+  IHE Relationships: ihe.html
+  Lifecycle: lifecycle.html
+  Terminology: terminology.html
+  Public Health: public-health.html
+  Examples: examples.html
+  Artifacts: artifacts.html
+
+# FSH-only mode - no custom resources needed

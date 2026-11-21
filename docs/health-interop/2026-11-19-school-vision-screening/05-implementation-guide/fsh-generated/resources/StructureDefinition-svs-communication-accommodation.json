@@ -1,0 +1,73 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "svs-communication-accommodation",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-communication-accommodation",
+  "name": "SVSCommunicationAccommodation",
+  "title": "Teacher Accommodation Notice",
+  "status": "active",
+  "experimental": false,
+  "description": "Notice from school nurse to teacher about classroom accommodation",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Communication",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Communication",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Communication.category",
+        "path": "Communication.category",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Communication.subject",
+        "path": "Communication.subject",
+        "min": 1
+      },
+      {
+        "id": "Communication.sent",
+        "path": "Communication.sent",
+        "min": 1
+      },
+      {
+        "id": "Communication.sender",
+        "path": "Communication.sender",
+        "min": 1
+      },
+      {
+        "id": "Communication.payload",
+        "path": "Communication.payload",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Communication.payload.content[x]",
+        "path": "Communication.payload.content[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Communication.payload.content[x]:contentString",
+        "path": "Communication.payload.content[x]",
+        "sliceName": "contentString",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      }
+    ]
+  }
+}

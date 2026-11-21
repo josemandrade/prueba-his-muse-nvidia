@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "SVSReferralReasonVS",
+  "id": "svs-referral-reason-vs",
+  "title": "School Vision Screening Referral Reasons ValueSet",
+  "description": "Reasons for referral to ophthalmology",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/ValueSet/svs-referral-reason-vs",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-referral-reason"
+      }
+    ]
+  }
+}

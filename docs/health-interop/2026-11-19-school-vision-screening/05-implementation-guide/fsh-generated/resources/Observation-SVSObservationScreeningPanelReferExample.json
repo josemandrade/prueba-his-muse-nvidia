@@ -1,0 +1,61 @@
+{
+  "resourceType": "Observation",
+  "id": "SVSObservationScreeningPanelReferExample",
+  "meta": {
+    "profile": [
+      "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-observation-screening-panel"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:1.2.3.4.5.screening-event",
+      "value": "SCR-2026-11-15-0043"
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "83700-8",
+        "display": "Visual acuity screening panel"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/SVSPatientExample"
+  },
+  "encounter": {
+    "reference": "Encounter/SVSEncounterScreeningExample"
+  },
+  "effectiveDateTime": "2026-11-15T09:35:00Z",
+  "performer": [
+    {
+      "reference": "Practitioner/SVSPractitionerNurseExample"
+    }
+  ],
+  "hasMember": [
+    {
+      "reference": "Observation/SVSObservationRightEyeAcuityReferExample"
+    },
+    {
+      "reference": "Observation/SVSObservationLeftEyeAcuityReferExample"
+    }
+  ],
+  "note": [
+    {
+      "text": "Test used: Snellen 6m; Outcome: Refer; Attempt: 1; Referral indicated: true"
+    }
+  ]
+}

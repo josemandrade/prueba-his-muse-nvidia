@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "SVSScreeningTestMethodVS",
+  "id": "svs-screening-test-method-vs",
+  "title": "School Vision Screening Test Methods ValueSet",
+  "description": "Allowed test methods for school vision screening",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/ValueSet/svs-screening-test-method-vs",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-screening-test-method"
+      }
+    ]
+  }
+}

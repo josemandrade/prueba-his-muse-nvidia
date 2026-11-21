@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "SVSDocumentTypeVS",
+  "id": "svs-document-type-vs",
+  "title": "School Vision Screening Document Types ValueSet",
+  "description": "Types of documents exchanged with Primary Care",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/ValueSet/svs-document-type-vs",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-document-type"
+      }
+    ]
+  }
+}

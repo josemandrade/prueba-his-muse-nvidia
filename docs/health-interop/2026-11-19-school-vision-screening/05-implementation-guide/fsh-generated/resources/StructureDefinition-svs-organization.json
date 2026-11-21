@@ -1,0 +1,35 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "svs-organization",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-organization",
+  "name": "SVSOrganization",
+  "title": "School Vision Screening Organization",
+  "status": "active",
+  "experimental": false,
+  "description": "Organization profile for School Health Service, Ophthalmology Clinic, or Primary Care Practice",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Organization",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Organization",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Organization.identifier",
+        "path": "Organization.identifier",
+        "min": 1
+      },
+      {
+        "id": "Organization.type",
+        "path": "Organization.type",
+        "max": "1"
+      },
+      {
+        "id": "Organization.name",
+        "path": "Organization.name",
+        "min": 1
+      }
+    ]
+  }
+}

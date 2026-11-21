@@ -47,3 +47,15 @@
 - C-A (TaskStatus): Removed "unknown" from R4 TaskStatus value set list (12 codes, not 13). ServiceRequest.status list unchanged (RequestStatus correctly includes "unknown").
 - C-B (Mapping table): Changed right/left eye acuity mapping from `valueQuantity` to `valueRatio` (numerator/denominator in meters), matching the C1 fix in the proposal.
 - C-C (Sequence diagrams): Kept mermaid format in 04-sequence-diagrams.md. SVG generation via render_sequence.py requires mermaid-cli (@mermaid-js/mermaid-cli) which has puppeteer dependency issues in this environment. The mermaid diagrams are valid and render correctly in any mermaid-compatible viewer (GitHub, GitLab, mermaid-cli, mermaid.live). SVG/PNG generation for the guide (Step 5) will use the render_sequence.py script in an environment where mermaid-cli is available. This is a tooling limitation, not a diagram correctness issue.
+
+## 2026-11-21: Step 5 Assistant Spot-Check Fixes (S1–S9, commit 50e8fa1 amended)
+- S1 (Stray `</content>`): Removed the pasted `</content>` line at `input/fsh/terminology.fsh:157`; the agent had dismissed the SUSHI error as a read-tool false positive. SUSHI went from 1 error to 0.
+- S2 (Canonical trailing slash): Removed the trailing slash from the canonical in `sushi-config.yaml` (matches the referral guide; avoids the double slash in the generated IG resource URL). The resume brief had spelled it with a slash; the agent noticed the issue but obeyed the brief.
+- S3 (Aliases on placeholder): Rebased the four `$SVS*` aliases in `input/fsh/aliases.fsh` on the subpath canonical.
+- S4 (ValueSet includes): Changed the six `* include $SVS-cs#SVS...` lines to `* include codes from system <CodeSystemName>` (the old form included the CodeSystem's name as if it were a code).
+- S5 (Duplicate name + ig.ini): Renamed the CodeSystem to `SVSPractitionerRoleCS` (Id unchanged); removed unsupported `copyrightyear` from `ig.ini`; set `ig` to the generated IG resource path.
+- S6 (Publisher/contact): Removed the placeholder-domain publisher/contact blocks from `sushi-config.yaml` (referral guide omits them).
+- S7/S8 (Prose + example URLs): Rebased all canonical URLs in `input/pagecontent/*.md` and the hardcoded encounter-type system URL in `input/fsh/examples.fsh:171` on the subpath. No `health-interop.org` reference remains in the guide.
+- S9 (Guide README + workflow): Created `05-implementation-guide/README.md` (pack rule); restored `.github/workflows/ig-build.yml` from the remote correct version (peaceiris, subpath) — the agent had overwritten it with the single-guide template for the third time. Lesson: verify shared clone-root files after every agent run; the agent's step instructions now say so, and it still happened.
+- Open for the next touch: the Encounter example's `encounter-type` system has no local CodeSystem (literal URL only); consider adding one or binding to a standard system.
+- SUSHI verified by the assistant after all fixes: 0 errors / 0 warnings (v3.21.1).

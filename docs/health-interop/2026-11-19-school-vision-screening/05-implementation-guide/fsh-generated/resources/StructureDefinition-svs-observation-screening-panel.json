@@ -1,0 +1,41 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "svs-observation-screening-panel",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-observation-screening-panel",
+  "name": "SVSObservationScreeningPanel",
+  "title": "School Vision Screening Panel",
+  "status": "active",
+  "experimental": false,
+  "description": "Panel observation containing right and left eye visual acuity measurements",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.category",
+        "path": "Observation.category",
+        "min": 1
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "min": 1
+      },
+      {
+        "id": "Observation.performer",
+        "path": "Observation.performer",
+        "min": 1
+      },
+      {
+        "id": "Observation.hasMember",
+        "path": "Observation.hasMember",
+        "min": 2,
+        "max": "2"
+      }
+    ]
+  }
+}

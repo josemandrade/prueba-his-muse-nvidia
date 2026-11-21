@@ -1,0 +1,24 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "svs-practitioner",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-practitioner",
+  "name": "SVSPractitioner",
+  "title": "School Vision Screening Practitioner",
+  "status": "active",
+  "experimental": false,
+  "description": "Base profile for practitioners in the school vision screening program",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Practitioner",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Practitioner",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Practitioner",
+        "path": "Practitioner"
+      }
+    ]
+  }
+}

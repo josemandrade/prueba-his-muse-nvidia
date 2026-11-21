@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "SVSScreeningOutcomeVS",
+  "id": "svs-screening-outcome-vs",
+  "title": "School Vision Screening Outcomes ValueSet",
+  "description": "Possible outcomes of a vision screening encounter",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/ValueSet/svs-screening-outcome-vs",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-screening-outcome"
+      }
+    ]
+  }
+}

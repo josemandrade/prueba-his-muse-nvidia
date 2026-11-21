@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "SVSPractitionerRoleVS",
+  "id": "svs-practitioner-role-vs",
+  "title": "School Health Service Practitioner Roles ValueSet",
+  "description": "Roles within the school health service",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/ValueSet/svs-practitioner-role-vs",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-practitioner-role"
+      }
+    ]
+  }
+}

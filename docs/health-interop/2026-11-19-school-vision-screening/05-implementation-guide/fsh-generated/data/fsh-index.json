@@ -1,0 +1,418 @@
+[
+  {
+    "outputFile": "CarePlan-SVSCarePlanFollowUpExample.json",
+    "fshName": "SVSCarePlanFollowUpExample",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 394,
+    "endLine": 415
+  },
+  {
+    "outputFile": "CodeSystem-svs-accommodation-type.json",
+    "fshName": "SVSAccommodationType",
+    "fshType": "CodeSystem",
+    "fshFile": "terminology.fsh",
+    "startLine": 50,
+    "endLine": 61
+  },
+  {
+    "outputFile": "CodeSystem-svs-document-type.json",
+    "fshName": "SVSDocumentType",
+    "fshType": "CodeSystem",
+    "fshFile": "terminology.fsh",
+    "startLine": 76,
+    "endLine": 90
+  },
+  {
+    "outputFile": "CodeSystem-svs-practitioner-role.json",
+    "fshName": "SVSPractitionerRoleCS",
+    "fshType": "CodeSystem",
+    "fshFile": "terminology.fsh",
+    "startLine": 64,
+    "endLine": 73
+  },
+  {
+    "outputFile": "CodeSystem-svs-referral-reason.json",
+    "fshName": "SVSReferralReason",
+    "fshType": "CodeSystem",
+    "fshFile": "terminology.fsh",
+    "startLine": 37,
+    "endLine": 47
+  },
+  {
+    "outputFile": "CodeSystem-svs-screening-outcome.json",
+    "fshName": "SVSScreeningOutcome",
+    "fshType": "CodeSystem",
+    "fshFile": "terminology.fsh",
+    "startLine": 23,
+    "endLine": 34
+  },
+  {
+    "outputFile": "CodeSystem-svs-screening-test-method.json",
+    "fshName": "SVSScreeningTestMethod",
+    "fshType": "CodeSystem",
+    "fshFile": "terminology.fsh",
+    "startLine": 6,
+    "endLine": 20
+  },
+  {
+    "outputFile": "DiagnosticReport-SVSDiagnosticReportAssessmentExample.json",
+    "fshName": "SVSDiagnosticReportAssessmentExample",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 302,
+    "endLine": 327
+  },
+  {
+    "outputFile": "DocumentReference-SVSDocumentReferenceScreeningPassExample.json",
+    "fshName": "SVSDocumentReferenceScreeningPassExample",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 420,
+    "endLine": 442
+  },
+  {
+    "outputFile": "Encounter-SVSEncounterScreeningExample.json",
+    "fshName": "SVSEncounterScreeningExample",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 162,
+    "endLine": 181
+  },
+  {
+    "outputFile": "List-SVSListPrimaryCareDocumentsExample.json",
+    "fshName": "SVSListPrimaryCareDocumentsExample",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 447,
+    "endLine": 456
+  },
+  {
+    "outputFile": "Observation-SVSObservationDiagnosisExample.json",
+    "fshName": "SVSObservationDiagnosisExample",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 329,
+    "endLine": 348
+  },
+  {
+    "outputFile": "Observation-SVSObservationLeftEyeAcuityReferExample.json",
+    "fshName": "SVSObservationLeftEyeAcuityReferExample",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 238,
+    "endLine": 265
+  },
+  {
+    "outputFile": "Observation-SVSObservationRefractionODExample.json",
+    "fshName": "SVSObservationRefractionODExample",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 350,
+    "endLine": 370
+  },
+  {
+    "outputFile": "Observation-SVSObservationRefractionOSExample.json",
+    "fshName": "SVSObservationRefractionOSExample",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 372,
+    "endLine": 392
+  },
+  {
+    "outputFile": "Observation-SVSObservationRightEyeAcuityReferExample.json",
+    "fshName": "SVSObservationRightEyeAcuityReferExample",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 208,
+    "endLine": 235
+  },
+  {
+    "outputFile": "Observation-SVSObservationScreeningPanelReferExample.json",
+    "fshName": "SVSObservationScreeningPanelReferExample",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 186,
+    "endLine": 205
+  },
+  {
+    "outputFile": "Organization-SVSOrganizationClinicExample.json",
+    "fshName": "SVSOrganizationClinicExample",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 105,
+    "endLine": 121
+  },
+  {
+    "outputFile": "Organization-SVSOrganizationPrimaryCareExample.json",
+    "fshName": "SVSOrganizationPrimaryCareExample",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 123,
+    "endLine": 139
+  },
+  {
+    "outputFile": "Organization-SVSOrganizationSchoolExample.json",
+    "fshName": "SVSOrganizationSchoolExample",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 87,
+    "endLine": 103
+  },
+  {
+    "outputFile": "Organization-SVSOrganizationSchoolHealthServiceExample.json",
+    "fshName": "SVSOrganizationSchoolHealthServiceExample",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 141,
+    "endLine": 157
+  },
+  {
+    "outputFile": "Patient-SVSPatientExample.json",
+    "fshName": "SVSPatientExample",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 9,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Practitioner-SVSPractitionerNurseExample.json",
+    "fshName": "SVSPractitionerNurseExample",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 66,
+    "endLine": 82
+  },
+  {
+    "outputFile": "RelatedPerson-SVSRelatedPersonExample.json",
+    "fshName": "SVSRelatedPersonExample",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 45,
+    "endLine": 61
+  },
+  {
+    "outputFile": "ServiceRequest-SVSServiceRequestReferralExample.json",
+    "fshName": "SVSServiceRequestReferralExample",
+    "fshType": "Instance",
+    "fshFile": "examples.fsh",
+    "startLine": 270,
+    "endLine": 297
+  },
+  {
+    "outputFile": "StructureDefinition-svs-care-plan-follow-up.json",
+    "fshName": "SVSCarePlanFollowUp",
+    "fshType": "Profile",
+    "fshFile": "profiles.fsh",
+    "startLine": 197,
+    "endLine": 210
+  },
+  {
+    "outputFile": "StructureDefinition-svs-communication-accommodation.json",
+    "fshName": "SVSCommunicationAccommodation",
+    "fshType": "Profile",
+    "fshFile": "profiles.fsh",
+    "startLine": 215,
+    "endLine": 228
+  },
+  {
+    "outputFile": "StructureDefinition-svs-consent-opt-out.json",
+    "fshName": "SVSConsentOptOut",
+    "fshType": "Profile",
+    "fshFile": "profiles.fsh",
+    "startLine": 233,
+    "endLine": 245
+  },
+  {
+    "outputFile": "StructureDefinition-svs-diagnostic-report-assessment.json",
+    "fshName": "SVSDiagnosticReportAssessment",
+    "fshType": "Profile",
+    "fshFile": "profiles.fsh",
+    "startLine": 138,
+    "endLine": 154
+  },
+  {
+    "outputFile": "StructureDefinition-svs-document-reference-ip4.json",
+    "fshName": "SVSDocumentReferenceIP4",
+    "fshType": "Profile",
+    "fshFile": "profiles.fsh",
+    "startLine": 250,
+    "endLine": 270
+  },
+  {
+    "outputFile": "StructureDefinition-svs-list-primary-care-documents.json",
+    "fshName": "SVSListPrimaryCareDocuments",
+    "fshType": "Profile",
+    "fshFile": "profiles.fsh",
+    "startLine": 275,
+    "endLine": 286
+  },
+  {
+    "outputFile": "StructureDefinition-svs-observation-diagnosis.json",
+    "fshName": "SVSObservationDiagnosis",
+    "fshType": "Profile",
+    "fshFile": "profiles.fsh",
+    "startLine": 156,
+    "endLine": 167
+  },
+  {
+    "outputFile": "StructureDefinition-svs-observation-left-eye-acuity.json",
+    "fshName": "SVSObservationLeftEyeAcuity",
+    "fshType": "Profile",
+    "fshFile": "profiles.fsh",
+    "startLine": 79,
+    "endLine": 91
+  },
+  {
+    "outputFile": "StructureDefinition-svs-observation-refraction-od.json",
+    "fshName": "SVSObservationRefractionOD",
+    "fshType": "Profile",
+    "fshFile": "profiles.fsh",
+    "startLine": 169,
+    "endLine": 181
+  },
+  {
+    "outputFile": "StructureDefinition-svs-observation-refraction-os.json",
+    "fshName": "SVSObservationRefractionOS",
+    "fshType": "Profile",
+    "fshFile": "profiles.fsh",
+    "startLine": 183,
+    "endLine": 195
+  },
+  {
+    "outputFile": "StructureDefinition-svs-observation-right-eye-acuity.json",
+    "fshName": "SVSObservationRightEyeAcuity",
+    "fshType": "Profile",
+    "fshFile": "profiles.fsh",
+    "startLine": 65,
+    "endLine": 77
+  },
+  {
+    "outputFile": "StructureDefinition-svs-observation-screening-panel.json",
+    "fshName": "SVSObservationScreeningPanel",
+    "fshType": "Profile",
+    "fshFile": "profiles.fsh",
+    "startLine": 52,
+    "endLine": 63
+  },
+  {
+    "outputFile": "StructureDefinition-svs-organization.json",
+    "fshName": "SVSOrganization",
+    "fshType": "Profile",
+    "fshFile": "profiles.fsh",
+    "startLine": 291,
+    "endLine": 302
+  },
+  {
+    "outputFile": "StructureDefinition-svs-patient.json",
+    "fshName": "SVSPatient",
+    "fshType": "Profile",
+    "fshFile": "profiles.fsh",
+    "startLine": 8,
+    "endLine": 14
+  },
+  {
+    "outputFile": "StructureDefinition-svs-practitioner-role.json",
+    "fshName": "SVSPractitionerRole",
+    "fshType": "Profile",
+    "fshFile": "profiles.fsh",
+    "startLine": 39,
+    "endLine": 47
+  },
+  {
+    "outputFile": "StructureDefinition-svs-practitioner.json",
+    "fshName": "SVSPractitioner",
+    "fshType": "Profile",
+    "fshFile": "profiles.fsh",
+    "startLine": 31,
+    "endLine": 37
+  },
+  {
+    "outputFile": "StructureDefinition-svs-questionnaire-response-screening.json",
+    "fshName": "SVSQuestionnaireResponseScreening",
+    "fshType": "Profile",
+    "fshFile": "profiles.fsh",
+    "startLine": 307,
+    "endLine": 319
+  },
+  {
+    "outputFile": "StructureDefinition-svs-related-person.json",
+    "fshName": "SVSRelatedPerson",
+    "fshType": "Profile",
+    "fshFile": "profiles.fsh",
+    "startLine": 19,
+    "endLine": 26
+  },
+  {
+    "outputFile": "StructureDefinition-svs-service-request-referral.json",
+    "fshName": "SVSServiceRequestReferral",
+    "fshType": "Profile",
+    "fshFile": "profiles.fsh",
+    "startLine": 96,
+    "endLine": 115
+  },
+  {
+    "outputFile": "StructureDefinition-svs-task-referral-tracking.json",
+    "fshName": "SVSTaskReferralTracking",
+    "fshType": "Profile",
+    "fshFile": "profiles.fsh",
+    "startLine": 117,
+    "endLine": 133
+  },
+  {
+    "outputFile": "ValueSet-svs-accommodation-type-vs.json",
+    "fshName": "SVSAccommodationTypeVS",
+    "fshType": "ValueSet",
+    "fshFile": "terminology.fsh",
+    "startLine": 120,
+    "endLine": 126
+  },
+  {
+    "outputFile": "ValueSet-svs-acuity-interpretation-vs.json",
+    "fshName": "SVSAcuityInterpretationVS",
+    "fshType": "ValueSet",
+    "fshFile": "terminology.fsh",
+    "startLine": 147,
+    "endLine": 156
+  },
+  {
+    "outputFile": "ValueSet-svs-document-type-vs.json",
+    "fshName": "SVSDocumentTypeVS",
+    "fshType": "ValueSet",
+    "fshFile": "terminology.fsh",
+    "startLine": 138,
+    "endLine": 144
+  },
+  {
+    "outputFile": "ValueSet-svs-practitioner-role-vs.json",
+    "fshName": "SVSPractitionerRoleVS",
+    "fshType": "ValueSet",
+    "fshFile": "terminology.fsh",
+    "startLine": 129,
+    "endLine": 135
+  },
+  {
+    "outputFile": "ValueSet-svs-referral-reason-vs.json",
+    "fshName": "SVSReferralReasonVS",
+    "fshType": "ValueSet",
+    "fshFile": "terminology.fsh",
+    "startLine": 111,
+    "endLine": 117
+  },
+  {
+    "outputFile": "ValueSet-svs-screening-outcome-vs.json",
+    "fshName": "SVSScreeningOutcomeVS",
+    "fshType": "ValueSet",
+    "fshFile": "terminology.fsh",
+    "startLine": 102,
+    "endLine": 108
+  },
+  {
+    "outputFile": "ValueSet-svs-screening-test-method-vs.json",
+    "fshName": "SVSScreeningTestMethodVS",
+    "fshType": "ValueSet",
+    "fshFile": "terminology.fsh",
+    "startLine": 93,
+    "endLine": 99
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "SVSPractitionerRoleCS",
+  "id": "svs-practitioner-role",
+  "title": "School Health Service Practitioner Roles",
+  "description": "Roles within the school health service for vision screening",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-practitioner-role",
+  "concept": [
+    {
+      "code": "school-nurse",
+      "display": "School Nurse",
+      "definition": "Registered nurse conducting vision screening"
+    },
+    {
+      "code": "service-lead",
+      "display": "Service Lead",
+      "definition": "School health program lead / coordinator"
+    }
+  ],
+  "experimental": false,
+  "caseSensitive": true,
+  "count": 2
+}

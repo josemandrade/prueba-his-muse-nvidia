@@ -1,0 +1,35 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "SVSScreeningOutcome",
+  "id": "svs-screening-outcome",
+  "title": "School Vision Screening Outcomes",
+  "description": "Possible outcomes of a vision screening encounter",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-screening-outcome",
+  "concept": [
+    {
+      "code": "pass",
+      "display": "Pass",
+      "definition": "Visual acuity ≥6/9 in both eyes"
+    },
+    {
+      "code": "refer",
+      "display": "Refer",
+      "definition": "Visual acuity ≤6/12 in either eye OR ≥2 line difference between eyes"
+    },
+    {
+      "code": "absent",
+      "display": "Absent",
+      "definition": "Child was absent on screening day"
+    },
+    {
+      "code": "incomplete",
+      "display": "Incomplete",
+      "definition": "Screening could not be completed (uncooperative, one eye only)"
+    }
+  ],
+  "experimental": false,
+  "caseSensitive": true,
+  "count": 4
+}

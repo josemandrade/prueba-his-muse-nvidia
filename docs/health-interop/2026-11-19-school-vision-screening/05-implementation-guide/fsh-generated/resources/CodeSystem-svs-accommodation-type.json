@@ -1,0 +1,35 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "SVSAccommodationType",
+  "id": "svs-accommodation-type",
+  "title": "Classroom Accommodation Types",
+  "description": "Types of classroom accommodations for vision impairment",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-accommodation-type",
+  "concept": [
+    {
+      "code": "glasses",
+      "display": "Glasses needed",
+      "definition": "Child requires prescription glasses"
+    },
+    {
+      "code": "front-seat",
+      "display": "Front seat",
+      "definition": "Child needs front row seating"
+    },
+    {
+      "code": "both",
+      "display": "Glasses and front seat",
+      "definition": "Child needs both glasses and front seat"
+    },
+    {
+      "code": "other",
+      "display": "Other accommodation",
+      "definition": "Other classroom accommodation"
+    }
+  ],
+  "experimental": false,
+  "caseSensitive": true,
+  "count": 4
+}

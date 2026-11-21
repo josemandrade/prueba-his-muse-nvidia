@@ -1,0 +1,24 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "svs-related-person",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-related-person",
+  "name": "SVSRelatedPerson",
+  "title": "School Vision Screening Parent/Guardian",
+  "status": "active",
+  "experimental": false,
+  "description": "Profile for a parent or guardian of a child in the screening program",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "RelatedPerson",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "RelatedPerson",
+        "path": "RelatedPerson"
+      }
+    ]
+  }
+}

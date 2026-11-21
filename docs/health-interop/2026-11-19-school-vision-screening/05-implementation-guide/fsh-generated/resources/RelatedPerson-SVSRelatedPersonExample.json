@@ -1,0 +1,46 @@
+{
+  "resourceType": "RelatedPerson",
+  "id": "SVSRelatedPersonExample",
+  "meta": {
+    "profile": [
+      "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-related-person"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:1.2.3.4.5.guardian",
+      "value": "GRD-2026-0042"
+    }
+  ],
+  "patient": {
+    "reference": "Patient/SVSPatientExample"
+  },
+  "relationship": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+          "code": "MTH",
+          "display": "Mother"
+        }
+      ]
+    }
+  ],
+  "name": [
+    {
+      "use": "official",
+      "family": "Gonzalez",
+      "given": [
+        "Ana",
+        "Maria"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "+34-91-555-0123",
+      "use": "home"
+    }
+  ]
+}

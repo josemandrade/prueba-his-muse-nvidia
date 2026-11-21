@@ -1,0 +1,30 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "svs-list-primary-care-documents",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-list-primary-care-documents",
+  "name": "SVSListPrimaryCareDocuments",
+  "title": "Primary Care Vision Screening Document Log",
+  "status": "active",
+  "experimental": false,
+  "description": "List of all vision screening related documents received by Primary Care for a child",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "List",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/List",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "List.title",
+        "path": "List.title",
+        "min": 1
+      },
+      {
+        "id": "List.subject",
+        "path": "List.subject",
+        "min": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "resourceType": "Practitioner",
+  "id": "SVSPractitionerNurseExample",
+  "meta": {
+    "profile": [
+      "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-practitioner"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:1.2.3.4.5.employee",
+      "value": "EMP-2026-015"
+    },
+    {
+      "system": "urn:oid:1.2.3.4.5.license",
+      "value": "LIC-ENF-2026-004521",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider number"
+          }
+        ]
+      }
+    }
+  ],
+  "name": [
+    {
+      "use": "official",
+      "family": "Ruiz",
+      "given": [
+        "Carmen"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "+34-91-555-0100",
+      "use": "work"
+    }
+  ]
+}

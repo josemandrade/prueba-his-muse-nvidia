@@ -1,0 +1,24 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "svs-patient",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-patient",
+  "name": "SVSPatient",
+  "title": "School Vision Screening Patient (Child)",
+  "status": "active",
+  "experimental": false,
+  "description": "Profile for a child enrolled in school vision screening program",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Patient",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Patient",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Patient",
+        "path": "Patient"
+      }
+    ]
+  }
+}

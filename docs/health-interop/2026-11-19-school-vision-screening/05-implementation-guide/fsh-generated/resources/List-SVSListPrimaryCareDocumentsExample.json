@@ -1,0 +1,28 @@
+{
+  "resourceType": "List",
+  "id": "SVSListPrimaryCareDocumentsExample",
+  "meta": {
+    "profile": [
+      "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-list-primary-care-documents"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:1.2.3.4.5.primary-care-docs",
+      "value": "PC-2026-001234-documents"
+    }
+  ],
+  "status": "current",
+  "mode": "working",
+  "title": "School Vision Screening Documents for Maria Gonzalez",
+  "subject": {
+    "reference": "Patient/SVSPatientExample"
+  },
+  "entry": [
+    {
+      "item": {
+        "reference": "DocumentReference/SVSDocumentReferenceScreeningPassExample"
+      }
+    }
+  ]
+}

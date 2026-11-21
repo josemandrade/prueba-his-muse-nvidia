@@ -1,0 +1,50 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "SVSDocumentType",
+  "id": "svs-document-type",
+  "title": "School Vision Screening Document Types",
+  "description": "Types of documents exchanged with Primary Care (IP-4)",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-document-type",
+  "concept": [
+    {
+      "code": "screening-pass",
+      "display": "Screening Pass",
+      "definition": "Vision screening result: pass (≥6/9 both eyes)"
+    },
+    {
+      "code": "screening-decline",
+      "display": "Screening Decline",
+      "definition": "Vision screening result: parent declined referral"
+    },
+    {
+      "code": "screening-missed",
+      "display": "Screening Missed",
+      "definition": "Vision screening not completed (2nd absent)"
+    },
+    {
+      "code": "assessment-full",
+      "display": "Full Assessment",
+      "definition": "Complete ophthalmology assessment report"
+    },
+    {
+      "code": "referral-dna",
+      "display": "Referral DNA",
+      "definition": "Referral closed: did not attend (2nd DNA)"
+    },
+    {
+      "code": "referral-rejected",
+      "display": "Referral Rejected",
+      "definition": "Referral rejected by ophthalmology"
+    },
+    {
+      "code": "end-of-year-missed",
+      "display": "End-of-Year Missed",
+      "definition": "Screening missed at end of school year (pending re-screen)"
+    }
+  ],
+  "experimental": false,
+  "caseSensitive": true,
+  "count": 7
+}

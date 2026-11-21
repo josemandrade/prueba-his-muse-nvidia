@@ -1,0 +1,42 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "SVSScreeningTestMethod",
+  "id": "svs-screening-test-method",
+  "title": "School Vision Screening Test Methods",
+  "description": "Methods used for visual acuity screening in school settings",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-screening-test-method",
+  "concept": [
+    {
+      "code": "snellen",
+      "display": "Snellen 6m chart",
+      "definition": "Snellen chart at 6 metres"
+    },
+    {
+      "code": "tumbling-e",
+      "display": "Tumbling E optotypes",
+      "definition": "Tumbling E optotypes for children who cannot read letters"
+    },
+    {
+      "code": "lea-symbols",
+      "display": "Lea symbols",
+      "definition": "Lea symbols for pre-readers"
+    },
+    {
+      "code": "other",
+      "display": "Other method",
+      "definition": "Other screening method not listed"
+    }
+  ],
+  "experimental": false,
+  "caseSensitive": true,
+  "property": [
+    {
+      "code": "notSelectable",
+      "type": "boolean",
+      "description": "Indicates that the code is not intended for selection"
+    }
+  ],
+  "count": 4
+}

@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "SVSAccommodationTypeVS",
+  "id": "svs-accommodation-type-vs",
+  "title": "Classroom Accommodation Types ValueSet",
+  "description": "Types of classroom accommodations for vision impairment",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/ValueSet/svs-accommodation-type-vs",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/CodeSystem/svs-accommodation-type"
+      }
+    ]
+  }
+}

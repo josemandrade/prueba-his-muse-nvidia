@@ -1,0 +1,519 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "school-vision-screening",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/ImplementationGuide/school-vision-screening",
+  "version": "0.1.0",
+  "name": "SchoolVisionScreening",
+  "status": "draft",
+  "description": "FHIR Implementation Guide for School Vision Screening interoperability. Defines profiles, operations, and examples for the exchange of vision screening results, referrals to ophthalmology, and assessment feedback between school health services, ophthalmology clinics, and primary care teams.\nThis guide implements the workflow described in the School Vision Screening use case: school nurse screens visual acuity → refers to ophthalmology if abnormal → receives assessment summary → generates teacher accommodation notice → sends results to primary care for health record.\nKey interoperability points: - IP-1: Screening result capture (Observation panel) - IP-2: Referral dispatch and tracking (360X ServiceRequest + Task) - IP-3: Assessment return (DiagnosticReport + Observations + CarePlan) - IP-4: Primary care receives screening/assessment documents (MHD) - IP-5: Teacher accommodation notice (Communication)\n",
+  "packageId": "school-vision-screening",
+  "license": "CC0-1.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "packageId": "hl7.fhir.r4.core",
+      "version": "4.0.1",
+      "uri": "http://hl7.org/fhir",
+      "id": "hl7_fhir_r4_core"
+    }
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "Patient/SVSPatientExample"
+        },
+        "name": "Child Example - Maria Gonzalez",
+        "description": "Synthetic example of an 8-year-old child",
+        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-patient"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/svs-accommodation-type"
+        },
+        "name": "Classroom Accommodation Types",
+        "description": "Types of classroom accommodations for vision impairment",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/svs-accommodation-type-vs"
+        },
+        "name": "Classroom Accommodation Types ValueSet",
+        "description": "Types of classroom accommodations for vision impairment",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/SVSObservationDiagnosisExample"
+        },
+        "name": "Diagnosis - Mild Myopia OD",
+        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-observation-diagnosis"
+      },
+      {
+        "reference": {
+          "reference": "DocumentReference/SVSDocumentReferenceScreeningPassExample"
+        },
+        "name": "DocumentReference - Screening Pass Result (IP-4)",
+        "description": "Primary Care receives screening pass result via MHD",
+        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-document-reference-ip4"
+      },
+      {
+        "reference": {
+          "reference": "CarePlan/SVSCarePlanFollowUpExample"
+        },
+        "name": "Follow-up Plan - 12 Month Review",
+        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-care-plan-follow-up"
+      },
+      {
+        "reference": {
+          "reference": "Observation/SVSObservationLeftEyeAcuityReferExample"
+        },
+        "name": "Left Eye Acuity - Pass (6/9)",
+        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-observation-left-eye-acuity"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/svs-observation-refraction-os"
+        },
+        "name": "Left Eye Refraction",
+        "description": "Left eye refractive prescription",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/SVSObservationRefractionOSExample"
+        },
+        "name": "Left Eye Refraction - Normal",
+        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-observation-refraction-os"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/svs-observation-left-eye-acuity"
+        },
+        "name": "Left Eye Visual Acuity",
+        "description": "Left eye visual acuity measurement as Snellen fraction using Ratio",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "DiagnosticReport/SVSDiagnosticReportAssessmentExample"
+        },
+        "name": "Ophthalmology Assessment - Maria Gonzalez",
+        "description": "Complete assessment: mild myopia OD, prescription -1.00 DS, follow-up 12 months",
+        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-diagnostic-report-assessment"
+      },
+      {
+        "reference": {
+          "reference": "Organization/SVSOrganizationClinicExample"
+        },
+        "name": "Ophthalmology Clinic Example",
+        "description": "Ophthalmology clinic receiving vision screening referrals",
+        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-organization"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/svs-observation-diagnosis"
+        },
+        "name": "Ophthalmology Diagnosis",
+        "description": "Diagnosis from ophthalmology assessment",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/svs-care-plan-follow-up"
+        },
+        "name": "Ophthalmology Follow-up Plan",
+        "description": "Follow-up plan from ophthalmology assessment",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/svs-diagnostic-report-assessment"
+        },
+        "name": "Ophthalmology Vision Assessment Report",
+        "description": "Complete ophthalmology assessment report for vision screening referral",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "RelatedPerson/SVSRelatedPersonExample"
+        },
+        "name": "Parent Example - Ana Gonzalez",
+        "description": "Mother of Maria Gonzalez",
+        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-related-person"
+      },
+      {
+        "reference": {
+          "reference": "List/SVSListPrimaryCareDocumentsExample"
+        },
+        "name": "Primary Care Document Log - Maria Gonzalez",
+        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-list-primary-care-documents"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/svs-document-reference-ip4"
+        },
+        "name": "Primary Care Document Reference (IP-4)",
+        "description": "DocumentReference for each of the 6 IP-4 document types received by Primary Care",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Organization/SVSOrganizationPrimaryCareExample"
+        },
+        "name": "Primary Care Example - Centro de Salud Las Rosas",
+        "description": "Primary care center receiving screening results",
+        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-organization"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/svs-list-primary-care-documents"
+        },
+        "name": "Primary Care Vision Screening Document Log",
+        "description": "List of all vision screening related documents received by Primary Care for a child",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ServiceRequest/SVSServiceRequestReferralExample"
+        },
+        "name": "Referral to Ophthalmology - Maria Gonzalez",
+        "description": "Referral from school nurse to ophthalmology for right eye acuity 6/12",
+        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-service-request-referral"
+      },
+      {
+        "reference": {
+          "reference": "Observation/SVSObservationRightEyeAcuityReferExample"
+        },
+        "name": "Right Eye Acuity - Refer (6/12)",
+        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-observation-right-eye-acuity"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/svs-observation-refraction-od"
+        },
+        "name": "Right Eye Refraction",
+        "description": "Right eye refractive prescription",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/SVSObservationRefractionODExample"
+        },
+        "name": "Right Eye Refraction -1.00 DS",
+        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-observation-refraction-od"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/svs-observation-right-eye-acuity"
+        },
+        "name": "Right Eye Visual Acuity",
+        "description": "Right eye visual acuity measurement as Snellen fraction using Ratio",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Organization/SVSOrganizationSchoolExample"
+        },
+        "name": "School Example - Colegio Publico San Isidro",
+        "description": "Public school with vision screening program",
+        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-organization"
+      },
+      {
+        "reference": {
+          "reference": "Organization/SVSOrganizationSchoolHealthServiceExample"
+        },
+        "name": "School Health Service - Servicio de Salud Escolar Madrid",
+        "description": "Regional school health service overseeing vision screening",
+        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-organization"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/svs-practitioner-role"
+        },
+        "name": "School Health Service Practitioner Roles",
+        "description": "Roles within the school health service for vision screening",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/svs-practitioner-role-vs"
+        },
+        "name": "School Health Service Practitioner Roles ValueSet",
+        "description": "Roles within the school health service",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/SVSPractitionerNurseExample"
+        },
+        "name": "School Nurse Example - Carmen Ruiz",
+        "description": "School nurse conducting vision screening",
+        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-practitioner"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/svs-document-type"
+        },
+        "name": "School Vision Screening Document Types",
+        "description": "Types of documents exchanged with Primary Care (IP-4)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/svs-document-type-vs"
+        },
+        "name": "School Vision Screening Document Types ValueSet",
+        "description": "Types of documents exchanged with Primary Care",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/svs-consent-opt-out"
+        },
+        "name": "School Vision Screening Opt-Out Consent",
+        "description": "Annual opt-out consent for vision screening program",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/svs-organization"
+        },
+        "name": "School Vision Screening Organization",
+        "description": "Organization profile for School Health Service, Ophthalmology Clinic, or Primary Care Practice",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/svs-screening-outcome"
+        },
+        "name": "School Vision Screening Outcomes",
+        "description": "Possible outcomes of a vision screening encounter",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/svs-screening-outcome-vs"
+        },
+        "name": "School Vision Screening Outcomes ValueSet",
+        "description": "Possible outcomes of a vision screening encounter",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/svs-observation-screening-panel"
+        },
+        "name": "School Vision Screening Panel",
+        "description": "Panel observation containing right and left eye visual acuity measurements",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/svs-related-person"
+        },
+        "name": "School Vision Screening Parent/Guardian",
+        "description": "Profile for a parent or guardian of a child in the screening program",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/svs-patient"
+        },
+        "name": "School Vision Screening Patient (Child)",
+        "description": "Profile for a child enrolled in school vision screening program",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/svs-practitioner"
+        },
+        "name": "School Vision Screening Practitioner",
+        "description": "Base profile for practitioners in the school vision screening program",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/svs-practitioner-role"
+        },
+        "name": "School Vision Screening Practitioner Role",
+        "description": "Role profile for school nurses and service leads",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/svs-questionnaire-response-screening"
+        },
+        "name": "School Vision Screening Questionnaire Response",
+        "description": "Screening form response captured by the nurse",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/svs-service-request-referral"
+        },
+        "name": "School Vision Screening Referral",
+        "description": "Referral from school nurse to ophthalmology for vision assessment",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/svs-referral-reason"
+        },
+        "name": "School Vision Screening Referral Reasons",
+        "description": "Reasons for referral to ophthalmology",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/svs-referral-reason-vs"
+        },
+        "name": "School Vision Screening Referral Reasons ValueSet",
+        "description": "Reasons for referral to ophthalmology",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/svs-task-referral-tracking"
+        },
+        "name": "School Vision Screening Referral Tracking",
+        "description": "Task for tracking referral workflow state",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/svs-screening-test-method"
+        },
+        "name": "School Vision Screening Test Methods",
+        "description": "Methods used for visual acuity screening in school settings",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/svs-screening-test-method-vs"
+        },
+        "name": "School Vision Screening Test Methods ValueSet",
+        "description": "Allowed test methods for school vision screening",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Encounter/SVSEncounterScreeningExample"
+        },
+        "name": "Screening Encounter - Maria Gonzalez",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/SVSObservationScreeningPanelReferExample"
+        },
+        "name": "Screening Panel - Refer Result (Maria Gonzalez)",
+        "description": "Visual acuity screening panel showing refer result: right eye 6/12 (<=6/12)",
+        "exampleCanonical": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-observation-screening-panel"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/svs-communication-accommodation"
+        },
+        "name": "Teacher Accommodation Notice",
+        "description": "Notice from school nurse to teacher about classroom accommodation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/svs-acuity-interpretation-vs"
+        },
+        "name": "Visual Acuity Interpretation ValueSet",
+        "description": "Interpretation codes for visual acuity results",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "School Vision Screening IG",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "usecase.html",
+          "title": "Clinical Use Case",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "process.html",
+          "title": "Process (BPMN)",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "resources.html",
+          "title": "Resource Diagram",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "sequences.html",
+          "title": "Sequence Diagrams",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "profiles.html",
+          "title": "Profiles",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "operations.html",
+          "title": "Operations",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "ihe.html",
+          "title": "IHE Profile Relationships",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "lifecycle.html",
+          "title": "Lifecycle Tables",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "terminology.html",
+          "title": "Terminology",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "public-health.html",
+          "title": "Public Health & Consent",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "examples.html",
+          "title": "Examples",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2026"
+      },
+      {
+        "code": "releaselabel",
+        "value": "CI Build"
+      },
+      {
+        "code": "apply-jurisdiction",
+        "value": "false"
+      },
+      {
+        "code": "show-inherited-invariants",
+        "value": "false"
+      }
+    ]
+  }
+}

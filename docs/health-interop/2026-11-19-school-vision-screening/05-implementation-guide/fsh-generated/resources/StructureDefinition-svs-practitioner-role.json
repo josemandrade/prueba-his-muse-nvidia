@@ -1,0 +1,30 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "svs-practitioner-role",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-practitioner-role",
+  "name": "SVSPractitionerRole",
+  "title": "School Vision Screening Practitioner Role",
+  "status": "active",
+  "experimental": false,
+  "description": "Role profile for school nurses and service leads",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "PractitionerRole",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "PractitionerRole.practitioner",
+        "path": "PractitionerRole.practitioner",
+        "min": 1
+      },
+      {
+        "id": "PractitionerRole.organization",
+        "path": "PractitionerRole.organization",
+        "min": 1
+      }
+    ]
+  }
+}

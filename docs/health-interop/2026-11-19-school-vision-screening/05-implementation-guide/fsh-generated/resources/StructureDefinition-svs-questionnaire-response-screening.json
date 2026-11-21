@@ -1,0 +1,40 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "svs-questionnaire-response-screening",
+  "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-questionnaire-response-screening",
+  "name": "SVSQuestionnaireResponseScreening",
+  "title": "School Vision Screening Questionnaire Response",
+  "status": "active",
+  "experimental": false,
+  "description": "Screening form response captured by the nurse",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "QuestionnaireResponse",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "QuestionnaireResponse.subject",
+        "path": "QuestionnaireResponse.subject",
+        "min": 1
+      },
+      {
+        "id": "QuestionnaireResponse.authored",
+        "path": "QuestionnaireResponse.authored",
+        "min": 1
+      },
+      {
+        "id": "QuestionnaireResponse.author",
+        "path": "QuestionnaireResponse.author",
+        "min": 1
+      },
+      {
+        "id": "QuestionnaireResponse.item",
+        "path": "QuestionnaireResponse.item",
+        "min": 1
+      }
+    ]
+  }
+}
