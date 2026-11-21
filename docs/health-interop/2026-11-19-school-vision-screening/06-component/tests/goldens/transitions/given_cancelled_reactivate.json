@@ -1,0 +1,6 @@
+{
+  "resourceType": "ServiceRequest",
+  "id": "sr-1",
+  "status": "active",
+  "meta": {"profile": ["https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-service-request-referral"]}
+}

@@ -59,3 +59,15 @@
 - S9 (Guide README + workflow): Created `05-implementation-guide/README.md` (pack rule); restored `.github/workflows/ig-build.yml` from the remote correct version (peaceiris, subpath) — the agent had overwritten it with the single-guide template for the third time. Lesson: verify shared clone-root files after every agent run; the agent's step instructions now say so, and it still happened.
 - Open for the next touch: the Encounter example's `encounter-type` system has no local CodeSystem (literal URL only); consider adding one or binding to a standard system.
 - SUSHI verified by the assistant after all fixes: 0 errors / 0 warnings (v3.21.1).
+
+## 2026-11-21: Step 6 Assistant Spot-Check Fixes (T1–T6) and Independent Review
+- T1 (IP-4 lookup): evaluator now resolves LOINC codes via a `LOINC_TO_DOC_TYPE` map before checking the source (83700-8 school, 11506-3 school, 28626-8 ophthalmology).
+- T2 (OP-3b missing): `op3b_return_assessment_full` implemented in the client.
+- T3 (OP-2 no ValidationError): `patch()` awaits `_validate_update` before writing; forbidden transitions covered by 64 tests.
+- T4 (Supersession): test seeds comm-1 before replacing it.
+- T5 (OP-7 channel): `build_subscription` returns a Subscription with a `channel`.
+- T6 (422 coroutine): the patch path awaits all async calls.
+- Suite after fixes: 136 passed, 2 warnings; after the reviewer LOW fixes (MagicMock for the OP-6 `get` mock): 136 passed, 0 warnings.
+- Count correction: the component implements 11 operations (16 named variants with OP-4a–f expanded), not 13; fixed in README, REVIEW.md, plan.md and the commit message.
+- Goldens are hand-written synthetic fixtures, not 1:1 copies of the guide's `fsh-generated/resources/`; README corrected.
+- Open for the next touch (reviewer MEDIUM): add a canonical cross-check test mirroring the referral case (`test_component_canonical_matches_guide_canonical`).

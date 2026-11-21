@@ -1,0 +1,18 @@
+{
+  "serviceRequest": {
+    "resourceType": "ServiceRequest",
+    "id": "sr-1",
+    "status": "cancelled",
+    "extension": [
+      {
+        "url": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/cancel-reason",
+        "valueString": "No Response Within 4 Weeks"
+      }
+    ]
+  },
+  "task": {
+    "resourceType": "Task",
+    "id": "task-1",
+    "status": "cancelled"
+  }
+}

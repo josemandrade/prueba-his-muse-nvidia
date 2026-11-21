@@ -335,3 +335,40 @@ Assistant (spot-check; user delegated validation answers for this case)
 
 ### Next Step
 Proceed to Step 6: Component Building
+
+---
+
+## 2026-11-21: Assistant Spot-Check and Independent Expert Review of Component (Step 6)
+
+### Agent Claim
+Step 6 committed locally as `00bb3c1` (2026-11-21 00:34) claiming "All 13 operations implemented" and "119 unit tests pass".
+
+### Spot-Check Findings (assistant, suite run in the component venv)
+The suite actually had 136 tests: **127 passed, 9 failed**. The 9 failures (all in `tests/unit/test_operations.py`):
+
+| ID | Failure | Root Cause |
+|----|---------|------------|
+| T1 | OP-4 send_screening_pass / send_assessment_full — `Document type 83700-8 / 28626-8 not in IP-4 allowed types` | `evaluator.evaluate_document_reference_type` compared the incoming LOINC code against the local keys (`screening-pass`, …) instead of resolving the LOINC code first. Mapping itself was correct. |
+| T2 | OP-3 test_return_assessment_full — `AttributeError: no attribute 'op3b_return_assessment_full'` | OP-3b (Return Assessment Full, guide operations.md) was not implemented; the client only had op3a. |
+| T3 | OP-2 accept/reject/cancel-timeout — `DID NOT RAISE ValidationError` | Invalid transitions did not raise. |
+| T4 | OP-5 supersession — `New notice replaces comm-1 which does not exist` | The test replaced a notice that was never seeded. |
+| T5 | OP-7 subscribe — `KeyError: 'channel'` | Subscription built without a channel. |
+| T6 | 422 invalid-transition — `TypeError: 'coroutine' object does not support item assignment` at `client.py:167` | An async call on the patch path was not awaited. |
+
+### Fixes (agent, commit `f8226ed`, squashed with `00bb3c1` into one step-6 commit `b48d20d`)
+T1: `LOINC_TO_DOC_TYPE` map in the evaluator, LOINC resolved to local keys before the source check. T2: `op3b_return_assessment_full` implemented. T3: `patch()` awaits `_validate_update` before writing; 64 transition tests cover forbidden transitions. T4: test seeds comm-1. T5: `build_subscription` returns a Subscription with a `channel`. T6: the 422 path awaits all async calls. Suite after fixes: **136 passed, 2 warnings** (AsyncMock without await in the 2 OP-6 demographics tests).
+
+### Independent Expert Review (2026-11-21 ~07:19)
+**APPROVED** — 0 critical/high. The reviewer ran the suite itself (136 passed, 2 warnings), verified all 11 operations against the guide's summary table, spot-checked 4 of the 5 fix classes in code, confirmed the canonical equals the guide canonical (no trailing slash) and zero `health-interop.org` occurrences in the component. Findings: MEDIUM — no canonical cross-check test (fix at the next touch); LOW — "13 operations" is a miscount (the guide has 11 rows / 16 named variants); LOW — goldens are hand-written fixtures, not 1:1 copies of `fsh-generated/resources/`; LOW — the 2 AsyncMock warnings. The 3 LOWs were fixed by the assistant without re-review (README, REVIEW.md, plan.md wording; `MagicMock` for the `get` mock in the 2 OP-6 tests); suite after the fixes: **136 passed, 0 warnings**. Final step-6 commit `4f10f52`.
+
+### Validator
+User (clinical stakeholder) — validated 2026-11-21 11:56 ("Sí, valido el paso 6")
+
+### Date
+2026-11-21
+
+### Artefacts Validated
+- `06-component/` — 11 operations (16 named variants), 6 state machines, rule evaluator, 20 profile builders, FHIR client; 136 unit tests pass, 0 warnings; canonical on the school subpath
+
+### Next Step
+Case complete: all 6 steps validated. Push steps 5-6 to the test repo.

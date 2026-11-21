@@ -1,0 +1,40 @@
+{
+  "serviceRequest": {
+    "resourceType": "ServiceRequest",
+    "id": "sr-1",
+    "meta": {"profile": ["https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-service-request-referral"]},
+    "identifier": [
+      {"system": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/referral", "value": "REF-2026-11-15-0043"},
+      {"system": "urn:ihe:pcc:360x:referral-id", "value": "360X-REF-2026-11-15-0043"}
+    ],
+    "status": "active",
+    "intent": "order",
+    "category": [{"coding": [{"system": "http://terminology.hl7.org/CodeSystem/service-request-category", "code": "referral"}]}],
+    "priority": "routine",
+    "code": {"coding": [{"system": "http://snomed.info/sct", "code": "307924000", "display": "Referral to ophthalmologist"}]},
+    "subject": {"reference": "Patient/pat-1"},
+    "encounter": {"reference": "Encounter/enc-1"},
+    "occurrenceDateTime": "2026-11-15T09:45:00Z",
+    "authoredOn": "2026-11-15T09:45:00Z",
+    "requester": {"reference": "PractitionerRole/pr-1"},
+    "performer": [{"reference": "Organization/org-2"}],
+    "reasonCode": [{"coding": [{"system": "http://snomed.info/sct", "code": "416070007", "display": "Decreased visual acuity"}]}],
+    "reasonReference": [{"reference": "Observation/panel-1"}],
+    "extension": [{"url": "https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/expected-deadline", "valueDateTime": "2026-12-13T09:45:00Z"}]
+  },
+  "task": {
+    "resourceType": "Task",
+    "id": "task-1",
+    "meta": {"profile": ["https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-task-referral-tracking"]},
+    "status": "requested",
+    "intent": "order",
+    "code": {"coding": [{"system": "http://hl7.org/fhir/CodeSystem/task-code", "code": "referral"}]},
+    "for": {"reference": "Patient/pat-1"},
+    "focus": {"reference": "ServiceRequest/sr-1"},
+    "authoredOn": "2026-11-15T09:45:00Z",
+    "lastModified": "2026-11-15T09:45:00Z",
+    "requester": {"reference": "PractitionerRole/pr-1"},
+    "owner": {"reference": "Organization/org-2"},
+    "encounter": {"reference": "Encounter/enc-1"}
+  }
+}

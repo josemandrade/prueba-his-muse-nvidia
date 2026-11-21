@@ -1,0 +1,21 @@
+{
+  "resourceType": "Observation",
+  "id": "panel-1",
+  "meta": {
+    "profile": ["https://josemandrade.github.io/prueba-his-muse-nvidia/school-vision-screening/StructureDefinition/svs-observation-screening-panel"]
+  },
+  "status": "final",
+  "category": [{"coding": [{"system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "vital-signs", "display": "Vital Signs"}]}],
+  "code": {"coding": [{"system": "http://loinc.org", "code": "83700-8", "display": "Visual acuity screening panel"}]},
+  "subject": {"reference": "Patient/pat-1"},
+  "encounter": {"reference": "Encounter/enc-1"},
+  "effectiveDateTime": "2026-11-15T09:35:00Z",
+  "performer": [{"reference": "PractitionerRole/pr-1"}],
+  "hasMember": [
+    {"reference": "Observation/obs-od"},
+    {"reference": "Observation/obs-os"}
+  ],
+  "note": [
+    {"text": "Test used: snellen; Outcome: refer; Attempt: 1; Referral indicated: true"}
+  ]
+}
